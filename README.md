@@ -5,8 +5,8 @@
   <br>
   <b>Agile flight done right!</b>
   <br>
-  <img src="https://github.com/uzh-rpg/agilicious/workflows/CLANG_CI/badge.svg?branch=master">
-  <img src="https://github.com/uzh-rpg/agilicious/workflows/clang_format/badge.svg?branch=master">
+  <!-- <img src="https://github.com/uzh-rpg/agilicious/workflows/CLANG_CI/badge.svg?branch=master">
+  <img src="https://github.com/uzh-rpg/agilicious/workflows/clang_format/badge.svg?branch=master"> -->
   <br>
   <img src="https://user-images.githubusercontent.com/17403970/174497361-aa212d77-7036-4f36-840d-c48cab492ac2.gif" width="700">
   <img src="https://user-images.githubusercontent.com/21340299/174775412-9595e3ed-7ef9-403b-ab08-0dbe4126243f.gif" width="350">

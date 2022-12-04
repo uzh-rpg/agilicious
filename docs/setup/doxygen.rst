@@ -1,7 +1,7 @@
 Code Documentation
 ==================
 
-For code documentation, we now use `Doxygen <https://www.doxygen.nl/index.html>`_!
+For code documentation, we now use `Doxygen <https://www.doxygen.nl/index.html>`__!
 
 At the moment, the documentation files are not provided and have to be built locally:
 

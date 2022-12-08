@@ -20,22 +20,7 @@ Agilicious: Open-Source and Open-Hardware Agile Quadrotor for Vision-Based Fligh
 
 Agile flight done right!
 ------------------------
-**Agilicious** is a co-designed hardware and software framework tailored to autonomous, agile quadrotor flight,
-which has been developed and used since 2016 at the `Robotics and Perception Group (RPG) <http://rpg.ifi.uzh.ch/>`__ of the University of Zurich. Agilicious is described in this `Science Robotics 2022 paper <https://rpg.ifi.uzh.ch/docs/ScienceRobotics22_Foehn.pdf>`__.
-It is completely open-source and open-hardware and supports both model-based and neural-network-based controllers. 
-Also, it provides high thrust-to-weight and torque-to-inertia ratios for agility, onboard vision sensors, GPU-accelerated compute hardware for real-time perception and neural-network inference, a real-time flight controller, and a versatile software stack.
-In contrast to existing frameworks, Agilicious offers a unique combination of flexible software and high-performance hardware.
-Agilicious has been used in over 30 scientific papers at our lab,
-including trajectory tracking for drone racing scenarios at up to 5g and 70km/h
-(`SciRob21_Foehn <https://rpg.ifi.uzh.ch/docs/ScienceRobotics21_Foehn.pdf>`_,
-`Video <https://youtu.be/ZPI8U1uSJUs>`_), vision-based acrobatic flight
-(`RSS20 Kaufmann <https://rpg.ifi.uzh.ch/docs/RSS20_Kaufmann.pdf>`_, 
-`Video <https://youtu.be/2N_wKXQ6MXA>`_),
-obstacle avoidance in both structured and unstructured environments using solely onboard perception
-(`SciRob21_Loquercio <https://rpg.ifi.uzh.ch/docs/Loquercio21_Science.pdf>`_,
-`Video <https://www.youtube.com/watch?v=m89bNn6RFoQ>`_), and hardware-in-the-loop simulation in virtual-reality environments.
-Thanks to its versatility, we believe that Agilicious supports the next generation
-of scientific and industrial quadrotor research.
+**Agilicious** is a co-designed hardware and software framework tailored to autonomous, agile quadrotor flight, which has been developed and used since 2016 at the `Robotics and Perception Group (RPG) <http://rpg.ifi.uzh.ch/>`__ of the University of Zurich. Agilicious is described in this `Science Robotics 2022 paper <https://rpg.ifi.uzh.ch/docs/ScienceRobotics22_Foehn.pdf>`__. It is completely open-source and open-hardware and supports both model-based and neural-network-based controllers.  Also, it provides high thrust-to-weight and torque-to-inertia ratios for agility, onboard vision sensors, GPU-accelerated compute hardware for real-time perception and neural-network inference, a real-time flight controller, and a versatile software stack. In contrast to existing frameworks, Agilicious offers a unique combination of flexible software and high-performance hardware. Agilicious has been used in over 30 scientific papers at our lab, including trajectory tracking for drone racing scenarios at up to 5g and 70km/h (`SciRob21_Foehn <https://rpg.ifi.uzh.ch/docs/ScienceRobotics21_Foehn.pdf>`_, `Video <https://youtu.be/ZPI8U1uSJUs>`_), vision-based acrobatic flight (`RSS20 Kaufmann <https://rpg.ifi.uzh.ch/docs/RSS20_Kaufmann.pdf>`_,  `Video <https://youtu.be/2N_wKXQ6MXA>`_), obstacle avoidance in both structured and unstructured environments using solely onboard perception (`SciRob21_Loquercio <https://rpg.ifi.uzh.ch/docs/Loquercio21_Science.pdf>`_, `Video <https://www.youtube.com/watch?v=m89bNn6RFoQ>`_), and hardware-in-the-loop simulation in virtual-reality environments. Thanks to its versatility, we believe that Agilicious supports the next generation of scientific and industrial quadrotor research.
 
 The full list of publications using Agilicious can be found `here <https://rpg.ifi.uzh.ch/aggressive_flight.html>`_.
 

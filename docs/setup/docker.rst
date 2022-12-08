@@ -11,8 +11,8 @@ The steps to run it from scratch are:
 
 #. | Install docker: https://docs.docker.com/engine/install/ubuntu/
 #. | Docker post installation steps: https://docs.docker.com/engine/install/linux-postinstall/ 
-   #. | Summarized:
-      
+   | Summarized:
+   
    - :code:`sudo groupadd docker`
    - :code:`sudo usermod -aG docker $USER`
    - :code:`newgrp docker`
@@ -20,8 +20,8 @@ The steps to run it from scratch are:
 
 #. | For computers with NVIDIA graphic cards, there are some additional steps:
    
-      - Install nvidia-docker2, following this: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#setting-up-nvidia-container-toolkit
-      - Uncomment the :code:`NVIDIA_DOCKER_REQUIREMENT='nvidia-docker2'` part in the :code:`launch_container.sh` file
+   - Install nvidia-docker2, following this: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#setting-up-nvidia-container-toolkit
+   - Uncomment the :code:`NVIDIA_DOCKER_REQUIREMENT='nvidia-docker2'` part in the :code:`launch_container.sh` file
         
 #. | Pull ros image to docker: :code:`docker pull ros`
 #. | Clone agilicious repository to your host machine, and cd to the agilicious root folder.

@@ -1,5 +1,6 @@
+################
 Dockerized Build
-================
+################
 
 Using our provided `Dockerfile <https://github.com/uzh-rpg/agilicious/blob/main/Dockerfile>`__
 you can run the entire repository detached from the dependencies of your local system, in a docker container.

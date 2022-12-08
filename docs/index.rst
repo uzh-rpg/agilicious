@@ -48,15 +48,20 @@ The full list of publications using Agilicious can be found `here <https://rpg.i
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Setup
+    :maxdepth: 2
+    :caption: Setup
 
     What's in it for you? <introduction>
     Getting Started <setup/getting_started>
     Dockerized Build <setup/docker>
     Code Documentation with Doxygen <setup/doxygen>
 
+.. toctree::
+    :maxdepth: 3
+    :caption: Documentation
 
-
-
-
+    Modules <modules/overview>
+    Simulation <simulation/overview>
+    Hardware <hardware/overview>
+    Integragion with ROS <integration/ros>
+    Integragion with Flightmare <integration/flightmare>

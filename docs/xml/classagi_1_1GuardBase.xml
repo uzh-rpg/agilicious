@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1GuardBase" kind="class" language="C++" prot="public">
+    <compoundname>agi::GuardBase</compoundname>
+    <basecompoundref refid="classagi_1_1Module" prot="public" virt="non-virtual">agi::Module&lt; GuardBase &gt;</basecompoundref>
+    <derivedcompoundref refid="classagi_1_1PositionGuard" prot="public" virt="non-virtual">agi::PositionGuard</derivedcompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classagi_1_1GuardBase_1a654109f804de9f2dedbdcaa24505bef8" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>GuardState</name>
+        <qualifiedname>agi::GuardBase::GuardState</qualifiedname>
+        <enumvalue id="classagi_1_1GuardBase_1a654109f804de9f2dedbdcaa24505bef8aca0408a962115a6e199dbac349bd3597" prot="public">
+          <name>NOT_INIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1GuardBase_1a654109f804de9f2dedbdcaa24505bef8a18ff74f43da410c5529f7d6fca84f115" prot="public">
+          <name>ACTIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1GuardBase_1a654109f804de9f2dedbdcaa24505bef8af1fcc60a82022cc2e88f99043e730c2e" prot="public">
+          <name>TRIGGERED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/guard/guard_base.hpp" line="18" column="3" bodyfile="agilib/include/agilib/guard/guard_base.hpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classagi_1_1GuardBase_1aaf69d7ee3c13847eb16b21ef2dea862b" prot="protected" static="no" mutable="no">
+        <type>GuardState</type>
+        <definition>GuardState agi::GuardBase::guard_state_</definition>
+        <argsstring></argsstring>
+        <name>guard_state_</name>
+        <qualifiedname>agi::GuardBase::guard_state_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/guard/guard_base.hpp" line="21" column="14" bodyfile="agilib/include/agilib/guard/guard_base.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1GuardBase_1a66e6ab986310e63b3a1b41fc93ca4b96" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::GuardBase::externally_triggered_</definition>
+        <argsstring></argsstring>
+        <name>externally_triggered_</name>
+        <qualifiedname>agi::GuardBase::externally_triggered_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/guard/guard_base.hpp" line="22" column="8" bodyfile="agilib/include/agilib/guard/guard_base.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1GuardBase_1aecb47ccf7ada2c20f8e27335a6964085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::GuardBase::GuardBase</definition>
+        <argsstring>(const std::string &amp;name=&quot;Guard Base&quot;)</argsstring>
+        <name>GuardBase</name>
+        <qualifiedname>agi::GuardBase::GuardBase</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+          <defval>&quot;Guard Base&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/guard/guard_base.hpp" line="10" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1GuardBase_1a7e2f25a5635f28b8596b2338436aee04" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual agi::GuardBase::~GuardBase</definition>
+        <argsstring>()=default</argsstring>
+        <name>~GuardBase</name>
+        <qualifiedname>agi::GuardBase::~GuardBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/guard/guard_base.hpp" line="11" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1GuardBase_1a9b8427e243d453ef3c565cbc8043c229" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::GuardBase::evaluateState</definition>
+        <argsstring>(const QuadState &amp;state)</argsstring>
+        <name>evaluateState</name>
+        <qualifiedname>agi::GuardBase::evaluateState</qualifiedname>
+        <reimplementedby refid="classagi_1_1PositionGuard_1a0e045528c7c9a102a7697e3c091681e8">evaluateState</reimplementedby>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/guard/guard_base.hpp" line="13" column="16" bodyfile="agilib/include/agilib/guard/guard_base.hpp" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1GuardBase_1a814f18f903a8b2f9966d991a40d7b0c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::GuardBase::update</definition>
+        <argsstring>(const QuadState &amp;state)</argsstring>
+        <name>update</name>
+        <qualifiedname>agi::GuardBase::update</qualifiedname>
+        <reimplementedby refid="classagi_1_1PositionGuard_1aafab46bd934227a70de7dd0314ce8ee2">update</reimplementedby>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/guard/guard_base.hpp" line="14" column="16" bodyfile="agilib/include/agilib/guard/guard_base.hpp" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1GuardBase_1a468cbf5f7de307bc03047befb6d9aa06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void agi::GuardBase::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::GuardBase::reset</qualifiedname>
+        <reimplementedby refid="classagi_1_1PositionGuard_1a5f0821e5f63693b217ad192dc2272d01">reset</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/guard/guard_base.hpp" line="15" column="16" bodyfile="agilib/include/agilib/guard/guard_base.hpp" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1GuardBase_1a6deeea2da083cbbd309039779c576705" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::GuardBase::trigger</definition>
+        <argsstring>()</argsstring>
+        <name>trigger</name>
+        <qualifiedname>agi::GuardBase::trigger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/guard/guard_base.hpp" line="16" column="8" bodyfile="agilib/include/agilib/guard/guard_base.hpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1GuardBase_1aa25af4d261ae8341a99d2532cd6496c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::GuardBase::triggered</definition>
+        <argsstring>() const</argsstring>
+        <name>triggered</name>
+        <qualifiedname>agi::GuardBase::triggered</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/guard/guard_base.hpp" line="17" column="8" bodyfile="agilib/include/agilib/guard/guard_base.hpp" bodystart="17" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::Module&lt; GuardBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="1">
+        <label>agi::GuardBase</label>
+        <link refid="classagi_1_1GuardBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::PositionGuard</label>
+        <link refid="classagi_1_1PositionGuard"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::Module&lt; GuardBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::GuardBase</label>
+        <link refid="classagi_1_1GuardBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/guard/guard_base.hpp" line="8" column="1" bodyfile="agilib/include/agilib/guard/guard_base.hpp" bodystart="8" bodyend="23"/>
+    <listofallmembers>
+      <member refid="classagi_1_1GuardBase_1a9b8427e243d453ef3c565cbc8043c229" prot="public" virt="virtual"><scope>agi::GuardBase</scope><name>evaluateState</name></member>
+      <member refid="classagi_1_1GuardBase_1a66e6ab986310e63b3a1b41fc93ca4b96" prot="protected" virt="non-virtual"><scope>agi::GuardBase</scope><name>externally_triggered_</name></member>
+      <member refid="classagi_1_1GuardBase_1aaf69d7ee3c13847eb16b21ef2dea862b" prot="protected" virt="non-virtual"><scope>agi::GuardBase</scope><name>guard_state_</name></member>
+      <member refid="classagi_1_1GuardBase_1aecb47ccf7ada2c20f8e27335a6964085" prot="public" virt="non-virtual"><scope>agi::GuardBase</scope><name>GuardBase</name></member>
+      <member refid="classagi_1_1GuardBase_1a654109f804de9f2dedbdcaa24505bef8" prot="public" virt="non-virtual"><scope>agi::GuardBase</scope><name>GuardState</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::GuardBase</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::GuardBase</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::GuardBase</scope><name>Module</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::GuardBase</scope><name>name</name></member>
+      <member refid="classagi_1_1GuardBase_1a468cbf5f7de307bc03047befb6d9aa06" prot="public" virt="virtual"><scope>agi::GuardBase</scope><name>reset</name></member>
+      <member refid="classagi_1_1GuardBase_1a6deeea2da083cbbd309039779c576705" prot="public" virt="non-virtual"><scope>agi::GuardBase</scope><name>trigger</name></member>
+      <member refid="classagi_1_1GuardBase_1aa25af4d261ae8341a99d2532cd6496c7" prot="public" virt="non-virtual"><scope>agi::GuardBase</scope><name>triggered</name></member>
+      <member refid="classagi_1_1GuardBase_1a814f18f903a8b2f9966d991a40d7b0c4" prot="public" virt="virtual"><scope>agi::GuardBase</scope><name>update</name></member>
+      <member refid="classagi_1_1GuardBase_1a7e2f25a5635f28b8596b2338436aee04" prot="public" virt="virtual"><scope>agi::GuardBase</scope><name>~GuardBase</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::GuardBase</scope><name>~Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

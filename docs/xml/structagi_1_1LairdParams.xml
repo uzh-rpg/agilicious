@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1LairdParams" kind="struct" language="C++" prot="public">
+    <compoundname>agi::LairdParams</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1LairdParams_1a925d3dc4d0fdfcd09db4571caf0e9fbb" prot="public" static="no" mutable="no">
+        <type><ref refid="classagi_1_1SerialSettings" kindref="compound">SerialSettings</ref></type>
+        <definition>SerialSettings agi::LairdParams::serial_settings</definition>
+        <argsstring></argsstring>
+        <name>serial_settings</name>
+        <qualifiedname>agi::LairdParams::serial_settings</qualifiedname>
+        <initializer>{&quot;/dev/ttyUSB0&quot;, 115200}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge_params.hpp" line="19" column="18" bodyfile="agilib/include/agilib/bridge/laird/laird_bridge_params.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LairdParams_1a7b92a9e675b2d6d860c8b6899051fe5d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::LairdParams::single_rotor_thrust</definition>
+        <argsstring></argsstring>
+        <name>single_rotor_thrust</name>
+        <qualifiedname>agi::LairdParams::single_rotor_thrust</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge_params.hpp" line="21" column="8" bodyfile="agilib/include/agilib/bridge/laird/laird_bridge_params.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LairdParams_1a1b94a45467fd052d00db6b31344de0b6" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::LairdParams::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <qualifiedname>agi::LairdParams::timeout</qualifiedname>
+        <initializer>{0.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge_params.hpp" line="23" column="10" bodyfile="agilib/include/agilib/bridge/laird/laird_bridge_params.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LairdParams_1ac602564f7fdd013203ab76c898583f14" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int agi::LairdParams::n_timeouts_for_lock</definition>
+        <argsstring></argsstring>
+        <name>n_timeouts_for_lock</name>
+        <qualifiedname>agi::LairdParams::n_timeouts_for_lock</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge_params.hpp" line="24" column="13" bodyfile="agilib/include/agilib/bridge/laird/laird_bridge_params.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1LairdParams_1aefa68370d59a1269445bddc6082a4f46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::LairdParams::LairdParams</definition>
+        <argsstring>()=default</argsstring>
+        <name>LairdParams</name>
+        <qualifiedname>agi::LairdParams::LairdParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge_params.hpp" line="9" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1LairdParams_1a167c6412c6480fd4161c27bde86b3f34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::LairdParams::LairdParams</definition>
+        <argsstring>(const std::string &amp;port, const int baudrate, const SerialMode serial_mode)</argsstring>
+        <name>LairdParams</name>
+        <qualifiedname>agi::LairdParams::LairdParams</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>baudrate</declname>
+        </param>
+        <param>
+          <type>const SerialMode</type>
+          <declname>serial_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge_params.hpp" line="10" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1LairdParams_1ab07afb831c724874d5e12b5d89d21c5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::LairdParams::load</definition>
+        <argsstring>(const fs::path &amp;filename) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::LairdParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge_params.hpp" line="13" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1LairdParams_1ae488eb70dd9ae8dc450b0d6f690d683b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::LairdParams::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::LairdParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge_params.hpp" line="14" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structagi_1_1LairdParams_1a7eac806b1e24869fbe43710bb8b2a7e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const LairdParams &amp;settings)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::LairdParams::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1LairdParams" kindref="compound">LairdParams</ref> &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge_params.hpp" line="16" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::LairdParams</label>
+        <link refid="structagi_1_1LairdParams"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::LairdParams</label>
+        <link refid="structagi_1_1LairdParams"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>serial_settings</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="3">
+        <label>agi::SerialSettings</label>
+        <link refid="classagi_1_1SerialSettings"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>port</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="4">
+        <label>std::string</label>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/bridge/laird/laird_bridge_params.hpp" line="8" column="1" bodyfile="agilib/include/agilib/bridge/laird/laird_bridge_params.hpp" bodystart="8" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structagi_1_1LairdParams_1aefa68370d59a1269445bddc6082a4f46" prot="public" virt="non-virtual"><scope>agi::LairdParams</scope><name>LairdParams</name></member>
+      <member refid="structagi_1_1LairdParams_1a167c6412c6480fd4161c27bde86b3f34" prot="public" virt="non-virtual"><scope>agi::LairdParams</scope><name>LairdParams</name></member>
+      <member refid="structagi_1_1LairdParams_1ab07afb831c724874d5e12b5d89d21c5e" prot="public" virt="virtual"><scope>agi::LairdParams</scope><name>load</name></member>
+      <member refid="structagi_1_1LairdParams_1ae488eb70dd9ae8dc450b0d6f690d683b" prot="public" virt="virtual"><scope>agi::LairdParams</scope><name>load</name></member>
+      <member refid="structagi_1_1LairdParams_1ac602564f7fdd013203ab76c898583f14" prot="public" virt="non-virtual"><scope>agi::LairdParams</scope><name>n_timeouts_for_lock</name></member>
+      <member refid="structagi_1_1LairdParams_1a7eac806b1e24869fbe43710bb8b2a7e8" prot="public" virt="non-virtual"><scope>agi::LairdParams</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structagi_1_1LairdParams_1a925d3dc4d0fdfcd09db4571caf0e9fbb" prot="public" virt="non-virtual"><scope>agi::LairdParams</scope><name>serial_settings</name></member>
+      <member refid="structagi_1_1LairdParams_1a7b92a9e675b2d6d860c8b6899051fe5d" prot="public" virt="non-virtual"><scope>agi::LairdParams</scope><name>single_rotor_thrust</name></member>
+      <member refid="structagi_1_1LairdParams_1a1b94a45467fd052d00db6b31344de0b6" prot="public" virt="non-virtual"><scope>agi::LairdParams</scope><name>timeout</name></member>
+      <member refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b" prot="public" virt="virtual"><scope>agi::LairdParams</scope><name>valid</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::LairdParams</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

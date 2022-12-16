@@ -1,1 +1,5 @@
 _build/**
+
+latex/**
+html/**
+doxy_html/**

@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1PipelineConfig" kind="struct" language="C++" prot="public">
+    <compoundname>agi::PipelineConfig</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1PipelineConfig_1ab530838ca53412a16a6d398d0c3a250b" prot="public" static="no" mutable="no">
+        <type><ref refid="structagi_1_1ModuleConfig" kindref="compound">ModuleConfig</ref></type>
+        <definition>ModuleConfig agi::PipelineConfig::estimator_cfg</definition>
+        <argsstring></argsstring>
+        <name>estimator_cfg</name>
+        <qualifiedname>agi::PipelineConfig::estimator_cfg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pipeline_config.hpp" line="12" column="16" bodyfile="agilib/include/agilib/pilot/pipeline_config.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PipelineConfig_1a7ec4feb561cd0d78572236e3a5de1414" prot="public" static="no" mutable="no">
+        <type><ref refid="structagi_1_1ModuleConfig" kindref="compound">ModuleConfig</ref></type>
+        <definition>ModuleConfig agi::PipelineConfig::sampler_cfg</definition>
+        <argsstring></argsstring>
+        <name>sampler_cfg</name>
+        <qualifiedname>agi::PipelineConfig::sampler_cfg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pipeline_config.hpp" line="13" column="16" bodyfile="agilib/include/agilib/pilot/pipeline_config.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PipelineConfig_1a4c937cec27a4b84a245805e723e9165f" prot="public" static="no" mutable="no">
+        <type><ref refid="structagi_1_1ModuleConfig" kindref="compound">ModuleConfig</ref></type>
+        <definition>ModuleConfig agi::PipelineConfig::outer_controller_cfg</definition>
+        <argsstring></argsstring>
+        <name>outer_controller_cfg</name>
+        <qualifiedname>agi::PipelineConfig::outer_controller_cfg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pipeline_config.hpp" line="14" column="16" bodyfile="agilib/include/agilib/pilot/pipeline_config.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PipelineConfig_1a978941fea19ffbe63667df0723d05bcc" prot="public" static="no" mutable="no">
+        <type><ref refid="structagi_1_1ModuleConfig" kindref="compound">ModuleConfig</ref></type>
+        <definition>ModuleConfig agi::PipelineConfig::inner_controller_cfg</definition>
+        <argsstring></argsstring>
+        <name>inner_controller_cfg</name>
+        <qualifiedname>agi::PipelineConfig::inner_controller_cfg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pipeline_config.hpp" line="15" column="16" bodyfile="agilib/include/agilib/pilot/pipeline_config.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PipelineConfig_1a7b602d489998fe9e5a62fec370f9d114" prot="public" static="no" mutable="no">
+        <type><ref refid="structagi_1_1ModuleConfig" kindref="compound">ModuleConfig</ref></type>
+        <definition>ModuleConfig agi::PipelineConfig::bridge_cfg</definition>
+        <argsstring></argsstring>
+        <name>bridge_cfg</name>
+        <qualifiedname>agi::PipelineConfig::bridge_cfg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pipeline_config.hpp" line="16" column="16" bodyfile="agilib/include/agilib/pilot/pipeline_config.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1PipelineConfig_1a108cf253d99a630b8f87588d2812e405" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::PipelineConfig::load</definition>
+        <argsstring>(const Yaml &amp;yaml, const std::string &amp;directory)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::PipelineConfig::load</qualifiedname>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>directory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pipeline_config.hpp" line="18" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structagi_1_1PipelineConfig_1a440fa8b9f7a19ae68d5916608a667883" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const PipelineConfig &amp;config)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::PipelineConfig::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1PipelineConfig" kindref="compound">PipelineConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pipeline_config.hpp" line="20" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::ModuleConfig</label>
+        <link refid="structagi_1_1ModuleConfig"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::PipelineConfig</label>
+        <link refid="structagi_1_1PipelineConfig"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>bridge_cfg</edgelabel>
+          <edgelabel>estimator_cfg</edgelabel>
+          <edgelabel>inner_controller_cfg</edgelabel>
+          <edgelabel>outer_controller_cfg</edgelabel>
+          <edgelabel>sampler_cfg</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="3">
+        <label>std::string</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/pilot/pipeline_config.hpp" line="11" column="1" bodyfile="agilib/include/agilib/pilot/pipeline_config.hpp" bodystart="11" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structagi_1_1PipelineConfig_1a7b602d489998fe9e5a62fec370f9d114" prot="public" virt="non-virtual"><scope>agi::PipelineConfig</scope><name>bridge_cfg</name></member>
+      <member refid="structagi_1_1PipelineConfig_1ab530838ca53412a16a6d398d0c3a250b" prot="public" virt="non-virtual"><scope>agi::PipelineConfig</scope><name>estimator_cfg</name></member>
+      <member refid="structagi_1_1PipelineConfig_1a978941fea19ffbe63667df0723d05bcc" prot="public" virt="non-virtual"><scope>agi::PipelineConfig</scope><name>inner_controller_cfg</name></member>
+      <member refid="structagi_1_1PipelineConfig_1a108cf253d99a630b8f87588d2812e405" prot="public" virt="non-virtual"><scope>agi::PipelineConfig</scope><name>load</name></member>
+      <member refid="structagi_1_1PipelineConfig_1a440fa8b9f7a19ae68d5916608a667883" prot="public" virt="non-virtual"><scope>agi::PipelineConfig</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structagi_1_1PipelineConfig_1a4c937cec27a4b84a245805e723e9165f" prot="public" virt="non-virtual"><scope>agi::PipelineConfig</scope><name>outer_controller_cfg</name></member>
+      <member refid="structagi_1_1PipelineConfig_1a7ec4feb561cd0d78572236e3a5de1414" prot="public" virt="non-virtual"><scope>agi::PipelineConfig</scope><name>sampler_cfg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespaceagi_1_1msp" kind="namespace" language="C++">
+    <compoundname>agi::msp</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="msp__msgs__defs_8hpp_1a0114cfb3d177593548ebddbfe12f19f5" prot="public" static="no" strong="no">
+        <type>uint16_t</type>
+        <name>DIRECTION</name>
+        <qualifiedname>agi::msp::DIRECTION</qualifiedname>
+        <enumvalue id="msp__msgs__defs_8hpp_1a0114cfb3d177593548ebddbfe12f19f5ad961c08146a5e7aa5cd974d519308de5" prot="public">
+          <name>SEND</name>
+          <initializer>= &apos;&lt;&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="msp__msgs__defs_8hpp_1a0114cfb3d177593548ebddbfe12f19f5a3539be47c2e640306945d7a18c242b35" prot="public">
+          <name>RECV</name>
+          <initializer>= &apos;&gt;&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_msgs_defs.hpp" line="12" column="1" bodyfile="agilib/include/agilib/bridge/msp/msp_msgs_defs.hpp" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="enum" id="msp__msgs__defs_8hpp_1a987dd4cee127ccd94b6932b1225733ea" prot="public" static="no" strong="no">
+        <type>uint16_t</type>
+        <name>CODE</name>
+        <qualifiedname>agi::msp::CODE</qualifiedname>
+        <enumvalue id="msp__msgs__defs_8hpp_1a987dd4cee127ccd94b6932b1225733eaa90188bd348bcc847dda2dee795344f06" prot="public">
+          <name>ANALOG</name>
+          <initializer>= 110</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="msp__msgs__defs_8hpp_1a987dd4cee127ccd94b6932b1225733eaae506bfe9fcdd7fb48d52f52faefb985f" prot="public">
+          <name>SET_RAW_RC</name>
+          <initializer>= 200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="msp__msgs__defs_8hpp_1a987dd4cee127ccd94b6932b1225733eaab3d36776affedc77a44dd0c59321dddc" prot="public">
+          <name>SET_MOTOR</name>
+          <initializer>= 214</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_msgs_defs.hpp" line="15" column="1" bodyfile="agilib/include/agilib/bridge/msp/msp_msgs_defs.hpp" bodystart="15" bodyend="206"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="msp__msgs__defs_8hpp_1a7c6740a44dc432fd67ade905f908bb4f" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::msp::MIN_LENGTH</definition>
+        <argsstring></argsstring>
+        <name>MIN_LENGTH</name>
+        <qualifiedname>agi::msp::MIN_LENGTH</qualifiedname>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_msgs_defs.hpp" line="8" column="22" bodyfile="agilib/include/agilib/bridge/msp/msp_msgs_defs.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="msp__msgs__defs_8hpp_1acf8ca7e167f431c858ef54f5a6509cac" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::msp::MAX_PAYLOAD</definition>
+        <argsstring></argsstring>
+        <name>MAX_PAYLOAD</name>
+        <qualifiedname>agi::msp::MAX_PAYLOAD</qualifiedname>
+        <initializer>= 16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_msgs_defs.hpp" line="9" column="22" bodyfile="agilib/include/agilib/bridge/msp/msp_msgs_defs.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/bridge/msp/msp_msgs_defs.hpp" line="6" column="1"/>
+  </compounddef>
+</doxygen>

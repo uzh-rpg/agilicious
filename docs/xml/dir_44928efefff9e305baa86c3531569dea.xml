@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_44928efefff9e305baa86c3531569dea" kind="dir">
+    <compoundname>agilib/include/agilib/reference/trajectory_reference</compoundname>
+    <innerfile refid="polynomial_8hpp">polynomial.hpp</innerfile>
+    <innerfile refid="polynomial__trajectory_8hpp">polynomial_trajectory.hpp</innerfile>
+    <innerfile refid="sampled__trajectory_8hpp">sampled_trajectory.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/reference/trajectory_reference/"/>
+  </compounddef>
+</doxygen>

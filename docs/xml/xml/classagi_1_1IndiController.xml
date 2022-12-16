@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1IndiController" kind="class" language="C++" prot="public">
+    <compoundname>agi::IndiController</compoundname>
+    <basecompoundref refid="classagi_1_1ControllerBase" prot="public" virt="non-virtual">agi::ControllerBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1IndiController_1a5a526785526f968248ab9b9a83468443" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+        <definition>Quadrotor agi::IndiController::quad_</definition>
+        <argsstring></argsstring>
+        <name>quad_</name>
+        <qualifiedname>agi::IndiController::quad_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="46" column="13" bodyfile="agilib/include/agilib/controller/indi/controller_indi.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1IndiController_1a54136370fb1fab00a9cfeb9bc63f41d3" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="structagi_1_1IndiParameters" kindref="compound">IndiParameters</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;IndiParameters&gt; agi::IndiController::params_</definition>
+        <argsstring></argsstring>
+        <name>params_</name>
+        <qualifiedname>agi::IndiController::params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="47" column="19" bodyfile="agilib/include/agilib/controller/indi/controller_indi.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1IndiController_1a93eba02a7e3af18c623ed19e5250bc62" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1LowPassFilter" kindref="compound">LowPassFilter</ref>&lt; 3 &gt;</type>
+        <definition>LowPassFilter&lt;3&gt; agi::IndiController::filterGyr_</definition>
+        <argsstring></argsstring>
+        <name>filterGyr_</name>
+        <qualifiedname>agi::IndiController::filterGyr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="48" column="17" bodyfile="agilib/include/agilib/controller/indi/controller_indi.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1IndiController_1a7c23303cc29ed734439c06d9e857f369" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1LowPassFilter" kindref="compound">LowPassFilter</ref>&lt; 4 &gt;</type>
+        <definition>LowPassFilter&lt;4&gt; agi::IndiController::filterMot_</definition>
+        <argsstring></argsstring>
+        <name>filterMot_</name>
+        <qualifiedname>agi::IndiController::filterMot_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="49" column="17" bodyfile="agilib/include/agilib/controller/indi/controller_indi.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1IndiController_1a0cf2b3c58b21869d9864e6fe0bef751f" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref></type>
+        <definition>ImuSample agi::IndiController::imu_</definition>
+        <argsstring></argsstring>
+        <name>imu_</name>
+        <qualifiedname>agi::IndiController::imu_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="51" column="13" bodyfile="agilib/include/agilib/controller/indi/controller_indi.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1IndiController_1a9e7e169eb37276d087e4c6244b8d5463" prot="private" static="no" mutable="no">
+        <type>Matrix</type>
+        <definition>Matrix agi::IndiController::G_inv_</definition>
+        <argsstring></argsstring>
+        <name>G_inv_</name>
+        <qualifiedname>agi::IndiController::G_inv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="52" column="4" bodyfile="agilib/include/agilib/controller/indi/controller_indi.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1IndiController_1a805155a23d4b971846bcd6386874a71c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::IndiController::IndiController</definition>
+        <argsstring>(const Quadrotor &amp;quad, const std::shared_ptr&lt; IndiParameters &gt; &amp;params)</argsstring>
+        <name>IndiController</name>
+        <qualifiedname>agi::IndiController::IndiController</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="structagi_1_1IndiParameters" kindref="compound">IndiParameters</ref> &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="26" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1IndiController_1a2912ebe678e6e48069be3da260c590bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::IndiController::~IndiController</definition>
+        <argsstring>()</argsstring>
+        <name>~IndiController</name>
+        <qualifiedname>agi::IndiController::~IndiController</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="28" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1IndiController_1a0faa34a62abc5d90a4502aa6b6e2161a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::IndiController::getCommand</definition>
+        <argsstring>(const QuadState &amp;state, const SetpointVector &amp;references, SetpointVector *const setpoints) override</argsstring>
+        <name>getCommand</name>
+        <qualifiedname>agi::IndiController::getCommand</qualifiedname>
+        <reimplements refid="classagi_1_1ControllerBase_1a36ec36d71b00921aead71d4893ed037f">getCommand</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const SetpointVector &amp;</type>
+          <declname>references</declname>
+        </param>
+        <param>
+          <type>SetpointVector *const</type>
+          <declname>setpoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="30" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1IndiController_1a161b1fef7572af93ccc467dd6057cbf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::IndiController::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::IndiController::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="34" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1IndiController_1adabafb7465b8a6e40c9eb9c5f191d426" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::IndiController::reset</definition>
+        <argsstring>(const QuadState &amp;state)</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::IndiController::reset</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="35" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1IndiController_1a8fd427fe75c6a91410acac3eebc225d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::IndiController::updateParameters</definition>
+        <argsstring>(const Quadrotor &amp;quad, const std::shared_ptr&lt; IndiParameters &gt; params)</argsstring>
+        <name>updateParameters</name>
+        <qualifiedname>agi::IndiController::updateParameters</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="structagi_1_1IndiParameters" kindref="compound">IndiParameters</ref> &gt;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="37" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1IndiController_1a1f73557a33162a76a0d143d052b3bed8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::IndiController::updateParameters</definition>
+        <argsstring>(const Quadrotor &amp;params)</argsstring>
+        <name>updateParameters</name>
+        <qualifiedname>agi::IndiController::updateParameters</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="39" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1IndiController_1a892c6594614e844e22058cf2036eee85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::IndiController::updateParameters</definition>
+        <argsstring>(const std::shared_ptr&lt; IndiParameters &gt; params)</argsstring>
+        <name>updateParameters</name>
+        <qualifiedname>agi::IndiController::updateParameters</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="structagi_1_1IndiParameters" kindref="compound">IndiParameters</ref> &gt;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="40" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1IndiController_1add714ef74af75fb866e3d7c41e0ca76e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="structagi_1_1IndiParameters" kindref="compound">IndiParameters</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; IndiParameters &gt; agi::IndiController::getParameters</definition>
+        <argsstring>()</argsstring>
+        <name>getParameters</name>
+        <qualifiedname>agi::IndiController::getParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="41" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1IndiController_1abb213257d6f927c8ceadb5a5011ede82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void agi::IndiController::addImuSample</definition>
+        <argsstring>(const ImuSample &amp;sample) override</argsstring>
+        <name>addImuSample</name>
+        <qualifiedname>agi::IndiController::addImuSample</qualifiedname>
+        <reimplements refid="classagi_1_1ControllerBase_1a63bad17e94dcdbb999298772ffb779bb">addImuSample</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref> &amp;</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="43" column="8" bodyfile="agilib/include/agilib/controller/indi/controller_indi.hpp" bodystart="43" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>agi::Module&lt; ControllerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="2">
+        <label>agi::ControllerBase</label>
+        <link refid="classagi_1_1ControllerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::IndiController</label>
+        <link refid="classagi_1_1IndiController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>agi::Module&lt; ControllerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ControllerBase</label>
+        <link refid="classagi_1_1ControllerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::IndiController</label>
+        <link refid="classagi_1_1IndiController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/controller/indi/controller_indi.hpp" line="23" column="1" bodyfile="agilib/include/agilib/controller/indi/controller_indi.hpp" bodystart="23" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classagi_1_1IndiController_1abb213257d6f927c8ceadb5a5011ede82" prot="public" virt="virtual"><scope>agi::IndiController</scope><name>addImuSample</name></member>
+      <member refid="classagi_1_1ControllerBase_1adbbc03b1311961d872aebd7d0ff47c1d" prot="public" virt="non-virtual"><scope>agi::IndiController</scope><name>ControllerBase</name></member>
+      <member refid="classagi_1_1ControllerBase_1ac19c23e376075c8e573e1b3080f76a57" prot="public" virt="non-virtual"><scope>agi::IndiController</scope><name>dt</name></member>
+      <member refid="classagi_1_1ControllerBase_1a888ab615293b0332df4f503837b03723" prot="protected" virt="non-virtual"><scope>agi::IndiController</scope><name>exec_dt_</name></member>
+      <member refid="classagi_1_1IndiController_1a93eba02a7e3af18c623ed19e5250bc62" prot="private" virt="non-virtual"><scope>agi::IndiController</scope><name>filterGyr_</name></member>
+      <member refid="classagi_1_1IndiController_1a7c23303cc29ed734439c06d9e857f369" prot="private" virt="non-virtual"><scope>agi::IndiController</scope><name>filterMot_</name></member>
+      <member refid="classagi_1_1IndiController_1a9e7e169eb37276d087e4c6244b8d5463" prot="private" virt="non-virtual"><scope>agi::IndiController</scope><name>G_inv_</name></member>
+      <member refid="classagi_1_1IndiController_1a0faa34a62abc5d90a4502aa6b6e2161a" prot="public" virt="virtual"><scope>agi::IndiController</scope><name>getCommand</name></member>
+      <member refid="classagi_1_1IndiController_1add714ef74af75fb866e3d7c41e0ca76e" prot="public" virt="non-virtual"><scope>agi::IndiController</scope><name>getParameters</name></member>
+      <member refid="classagi_1_1ControllerBase_1a4a5850793263795a322e9357e1d9cc3e" prot="protected" virt="non-virtual"><scope>agi::IndiController</scope><name>horizon_length_</name></member>
+      <member refid="classagi_1_1ControllerBase_1ab28f44d8fd2ce46a01fc10d79d579733" prot="public" virt="non-virtual"><scope>agi::IndiController</scope><name>horizonLength</name></member>
+      <member refid="classagi_1_1IndiController_1a0cf2b3c58b21869d9864e6fe0bef751f" prot="private" virt="non-virtual"><scope>agi::IndiController</scope><name>imu_</name></member>
+      <member refid="classagi_1_1IndiController_1a805155a23d4b971846bcd6386874a71c" prot="public" virt="non-virtual"><scope>agi::IndiController</scope><name>IndiController</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::IndiController</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::IndiController</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::IndiController</scope><name>Module</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::IndiController</scope><name>name</name></member>
+      <member refid="classagi_1_1IndiController_1a54136370fb1fab00a9cfeb9bc63f41d3" prot="private" virt="non-virtual"><scope>agi::IndiController</scope><name>params_</name></member>
+      <member refid="classagi_1_1ControllerBase_1a347077cec886c432483b3168b3b59821" prot="protected" virt="non-virtual"><scope>agi::IndiController</scope><name>pred_dt_</name></member>
+      <member refid="classagi_1_1IndiController_1a5a526785526f968248ab9b9a83468443" prot="private" virt="non-virtual"><scope>agi::IndiController</scope><name>quad_</name></member>
+      <member refid="classagi_1_1IndiController_1a161b1fef7572af93ccc467dd6057cbf6" prot="public" virt="non-virtual"><scope>agi::IndiController</scope><name>reset</name></member>
+      <member refid="classagi_1_1IndiController_1adabafb7465b8a6e40c9eb9c5f191d426" prot="public" virt="non-virtual"><scope>agi::IndiController</scope><name>reset</name></member>
+      <member refid="classagi_1_1IndiController_1a8fd427fe75c6a91410acac3eebc225d6" prot="public" virt="non-virtual"><scope>agi::IndiController</scope><name>updateParameters</name></member>
+      <member refid="classagi_1_1IndiController_1a1f73557a33162a76a0d143d052b3bed8" prot="public" virt="non-virtual"><scope>agi::IndiController</scope><name>updateParameters</name></member>
+      <member refid="classagi_1_1IndiController_1a892c6594614e844e22058cf2036eee85" prot="public" virt="non-virtual"><scope>agi::IndiController</scope><name>updateParameters</name></member>
+      <member refid="classagi_1_1ControllerBase_1a7f8d13d6e9126f7854f1f91ce7c246a7" prot="public" virt="virtual"><scope>agi::IndiController</scope><name>~ControllerBase</name></member>
+      <member refid="classagi_1_1IndiController_1a2912ebe678e6e48069be3da260c590bb" prot="public" virt="non-virtual"><scope>agi::IndiController</scope><name>~IndiController</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::IndiController</scope><name>~Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

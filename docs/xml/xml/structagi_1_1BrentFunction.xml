@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1BrentFunction" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>agi::BrentFunction</compoundname>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>rows</declname>
+        <defname>rows</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structagi_1_1BrentFunction_1ade455cf08a2f0a96f0db8b74e166ef59" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::BrentFunction&lt; rows &gt;::SIZE</definition>
+        <argsstring></argsstring>
+        <name>SIZE</name>
+        <qualifiedname>agi::BrentFunction::SIZE</qualifiedname>
+        <initializer>= rows</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/brent.hpp" line="19" column="24" bodyfile="agilib/include/agilib/simulator/bem/brent.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1BrentFunction_1ac009f5b7eace92bef8690054c914feca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>virtual EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::BrentFunction&lt; rows &gt;::~BrentFunction</definition>
+        <argsstring>()=default</argsstring>
+        <name>~BrentFunction</name>
+        <qualifiedname>agi::BrentFunction::~BrentFunction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/brent.hpp" line="15" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1BrentFunction_1a4bee8e79eacd6dc2b24d7231650c4bad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>ArrayVector&lt; rows &gt;</type>
+        <definition>virtual ArrayVector&lt; rows &gt; agi::BrentFunction&lt; rows &gt;::evaluate</definition>
+        <argsstring>(const Ref&lt; const ArrayVector&lt; rows &gt; &gt;) const =0</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>agi::BrentFunction::evaluate</qualifiedname>
+        <param>
+          <type>const Ref&lt; const ArrayVector&lt; rows &gt; &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/brent.hpp" line="16" column="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/simulator/bem/brent.hpp" line="13" column="1" bodyfile="agilib/include/agilib/simulator/bem/brent.hpp" bodystart="13" bodyend="20"/>
+    <listofallmembers>
+      <member refid="structagi_1_1BrentFunction_1a4bee8e79eacd6dc2b24d7231650c4bad" prot="public" virt="pure-virtual"><scope>agi::BrentFunction</scope><name>evaluate</name></member>
+      <member refid="structagi_1_1BrentFunction_1ade455cf08a2f0a96f0db8b74e166ef59" prot="public" virt="non-virtual"><scope>agi::BrentFunction</scope><name>SIZE</name></member>
+      <member refid="structagi_1_1BrentFunction_1ac009f5b7eace92bef8690054c914feca" prot="public" virt="virtual"><scope>agi::BrentFunction</scope><name>~BrentFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

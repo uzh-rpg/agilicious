@@ -1,0 +1,1086 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespaceagi" kind="namespace" language="C++">
+    <compoundname>agi</compoundname>
+    <innerclass refid="classagi_1_1AgiWatchdog" prot="public">agi::AgiWatchdog</innerclass>
+    <innerclass refid="structagi_1_1ApproxAtan2" prot="public">agi::ApproxAtan2</innerclass>
+    <innerclass refid="structagi_1_1BEMParameters" prot="public">agi::BEMParameters</innerclass>
+    <innerclass refid="structagi_1_1BodyDragParameters" prot="public">agi::BodyDragParameters</innerclass>
+    <innerclass refid="classagi_1_1Brent" prot="public">agi::Brent</innerclass>
+    <innerclass refid="structagi_1_1BrentFunction" prot="public">agi::BrentFunction</innerclass>
+    <innerclass refid="classagi_1_1BridgeBase" prot="public">agi::BridgeBase</innerclass>
+    <innerclass refid="classagi_1_1ClosedFormMinJerkAxis" prot="public">agi::ClosedFormMinJerkAxis</innerclass>
+    <innerclass refid="classagi_1_1ClosedFormMinJerkTrajectory" prot="public">agi::ClosedFormMinJerkTrajectory</innerclass>
+    <innerclass refid="structagi_1_1COBS" prot="public">agi::COBS</innerclass>
+    <innerclass refid="classagi_1_1CogFilter" prot="public">agi::CogFilter</innerclass>
+    <innerclass refid="structagi_1_1Command" prot="public">agi::Command</innerclass>
+    <innerclass refid="classagi_1_1ControllerBase" prot="public">agi::ControllerBase</innerclass>
+    <innerclass refid="classagi_1_1CRC" prot="public">agi::CRC</innerclass>
+    <innerclass refid="classagi_1_1CtrlBridge" prot="public">agi::CtrlBridge</innerclass>
+    <innerclass refid="classagi_1_1CtrlEncoding" prot="public">agi::CtrlEncoding</innerclass>
+    <innerclass refid="structagi_1_1CtrlParams" prot="public">agi::CtrlParams</innerclass>
+    <innerclass refid="classagi_1_1DebugBridge" prot="public">agi::DebugBridge</innerclass>
+    <innerclass refid="classagi_1_1Ekf" prot="public">agi::Ekf</innerclass>
+    <innerclass refid="classagi_1_1EkfImu" prot="public">agi::EkfImu</innerclass>
+    <innerclass refid="structagi_1_1EkfImuParameters" prot="public">agi::EkfImuParameters</innerclass>
+    <innerclass refid="structagi_1_1EkfParameters" prot="public">agi::EkfParameters</innerclass>
+    <innerclass refid="classagi_1_1EstimatorBase" prot="public">agi::EstimatorBase</innerclass>
+    <innerclass refid="structagi_1_1Feedback" prot="public">agi::Feedback</innerclass>
+    <innerclass refid="classagi_1_1FeedthroughEstimator" prot="public">agi::FeedthroughEstimator</innerclass>
+    <innerclass refid="structagi_1_1FeedthroughParameters" prot="public">agi::FeedthroughParameters</innerclass>
+    <innerclass refid="classagi_1_1GaussKronrod" prot="public">agi::GaussKronrod</innerclass>
+    <innerclass refid="structagi_1_1GaussKronrodFunction" prot="public">agi::GaussKronrodFunction</innerclass>
+    <innerclass refid="structagi_1_1GaussKronrodResult" prot="public">agi::GaussKronrodResult</innerclass>
+    <innerclass refid="classagi_1_1GeometricController" prot="public">agi::GeometricController</innerclass>
+    <innerclass refid="structagi_1_1GeometricControllerParams" prot="public">agi::GeometricControllerParams</innerclass>
+    <innerclass refid="classagi_1_1GuardBase" prot="public">agi::GuardBase</innerclass>
+    <innerclass refid="classagi_1_1HoverReference" prot="public">agi::HoverReference</innerclass>
+    <innerclass refid="structagi_1_1ImuSample" prot="public">agi::ImuSample</innerclass>
+    <innerclass refid="classagi_1_1IndiController" prot="public">agi::IndiController</innerclass>
+    <innerclass refid="structagi_1_1IndiParameters" prot="public">agi::IndiParameters</innerclass>
+    <innerclass refid="structagi_1_1IntegrandParam" prot="public">agi::IntegrandParam</innerclass>
+    <innerclass refid="classagi_1_1IntegrandPsi" prot="public">agi::IntegrandPsi</innerclass>
+    <innerclass refid="classagi_1_1IntegrandR" prot="public">agi::IntegrandR</innerclass>
+    <innerclass refid="classagi_1_1IntegratorBase" prot="public">agi::IntegratorBase</innerclass>
+    <innerclass refid="classagi_1_1IntegratorEuler" prot="public">agi::IntegratorEuler</innerclass>
+    <innerclass refid="classagi_1_1IntegratorRK4" prot="public">agi::IntegratorRK4</innerclass>
+    <innerclass refid="classagi_1_1IntegratorSymplecticEuler" prot="public">agi::IntegratorSymplecticEuler</innerclass>
+    <innerclass refid="classagi_1_1LairdBridge" prot="public">agi::LairdBridge</innerclass>
+    <innerclass refid="classagi_1_1LairdEncoding" prot="public">agi::LairdEncoding</innerclass>
+    <innerclass refid="structagi_1_1LairdParams" prot="public">agi::LairdParams</innerclass>
+    <innerclass refid="structagi_1_1LinCubDragParameters" prot="public">agi::LinCubDragParameters</innerclass>
+    <innerclass refid="classagi_1_1Logger" prot="public">agi::Logger</innerclass>
+    <innerclass refid="classagi_1_1LowLevelControllerBase" prot="public">agi::LowLevelControllerBase</innerclass>
+    <innerclass refid="classagi_1_1LowLevelControllerBetaflight" prot="public">agi::LowLevelControllerBetaflight</innerclass>
+    <innerclass refid="structagi_1_1LowLevelControllerBetaflightParams" prot="public">agi::LowLevelControllerBetaflightParams</innerclass>
+    <innerclass refid="classagi_1_1LowLevelControllerSimple" prot="public">agi::LowLevelControllerSimple</innerclass>
+    <innerclass refid="structagi_1_1LowLevelControllerSimpleParams" prot="public">agi::LowLevelControllerSimpleParams</innerclass>
+    <innerclass refid="classagi_1_1LowPassFilter" prot="public">agi::LowPassFilter</innerclass>
+    <innerclass refid="classagi_1_1Median" prot="public">agi::Median</innerclass>
+    <innerclass refid="classagi_1_1MinJerkTrajectory" prot="public">agi::MinJerkTrajectory</innerclass>
+    <innerclass refid="classagi_1_1MinSnapTrajectory" prot="public">agi::MinSnapTrajectory</innerclass>
+    <innerclass refid="classagi_1_1MockVio" prot="public">agi::MockVio</innerclass>
+    <innerclass refid="structagi_1_1MockVioParams" prot="public">agi::MockVioParams</innerclass>
+    <innerclass refid="classagi_1_1ModelBase" prot="public">agi::ModelBase</innerclass>
+    <innerclass refid="classagi_1_1ModelBodyDrag" prot="public">agi::ModelBodyDrag</innerclass>
+    <innerclass refid="classagi_1_1ModelInit" prot="public">agi::ModelInit</innerclass>
+    <innerclass refid="classagi_1_1ModelLinCubDrag" prot="public">agi::ModelLinCubDrag</innerclass>
+    <innerclass refid="classagi_1_1ModelMotor" prot="public">agi::ModelMotor</innerclass>
+    <innerclass refid="classagi_1_1ModelPropellerBEM" prot="public">agi::ModelPropellerBEM</innerclass>
+    <innerclass refid="classagi_1_1ModelRigidBody" prot="public">agi::ModelRigidBody</innerclass>
+    <innerclass refid="classagi_1_1ModelThrustTorqueSimple" prot="public">agi::ModelThrustTorqueSimple</innerclass>
+    <innerclass refid="classagi_1_1Module" prot="public">agi::Module</innerclass>
+    <innerclass refid="structagi_1_1ModuleConfig" prot="public">agi::ModuleConfig</innerclass>
+    <innerclass refid="classagi_1_1MpcController" prot="public">agi::MpcController</innerclass>
+    <innerclass refid="structagi_1_1MpcParameters" prot="public">agi::MpcParameters</innerclass>
+    <innerclass refid="classagi_1_1MsgEncoding" prot="public">agi::MsgEncoding</innerclass>
+    <innerclass refid="classagi_1_1MspBridge" prot="public">agi::MspBridge</innerclass>
+    <innerclass refid="classagi_1_1MspEncoding" prot="public">agi::MspEncoding</innerclass>
+    <innerclass refid="structagi_1_1MspPacket" prot="public">agi::MspPacket</innerclass>
+    <innerclass refid="structagi_1_1MspParams" prot="public">agi::MspParams</innerclass>
+    <innerclass refid="structagi_1_1ParameterBase" prot="public">agi::ParameterBase</innerclass>
+    <innerclass refid="structagi_1_1ParameterException" prot="public">agi::ParameterException</innerclass>
+    <innerclass refid="classagi_1_1PidController" prot="public">agi::PidController</innerclass>
+    <innerclass refid="structagi_1_1PidParameters" prot="public">agi::PidParameters</innerclass>
+    <innerclass refid="classagi_1_1Pilot" prot="public">agi::Pilot</innerclass>
+    <innerclass refid="classagi_1_1PilotParams" prot="public">agi::PilotParams</innerclass>
+    <innerclass refid="classagi_1_1Pipeline" prot="public">agi::Pipeline</innerclass>
+    <innerclass refid="structagi_1_1PipelineConfig" prot="public">agi::PipelineConfig</innerclass>
+    <innerclass refid="classagi_1_1Polynomial" prot="public">agi::Polynomial</innerclass>
+    <innerclass refid="classagi_1_1PolynomialTrajectory" prot="public">agi::PolynomialTrajectory</innerclass>
+    <innerclass refid="structagi_1_1Pose" prot="public">agi::Pose</innerclass>
+    <innerclass refid="classagi_1_1PositionGuard" prot="public">agi::PositionGuard</innerclass>
+    <innerclass refid="structagi_1_1PositionGuardParams" prot="public">agi::PositionGuardParams</innerclass>
+    <innerclass refid="classagi_1_1PositionSampler" prot="public">agi::PositionSampler</innerclass>
+    <innerclass refid="structagi_1_1PositionSamplerParameters" prot="public">agi::PositionSamplerParameters</innerclass>
+    <innerclass refid="structagi_1_1PropellerData" prot="public">agi::PropellerData</innerclass>
+    <innerclass refid="structagi_1_1PropellerState" prot="public">agi::PropellerState</innerclass>
+    <innerclass refid="structagi_1_1PublishLogContainer" prot="public">agi::PublishLogContainer</innerclass>
+    <innerclass refid="structagi_1_1Quadrotor" prot="public">agi::Quadrotor</innerclass>
+    <innerclass refid="classagi_1_1QuadrotorSimulator" prot="public">agi::QuadrotorSimulator</innerclass>
+    <innerclass refid="structagi_1_1QuadState" prot="public">agi::QuadState</innerclass>
+    <innerclass refid="classagi_1_1ReferenceBase" prot="public">agi::ReferenceBase</innerclass>
+    <innerclass refid="classagi_1_1SampledTrajectory" prot="public">agi::SampledTrajectory</innerclass>
+    <innerclass refid="classagi_1_1SamplerBase" prot="public">agi::SamplerBase</innerclass>
+    <innerclass refid="classagi_1_1SbusBridge" prot="public">agi::SbusBridge</innerclass>
+    <innerclass refid="classagi_1_1SbusEncoding" prot="public">agi::SbusEncoding</innerclass>
+    <innerclass refid="structagi_1_1SbusParams" prot="public">agi::SbusParams</innerclass>
+    <innerclass refid="classagi_1_1SbusSerialSettings" prot="public">agi::SbusSerialSettings</innerclass>
+    <innerclass refid="classagi_1_1ScopedTicToc" prot="public">agi::ScopedTicToc</innerclass>
+    <innerclass refid="classagi_1_1ScopedTimer" prot="public">agi::ScopedTimer</innerclass>
+    <innerclass refid="classagi_1_1SerialBridge" prot="public">agi::SerialBridge</innerclass>
+    <innerclass refid="classagi_1_1SerialPort" prot="public">agi::SerialPort</innerclass>
+    <innerclass refid="classagi_1_1SerialSettings" prot="public">agi::SerialSettings</innerclass>
+    <innerclass refid="structagi_1_1Setpoint" prot="public">agi::Setpoint</innerclass>
+    <innerclass refid="classagi_1_1SimulatorBase" prot="public">agi::SimulatorBase</innerclass>
+    <innerclass refid="classagi_1_1SimulatorParams" prot="public">agi::SimulatorParams</innerclass>
+    <innerclass refid="classagi_1_1StaticTimer" prot="public">agi::StaticTimer</innerclass>
+    <innerclass refid="classagi_1_1Throttler" prot="public">agi::Throttler</innerclass>
+    <innerclass refid="classagi_1_1ThrustFunction" prot="public">agi::ThrustFunction</innerclass>
+    <innerclass refid="structagi_1_1ThrustMap" prot="public">agi::ThrustMap</innerclass>
+    <innerclass refid="classagi_1_1Timer" prot="public">agi::Timer</innerclass>
+    <innerclass refid="classagi_1_1TimeSampler" prot="public">agi::TimeSampler</innerclass>
+    <innerclass refid="classagi_1_1VelocityReference" prot="public">agi::VelocityReference</innerclass>
+    <innerclass refid="classagi_1_1Yaml" prot="public">agi::Yaml</innerclass>
+    <innernamespace refid="namespaceagi_1_1acados">agi::acados</innernamespace>
+    <innernamespace refid="namespaceagi_1_1ctrl">agi::ctrl</innernamespace>
+    <innernamespace refid="namespaceagi_1_1msp">agi::msp</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="serial__settings_8hpp_1aa29aae29e16fc4c921d47b3d9bed2b40" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>SerialMode</name>
+        <qualifiedname>agi::SerialMode</qualifiedname>
+        <enumvalue id="serial__settings_8hpp_1aa29aae29e16fc4c921d47b3d9bed2b40a7a1a5f3e79fdc91edf2f5ead9d66abb4" prot="public">
+          <name>Read</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="serial__settings_8hpp_1aa29aae29e16fc4c921d47b3d9bed2b40a1129c0e4d43f2d121652a7302712cff6" prot="public">
+          <name>Write</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="serial__settings_8hpp_1aa29aae29e16fc4c921d47b3d9bed2b40a70a2a84088d405a2e3f1e3accaa16723" prot="public">
+          <name>ReadWrite</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial_settings.hpp" line="8" column="1" bodyfile="agilib/include/agilib/serial/serial_settings.hpp" bodystart="8" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="bridge__base_8hpp_1a8d4648ca84abaa50ef1cf5659f5add9a" prot="public" static="no">
+        <type>std::function&lt; void(const <ref refid="structagi_1_1Feedback" kindref="compound">Feedback</ref> &amp;)&gt;</type>
+        <definition>using agi::FeedbackCallbackFunction = typedef std::function&lt;void(const Feedback&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>FeedbackCallbackFunction</name>
+        <qualifiedname>agi::FeedbackCallbackFunction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="18" column="1" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1afd4c2286dd418639cd0e66a0d8e19b14" prot="public" static="no">
+        <type>double</type>
+        <definition>using agi::Scalar = typedef double</definition>
+        <argsstring></argsstring>
+        <name>Scalar</name>
+        <qualifiedname>agi::Scalar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="9" column="1" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1ad4b5f3994566d5faf774d017a5f7e2ec" prot="public" static="no">
+        <type>int</type>
+        <definition>using agi::Integer = typedef int</definition>
+        <argsstring></argsstring>
+        <name>Integer</name>
+        <qualifiedname>agi::Integer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="10" column="1" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1a690907fb54650fec010b897d1c2488b7" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>rows</declname>
+            <defname>rows</defname>
+            <defval>Dynamic</defval>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>cols</declname>
+            <defname>cols</defname>
+            <defval>rows</defval>
+          </param>
+        </templateparamlist>
+        <type>Eigen::Matrix&lt; Scalar, rows, cols &gt;</type>
+        <definition>using agi::Matrix = typedef Eigen::Matrix&lt;Scalar, rows, cols&gt;</definition>
+        <argsstring></argsstring>
+        <name>Matrix</name>
+        <qualifiedname>agi::Matrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="18" column="1" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1a7a9c760cfa81fb2c006728ccb01b7eee" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>rows</declname>
+            <defname>rows</defname>
+            <defval>Dynamic</defval>
+          </param>
+        </templateparamlist>
+        <type>Matrix&lt; rows, 1 &gt;</type>
+        <definition>using agi::Vector = typedef Matrix&lt;rows, 1&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector</name>
+        <qualifiedname>agi::Vector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="22" column="1" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1a541c6143d06ac5d948a9806076ad38ba" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>rows</declname>
+            <defname>rows</defname>
+            <defval>Dynamic</defval>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>cols</declname>
+            <defname>cols</defname>
+            <defval>rows</defval>
+          </param>
+        </templateparamlist>
+        <type>Eigen::Array&lt; Scalar, rows, cols &gt;</type>
+        <definition>using agi::Array = typedef Eigen::Array&lt;Scalar, rows, cols&gt;</definition>
+        <argsstring></argsstring>
+        <name>Array</name>
+        <qualifiedname>agi::Array</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="26" column="1" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1a8332342e382363b0a370ab5e88ca5888" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>rows</declname>
+            <defname>rows</defname>
+            <defval>Dynamic</defval>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>cols</declname>
+            <defname>cols</defname>
+            <defval>rows</defval>
+          </param>
+        </templateparamlist>
+        <type>Eigen::Matrix&lt; Integer, rows, cols &gt;</type>
+        <definition>using agi::MatrixInt = typedef Eigen::Matrix&lt;Integer, rows, cols&gt;</definition>
+        <argsstring></argsstring>
+        <name>MatrixInt</name>
+        <qualifiedname>agi::MatrixInt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="30" column="1" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1a3f7c23bdcd1c27c3025ad68c66016271" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>rows</declname>
+            <defname>rows</defname>
+            <defval>Dynamic</defval>
+          </param>
+        </templateparamlist>
+        <type>MatrixInt&lt; rows, 1 &gt;</type>
+        <definition>using agi::VectorInt = typedef MatrixInt&lt;rows, 1&gt;</definition>
+        <argsstring></argsstring>
+        <name>VectorInt</name>
+        <qualifiedname>agi::VectorInt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="34" column="1" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1ad90b5fd90f93246b1e95e4e6b668a8f3" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>rows</declname>
+            <defname>rows</defname>
+            <defval>Dynamic</defval>
+          </param>
+        </templateparamlist>
+        <type>Array&lt; rows, 1 &gt;</type>
+        <definition>using agi::ArrayVector = typedef Array&lt;rows, 1&gt;</definition>
+        <argsstring></argsstring>
+        <name>ArrayVector</name>
+        <qualifiedname>agi::ArrayVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="38" column="1" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1ae3d78cb81be4d3562782bf7cb639d36e" prot="public" static="no">
+        <type>Eigen::SparseMatrix&lt; Scalar &gt;</type>
+        <definition>using agi::SparseMatrix = typedef Eigen::SparseMatrix&lt;Scalar&gt;</definition>
+        <argsstring></argsstring>
+        <name>SparseMatrix</name>
+        <qualifiedname>agi::SparseMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="41" column="1" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1af2467ef4534061423ce70ed5ae4c37f6" prot="public" static="no">
+        <type>Eigen::Triplet&lt; Scalar &gt;</type>
+        <definition>using agi::SparseTriplet = typedef Eigen::Triplet&lt;Scalar&gt;</definition>
+        <argsstring></argsstring>
+        <name>SparseTriplet</name>
+        <qualifiedname>agi::SparseTriplet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="44" column="1" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1a6ff0f4f90d7c81aa189981708f5085e1" prot="public" static="no">
+        <type>Eigen::Quaternion&lt; Scalar &gt;</type>
+        <definition>using agi::Quaternion = typedef Eigen::Quaternion&lt;Scalar&gt;</definition>
+        <argsstring></argsstring>
+        <name>Quaternion</name>
+        <qualifiedname>agi::Quaternion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="47" column="1" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1aab9b2a61e686df91e6b3e25042ccd19c" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>class Derived</type>
+          </param>
+        </templateparamlist>
+        <type>Eigen::Ref&lt; Derived &gt;</type>
+        <definition>using agi::Ref = typedef Eigen::Ref&lt;Derived&gt;</definition>
+        <argsstring></argsstring>
+        <name>Ref</name>
+        <qualifiedname>agi::Ref</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="51" column="1" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1aaa78fabefbf1189e0ab699496e1fd91a" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>class Derived</type>
+          </param>
+        </templateparamlist>
+        <type>const Eigen::Ref&lt; const Derived &gt;</type>
+        <definition>using agi::ConstRef = typedef const Eigen::Ref&lt;const Derived&gt;</definition>
+        <argsstring></argsstring>
+        <name>ConstRef</name>
+        <qualifiedname>agi::ConstRef</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="55" column="1" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1a7f732ff0b1f279b89991ad5b88cb4c9e" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>class Derived</type>
+          </param>
+        </templateparamlist>
+        <type>Eigen::Map&lt; Derived &gt;</type>
+        <definition>using agi::Map = typedef Eigen::Map&lt;Derived&gt;</definition>
+        <argsstring></argsstring>
+        <name>Map</name>
+        <qualifiedname>agi::Map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="59" column="1" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1a1b29c56affa10cc8e0ac40f903021b4c" prot="public" static="no">
+        <type>std::function&lt; bool(const Ref&lt; const Vector&lt;&gt; &gt;, Ref&lt; Vector&lt;&gt; &gt;)&gt;</type>
+        <definition>using agi::DynamicsFunction = typedef std::function&lt;bool(const Ref&lt;const Vector&lt;&gt; &gt;, Ref&lt;Vector&lt;&gt; &gt;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>DynamicsFunction</name>
+        <qualifiedname>agi::DynamicsFunction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="61" column="1" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="reference__base_8hpp_1a0c6699412306a56586b68e0b02679346" prot="public" static="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="classagi_1_1ReferenceBase" kindref="compound">ReferenceBase</ref> &gt; &gt;</type>
+        <definition>using agi::ReferenceVector = typedef std::vector&lt;std::shared_ptr&lt;ReferenceBase&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>ReferenceVector</name>
+        <qualifiedname>agi::ReferenceVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/reference_base.hpp" line="49" column="1" bodyfile="agilib/include/agilib/reference/reference_base.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="crc_8hpp_1a1a7c4506d338fc53518d7bb48b093c20" prot="public" static="no">
+        <type><ref refid="classagi_1_1CRC" kindref="compound">CRC</ref>&lt; uint16_t, 0xA001 &gt;</type>
+        <definition>using agi::CRC16 = typedef CRC&lt;uint16_t, 0xA001&gt;</definition>
+        <argsstring></argsstring>
+        <name>CRC16</name>
+        <qualifiedname>agi::CRC16</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/crc.hpp" line="42" column="1" bodyfile="agilib/include/agilib/serial/crc.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="crc_8hpp_1a2d35680e487c8a0b23f38f4dc647cc30" prot="public" static="no">
+        <type><ref refid="classagi_1_1CRC" kindref="compound">CRC</ref>&lt; uint32_t, 0xEDB88320 &gt;</type>
+        <definition>using agi::CRC32 = typedef CRC&lt;uint32_t, 0xEDB88320&gt;</definition>
+        <argsstring></argsstring>
+        <name>CRC32</name>
+        <qualifiedname>agi::CRC32</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/crc.hpp" line="43" column="1" bodyfile="agilib/include/agilib/serial/crc.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="crc_8hpp_1a057b78889693f45bf4f78ff8f4f491db" prot="public" static="no">
+        <type><ref refid="classagi_1_1CRC" kindref="compound">CRC</ref>&lt; uint64_t, 0xC96C5795D7870F42 &gt;</type>
+        <definition>using agi::CRC64 = typedef CRC&lt;uint64_t, 0xC96C5795D7870F42&gt;</definition>
+        <argsstring></argsstring>
+        <name>CRC64</name>
+        <qualifiedname>agi::CRC64</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/crc.hpp" line="44" column="1" bodyfile="agilib/include/agilib/serial/crc.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="quad__state_8hpp_1a5854d5fd20c74d346f08c5d55b276612" prot="public" static="no">
+        <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref></type>
+        <definition>using agi::QS = typedef QuadState</definition>
+        <argsstring></argsstring>
+        <name>QS</name>
+        <qualifiedname>agi::QS</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="128" column="1" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="setpoint_8hpp_1aef58ac609af8e226d0aa19943ce0ed00" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="structagi_1_1Setpoint" kindref="compound">Setpoint</ref> &gt;</type>
+        <definition>using agi::SetpointVector = typedef std::vector&lt;Setpoint&gt;</definition>
+        <argsstring></argsstring>
+        <name>SetpointVector</name>
+        <qualifiedname>agi::SetpointVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/setpoint.hpp" line="21" column="1" bodyfile="agilib/include/agilib/types/setpoint.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="timer_8hpp_1ab7d922e71bb530264f47e6a677ee8ce3" prot="public" static="no">
+        <type>std::function&lt; Scalar()&gt;</type>
+        <definition>using agi::TimeFunction = typedef std::function&lt;Scalar()&gt;</definition>
+        <argsstring></argsstring>
+        <name>TimeFunction</name>
+        <qualifiedname>agi::TimeFunction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="31" column="1" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gravity_8hpp_1a8f742cb475b84928f55045f87101a719" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr Scalar</type>
+        <definition>constexpr Scalar agi::G</definition>
+        <argsstring></argsstring>
+        <name>G</name>
+        <qualifiedname>agi::G</qualifiedname>
+        <initializer>= 9.8066</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gravity Value [m/s^2]</para>
+<para>This is the gravity value used in the whole project. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/gravity.hpp" line="11" column="25" bodyfile="agilib/include/agilib/math/gravity.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gravity_8hpp_1a830b11ddd33e42764311ee2286c4f7c0" prot="public" static="no" mutable="no">
+        <type>const Vector&lt; 3 &gt;</type>
+        <definition>const Vector&lt;3&gt; agi::GVEC</definition>
+        <argsstring></argsstring>
+        <name>GVEC</name>
+        <qualifiedname>agi::GVEC</qualifiedname>
+        <initializer>{0, 0, -G}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gravity Vector [m/s^2]</para>
+<para>This is the gravity vector pointing in negative z-direction. It uses the value of G. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/gravity.hpp" line="20" column="14" bodyfile="agilib/include/agilib/math/gravity.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="types_8hpp_1a1398a5d8ce9d4d17b56cfba9307d6a5d" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr Scalar</type>
+        <definition>constexpr Scalar agi::INF</definition>
+        <argsstring></argsstring>
+        <name>INF</name>
+        <qualifiedname>agi::INF</qualifiedname>
+        <initializer>= std::numeric_limits&lt;Scalar&gt;::infinity()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="11" column="25" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="types_8hpp_1af768d22c9440727a5f33e7491539cb21" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::Dynamic</definition>
+        <argsstring></argsstring>
+        <name>Dynamic</name>
+        <qualifiedname>agi::Dynamic</qualifiedname>
+        <initializer>= Eigen::Dynamic</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/types.hpp" line="14" column="22" bodyfile="agilib/include/agilib/math/types.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="timer_8hpp_1abc96c73f0f448bb454e4f0405a916d37" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto agi::ChronoTime</definition>
+        <argsstring></argsstring>
+        <name>ChronoTime</name>
+        <qualifiedname>agi::ChronoTime</qualifiedname>
+        <initializer>= []() -&gt; agi::Scalar {
+  const std::chrono::high_resolution_clock::time_point now =
+    std::chrono::high_resolution_clock::now();
+  return 1e-9 * std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(
+                  now.time_since_epoch())
+                  .count();
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="32" column="23" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="fast__atan2_8hpp_1a7cadfff09c3fd007fc7ca5e46054a506" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T agi::fastApproxAtan2</definition>
+        <argsstring>(const T x, const T y)</argsstring>
+        <name>fastApproxAtan2</name>
+        <qualifiedname>agi::fastApproxAtan2</qualifiedname>
+        <param>
+          <type>const T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/fast_atan2.hpp" line="62" column="3" bodyfile="agilib/include/agilib/math/fast_atan2.hpp" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1a985a9016ccef3ba4eff910027a707916" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Matrix&lt; 3, 3 &gt;</type>
+        <definition>Matrix&lt; 3, 3 &gt; agi::skew</definition>
+        <argsstring>(const Vector&lt; 3 &gt; &amp;v)</argsstring>
+        <name>skew</name>
+        <qualifiedname>agi::skew</qualifiedname>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/math.hpp" line="7" column="8" declfile="agilib/include/agilib/math/math.hpp" declline="7" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1aa0172c4613119621dd7570dbc3d4cabb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Matrix&lt; 4, 4 &gt;</type>
+        <definition>Matrix&lt; 4, 4 &gt; agi::Q_left</definition>
+        <argsstring>(const Quaternion &amp;q)</argsstring>
+        <name>Q_left</name>
+        <qualifiedname>agi::Q_left</qualifiedname>
+        <param>
+          <type>const Quaternion &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/math.hpp" line="9" column="8" declfile="agilib/include/agilib/math/math.hpp" declline="9" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1a0d1ab7383b3c3ee889e2f3ea2cadb7aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Matrix&lt; 4, 4 &gt;</type>
+        <definition>Matrix&lt; 4, 4 &gt; agi::Q_right</definition>
+        <argsstring>(const Quaternion &amp;q)</argsstring>
+        <name>Q_right</name>
+        <qualifiedname>agi::Q_right</qualifiedname>
+        <param>
+          <type>const Quaternion &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/math.hpp" line="11" column="8" declfile="agilib/include/agilib/math/math.hpp" declline="11" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1a8dd01bd12e1b0ab9291dad17e4bdc8e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Matrix&lt; 4, 3 &gt;</type>
+        <definition>Matrix&lt; 4, 3 &gt; agi::qFromQeJacobian</definition>
+        <argsstring>(const Quaternion &amp;q)</argsstring>
+        <name>qFromQeJacobian</name>
+        <qualifiedname>agi::qFromQeJacobian</qualifiedname>
+        <param>
+          <type>const Quaternion &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/math.hpp" line="13" column="8" declfile="agilib/include/agilib/math/math.hpp" declline="13" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1afaaeb30740154906ae65e16847c608fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Matrix&lt; 4, 4 &gt;</type>
+        <definition>Matrix&lt; 4, 4 &gt; agi::qConjugateJacobian</definition>
+        <argsstring>()</argsstring>
+        <name>qConjugateJacobian</name>
+        <qualifiedname>agi::qConjugateJacobian</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/math.hpp" line="15" column="8" declfile="agilib/include/agilib/math/math.hpp" declline="15" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1a38606a3f45b2cedce766cc674127d313" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Matrix&lt; 3, 3 &gt;</type>
+        <definition>Matrix&lt; 3, 3 &gt; agi::qeRotJacobian</definition>
+        <argsstring>(const Quaternion &amp;q, const Matrix&lt; 3, 1 &gt; &amp;t)</argsstring>
+        <name>qeRotJacobian</name>
+        <qualifiedname>agi::qeRotJacobian</qualifiedname>
+        <param>
+          <type>const Quaternion &amp;</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>const Matrix&lt; 3, 1 &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/math.hpp" line="17" column="8" declfile="agilib/include/agilib/math/math.hpp" declline="17" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1af74b249a6e8003b8a7b2b9c418cdf2ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Matrix&lt; 3, 3 &gt;</type>
+        <definition>Matrix&lt; 3, 3 &gt; agi::qeInvRotJacobian</definition>
+        <argsstring>(const Quaternion &amp;q, const Matrix&lt; 3, 1 &gt; &amp;t)</argsstring>
+        <name>qeInvRotJacobian</name>
+        <qualifiedname>agi::qeInvRotJacobian</qualifiedname>
+        <param>
+          <type>const Quaternion &amp;</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>const Matrix&lt; 3, 1 &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/math.hpp" line="19" column="8" declfile="agilib/include/agilib/math/math.hpp" declline="19" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1a6561b44294cdcee10194c2795245b360" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::matrixToTripletList</definition>
+        <argsstring>(const SparseMatrix &amp;matrix, std::vector&lt; SparseTriplet &gt; *const list, const int row_offset=0, const int col_offset=0)</argsstring>
+        <name>matrixToTripletList</name>
+        <qualifiedname>agi::matrixToTripletList</qualifiedname>
+        <param>
+          <type>const SparseMatrix &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; SparseTriplet &gt; *const</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>row_offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>col_offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/math.hpp" line="21" column="6" declfile="agilib/include/agilib/math/math.hpp" declline="21" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1a6993b90ee519f6cc287afa11cfc23cfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::matrixToTripletList</definition>
+        <argsstring>(const Matrix&lt;&gt; &amp;matrix, std::vector&lt; SparseTriplet &gt; *const list, const int row_offset=0, const int col_offset=0)</argsstring>
+        <name>matrixToTripletList</name>
+        <qualifiedname>agi::matrixToTripletList</qualifiedname>
+        <param>
+          <type>const Matrix&lt;&gt; &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; SparseTriplet &gt; *const</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>row_offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>col_offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/math.hpp" line="25" column="6" declfile="agilib/include/agilib/math/math.hpp" declline="25" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1a19d9ffb690a501cda33d2cad9b8148ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::insert</definition>
+        <argsstring>(const SparseMatrix &amp;from, SparseMatrix *const into, const int row_offset=0, const int col_offset=0)</argsstring>
+        <name>insert</name>
+        <qualifiedname>agi::insert</qualifiedname>
+        <param>
+          <type>const SparseMatrix &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>SparseMatrix *const</type>
+          <declname>into</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>row_offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>col_offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/math.hpp" line="29" column="6" declfile="agilib/include/agilib/math/math.hpp" declline="29" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1a7a1491f0b3b106d1de9596a024b69fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::insert</definition>
+        <argsstring>(const Matrix&lt;&gt; &amp;from, SparseMatrix *const into, const int row_offset=0, const int col_offset=0)</argsstring>
+        <name>insert</name>
+        <qualifiedname>agi::insert</qualifiedname>
+        <param>
+          <type>const Matrix&lt;&gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>SparseMatrix *const</type>
+          <declname>into</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>row_offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>col_offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/math.hpp" line="32" column="6" declfile="agilib/include/agilib/math/math.hpp" declline="32" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1aeee872dd8239e295510df2fe3ab2c669" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::insert</definition>
+        <argsstring>(const Matrix&lt;&gt; &amp;from, Matrix&lt;&gt; *const into, const int row_offset=0, const int col_offset=0)</argsstring>
+        <name>insert</name>
+        <qualifiedname>agi::insert</qualifiedname>
+        <param>
+          <type>const Matrix&lt;&gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>Matrix&lt;&gt; *const</type>
+          <declname>into</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>row_offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>col_offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/math.hpp" line="35" column="6" declfile="agilib/include/agilib/math/math.hpp" declline="35" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1ac9aed6eedfe4e7f9f222bef8b53f4e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector</type>
+        <definition>Vector agi::clip</definition>
+        <argsstring>(const Vector&lt;&gt; &amp;v, const Vector&lt;&gt; &amp;bound)</argsstring>
+        <name>clip</name>
+        <qualifiedname>agi::clip</qualifiedname>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>bound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/math.hpp" line="38" column="2" declfile="agilib/include/agilib/math/math.hpp" declline="38" declcolumn="2"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1a8e937ec942a856c23b42114e7c96889d" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr Scalar</type>
+        <definition>constexpr Scalar agi::toRad</definition>
+        <argsstring>(const Scalar angle_deg)</argsstring>
+        <name>toRad</name>
+        <qualifiedname>agi::toRad</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>angle_deg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/math.hpp" line="40" column="25" bodyfile="agilib/include/agilib/math/math.hpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1a23ddc28834db8b6c8ee6aa559538827f" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr Scalar</type>
+        <definition>constexpr Scalar agi::toDeg</definition>
+        <argsstring>(const Scalar angle_deg)</argsstring>
+        <name>toDeg</name>
+        <qualifiedname>agi::toDeg</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>angle_deg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/math.hpp" line="43" column="25" bodyfile="agilib/include/agilib/math/math.hpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="file__utils_8hpp_1a92a3c0e962b8474e524e03cbdc60613a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::checkFile</definition>
+        <argsstring>(const fs::path &amp;directory, fs::path *const filename)</argsstring>
+        <name>checkFile</name>
+        <qualifiedname>agi::checkFile</qualifiedname>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>directory</declname>
+        </param>
+        <param>
+          <type>fs::path *const</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/file_utils.hpp" line="9" column="6" declfile="agilib/include/agilib/utils/file_utils.hpp" declline="9" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="file__utils_8hpp_1a01594c2c9b287121a3bb1df1d2affbd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>fs::path</type>
+        <definition>fs::path agi::getQuadFile</definition>
+        <argsstring>(const Yaml &amp;yaml, const fs::path &amp;quad_file, const fs::path &amp;agi_param_directory)</argsstring>
+        <name>getQuadFile</name>
+        <qualifiedname>agi::getQuadFile</qualifiedname>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>quad_file</declname>
+        </param>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>agi_param_directory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/file_utils.hpp" line="11" column="10" declfile="agilib/include/agilib/utils/file_utils.hpp" declline="11" declcolumn="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/base/module.hpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

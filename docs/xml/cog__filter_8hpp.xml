@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="cog__filter_8hpp" kind="file" language="C++">
+    <compoundname>cog_filter.hpp</compoundname>
+    <includes local="no">deque</includes>
+    <includes local="no">mutex</includes>
+    <includes refid="types_8hpp" local="yes">agilib/math/types.hpp</includes>
+    <includes refid="command_8hpp" local="yes">agilib/types/command.hpp</includes>
+    <includes refid="imu__sample_8hpp" local="yes">agilib/types/imu_sample.hpp</includes>
+    <includes refid="quad__state_8hpp" local="yes">agilib/types/quad_state.hpp</includes>
+    <includes refid="quadrotor_8hpp" local="yes">agilib/types/quadrotor.hpp</includes>
+    <includes refid="logger_8hpp" local="yes">agilib/utils/logger.hpp</includes>
+    <includedby refid="controller__mpc_8hpp" local="yes">agilib/include/agilib/controller/mpc/controller_mpc.hpp</includedby>
+    <incdepgraph>
+      <node id="13">
+        <label>agilib/base/parameter_base.hpp</label>
+        <link refid="parameter__base_8hpp_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agilib/include/agilib/controller/mpc/cog_filter.hpp</label>
+        <link refid="cog__filter_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agilib/math/types.hpp</label>
+        <link refid="types_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>agilib/types/command.hpp</label>
+        <link refid="command_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>agilib/types/imu_sample.hpp</label>
+        <link refid="imu__sample_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>agilib/types/quad_state.hpp</label>
+        <link refid="quad__state_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>agilib/types/quadrotor.hpp</label>
+        <link refid="quadrotor_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>agilib/utils/filesystem.hpp</label>
+        <link refid="filesystem_8hpp_source"/>
+      </node>
+      <node id="23">
+        <label>agilib/utils/logger.hpp</label>
+        <link refid="logger_8hpp_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>agilib/utils/yaml.hpp</label>
+        <link refid="yaml_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Eigen/Eigen</label>
+      </node>
+      <node id="18">
+        <label>algorithm</label>
+      </node>
+      <node id="24">
+        <label>cstdarg</label>
+      </node>
+      <node id="25">
+        <label>cstdio</label>
+      </node>
+      <node id="2">
+        <label>deque</label>
+      </node>
+      <node id="15">
+        <label>exception</label>
+      </node>
+      <node id="19">
+        <label>fstream</label>
+      </node>
+      <node id="12">
+        <label>functional</label>
+      </node>
+      <node id="20">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>limits</label>
+      </node>
+      <node id="10">
+        <label>memory</label>
+      </node>
+      <node id="3">
+        <label>mutex</label>
+      </node>
+      <node id="16">
+        <label>sstream</label>
+      </node>
+      <node id="21">
+        <label>string</label>
+      </node>
+      <node id="22">
+        <label>string_view</label>
+      </node>
+      <node id="26">
+        <label>unordered_map</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>agilib/include/agilib/controller/mpc/cog_filter.hpp</label>
+        <link refid="cog__filter_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agilib/include/agilib/controller/mpc/controller_mpc.hpp</label>
+        <link refid="controller__mpc_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classagi_1_1CogFilter" prot="public">agi::CogFilter</innerclass>
+    <innernamespace refid="namespaceagi">agi</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/math/types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/types/command.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/types/imu_sample.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/types/quad_state.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/types/quadrotor.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/utils/logger.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">agi<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classagi_1_1CogFilter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classagi_1_1CogFilter" kindref="compound">CogFilter</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NX<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NU<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NL<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NY<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NOMEGA<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1CogFilter" kindref="compound">CogFilter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref>&amp;<sp/>quad,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Matrix&lt;NX,<sp/>NX&gt;&amp;<sp/>Q_init,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Matrix&lt;NX,<sp/>NX&gt;&amp;<sp/>Q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Matrix&lt;NOMEGA,<sp/>NOMEGA&gt;&amp;<sp/>R);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reset();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>addImu(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref>&amp;<sp/>sample);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>addCommand(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1Command" kindref="compound">Command</ref>&amp;<sp/>command);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>update();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>Vector&lt;NL&gt;<sp/>getLengthCorrection()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>Matrix&lt;3,<sp/>4&gt;<sp/>getAbsolutLengths()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref><sp/>logger_{</highlight><highlight class="stringliteral">&quot;CoG<sp/>Filter&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref><sp/>quad_;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Matrix&lt;NX,<sp/>NX&gt;<sp/>Q_init_;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Matrix&lt;NX,<sp/>NX&gt;<sp/>Q_;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Matrix&lt;NY,<sp/>NY&gt;<sp/>R_;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N_max_samples_<sp/>=<sp/>128;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>std::mutex<sp/>mutex_;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>std::deque&lt;ImuSample&gt;<sp/>imus_;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>std::deque&lt;Command&gt;<sp/>commands_;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>Scalar<sp/>t_{NAN};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>Vector&lt;NX&gt;<sp/>x_<sp/>=<sp/>Vector&lt;NX&gt;::Zero();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>Matrix&lt;NX,<sp/>NX&gt;<sp/>P_<sp/>=<sp/>Matrix&lt;NX,<sp/>NX&gt;::Zero();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Matrix&lt;NY,<sp/>NX&gt;<sp/>H_<sp/>=</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>(Matrix&lt;NY,<sp/>NX&gt;()<sp/>&lt;&lt;<sp/>Matrix&lt;NY,<sp/>NOMEGA&gt;::Identity(),<sp/>Matrix&lt;NY,<sp/>NL&gt;::Zero())</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.finished();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Matrix&lt;NX,<sp/>NU&gt;<sp/>B_<sp/>=</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>(Matrix&lt;NX,<sp/>NU&gt;()<sp/>&lt;&lt;<sp/>1.0<sp/>/<sp/>quad_.J_(0,<sp/>0)<sp/>*<sp/>quad_.t_BM_.row(1),</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>-1.0<sp/>/<sp/>quad_.J_(1,<sp/>1)<sp/>*<sp/>quad_.t_BM_.row(0),<sp/>Matrix&lt;NL,<sp/>NU&gt;::Zero())</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.finished();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>agi</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp"/>
+  </compounddef>
+</doxygen>

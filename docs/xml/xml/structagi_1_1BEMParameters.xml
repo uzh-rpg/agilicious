@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1BEMParameters" kind="struct" language="C++" prot="public">
+    <compoundname>agi::BEMParameters</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1BEMParameters_1ad68ed125ab71e2bbf33158758348cdb5" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BEMParameters::rho_</definition>
+        <argsstring></argsstring>
+        <name>rho_</name>
+        <qualifiedname>agi::BEMParameters::rho_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="19" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BEMParameters_1ad87005dc6e01b09161fb36010c527245" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BEMParameters::r_prop_</definition>
+        <argsstring></argsstring>
+        <name>r_prop_</name>
+        <qualifiedname>agi::BEMParameters::r_prop_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="20" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BEMParameters_1a302fa75aeebfde4fba8611fac8af0012" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BEMParameters::prop_area_</definition>
+        <argsstring></argsstring>
+        <name>prop_area_</name>
+        <qualifiedname>agi::BEMParameters::prop_area_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="21" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BEMParameters_1a2f90705ec41f7fdbe83fe4bb7231bb4c" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BEMParameters::ef_</definition>
+        <argsstring></argsstring>
+        <name>ef_</name>
+        <qualifiedname>agi::BEMParameters::ef_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="22" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BEMParameters_1a61d32de4ffbe86665ae714dc71844afb" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BEMParameters::e_</definition>
+        <argsstring></argsstring>
+        <name>e_</name>
+        <qualifiedname>agi::BEMParameters::e_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="23" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BEMParameters_1a35ca2c56884a3341d33f6c845b101e5d" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BEMParameters::sigma_</definition>
+        <argsstring></argsstring>
+        <name>sigma_</name>
+        <qualifiedname>agi::BEMParameters::sigma_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="24" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BEMParameters_1af375616a0a05c183cc71278d56914b87" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BEMParameters::theta0_</definition>
+        <argsstring></argsstring>
+        <name>theta0_</name>
+        <qualifiedname>agi::BEMParameters::theta0_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="25" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BEMParameters_1aa3774c2667857e67035489d74eee1d54" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BEMParameters::theta1_</definition>
+        <argsstring></argsstring>
+        <name>theta1_</name>
+        <qualifiedname>agi::BEMParameters::theta1_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="26" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BEMParameters_1aefaa443ad8677980898d583f2b69644f" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BEMParameters::b_</definition>
+        <argsstring></argsstring>
+        <name>b_</name>
+        <qualifiedname>agi::BEMParameters::b_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="27" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BEMParameters_1af0fa9e42550b4cf92ba15677859d83df" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BEMParameters::ci_</definition>
+        <argsstring></argsstring>
+        <name>ci_</name>
+        <qualifiedname>agi::BEMParameters::ci_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="28" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BEMParameters_1a560c0f3eaca29197b99b3bfd696359cb" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BEMParameters::co_</definition>
+        <argsstring></argsstring>
+        <name>co_</name>
+        <qualifiedname>agi::BEMParameters::co_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="29" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BEMParameters_1ab468cefc7dae66cdd85401bb2a8798cf" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BEMParameters::mb_</definition>
+        <argsstring></argsstring>
+        <name>mb_</name>
+        <qualifiedname>agi::BEMParameters::mb_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="30" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BEMParameters_1ac4b1cc8ff307eeafa92cb0283a169daa" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BEMParameters::cg_</definition>
+        <argsstring></argsstring>
+        <name>cg_</name>
+        <qualifiedname>agi::BEMParameters::cg_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="31" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BEMParameters_1a9a1297dcadb376396b1896e05f051ac4" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BEMParameters::cd_</definition>
+        <argsstring></argsstring>
+        <name>cd_</name>
+        <qualifiedname>agi::BEMParameters::cd_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="32" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BEMParameters_1a8f7507086bc659ba07a0555ebf902fa7" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BEMParameters::cl_</definition>
+        <argsstring></argsstring>
+        <name>cl_</name>
+        <qualifiedname>agi::BEMParameters::cl_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="33" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BEMParameters_1aea84e4b9fd95188506cf33f79425bfda" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BEMParameters::k_spring_</definition>
+        <argsstring></argsstring>
+        <name>k_spring_</name>
+        <qualifiedname>agi::BEMParameters::k_spring_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="34" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1BEMParameters_1a697465deab9fe5f6eeeaf9996f332674" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::BEMParameters::BEMParameters</definition>
+        <argsstring>()</argsstring>
+        <name>BEMParameters</name>
+        <qualifiedname>agi::BEMParameters::BEMParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="10" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1BEMParameters_1a72cfaa56de0a29ed712a27c378155952" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::BEMParameters::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::BEMParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="13" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1BEMParameters_1a36e1344412757fcaf415f647fc674cfe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::BEMParameters::valid</definition>
+        <argsstring>() const override</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::BEMParameters::valid</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b">valid</reimplements>
+        <briefdescription>
+<para>Check if parameters are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="15" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1BEMParameters_1aa72a975fca1221525746975fe5ee1b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::BEMParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="12" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1BEMParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const Yaml &amp;yaml)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::BEMParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="12" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structagi_1_1BEMParameters_1acf6a2b64d3dd3c9fca3c632599ba3c1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const BEMParameters &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::BEMParameters::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1BEMParameters" kindref="compound">BEMParameters</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="16" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::BEMParameters</label>
+        <link refid="structagi_1_1BEMParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::BEMParameters</label>
+        <link refid="structagi_1_1BEMParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" line="9" column="1" bodyfile="agilib/include/agilib/simulator/model_propeller_bem_params.hpp" bodystart="9" bodyend="35"/>
+    <listofallmembers>
+      <member refid="structagi_1_1BEMParameters_1aefaa443ad8677980898d583f2b69644f" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>b_</name></member>
+      <member refid="structagi_1_1BEMParameters_1a697465deab9fe5f6eeeaf9996f332674" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>BEMParameters</name></member>
+      <member refid="structagi_1_1BEMParameters_1a9a1297dcadb376396b1896e05f051ac4" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>cd_</name></member>
+      <member refid="structagi_1_1BEMParameters_1ac4b1cc8ff307eeafa92cb0283a169daa" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>cg_</name></member>
+      <member refid="structagi_1_1BEMParameters_1af0fa9e42550b4cf92ba15677859d83df" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>ci_</name></member>
+      <member refid="structagi_1_1BEMParameters_1a8f7507086bc659ba07a0555ebf902fa7" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>cl_</name></member>
+      <member refid="structagi_1_1BEMParameters_1a560c0f3eaca29197b99b3bfd696359cb" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>co_</name></member>
+      <member refid="structagi_1_1BEMParameters_1a61d32de4ffbe86665ae714dc71844afb" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>e_</name></member>
+      <member refid="structagi_1_1BEMParameters_1a2f90705ec41f7fdbe83fe4bb7231bb4c" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>ef_</name></member>
+      <member refid="structagi_1_1BEMParameters_1aea84e4b9fd95188506cf33f79425bfda" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>k_spring_</name></member>
+      <member refid="structagi_1_1BEMParameters_1a72cfaa56de0a29ed712a27c378155952" prot="public" virt="virtual"><scope>agi::BEMParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1BEMParameters_1aa72a975fca1221525746975fe5ee1b6a" prot="public" virt="virtual"><scope>agi::BEMParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1BEMParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" virt="virtual"><scope>agi::BEMParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1BEMParameters_1ab468cefc7dae66cdd85401bb2a8798cf" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>mb_</name></member>
+      <member refid="structagi_1_1BEMParameters_1acf6a2b64d3dd3c9fca3c632599ba3c1c" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structagi_1_1BEMParameters_1a302fa75aeebfde4fba8611fac8af0012" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>prop_area_</name></member>
+      <member refid="structagi_1_1BEMParameters_1ad87005dc6e01b09161fb36010c527245" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>r_prop_</name></member>
+      <member refid="structagi_1_1BEMParameters_1ad68ed125ab71e2bbf33158758348cdb5" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>rho_</name></member>
+      <member refid="structagi_1_1BEMParameters_1a35ca2c56884a3341d33f6c845b101e5d" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>sigma_</name></member>
+      <member refid="structagi_1_1BEMParameters_1af375616a0a05c183cc71278d56914b87" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>theta0_</name></member>
+      <member refid="structagi_1_1BEMParameters_1aa3774c2667857e67035489d74eee1d54" prot="public" virt="non-virtual"><scope>agi::BEMParameters</scope><name>theta1_</name></member>
+      <member refid="structagi_1_1BEMParameters_1a36e1344412757fcaf415f647fc674cfe" prot="public" virt="virtual"><scope>agi::BEMParameters</scope><name>valid</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::BEMParameters</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

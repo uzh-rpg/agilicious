@@ -1,0 +1,442 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="pipeline_8hpp" kind="file" language="C++">
+    <compoundname>pipeline.hpp</compoundname>
+    <includes local="no">memory</includes>
+    <includes refid="module_8hpp" local="yes">agilib/base/module.hpp</includes>
+    <includes refid="bridge__base_8hpp" local="yes">agilib/bridge/bridge_base.hpp</includes>
+    <includes refid="controller__base_8hpp" local="yes">agilib/controller/controller_base.hpp</includes>
+    <includes refid="estimator__base_8hpp" local="yes">agilib/estimator/estimator_base.hpp</includes>
+    <includes refid="reference__base_8hpp" local="yes">agilib/reference/reference_base.hpp</includes>
+    <includes refid="sampler__base_8hpp" local="yes">agilib/sampler/sampler_base.hpp</includes>
+    <includes refid="command_8hpp" local="yes">agilib/types/command.hpp</includes>
+    <includes refid="quad__state_8hpp" local="yes">agilib/types/quad_state.hpp</includes>
+    <includes refid="setpoint_8hpp" local="yes">agilib/types/setpoint.hpp</includes>
+    <includes refid="logger_8hpp" local="yes">agilib/utils/logger.hpp</includes>
+    <includedby refid="pilot_8hpp" local="yes">agilib/include/agilib/pilot/pilot.hpp</includedby>
+    <includedby refid="pilot__params_8hpp" local="yes">agilib/include/agilib/pilot/pilot_params.hpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>agilib/base/module.hpp</label>
+        <link refid="module_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agilib/include/agilib/base/pipeline.hpp</label>
+        <link refid="pipeline_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>agilib/bridge/bridge_base.hpp</label>
+        <link refid="bridge__base_8hpp_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>agilib/controller/controller_base.hpp</label>
+        <link refid="controller__base_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>agilib/estimator/estimator_base.hpp</label>
+        <link refid="estimator__base_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>agilib/math/types.hpp</label>
+        <link refid="types_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>agilib/reference/reference_base.hpp</label>
+        <link refid="reference__base_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>agilib/sampler/sampler_base.hpp</label>
+        <link refid="sampler__base_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>agilib/types/command.hpp</label>
+        <link refid="command_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>agilib/types/feedback.hpp</label>
+        <link refid="feedback_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>agilib/types/imu_sample.hpp</label>
+        <link refid="imu__sample_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>agilib/types/pose.hpp</label>
+        <link refid="pose_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>agilib/types/quad_state.hpp</label>
+        <link refid="quad__state_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>agilib/types/setpoint.hpp</label>
+        <link refid="setpoint_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>agilib/utils/agi_watchdog.hpp</label>
+        <link refid="agi__watchdog_8hpp_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agilib/utils/logger.hpp</label>
+        <link refid="logger_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>agilib/utils/median_filter.hpp</label>
+        <link refid="median__filter_8hpp_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>agilib/utils/timer.hpp</label>
+        <link refid="timer_8hpp_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Eigen/Eigen</label>
+      </node>
+      <node id="25">
+        <label>algorithm</label>
+      </node>
+      <node id="28">
+        <label>chrono</label>
+      </node>
+      <node id="15">
+        <label>condition_variable</label>
+      </node>
+      <node id="5">
+        <label>cstdarg</label>
+      </node>
+      <node id="6">
+        <label>cstdio</label>
+      </node>
+      <node id="26">
+        <label>deque</label>
+      </node>
+      <node id="7">
+        <label>fstream</label>
+      </node>
+      <node id="23">
+        <label>functional</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="13">
+        <label>limits</label>
+      </node>
+      <node id="2">
+        <label>memory</label>
+      </node>
+      <node id="16">
+        <label>mutex</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="17">
+        <label>thread</label>
+      </node>
+      <node id="10">
+        <label>unordered_map</label>
+      </node>
+      <node id="34">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>agilib/include/agilib/base/pipeline.hpp</label>
+        <link refid="pipeline_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agilib/include/agilib/pilot/pilot.hpp</label>
+        <link refid="pilot_8hpp_source"/>
+      </node>
+      <node id="3">
+        <label>agilib/include/agilib/pilot/pilot_params.hpp</label>
+        <link refid="pilot__params_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classagi_1_1Pipeline" prot="public">agi::Pipeline</innerclass>
+    <innernamespace refid="namespaceagi">agi</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/base/module.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/bridge/bridge_base.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/controller/controller_base.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/estimator/estimator_base.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/reference/reference_base.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/sampler/sampler_base.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/types/command.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/types/quad_state.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/types/setpoint.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/utils/logger.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">agi<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classagi_1_1Pipeline" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classagi_1_1Pipeline" kindref="compound">Pipeline</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1Pipeline" kindref="compound">Pipeline</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Pipeline&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Scalar<sp/>feedthrough_timeout<sp/>=<sp/>0.05);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">PipelineCallbackFunction<sp/>=<sp/>std::function&lt;void(</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1Feedback" kindref="compound">Feedback</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ReferenceVector&amp;,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SetpointVector&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SetpointVector&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SetpointVector&amp;,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1Command" kindref="compound">Command</ref>&amp;)&gt;;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classagi_1_1Pipeline_1a231339194e2b2139fdf58574f74a3994" refkind="member"><highlight class="normal"><sp/><sp/>ReferenceVector<sp/><ref refid="classagi_1_1Pipeline_1a231339194e2b2139fdf58574f74a3994" kindref="member">references_</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;EstimatorBase&gt;<sp/>estimator_;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;SamplerBase&gt;<sp/>sampler_;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;ControllerBase&gt;<sp/>outer_controller_;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;ControllerBase&gt;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>inner_controller_;<sp/><sp/></highlight></codeline>
+<codeline lineno="37" refid="classagi_1_1Pipeline_1ab774547e8c9e8072f35fa68bf93ec33c" refkind="member"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;BridgeBase&gt;<sp/><ref refid="classagi_1_1Pipeline_1ab774547e8c9e8072f35fa68bf93ec33c" kindref="member">bridge_</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1Pipeline" kindref="compound">Pipeline</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline" kindref="compound">Pipeline</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classagi_1_1Pipeline_1a3ea8e36259c7ef33b71d2bceda3f990b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1a3ea8e36259c7ef33b71d2bceda3f990b" kindref="member">isReferenceSet</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classagi_1_1Pipeline_1a5c1c1eb50b694fdfbeb0f3eae38d0d2d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1a5c1c1eb50b694fdfbeb0f3eae38d0d2d" kindref="member">isEstimatorSet</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classagi_1_1Pipeline_1a10cf9fe4e323d892e2cf907c1769a07e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1a10cf9fe4e323d892e2cf907c1769a07e" kindref="member">isSamplerSet</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classagi_1_1Pipeline_1a7cf0fd2b28487646e5d0ac768f5f8a07" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1a7cf0fd2b28487646e5d0ac768f5f8a07" kindref="member">isOuterControllerSet</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classagi_1_1Pipeline_1a31d8b0382779a97b55f61a75e6c00422" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1a31d8b0382779a97b55f61a75e6c00422" kindref="member">isInnerControllerSet</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classagi_1_1Pipeline_1ad90b2bfc2ea3a5948f92ef5f22925063" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1ad90b2bfc2ea3a5948f92ef5f22925063" kindref="member">isBridgeSet</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classagi_1_1Pipeline_1a748b299295369c238f3f128fcb40d6f7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1a748b299295369c238f3f128fcb40d6f7" kindref="member">isSet</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classagi_1_1Pipeline_1ac248cf592e3e789ef0e16d45e19761c3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1ac248cf592e3e789ef0e16d45e19761c3" kindref="member">appendReference</ref>(std::shared_ptr&lt;ReferenceBase&gt;&amp;&amp;<sp/>reference);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="classagi_1_1Pipeline_1a89b88496acf89d738ff30cef5c4314e4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1a89b88496acf89d738ff30cef5c4314e4" kindref="member">insertReference</ref>(std::shared_ptr&lt;ReferenceBase&gt;&amp;&amp;<sp/>reference);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classagi_1_1Pipeline_1ad26023e0e316cbb23fb2b3834e9ca5c9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1ad26023e0e316cbb23fb2b3834e9ca5c9" kindref="member">run</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Scalar<sp/>t);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classagi_1_1Pipeline_1ad7be186310a47a022eca4af400e55f16" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structagi_1_1Command" kindref="compound">Command</ref><sp/><ref refid="classagi_1_1Pipeline_1ad7be186310a47a022eca4af400e55f16" kindref="member">getCommand</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classagi_1_1Pipeline_1aef8eaaa3d9d42f6cc21a46a45df95eca" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1aef8eaaa3d9d42f6cc21a46a45df95eca" kindref="member">setFeedthroughCommand</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1Command" kindref="compound">Command</ref>&amp;<sp/>command);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classagi_1_1Pipeline_1ab737ce2a58725fba90508178bb63c1cc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1ab737ce2a58725fba90508178bb63c1cc" kindref="member">clearFeedthoughCommand</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classagi_1_1Pipeline_1a202e8ec38bd6253c50cdb9a0bff68c5a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1a202e8ec38bd6253c50cdb9a0bff68c5a" kindref="member">feedthroughActive</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>feedthrough_active_;<sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="classagi_1_1Pipeline_1a74408d66f546549309c41d6987c2b60e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref>&amp;<sp/><ref refid="classagi_1_1Pipeline_1a74408d66f546549309c41d6987c2b60e" kindref="member">getState</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>state_;<sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="classagi_1_1Pipeline_1a149140cd85c3cafae1bbef18b1be6a1f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SetpointVector<sp/><ref refid="classagi_1_1Pipeline_1a149140cd85c3cafae1bbef18b1be6a1f" kindref="member">getSetpoints</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>setpoints_;<sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classagi_1_1Pipeline_1af16fcc8bbbd81fab02160b7d15792e39" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SetpointVector&amp;<sp/><ref refid="classagi_1_1Pipeline_1af16fcc8bbbd81fab02160b7d15792e39" kindref="member">getOuterSetpoints</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>setpoints_outer_;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classagi_1_1Pipeline_1aa40dedc1188e9d4b5a65a364a1cfdce9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SetpointVector&amp;<sp/><ref refid="classagi_1_1Pipeline_1aa40dedc1188e9d4b5a65a364a1cfdce9" kindref="member">getInnerSetpoints</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>setpoints_inner_;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="classagi_1_1Pipeline_1a0dfecf6debfa15f3ef9e89d362eddb4d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1a0dfecf6debfa15f3ef9e89d362eddb4d" kindref="member">printReferenceInfo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>detailed<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classagi_1_1Pipeline_1aa1fdd33c6459d310333d7d17436cb0d2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1aa1fdd33c6459d310333d7d17436cb0d2" kindref="member">registerCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PipelineCallbackFunction&amp;<sp/>function);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="classagi_1_1Pipeline_1a62aa4dd3dd35f74108e7379f62d7f9a2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1a62aa4dd3dd35f74108e7379f62d7f9a2" kindref="member">setOuterloopDivisor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>divisor);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="classagi_1_1Pipeline_1a4ee6202d13df3aa5c969e045bfe56c0f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1a4ee6202d13df3aa5c969e045bfe56c0f" kindref="member">setStopAfterFeedthrough</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>stop_after_feedthrough);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="classagi_1_1Pipeline_1ae1e3d0aaee9ca306c7532b7c12f498c5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Pipeline_1ae1e3d0aaee9ca306c7532b7c12f498c5" kindref="member">setFeedthroughTimeout</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Scalar&amp;<sp/>feedthrough_timeout);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="classagi_1_1Pipeline_1a958fa6ee832e3ce1a27e41d126d8d254" refkind="member"><highlight class="normal"><sp/><sp/>[[nodiscard]]<sp/>Scalar<sp/><ref refid="classagi_1_1Pipeline_1a958fa6ee832e3ce1a27e41d126d8d254" kindref="member">dt</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dt_;<sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref><sp/>state_;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><ref refid="structagi_1_1Feedback" kindref="compound">Feedback</ref><sp/>feedback_;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>SetpointVector<sp/>setpoints_;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>SetpointVector<sp/>setpoints_outer_;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>SetpointVector<sp/>setpoints_inner_;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><ref refid="structagi_1_1Command" kindref="compound">Command</ref><sp/>command_;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><ref refid="structagi_1_1Command" kindref="compound">Command</ref><sp/>apply_command_;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><ref refid="structagi_1_1Command" kindref="compound">Command</ref><sp/>feedthrough_command_;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref><sp/>logger_;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>initialized_{</highlight><highlight class="keyword">false</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>feedthrough_active_{</highlight><highlight class="keyword">false</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>Scalar<sp/>dt_{0.01};</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>outerloop_divisor_{1};</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>outerloop_counter_{-1};</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>stop_after_feedthrough_;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>Scalar<sp/>feedthrough_timeout_{0.05};</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>std::vector&lt;PipelineCallbackFunction&gt;<sp/>callbacks_;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>agi</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="agilib/include/agilib/base/pipeline.hpp"/>
+  </compounddef>
+</doxygen>

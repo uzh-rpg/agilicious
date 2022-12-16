@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1ThrustFunction" kind="class" language="C++" prot="public">
+    <compoundname>agi::ThrustFunction</compoundname>
+    <basecompoundref refid="structagi_1_1BrentFunction" prot="public" virt="non-virtual">agi::BrentFunction&lt; QS::NMOT &gt;</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1ThrustFunction_1a00e001f42cafafb6acd6e5eb95e3b80a" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="structagi_1_1PropellerState" kindref="compound">PropellerState</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;PropellerState&gt; agi::ThrustFunction::pstate_</definition>
+        <argsstring></argsstring>
+        <name>pstate_</name>
+        <qualifiedname>agi::ThrustFunction::pstate_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="76" column="19" bodyfile="agilib/include/agilib/simulator/bem/functions.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ThrustFunction_1a07b11403311f50362bfdea5065aec5b9" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="structagi_1_1GaussKronrodFunction" kindref="compound">GaussKronrodFunction</ref>&lt; QS::NMOT &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;GaussKronrodFunction&lt;QS::NMOT&gt; &gt; agi::ThrustFunction::fR_</definition>
+        <argsstring></argsstring>
+        <name>fR_</name>
+        <qualifiedname>agi::ThrustFunction::fR_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="77" column="19" bodyfile="agilib/include/agilib/simulator/bem/functions.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ThrustFunction_1ae445a8e98a7019a07ea1d89c2c593b8e" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classagi_1_1GaussKronrod" kindref="compound">GaussKronrod</ref>&lt; <ref refid="structagi_1_1GaussKronrodFunction" kindref="compound">GaussKronrodFunction</ref>&lt; QS::NMOT &gt; &gt;</type>
+        <definition>const GaussKronrod&lt;GaussKronrodFunction&lt;QS::NMOT&gt; &gt; agi::ThrustFunction::gk_</definition>
+        <argsstring></argsstring>
+        <name>gk_</name>
+        <qualifiedname>agi::ThrustFunction::gk_</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="78" column="22" bodyfile="agilib/include/agilib/simulator/bem/functions.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1ThrustFunction_1aeee8ff09100739d127494f4d849c12c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::ThrustFunction::ThrustFunction</definition>
+        <argsstring>()=default</argsstring>
+        <name>ThrustFunction</name>
+        <qualifiedname>agi::ThrustFunction::ThrustFunction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="65" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ThrustFunction_1a37d2c749bdc5e036f6a811548ec0d519" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::ThrustFunction::setState</definition>
+        <argsstring>(std::shared_ptr&lt; PropellerState &gt; &amp;pstate, std::shared_ptr&lt; IntegrandR &gt; &amp;fR)</argsstring>
+        <name>setState</name>
+        <qualifiedname>agi::ThrustFunction::setState</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="structagi_1_1PropellerState" kindref="compound">PropellerState</ref> &gt; &amp;</type>
+          <declname>pstate</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classagi_1_1IntegrandR" kindref="compound">IntegrandR</ref> &gt; &amp;</type>
+          <declname>fR</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="66" column="8" bodyfile="agilib/include/agilib/simulator/bem/functions.hpp" bodystart="66" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ThrustFunction_1a3e794d142dd112a388326a6febec166e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ArrayVector&lt; 4 &gt;</type>
+        <definition>ArrayVector&lt; 4 &gt; agi::ThrustFunction::evaluate</definition>
+        <argsstring>(const Ref&lt; const ArrayVector&lt; 4 &gt; &gt; vind) const override</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>agi::ThrustFunction::evaluate</qualifiedname>
+        <param>
+          <type>const Ref&lt; const ArrayVector&lt; 4 &gt; &gt;</type>
+          <declname>vind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="72" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::BrentFunction&lt; QS::NMOT &gt;</label>
+        <link refid="structagi_1_1BrentFunction"/>
+      </node>
+      <node id="1">
+        <label>agi::ThrustFunction</label>
+        <link refid="classagi_1_1ThrustFunction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::BrentFunction&lt; QS::NMOT &gt;</label>
+        <link refid="structagi_1_1BrentFunction"/>
+      </node>
+      <node id="1">
+        <label>agi::ThrustFunction</label>
+        <link refid="classagi_1_1ThrustFunction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="61" column="1" bodyfile="agilib/include/agilib/simulator/bem/functions.hpp" bodystart="61" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classagi_1_1ThrustFunction_1a3e794d142dd112a388326a6febec166e" prot="public" virt="non-virtual"><scope>agi::ThrustFunction</scope><name>evaluate</name></member>
+      <member refid="structagi_1_1BrentFunction_1a4bee8e79eacd6dc2b24d7231650c4bad" prot="public" virt="pure-virtual" ambiguityscope="BrentFunction&lt; QS::NMOT &gt;::"><scope>agi::ThrustFunction</scope><name>evaluate</name></member>
+      <member refid="classagi_1_1ThrustFunction_1a07b11403311f50362bfdea5065aec5b9" prot="private" virt="non-virtual"><scope>agi::ThrustFunction</scope><name>fR_</name></member>
+      <member refid="classagi_1_1ThrustFunction_1ae445a8e98a7019a07ea1d89c2c593b8e" prot="private" virt="non-virtual"><scope>agi::ThrustFunction</scope><name>gk_</name></member>
+      <member refid="classagi_1_1ThrustFunction_1a00e001f42cafafb6acd6e5eb95e3b80a" prot="private" virt="non-virtual"><scope>agi::ThrustFunction</scope><name>pstate_</name></member>
+      <member refid="classagi_1_1ThrustFunction_1a37d2c749bdc5e036f6a811548ec0d519" prot="public" virt="non-virtual"><scope>agi::ThrustFunction</scope><name>setState</name></member>
+      <member refid="structagi_1_1BrentFunction_1ade455cf08a2f0a96f0db8b74e166ef59" prot="public" virt="non-virtual"><scope>agi::ThrustFunction</scope><name>SIZE</name></member>
+      <member refid="classagi_1_1ThrustFunction_1aeee8ff09100739d127494f4d849c12c7" prot="public" virt="non-virtual"><scope>agi::ThrustFunction</scope><name>ThrustFunction</name></member>
+      <member refid="structagi_1_1BrentFunction_1ac009f5b7eace92bef8690054c914feca" prot="public" virt="virtual"><scope>agi::ThrustFunction</scope><name>~BrentFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

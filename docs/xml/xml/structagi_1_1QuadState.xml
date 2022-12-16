@@ -1,0 +1,1278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1QuadState" kind="struct" language="C++" prot="public">
+    <compoundname>agi::QuadState</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60" prot="public" static="no" strong="no">
+        <type>int</type>
+        <name>IDX</name>
+        <qualifiedname>agi::QuadState::IDX</qualifiedname>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60afec97cf889e796607b1d934759001b27" prot="public">
+          <name>POS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ad3e9d70bc0630a657a068449c03687ba" prot="public">
+          <name>POSX</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a8cb8cc034d38545f7599a0e615effccc" prot="public">
+          <name>POSY</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a5a8c01a609b629f45961774ac5097022" prot="public">
+          <name>POSZ</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ac6222b0cc68e4dc01fd4dbc6406fda22" prot="public">
+          <name>NPOS</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a0708de4627e0c7332b0ea95f3d3cae47" prot="public">
+          <name>ATT</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60aefdf587149da4b5e309eb0cf4c024c2b" prot="public">
+          <name>ATTW</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a60a97eb41bfdc2a723ac7a5a775d6671" prot="public">
+          <name>ATTX</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60aa1563de9edd978b194cb76c20cded775" prot="public">
+          <name>ATTY</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a0a92a0eb410b8dfba6006e6e00c91987" prot="public">
+          <name>ATTZ</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60acd2541b0b0ee483e160f6d27ff069495" prot="public">
+          <name>NATT</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ac0bae1469795fff9ec3b9271b5a828a1" prot="public">
+          <name>VEL</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a5ec28d9e6f400eff445592f701d292b1" prot="public">
+          <name>VELX</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a36b07064b3b079eb9789d5dbc00bb35f" prot="public">
+          <name>VELY</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60aee818c186a1575b8fedd6b24db62eb83" prot="public">
+          <name>VELZ</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a9b7816ebd623acc63050e7c6dca65948" prot="public">
+          <name>NVEL</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ab6b2cf435c0f2ab81c2a4f45c87da726" prot="public">
+          <name>OME</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a5af903ff415f4f71cedba50b60bb4d6e" prot="public">
+          <name>OMEX</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ad1b21f894b592393086133952cd9c0bf" prot="public">
+          <name>OMEY</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a62511135fa583836c8e9b9e22af029e6" prot="public">
+          <name>OMEZ</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60adcd4a10c2d86f1f151bcfb0446aa6879" prot="public">
+          <name>NOME</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a7084b64d45dbdefb3b736587b0f6f73f" prot="public">
+          <name>ACC</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60acdf654a3c060d39ebccddb52cb0a688d" prot="public">
+          <name>ACCX</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a3f6a09d50bc66d8712b2c265d60bc23d" prot="public">
+          <name>ACCY</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a8817c750e8aebc1118186a1f9949f886" prot="public">
+          <name>ACCZ</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a621100fd72dba2696e1b86c10744b347" prot="public">
+          <name>NACC</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a16f6069aee6e9ec8b4301ded587fbdd1" prot="public">
+          <name>TAU</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ad4c1a72cd7c237ba6a23d320acd0fdd0" prot="public">
+          <name>TAUX</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a90c293e6d0848bb8fba346efe542f614" prot="public">
+          <name>TAUY</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60af223a88d9d3e8b8a00c3286dc5a97c9a" prot="public">
+          <name>TAUZ</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a99b5ad6b5960710e8ee4c98fd7d58b56" prot="public">
+          <name>NTAU</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60addc2b06ee247450672887e72d99d7e13" prot="public">
+          <name>JERK</name>
+          <initializer>= 19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ad5f80625a102a6125bc105c65ddbed2d" prot="public">
+          <name>JERKX</name>
+          <initializer>= 19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60aa1c5884fc60197b31cd0f2d13df55854" prot="public">
+          <name>JERKY</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ad1da02fa6424876867db183fed0d17ac" prot="public">
+          <name>JERKZ</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60aa04ae28ff99af36564d7c371c79478ed" prot="public">
+          <name>NJERK</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60aa96eeada8c022f791c058895b3e667b7" prot="public">
+          <name>SNAP</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a0551a72592303a5e707749df5f5f27d8" prot="public">
+          <name>SNAPX</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a3f75a11d8520476e66d8acf49bbd84d3" prot="public">
+          <name>SNAPY</name>
+          <initializer>= 23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a624f829bf940f12f71fb4de33ae7afc4" prot="public">
+          <name>SNAPZ</name>
+          <initializer>= 24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ae8e19ea2d8c981b46e2de0aeddc95086" prot="public">
+          <name>NSNAP</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a7c5c7aded9773730419969834e84aeff" prot="public">
+          <name>BOME</name>
+          <initializer>= 25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a23a9daca50ceddf828c480874c11ab5c" prot="public">
+          <name>BOMEX</name>
+          <initializer>= 25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60aee09ab3fb4d09a83fcc964a13521a774" prot="public">
+          <name>BOMEY</name>
+          <initializer>= 26</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a550c1328cbcd2f02ced19f38a0fa8d27" prot="public">
+          <name>BOMEZ</name>
+          <initializer>= 27</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a14ae87091e2cae05e0dbc22595e13b14" prot="public">
+          <name>NBOME</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a8b02dff6991c0280324db24f27afec7c" prot="public">
+          <name>BACC</name>
+          <initializer>= 28</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60acea066333b5ece3f178e265b7de25950" prot="public">
+          <name>BACCX</name>
+          <initializer>= 28</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a93807859e11b1762b08fa610bb78cf29" prot="public">
+          <name>BACCY</name>
+          <initializer>= 29</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a155ed1ec9293c8f5d57244918dfc2540" prot="public">
+          <name>BACCZ</name>
+          <initializer>= 30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ac6bb995c8f1186b4d0e690d9a8c44d98" prot="public">
+          <name>NBACC</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ae33c9d56f7d2c03eaa5bcfbcec528eb0" prot="public">
+          <name>MOT</name>
+          <initializer>= 31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a62c43db2075ef9d86d96f1f16bdd9f79" prot="public">
+          <name>MOT1</name>
+          <initializer>= 31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ac11236543f0c99971e70ad24cef79616" prot="public">
+          <name>MOT2</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a6b3b35da64065504bc579c93d6e9b022" prot="public">
+          <name>MOT3</name>
+          <initializer>= 33</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a3e63690312724f84bf6d7aefdb4d4348" prot="public">
+          <name>MOT4</name>
+          <initializer>= 34</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a5a9a98ea2cdc51ea7cafb1f5a1c9a9db" prot="public">
+          <name>NMOT</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a1f99cca3c492284bc827437a9ff75b81" prot="public">
+          <name>MOTDES</name>
+          <initializer>= 35</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60aa088a610fc7c6aceaab2d182f81d08ed" prot="public">
+          <name>MOTDES1</name>
+          <initializer>= 35</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a33ffb67cc7317beb0e1839dc69a4902f" prot="public">
+          <name>MOTDES2</name>
+          <initializer>= 36</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a8b4ffdea9cf2917d7627be4644d05220" prot="public">
+          <name>MOTDES3</name>
+          <initializer>= 37</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a0d8d990f78c7f04d0836b3feebe783f1" prot="public">
+          <name>MOTDES4</name>
+          <initializer>= 38</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ab9bc1f31840c067e8dbe6f92bb0aed92" prot="public">
+          <name>NMOTDES</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a7c6c944b6287c169e5aa00a404534ee1" prot="public">
+          <name>SIZE</name>
+          <initializer>= 39</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60acf2be6b65f3cfcb7e70591f8e5effe51" prot="public">
+          <name>DYN</name>
+          <initializer>= 19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="12" column="3" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="12" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1QuadState_1ae0724c4293ff910b6b766ac386eaddc7" prot="public" static="no" mutable="no">
+        <type>Vector&lt; IDX::SIZE &gt;</type>
+        <definition>Vector&lt;IDX::SIZE&gt; agi::QuadState::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>agi::QuadState::x</qualifiedname>
+        <initializer>= Vector&lt;IDX::SIZE&gt;::Constant(NAN)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="97" column="10" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1QuadState_1a690f0dd7f67f462600592e4d3348e53a" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::QuadState::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <qualifiedname>agi::QuadState::t</qualifiedname>
+        <initializer>{NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="98" column="10" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1QuadState_1acd58232428e2b0478f5c3a654b97d53d" prot="public" static="no" mutable="no">
+        <type>Ref&lt; Vector&lt; 3 &gt; &gt;</type>
+        <definition>Ref&lt;Vector&lt;3&gt; &gt; agi::QuadState::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <qualifiedname>agi::QuadState::p</qualifiedname>
+        <initializer>{x.segment&lt;IDX::NPOS&gt;(IDX::POS)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="100" column="7" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1QuadState_1a006b745f275bc3c4866dd8b44f76d51d" prot="public" static="no" mutable="no">
+        <type>Ref&lt; Vector&lt; 4 &gt; &gt;</type>
+        <definition>Ref&lt;Vector&lt;4&gt; &gt; agi::QuadState::qx</definition>
+        <argsstring></argsstring>
+        <name>qx</name>
+        <qualifiedname>agi::QuadState::qx</qualifiedname>
+        <initializer>{x.segment&lt;IDX::NATT&gt;(IDX::ATT)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="101" column="7" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1QuadState_1a0e57b9f21c26322be5bd856d66782440" prot="public" static="no" mutable="no">
+        <type>Ref&lt; Vector&lt; 3 &gt; &gt;</type>
+        <definition>Ref&lt;Vector&lt;3&gt; &gt; agi::QuadState::v</definition>
+        <argsstring></argsstring>
+        <name>v</name>
+        <qualifiedname>agi::QuadState::v</qualifiedname>
+        <initializer>{x.segment&lt;IDX::NVEL&gt;(IDX::VEL)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="102" column="7" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1QuadState_1aafffb6597fc72798cb851ed6edcf31d0" prot="public" static="no" mutable="no">
+        <type>Ref&lt; Vector&lt; 3 &gt; &gt;</type>
+        <definition>Ref&lt;Vector&lt;3&gt; &gt; agi::QuadState::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <qualifiedname>agi::QuadState::w</qualifiedname>
+        <initializer>{x.segment&lt;IDX::NOME&gt;(IDX::OME)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="103" column="7" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1QuadState_1a211797b68133826391f192a9fd148529" prot="public" static="no" mutable="no">
+        <type>Ref&lt; Vector&lt; 3 &gt; &gt;</type>
+        <definition>Ref&lt;Vector&lt;3&gt; &gt; agi::QuadState::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>agi::QuadState::a</qualifiedname>
+        <initializer>{x.segment&lt;IDX::NACC&gt;(IDX::ACC)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="104" column="7" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1QuadState_1adc50d23e5c6e4328f1385ee1f709033a" prot="public" static="no" mutable="no">
+        <type>Ref&lt; Vector&lt; 3 &gt; &gt;</type>
+        <definition>Ref&lt;Vector&lt;3&gt; &gt; agi::QuadState::tau</definition>
+        <argsstring></argsstring>
+        <name>tau</name>
+        <qualifiedname>agi::QuadState::tau</qualifiedname>
+        <initializer>{x.segment&lt;IDX::NTAU&gt;(IDX::TAU)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="105" column="7" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1QuadState_1a3607a6783ba170b9bb071af3e21a0cec" prot="public" static="no" mutable="no">
+        <type>Ref&lt; Vector&lt; 3 &gt; &gt;</type>
+        <definition>Ref&lt;Vector&lt;3&gt; &gt; agi::QuadState::j</definition>
+        <argsstring></argsstring>
+        <name>j</name>
+        <qualifiedname>agi::QuadState::j</qualifiedname>
+        <initializer>{x.segment&lt;IDX::NJERK&gt;(IDX::JERK)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="106" column="7" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1QuadState_1a7ad62df82a3a8f80ac1e6a642fcd4eb1" prot="public" static="no" mutable="no">
+        <type>Ref&lt; Vector&lt; 3 &gt; &gt;</type>
+        <definition>Ref&lt;Vector&lt;3&gt; &gt; agi::QuadState::s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <qualifiedname>agi::QuadState::s</qualifiedname>
+        <initializer>{x.segment&lt;IDX::NSNAP&gt;(IDX::SNAP)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="107" column="7" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1QuadState_1aeb91da225f46ecf9adb73c20dc230bb5" prot="public" static="no" mutable="no">
+        <type>Ref&lt; Vector&lt; 3 &gt; &gt;</type>
+        <definition>Ref&lt;Vector&lt;3&gt; &gt; agi::QuadState::bw</definition>
+        <argsstring></argsstring>
+        <name>bw</name>
+        <qualifiedname>agi::QuadState::bw</qualifiedname>
+        <initializer>{x.segment&lt;IDX::NBOME&gt;(IDX::BOME)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="108" column="7" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1QuadState_1a1e252a1fc45f383a3a0f5ebe4c7d8ba6" prot="public" static="no" mutable="no">
+        <type>Ref&lt; Vector&lt; 3 &gt; &gt;</type>
+        <definition>Ref&lt;Vector&lt;3&gt; &gt; agi::QuadState::ba</definition>
+        <argsstring></argsstring>
+        <name>ba</name>
+        <qualifiedname>agi::QuadState::ba</qualifiedname>
+        <initializer>{x.segment&lt;IDX::NBACC&gt;(IDX::BACC)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="109" column="7" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1QuadState_1a20eef62691117b367faced884cc3f11a" prot="public" static="no" mutable="no">
+        <type>Ref&lt; Vector&lt; 4 &gt; &gt;</type>
+        <definition>Ref&lt;Vector&lt;4&gt; &gt; agi::QuadState::mot</definition>
+        <argsstring></argsstring>
+        <name>mot</name>
+        <qualifiedname>agi::QuadState::mot</qualifiedname>
+        <initializer>{x.segment&lt;IDX::NMOT&gt;(IDX::MOT)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="110" column="7" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1QuadState_1a44d7e3100df54cec540a2f80b6252f63" prot="public" static="no" mutable="no">
+        <type>Ref&lt; Vector&lt; 4 &gt; &gt;</type>
+        <definition>Ref&lt;Vector&lt;4&gt; &gt; agi::QuadState::motdes</definition>
+        <argsstring></argsstring>
+        <name>motdes</name>
+        <qualifiedname>agi::QuadState::motdes</qualifiedname>
+        <initializer>{x.segment&lt;IDX::NMOTDES&gt;(IDX::MOTDES)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="111" column="7" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1QuadState_1ad18833e5d7a73b500d909129f53e0bc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::QuadState::QuadState</definition>
+        <argsstring>()</argsstring>
+        <name>QuadState</name>
+        <qualifiedname>agi::QuadState::QuadState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="80" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1ab37e506ca4398d671f614278a11813f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::QuadState::QuadState</definition>
+        <argsstring>(const Scalar t, const Vector&lt; IDX::SIZE &gt; &amp;x)</argsstring>
+        <name>QuadState</name>
+        <qualifiedname>agi::QuadState::QuadState</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; IDX::SIZE &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="81" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1a4984f9639b013ab1c504a729e104fd95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::QuadState::QuadState</definition>
+        <argsstring>(const Scalar t, const Vector&lt; 3 &gt; &amp;position, const Scalar yaw)</argsstring>
+        <name>QuadState</name>
+        <qualifiedname>agi::QuadState::QuadState</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>yaw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="82" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1a2ca4ec6c759a0f259f664cc868e54f4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::QuadState::QuadState</definition>
+        <argsstring>(const QuadState &amp;state)</argsstring>
+        <name>QuadState</name>
+        <qualifiedname>agi::QuadState::QuadState</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="83" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1ae7aa95da8e2b18eb29740e5f2b4aecda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::QuadState::~QuadState</definition>
+        <argsstring>()</argsstring>
+        <name>~QuadState</name>
+        <qualifiedname>agi::QuadState::~QuadState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="84" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1a970b8c9bdb14d5065535f2b867c098a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Quaternion</type>
+        <definition>Quaternion agi::QuadState::q</definition>
+        <argsstring>() const</argsstring>
+        <name>q</name>
+        <qualifiedname>agi::QuadState::q</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="88" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1a019e03db02900951d92bbece9e9611e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::QuadState::q</definition>
+        <argsstring>(const Quaternion quaternion)</argsstring>
+        <name>q</name>
+        <qualifiedname>agi::QuadState::q</qualifiedname>
+        <param>
+          <type>const Quaternion</type>
+          <declname>quaternion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="89" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1a7961e60539cddbe8a167e5dcdaaba567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::QuadState::q</definition>
+        <argsstring>(const Scalar angle, const Vector&lt; 3 &gt; &amp;axis=Vector&lt; 3 &gt;::UnitZ())</argsstring>
+        <name>q</name>
+        <qualifiedname>agi::QuadState::q</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>axis</declname>
+          <defval>Vector&lt; 3 &gt;::UnitZ()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="90" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1a1edaf7a7d77cca2b18a9ef6c306c0b21" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Matrix&lt; 3, 3 &gt;</type>
+        <definition>Matrix&lt; 3, 3 &gt; agi::QuadState::R</definition>
+        <argsstring>() const</argsstring>
+        <name>R</name>
+        <qualifiedname>agi::QuadState::R</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="91" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1a638e7836cb584ba43bad647ffb6703b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::QuadState::setZero</definition>
+        <argsstring>(const bool &amp;reset_time=true)</argsstring>
+        <name>setZero</name>
+        <qualifiedname>agi::QuadState::setZero</qualifiedname>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>reset_time</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="93" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1a0b06b513dd6596e640d93ccf54758362" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::QuadState::linearize</definition>
+        <argsstring>()</argsstring>
+        <name>linearize</name>
+        <qualifiedname>agi::QuadState::linearize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="94" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1abdae16448e5eef680c5c35e742766aa0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadState::valid</definition>
+        <argsstring>() const</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::QuadState::valid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="95" column="15" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1af57f7c5eb2a9685d278c2911c7c9198d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::QuadState::getYaw</definition>
+        <argsstring>(const Scalar yaw=NAN) const</argsstring>
+        <name>getYaw</name>
+        <qualifiedname>agi::QuadState::getYaw</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>yaw</declname>
+          <defval>NAN</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="113" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1a85589f4cab57490c108f2ee3f46f5e75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::QuadState::applyYaw</definition>
+        <argsstring>(const Scalar angle)</argsstring>
+        <name>applyYaw</name>
+        <qualifiedname>agi::QuadState::applyYaw</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="114" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1a8eac50c03d8a82b847a4c379cca1167c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref></type>
+        <definition>QuadState agi::QuadState::getHoverState</definition>
+        <argsstring>() const</argsstring>
+        <name>getHoverState</name>
+        <qualifiedname>agi::QuadState::getHoverState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="115" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1a836d07ed3b0c484e6d690b36d77aa166" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadState::operator==</definition>
+        <argsstring>(const QuadState &amp;rhs) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>agi::QuadState::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="117" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1ad3d33e4a4925a828ff928cbe1f002eaa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadState::isApprox</definition>
+        <argsstring>(const QuadState &amp;rhs, const Scalar tol=1e-6) const</argsstring>
+        <name>isApprox</name>
+        <qualifiedname>agi::QuadState::isApprox</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>tol</declname>
+          <defval>1e-6</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="118" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1a67483f92988be8f228f0ee310a9f73d2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadState::operator&lt;</definition>
+        <argsstring>(const Scalar time) const</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>agi::QuadState::operator&lt;</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="120" column="10" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1a3a5ca27acdae632624c3f1257bd59158" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadState::operator&lt;=</definition>
+        <argsstring>(const Scalar time) const</argsstring>
+        <name>operator&lt;=</name>
+        <qualifiedname>agi::QuadState::operator&lt;=</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="121" column="10" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1ae269df5a829c2b3adfe795188f062ae2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadState::operator&gt;</definition>
+        <argsstring>(const Scalar time) const</argsstring>
+        <name>operator&gt;</name>
+        <qualifiedname>agi::QuadState::operator&gt;</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="122" column="15" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="122" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1QuadState_1a356c0c44b49a64bf64f7e4ce268b3c59" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadState::operator&gt;=</definition>
+        <argsstring>(const Scalar time) const</argsstring>
+        <name>operator&gt;=</name>
+        <qualifiedname>agi::QuadState::operator&gt;=</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="123" column="15" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="123" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structagi_1_1QuadState_1a6bacd184f9c7364efbe4a46e4805460f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int agi::QuadState::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <qualifiedname>agi::QuadState::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="86" column="21" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="86" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structagi_1_1QuadState_1a2375ccd49676b46b2846a9d09ae4dd11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const QuadState &amp;state)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::QuadState::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quad_state.hpp" line="125" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/types/quad_state.hpp" line="9" column="1" bodyfile="agilib/include/agilib/types/quad_state.hpp" bodystart="9" bodyend="126"/>
+    <listofallmembers>
+      <member refid="structagi_1_1QuadState_1a211797b68133826391f192a9fd148529" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>a</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a7084b64d45dbdefb3b736587b0f6f73f" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>ACC</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60acdf654a3c060d39ebccddb52cb0a688d" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>ACCX</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a3f6a09d50bc66d8712b2c265d60bc23d" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>ACCY</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a8817c750e8aebc1118186a1f9949f886" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>ACCZ</name></member>
+      <member refid="structagi_1_1QuadState_1a85589f4cab57490c108f2ee3f46f5e75" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>applyYaw</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a0708de4627e0c7332b0ea95f3d3cae47" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>ATT</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60aefdf587149da4b5e309eb0cf4c024c2b" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>ATTW</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a60a97eb41bfdc2a723ac7a5a775d6671" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>ATTX</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60aa1563de9edd978b194cb76c20cded775" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>ATTY</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a0a92a0eb410b8dfba6006e6e00c91987" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>ATTZ</name></member>
+      <member refid="structagi_1_1QuadState_1a1e252a1fc45f383a3a0f5ebe4c7d8ba6" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>ba</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a8b02dff6991c0280324db24f27afec7c" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>BACC</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60acea066333b5ece3f178e265b7de25950" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>BACCX</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a93807859e11b1762b08fa610bb78cf29" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>BACCY</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a155ed1ec9293c8f5d57244918dfc2540" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>BACCZ</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a7c5c7aded9773730419969834e84aeff" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>BOME</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a23a9daca50ceddf828c480874c11ab5c" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>BOMEX</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60aee09ab3fb4d09a83fcc964a13521a774" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>BOMEY</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a550c1328cbcd2f02ced19f38a0fa8d27" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>BOMEZ</name></member>
+      <member refid="structagi_1_1QuadState_1aeb91da225f46ecf9adb73c20dc230bb5" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>bw</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60acf2be6b65f3cfcb7e70591f8e5effe51" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>DYN</name></member>
+      <member refid="structagi_1_1QuadState_1a8eac50c03d8a82b847a4c379cca1167c" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>getHoverState</name></member>
+      <member refid="structagi_1_1QuadState_1af57f7c5eb2a9685d278c2911c7c9198d" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>getYaw</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>IDX</name></member>
+      <member refid="structagi_1_1QuadState_1ad3d33e4a4925a828ff928cbe1f002eaa" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>isApprox</name></member>
+      <member refid="structagi_1_1QuadState_1a3607a6783ba170b9bb071af3e21a0cec" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>j</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60addc2b06ee247450672887e72d99d7e13" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>JERK</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ad5f80625a102a6125bc105c65ddbed2d" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>JERKX</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60aa1c5884fc60197b31cd0f2d13df55854" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>JERKY</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ad1da02fa6424876867db183fed0d17ac" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>JERKZ</name></member>
+      <member refid="structagi_1_1QuadState_1a0b06b513dd6596e640d93ccf54758362" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>linearize</name></member>
+      <member refid="structagi_1_1QuadState_1a20eef62691117b367faced884cc3f11a" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>mot</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ae33c9d56f7d2c03eaa5bcfbcec528eb0" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>MOT</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a62c43db2075ef9d86d96f1f16bdd9f79" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>MOT1</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ac11236543f0c99971e70ad24cef79616" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>MOT2</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a6b3b35da64065504bc579c93d6e9b022" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>MOT3</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a3e63690312724f84bf6d7aefdb4d4348" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>MOT4</name></member>
+      <member refid="structagi_1_1QuadState_1a44d7e3100df54cec540a2f80b6252f63" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>motdes</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a1f99cca3c492284bc827437a9ff75b81" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>MOTDES</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60aa088a610fc7c6aceaab2d182f81d08ed" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>MOTDES1</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a33ffb67cc7317beb0e1839dc69a4902f" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>MOTDES2</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a8b4ffdea9cf2917d7627be4644d05220" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>MOTDES3</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a0d8d990f78c7f04d0836b3feebe783f1" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>MOTDES4</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a621100fd72dba2696e1b86c10744b347" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>NACC</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60acd2541b0b0ee483e160f6d27ff069495" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>NATT</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ac6bb995c8f1186b4d0e690d9a8c44d98" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>NBACC</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a14ae87091e2cae05e0dbc22595e13b14" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>NBOME</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60aa04ae28ff99af36564d7c371c79478ed" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>NJERK</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a5a9a98ea2cdc51ea7cafb1f5a1c9a9db" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>NMOT</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ab9bc1f31840c067e8dbe6f92bb0aed92" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>NMOTDES</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60adcd4a10c2d86f1f151bcfb0446aa6879" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>NOME</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ac6222b0cc68e4dc01fd4dbc6406fda22" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>NPOS</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ae8e19ea2d8c981b46e2de0aeddc95086" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>NSNAP</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a99b5ad6b5960710e8ee4c98fd7d58b56" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>NTAU</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a9b7816ebd623acc63050e7c6dca65948" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>NVEL</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ab6b2cf435c0f2ab81c2a4f45c87da726" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>OME</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a5af903ff415f4f71cedba50b60bb4d6e" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>OMEX</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ad1b21f894b592393086133952cd9c0bf" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>OMEY</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a62511135fa583836c8e9b9e22af029e6" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>OMEZ</name></member>
+      <member refid="structagi_1_1QuadState_1a67483f92988be8f228f0ee310a9f73d2" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>operator&lt;</name></member>
+      <member refid="structagi_1_1QuadState_1a2375ccd49676b46b2846a9d09ae4dd11" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structagi_1_1QuadState_1a3a5ca27acdae632624c3f1257bd59158" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>operator&lt;=</name></member>
+      <member refid="structagi_1_1QuadState_1a836d07ed3b0c484e6d690b36d77aa166" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>operator==</name></member>
+      <member refid="structagi_1_1QuadState_1ae269df5a829c2b3adfe795188f062ae2" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>operator&gt;</name></member>
+      <member refid="structagi_1_1QuadState_1a356c0c44b49a64bf64f7e4ce268b3c59" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>operator&gt;=</name></member>
+      <member refid="structagi_1_1QuadState_1acd58232428e2b0478f5c3a654b97d53d" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>p</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60afec97cf889e796607b1d934759001b27" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>POS</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ad3e9d70bc0630a657a068449c03687ba" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>POSX</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a8cb8cc034d38545f7599a0e615effccc" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>POSY</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a5a8c01a609b629f45961774ac5097022" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>POSZ</name></member>
+      <member refid="structagi_1_1QuadState_1a970b8c9bdb14d5065535f2b867c098a8" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>q</name></member>
+      <member refid="structagi_1_1QuadState_1a019e03db02900951d92bbece9e9611e7" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>q</name></member>
+      <member refid="structagi_1_1QuadState_1a7961e60539cddbe8a167e5dcdaaba567" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>q</name></member>
+      <member refid="structagi_1_1QuadState_1ad18833e5d7a73b500d909129f53e0bc9" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>QuadState</name></member>
+      <member refid="structagi_1_1QuadState_1ab37e506ca4398d671f614278a11813f8" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>QuadState</name></member>
+      <member refid="structagi_1_1QuadState_1a4984f9639b013ab1c504a729e104fd95" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>QuadState</name></member>
+      <member refid="structagi_1_1QuadState_1a2ca4ec6c759a0f259f664cc868e54f4d" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>QuadState</name></member>
+      <member refid="structagi_1_1QuadState_1a006b745f275bc3c4866dd8b44f76d51d" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>qx</name></member>
+      <member refid="structagi_1_1QuadState_1a1edaf7a7d77cca2b18a9ef6c306c0b21" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>R</name></member>
+      <member refid="structagi_1_1QuadState_1a7ad62df82a3a8f80ac1e6a642fcd4eb1" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>s</name></member>
+      <member refid="structagi_1_1QuadState_1a638e7836cb584ba43bad647ffb6703b0" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>setZero</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a7c6c944b6287c169e5aa00a404534ee1" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>SIZE</name></member>
+      <member refid="structagi_1_1QuadState_1a6bacd184f9c7364efbe4a46e4805460f" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>size</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60aa96eeada8c022f791c058895b3e667b7" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>SNAP</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a0551a72592303a5e707749df5f5f27d8" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>SNAPX</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a3f75a11d8520476e66d8acf49bbd84d3" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>SNAPY</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a624f829bf940f12f71fb4de33ae7afc4" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>SNAPZ</name></member>
+      <member refid="structagi_1_1QuadState_1a690f0dd7f67f462600592e4d3348e53a" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>t</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a16f6069aee6e9ec8b4301ded587fbdd1" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>TAU</name></member>
+      <member refid="structagi_1_1QuadState_1adc50d23e5c6e4328f1385ee1f709033a" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>tau</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ad4c1a72cd7c237ba6a23d320acd0fdd0" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>TAUX</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a90c293e6d0848bb8fba346efe542f614" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>TAUY</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60af223a88d9d3e8b8a00c3286dc5a97c9a" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>TAUZ</name></member>
+      <member refid="structagi_1_1QuadState_1a0e57b9f21c26322be5bd856d66782440" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>v</name></member>
+      <member refid="structagi_1_1QuadState_1abdae16448e5eef680c5c35e742766aa0" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>valid</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60ac0bae1469795fff9ec3b9271b5a828a1" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>VEL</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a5ec28d9e6f400eff445592f701d292b1" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>VELX</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60a36b07064b3b079eb9789d5dbc00bb35f" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>VELY</name></member>
+      <member refid="structagi_1_1QuadState_1a982c6396c07b5b65d16732e8e5461f60aee818c186a1575b8fedd6b24db62eb83" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>VELZ</name></member>
+      <member refid="structagi_1_1QuadState_1aafffb6597fc72798cb851ed6edcf31d0" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>w</name></member>
+      <member refid="structagi_1_1QuadState_1ae0724c4293ff910b6b766ac386eaddc7" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>x</name></member>
+      <member refid="structagi_1_1QuadState_1ae7aa95da8e2b18eb29740e5f2b4aecda" prot="public" virt="non-virtual"><scope>agi::QuadState</scope><name>~QuadState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

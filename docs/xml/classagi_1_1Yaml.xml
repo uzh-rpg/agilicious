@@ -1,0 +1,800 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1Yaml" kind="class" language="C++" prot="public">
+    <compoundname>agi::Yaml</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1Yaml_1aaf6d23e2950bca95daf8b04851da9380" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string agi::Yaml::keyspace_</definition>
+        <argsstring></argsstring>
+        <name>keyspace_</name>
+        <qualifiedname>agi::Yaml::keyspace_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="486" column="15" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Yaml_1aa85cded52119d68f1828369c5c6c6c93" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string agi::Yaml::key_</definition>
+        <argsstring></argsstring>
+        <name>key_</name>
+        <qualifiedname>agi::Yaml::key_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="487" column="15" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Yaml_1a1b9e1391b955d6ea79fb35f2b9d32c7e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string agi::Yaml::raw_</definition>
+        <argsstring></argsstring>
+        <name>raw_</name>
+        <qualifiedname>agi::Yaml::raw_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="488" column="15" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Yaml_1a8ae138ea7344454b898573c624545094" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &gt;</type>
+        <definition>std::map&lt;std::string, Yaml&gt; agi::Yaml::map_</definition>
+        <argsstring></argsstring>
+        <name>map_</name>
+        <qualifiedname>agi::Yaml::map_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="489" column="12" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Yaml_1adbedcc049880a9412a13d0c9b36d238d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &gt;</type>
+        <definition>std::vector&lt;Yaml&gt; agi::Yaml::seq_</definition>
+        <argsstring></argsstring>
+        <name>seq_</name>
+        <qualifiedname>agi::Yaml::seq_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="490" column="15" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="490" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1Yaml_1a28d3325a848d7e696e6f15192a2824fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Yaml::Yaml</definition>
+        <argsstring>()=default</argsstring>
+        <name>Yaml</name>
+        <qualifiedname>agi::Yaml::Yaml</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="63" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1ac9d60a75261730a22361f6ddf5650533" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Yaml::Yaml</definition>
+        <argsstring>(const Yaml &amp;)=default</argsstring>
+        <name>Yaml</name>
+        <qualifiedname>agi::Yaml::Yaml</qualifiedname>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="64" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1a3304f7aa875b42e817c91e612fec8165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Yaml::~Yaml</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Yaml</name>
+        <qualifiedname>agi::Yaml::~Yaml</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="65" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1a92b0b7458f8b3adbb21ba19350577857" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::Yaml::Yaml</definition>
+        <argsstring>(const std::string &amp;keyspace, const std::string &amp;key)</argsstring>
+        <name>Yaml</name>
+        <qualifiedname>agi::Yaml::Yaml</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>keyspace</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="66" column="3" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="66" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1a5e324ce3b9c15c6be47257a9e03e4b9b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::Yaml::Yaml</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>Yaml</name>
+        <qualifiedname>agi::Yaml::Yaml</qualifiedname>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="70" column="12" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1ae634ff1815ba73bdac38e5120e4304c3" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::Yaml::Yaml</definition>
+        <argsstring>(const std::string &amp;doc)</argsstring>
+        <name>Yaml</name>
+        <qualifiedname>agi::Yaml::Yaml</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="71" column="12" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1a5e94e324693de1d1a67731cb778e49f5" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::Yaml::Yaml</definition>
+        <argsstring>(const std::string_view &amp;doc)</argsstring>
+        <name>Yaml</name>
+        <qualifiedname>agi::Yaml::Yaml</qualifiedname>
+        <param>
+          <type>const std::string_view &amp;</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="72" column="12" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="72" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1a9c51d950f6361243d4d8a3cc68d2edf5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T agi::Yaml::as</definition>
+        <argsstring>() const</argsstring>
+        <name>as</name>
+        <qualifiedname>agi::Yaml::as</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="80" column="5" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="80" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1aa357d3192dcdd3ad53703a51864f7ada" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref></type>
+        <definition>const Yaml agi::Yaml::operator[]</definition>
+        <argsstring>(const std::string &amp;s) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>agi::Yaml::operator[]</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="123" column="14" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="123" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1a8e0327ad61f5759deb5f4d6ce0ca549b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref></type>
+        <definition>const Yaml agi::Yaml::operator[]</definition>
+        <argsstring>(const int i) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>agi::Yaml::operator[]</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="131" column="14" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="131" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1ad69c830f103c1ff3d15fb44c7bc86e18" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool agi::Yaml::getIfDefined</definition>
+        <argsstring>(T &amp;val) const</argsstring>
+        <name>getIfDefined</name>
+        <qualifiedname>agi::Yaml::getIfDefined</qualifiedname>
+        <param>
+          <type>T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="141" column="8" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="141" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1aacbb98f293cbd6adb524af606b2b924c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Yaml::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <qualifiedname>agi::Yaml::isValid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="152" column="16" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="152" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1a63c6eee95c10d65dd801794ea747297f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Yaml::isDefined</definition>
+        <argsstring>() const</argsstring>
+        <name>isDefined</name>
+        <qualifiedname>agi::Yaml::isDefined</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="155" column="16" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="155" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1af723a25bcf9d466d7098bb47c8980b21" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Yaml::isNull</definition>
+        <argsstring>() const</argsstring>
+        <name>isNull</name>
+        <qualifiedname>agi::Yaml::isNull</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="158" column="16" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="158" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1ac8f281e6668839c34db686dee1687b28" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Yaml::isValue</definition>
+        <argsstring>() const</argsstring>
+        <name>isValue</name>
+        <qualifiedname>agi::Yaml::isValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="161" column="16" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="161" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1a41680e9e7d496597ed48a207efd237f8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Yaml::isNode</definition>
+        <argsstring>() const</argsstring>
+        <name>isNode</name>
+        <qualifiedname>agi::Yaml::isNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="162" column="16" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="162" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1aca66ce25a42a1da5c4a4c582052dc860" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Yaml::isSequence</definition>
+        <argsstring>() const</argsstring>
+        <name>isSequence</name>
+        <qualifiedname>agi::Yaml::isSequence</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="163" column="16" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="163" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1aa00b1d6a09e2296af4462220414d29a9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t agi::Yaml::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>agi::Yaml::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="165" column="18" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="165" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1ab3d2d84061cb1257504e3d1a49f87035" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Yaml::print</definition>
+        <argsstring>(std::ostream &amp;os, const size_t indent) const</argsstring>
+        <name>print</name>
+        <qualifiedname>agi::Yaml::print</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>indent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="181" column="8" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="181" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1a5123f00aaad688ed0c51e245952fdf22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::Yaml::Yaml</definition>
+        <argsstring>(const std::string &amp;keyspace, const std::string &amp;key, const std::string_view &amp;doc, size_t &amp;pos, const size_t end, const size_t min_indent=0, bool list=false)</argsstring>
+        <name>Yaml</name>
+        <qualifiedname>agi::Yaml::Yaml</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>keyspace</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const std::string_view &amp;</type>
+          <declname>doc</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>min_indent</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>list</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="198" column="3" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="198" bodyend="302"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classagi_1_1Yaml_1a813a69a2b19ac6e575fdba13a553d96c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename std::enable_if&lt; !std::is_base_of&lt; Eigen::DenseBase&lt; T &gt;, T &gt;::value &amp;&amp;!std::is_base_of&lt; Eigen::QuaternionBase&lt; T &gt;, T &gt;::value, bool &gt;::type</type>
+            <defval>false</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void operator&gt;&gt;</definition>
+        <argsstring>(const Yaml &amp;yaml, T &amp;value)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <qualifiedname>agi::Yaml::operator&gt;&gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="103" column="22" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="103" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="friend" id="classagi_1_1Yaml_1a8ad64067c8abd55551e1decaf7d6c624" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Derived</type>
+          </param>
+          <param>
+            <type>typename std::enable_if&lt; std::is_base_of&lt; Eigen::DenseBase&lt; Derived &gt;, Derived &gt;::value, bool &gt;::type</type>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void operator&gt;&gt;</definition>
+        <argsstring>(const Yaml &amp;yaml, Derived &amp;matrix)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <qualifiedname>agi::Yaml::operator&gt;&gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <param>
+          <type>Derived &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="111" column="22" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="friend" id="classagi_1_1Yaml_1a8ad64067c8abd55551e1decaf7d6c624" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Derived</type>
+          </param>
+          <param>
+            <type>typename std::enable_if&lt; std::is_base_of&lt; Eigen::QuaternionBase&lt; Derived &gt;, Derived &gt;::value, bool &gt;::type</type>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void operator&gt;&gt;</definition>
+        <argsstring>(const Yaml &amp;yaml, Derived &amp;matrix)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <qualifiedname>agi::Yaml::operator&gt;&gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <param>
+          <type>Derived &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="119" column="22" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="119" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="friend" id="classagi_1_1Yaml_1a8681bce574c07c85cb48771acbddb7f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Yaml &amp;yaml)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::Yaml::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="176" column="10" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="176" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classagi_1_1Yaml_1a88201c225a48769e02e011ba4567d0ae" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int agi::Yaml::as_int</definition>
+        <argsstring>() const</argsstring>
+        <name>as_int</name>
+        <qualifiedname>agi::Yaml::as_int</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="306" column="8" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="306" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1a2bc59a07f6e373901e74ad72212f9daf" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int agi::Yaml::as_uint</definition>
+        <argsstring>() const</argsstring>
+        <name>as_uint</name>
+        <qualifiedname>agi::Yaml::as_uint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="314" column="8" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="314" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1a75fd5560d33d839810bf12fd3879928c" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float agi::Yaml::as_float</definition>
+        <argsstring>() const</argsstring>
+        <name>as_float</name>
+        <qualifiedname>agi::Yaml::as_float</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="323" column="10" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="323" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1a9d0aa5cdea33be5ec7920d8f0ff1b787" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double agi::Yaml::as_double</definition>
+        <argsstring>() const</argsstring>
+        <name>as_double</name>
+        <qualifiedname>agi::Yaml::as_double</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="331" column="11" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="331" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1ab5f01aa4cbb92fcc5257c3a7b639fd6c" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Yaml::as_bool</definition>
+        <argsstring>() const</argsstring>
+        <name>as_bool</name>
+        <qualifiedname>agi::Yaml::as_bool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="339" column="9" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="339" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1afe99e0276525484ad6aec4393e504d91" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string agi::Yaml::as_string</definition>
+        <argsstring>() const</argsstring>
+        <name>as_string</name>
+        <qualifiedname>agi::Yaml::as_string</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="373" column="16" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="373" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1a2675497d8018be80000703ee4cf9bc3c" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::complex&lt; T &gt;</type>
+        <definition>std::complex&lt; T &gt; agi::Yaml::as_complex</definition>
+        <argsstring>() const</argsstring>
+        <name>as_complex</name>
+        <qualifiedname>agi::Yaml::as_complex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="385" column="17" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="385" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1a26defd7355dd0784dcd60e554a685eed" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Derived</type>
+          </param>
+          <param>
+            <type>typename std::enable_if&lt; std::is_base_of&lt; Eigen::DenseBase&lt; Derived &gt;, Derived &gt;::value, bool &gt;::type</type>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void agi::Yaml::as_matrix</definition>
+        <argsstring>(Derived &amp;matrix) const</argsstring>
+        <name>as_matrix</name>
+        <qualifiedname>agi::Yaml::as_matrix</qualifiedname>
+        <param>
+          <type>Derived &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="402" column="8" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="402" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1a4a4a0644089cf493d2038b4522661776" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Derived</type>
+          </param>
+          <param>
+            <type>typename std::enable_if&lt; std::is_base_of&lt; Eigen::QuaternionBase&lt; Derived &gt;, Derived &gt;::value, bool &gt;::type</type>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void agi::Yaml::as_quaternion</definition>
+        <argsstring>(Derived &amp;quaternion) const</argsstring>
+        <name>as_quaternion</name>
+        <qualifiedname>agi::Yaml::as_quaternion</qualifiedname>
+        <param>
+          <type>Derived &amp;</type>
+          <declname>quaternion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="448" column="8" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="448" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Yaml_1a0c87cc9007ed515abc7787ac2e41ed55" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string agi::Yaml::getFullKeyName</definition>
+        <argsstring>() const</argsstring>
+        <name>getFullKeyName</name>
+        <qualifiedname>agi::Yaml::getFullKeyName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="481" column="16" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="481" bodyend="483"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classagi_1_1Yaml_1a2f3e534b9b43309c07bbc2610e970e0a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string agi::Yaml::loadFile</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>loadFile</name>
+        <qualifiedname>agi::Yaml::loadFile</qualifiedname>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/yaml.hpp" line="467" column="22" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="467" bodyend="479"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/utils/yaml.hpp" line="61" column="1" bodyfile="agilib/include/agilib/utils/yaml.hpp" bodystart="61" bodyend="491"/>
+    <listofallmembers>
+      <member refid="classagi_1_1Yaml_1a9c51d950f6361243d4d8a3cc68d2edf5" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>as</name></member>
+      <member refid="classagi_1_1Yaml_1ab5f01aa4cbb92fcc5257c3a7b639fd6c" prot="private" virt="non-virtual"><scope>agi::Yaml</scope><name>as_bool</name></member>
+      <member refid="classagi_1_1Yaml_1a2675497d8018be80000703ee4cf9bc3c" prot="private" virt="non-virtual"><scope>agi::Yaml</scope><name>as_complex</name></member>
+      <member refid="classagi_1_1Yaml_1a9d0aa5cdea33be5ec7920d8f0ff1b787" prot="private" virt="non-virtual"><scope>agi::Yaml</scope><name>as_double</name></member>
+      <member refid="classagi_1_1Yaml_1a75fd5560d33d839810bf12fd3879928c" prot="private" virt="non-virtual"><scope>agi::Yaml</scope><name>as_float</name></member>
+      <member refid="classagi_1_1Yaml_1a88201c225a48769e02e011ba4567d0ae" prot="private" virt="non-virtual"><scope>agi::Yaml</scope><name>as_int</name></member>
+      <member refid="classagi_1_1Yaml_1a26defd7355dd0784dcd60e554a685eed" prot="private" virt="non-virtual"><scope>agi::Yaml</scope><name>as_matrix</name></member>
+      <member refid="classagi_1_1Yaml_1a4a4a0644089cf493d2038b4522661776" prot="private" virt="non-virtual"><scope>agi::Yaml</scope><name>as_quaternion</name></member>
+      <member refid="classagi_1_1Yaml_1afe99e0276525484ad6aec4393e504d91" prot="private" virt="non-virtual"><scope>agi::Yaml</scope><name>as_string</name></member>
+      <member refid="classagi_1_1Yaml_1a2bc59a07f6e373901e74ad72212f9daf" prot="private" virt="non-virtual"><scope>agi::Yaml</scope><name>as_uint</name></member>
+      <member refid="classagi_1_1Yaml_1a0c87cc9007ed515abc7787ac2e41ed55" prot="private" virt="non-virtual"><scope>agi::Yaml</scope><name>getFullKeyName</name></member>
+      <member refid="classagi_1_1Yaml_1ad69c830f103c1ff3d15fb44c7bc86e18" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>getIfDefined</name></member>
+      <member refid="classagi_1_1Yaml_1a63c6eee95c10d65dd801794ea747297f" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>isDefined</name></member>
+      <member refid="classagi_1_1Yaml_1a41680e9e7d496597ed48a207efd237f8" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>isNode</name></member>
+      <member refid="classagi_1_1Yaml_1af723a25bcf9d466d7098bb47c8980b21" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>isNull</name></member>
+      <member refid="classagi_1_1Yaml_1aca66ce25a42a1da5c4a4c582052dc860" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>isSequence</name></member>
+      <member refid="classagi_1_1Yaml_1aacbb98f293cbd6adb524af606b2b924c" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>isValid</name></member>
+      <member refid="classagi_1_1Yaml_1ac8f281e6668839c34db686dee1687b28" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>isValue</name></member>
+      <member refid="classagi_1_1Yaml_1aa85cded52119d68f1828369c5c6c6c93" prot="private" virt="non-virtual"><scope>agi::Yaml</scope><name>key_</name></member>
+      <member refid="classagi_1_1Yaml_1aaf6d23e2950bca95daf8b04851da9380" prot="private" virt="non-virtual"><scope>agi::Yaml</scope><name>keyspace_</name></member>
+      <member refid="classagi_1_1Yaml_1a2f3e534b9b43309c07bbc2610e970e0a" prot="private" virt="non-virtual"><scope>agi::Yaml</scope><name>loadFile</name></member>
+      <member refid="classagi_1_1Yaml_1a8ae138ea7344454b898573c624545094" prot="private" virt="non-virtual"><scope>agi::Yaml</scope><name>map_</name></member>
+      <member refid="classagi_1_1Yaml_1a8681bce574c07c85cb48771acbddb7f2" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classagi_1_1Yaml_1a813a69a2b19ac6e575fdba13a553d96c" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>operator&gt;&gt;</name></member>
+      <member refid="classagi_1_1Yaml_1a8ad64067c8abd55551e1decaf7d6c624" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>operator&gt;&gt;</name></member>
+      <member refid="classagi_1_1Yaml_1a8ad64067c8abd55551e1decaf7d6c624" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>operator&gt;&gt;</name></member>
+      <member refid="classagi_1_1Yaml_1aa357d3192dcdd3ad53703a51864f7ada" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>operator[]</name></member>
+      <member refid="classagi_1_1Yaml_1a8e0327ad61f5759deb5f4d6ce0ca549b" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>operator[]</name></member>
+      <member refid="classagi_1_1Yaml_1ab3d2d84061cb1257504e3d1a49f87035" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>print</name></member>
+      <member refid="classagi_1_1Yaml_1a1b9e1391b955d6ea79fb35f2b9d32c7e" prot="private" virt="non-virtual"><scope>agi::Yaml</scope><name>raw_</name></member>
+      <member refid="classagi_1_1Yaml_1adbedcc049880a9412a13d0c9b36d238d" prot="private" virt="non-virtual"><scope>agi::Yaml</scope><name>seq_</name></member>
+      <member refid="classagi_1_1Yaml_1aa00b1d6a09e2296af4462220414d29a9" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>size</name></member>
+      <member refid="classagi_1_1Yaml_1a28d3325a848d7e696e6f15192a2824fa" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>Yaml</name></member>
+      <member refid="classagi_1_1Yaml_1ac9d60a75261730a22361f6ddf5650533" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>Yaml</name></member>
+      <member refid="classagi_1_1Yaml_1a92b0b7458f8b3adbb21ba19350577857" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>Yaml</name></member>
+      <member refid="classagi_1_1Yaml_1a5e324ce3b9c15c6be47257a9e03e4b9b" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>Yaml</name></member>
+      <member refid="classagi_1_1Yaml_1ae634ff1815ba73bdac38e5120e4304c3" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>Yaml</name></member>
+      <member refid="classagi_1_1Yaml_1a5e94e324693de1d1a67731cb778e49f5" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>Yaml</name></member>
+      <member refid="classagi_1_1Yaml_1a5123f00aaad688ed0c51e245952fdf22" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>Yaml</name></member>
+      <member refid="classagi_1_1Yaml_1a3304f7aa875b42e817c91e612fec8165" prot="public" virt="non-virtual"><scope>agi::Yaml</scope><name>~Yaml</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

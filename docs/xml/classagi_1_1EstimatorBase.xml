@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1EstimatorBase" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>agi::EstimatorBase</compoundname>
+    <basecompoundref refid="classagi_1_1Module" prot="public" virt="non-virtual">agi::Module&lt; EstimatorBase &gt;</basecompoundref>
+    <derivedcompoundref refid="classagi_1_1Ekf" prot="public" virt="non-virtual">agi::Ekf</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1EkfImu" prot="public" virt="non-virtual">agi::EkfImu</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1FeedthroughEstimator" prot="public" virt="non-virtual">agi::FeedthroughEstimator</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1MockVio" prot="public" virt="non-virtual">agi::MockVio</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1EstimatorBase_1a68bc7fce129a8dcc6a63e7c43deefa70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::EstimatorBase::EstimatorBase</definition>
+        <argsstring>(const std::string &amp;name=&quot;Estimator&quot;)</argsstring>
+        <name>EstimatorBase</name>
+        <qualifiedname>agi::EstimatorBase::EstimatorBase</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+          <defval>&quot;Estimator&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/estimator_base.hpp" line="14" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1EstimatorBase_1a733df2e968c379f3e9354cad3b1cb853" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual agi::EstimatorBase::~EstimatorBase</definition>
+        <argsstring>()</argsstring>
+        <name>~EstimatorBase</name>
+        <qualifiedname>agi::EstimatorBase::~EstimatorBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/estimator_base.hpp" line="15" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1EstimatorBase_1abd6ede1855eddaa58e7893af865f80ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::EstimatorBase::initialize</definition>
+        <argsstring>(const QuadState &amp;state)=0</argsstring>
+        <name>initialize</name>
+        <qualifiedname>agi::EstimatorBase::initialize</qualifiedname>
+        <reimplementedby refid="classagi_1_1Ekf_1a28b3208ce3bd41ef7b84e8a2872aefa1">initialize</reimplementedby>
+        <reimplementedby refid="classagi_1_1EkfImu_1a450387bbe858a665ce869a5f2424bcd6">initialize</reimplementedby>
+        <reimplementedby refid="classagi_1_1FeedthroughEstimator_1ac2dd9c71f6d2b1f1c8dda53af921c375">initialize</reimplementedby>
+        <reimplementedby refid="classagi_1_1MockVio_1a7d81195f6a9aaf75f1581fbcdd3e59db">initialize</reimplementedby>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the filter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/estimator_base.hpp" line="18" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1EstimatorBase_1abf9a63d7e89d0aa13f726d29dfa991b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::EstimatorBase::addPose</definition>
+        <argsstring>(const Pose &amp;pose)=0</argsstring>
+        <name>addPose</name>
+        <qualifiedname>agi::EstimatorBase::addPose</qualifiedname>
+        <reimplementedby refid="classagi_1_1Ekf_1a0e7427ad4a82b50cfb7bcd4964dc33bc">addPose</reimplementedby>
+        <reimplementedby refid="classagi_1_1EkfImu_1a8af14d5d437e56eddabe417a3ca93a63">addPose</reimplementedby>
+        <reimplementedby refid="classagi_1_1FeedthroughEstimator_1a3546dd351334db21dbcf7ec9ae1baefd">addPose</reimplementedby>
+        <reimplementedby refid="classagi_1_1MockVio_1a2bcdf0140be6bec676cb9b483a37fe06">addPose</reimplementedby>
+        <param>
+          <type>const <ref refid="structagi_1_1Pose" kindref="compound">Pose</ref> &amp;</type>
+          <declname>pose</declname>
+        </param>
+        <briefdescription>
+<para>Add measurement. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/estimator_base.hpp" line="21" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1EstimatorBase_1a17a233e59676e2fa7b207ce887e0c4ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::EstimatorBase::addState</definition>
+        <argsstring>(const QuadState &amp;pose)=0</argsstring>
+        <name>addState</name>
+        <qualifiedname>agi::EstimatorBase::addState</qualifiedname>
+        <reimplementedby refid="classagi_1_1Ekf_1a287771ddd84f8313dc0dbfcd5bf02b37">addState</reimplementedby>
+        <reimplementedby refid="classagi_1_1EkfImu_1aa2ab2163b8aa860587e428cb9c741b53">addState</reimplementedby>
+        <reimplementedby refid="classagi_1_1FeedthroughEstimator_1a505cc8b8b0df58c44381eacdb9833db0">addState</reimplementedby>
+        <reimplementedby refid="classagi_1_1MockVio_1abcdab781c5d86cb19cc75adf007e056a">addState</reimplementedby>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>pose</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/estimator_base.hpp" line="22" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1EstimatorBase_1a734a1da382a5a84d1cd982765cda3012" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::EstimatorBase::addImu</definition>
+        <argsstring>(const ImuSample &amp;pose)=0</argsstring>
+        <name>addImu</name>
+        <qualifiedname>agi::EstimatorBase::addImu</qualifiedname>
+        <reimplementedby refid="classagi_1_1Ekf_1a52e0d7f4311cc5a6968c6c4470bebe0f">addImu</reimplementedby>
+        <reimplementedby refid="classagi_1_1EkfImu_1afcd1a7ddab38cbe8ad1d95765d7a719b">addImu</reimplementedby>
+        <reimplementedby refid="classagi_1_1FeedthroughEstimator_1a3992bdfb77c16c87ead857b72f9df029">addImu</reimplementedby>
+        <reimplementedby refid="classagi_1_1MockVio_1a92541f5900b1181ae192d2d65c43e97a">addImu</reimplementedby>
+        <param>
+          <type>const <ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref> &amp;</type>
+          <declname>pose</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/estimator_base.hpp" line="23" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1EstimatorBase_1a1c529d6e8db99fc14c513075c2fc8b99" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::EstimatorBase::addMotorSpeeds</definition>
+        <argsstring>(const Vector&lt; 4 &gt; &amp;speeds)=0</argsstring>
+        <name>addMotorSpeeds</name>
+        <qualifiedname>agi::EstimatorBase::addMotorSpeeds</qualifiedname>
+        <reimplementedby refid="classagi_1_1Ekf_1ab3ae414ac72888541293c379ba7e98b2">addMotorSpeeds</reimplementedby>
+        <reimplementedby refid="classagi_1_1EkfImu_1a592c338eed4b37248b450c8ea625617c">addMotorSpeeds</reimplementedby>
+        <reimplementedby refid="classagi_1_1FeedthroughEstimator_1ac285fc25649f79eabbf771adaa268cbf">addMotorSpeeds</reimplementedby>
+        <reimplementedby refid="classagi_1_1MockVio_1a3cbfa848b3d7baa6f64a0cab01c103cd">addMotorSpeeds</reimplementedby>
+        <param>
+          <type>const Vector&lt; 4 &gt; &amp;</type>
+          <declname>speeds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/estimator_base.hpp" line="24" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1EstimatorBase_1a7c264c4b030d225eb0e362aaca0bfe81" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::EstimatorBase::getAt</definition>
+        <argsstring>(const Scalar t, QuadState *const state)=0</argsstring>
+        <name>getAt</name>
+        <qualifiedname>agi::EstimatorBase::getAt</qualifiedname>
+        <reimplementedby refid="classagi_1_1Ekf_1a5ae8220bba45357d22164db9a5bd065c">getAt</reimplementedby>
+        <reimplementedby refid="classagi_1_1EkfImu_1afc44a49329a116ba8d7a00ab9fd22316">getAt</reimplementedby>
+        <reimplementedby refid="classagi_1_1FeedthroughEstimator_1ada374c7561b0e70d20c810af9cf11fe5">getAt</reimplementedby>
+        <reimplementedby refid="classagi_1_1MockVio_1a8a378c3898323e582cab3aa99f645b9f">getAt</reimplementedby>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> *const</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Get state at specific time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/estimator_base.hpp" line="27" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1EstimatorBase_1acb163fbefc751e52d4692238ba613fb0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::EstimatorBase::healthy</definition>
+        <argsstring>() const =0</argsstring>
+        <name>healthy</name>
+        <qualifiedname>agi::EstimatorBase::healthy</qualifiedname>
+        <reimplementedby refid="classagi_1_1Ekf_1abb5942ef6b03dab24f372bd305569035">healthy</reimplementedby>
+        <reimplementedby refid="classagi_1_1EkfImu_1a5af0a534f8f5a1fe79ec283405526887">healthy</reimplementedby>
+        <reimplementedby refid="classagi_1_1FeedthroughEstimator_1a8757fe818713cb339f71f8252f8c5c3f">healthy</reimplementedby>
+        <reimplementedby refid="classagi_1_1MockVio_1a74502559cc50a389b81b86d8c5f7b23e">healthy</reimplementedby>
+        <briefdescription>
+<para>Check if estimator is healthy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/estimator_base.hpp" line="30" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1EstimatorBase_1aaeb1f03eb699b351cdd3c201d385bdaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::EstimatorBase::getState</definition>
+        <argsstring>(QuadState *const state)</argsstring>
+        <name>getState</name>
+        <qualifiedname>agi::EstimatorBase::getState</qualifiedname>
+        <param>
+          <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> *const</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Get state at time state.t. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/estimator_base.hpp" line="33" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1EstimatorBase_1aa4189dc0231131862d94b65d558f6f37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::EstimatorBase::getRecent</definition>
+        <argsstring>(QuadState *const state)</argsstring>
+        <name>getRecent</name>
+        <qualifiedname>agi::EstimatorBase::getRecent</qualifiedname>
+        <param>
+          <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> *const</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Get latest state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/estimator_base.hpp" line="36" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1EstimatorBase_1a960ad111f8a4c51b1546d20276464cdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref></type>
+        <definition>QuadState agi::EstimatorBase::getRecent</definition>
+        <argsstring>()</argsstring>
+        <name>getRecent</name>
+        <qualifiedname>agi::EstimatorBase::getRecent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/estimator_base.hpp" line="37" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::Module&lt; EstimatorBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="3">
+        <label>agi::Ekf</label>
+        <link refid="classagi_1_1Ekf"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::EkfImu</label>
+        <link refid="classagi_1_1EkfImu"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::EstimatorBase</label>
+        <link refid="classagi_1_1EstimatorBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>agi::FeedthroughEstimator</label>
+        <link refid="classagi_1_1FeedthroughEstimator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>agi::MockVio</label>
+        <link refid="classagi_1_1MockVio"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::Module&lt; EstimatorBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::EstimatorBase</label>
+        <link refid="classagi_1_1EstimatorBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/estimator/estimator_base.hpp" line="12" column="1" bodyfile="agilib/include/agilib/estimator/estimator_base.hpp" bodystart="12" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classagi_1_1EstimatorBase_1a734a1da382a5a84d1cd982765cda3012" prot="public" virt="pure-virtual"><scope>agi::EstimatorBase</scope><name>addImu</name></member>
+      <member refid="classagi_1_1EstimatorBase_1a1c529d6e8db99fc14c513075c2fc8b99" prot="public" virt="pure-virtual"><scope>agi::EstimatorBase</scope><name>addMotorSpeeds</name></member>
+      <member refid="classagi_1_1EstimatorBase_1abf9a63d7e89d0aa13f726d29dfa991b9" prot="public" virt="pure-virtual"><scope>agi::EstimatorBase</scope><name>addPose</name></member>
+      <member refid="classagi_1_1EstimatorBase_1a17a233e59676e2fa7b207ce887e0c4ad" prot="public" virt="pure-virtual"><scope>agi::EstimatorBase</scope><name>addState</name></member>
+      <member refid="classagi_1_1EstimatorBase_1a68bc7fce129a8dcc6a63e7c43deefa70" prot="public" virt="non-virtual"><scope>agi::EstimatorBase</scope><name>EstimatorBase</name></member>
+      <member refid="classagi_1_1EstimatorBase_1a7c264c4b030d225eb0e362aaca0bfe81" prot="public" virt="pure-virtual"><scope>agi::EstimatorBase</scope><name>getAt</name></member>
+      <member refid="classagi_1_1EstimatorBase_1aa4189dc0231131862d94b65d558f6f37" prot="public" virt="non-virtual"><scope>agi::EstimatorBase</scope><name>getRecent</name></member>
+      <member refid="classagi_1_1EstimatorBase_1a960ad111f8a4c51b1546d20276464cdf" prot="public" virt="non-virtual"><scope>agi::EstimatorBase</scope><name>getRecent</name></member>
+      <member refid="classagi_1_1EstimatorBase_1aaeb1f03eb699b351cdd3c201d385bdaf" prot="public" virt="non-virtual"><scope>agi::EstimatorBase</scope><name>getState</name></member>
+      <member refid="classagi_1_1EstimatorBase_1acb163fbefc751e52d4692238ba613fb0" prot="public" virt="pure-virtual"><scope>agi::EstimatorBase</scope><name>healthy</name></member>
+      <member refid="classagi_1_1EstimatorBase_1abd6ede1855eddaa58e7893af865f80ec" prot="public" virt="pure-virtual"><scope>agi::EstimatorBase</scope><name>initialize</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::EstimatorBase</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::EstimatorBase</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::EstimatorBase</scope><name>Module</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::EstimatorBase</scope><name>name</name></member>
+      <member refid="classagi_1_1EstimatorBase_1a733df2e968c379f3e9354cad3b1cb853" prot="public" virt="virtual"><scope>agi::EstimatorBase</scope><name>~EstimatorBase</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::EstimatorBase</scope><name>~Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

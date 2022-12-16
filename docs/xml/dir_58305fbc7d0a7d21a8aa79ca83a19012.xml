@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_58305fbc7d0a7d21a8aa79ca83a19012" kind="dir">
+    <compoundname>agilib/include/agilib/controller</compoundname>
+    <innerdir refid="dir_3fe024c247a20cb86cbdf2feab99b09a">agilib/include/agilib/controller/geometric</innerdir>
+    <innerdir refid="dir_b2e897f29871f11200343f89bc6342db">agilib/include/agilib/controller/indi</innerdir>
+    <innerdir refid="dir_8765b64e51b1e2885f98844342f123cf">agilib/include/agilib/controller/mpc</innerdir>
+    <innerdir refid="dir_ad386663ca4fa8fb94518bc60bda697a">agilib/include/agilib/controller/pid</innerdir>
+    <innerfile refid="controller__base_8hpp">controller_base.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/controller/"/>
+  </compounddef>
+</doxygen>

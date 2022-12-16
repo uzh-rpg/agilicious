@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="model__lin__cub__drag__params_8hpp" kind="file" language="C++">
+    <compoundname>model_lin_cub_drag_params.hpp</compoundname>
+    <includes refid="parameter__base_8hpp" local="yes">agilib/base/parameter_base.hpp</includes>
+    <includes refid="types_8hpp" local="yes">agilib/math/types.hpp</includes>
+    <includes refid="logger_8hpp" local="yes">agilib/utils/logger.hpp</includes>
+    <includedby refid="model__lin__cub__drag_8hpp" local="yes">agilib/include/agilib/simulator/model_lin_cub_drag.hpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>agilib/base/parameter_base.hpp</label>
+        <link refid="parameter__base_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>agilib/math/types.hpp</label>
+        <link refid="types_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agilib/include/agilib/simulator/model_lin_cub_drag_params.hpp</label>
+        <link refid="model__lin__cub__drag__params_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agilib/utils/filesystem.hpp</label>
+        <link refid="filesystem_8hpp_source"/>
+      </node>
+      <node id="16">
+        <label>agilib/utils/logger.hpp</label>
+        <link refid="logger_8hpp_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>agilib/utils/yaml.hpp</label>
+        <link refid="yaml_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Eigen/Eigen</label>
+      </node>
+      <node id="10">
+        <label>algorithm</label>
+      </node>
+      <node id="17">
+        <label>cstdarg</label>
+      </node>
+      <node id="18">
+        <label>cstdio</label>
+      </node>
+      <node id="4">
+        <label>exception</label>
+      </node>
+      <node id="11">
+        <label>fstream</label>
+      </node>
+      <node id="12">
+        <label>iostream</label>
+      </node>
+      <node id="8">
+        <label>limits</label>
+      </node>
+      <node id="13">
+        <label>memory</label>
+      </node>
+      <node id="5">
+        <label>sstream</label>
+      </node>
+      <node id="14">
+        <label>string</label>
+      </node>
+      <node id="15">
+        <label>string_view</label>
+      </node>
+      <node id="19">
+        <label>unordered_map</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>agilib/include/agilib/simulator/model_lin_cub_drag.hpp</label>
+        <link refid="model__lin__cub__drag_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>agilib/include/agilib/simulator/model_lin_cub_drag_params.hpp</label>
+        <link refid="model__lin__cub__drag__params_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structagi_1_1LinCubDragParameters" prot="public">agi::LinCubDragParameters</innerclass>
+    <innernamespace refid="namespaceagi">agi</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/base/parameter_base.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/math/types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/utils/logger.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">agi<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="structagi_1_1LinCubDragParameters" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structagi_1_1LinCubDragParameters" kindref="compound">LinCubDragParameters</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1ParameterBase" kindref="compound">ParameterBase</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><ref refid="structagi_1_1LinCubDragParameters" kindref="compound">LinCubDragParameters</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a" kindref="member">ParameterBase::load</ref>;</highlight></codeline>
+<codeline lineno="13" refid="structagi_1_1LinCubDragParameters_1a1dcfe54442b1d7a16b91545456d4babb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1LinCubDragParameters_1a1dcfe54442b1d7a16b91545456d4babb" kindref="member">load</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref>&amp;<sp/>node)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="structagi_1_1LinCubDragParameters_1a288a731f15986eb5cd00d7f6d3816ec6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1LinCubDragParameters_1a288a731f15986eb5cd00d7f6d3816ec6" kindref="member">valid</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>Vector&lt;3&gt;<sp/>lin_drag_coeff_;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>Vector&lt;3&gt;<sp/>cub_drag_coeff_;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>Scalar<sp/>induced_lift_coeff_<sp/>=<sp/>NAN;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>agi</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="agilib/include/agilib/simulator/model_lin_cub_drag_params.hpp"/>
+  </compounddef>
+</doxygen>

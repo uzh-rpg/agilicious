@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_ad2c5eb25600875b53bb8d4b96c204c9" kind="dir">
+    <compoundname>agilib/include/agilib/bridge/msp</compoundname>
+    <innerfile refid="msp__bridge_8hpp">msp_bridge.hpp</innerfile>
+    <innerfile refid="msp__bridge__params_8hpp">msp_bridge_params.hpp</innerfile>
+    <innerfile refid="msp__encoding_8hpp">msp_encoding.hpp</innerfile>
+    <innerfile refid="msp__msgs__defs_8hpp">msp_msgs_defs.hpp</innerfile>
+    <innerfile refid="msp__packet_8hpp">msp_packet.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/bridge/msp/"/>
+  </compounddef>
+</doxygen>

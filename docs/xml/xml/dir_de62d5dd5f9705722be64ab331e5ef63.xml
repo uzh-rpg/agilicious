@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_de62d5dd5f9705722be64ab331e5ef63" kind="dir">
+    <compoundname>agilib/include/agilib/estimator/mock_vio</compoundname>
+    <innerfile refid="mock__vio_8hpp">mock_vio.hpp</innerfile>
+    <innerfile refid="mock__vio__params_8hpp">mock_vio_params.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/estimator/mock_vio/"/>
+  </compounddef>
+</doxygen>

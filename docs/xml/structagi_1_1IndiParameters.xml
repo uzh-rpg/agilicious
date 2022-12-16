@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1IndiParameters" kind="struct" language="C++" prot="public">
+    <compoundname>agi::IndiParameters</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1IndiParameters_1a95612d67caaa261ba02fd130b3d52e85" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::IndiParameters::kp_rate_</definition>
+        <argsstring></argsstring>
+        <name>kp_rate_</name>
+        <qualifiedname>agi::IndiParameters::kp_rate_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/indi_params.hpp" line="15" column="10" bodyfile="agilib/include/agilib/controller/indi/indi_params.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1IndiParameters_1a134312c44620d925484d37d35a931cb7" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::IndiParameters::filter_sampling_frequency_</definition>
+        <argsstring></argsstring>
+        <name>filter_sampling_frequency_</name>
+        <qualifiedname>agi::IndiParameters::filter_sampling_frequency_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/indi_params.hpp" line="17" column="10" bodyfile="agilib/include/agilib/controller/indi/indi_params.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1IndiParameters_1a11562a5470742d4457b18a8addf45484" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::IndiParameters::filter_cutoff_frequency_</definition>
+        <argsstring></argsstring>
+        <name>filter_cutoff_frequency_</name>
+        <qualifiedname>agi::IndiParameters::filter_cutoff_frequency_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/indi_params.hpp" line="18" column="10" bodyfile="agilib/include/agilib/controller/indi/indi_params.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1IndiParameters_1a5b400f152aba1fc3388839b3f5f4eaa4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::IndiParameters::use_indi_</definition>
+        <argsstring></argsstring>
+        <name>use_indi_</name>
+        <qualifiedname>agi::IndiParameters::use_indi_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/indi_params.hpp" line="20" column="8" bodyfile="agilib/include/agilib/controller/indi/indi_params.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1IndiParameters_1af2dfaddc8c865801ea19db216537ff4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::IndiParameters::IndiParameters</definition>
+        <argsstring>()</argsstring>
+        <name>IndiParameters</name>
+        <qualifiedname>agi::IndiParameters::IndiParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/indi_params.hpp" line="10" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1IndiParameters_1a2bfac41f6c8daa88010bd1e2dfdf6794" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::IndiParameters::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::IndiParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/indi_params.hpp" line="13" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1IndiParameters_1a677ec6920e503947aeeaffaa1dea9ba4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::IndiParameters::valid</definition>
+        <argsstring>() const override</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::IndiParameters::valid</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b">valid</reimplements>
+        <briefdescription>
+<para>Check if parameters are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/indi_params.hpp" line="22" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1IndiParameters_1aa72a975fca1221525746975fe5ee1b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::IndiParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/indi_params.hpp" line="12" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1IndiParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const Yaml &amp;yaml)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::IndiParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/indi_params.hpp" line="12" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structagi_1_1IndiParameters_1ab5a536e78a3f6aa5aa120c7f68851c09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const IndiParameters &amp;params)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::IndiParameters::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1IndiParameters" kindref="compound">IndiParameters</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/indi/indi_params.hpp" line="24" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::IndiParameters</label>
+        <link refid="structagi_1_1IndiParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::IndiParameters</label>
+        <link refid="structagi_1_1IndiParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/controller/indi/indi_params.hpp" line="7" column="1" bodyfile="agilib/include/agilib/controller/indi/indi_params.hpp" bodystart="7" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structagi_1_1IndiParameters_1a11562a5470742d4457b18a8addf45484" prot="public" virt="non-virtual"><scope>agi::IndiParameters</scope><name>filter_cutoff_frequency_</name></member>
+      <member refid="structagi_1_1IndiParameters_1a134312c44620d925484d37d35a931cb7" prot="public" virt="non-virtual"><scope>agi::IndiParameters</scope><name>filter_sampling_frequency_</name></member>
+      <member refid="structagi_1_1IndiParameters_1af2dfaddc8c865801ea19db216537ff4b" prot="public" virt="non-virtual"><scope>agi::IndiParameters</scope><name>IndiParameters</name></member>
+      <member refid="structagi_1_1IndiParameters_1a95612d67caaa261ba02fd130b3d52e85" prot="public" virt="non-virtual"><scope>agi::IndiParameters</scope><name>kp_rate_</name></member>
+      <member refid="structagi_1_1IndiParameters_1a2bfac41f6c8daa88010bd1e2dfdf6794" prot="public" virt="virtual"><scope>agi::IndiParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1IndiParameters_1aa72a975fca1221525746975fe5ee1b6a" prot="public" virt="virtual"><scope>agi::IndiParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1IndiParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" virt="virtual"><scope>agi::IndiParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1IndiParameters_1ab5a536e78a3f6aa5aa120c7f68851c09" prot="public" virt="non-virtual"><scope>agi::IndiParameters</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structagi_1_1IndiParameters_1a5b400f152aba1fc3388839b3f5f4eaa4" prot="public" virt="non-virtual"><scope>agi::IndiParameters</scope><name>use_indi_</name></member>
+      <member refid="structagi_1_1IndiParameters_1a677ec6920e503947aeeaffaa1dea9ba4" prot="public" virt="virtual"><scope>agi::IndiParameters</scope><name>valid</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::IndiParameters</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

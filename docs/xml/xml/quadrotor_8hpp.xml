@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="quadrotor_8hpp" kind="file" language="C++">
+    <compoundname>quadrotor.hpp</compoundname>
+    <includes local="no">functional</includes>
+    <includes refid="parameter__base_8hpp" local="yes">agilib/base/parameter_base.hpp</includes>
+    <includes refid="types_8hpp" local="yes">agilib/math/types.hpp</includes>
+    <includes refid="quad__state_8hpp" local="yes">agilib/types/quad_state.hpp</includes>
+    <includedby refid="laird__bridge_8hpp" local="yes">agilib/include/agilib/bridge/laird/laird_bridge.hpp</includedby>
+    <includedby refid="msg__encoding_8hpp" local="yes">agilib/include/agilib/bridge/msg_encoding.hpp</includedby>
+    <includedby refid="serial__bridge_8hpp" local="yes">agilib/include/agilib/bridge/serial_bridge.hpp</includedby>
+    <includedby refid="controller__geo_8hpp" local="yes">agilib/include/agilib/controller/geometric/controller_geo.hpp</includedby>
+    <includedby refid="controller__indi_8hpp" local="yes">agilib/include/agilib/controller/indi/controller_indi.hpp</includedby>
+    <includedby refid="cog__filter_8hpp" local="yes">agilib/include/agilib/controller/mpc/cog_filter.hpp</includedby>
+    <includedby refid="controller__mpc_8hpp" local="yes">agilib/include/agilib/controller/mpc/controller_mpc.hpp</includedby>
+    <includedby refid="controller__pid_8hpp" local="yes">agilib/include/agilib/controller/pid/controller_pid.hpp</includedby>
+    <includedby refid="ekf_8hpp" local="yes">agilib/include/agilib/estimator/ekf/ekf.hpp</includedby>
+    <includedby refid="ekf__imu_8hpp" local="yes">agilib/include/agilib/estimator/ekf_imu/ekf_imu.hpp</includedby>
+    <includedby refid="mock__vio_8hpp" local="yes">agilib/include/agilib/estimator/mock_vio/mock_vio.hpp</includedby>
+    <includedby refid="pilot_8hpp" local="yes">agilib/include/agilib/pilot/pilot.hpp</includedby>
+    <includedby refid="pilot__params_8hpp" local="yes">agilib/include/agilib/pilot/pilot_params.hpp</includedby>
+    <includedby refid="polynomial__trajectory_8hpp" local="yes">agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp</includedby>
+    <includedby refid="low__level__controller__base_8hpp" local="yes">agilib/include/agilib/simulator/low_level_controller_base.hpp</includedby>
+    <includedby refid="model__base_8hpp" local="yes">agilib/include/agilib/simulator/model_base.hpp</includedby>
+    <includedby refid="quadrotor__simulator_8hpp" local="yes">agilib/include/agilib/simulator/quadrotor_simulator.hpp</includedby>
+    <includedby refid="simulator__params_8hpp" local="yes">agilib/include/agilib/simulator/simulator_params.hpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>agilib/base/parameter_base.hpp</label>
+        <link refid="parameter__base_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>agilib/math/types.hpp</label>
+        <link refid="types_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>agilib/types/quad_state.hpp</label>
+        <link refid="quad__state_8hpp_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agilib/include/agilib/types/quadrotor.hpp</label>
+        <link refid="quadrotor_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agilib/utils/filesystem.hpp</label>
+        <link refid="filesystem_8hpp_source"/>
+      </node>
+      <node id="10">
+        <label>agilib/utils/yaml.hpp</label>
+        <link refid="yaml_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Eigen/Eigen</label>
+      </node>
+      <node id="11">
+        <label>algorithm</label>
+      </node>
+      <node id="5">
+        <label>exception</label>
+      </node>
+      <node id="12">
+        <label>fstream</label>
+      </node>
+      <node id="2">
+        <label>functional</label>
+      </node>
+      <node id="13">
+        <label>iostream</label>
+      </node>
+      <node id="9">
+        <label>limits</label>
+      </node>
+      <node id="14">
+        <label>memory</label>
+      </node>
+      <node id="6">
+        <label>sstream</label>
+      </node>
+      <node id="15">
+        <label>string</label>
+      </node>
+      <node id="16">
+        <label>string_view</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>agilib/include/agilib/bridge/ctrl/ctrl_bridge.hpp</label>
+        <link refid="ctrl__bridge_8hpp_source"/>
+      </node>
+      <node id="4">
+        <label>agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp</label>
+        <link refid="ctrl__encoding_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agilib/include/agilib/bridge/laird/laird_bridge.hpp</label>
+        <link refid="laird__bridge_8hpp_source"/>
+      </node>
+      <node id="6">
+        <label>agilib/include/agilib/bridge/laird/laird_encoding.hpp</label>
+        <link refid="laird__encoding_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agilib/include/agilib/bridge/msg_encoding.hpp</label>
+        <link refid="msg__encoding_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>agilib/include/agilib/bridge/msp/msp_bridge.hpp</label>
+        <link refid="msp__bridge_8hpp_source"/>
+      </node>
+      <node id="7">
+        <label>agilib/include/agilib/bridge/msp/msp_encoding.hpp</label>
+        <link refid="msp__encoding_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>agilib/include/agilib/bridge/sbus/sbus_bridge.hpp</label>
+        <link refid="sbus__bridge_8hpp_source"/>
+      </node>
+      <node id="9">
+        <label>agilib/include/agilib/bridge/sbus/sbus_encoding.hpp</label>
+        <link refid="sbus__encoding_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>agilib/include/agilib/bridge/serial_bridge.hpp</label>
+        <link refid="serial__bridge_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>agilib/include/agilib/controller/geometric/controller_geo.hpp</label>
+        <link refid="controller__geo_8hpp_source"/>
+      </node>
+      <node id="13">
+        <label>agilib/include/agilib/controller/indi/controller_indi.hpp</label>
+        <link refid="controller__indi_8hpp_source"/>
+      </node>
+      <node id="14">
+        <label>agilib/include/agilib/controller/mpc/cog_filter.hpp</label>
+        <link refid="cog__filter_8hpp_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>agilib/include/agilib/controller/mpc/controller_mpc.hpp</label>
+        <link refid="controller__mpc_8hpp_source"/>
+      </node>
+      <node id="16">
+        <label>agilib/include/agilib/controller/pid/controller_pid.hpp</label>
+        <link refid="controller__pid_8hpp_source"/>
+      </node>
+      <node id="17">
+        <label>agilib/include/agilib/estimator/ekf/ekf.hpp</label>
+        <link refid="ekf_8hpp_source"/>
+      </node>
+      <node id="18">
+        <label>agilib/include/agilib/estimator/ekf_imu/ekf_imu.hpp</label>
+        <link refid="ekf__imu_8hpp_source"/>
+      </node>
+      <node id="19">
+        <label>agilib/include/agilib/estimator/mock_vio/mock_vio.hpp</label>
+        <link refid="mock__vio_8hpp_source"/>
+      </node>
+      <node id="20">
+        <label>agilib/include/agilib/pilot/pilot.hpp</label>
+        <link refid="pilot_8hpp_source"/>
+      </node>
+      <node id="21">
+        <label>agilib/include/agilib/pilot/pilot_params.hpp</label>
+        <link refid="pilot__params_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp</label>
+        <link refid="polynomial__trajectory_8hpp_source"/>
+      </node>
+      <node id="23">
+        <label>agilib/include/agilib/simulator/low_level_controller_base.hpp</label>
+        <link refid="low__level__controller__base_8hpp_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>agilib/include/agilib/simulator/low_level_controller_betaflight.hpp</label>
+        <link refid="low__level__controller__betaflight_8hpp_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp</label>
+        <link refid="low__level__controller__betaflight__params_8hpp_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>agilib/include/agilib/simulator/low_level_controller_simple.hpp</label>
+        <link refid="low__level__controller__simple_8hpp_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>agilib/include/agilib/simulator/model_base.hpp</label>
+        <link refid="model__base_8hpp_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>agilib/include/agilib/simulator/model_body_drag.hpp</label>
+        <link refid="model__body__drag_8hpp_source"/>
+      </node>
+      <node id="31">
+        <label>agilib/include/agilib/simulator/model_init.hpp</label>
+        <link refid="model__init_8hpp_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>agilib/include/agilib/simulator/model_lin_cub_drag.hpp</label>
+        <link refid="model__lin__cub__drag_8hpp_source"/>
+      </node>
+      <node id="33">
+        <label>agilib/include/agilib/simulator/model_motor.hpp</label>
+        <link refid="model__motor_8hpp_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>agilib/include/agilib/simulator/model_propeller_bem.hpp</label>
+        <link refid="model__propeller__bem_8hpp_source"/>
+      </node>
+      <node id="35">
+        <label>agilib/include/agilib/simulator/model_rigid_body.hpp</label>
+        <link refid="model__rigid__body_8hpp_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>agilib/include/agilib/simulator/model_thrust_torque_simple.hpp</label>
+        <link refid="model__thrust__torque__simple_8hpp_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>agilib/include/agilib/simulator/quadrotor_simulator.hpp</label>
+        <link refid="quadrotor__simulator_8hpp_source"/>
+      </node>
+      <node id="28">
+        <label>agilib/include/agilib/simulator/simulator_params.hpp</label>
+        <link refid="simulator__params_8hpp_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agilib/include/agilib/types/quadrotor.hpp</label>
+        <link refid="quadrotor_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structagi_1_1Quadrotor" prot="public">agi::Quadrotor</innerclass>
+    <innernamespace refid="namespaceagi">agi</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/base/parameter_base.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/math/types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/types/quad_state.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">agi<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="structagi_1_1Quadrotor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1ParameterBase" kindref="compound">ParameterBase</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>RotorConfig<sp/>{<sp/>plus,<sp/>cross<sp/>};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Scalar<sp/>m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Scalar<sp/>l);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dynamics(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref>&amp;<sp/>state,<sp/><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>derivative)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dynamics(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Ref&lt;</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;QuadState::SIZE&gt;&gt;<sp/>state,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ref&lt;Vector&lt;QuadState::SIZE&gt;&gt;<sp/>derivative)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>jacobian(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Ref&lt;</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;QuadState::SIZE&gt;&gt;<sp/>state,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ref&lt;Matrix&lt;QuadState::SIZE,<sp/>QuadState::SIZE&gt;&gt;<sp/>jac)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>jacobian(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Ref&lt;</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;QuadState::SIZE&gt;&gt;<sp/>state,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SparseMatrix&amp;<sp/>jac)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>DynamicsFunction<sp/>getDynamicsFunction()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a" kindref="member">ParameterBase::load</ref>;</highlight></codeline>
+<codeline lineno="33" refid="structagi_1_1Quadrotor_1ab96b0908bd51048ffd60c4a5e87be767" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1Quadrotor_1ab96b0908bd51048ffd60c4a5e87be767" kindref="member">load</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref>&amp;<sp/>node)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34" refid="structagi_1_1Quadrotor_1a3d84641ca89e47fa5b171a22f087fef6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1Quadrotor_1a3d84641ca89e47fa5b171a22f087fef6" kindref="member">valid</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Helpers<sp/>to<sp/>apply<sp/>limits.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>Vector&lt;4&gt;<sp/>clampThrust(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;4&gt;<sp/>thrusts)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>Scalar<sp/>clampThrust(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Scalar<sp/>thrust)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>Scalar<sp/>clampCollectiveThrust(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Scalar<sp/>thrust)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>Vector&lt;4&gt;<sp/>clampMotorOmega(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;4&gt;&amp;<sp/>omega)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>Vector&lt;3&gt;<sp/>clampBodyrates(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;3&gt;&amp;<sp/>omega)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Scalar<sp/>collective_thrust_min()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>4.0<sp/>*<sp/>thrust_min_<sp/>/<sp/>m_;<sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Scalar<sp/>collective_thrust_max()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>4.0<sp/>*<sp/>thrust_max_<sp/>/<sp/>m_;<sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Helpers<sp/>for<sp/>conversion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>Vector&lt;4&gt;<sp/>motorOmegaToThrust(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;4&gt;&amp;<sp/>omega)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>Vector&lt;4&gt;<sp/>motorOmegaToTorque(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;4&gt;&amp;<sp/>omega)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>Vector&lt;4&gt;<sp/>motorThrustToOmega(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;4&gt;&amp;<sp/>thrusts)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Getter<sp/>Functions<sp/>for<sp/>member<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>Matrix&lt;4,<sp/>4&gt;<sp/>getAllocationMatrix()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/>operator&lt;&lt;(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Quadrotor&amp;<sp/>quad);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Quadrotor<sp/>physics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>Scalar<sp/>m_;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>Matrix&lt;3,<sp/>4&gt;<sp/>t_BM_;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>Matrix&lt;3,<sp/>3&gt;<sp/>J_;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>Matrix&lt;3,<sp/>3&gt;<sp/>J_inv_;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Motor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>Scalar<sp/>motor_omega_min_;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>Scalar<sp/>motor_omega_max_;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>Scalar<sp/>motor_tau_inv_;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Propellers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>Vector&lt;3&gt;<sp/>thrust_map_;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>Vector&lt;3&gt;<sp/>torque_map_;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>Scalar<sp/>kappa_;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>Scalar<sp/>thrust_min_;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>Scalar<sp/>thrust_max_;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>RotorConfig<sp/>rotors_config_;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Quadrotor<sp/>limits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>Vector&lt;3&gt;<sp/>omega_max_;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Simple<sp/>cubic<sp/>aerodynamic<sp/>model<sp/>f=<sp/>c_1<sp/>*<sp/>v<sp/>+_<sp/>c_3<sp/>*<sp/>v^3.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>Vector&lt;3&gt;<sp/>aero_coeff_1_;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>Vector&lt;3&gt;<sp/>aero_coeff_3_;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Forward-flight<sp/>induced<sp/>thrust<sp/>variation<sp/>fz<sp/>-=<sp/>c_h<sp/>*<sp/>(vx^2<sp/>+<sp/>vy^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>Scalar<sp/>aero_coeff_h_;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>agi</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="agilib/include/agilib/types/quadrotor.hpp"/>
+  </compounddef>
+</doxygen>

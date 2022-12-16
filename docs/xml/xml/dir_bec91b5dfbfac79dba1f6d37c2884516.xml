@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_bec91b5dfbfac79dba1f6d37c2884516" kind="dir">
+    <compoundname>agilib/include/agilib/simulator/bem</compoundname>
+    <innerfile refid="brent_8hpp">brent.hpp</innerfile>
+    <innerfile refid="functions_8hpp">functions.hpp</innerfile>
+    <innerfile refid="gauss__kronrod_8hpp">gauss_kronrod.hpp</innerfile>
+    <innerfile refid="propeller__data_8hpp">propeller_data.hpp</innerfile>
+    <innerfile refid="propeller__state_8hpp">propeller_state.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/simulator/bem/"/>
+  </compounddef>
+</doxygen>

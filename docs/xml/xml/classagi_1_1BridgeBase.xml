@@ -1,0 +1,624 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1BridgeBase" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>agi::BridgeBase</compoundname>
+    <basecompoundref refid="classagi_1_1Module" prot="public" virt="non-virtual">agi::Module&lt; BridgeBase &gt;</basecompoundref>
+    <derivedcompoundref refid="classagi_1_1DebugBridge" prot="public" virt="non-virtual">agi::DebugBridge</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1SerialBridge" prot="public" virt="non-virtual">agi::SerialBridge</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classagi_1_1BridgeBase_1aa2700147fe72b302d6f5bc4a2fe82e56" prot="protected" static="no" mutable="no">
+        <type>const Scalar</type>
+        <definition>const Scalar agi::BridgeBase::timeout_</definition>
+        <argsstring></argsstring>
+        <name>timeout_</name>
+        <qualifiedname>agi::BridgeBase::timeout_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="46" column="16" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1BridgeBase_1a4a4e32cc85a72f21397f49f96d89eefe" prot="protected" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int agi::BridgeBase::n_max_timeouts_</definition>
+        <argsstring></argsstring>
+        <name>n_max_timeouts_</name>
+        <qualifiedname>agi::BridgeBase::n_max_timeouts_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="47" column="13" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1BridgeBase_1a41dab99a5fb5b078216bb9c0249c9fbc" prot="protected" static="no" mutable="no">
+        <type>const TimeFunction</type>
+        <definition>const TimeFunction agi::BridgeBase::time_function_</definition>
+        <argsstring></argsstring>
+        <name>time_function_</name>
+        <qualifiedname>agi::BridgeBase::time_function_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="48" column="22" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1BridgeBase_1a65a373095663f452389cec6d0f3aa246" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::BridgeBase::shutdown_</definition>
+        <argsstring></argsstring>
+        <name>shutdown_</name>
+        <qualifiedname>agi::BridgeBase::shutdown_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="50" column="8" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1BridgeBase_1ac7b6ee43afd1d37eec292571825a1aa8" prot="protected" static="no" mutable="no">
+        <type>std::thread</type>
+        <definition>std::thread agi::BridgeBase::timeout_guard_thread_</definition>
+        <argsstring></argsstring>
+        <name>timeout_guard_thread_</name>
+        <qualifiedname>agi::BridgeBase::timeout_guard_thread_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="51" column="15" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1BridgeBase_1abc9cc2c85e79900b8fe5c4b75928617a" prot="protected" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex agi::BridgeBase::timeout_wait_mutex_</definition>
+        <argsstring></argsstring>
+        <name>timeout_wait_mutex_</name>
+        <qualifiedname>agi::BridgeBase::timeout_wait_mutex_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="52" column="14" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1BridgeBase_1ab7d743b92e448e4a926cbddb295e8397" prot="protected" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable agi::BridgeBase::timeout_reset_cv_</definition>
+        <argsstring></argsstring>
+        <name>timeout_reset_cv_</name>
+        <qualifiedname>agi::BridgeBase::timeout_reset_cv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="53" column="27" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1BridgeBase_1af3168e19d234f134f99d04565de9fdcb" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int agi::BridgeBase::n_timeouts_</definition>
+        <argsstring></argsstring>
+        <name>n_timeouts_</name>
+        <qualifiedname>agi::BridgeBase::n_timeouts_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="54" column="7" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1BridgeBase_1a6d7be2e593e8ad7e904ffaaa30af4a73" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::BridgeBase::active_</definition>
+        <argsstring></argsstring>
+        <name>active_</name>
+        <qualifiedname>agi::BridgeBase::active_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="55" column="8" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1BridgeBase_1a08ef3805447431194f2dbc8f11a60853" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::BridgeBase::got_command_</definition>
+        <argsstring></argsstring>
+        <name>got_command_</name>
+        <qualifiedname>agi::BridgeBase::got_command_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="56" column="8" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1BridgeBase_1a118750a50c765712150c8631f2e48cf1" prot="protected" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Median" kindref="compound">Median</ref>&lt; Scalar, 15 &gt;</type>
+        <definition>Median&lt;Scalar, 15&gt; agi::BridgeBase::voltage_</definition>
+        <argsstring></argsstring>
+        <name>voltage_</name>
+        <qualifiedname>agi::BridgeBase::voltage_</qualifiedname>
+        <initializer>{15.5}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="58" column="10" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1BridgeBase_1ad77002f9f497f400fd980365343c5d19" prot="protected" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BridgeBase::latest_raw_voltage</definition>
+        <argsstring></argsstring>
+        <name>latest_raw_voltage</name>
+        <qualifiedname>agi::BridgeBase::latest_raw_voltage</qualifiedname>
+        <initializer>{15.5}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="59" column="10" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1BridgeBase_1a7a9085ccdd682005a9224e19a5a07292" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; FeedbackCallbackFunction &gt;</type>
+        <definition>std::vector&lt;FeedbackCallbackFunction&gt; agi::BridgeBase::feedback_callbacks_</definition>
+        <argsstring></argsstring>
+        <name>feedback_callbacks_</name>
+        <qualifiedname>agi::BridgeBase::feedback_callbacks_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="60" column="15" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1BridgeBase_1af8ee6b8f8cf819ef56217be2ac65e26d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classagi_1_1AgiWatchdog" kindref="compound">AgiWatchdog</ref></type>
+        <definition>AgiWatchdog agi::BridgeBase::voltage_watchdog_</definition>
+        <argsstring></argsstring>
+        <name>voltage_watchdog_</name>
+        <qualifiedname>agi::BridgeBase::voltage_watchdog_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="61" column="15" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1BridgeBase_1a7b767d39e6996e8f5e9f483dce9f85ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::BridgeBase::BridgeBase</definition>
+        <argsstring>(const std::string &amp;name, const TimeFunction time_function, const Scalar timeout=0.10, const int n_max_timeouts=10)</argsstring>
+        <name>BridgeBase</name>
+        <qualifiedname>agi::BridgeBase::BridgeBase</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const TimeFunction</type>
+          <declname>time_function</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>timeout</declname>
+          <defval>0.10</defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>n_max_timeouts</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="22" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1BridgeBase_1a756267559a92cbac1f643bab3db3af79" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual agi::BridgeBase::~BridgeBase</definition>
+        <argsstring>()</argsstring>
+        <name>~BridgeBase</name>
+        <qualifiedname>agi::BridgeBase::~BridgeBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="24" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1BridgeBase_1a3f3c9a776fa3e37deef0a9d374034598" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::BridgeBase::send</definition>
+        <argsstring>(const Command &amp;command) final</argsstring>
+        <name>send</name>
+        <qualifiedname>agi::BridgeBase::send</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="26" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1BridgeBase_1afd31bc76953acd55cd0a3c4b491494f9" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::BridgeBase::activate</definition>
+        <argsstring>() final</argsstring>
+        <name>activate</name>
+        <qualifiedname>agi::BridgeBase::activate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="27" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1BridgeBase_1a284aa8921bedd30358858e0bc3b2f341" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::BridgeBase::deactivate</definition>
+        <argsstring>() final</argsstring>
+        <name>deactivate</name>
+        <qualifiedname>agi::BridgeBase::deactivate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="28" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1BridgeBase_1a1b85d2f08af19f830ae3831196c8b6d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void agi::BridgeBase::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::BridgeBase::reset</qualifiedname>
+        <reimplementedby refid="classagi_1_1DebugBridge_1ae3b4ad357734bedcbf180f91a52d2bfd">reset</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="29" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1BridgeBase_1a8d177f74b81f32ed171be4d79739cdbb" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::BridgeBase::active</definition>
+        <argsstring>() const final</argsstring>
+        <name>active</name>
+        <qualifiedname>agi::BridgeBase::active</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="31" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1BridgeBase_1ab5239a44374db716072b40b0083b816d" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::BridgeBase::locked</definition>
+        <argsstring>() const final</argsstring>
+        <name>locked</name>
+        <qualifiedname>agi::BridgeBase::locked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="32" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1BridgeBase_1ad3bce004bcd5793593c2c82c993ad78e" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void agi::BridgeBase::setVoltage</definition>
+        <argsstring>(const Scalar voltage) final</argsstring>
+        <name>setVoltage</name>
+        <qualifiedname>agi::BridgeBase::setVoltage</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>voltage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="33" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1BridgeBase_1a309ce37cfabf6336cbca8f7f58c68e15" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>Scalar</type>
+        <definition>virtual Scalar agi::BridgeBase::getVoltage</definition>
+        <argsstring>() const final</argsstring>
+        <name>getVoltage</name>
+        <qualifiedname>agi::BridgeBase::getVoltage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="34" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1BridgeBase_1ac335711e42eeda57b58d2603113ce9e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::BridgeBase::getFeedback</definition>
+        <argsstring>(Feedback *const feedback=nullptr)</argsstring>
+        <name>getFeedback</name>
+        <qualifiedname>agi::BridgeBase::getFeedback</qualifiedname>
+        <reimplementedby refid="classagi_1_1CtrlBridge_1ae0e49e7028cac93ba83ab1645443e83d">getFeedback</reimplementedby>
+        <reimplementedby refid="classagi_1_1MspBridge_1a8786af13fa4a0c9911176ca514f44a5e">getFeedback</reimplementedby>
+        <param>
+          <type><ref refid="structagi_1_1Feedback" kindref="compound">Feedback</ref> *const</type>
+          <declname>feedback</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="36" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1BridgeBase_1a08cf8bd3c018ebd5d470e39c7879042b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void agi::BridgeBase::registerFeedbackCallback</definition>
+        <argsstring>(FeedbackCallbackFunction function)</argsstring>
+        <name>registerFeedbackCallback</name>
+        <qualifiedname>agi::BridgeBase::registerFeedbackCallback</qualifiedname>
+        <param>
+          <type>FeedbackCallbackFunction</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="37" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classagi_1_1BridgeBase_1aba703da8cc9e2e0d2fdb476c3ee8b7fb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::BridgeBase::sendCommand</definition>
+        <argsstring>(const Command &amp;command, const bool active)=0</argsstring>
+        <name>sendCommand</name>
+        <qualifiedname>agi::BridgeBase::sendCommand</qualifiedname>
+        <reimplementedby refid="classagi_1_1CtrlBridge_1ab8020705de671e43448d7ef35e5b21d6">sendCommand</reimplementedby>
+        <reimplementedby refid="classagi_1_1DebugBridge_1a2f9a42c7a03bb2d7e57bea057e4468a8">sendCommand</reimplementedby>
+        <reimplementedby refid="classagi_1_1LairdBridge_1a9171e5c84be28e079c5035715d84a99b">sendCommand</reimplementedby>
+        <reimplementedby refid="classagi_1_1MspBridge_1ae3fcd8c837cf5fed53cbbc2ee2f01fcf">sendCommand</reimplementedby>
+        <reimplementedby refid="classagi_1_1SbusBridge_1a044f2325db32c242b781d1b39895374e">sendCommand</reimplementedby>
+        <reimplementedby refid="classagi_1_1CtrlBridge_1a983931a393cb470b4984fcc07f916160">sendCommand</reimplementedby>
+        <reimplementedby refid="classagi_1_1LairdBridge_1a983931a393cb470b4984fcc07f916160">sendCommand</reimplementedby>
+        <reimplementedby refid="classagi_1_1MspBridge_1a983931a393cb470b4984fcc07f916160">sendCommand</reimplementedby>
+        <reimplementedby refid="classagi_1_1SbusBridge_1a983931a393cb470b4984fcc07f916160">sendCommand</reimplementedby>
+        <reimplementedby refid="classagi_1_1SerialBridge_1a983931a393cb470b4984fcc07f916160">sendCommand</reimplementedby>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="40" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1BridgeBase_1a0916b1f0c159300185276425294da24c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void agi::BridgeBase::guardTimeout</definition>
+        <argsstring>()</argsstring>
+        <name>guardTimeout</name>
+        <qualifiedname>agi::BridgeBase::guardTimeout</qualifiedname>
+        <reimplementedby refid="classagi_1_1DebugBridge_1a31fa050a59d43e89349c348523be93e4">guardTimeout</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="41" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1BridgeBase_1a3a00812d2c1350bbe38a393962e815af" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::BridgeBase::voltageTimeout</definition>
+        <argsstring>()</argsstring>
+        <name>voltageTimeout</name>
+        <qualifiedname>agi::BridgeBase::voltageTimeout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="42" column="8" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::Module&lt; BridgeBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="1">
+        <label>agi::BridgeBase</label>
+        <link refid="classagi_1_1BridgeBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>agi::CtrlBridge</label>
+        <link refid="classagi_1_1CtrlBridge"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::DebugBridge</label>
+        <link refid="classagi_1_1DebugBridge"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>agi::LairdBridge</label>
+        <link refid="classagi_1_1LairdBridge"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>agi::MspBridge</label>
+        <link refid="classagi_1_1MspBridge"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>agi::SbusBridge</label>
+        <link refid="classagi_1_1SbusBridge"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::SerialBridge</label>
+        <link refid="classagi_1_1SerialBridge"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>agi::Median&lt; Scalar, 15 &gt;</label>
+        <link refid="classagi_1_1Median"/>
+      </node>
+      <node id="2">
+        <label>agi::Module&lt; BridgeBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>agi::AgiWatchdog</label>
+        <link refid="classagi_1_1AgiWatchdog"/>
+      </node>
+      <node id="1">
+        <label>agi::BridgeBase</label>
+        <link refid="classagi_1_1BridgeBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>timeout_guard_thread_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>timeout_wait_mutex_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>voltage_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>feedback_callbacks_</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>voltage_watchdog_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+      <node id="5">
+        <label>std::mutex</label>
+      </node>
+      <node id="4">
+        <label>std::thread</label>
+      </node>
+      <node id="7">
+        <label>std::vector&lt; FeedbackCallbackFunction &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/bridge/bridge_base.hpp" line="20" column="1" bodyfile="agilib/include/agilib/bridge/bridge_base.hpp" bodystart="20" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classagi_1_1BridgeBase_1afd31bc76953acd55cd0a3c4b491494f9" prot="public" virt="virtual"><scope>agi::BridgeBase</scope><name>activate</name></member>
+      <member refid="classagi_1_1BridgeBase_1a8d177f74b81f32ed171be4d79739cdbb" prot="public" virt="virtual"><scope>agi::BridgeBase</scope><name>active</name></member>
+      <member refid="classagi_1_1BridgeBase_1a6d7be2e593e8ad7e904ffaaa30af4a73" prot="protected" virt="non-virtual"><scope>agi::BridgeBase</scope><name>active_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a7b767d39e6996e8f5e9f483dce9f85ee" prot="public" virt="non-virtual"><scope>agi::BridgeBase</scope><name>BridgeBase</name></member>
+      <member refid="classagi_1_1BridgeBase_1a284aa8921bedd30358858e0bc3b2f341" prot="public" virt="virtual"><scope>agi::BridgeBase</scope><name>deactivate</name></member>
+      <member refid="classagi_1_1BridgeBase_1a7a9085ccdd682005a9224e19a5a07292" prot="protected" virt="non-virtual"><scope>agi::BridgeBase</scope><name>feedback_callbacks_</name></member>
+      <member refid="classagi_1_1BridgeBase_1ac335711e42eeda57b58d2603113ce9e1" prot="public" virt="virtual"><scope>agi::BridgeBase</scope><name>getFeedback</name></member>
+      <member refid="classagi_1_1BridgeBase_1a309ce37cfabf6336cbca8f7f58c68e15" prot="public" virt="virtual"><scope>agi::BridgeBase</scope><name>getVoltage</name></member>
+      <member refid="classagi_1_1BridgeBase_1a08ef3805447431194f2dbc8f11a60853" prot="protected" virt="non-virtual"><scope>agi::BridgeBase</scope><name>got_command_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a0916b1f0c159300185276425294da24c" prot="protected" virt="virtual"><scope>agi::BridgeBase</scope><name>guardTimeout</name></member>
+      <member refid="classagi_1_1BridgeBase_1ad77002f9f497f400fd980365343c5d19" prot="protected" virt="non-virtual"><scope>agi::BridgeBase</scope><name>latest_raw_voltage</name></member>
+      <member refid="classagi_1_1BridgeBase_1ab5239a44374db716072b40b0083b816d" prot="public" virt="virtual"><scope>agi::BridgeBase</scope><name>locked</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::BridgeBase</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::BridgeBase</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::BridgeBase</scope><name>Module</name></member>
+      <member refid="classagi_1_1BridgeBase_1a4a4e32cc85a72f21397f49f96d89eefe" prot="protected" virt="non-virtual"><scope>agi::BridgeBase</scope><name>n_max_timeouts_</name></member>
+      <member refid="classagi_1_1BridgeBase_1af3168e19d234f134f99d04565de9fdcb" prot="protected" virt="non-virtual"><scope>agi::BridgeBase</scope><name>n_timeouts_</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::BridgeBase</scope><name>name</name></member>
+      <member refid="classagi_1_1BridgeBase_1a08cf8bd3c018ebd5d470e39c7879042b" prot="public" virt="virtual"><scope>agi::BridgeBase</scope><name>registerFeedbackCallback</name></member>
+      <member refid="classagi_1_1BridgeBase_1a1b85d2f08af19f830ae3831196c8b6d3" prot="public" virt="virtual"><scope>agi::BridgeBase</scope><name>reset</name></member>
+      <member refid="classagi_1_1BridgeBase_1a3f3c9a776fa3e37deef0a9d374034598" prot="public" virt="virtual"><scope>agi::BridgeBase</scope><name>send</name></member>
+      <member refid="classagi_1_1BridgeBase_1aba703da8cc9e2e0d2fdb476c3ee8b7fb" prot="protected" virt="pure-virtual"><scope>agi::BridgeBase</scope><name>sendCommand</name></member>
+      <member refid="classagi_1_1BridgeBase_1ad3bce004bcd5793593c2c82c993ad78e" prot="public" virt="virtual"><scope>agi::BridgeBase</scope><name>setVoltage</name></member>
+      <member refid="classagi_1_1BridgeBase_1a65a373095663f452389cec6d0f3aa246" prot="protected" virt="non-virtual"><scope>agi::BridgeBase</scope><name>shutdown_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a41dab99a5fb5b078216bb9c0249c9fbc" prot="protected" virt="non-virtual"><scope>agi::BridgeBase</scope><name>time_function_</name></member>
+      <member refid="classagi_1_1BridgeBase_1aa2700147fe72b302d6f5bc4a2fe82e56" prot="protected" virt="non-virtual"><scope>agi::BridgeBase</scope><name>timeout_</name></member>
+      <member refid="classagi_1_1BridgeBase_1ac7b6ee43afd1d37eec292571825a1aa8" prot="protected" virt="non-virtual"><scope>agi::BridgeBase</scope><name>timeout_guard_thread_</name></member>
+      <member refid="classagi_1_1BridgeBase_1ab7d743b92e448e4a926cbddb295e8397" prot="protected" virt="non-virtual"><scope>agi::BridgeBase</scope><name>timeout_reset_cv_</name></member>
+      <member refid="classagi_1_1BridgeBase_1abc9cc2c85e79900b8fe5c4b75928617a" prot="protected" virt="non-virtual"><scope>agi::BridgeBase</scope><name>timeout_wait_mutex_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a118750a50c765712150c8631f2e48cf1" prot="protected" virt="non-virtual"><scope>agi::BridgeBase</scope><name>voltage_</name></member>
+      <member refid="classagi_1_1BridgeBase_1af8ee6b8f8cf819ef56217be2ac65e26d" prot="protected" virt="non-virtual"><scope>agi::BridgeBase</scope><name>voltage_watchdog_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a3a00812d2c1350bbe38a393962e815af" prot="protected" virt="non-virtual"><scope>agi::BridgeBase</scope><name>voltageTimeout</name></member>
+      <member refid="classagi_1_1BridgeBase_1a756267559a92cbac1f643bab3db3af79" prot="public" virt="virtual"><scope>agi::BridgeBase</scope><name>~BridgeBase</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::BridgeBase</scope><name>~Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

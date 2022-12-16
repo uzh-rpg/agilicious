@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_e38a484621e23b6476ac03fd7c124e3f" kind="dir">
+    <compoundname>agilib/src/controller/mpc/acados</compoundname>
+    <innerdir refid="dir_5789efd70ded435b5605a024dfaf2b51">agilib/src/controller/mpc/acados/drone_model_cost</innerdir>
+    <innerdir refid="dir_4adea25d51211f97455dab864344403c">agilib/src/controller/mpc/acados/drone_model_model</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/src/controller/mpc/acados/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1ThrustMap" kind="struct" language="C++" prot="public">
+    <compoundname>agi::ThrustMap</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structagi_1_1ThrustMap_1a44b930b533057b92a6d78cf5801fad02" prot="public" static="no">
+        <type>std::pair&lt; int, int &gt;</type>
+        <definition>using agi::ThrustMap::NeighborCoordinates =  std::pair&lt;int, int&gt;</definition>
+        <argsstring></argsstring>
+        <name>NeighborCoordinates</name>
+        <qualifiedname>agi::ThrustMap::NeighborCoordinates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/thrust_map.hpp" line="10" column="3" bodyfile="agilib/include/agilib/bridge/thrust_map.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1ThrustMap_1aaaffb27ed9a47bb878d4b40053b8d294" prot="public" static="no" mutable="no">
+        <type>Matrix</type>
+        <definition>Matrix agi::ThrustMap::map_</definition>
+        <argsstring></argsstring>
+        <name>map_</name>
+        <qualifiedname>agi::ThrustMap::map_</qualifiedname>
+        <initializer>= Matrix&lt;&gt;::Constant(1, 1, NAN)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/thrust_map.hpp" line="24" column="4" bodyfile="agilib/include/agilib/bridge/thrust_map.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1ThrustMap_1ae0676a69b1b138dfb2ab46ab500e1418" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::ThrustMap::voltage_min_</definition>
+        <argsstring></argsstring>
+        <name>voltage_min_</name>
+        <qualifiedname>agi::ThrustMap::voltage_min_</qualifiedname>
+        <initializer>{NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/thrust_map.hpp" line="25" column="10" bodyfile="agilib/include/agilib/bridge/thrust_map.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1ThrustMap_1adc4e2bbeb1b03167ea31009fdf429d1e" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::ThrustMap::voltage_max_</definition>
+        <argsstring></argsstring>
+        <name>voltage_max_</name>
+        <qualifiedname>agi::ThrustMap::voltage_max_</qualifiedname>
+        <initializer>{NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/thrust_map.hpp" line="26" column="10" bodyfile="agilib/include/agilib/bridge/thrust_map.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1ThrustMap_1adc725dce59b7fe7e6515c05cb3c423ad" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::ThrustMap::thrust_min_</definition>
+        <argsstring></argsstring>
+        <name>thrust_min_</name>
+        <qualifiedname>agi::ThrustMap::thrust_min_</qualifiedname>
+        <initializer>{NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/thrust_map.hpp" line="27" column="10" bodyfile="agilib/include/agilib/bridge/thrust_map.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1ThrustMap_1a24195206e0f896545fbc748dbc364e97" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::ThrustMap::thrust_max_</definition>
+        <argsstring></argsstring>
+        <name>thrust_max_</name>
+        <qualifiedname>agi::ThrustMap::thrust_max_</qualifiedname>
+        <initializer>{NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/thrust_map.hpp" line="28" column="10" bodyfile="agilib/include/agilib/bridge/thrust_map.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1ThrustMap_1a7d70c86abcc81a483d6073290453af76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::ThrustMap::ThrustMap</definition>
+        <argsstring>()=default</argsstring>
+        <name>ThrustMap</name>
+        <qualifiedname>agi::ThrustMap::ThrustMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/thrust_map.hpp" line="12" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ThrustMap_1a633e994df06ab0b0d1dbca9be8a5f920" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::ThrustMap::~ThrustMap</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ThrustMap</name>
+        <qualifiedname>agi::ThrustMap::~ThrustMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/thrust_map.hpp" line="13" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ThrustMap_1a5e4ffb256f91ea75ea315cd7cba6f7ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::ThrustMap::load</definition>
+        <argsstring>(const fs::path &amp;file)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::ThrustMap::load</qualifiedname>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/thrust_map.hpp" line="15" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ThrustMap_1afde530547d3efae037f56e3dadb037da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::ThrustMap::valid</definition>
+        <argsstring>()</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::ThrustMap::valid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/thrust_map.hpp" line="17" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ThrustMap_1a4126393f5d1f15f228d60998f8e73ecb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::ThrustMap::map</definition>
+        <argsstring>(const Scalar thrust, const Scalar battery_voltage) const</argsstring>
+        <name>map</name>
+        <qualifiedname>agi::ThrustMap::map</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>thrust</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>battery_voltage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/thrust_map.hpp" line="19" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ThrustMap_1a0c6bbaddc537b94104b8b091b7d7b1b3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>NeighborCoordinates</type>
+        <definition>NeighborCoordinates agi::ThrustMap::neighbor</definition>
+        <argsstring>(const Scalar value, const Scalar lower, const Scalar upper, const int size, Scalar *const x) const</argsstring>
+        <name>neighbor</name>
+        <qualifiedname>agi::ThrustMap::neighbor</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>lower</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>upper</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>Scalar *const</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/thrust_map.hpp" line="20" column="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/bridge/thrust_map.hpp" line="9" column="1" bodyfile="agilib/include/agilib/bridge/thrust_map.hpp" bodystart="9" bodyend="29"/>
+    <listofallmembers>
+      <member refid="structagi_1_1ThrustMap_1a5e4ffb256f91ea75ea315cd7cba6f7ca" prot="public" virt="non-virtual"><scope>agi::ThrustMap</scope><name>load</name></member>
+      <member refid="structagi_1_1ThrustMap_1a4126393f5d1f15f228d60998f8e73ecb" prot="public" virt="non-virtual"><scope>agi::ThrustMap</scope><name>map</name></member>
+      <member refid="structagi_1_1ThrustMap_1aaaffb27ed9a47bb878d4b40053b8d294" prot="public" virt="non-virtual"><scope>agi::ThrustMap</scope><name>map_</name></member>
+      <member refid="structagi_1_1ThrustMap_1a0c6bbaddc537b94104b8b091b7d7b1b3" prot="public" virt="non-virtual"><scope>agi::ThrustMap</scope><name>neighbor</name></member>
+      <member refid="structagi_1_1ThrustMap_1a44b930b533057b92a6d78cf5801fad02" prot="public" virt="non-virtual"><scope>agi::ThrustMap</scope><name>NeighborCoordinates</name></member>
+      <member refid="structagi_1_1ThrustMap_1a24195206e0f896545fbc748dbc364e97" prot="public" virt="non-virtual"><scope>agi::ThrustMap</scope><name>thrust_max_</name></member>
+      <member refid="structagi_1_1ThrustMap_1adc725dce59b7fe7e6515c05cb3c423ad" prot="public" virt="non-virtual"><scope>agi::ThrustMap</scope><name>thrust_min_</name></member>
+      <member refid="structagi_1_1ThrustMap_1a7d70c86abcc81a483d6073290453af76" prot="public" virt="non-virtual"><scope>agi::ThrustMap</scope><name>ThrustMap</name></member>
+      <member refid="structagi_1_1ThrustMap_1afde530547d3efae037f56e3dadb037da" prot="public" virt="non-virtual"><scope>agi::ThrustMap</scope><name>valid</name></member>
+      <member refid="structagi_1_1ThrustMap_1adc4e2bbeb1b03167ea31009fdf429d1e" prot="public" virt="non-virtual"><scope>agi::ThrustMap</scope><name>voltage_max_</name></member>
+      <member refid="structagi_1_1ThrustMap_1ae0676a69b1b138dfb2ab46ab500e1418" prot="public" virt="non-virtual"><scope>agi::ThrustMap</scope><name>voltage_min_</name></member>
+      <member refid="structagi_1_1ThrustMap_1a633e994df06ab0b0d1dbca9be8a5f920" prot="public" virt="non-virtual"><scope>agi::ThrustMap</scope><name>~ThrustMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

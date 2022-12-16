@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structdrone__model__solver__capsule" kind="struct" language="C++" prot="public">
+    <compoundname>drone_model_solver_capsule</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1a5896d4cacfa63a2aa570b868a7b836e1" prot="public" static="no" mutable="no">
+        <type>ocp_nlp_in *</type>
+        <definition>ocp_nlp_in* drone_model_solver_capsule::nlp_in</definition>
+        <argsstring></argsstring>
+        <name>nlp_in</name>
+        <qualifiedname>drone_model_solver_capsule::nlp_in</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="79" column="16" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1ad1c219217af51628ad7178452f40e3d3" prot="public" static="no" mutable="no">
+        <type>ocp_nlp_out *</type>
+        <definition>ocp_nlp_out* drone_model_solver_capsule::nlp_out</definition>
+        <argsstring></argsstring>
+        <name>nlp_out</name>
+        <qualifiedname>drone_model_solver_capsule::nlp_out</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="80" column="17" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1aad844d727f0500fe81514c58105d6747" prot="public" static="no" mutable="no">
+        <type>ocp_nlp_out *</type>
+        <definition>ocp_nlp_out* drone_model_solver_capsule::sens_out</definition>
+        <argsstring></argsstring>
+        <name>sens_out</name>
+        <qualifiedname>drone_model_solver_capsule::sens_out</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="81" column="17" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1afd655e6838a710f038b1765171ac8b20" prot="public" static="no" mutable="no">
+        <type>ocp_nlp_solver *</type>
+        <definition>ocp_nlp_solver* drone_model_solver_capsule::nlp_solver</definition>
+        <argsstring></argsstring>
+        <name>nlp_solver</name>
+        <qualifiedname>drone_model_solver_capsule::nlp_solver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="82" column="20" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1a8d77df7f975158b77cc86643b5784557" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* drone_model_solver_capsule::nlp_opts</definition>
+        <argsstring></argsstring>
+        <name>nlp_opts</name>
+        <qualifiedname>drone_model_solver_capsule::nlp_opts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="83" column="10" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1a19d36618e1d4698176bdde5fe6e4713c" prot="public" static="no" mutable="no">
+        <type>ocp_nlp_plan *</type>
+        <definition>ocp_nlp_plan* drone_model_solver_capsule::nlp_solver_plan</definition>
+        <argsstring></argsstring>
+        <name>nlp_solver_plan</name>
+        <qualifiedname>drone_model_solver_capsule::nlp_solver_plan</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="84" column="18" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1a2aeb8a39f02d7c6855b6b2d71f2377be" prot="public" static="no" mutable="no">
+        <type>ocp_nlp_config *</type>
+        <definition>ocp_nlp_config* drone_model_solver_capsule::nlp_config</definition>
+        <argsstring></argsstring>
+        <name>nlp_config</name>
+        <qualifiedname>drone_model_solver_capsule::nlp_config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="85" column="20" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1a7d94606f27835b2a3388193f53ab240e" prot="public" static="no" mutable="no">
+        <type>ocp_nlp_dims *</type>
+        <definition>ocp_nlp_dims* drone_model_solver_capsule::nlp_dims</definition>
+        <argsstring></argsstring>
+        <name>nlp_dims</name>
+        <qualifiedname>drone_model_solver_capsule::nlp_dims</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="86" column="18" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1a442696e110e9981d30671e449ea9b914" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int drone_model_solver_capsule::nlp_np</definition>
+        <argsstring></argsstring>
+        <name>nlp_np</name>
+        <qualifiedname>drone_model_solver_capsule::nlp_np</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="89" column="18" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1a4e37765bb8723d851afdff23119f1d22" prot="public" static="no" mutable="no">
+        <type>external_function_param_casadi *</type>
+        <definition>external_function_param_casadi* drone_model_solver_capsule::forw_vde_casadi</definition>
+        <argsstring></argsstring>
+        <name>forw_vde_casadi</name>
+        <qualifiedname>drone_model_solver_capsule::forw_vde_casadi</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="94" column="36" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1a34d62c1b5bb1b71c33f85d8cef57c432" prot="public" static="no" mutable="no">
+        <type>external_function_param_casadi *</type>
+        <definition>external_function_param_casadi* drone_model_solver_capsule::expl_ode_fun</definition>
+        <argsstring></argsstring>
+        <name>expl_ode_fun</name>
+        <qualifiedname>drone_model_solver_capsule::expl_ode_fun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="95" column="36" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1a2c47e1125a986dbaf55e005b7e0c62df" prot="public" static="no" mutable="no">
+        <type>external_function_param_casadi *</type>
+        <definition>external_function_param_casadi* drone_model_solver_capsule::cost_y_fun</definition>
+        <argsstring></argsstring>
+        <name>cost_y_fun</name>
+        <qualifiedname>drone_model_solver_capsule::cost_y_fun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="102" column="36" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1a818c4c220a1e08efc27e7a31df3664c1" prot="public" static="no" mutable="no">
+        <type>external_function_param_casadi *</type>
+        <definition>external_function_param_casadi* drone_model_solver_capsule::cost_y_fun_jac_ut_xt</definition>
+        <argsstring></argsstring>
+        <name>cost_y_fun_jac_ut_xt</name>
+        <qualifiedname>drone_model_solver_capsule::cost_y_fun_jac_ut_xt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="103" column="36" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1a3c9707d1b56b323bb8bdd9dd6f610fe5" prot="public" static="no" mutable="no">
+        <type>external_function_param_casadi *</type>
+        <definition>external_function_param_casadi* drone_model_solver_capsule::cost_y_hess</definition>
+        <argsstring></argsstring>
+        <name>cost_y_hess</name>
+        <qualifiedname>drone_model_solver_capsule::cost_y_hess</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="104" column="36" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1a83afc619157ae7fa2d16a604b4143fd5" prot="public" static="no" mutable="no">
+        <type>external_function_param_casadi</type>
+        <definition>external_function_param_casadi drone_model_solver_capsule::cost_y_0_fun</definition>
+        <argsstring></argsstring>
+        <name>cost_y_0_fun</name>
+        <qualifiedname>drone_model_solver_capsule::cost_y_0_fun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="107" column="36" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1ae59dc256476b0d476541c667ed11ee8d" prot="public" static="no" mutable="no">
+        <type>external_function_param_casadi</type>
+        <definition>external_function_param_casadi drone_model_solver_capsule::cost_y_0_fun_jac_ut_xt</definition>
+        <argsstring></argsstring>
+        <name>cost_y_0_fun_jac_ut_xt</name>
+        <qualifiedname>drone_model_solver_capsule::cost_y_0_fun_jac_ut_xt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="108" column="36" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1a81070e9773879fb64a8543e6b24ee78b" prot="public" static="no" mutable="no">
+        <type>external_function_param_casadi</type>
+        <definition>external_function_param_casadi drone_model_solver_capsule::cost_y_0_hess</definition>
+        <argsstring></argsstring>
+        <name>cost_y_0_hess</name>
+        <qualifiedname>drone_model_solver_capsule::cost_y_0_hess</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="109" column="36" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1aa0d439eebbb49192337692ca06426af8" prot="public" static="no" mutable="no">
+        <type>external_function_param_casadi</type>
+        <definition>external_function_param_casadi drone_model_solver_capsule::cost_y_e_fun</definition>
+        <argsstring></argsstring>
+        <name>cost_y_e_fun</name>
+        <qualifiedname>drone_model_solver_capsule::cost_y_e_fun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="113" column="36" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1a014979d59706025427b52692676b0c89" prot="public" static="no" mutable="no">
+        <type>external_function_param_casadi</type>
+        <definition>external_function_param_casadi drone_model_solver_capsule::cost_y_e_fun_jac_ut_xt</definition>
+        <argsstring></argsstring>
+        <name>cost_y_e_fun_jac_ut_xt</name>
+        <qualifiedname>drone_model_solver_capsule::cost_y_e_fun_jac_ut_xt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="114" column="36" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdrone__model__solver__capsule_1a3d57abb67daf45cb1c0e07d1aceeb56e" prot="public" static="no" mutable="no">
+        <type>external_function_param_casadi</type>
+        <definition>external_function_param_casadi drone_model_solver_capsule::cost_y_e_hess</definition>
+        <argsstring></argsstring>
+        <name>cost_y_e_hess</name>
+        <qualifiedname>drone_model_solver_capsule::cost_y_e_hess</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="115" column="36" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="76" column="1" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="77" bodyend="123"/>
+    <listofallmembers>
+      <member refid="structdrone__model__solver__capsule_1a83afc619157ae7fa2d16a604b4143fd5" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>cost_y_0_fun</name></member>
+      <member refid="structdrone__model__solver__capsule_1ae59dc256476b0d476541c667ed11ee8d" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>cost_y_0_fun_jac_ut_xt</name></member>
+      <member refid="structdrone__model__solver__capsule_1a81070e9773879fb64a8543e6b24ee78b" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>cost_y_0_hess</name></member>
+      <member refid="structdrone__model__solver__capsule_1aa0d439eebbb49192337692ca06426af8" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>cost_y_e_fun</name></member>
+      <member refid="structdrone__model__solver__capsule_1a014979d59706025427b52692676b0c89" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>cost_y_e_fun_jac_ut_xt</name></member>
+      <member refid="structdrone__model__solver__capsule_1a3d57abb67daf45cb1c0e07d1aceeb56e" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>cost_y_e_hess</name></member>
+      <member refid="structdrone__model__solver__capsule_1a2c47e1125a986dbaf55e005b7e0c62df" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>cost_y_fun</name></member>
+      <member refid="structdrone__model__solver__capsule_1a818c4c220a1e08efc27e7a31df3664c1" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>cost_y_fun_jac_ut_xt</name></member>
+      <member refid="structdrone__model__solver__capsule_1a3c9707d1b56b323bb8bdd9dd6f610fe5" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>cost_y_hess</name></member>
+      <member refid="structdrone__model__solver__capsule_1a34d62c1b5bb1b71c33f85d8cef57c432" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>expl_ode_fun</name></member>
+      <member refid="structdrone__model__solver__capsule_1a4e37765bb8723d851afdff23119f1d22" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>forw_vde_casadi</name></member>
+      <member refid="structdrone__model__solver__capsule_1a2aeb8a39f02d7c6855b6b2d71f2377be" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>nlp_config</name></member>
+      <member refid="structdrone__model__solver__capsule_1a7d94606f27835b2a3388193f53ab240e" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>nlp_dims</name></member>
+      <member refid="structdrone__model__solver__capsule_1a5896d4cacfa63a2aa570b868a7b836e1" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>nlp_in</name></member>
+      <member refid="structdrone__model__solver__capsule_1a442696e110e9981d30671e449ea9b914" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>nlp_np</name></member>
+      <member refid="structdrone__model__solver__capsule_1a8d77df7f975158b77cc86643b5784557" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>nlp_opts</name></member>
+      <member refid="structdrone__model__solver__capsule_1ad1c219217af51628ad7178452f40e3d3" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>nlp_out</name></member>
+      <member refid="structdrone__model__solver__capsule_1afd655e6838a710f038b1765171ac8b20" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>nlp_solver</name></member>
+      <member refid="structdrone__model__solver__capsule_1a19d36618e1d4698176bdde5fe6e4713c" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>nlp_solver_plan</name></member>
+      <member refid="structdrone__model__solver__capsule_1aad844d727f0500fe81514c58105d6747" prot="public" virt="non-virtual"><scope>drone_model_solver_capsule</scope><name>sens_out</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

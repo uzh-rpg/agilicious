@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1ControllerBase" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>agi::ControllerBase</compoundname>
+    <basecompoundref refid="classagi_1_1Module" prot="public" virt="non-virtual">agi::Module&lt; ControllerBase &gt;</basecompoundref>
+    <derivedcompoundref refid="classagi_1_1GeometricController" prot="public" virt="non-virtual">agi::GeometricController</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1IndiController" prot="public" virt="non-virtual">agi::IndiController</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1MpcController" prot="public" virt="non-virtual">agi::MpcController</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1PidController" prot="public" virt="non-virtual">agi::PidController</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classagi_1_1ControllerBase_1a4a5850793263795a322e9357e1d9cc3e" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int agi::ControllerBase::horizon_length_</definition>
+        <argsstring></argsstring>
+        <name>horizon_length_</name>
+        <qualifiedname>agi::ControllerBase::horizon_length_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/controller_base.hpp" line="29" column="7" bodyfile="agilib/include/agilib/controller/controller_base.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ControllerBase_1a888ab615293b0332df4f503837b03723" prot="protected" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::ControllerBase::exec_dt_</definition>
+        <argsstring></argsstring>
+        <name>exec_dt_</name>
+        <qualifiedname>agi::ControllerBase::exec_dt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/controller_base.hpp" line="30" column="10" bodyfile="agilib/include/agilib/controller/controller_base.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ControllerBase_1a347077cec886c432483b3168b3b59821" prot="protected" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::ControllerBase::pred_dt_</definition>
+        <argsstring></argsstring>
+        <name>pred_dt_</name>
+        <qualifiedname>agi::ControllerBase::pred_dt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/controller_base.hpp" line="31" column="10" bodyfile="agilib/include/agilib/controller/controller_base.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1ControllerBase_1adbbc03b1311961d872aebd7d0ff47c1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::ControllerBase::ControllerBase</definition>
+        <argsstring>(const std::string &amp;name=&quot;Controller&quot;, const Scalar exec_dt=0.01, const int horizon_length=1)</argsstring>
+        <name>ControllerBase</name>
+        <qualifiedname>agi::ControllerBase::ControllerBase</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+          <defval>&quot;Controller&quot;</defval>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>exec_dt</declname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>horizon_length</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/controller_base.hpp" line="15" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ControllerBase_1a7f8d13d6e9126f7854f1f91ce7c246a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual agi::ControllerBase::~ControllerBase</definition>
+        <argsstring>()</argsstring>
+        <name>~ControllerBase</name>
+        <qualifiedname>agi::ControllerBase::~ControllerBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/controller_base.hpp" line="17" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ControllerBase_1a36ec36d71b00921aead71d4893ed037f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ControllerBase::getCommand</definition>
+        <argsstring>(const QuadState &amp;state, const SetpointVector &amp;reference, SetpointVector *const setpoints)=0</argsstring>
+        <name>getCommand</name>
+        <qualifiedname>agi::ControllerBase::getCommand</qualifiedname>
+        <reimplementedby refid="classagi_1_1MpcController_1aaff11f43d2b19866cc342261d65a56c1">getCommand</reimplementedby>
+        <reimplementedby refid="classagi_1_1GeometricController_1ab1539229798cc7d692755108e19216ab">getCommand</reimplementedby>
+        <reimplementedby refid="classagi_1_1IndiController_1a0faa34a62abc5d90a4502aa6b6e2161a">getCommand</reimplementedby>
+        <reimplementedby refid="classagi_1_1PidController_1afb26fb03f7f3370a96774f22af248680">getCommand</reimplementedby>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const SetpointVector &amp;</type>
+          <declname>reference</declname>
+        </param>
+        <param>
+          <type>SetpointVector *const</type>
+          <declname>setpoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/controller_base.hpp" line="19" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ControllerBase_1a63bad17e94dcdbb999298772ffb779bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void agi::ControllerBase::addImuSample</definition>
+        <argsstring>(const ImuSample &amp;sample)</argsstring>
+        <name>addImuSample</name>
+        <qualifiedname>agi::ControllerBase::addImuSample</qualifiedname>
+        <reimplementedby refid="classagi_1_1IndiController_1abb213257d6f927c8ceadb5a5011ede82">addImuSample</reimplementedby>
+        <reimplementedby refid="classagi_1_1MpcController_1a0c0f05c0aa5397fb13f200fba3e75a36">addImuSample</reimplementedby>
+        <param>
+          <type>const <ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref> &amp;</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/controller_base.hpp" line="23" column="16" bodyfile="agilib/include/agilib/controller/controller_base.hpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ControllerBase_1ac19c23e376075c8e573e1b3080f76a57" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::ControllerBase::dt</definition>
+        <argsstring>() const</argsstring>
+        <name>dt</name>
+        <qualifiedname>agi::ControllerBase::dt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/controller_base.hpp" line="25" column="10" bodyfile="agilib/include/agilib/controller/controller_base.hpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ControllerBase_1ab28f44d8fd2ce46a01fc10d79d579733" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int agi::ControllerBase::horizonLength</definition>
+        <argsstring>() const</argsstring>
+        <name>horizonLength</name>
+        <qualifiedname>agi::ControllerBase::horizonLength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/controller_base.hpp" line="26" column="7" bodyfile="agilib/include/agilib/controller/controller_base.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::Module&lt; ControllerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="1">
+        <label>agi::ControllerBase</label>
+        <link refid="classagi_1_1ControllerBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::GeometricController</label>
+        <link refid="classagi_1_1GeometricController"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::IndiController</label>
+        <link refid="classagi_1_1IndiController"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>agi::MpcController</label>
+        <link refid="classagi_1_1MpcController"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>agi::PidController</label>
+        <link refid="classagi_1_1PidController"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::Module&lt; ControllerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::ControllerBase</label>
+        <link refid="classagi_1_1ControllerBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/controller/controller_base.hpp" line="13" column="1" bodyfile="agilib/include/agilib/controller/controller_base.hpp" bodystart="13" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classagi_1_1ControllerBase_1a63bad17e94dcdbb999298772ffb779bb" prot="public" virt="virtual"><scope>agi::ControllerBase</scope><name>addImuSample</name></member>
+      <member refid="classagi_1_1ControllerBase_1adbbc03b1311961d872aebd7d0ff47c1d" prot="public" virt="non-virtual"><scope>agi::ControllerBase</scope><name>ControllerBase</name></member>
+      <member refid="classagi_1_1ControllerBase_1ac19c23e376075c8e573e1b3080f76a57" prot="public" virt="non-virtual"><scope>agi::ControllerBase</scope><name>dt</name></member>
+      <member refid="classagi_1_1ControllerBase_1a888ab615293b0332df4f503837b03723" prot="protected" virt="non-virtual"><scope>agi::ControllerBase</scope><name>exec_dt_</name></member>
+      <member refid="classagi_1_1ControllerBase_1a36ec36d71b00921aead71d4893ed037f" prot="public" virt="pure-virtual"><scope>agi::ControllerBase</scope><name>getCommand</name></member>
+      <member refid="classagi_1_1ControllerBase_1a4a5850793263795a322e9357e1d9cc3e" prot="protected" virt="non-virtual"><scope>agi::ControllerBase</scope><name>horizon_length_</name></member>
+      <member refid="classagi_1_1ControllerBase_1ab28f44d8fd2ce46a01fc10d79d579733" prot="public" virt="non-virtual"><scope>agi::ControllerBase</scope><name>horizonLength</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::ControllerBase</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::ControllerBase</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::ControllerBase</scope><name>Module</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::ControllerBase</scope><name>name</name></member>
+      <member refid="classagi_1_1ControllerBase_1a347077cec886c432483b3168b3b59821" prot="protected" virt="non-virtual"><scope>agi::ControllerBase</scope><name>pred_dt_</name></member>
+      <member refid="classagi_1_1ControllerBase_1a7f8d13d6e9126f7854f1f91ce7c246a7" prot="public" virt="virtual"><scope>agi::ControllerBase</scope><name>~ControllerBase</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::ControllerBase</scope><name>~Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

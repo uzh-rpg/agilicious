@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1Setpoint" kind="struct" language="C++" prot="public">
+    <compoundname>agi::Setpoint</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1Setpoint_1a3154d1901b435a2eeb84a7cfe53362ec" prot="public" static="no" mutable="no">
+        <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref></type>
+        <definition>QuadState agi::Setpoint::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <qualifiedname>agi::Setpoint::state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/setpoint.hpp" line="17" column="13" bodyfile="agilib/include/agilib/types/setpoint.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Setpoint_1a0f1a79412c11160abab1228e80b2d059" prot="public" static="no" mutable="no">
+        <type><ref refid="structagi_1_1Command" kindref="compound">Command</ref></type>
+        <definition>Command agi::Setpoint::input</definition>
+        <argsstring></argsstring>
+        <name>input</name>
+        <qualifiedname>agi::Setpoint::input</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/setpoint.hpp" line="18" column="11" bodyfile="agilib/include/agilib/types/setpoint.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1Setpoint_1ad38ffd8d96368791d847e6b7ccea4d5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::Setpoint::Setpoint</definition>
+        <argsstring>()=default</argsstring>
+        <name>Setpoint</name>
+        <qualifiedname>agi::Setpoint::Setpoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/setpoint.hpp" line="13" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Setpoint_1a605a67fe2a84b4f8a3c0bd813f5a15f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::Setpoint::Setpoint</definition>
+        <argsstring>(const QuadState &amp;state, const Command &amp;input)</argsstring>
+        <name>Setpoint</name>
+        <qualifiedname>agi::Setpoint::Setpoint</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/setpoint.hpp" line="14" column="3" bodyfile="agilib/include/agilib/types/setpoint.hpp" bodystart="14" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>agi::Command</label>
+        <link refid="structagi_1_1Command"/>
+      </node>
+      <node id="2">
+        <label>agi::QuadState</label>
+        <link refid="structagi_1_1QuadState"/>
+      </node>
+      <node id="1">
+        <label>agi::Setpoint</label>
+        <link refid="structagi_1_1Setpoint"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>input</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/types/setpoint.hpp" line="10" column="1" bodyfile="agilib/include/agilib/types/setpoint.hpp" bodystart="10" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structagi_1_1Setpoint_1a0f1a79412c11160abab1228e80b2d059" prot="public" virt="non-virtual"><scope>agi::Setpoint</scope><name>input</name></member>
+      <member refid="structagi_1_1Setpoint_1ad38ffd8d96368791d847e6b7ccea4d5b" prot="public" virt="non-virtual"><scope>agi::Setpoint</scope><name>Setpoint</name></member>
+      <member refid="structagi_1_1Setpoint_1a605a67fe2a84b4f8a3c0bd813f5a15f2" prot="public" virt="non-virtual"><scope>agi::Setpoint</scope><name>Setpoint</name></member>
+      <member refid="structagi_1_1Setpoint_1a3154d1901b435a2eeb84a7cfe53362ec" prot="public" virt="non-virtual"><scope>agi::Setpoint</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

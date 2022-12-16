@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1CtrlEncoding" kind="class" language="C++" prot="public">
+    <compoundname>agi::CtrlEncoding</compoundname>
+    <basecompoundref refid="classagi_1_1MsgEncoding" prot="public" virt="non-virtual">agi::MsgEncoding</basecompoundref>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classagi_1_1CtrlEncoding_1a728ce786dac794400b96d7750bbd1e3c" prot="private" static="no">
+        <type><ref refid="classagi_1_1CRC" kindref="compound">CRC16</ref></type>
+        <definition>using agi::CtrlEncoding::CRC =  CRC16</definition>
+        <argsstring></argsstring>
+        <name>CRC</name>
+        <qualifiedname>agi::CtrlEncoding::CRC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="53" column="3" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1CtrlEncoding_1a8b71f702f57d204cbdc70b07055741e7" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref></type>
+        <definition>Logger agi::CtrlEncoding::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>agi::CtrlEncoding::logger_</qualifiedname>
+        <initializer>{&quot;CtrlEncoding&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="52" column="10" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CtrlEncoding_1a7eaa7a032001684efbfbcc820bed099a" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+        <definition>const Quadrotor agi::CtrlEncoding::quad_</definition>
+        <argsstring></argsstring>
+        <name>quad_</name>
+        <qualifiedname>agi::CtrlEncoding::quad_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="58" column="19" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CtrlEncoding_1a4f0898c127efbe58874257abf167f1e4" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structagi_1_1ThrustMap" kindref="compound">ThrustMap</ref></type>
+        <definition>const ThrustMap agi::CtrlEncoding::thrust_map_</definition>
+        <argsstring></argsstring>
+        <name>thrust_map_</name>
+        <qualifiedname>agi::CtrlEncoding::thrust_map_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="59" column="19" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CtrlEncoding_1a46ec5e4401e433d734a26122c0b98d90" prot="private" static="no" mutable="no">
+        <type>const ctrl::CTRLMODE</type>
+        <definition>const ctrl::CTRLMODE agi::CtrlEncoding::mode_</definition>
+        <argsstring></argsstring>
+        <name>mode_</name>
+        <qualifiedname>agi::CtrlEncoding::mode_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="60" column="24" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CtrlEncoding_1a6f59df47d17deab0336597213c7e835b" prot="private" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool agi::CtrlEncoding::command_throttle_direct_</definition>
+        <argsstring></argsstring>
+        <name>command_throttle_direct_</name>
+        <qualifiedname>agi::CtrlEncoding::command_throttle_direct_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="61" column="14" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CtrlEncoding_1ada7e537de7825df4d206041eb7f234a7" prot="private" static="no" mutable="no">
+        <type>const Scalar</type>
+        <definition>const Scalar agi::CtrlEncoding::thrust_coeff_</definition>
+        <argsstring></argsstring>
+        <name>thrust_coeff_</name>
+        <qualifiedname>agi::CtrlEncoding::thrust_coeff_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="62" column="16" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CtrlEncoding_1a26f6e83677d5eb744e37e2b451ed4521" prot="private" static="no" mutable="yes">
+        <type>uint64_t</type>
+        <definition>uint64_t agi::CtrlEncoding::time_ns_init_</definition>
+        <argsstring></argsstring>
+        <name>time_ns_init_</name>
+        <qualifiedname>agi::CtrlEncoding::time_ns_init_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="63" column="20" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CtrlEncoding_1a251e3c8bbf0926c85b6d2029961f0354" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1Feedback" kindref="compound">Feedback</ref></type>
+        <definition>Feedback agi::CtrlEncoding::feedback_</definition>
+        <argsstring></argsstring>
+        <name>feedback_</name>
+        <qualifiedname>agi::CtrlEncoding::feedback_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="64" column="12" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CtrlEncoding_1a3c9c0b5cac56c74b2fb97f8de92f9ed4" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex agi::CtrlEncoding::feedback_mtx_</definition>
+        <argsstring></argsstring>
+        <name>feedback_mtx_</name>
+        <qualifiedname>agi::CtrlEncoding::feedback_mtx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="65" column="14" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CtrlEncoding_1a188347f9dc3c1485bae23543681538ca" prot="private" static="no" mutable="no">
+        <type>const Scalar</type>
+        <definition>const Scalar agi::CtrlEncoding::voltage_</definition>
+        <argsstring></argsstring>
+        <name>voltage_</name>
+        <qualifiedname>agi::CtrlEncoding::voltage_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="66" column="16" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classagi_1_1CtrlEncoding_1a7ce7b59fa3fa2e9c6c52fa65e7753e98" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr <ref refid="classagi_1_1CRC" kindref="compound">CRC</ref></type>
+        <definition>constexpr CRC agi::CtrlEncoding::crc_</definition>
+        <argsstring></argsstring>
+        <name>crc_</name>
+        <qualifiedname>agi::CtrlEncoding::crc_</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="54" column="24" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CtrlEncoding_1a00aeb8a0a2f6692bbd452b3284081364" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char agi::CtrlEncoding::DELIMITER</definition>
+        <argsstring></argsstring>
+        <name>DELIMITER</name>
+        <qualifiedname>agi::CtrlEncoding::DELIMITER</qualifiedname>
+        <initializer>= ctrl::SERIAL_CONTAINER_DELIMITER</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="56" column="25" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1CtrlEncoding_1a816bed299d57bcb6b7128e7fd838cf90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::CtrlEncoding::CtrlEncoding</definition>
+        <argsstring>(const Quadrotor &amp;quad, const ThrustMap &amp;thrust_map, const ctrl::CTRLMODE mode=ctrl::CTRLMODE::ROTOR_THROTTLE, bool command_throttle_direct=false, const Scalar thrust_coeff=1.56e-6)</argsstring>
+        <name>CtrlEncoding</name>
+        <qualifiedname>agi::CtrlEncoding::CtrlEncoding</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1ThrustMap" kindref="compound">ThrustMap</ref> &amp;</type>
+          <declname>thrust_map</declname>
+        </param>
+        <param>
+          <type>const ctrl::CTRLMODE</type>
+          <declname>mode</declname>
+          <defval>ctrl::CTRLMODE::ROTOR_THROTTLE</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>command_throttle_direct</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>thrust_coeff</declname>
+          <defval>1.56e-6</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="15" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CtrlEncoding_1aa32bb2bdb5f956e6b7e73c06be3b67a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::CtrlEncoding::encode</definition>
+        <argsstring>(const Command &amp;command, const bool armed, char *const buffer, int *const length) const override</argsstring>
+        <name>encode</name>
+        <qualifiedname>agi::CtrlEncoding::encode</qualifiedname>
+        <reimplements refid="classagi_1_1MsgEncoding_1a7624e462cea9843b2796c0095ec23e78">encode</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>armed</declname>
+        </param>
+        <param>
+          <type>char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int *const</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="20" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CtrlEncoding_1a3d3a45ec3a3d218cd57262170e1e46e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::CtrlEncoding::decodeFeedback</definition>
+        <argsstring>(const char *const buffer, const int length, Feedback *const feedback=nullptr)</argsstring>
+        <name>decodeFeedback</name>
+        <qualifiedname>agi::CtrlEncoding::decodeFeedback</qualifiedname>
+        <param>
+          <type>const char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="structagi_1_1Feedback" kindref="compound">Feedback</ref> *const</type>
+          <declname>feedback</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="23" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CtrlEncoding_1a41f3e19b2b14a7f7403ac95b27d3db5f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::CtrlEncoding::encodeMessage</definition>
+        <argsstring>(const ctrl::serial_message_t &amp;message, char *const buffer, int *const length) const</argsstring>
+        <name>encodeMessage</name>
+        <qualifiedname>agi::CtrlEncoding::encodeMessage</qualifiedname>
+        <param>
+          <type>const ctrl::serial_message_t &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int *const</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="26" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CtrlEncoding_1af7fcfa741f165a4c93c32545b7fa7021" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::CtrlEncoding::decodeMessage</definition>
+        <argsstring>(const char *const buffer, const int length, ctrl::serial_message_t *const message) const</argsstring>
+        <name>decodeMessage</name>
+        <qualifiedname>agi::CtrlEncoding::decodeMessage</qualifiedname>
+        <param>
+          <type>const char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>ctrl::serial_message_t *const</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="28" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CtrlEncoding_1af2ca7c3c63829b04b5f22936262ca80f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::CtrlEncoding::encodeContainer</definition>
+        <argsstring>(const ctrl::serial_container_t &amp;container, char *const buffer, int *const length) const</argsstring>
+        <name>encodeContainer</name>
+        <qualifiedname>agi::CtrlEncoding::encodeContainer</qualifiedname>
+        <param>
+          <type>const ctrl::serial_container_t &amp;</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int *const</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="31" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CtrlEncoding_1a8eee72ec0756fb9ef484d13dde9e39f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::CtrlEncoding::decodeContainer</definition>
+        <argsstring>(const char *const buffer, const int length, ctrl::serial_container_t *const container) const</argsstring>
+        <name>decodeContainer</name>
+        <qualifiedname>agi::CtrlEncoding::decodeContainer</qualifiedname>
+        <param>
+          <type>const char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>ctrl::serial_container_t *const</type>
+          <declname>container</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="33" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CtrlEncoding_1a809288eb9ff579ebb0987e13056ce280" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structagi_1_1Feedback" kindref="compound">Feedback</ref> &amp;</type>
+        <definition>const Feedback &amp; agi::CtrlEncoding::feedback</definition>
+        <argsstring>() const</argsstring>
+        <name>feedback</name>
+        <qualifiedname>agi::CtrlEncoding::feedback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="36" column="18" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CtrlEncoding_1a7d23db428a50b00255339800114be4a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::CtrlEncoding::getFeedback</definition>
+        <argsstring>(Feedback *const feedback=nullptr)</argsstring>
+        <name>getFeedback</name>
+        <qualifiedname>agi::CtrlEncoding::getFeedback</qualifiedname>
+        <param>
+          <type><ref refid="structagi_1_1Feedback" kindref="compound">Feedback</ref> *const</type>
+          <declname>feedback</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="37" column="8" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CtrlEncoding_1ac0d5228841db3b5ad67e6247f9ab3b95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::CtrlEncoding::getVoltage</definition>
+        <argsstring>()</argsstring>
+        <name>getVoltage</name>
+        <qualifiedname>agi::CtrlEncoding::getVoltage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="43" column="10" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="43" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classagi_1_1CtrlEncoding_1afc34c2f13e55eb3a028af20a131a2e1b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int agi::CtrlEncoding::getPayloadLength</definition>
+        <argsstring>(const ctrl::CTRLMODE mode)</argsstring>
+        <name>getPayloadLength</name>
+        <qualifiedname>agi::CtrlEncoding::getPayloadLength</qualifiedname>
+        <param>
+          <type>const ctrl::CTRLMODE</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="47" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CtrlEncoding_1a1b0d53e4603bcc451f7ecc46fdc5e931" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int agi::CtrlEncoding::getPayloadLength</definition>
+        <argsstring>(const uint8_t mode)</argsstring>
+        <name>getPayloadLength</name>
+        <qualifiedname>agi::CtrlEncoding::getPayloadLength</qualifiedname>
+        <param>
+          <type>const uint8_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="48" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CtrlEncoding_1aab14f78e80f927c1d4d2c86a8cdb3f87" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int agi::CtrlEncoding::getMsgLength</definition>
+        <argsstring>(const ctrl::CTRLMODE mode)</argsstring>
+        <name>getMsgLength</name>
+        <qualifiedname>agi::CtrlEncoding::getMsgLength</qualifiedname>
+        <param>
+          <type>const ctrl::CTRLMODE</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="49" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CtrlEncoding_1a765195b616f74e231ac67803bfbcf10e" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int agi::CtrlEncoding::getMsgLength</definition>
+        <argsstring>(const uint8_t mode)</argsstring>
+        <name>getMsgLength</name>
+        <qualifiedname>agi::CtrlEncoding::getMsgLength</qualifiedname>
+        <param>
+          <type>const uint8_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="50" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::CtrlEncoding</label>
+        <link refid="classagi_1_1CtrlEncoding"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::MsgEncoding</label>
+        <link refid="classagi_1_1MsgEncoding"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::CtrlEncoding</label>
+        <link refid="classagi_1_1CtrlEncoding"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::MsgEncoding</label>
+        <link refid="classagi_1_1MsgEncoding"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" line="13" column="1" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp" bodystart="13" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classagi_1_1CtrlEncoding_1a6f59df47d17deab0336597213c7e835b" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>command_throttle_direct_</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a728ce786dac794400b96d7750bbd1e3c" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>CRC</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a7ce7b59fa3fa2e9c6c52fa65e7753e98" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>crc_</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a816bed299d57bcb6b7128e7fd838cf90" prot="public" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>CtrlEncoding</name></member>
+      <member refid="classagi_1_1MsgEncoding_1a5d4dbd8d892ea78347e8351f7b0384bf" prot="public" virt="virtual"><scope>agi::CtrlEncoding</scope><name>decode</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a8eee72ec0756fb9ef484d13dde9e39f2" prot="public" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>decodeContainer</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a3d3a45ec3a3d218cd57262170e1e46e5" prot="public" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>decodeFeedback</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1af7fcfa741f165a4c93c32545b7fa7021" prot="public" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>decodeMessage</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a00aeb8a0a2f6692bbd452b3284081364" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>DELIMITER</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1aa32bb2bdb5f956e6b7e73c06be3b67a6" prot="public" virt="virtual"><scope>agi::CtrlEncoding</scope><name>encode</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1af2ca7c3c63829b04b5f22936262ca80f" prot="public" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>encodeContainer</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a41f3e19b2b14a7f7403ac95b27d3db5f" prot="public" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>encodeMessage</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a809288eb9ff579ebb0987e13056ce280" prot="public" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>feedback</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a251e3c8bbf0926c85b6d2029961f0354" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>feedback_</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a3c9c0b5cac56c74b2fb97f8de92f9ed4" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>feedback_mtx_</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a7d23db428a50b00255339800114be4a6" prot="public" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>getFeedback</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1aab14f78e80f927c1d4d2c86a8cdb3f87" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>getMsgLength</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a765195b616f74e231ac67803bfbcf10e" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>getMsgLength</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1afc34c2f13e55eb3a028af20a131a2e1b" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>getPayloadLength</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a1b0d53e4603bcc451f7ecc46fdc5e931" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>getPayloadLength</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1ac0d5228841db3b5ad67e6247f9ab3b95" prot="public" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>getVoltage</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a8b71f702f57d204cbdc70b07055741e7" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>logger_</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a46ec5e4401e433d734a26122c0b98d90" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>mode_</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a7eaa7a032001684efbfbcc820bed099a" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>quad_</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1ada7e537de7825df4d206041eb7f234a7" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>thrust_coeff_</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a4f0898c127efbe58874257abf167f1e4" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>thrust_map_</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a26f6e83677d5eb744e37e2b451ed4521" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>time_ns_init_</name></member>
+      <member refid="classagi_1_1CtrlEncoding_1a188347f9dc3c1485bae23543681538ca" prot="private" virt="non-virtual"><scope>agi::CtrlEncoding</scope><name>voltage_</name></member>
+      <member refid="classagi_1_1MsgEncoding_1ab1c8c68727c96ee077c91191c9a76f93" prot="public" virt="virtual"><scope>agi::CtrlEncoding</scope><name>~MsgEncoding</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

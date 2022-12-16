@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1GeometricController" kind="class" language="C++" prot="public">
+    <compoundname>agi::GeometricController</compoundname>
+    <basecompoundref refid="classagi_1_1ControllerBase" prot="public" virt="non-virtual">agi::ControllerBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1GeometricController_1af15fc0ed1136c4690bd7357034a8d1e0" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+        <definition>Quadrotor agi::GeometricController::quad_</definition>
+        <argsstring></argsstring>
+        <name>quad_</name>
+        <qualifiedname>agi::GeometricController::quad_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/controller_geo.hpp" line="49" column="13" bodyfile="agilib/include/agilib/controller/geometric/controller_geo.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1GeometricController_1a40ebdb6a2a302eb15bef5af0f78c38b0" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="structagi_1_1GeometricControllerParams" kindref="compound">GeometricControllerParams</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;GeometricControllerParams&gt; agi::GeometricController::params_</definition>
+        <argsstring></argsstring>
+        <name>params_</name>
+        <qualifiedname>agi::GeometricController::params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/controller_geo.hpp" line="50" column="19" bodyfile="agilib/include/agilib/controller/geometric/controller_geo.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1GeometricController_1afce61ce7b82f595727b31237b51ddb19" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1LowPassFilter" kindref="compound">LowPassFilter</ref>&lt; 3 &gt;</type>
+        <definition>LowPassFilter&lt;3&gt; agi::GeometricController::filterAcc_</definition>
+        <argsstring></argsstring>
+        <name>filterAcc_</name>
+        <qualifiedname>agi::GeometricController::filterAcc_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/controller_geo.hpp" line="51" column="17" bodyfile="agilib/include/agilib/controller/geometric/controller_geo.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1GeometricController_1a7576c946fcaf0f653c0ab062abd2e7b8" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1LowPassFilter" kindref="compound">LowPassFilter</ref>&lt; 4 &gt;</type>
+        <definition>LowPassFilter&lt;4&gt; agi::GeometricController::filterMot_</definition>
+        <argsstring></argsstring>
+        <name>filterMot_</name>
+        <qualifiedname>agi::GeometricController::filterMot_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/controller_geo.hpp" line="52" column="17" bodyfile="agilib/include/agilib/controller/geometric/controller_geo.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1GeometricController_1a6415890f98f123cfdb5ee34250848cab" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref></type>
+        <definition>ImuSample agi::GeometricController::imu_</definition>
+        <argsstring></argsstring>
+        <name>imu_</name>
+        <qualifiedname>agi::GeometricController::imu_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/controller_geo.hpp" line="54" column="13" bodyfile="agilib/include/agilib/controller/geometric/controller_geo.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1GeometricController_1a8e4f2a8a6925120814749d1c776ec86d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::GeometricController::GeometricController</definition>
+        <argsstring>(const Quadrotor &amp;quad, const std::shared_ptr&lt; GeometricControllerParams &gt; &amp;params)</argsstring>
+        <name>GeometricController</name>
+        <qualifiedname>agi::GeometricController::GeometricController</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="structagi_1_1GeometricControllerParams" kindref="compound">GeometricControllerParams</ref> &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/controller_geo.hpp" line="26" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1GeometricController_1ac58c99cf874017c2b436f6f21b83440a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::GeometricController::~GeometricController</definition>
+        <argsstring>()</argsstring>
+        <name>~GeometricController</name>
+        <qualifiedname>agi::GeometricController::~GeometricController</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/controller_geo.hpp" line="28" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1GeometricController_1ab1539229798cc7d692755108e19216ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::GeometricController::getCommand</definition>
+        <argsstring>(const QuadState &amp;state, const SetpointVector &amp;references, SetpointVector *const setpoints) override</argsstring>
+        <name>getCommand</name>
+        <qualifiedname>agi::GeometricController::getCommand</qualifiedname>
+        <reimplements refid="classagi_1_1ControllerBase_1a36ec36d71b00921aead71d4893ed037f">getCommand</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const SetpointVector &amp;</type>
+          <declname>references</declname>
+        </param>
+        <param>
+          <type>SetpointVector *const</type>
+          <declname>setpoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/controller_geo.hpp" line="30" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1GeometricController_1af35480273f25f2f7956f0b53a23eabf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::GeometricController::updateParameters</definition>
+        <argsstring>(const Quadrotor &amp;quad, const std::shared_ptr&lt; GeometricControllerParams &gt; params)</argsstring>
+        <name>updateParameters</name>
+        <qualifiedname>agi::GeometricController::updateParameters</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="structagi_1_1GeometricControllerParams" kindref="compound">GeometricControllerParams</ref> &gt;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/controller_geo.hpp" line="34" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1GeometricController_1adc8b6a12395a6f168d4041bd510a9f6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::GeometricController::updateParameters</definition>
+        <argsstring>(const Quadrotor &amp;params)</argsstring>
+        <name>updateParameters</name>
+        <qualifiedname>agi::GeometricController::updateParameters</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/controller_geo.hpp" line="37" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1GeometricController_1a461fe1246da0288688cb2d58c3a59343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::GeometricController::updateParameters</definition>
+        <argsstring>(const std::shared_ptr&lt; GeometricControllerParams &gt; params)</argsstring>
+        <name>updateParameters</name>
+        <qualifiedname>agi::GeometricController::updateParameters</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="structagi_1_1GeometricControllerParams" kindref="compound">GeometricControllerParams</ref> &gt;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/controller_geo.hpp" line="38" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1GeometricController_1a591ad9f78327823150efbacf7dd1b938" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="structagi_1_1GeometricControllerParams" kindref="compound">GeometricControllerParams</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; GeometricControllerParams &gt; agi::GeometricController::getParameters</definition>
+        <argsstring>()</argsstring>
+        <name>getParameters</name>
+        <qualifiedname>agi::GeometricController::getParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/controller_geo.hpp" line="40" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1GeometricController_1acb52a97428bb979b7f7db39ad03945ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::GeometricController::addImu</definition>
+        <argsstring>(const ImuSample &amp;imu)</argsstring>
+        <name>addImu</name>
+        <qualifiedname>agi::GeometricController::addImu</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref> &amp;</type>
+          <declname>imu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/controller_geo.hpp" line="42" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classagi_1_1GeometricController_1ad2e1a007daf8fc066a368167f219ab59" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt; 3 &gt; agi::GeometricController::tiltPrioritizedControl</definition>
+        <argsstring>(const Quaternion &amp;q, const Quaternion &amp;q_des)</argsstring>
+        <name>tiltPrioritizedControl</name>
+        <qualifiedname>agi::GeometricController::tiltPrioritizedControl</qualifiedname>
+        <param>
+          <type>const Quaternion &amp;</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>const Quaternion &amp;</type>
+          <declname>q_des</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/controller_geo.hpp" line="45" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1GeometricController_1a386f3b71df0a9c3d8b40def2a2d873f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector&lt; 4 &gt;</type>
+        <definition>Vector&lt; 4 &gt; agi::GeometricController::qTimeDerivative</definition>
+        <argsstring>(const Quaternion &amp;q, const Scalar &amp;t)</argsstring>
+        <name>qTimeDerivative</name>
+        <qualifiedname>agi::GeometricController::qTimeDerivative</qualifiedname>
+        <param>
+          <type>const Quaternion &amp;</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>const Scalar &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/controller_geo.hpp" line="47" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>agi::Module&lt; ControllerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="2">
+        <label>agi::ControllerBase</label>
+        <link refid="classagi_1_1ControllerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::GeometricController</label>
+        <link refid="classagi_1_1GeometricController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>agi::Module&lt; ControllerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ControllerBase</label>
+        <link refid="classagi_1_1ControllerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::GeometricController</label>
+        <link refid="classagi_1_1GeometricController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/controller/geometric/controller_geo.hpp" line="23" column="1" bodyfile="agilib/include/agilib/controller/geometric/controller_geo.hpp" bodystart="23" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classagi_1_1GeometricController_1acb52a97428bb979b7f7db39ad03945ad" prot="public" virt="non-virtual"><scope>agi::GeometricController</scope><name>addImu</name></member>
+      <member refid="classagi_1_1ControllerBase_1a63bad17e94dcdbb999298772ffb779bb" prot="public" virt="virtual"><scope>agi::GeometricController</scope><name>addImuSample</name></member>
+      <member refid="classagi_1_1ControllerBase_1adbbc03b1311961d872aebd7d0ff47c1d" prot="public" virt="non-virtual"><scope>agi::GeometricController</scope><name>ControllerBase</name></member>
+      <member refid="classagi_1_1ControllerBase_1ac19c23e376075c8e573e1b3080f76a57" prot="public" virt="non-virtual"><scope>agi::GeometricController</scope><name>dt</name></member>
+      <member refid="classagi_1_1ControllerBase_1a888ab615293b0332df4f503837b03723" prot="protected" virt="non-virtual"><scope>agi::GeometricController</scope><name>exec_dt_</name></member>
+      <member refid="classagi_1_1GeometricController_1afce61ce7b82f595727b31237b51ddb19" prot="private" virt="non-virtual"><scope>agi::GeometricController</scope><name>filterAcc_</name></member>
+      <member refid="classagi_1_1GeometricController_1a7576c946fcaf0f653c0ab062abd2e7b8" prot="private" virt="non-virtual"><scope>agi::GeometricController</scope><name>filterMot_</name></member>
+      <member refid="classagi_1_1GeometricController_1a8e4f2a8a6925120814749d1c776ec86d" prot="public" virt="non-virtual"><scope>agi::GeometricController</scope><name>GeometricController</name></member>
+      <member refid="classagi_1_1GeometricController_1ab1539229798cc7d692755108e19216ab" prot="public" virt="virtual"><scope>agi::GeometricController</scope><name>getCommand</name></member>
+      <member refid="classagi_1_1GeometricController_1a591ad9f78327823150efbacf7dd1b938" prot="public" virt="non-virtual"><scope>agi::GeometricController</scope><name>getParameters</name></member>
+      <member refid="classagi_1_1ControllerBase_1a4a5850793263795a322e9357e1d9cc3e" prot="protected" virt="non-virtual"><scope>agi::GeometricController</scope><name>horizon_length_</name></member>
+      <member refid="classagi_1_1ControllerBase_1ab28f44d8fd2ce46a01fc10d79d579733" prot="public" virt="non-virtual"><scope>agi::GeometricController</scope><name>horizonLength</name></member>
+      <member refid="classagi_1_1GeometricController_1a6415890f98f123cfdb5ee34250848cab" prot="private" virt="non-virtual"><scope>agi::GeometricController</scope><name>imu_</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::GeometricController</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::GeometricController</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::GeometricController</scope><name>Module</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::GeometricController</scope><name>name</name></member>
+      <member refid="classagi_1_1GeometricController_1a40ebdb6a2a302eb15bef5af0f78c38b0" prot="private" virt="non-virtual"><scope>agi::GeometricController</scope><name>params_</name></member>
+      <member refid="classagi_1_1ControllerBase_1a347077cec886c432483b3168b3b59821" prot="protected" virt="non-virtual"><scope>agi::GeometricController</scope><name>pred_dt_</name></member>
+      <member refid="classagi_1_1GeometricController_1a386f3b71df0a9c3d8b40def2a2d873f0" prot="private" virt="non-virtual"><scope>agi::GeometricController</scope><name>qTimeDerivative</name></member>
+      <member refid="classagi_1_1GeometricController_1af15fc0ed1136c4690bd7357034a8d1e0" prot="private" virt="non-virtual"><scope>agi::GeometricController</scope><name>quad_</name></member>
+      <member refid="classagi_1_1GeometricController_1ad2e1a007daf8fc066a368167f219ab59" prot="private" virt="non-virtual"><scope>agi::GeometricController</scope><name>tiltPrioritizedControl</name></member>
+      <member refid="classagi_1_1GeometricController_1af35480273f25f2f7956f0b53a23eabf2" prot="public" virt="non-virtual"><scope>agi::GeometricController</scope><name>updateParameters</name></member>
+      <member refid="classagi_1_1GeometricController_1adc8b6a12395a6f168d4041bd510a9f6d" prot="public" virt="non-virtual"><scope>agi::GeometricController</scope><name>updateParameters</name></member>
+      <member refid="classagi_1_1GeometricController_1a461fe1246da0288688cb2d58c3a59343" prot="public" virt="non-virtual"><scope>agi::GeometricController</scope><name>updateParameters</name></member>
+      <member refid="classagi_1_1ControllerBase_1a7f8d13d6e9126f7854f1f91ce7c246a7" prot="public" virt="virtual"><scope>agi::GeometricController</scope><name>~ControllerBase</name></member>
+      <member refid="classagi_1_1GeometricController_1ac58c99cf874017c2b436f6f21b83440a" prot="public" virt="non-virtual"><scope>agi::GeometricController</scope><name>~GeometricController</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::GeometricController</scope><name>~Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1CogFilter" kind="class" language="C++" prot="public">
+    <compoundname>agi::CogFilter</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1a81fc06080d5aa3711231f7f35071c00d" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::CogFilter::NX</definition>
+        <argsstring></argsstring>
+        <name>NX</name>
+        <qualifiedname>agi::CogFilter::NX</qualifiedname>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="17" column="24" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1ae05b7aa309f90ecce3e424483ae9a564" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::CogFilter::NU</definition>
+        <argsstring></argsstring>
+        <name>NU</name>
+        <qualifiedname>agi::CogFilter::NU</qualifiedname>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="18" column="24" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1a0309d47a29b023ad4ff8c0742fe29778" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::CogFilter::NL</definition>
+        <argsstring></argsstring>
+        <name>NL</name>
+        <qualifiedname>agi::CogFilter::NL</qualifiedname>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="19" column="24" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1a2c24f77e19e0132c5c57b1f2b35aae12" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::CogFilter::NY</definition>
+        <argsstring></argsstring>
+        <name>NY</name>
+        <qualifiedname>agi::CogFilter::NY</qualifiedname>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="20" column="24" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1ad5aa336ebc5a74173a74eb0c9f5b9ebf" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::CogFilter::NOMEGA</definition>
+        <argsstring></argsstring>
+        <name>NOMEGA</name>
+        <qualifiedname>agi::CogFilter::NOMEGA</qualifiedname>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="21" column="24" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1aa59b228d1ea90a999467a039d0217325" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::CogFilter::N_max_samples_</definition>
+        <argsstring></argsstring>
+        <name>N_max_samples_</name>
+        <qualifiedname>agi::CogFilter::N_max_samples_</qualifiedname>
+        <initializer>= 128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="43" column="24" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1a3c51939d624bb52b063929f166f84abf" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref></type>
+        <definition>Logger agi::CogFilter::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>agi::CogFilter::logger_</qualifiedname>
+        <initializer>{&quot;CoG Filter&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="37" column="10" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1a5b9f1e525b04725c88243e2f0d87adee" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+        <definition>const Quadrotor agi::CogFilter::quad_</definition>
+        <argsstring></argsstring>
+        <name>quad_</name>
+        <qualifiedname>agi::CogFilter::quad_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="38" column="19" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1af6d57859d65af3595575dca9be4f6d25" prot="private" static="no" mutable="no">
+        <type>const Matrix&lt; NX, NX &gt;</type>
+        <definition>const Matrix&lt;NX, NX&gt; agi::CogFilter::Q_init_</definition>
+        <argsstring></argsstring>
+        <name>Q_init_</name>
+        <qualifiedname>agi::CogFilter::Q_init_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="39" column="16" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1a1d8684ddaf6a2922653aa1961ed4d412" prot="private" static="no" mutable="no">
+        <type>const Matrix&lt; NX, NX &gt;</type>
+        <definition>const Matrix&lt;NX, NX&gt; agi::CogFilter::Q_</definition>
+        <argsstring></argsstring>
+        <name>Q_</name>
+        <qualifiedname>agi::CogFilter::Q_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="40" column="16" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1a739b77c1f68fbbee3f9c672a4866a17d" prot="private" static="no" mutable="no">
+        <type>const Matrix&lt; NY, NY &gt;</type>
+        <definition>const Matrix&lt;NY, NY&gt; agi::CogFilter::R_</definition>
+        <argsstring></argsstring>
+        <name>R_</name>
+        <qualifiedname>agi::CogFilter::R_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="41" column="16" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1a074e7ae6511fb8fb6e8441a1c5699302" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex agi::CogFilter::mutex_</definition>
+        <argsstring></argsstring>
+        <name>mutex_</name>
+        <qualifiedname>agi::CogFilter::mutex_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="45" column="14" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1a09a62e22f0d54cf41a1b57a4f1dacd1d" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; <ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref> &gt;</type>
+        <definition>std::deque&lt;ImuSample&gt; agi::CogFilter::imus_</definition>
+        <argsstring></argsstring>
+        <name>imus_</name>
+        <qualifiedname>agi::CogFilter::imus_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="46" column="14" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1ac1424bdec0a8832a87b41acee97e5fe6" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &gt;</type>
+        <definition>std::deque&lt;Command&gt; agi::CogFilter::commands_</definition>
+        <argsstring></argsstring>
+        <name>commands_</name>
+        <qualifiedname>agi::CogFilter::commands_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="47" column="14" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1abb6e620c1a9a565d3400a2eee3f2e2a8" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::CogFilter::t_</definition>
+        <argsstring></argsstring>
+        <name>t_</name>
+        <qualifiedname>agi::CogFilter::t_</qualifiedname>
+        <initializer>{NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="49" column="10" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1a14b52f7e9a99406731311cdd6c4c69c3" prot="private" static="no" mutable="no">
+        <type>Vector&lt; NX &gt;</type>
+        <definition>Vector&lt;NX&gt; agi::CogFilter::x_</definition>
+        <argsstring></argsstring>
+        <name>x_</name>
+        <qualifiedname>agi::CogFilter::x_</qualifiedname>
+        <initializer>= Vector&lt;NX&gt;::Zero()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="50" column="10" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1aee33b899d46a6467206abc61f372f8cd" prot="private" static="no" mutable="no">
+        <type>Matrix&lt; NX, NX &gt;</type>
+        <definition>Matrix&lt;NX, NX&gt; agi::CogFilter::P_</definition>
+        <argsstring></argsstring>
+        <name>P_</name>
+        <qualifiedname>agi::CogFilter::P_</qualifiedname>
+        <initializer>= Matrix&lt;NX, NX&gt;::Zero()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="51" column="10" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1af4ee6a2f69cb42a5ab627e80493ed62a" prot="private" static="no" mutable="no">
+        <type>const Matrix&lt; NY, NX &gt;</type>
+        <definition>const Matrix&lt;NY, NX&gt; agi::CogFilter::H_</definition>
+        <argsstring></argsstring>
+        <name>H_</name>
+        <qualifiedname>agi::CogFilter::H_</qualifiedname>
+        <initializer>=
+    (Matrix&lt;NY, NX&gt;() &lt;&lt; Matrix&lt;NY, NOMEGA&gt;::Identity(), Matrix&lt;NY, NL&gt;::Zero())
+      .finished()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="53" column="16" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1CogFilter_1a27a87f4fa84fe67e40dcfc997068b9a2" prot="private" static="no" mutable="no">
+        <type>const Matrix&lt; NX, NU &gt;</type>
+        <definition>const Matrix&lt;NX, NU&gt; agi::CogFilter::B_</definition>
+        <argsstring></argsstring>
+        <name>B_</name>
+        <qualifiedname>agi::CogFilter::B_</qualifiedname>
+        <initializer>=
+    (Matrix&lt;NX, NU&gt;() &lt;&lt; 1.0 / quad_.J_(0, 0) * quad_.t_BM_.row(1),
+     -1.0 / quad_.J_(1, 1) * quad_.t_BM_.row(0), Matrix&lt;NL, NU&gt;::Zero())
+      .finished()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="56" column="16" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1CogFilter_1a055c840974f8618715d8ce7e4122d221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::CogFilter::CogFilter</definition>
+        <argsstring>(const Quadrotor &amp;quad, const Matrix&lt; NX, NX &gt; &amp;Q_init, const Matrix&lt; NX, NX &gt; &amp;Q, const Matrix&lt; NOMEGA, NOMEGA &gt; &amp;R)</argsstring>
+        <name>CogFilter</name>
+        <qualifiedname>agi::CogFilter::CogFilter</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const Matrix&lt; NX, NX &gt; &amp;</type>
+          <declname>Q_init</declname>
+        </param>
+        <param>
+          <type>const Matrix&lt; NX, NX &gt; &amp;</type>
+          <declname>Q</declname>
+        </param>
+        <param>
+          <type>const Matrix&lt; NOMEGA, NOMEGA &gt; &amp;</type>
+          <declname>R</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="24" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CogFilter_1ad1b8f9d3a920092407a8b7c0f7477a19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::CogFilter::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::CogFilter::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="27" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CogFilter_1a7b7dd9c7a9df7e065cfc3710e40bf9fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::CogFilter::addImu</definition>
+        <argsstring>(const ImuSample &amp;sample)</argsstring>
+        <name>addImu</name>
+        <qualifiedname>agi::CogFilter::addImu</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref> &amp;</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="28" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CogFilter_1aaa2ae7b772c6583ea5651f615d7b3ca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::CogFilter::addCommand</definition>
+        <argsstring>(const Command &amp;command)</argsstring>
+        <name>addCommand</name>
+        <qualifiedname>agi::CogFilter::addCommand</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="29" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CogFilter_1adf0dd908b586ad60e1e401aa3d32b43f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::CogFilter::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <qualifiedname>agi::CogFilter::update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="31" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CogFilter_1a6d3fbb191f942a102b96307aea3b0111" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector&lt; NL &gt;</type>
+        <definition>Vector&lt; NL &gt; agi::CogFilter::getLengthCorrection</definition>
+        <argsstring>() const</argsstring>
+        <name>getLengthCorrection</name>
+        <qualifiedname>agi::CogFilter::getLengthCorrection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="33" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CogFilter_1aae9bed1c4092ea4ca38ff93afa3bf3c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Matrix&lt; 3, 4 &gt;</type>
+        <definition>Matrix&lt; 3, 4 &gt; agi::CogFilter::getAbsolutLengths</definition>
+        <argsstring>() const</argsstring>
+        <name>getAbsolutLengths</name>
+        <qualifiedname>agi::CogFilter::getAbsolutLengths</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="34" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/controller/mpc/cog_filter.hpp" line="15" column="1" bodyfile="agilib/include/agilib/controller/mpc/cog_filter.hpp" bodystart="15" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classagi_1_1CogFilter_1aaa2ae7b772c6583ea5651f615d7b3ca1" prot="public" virt="non-virtual"><scope>agi::CogFilter</scope><name>addCommand</name></member>
+      <member refid="classagi_1_1CogFilter_1a7b7dd9c7a9df7e065cfc3710e40bf9fc" prot="public" virt="non-virtual"><scope>agi::CogFilter</scope><name>addImu</name></member>
+      <member refid="classagi_1_1CogFilter_1a27a87f4fa84fe67e40dcfc997068b9a2" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>B_</name></member>
+      <member refid="classagi_1_1CogFilter_1a055c840974f8618715d8ce7e4122d221" prot="public" virt="non-virtual"><scope>agi::CogFilter</scope><name>CogFilter</name></member>
+      <member refid="classagi_1_1CogFilter_1ac1424bdec0a8832a87b41acee97e5fe6" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>commands_</name></member>
+      <member refid="classagi_1_1CogFilter_1aae9bed1c4092ea4ca38ff93afa3bf3c0" prot="public" virt="non-virtual"><scope>agi::CogFilter</scope><name>getAbsolutLengths</name></member>
+      <member refid="classagi_1_1CogFilter_1a6d3fbb191f942a102b96307aea3b0111" prot="public" virt="non-virtual"><scope>agi::CogFilter</scope><name>getLengthCorrection</name></member>
+      <member refid="classagi_1_1CogFilter_1af4ee6a2f69cb42a5ab627e80493ed62a" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>H_</name></member>
+      <member refid="classagi_1_1CogFilter_1a09a62e22f0d54cf41a1b57a4f1dacd1d" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>imus_</name></member>
+      <member refid="classagi_1_1CogFilter_1a3c51939d624bb52b063929f166f84abf" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>logger_</name></member>
+      <member refid="classagi_1_1CogFilter_1a074e7ae6511fb8fb6e8441a1c5699302" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>mutex_</name></member>
+      <member refid="classagi_1_1CogFilter_1aa59b228d1ea90a999467a039d0217325" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>N_max_samples_</name></member>
+      <member refid="classagi_1_1CogFilter_1a0309d47a29b023ad4ff8c0742fe29778" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>NL</name></member>
+      <member refid="classagi_1_1CogFilter_1ad5aa336ebc5a74173a74eb0c9f5b9ebf" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>NOMEGA</name></member>
+      <member refid="classagi_1_1CogFilter_1ae05b7aa309f90ecce3e424483ae9a564" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>NU</name></member>
+      <member refid="classagi_1_1CogFilter_1a81fc06080d5aa3711231f7f35071c00d" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>NX</name></member>
+      <member refid="classagi_1_1CogFilter_1a2c24f77e19e0132c5c57b1f2b35aae12" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>NY</name></member>
+      <member refid="classagi_1_1CogFilter_1aee33b899d46a6467206abc61f372f8cd" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>P_</name></member>
+      <member refid="classagi_1_1CogFilter_1a1d8684ddaf6a2922653aa1961ed4d412" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>Q_</name></member>
+      <member refid="classagi_1_1CogFilter_1af6d57859d65af3595575dca9be4f6d25" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>Q_init_</name></member>
+      <member refid="classagi_1_1CogFilter_1a5b9f1e525b04725c88243e2f0d87adee" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>quad_</name></member>
+      <member refid="classagi_1_1CogFilter_1a739b77c1f68fbbee3f9c672a4866a17d" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>R_</name></member>
+      <member refid="classagi_1_1CogFilter_1ad1b8f9d3a920092407a8b7c0f7477a19" prot="public" virt="non-virtual"><scope>agi::CogFilter</scope><name>reset</name></member>
+      <member refid="classagi_1_1CogFilter_1abb6e620c1a9a565d3400a2eee3f2e2a8" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>t_</name></member>
+      <member refid="classagi_1_1CogFilter_1adf0dd908b586ad60e1e401aa3d32b43f" prot="public" virt="non-virtual"><scope>agi::CogFilter</scope><name>update</name></member>
+      <member refid="classagi_1_1CogFilter_1a14b52f7e9a99406731311cdd6c4c69c3" prot="private" virt="non-virtual"><scope>agi::CogFilter</scope><name>x_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

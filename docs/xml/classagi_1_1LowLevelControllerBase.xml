@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1LowLevelControllerBase" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>agi::LowLevelControllerBase</compoundname>
+    <basecompoundref refid="classagi_1_1Module" prot="public" virt="non-virtual">agi::Module&lt; LowLevelControllerBase &gt;</basecompoundref>
+    <derivedcompoundref refid="classagi_1_1LowLevelControllerBetaflight" prot="public" virt="non-virtual">agi::LowLevelControllerBetaflight</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1LowLevelControllerSimple" prot="public" virt="non-virtual">agi::LowLevelControllerSimple</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classagi_1_1LowLevelControllerBase_1a20cfba2aa25f2a929331b0508331f606" prot="protected" static="no" mutable="no">
+        <type><ref refid="structagi_1_1Command" kindref="compound">Command</ref></type>
+        <definition>Command agi::LowLevelControllerBase::cmd_</definition>
+        <argsstring></argsstring>
+        <name>cmd_</name>
+        <qualifiedname>agi::LowLevelControllerBase::cmd_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_base.hpp" line="28" column="11" bodyfile="agilib/include/agilib/simulator/low_level_controller_base.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LowLevelControllerBase_1a2f59998108c18a91e347f3e32dc65ae1" prot="protected" static="no" mutable="no">
+        <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref></type>
+        <definition>QuadState agi::LowLevelControllerBase::state_</definition>
+        <argsstring></argsstring>
+        <name>state_</name>
+        <qualifiedname>agi::LowLevelControllerBase::state_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_base.hpp" line="31" column="13" bodyfile="agilib/include/agilib/simulator/low_level_controller_base.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LowLevelControllerBase_1a971727c70d7ee66948856941e693a3f3" prot="protected" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float agi::LowLevelControllerBase::ctrl_dt_</definition>
+        <argsstring></argsstring>
+        <name>ctrl_dt_</name>
+        <qualifiedname>agi::LowLevelControllerBase::ctrl_dt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_base.hpp" line="34" column="15" bodyfile="agilib/include/agilib/simulator/low_level_controller_base.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LowLevelControllerBase_1a4ac1815900306564a49dced7c233613b" prot="protected" static="no" mutable="no">
+        <type>Vector&lt; 4 &gt;</type>
+        <definition>Vector&lt;4&gt; agi::LowLevelControllerBase::motor_omega_des_</definition>
+        <argsstring></argsstring>
+        <name>motor_omega_des_</name>
+        <qualifiedname>agi::LowLevelControllerBase::motor_omega_des_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_base.hpp" line="37" column="10" bodyfile="agilib/include/agilib/simulator/low_level_controller_base.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LowLevelControllerBase_1ae797f72877eaf192cc3706903936daf9" prot="protected" static="no" mutable="no">
+        <type><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+        <definition>Quadrotor agi::LowLevelControllerBase::quad_</definition>
+        <argsstring></argsstring>
+        <name>quad_</name>
+        <qualifiedname>agi::LowLevelControllerBase::quad_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_base.hpp" line="40" column="13" bodyfile="agilib/include/agilib/simulator/low_level_controller_base.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LowLevelControllerBase_1a8e3389e3bf586f0fad8b790478e6189d" prot="protected" static="no" mutable="no">
+        <type>fs::path</type>
+        <definition>fs::path agi::LowLevelControllerBase::param_dir_</definition>
+        <argsstring></argsstring>
+        <name>param_dir_</name>
+        <qualifiedname>agi::LowLevelControllerBase::param_dir_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_base.hpp" line="43" column="12" bodyfile="agilib/include/agilib/simulator/low_level_controller_base.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1LowLevelControllerBase_1a28cbb6f261dcd46f34861036bab0f297" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::LowLevelControllerBase::LowLevelControllerBase</definition>
+        <argsstring>(const Quadrotor &amp;quad, const Scalar ctrl_dt, const std::string &amp;name=&quot;LowLevelControllerBase&quot;)</argsstring>
+        <name>LowLevelControllerBase</name>
+        <qualifiedname>agi::LowLevelControllerBase::LowLevelControllerBase</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>ctrl_dt</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+          <defval>&quot;LowLevelControllerBase&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_base.hpp" line="16" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowLevelControllerBase_1a33e7f12e70fe5992dca0344e3800188f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::LowLevelControllerBase::~LowLevelControllerBase</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~LowLevelControllerBase</name>
+        <qualifiedname>agi::LowLevelControllerBase::~LowLevelControllerBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_base.hpp" line="18" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowLevelControllerBase_1a01c68fd889291669fecb829c5e3c96c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::LowLevelControllerBase::updateQuad</definition>
+        <argsstring>(const Quadrotor &amp;)</argsstring>
+        <name>updateQuad</name>
+        <qualifiedname>agi::LowLevelControllerBase::updateQuad</qualifiedname>
+        <reimplementedby refid="classagi_1_1LowLevelControllerBetaflight_1a16262b6dffe6896610cc1ccd2a2f674e">updateQuad</reimplementedby>
+        <reimplementedby refid="classagi_1_1LowLevelControllerSimple_1a9f8895250a3e0794ed127361b88eb925">updateQuad</reimplementedby>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_base.hpp" line="19" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowLevelControllerBase_1a4d99b6ddd607fcd261cd402f6ae602bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::LowLevelControllerBase::setState</definition>
+        <argsstring>(const QuadState &amp;state)</argsstring>
+        <name>setState</name>
+        <qualifiedname>agi::LowLevelControllerBase::setState</qualifiedname>
+        <reimplementedby refid="classagi_1_1LowLevelControllerBetaflight_1a3bfe32e4440811eaaff60f37734d3f51">setState</reimplementedby>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_base.hpp" line="20" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowLevelControllerBase_1a7d47051d0047d3721abb86082b1fc4cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::LowLevelControllerBase::setCommand</definition>
+        <argsstring>(const Command &amp;cmd)</argsstring>
+        <name>setCommand</name>
+        <qualifiedname>agi::LowLevelControllerBase::setCommand</qualifiedname>
+        <reimplementedby refid="classagi_1_1LowLevelControllerBetaflight_1a948a54ac9134081414f9e836cf43f862">setCommand</reimplementedby>
+        <reimplementedby refid="classagi_1_1LowLevelControllerSimple_1ad42a563ead962fd23a0e97708e09205d">setCommand</reimplementedby>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_base.hpp" line="21" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowLevelControllerBase_1ab2bd3f1cb681f4768a9e6ebabc32f107" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::LowLevelControllerBase::getMotorCommand</definition>
+        <argsstring>(Ref&lt; Vector&lt; 4 &gt; &gt; motors)</argsstring>
+        <name>getMotorCommand</name>
+        <qualifiedname>agi::LowLevelControllerBase::getMotorCommand</qualifiedname>
+        <param>
+          <type>Ref&lt; Vector&lt; 4 &gt; &gt;</type>
+          <declname>motors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_base.hpp" line="22" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowLevelControllerBase_1ae6819c21a401498e16bdd66b6417f6d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::LowLevelControllerBase::setParamDir</definition>
+        <argsstring>(const fs::path &amp;param_dir)</argsstring>
+        <name>setParamDir</name>
+        <qualifiedname>agi::LowLevelControllerBase::setParamDir</qualifiedname>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>param_dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_base.hpp" line="23" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classagi_1_1LowLevelControllerBase_1a60bafe91b95e58e81fe91714d7828e7a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void agi::LowLevelControllerBase::run</definition>
+        <argsstring>()=0</argsstring>
+        <name>run</name>
+        <qualifiedname>agi::LowLevelControllerBase::run</qualifiedname>
+        <reimplementedby refid="classagi_1_1LowLevelControllerBetaflight_1a231ee865ff6282b78108696265edb802">run</reimplementedby>
+        <reimplementedby refid="classagi_1_1LowLevelControllerSimple_1a3b9c00c74184c7ff8de1d95cdf219213">run</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_base.hpp" line="46" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::Module&lt; LowLevelControllerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="1">
+        <label>agi::LowLevelControllerBase</label>
+        <link refid="classagi_1_1LowLevelControllerBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::LowLevelControllerBetaflight</label>
+        <link refid="classagi_1_1LowLevelControllerBetaflight"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::LowLevelControllerSimple</label>
+        <link refid="classagi_1_1LowLevelControllerSimple"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::Module&lt; LowLevelControllerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::Command</label>
+        <link refid="structagi_1_1Command"/>
+      </node>
+      <node id="3">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+      <node id="1">
+        <label>agi::LowLevelControllerBase</label>
+        <link refid="classagi_1_1LowLevelControllerBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>cmd_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>state_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>quad_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="5">
+        <label>agi::QuadState</label>
+        <link refid="structagi_1_1QuadState"/>
+      </node>
+      <node id="6">
+        <label>agi::Quadrotor</label>
+        <link refid="structagi_1_1Quadrotor"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/simulator/low_level_controller_base.hpp" line="13" column="1" bodyfile="agilib/include/agilib/simulator/low_level_controller_base.hpp" bodystart="13" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classagi_1_1LowLevelControllerBase_1a20cfba2aa25f2a929331b0508331f606" prot="protected" virt="non-virtual"><scope>agi::LowLevelControllerBase</scope><name>cmd_</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a971727c70d7ee66948856941e693a3f3" prot="protected" virt="non-virtual"><scope>agi::LowLevelControllerBase</scope><name>ctrl_dt_</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1ab2bd3f1cb681f4768a9e6ebabc32f107" prot="public" virt="virtual"><scope>agi::LowLevelControllerBase</scope><name>getMotorCommand</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::LowLevelControllerBase</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::LowLevelControllerBase</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a28cbb6f261dcd46f34861036bab0f297" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBase</scope><name>LowLevelControllerBase</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBase</scope><name>Module</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a4ac1815900306564a49dced7c233613b" prot="protected" virt="non-virtual"><scope>agi::LowLevelControllerBase</scope><name>motor_omega_des_</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBase</scope><name>name</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a8e3389e3bf586f0fad8b790478e6189d" prot="protected" virt="non-virtual"><scope>agi::LowLevelControllerBase</scope><name>param_dir_</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1ae797f72877eaf192cc3706903936daf9" prot="protected" virt="non-virtual"><scope>agi::LowLevelControllerBase</scope><name>quad_</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a60bafe91b95e58e81fe91714d7828e7a" prot="protected" virt="pure-virtual"><scope>agi::LowLevelControllerBase</scope><name>run</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a7d47051d0047d3721abb86082b1fc4cd" prot="public" virt="virtual"><scope>agi::LowLevelControllerBase</scope><name>setCommand</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1ae6819c21a401498e16bdd66b6417f6d1" prot="public" virt="virtual"><scope>agi::LowLevelControllerBase</scope><name>setParamDir</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a4d99b6ddd607fcd261cd402f6ae602bb" prot="public" virt="virtual"><scope>agi::LowLevelControllerBase</scope><name>setState</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a2f59998108c18a91e347f3e32dc65ae1" prot="protected" virt="non-virtual"><scope>agi::LowLevelControllerBase</scope><name>state_</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a01c68fd889291669fecb829c5e3c96c8" prot="public" virt="virtual"><scope>agi::LowLevelControllerBase</scope><name>updateQuad</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a33e7f12e70fe5992dca0344e3800188f" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBase</scope><name>~LowLevelControllerBase</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::LowLevelControllerBase</scope><name>~Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

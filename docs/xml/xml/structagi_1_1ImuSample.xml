@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1ImuSample" kind="struct" language="C++" prot="public">
+    <compoundname>agi::ImuSample</compoundname>
+    <derivedcompoundref refid="classagi_1_1MockVio_1_1ImuSampleWithBias" prot="public" virt="non-virtual">agi::MockVio::ImuSampleWithBias</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1ImuSample_1af18481d7fd6c630d05db4cc05bb0d662" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::ImuSample::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <qualifiedname>agi::ImuSample::t</qualifiedname>
+        <initializer>{NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/imu_sample.hpp" line="21" column="10" bodyfile="agilib/include/agilib/types/imu_sample.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1ImuSample_1a03ff410ac1a6bb8cb3f44fdcf3ef0db8" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::ImuSample::acc</definition>
+        <argsstring></argsstring>
+        <name>acc</name>
+        <qualifiedname>agi::ImuSample::acc</qualifiedname>
+        <initializer>{NAN, NAN, NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/imu_sample.hpp" line="22" column="10" bodyfile="agilib/include/agilib/types/imu_sample.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1ImuSample_1a0d565c19918d0e60c129fd3f92debc34" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::ImuSample::omega</definition>
+        <argsstring></argsstring>
+        <name>omega</name>
+        <qualifiedname>agi::ImuSample::omega</qualifiedname>
+        <initializer>{NAN, NAN, NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/imu_sample.hpp" line="23" column="10" bodyfile="agilib/include/agilib/types/imu_sample.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1ImuSample_1a409923cf353b21752ca919f61aaa46f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::ImuSample::ImuSample</definition>
+        <argsstring>()=default</argsstring>
+        <name>ImuSample</name>
+        <qualifiedname>agi::ImuSample::ImuSample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/imu_sample.hpp" line="9" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ImuSample_1af75c59401f7ec08b0a1d6a12571912c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::ImuSample::ImuSample</definition>
+        <argsstring>(const ImuSample &amp;)=default</argsstring>
+        <name>ImuSample</name>
+        <qualifiedname>agi::ImuSample::ImuSample</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/imu_sample.hpp" line="10" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ImuSample_1a9c812316e3f364364f25d99ad36c3475" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::ImuSample::ImuSample</definition>
+        <argsstring>(const Scalar t, const Vector&lt; 3 &gt; &amp;acc, const Vector&lt; 3 &gt; &amp;omega)</argsstring>
+        <name>ImuSample</name>
+        <qualifiedname>agi::ImuSample::ImuSample</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>acc</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>omega</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/imu_sample.hpp" line="12" column="3" bodyfile="agilib/include/agilib/types/imu_sample.hpp" bodystart="12" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ImuSample_1a613ea8ebc169a05da1c6e82c15d249f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::ImuSample::~ImuSample</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ImuSample</name>
+        <qualifiedname>agi::ImuSample::~ImuSample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/imu_sample.hpp" line="15" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ImuSample_1a8f21a2326de7e3c72d03b543a5a4ffd4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::ImuSample::valid</definition>
+        <argsstring>() const</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::ImuSample::valid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/imu_sample.hpp" line="17" column="15" bodyfile="agilib/include/agilib/types/imu_sample.hpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ImuSample_1a6913aebbbb78386edd85d6df43fb5eb7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::ImuSample::operator&lt;</definition>
+        <argsstring>(const Scalar time) const</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>agi::ImuSample::operator&lt;</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/imu_sample.hpp" line="25" column="10" bodyfile="agilib/include/agilib/types/imu_sample.hpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ImuSample_1a10c40cdec73f56aa6ca8ae5f08741828" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::ImuSample::operator&lt;=</definition>
+        <argsstring>(const Scalar time) const</argsstring>
+        <name>operator&lt;=</name>
+        <qualifiedname>agi::ImuSample::operator&lt;=</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/imu_sample.hpp" line="26" column="10" bodyfile="agilib/include/agilib/types/imu_sample.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ImuSample_1a5d774b9d25085bb1f6ab046932802663" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::ImuSample::operator&gt;</definition>
+        <argsstring>(const Scalar time) const</argsstring>
+        <name>operator&gt;</name>
+        <qualifiedname>agi::ImuSample::operator&gt;</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/imu_sample.hpp" line="27" column="15" bodyfile="agilib/include/agilib/types/imu_sample.hpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ImuSample_1a0551cfbab9265a3c975abb08bc40f42d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::ImuSample::operator&gt;=</definition>
+        <argsstring>(const Scalar time) const</argsstring>
+        <name>operator&gt;=</name>
+        <qualifiedname>agi::ImuSample::operator&gt;=</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/imu_sample.hpp" line="28" column="15" bodyfile="agilib/include/agilib/types/imu_sample.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::ImuSample</label>
+        <link refid="structagi_1_1ImuSample"/>
+      </node>
+      <node id="2">
+        <label>agi::MockVio::ImuSampleWithBias</label>
+        <link refid="classagi_1_1MockVio_1_1ImuSampleWithBias"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="agilib/include/agilib/types/imu_sample.hpp" line="7" column="1" bodyfile="agilib/include/agilib/types/imu_sample.hpp" bodystart="7" bodyend="29"/>
+    <listofallmembers>
+      <member refid="structagi_1_1ImuSample_1a03ff410ac1a6bb8cb3f44fdcf3ef0db8" prot="public" virt="non-virtual"><scope>agi::ImuSample</scope><name>acc</name></member>
+      <member refid="structagi_1_1ImuSample_1a409923cf353b21752ca919f61aaa46f1" prot="public" virt="non-virtual"><scope>agi::ImuSample</scope><name>ImuSample</name></member>
+      <member refid="structagi_1_1ImuSample_1af75c59401f7ec08b0a1d6a12571912c8" prot="public" virt="non-virtual"><scope>agi::ImuSample</scope><name>ImuSample</name></member>
+      <member refid="structagi_1_1ImuSample_1a9c812316e3f364364f25d99ad36c3475" prot="public" virt="non-virtual"><scope>agi::ImuSample</scope><name>ImuSample</name></member>
+      <member refid="structagi_1_1ImuSample_1a0d565c19918d0e60c129fd3f92debc34" prot="public" virt="non-virtual"><scope>agi::ImuSample</scope><name>omega</name></member>
+      <member refid="structagi_1_1ImuSample_1a6913aebbbb78386edd85d6df43fb5eb7" prot="public" virt="non-virtual"><scope>agi::ImuSample</scope><name>operator&lt;</name></member>
+      <member refid="structagi_1_1ImuSample_1a10c40cdec73f56aa6ca8ae5f08741828" prot="public" virt="non-virtual"><scope>agi::ImuSample</scope><name>operator&lt;=</name></member>
+      <member refid="structagi_1_1ImuSample_1a5d774b9d25085bb1f6ab046932802663" prot="public" virt="non-virtual"><scope>agi::ImuSample</scope><name>operator&gt;</name></member>
+      <member refid="structagi_1_1ImuSample_1a0551cfbab9265a3c975abb08bc40f42d" prot="public" virt="non-virtual"><scope>agi::ImuSample</scope><name>operator&gt;=</name></member>
+      <member refid="structagi_1_1ImuSample_1af18481d7fd6c630d05db4cc05bb0d662" prot="public" virt="non-virtual"><scope>agi::ImuSample</scope><name>t</name></member>
+      <member refid="structagi_1_1ImuSample_1a8f21a2326de7e3c72d03b543a5a4ffd4" prot="public" virt="non-virtual"><scope>agi::ImuSample</scope><name>valid</name></member>
+      <member refid="structagi_1_1ImuSample_1a613ea8ebc169a05da1c6e82c15d249f5" prot="public" virt="non-virtual"><scope>agi::ImuSample</scope><name>~ImuSample</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1ModelBase" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>agi::ModelBase</compoundname>
+    <derivedcompoundref refid="classagi_1_1ModelBodyDrag" prot="public" virt="non-virtual">agi::ModelBodyDrag</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1ModelInit" prot="public" virt="non-virtual">agi::ModelInit</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1ModelLinCubDrag" prot="public" virt="non-virtual">agi::ModelLinCubDrag</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1ModelMotor" prot="public" virt="non-virtual">agi::ModelMotor</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1ModelPropellerBEM" prot="public" virt="non-virtual">agi::ModelPropellerBEM</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1ModelRigidBody" prot="public" virt="non-virtual">agi::ModelRigidBody</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1ModelThrustTorqueSimple" prot="public" virt="non-virtual">agi::ModelThrustTorqueSimple</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classagi_1_1ModelBase_1a71a5186d36000793a8fb4d163a14bbf4" prot="protected" static="no" mutable="no">
+        <type><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+        <definition>Quadrotor agi::ModelBase::quad_</definition>
+        <argsstring></argsstring>
+        <name>quad_</name>
+        <qualifiedname>agi::ModelBase::quad_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_base.hpp" line="28" column="13" bodyfile="agilib/include/agilib/simulator/model_base.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1ModelBase_1afa0e1f1d5823563b5ba7a34212571421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::ModelBase::ModelBase</definition>
+        <argsstring>(Quadrotor &amp;quad)</argsstring>
+        <name>ModelBase</name>
+        <qualifiedname>agi::ModelBase::ModelBase</qualifiedname>
+        <param>
+          <type><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_base.hpp" line="17" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ModelBase_1a394ad140874d5e7b5f4837931ec8ec2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual agi::ModelBase::~ModelBase</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ModelBase</name>
+        <qualifiedname>agi::ModelBase::~ModelBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_base.hpp" line="18" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ModelBase_1aec144173e8686f6161a848775a17342b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ModelBase::updateQuad</definition>
+        <argsstring>(const Quadrotor &amp;)</argsstring>
+        <name>updateQuad</name>
+        <qualifiedname>agi::ModelBase::updateQuad</qualifiedname>
+        <reimplementedby refid="classagi_1_1ModelThrustTorqueSimple_1a6ce56e4ef99901bd2e7625c4f2fc2c4d">updateQuad</reimplementedby>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_base.hpp" line="20" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ModelBase_1abda177a5b2ad6f80d685c62c4175a73d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ModelBase::run</definition>
+        <argsstring>(const Ref&lt; const Vector&lt; QS::SIZE &gt; &gt;, Ref&lt; Vector&lt; QS::SIZE &gt; &gt;) const =0</argsstring>
+        <name>run</name>
+        <qualifiedname>agi::ModelBase::run</qualifiedname>
+        <reimplementedby refid="classagi_1_1ModelBodyDrag_1aa93a14c98b7bf8fa5420caee076aea65">run</reimplementedby>
+        <reimplementedby refid="classagi_1_1ModelInit_1a56abb803c0a9800c1c5e9504a146f275">run</reimplementedby>
+        <reimplementedby refid="classagi_1_1ModelLinCubDrag_1aa8e9f1aba67aa6335b00aa1717911684">run</reimplementedby>
+        <reimplementedby refid="classagi_1_1ModelMotor_1ab0e3a6970c50bedfa92d9ec63b74f28e">run</reimplementedby>
+        <reimplementedby refid="classagi_1_1ModelPropellerBEM_1a287c85991875cd6c2f99f64c2230717a">run</reimplementedby>
+        <reimplementedby refid="classagi_1_1ModelRigidBody_1a9614415f3546e29c168a370716254943">run</reimplementedby>
+        <reimplementedby refid="classagi_1_1ModelThrustTorqueSimple_1ae2de72378df6f5b226bc8c1d81580be2">run</reimplementedby>
+        <param>
+          <type>const Ref&lt; const Vector&lt; QS::SIZE &gt; &gt;</type>
+        </param>
+        <param>
+          <type>Ref&lt; Vector&lt; QS::SIZE &gt; &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_base.hpp" line="24" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::ModelBase</label>
+        <link refid="classagi_1_1ModelBase"/>
+      </node>
+      <node id="2">
+        <label>agi::ModelBodyDrag</label>
+        <link refid="classagi_1_1ModelBodyDrag"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::ModelInit</label>
+        <link refid="classagi_1_1ModelInit"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::ModelLinCubDrag</label>
+        <link refid="classagi_1_1ModelLinCubDrag"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>agi::ModelMotor</label>
+        <link refid="classagi_1_1ModelMotor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>agi::ModelPropellerBEM</label>
+        <link refid="classagi_1_1ModelPropellerBEM"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>agi::ModelRigidBody</label>
+        <link refid="classagi_1_1ModelRigidBody"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>agi::ModelThrustTorqueSimple</label>
+        <link refid="classagi_1_1ModelThrustTorqueSimple"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::ModelBase</label>
+        <link refid="classagi_1_1ModelBase"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>quad_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="2">
+        <label>agi::Quadrotor</label>
+        <link refid="structagi_1_1Quadrotor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/simulator/model_base.hpp" line="13" column="1" bodyfile="agilib/include/agilib/simulator/model_base.hpp" bodystart="13" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classagi_1_1ModelBase_1afa0e1f1d5823563b5ba7a34212571421" prot="public" virt="non-virtual"><scope>agi::ModelBase</scope><name>ModelBase</name></member>
+      <member refid="classagi_1_1ModelBase_1a71a5186d36000793a8fb4d163a14bbf4" prot="protected" virt="non-virtual"><scope>agi::ModelBase</scope><name>quad_</name></member>
+      <member refid="classagi_1_1ModelBase_1abda177a5b2ad6f80d685c62c4175a73d" prot="public" virt="pure-virtual"><scope>agi::ModelBase</scope><name>run</name></member>
+      <member refid="classagi_1_1ModelBase_1aec144173e8686f6161a848775a17342b" prot="public" virt="virtual"><scope>agi::ModelBase</scope><name>updateQuad</name></member>
+      <member refid="classagi_1_1ModelBase_1a394ad140874d5e7b5f4837931ec8ec2d" prot="public" virt="virtual"><scope>agi::ModelBase</scope><name>~ModelBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

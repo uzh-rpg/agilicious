@@ -1,0 +1,659 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="logger_8hpp" kind="file" language="C++">
+    <compoundname>logger.hpp</compoundname>
+    <includes local="no">cstdarg</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">unordered_map</includes>
+    <includes refid="types_8hpp" local="yes">agilib/math/types.hpp</includes>
+    <includedby refid="module_8hpp" local="yes">agilib/include/agilib/base/module.hpp</includedby>
+    <includedby refid="pipeline_8hpp" local="yes">agilib/include/agilib/base/pipeline.hpp</includedby>
+    <includedby refid="bridge__base_8hpp" local="yes">agilib/include/agilib/bridge/bridge_base.hpp</includedby>
+    <includedby refid="ctrl__encoding_8hpp" local="yes">agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp</includedby>
+    <includedby refid="msp__encoding_8hpp" local="yes">agilib/include/agilib/bridge/msp/msp_encoding.hpp</includedby>
+    <includedby refid="serial__bridge_8hpp" local="yes">agilib/include/agilib/bridge/serial_bridge.hpp</includedby>
+    <includedby refid="controller__geo_8hpp" local="yes">agilib/include/agilib/controller/geometric/controller_geo.hpp</includedby>
+    <includedby refid="controller__indi_8hpp" local="yes">agilib/include/agilib/controller/indi/controller_indi.hpp</includedby>
+    <includedby refid="cog__filter_8hpp" local="yes">agilib/include/agilib/controller/mpc/cog_filter.hpp</includedby>
+    <includedby refid="controller__mpc_8hpp" local="yes">agilib/include/agilib/controller/mpc/controller_mpc.hpp</includedby>
+    <includedby refid="wrapper_8hpp" local="yes">agilib/include/agilib/controller/mpc/wrapper.hpp</includedby>
+    <includedby refid="controller__pid_8hpp" local="yes">agilib/include/agilib/controller/pid/controller_pid.hpp</includedby>
+    <includedby refid="ekf_8hpp" local="yes">agilib/include/agilib/estimator/ekf/ekf.hpp</includedby>
+    <includedby refid="ekf__params_8hpp" local="yes">agilib/include/agilib/estimator/ekf/ekf_params.hpp</includedby>
+    <includedby refid="ekf__imu_8hpp" local="yes">agilib/include/agilib/estimator/ekf_imu/ekf_imu.hpp</includedby>
+    <includedby refid="ekf__imu__params_8hpp" local="yes">agilib/include/agilib/estimator/ekf_imu/ekf_imu_params.hpp</includedby>
+    <includedby refid="feedthrough__params_8hpp" local="yes">agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp</includedby>
+    <includedby refid="pilot_8hpp" local="yes">agilib/include/agilib/pilot/pilot.hpp</includedby>
+    <includedby refid="reference__base_8hpp" local="yes">agilib/include/agilib/reference/reference_base.hpp</includedby>
+    <includedby refid="serial_8hpp" local="yes">agilib/include/agilib/serial/serial.hpp</includedby>
+    <includedby refid="brent_8hpp" local="yes">agilib/include/agilib/simulator/bem/brent.hpp</includedby>
+    <includedby refid="low__level__controller__betaflight__params_8hpp" local="yes">agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp</includedby>
+    <includedby refid="low__level__controller__simple__params_8hpp" local="yes">agilib/include/agilib/simulator/low_level_controller_simple_params.hpp</includedby>
+    <includedby refid="model__body__drag__params_8hpp" local="yes">agilib/include/agilib/simulator/model_body_drag_params.hpp</includedby>
+    <includedby refid="model__lin__cub__drag__params_8hpp" local="yes">agilib/include/agilib/simulator/model_lin_cub_drag_params.hpp</includedby>
+    <includedby refid="model__propeller__bem_8hpp" local="yes">agilib/include/agilib/simulator/model_propeller_bem.hpp</includedby>
+    <includedby refid="model__propeller__bem__params_8hpp" local="yes">agilib/include/agilib/simulator/model_propeller_bem_params.hpp</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>agilib/math/types.hpp</label>
+        <link refid="types_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agilib/include/agilib/utils/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Eigen/Eigen</label>
+      </node>
+      <node id="2">
+        <label>cstdarg</label>
+      </node>
+      <node id="3">
+        <label>cstdio</label>
+      </node>
+      <node id="4">
+        <label>fstream</label>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="10">
+        <label>limits</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>unordered_map</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>agilib/include/agilib/base/module.hpp</label>
+        <link refid="module_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agilib/include/agilib/base/pipeline.hpp</label>
+        <link refid="pipeline_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>agilib/include/agilib/bridge/bridge_base.hpp</label>
+        <link refid="bridge__base_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>agilib/include/agilib/bridge/ctrl/ctrl_bridge.hpp</label>
+        <link refid="ctrl__bridge_8hpp_source"/>
+      </node>
+      <node id="40">
+        <label>agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp</label>
+        <link refid="ctrl__encoding_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>agilib/include/agilib/bridge/debug_bridge.hpp</label>
+        <link refid="debug__bridge_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>agilib/include/agilib/bridge/laird/laird_bridge.hpp</label>
+        <link refid="laird__bridge_8hpp_source"/>
+      </node>
+      <node id="11">
+        <label>agilib/include/agilib/bridge/msp/msp_bridge.hpp</label>
+        <link refid="msp__bridge_8hpp_source"/>
+      </node>
+      <node id="41">
+        <label>agilib/include/agilib/bridge/msp/msp_encoding.hpp</label>
+        <link refid="msp__encoding_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>agilib/include/agilib/bridge/sbus/sbus_bridge.hpp</label>
+        <link refid="sbus__bridge_8hpp_source"/>
+      </node>
+      <node id="8">
+        <label>agilib/include/agilib/bridge/serial_bridge.hpp</label>
+        <link refid="serial__bridge_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>agilib/include/agilib/controller/controller_base.hpp</label>
+        <link refid="controller__base_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>agilib/include/agilib/controller/geometric/controller_geo.hpp</label>
+        <link refid="controller__geo_8hpp_source"/>
+      </node>
+      <node id="15">
+        <label>agilib/include/agilib/controller/indi/controller_indi.hpp</label>
+        <link refid="controller__indi_8hpp_source"/>
+      </node>
+      <node id="42">
+        <label>agilib/include/agilib/controller/mpc/cog_filter.hpp</label>
+        <link refid="cog__filter_8hpp_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>agilib/include/agilib/controller/mpc/controller_mpc.hpp</label>
+        <link refid="controller__mpc_8hpp_source"/>
+      </node>
+      <node id="43">
+        <label>agilib/include/agilib/controller/mpc/wrapper.hpp</label>
+        <link refid="wrapper_8hpp_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>agilib/include/agilib/controller/pid/controller_pid.hpp</label>
+        <link refid="controller__pid_8hpp_source"/>
+      </node>
+      <node id="19">
+        <label>agilib/include/agilib/estimator/ekf/ekf.hpp</label>
+        <link refid="ekf_8hpp_source"/>
+      </node>
+      <node id="44">
+        <label>agilib/include/agilib/estimator/ekf/ekf_params.hpp</label>
+        <link refid="ekf__params_8hpp_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>agilib/include/agilib/estimator/ekf_imu/ekf_imu.hpp</label>
+        <link refid="ekf__imu_8hpp_source"/>
+      </node>
+      <node id="45">
+        <label>agilib/include/agilib/estimator/ekf_imu/ekf_imu_params.hpp</label>
+        <link refid="ekf__imu__params_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>agilib/include/agilib/estimator/estimator_base.hpp</label>
+        <link refid="estimator__base_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp</label>
+        <link refid="feedthrough__estimator_8hpp_source"/>
+      </node>
+      <node id="46">
+        <label>agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp</label>
+        <link refid="feedthrough__params_8hpp_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>agilib/include/agilib/estimator/mock_vio/mock_vio.hpp</label>
+        <link refid="mock__vio_8hpp_source"/>
+      </node>
+      <node id="23">
+        <label>agilib/include/agilib/guard/guard_base.hpp</label>
+        <link refid="guard__base_8hpp_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>agilib/include/agilib/guard/position_guard.hpp</label>
+        <link refid="position__guard_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agilib/include/agilib/pilot/pilot.hpp</label>
+        <link refid="pilot_8hpp_source"/>
+      </node>
+      <node id="5">
+        <label>agilib/include/agilib/pilot/pilot_params.hpp</label>
+        <link refid="pilot__params_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>agilib/include/agilib/reference/hover_reference.hpp</label>
+        <link refid="hover__reference_8hpp_source"/>
+      </node>
+      <node id="25">
+        <label>agilib/include/agilib/reference/reference_base.hpp</label>
+        <link refid="reference__base_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp</label>
+        <link refid="polynomial__trajectory_8hpp_source"/>
+      </node>
+      <node id="28">
+        <label>agilib/include/agilib/reference/trajectory_reference/sampled_trajectory.hpp</label>
+        <link refid="sampled__trajectory_8hpp_source"/>
+      </node>
+      <node id="29">
+        <label>agilib/include/agilib/reference/velocity_reference.hpp</label>
+        <link refid="velocity__reference_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>agilib/include/agilib/sampler/position_based/position_sampler.hpp</label>
+        <link refid="position__sampler_8hpp_source"/>
+      </node>
+      <node id="30">
+        <label>agilib/include/agilib/sampler/sampler_base.hpp</label>
+        <link refid="sampler__base_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>agilib/include/agilib/sampler/time_based/time_sampler.hpp</label>
+        <link refid="time__sampler_8hpp_source"/>
+      </node>
+      <node id="47">
+        <label>agilib/include/agilib/serial/serial.hpp</label>
+        <link refid="serial_8hpp_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>agilib/include/agilib/simulator/bem/brent.hpp</label>
+        <link refid="brent_8hpp_source"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>agilib/include/agilib/simulator/bem/functions.hpp</label>
+        <link refid="functions_8hpp_source"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>agilib/include/agilib/simulator/bem/propeller_state.hpp</label>
+        <link refid="propeller__state_8hpp_source"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>agilib/include/agilib/simulator/low_level_controller_base.hpp</label>
+        <link refid="low__level__controller__base_8hpp_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>agilib/include/agilib/simulator/low_level_controller_betaflight.hpp</label>
+        <link refid="low__level__controller__betaflight_8hpp_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp</label>
+        <link refid="low__level__controller__betaflight__params_8hpp_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>agilib/include/agilib/simulator/low_level_controller_simple.hpp</label>
+        <link refid="low__level__controller__simple_8hpp_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>agilib/include/agilib/simulator/low_level_controller_simple_params.hpp</label>
+        <link refid="low__level__controller__simple__params_8hpp_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>agilib/include/agilib/simulator/model_body_drag.hpp</label>
+        <link refid="model__body__drag_8hpp_source"/>
+      </node>
+      <node id="52">
+        <label>agilib/include/agilib/simulator/model_body_drag_params.hpp</label>
+        <link refid="model__body__drag__params_8hpp_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>agilib/include/agilib/simulator/model_lin_cub_drag.hpp</label>
+        <link refid="model__lin__cub__drag_8hpp_source"/>
+      </node>
+      <node id="54">
+        <label>agilib/include/agilib/simulator/model_lin_cub_drag_params.hpp</label>
+        <link refid="model__lin__cub__drag__params_8hpp_source"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>agilib/include/agilib/simulator/model_propeller_bem.hpp</label>
+        <link refid="model__propeller__bem_8hpp_source"/>
+      </node>
+      <node id="56">
+        <label>agilib/include/agilib/simulator/model_propeller_bem_params.hpp</label>
+        <link refid="model__propeller__bem__params_8hpp_source"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>agilib/include/agilib/simulator/quadrotor_simulator.hpp</label>
+        <link refid="quadrotor__simulator_8hpp_source"/>
+      </node>
+      <node id="39">
+        <label>agilib/include/agilib/simulator/simulator_base.hpp</label>
+        <link refid="simulator__base_8hpp_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>agilib/include/agilib/simulator/simulator_params.hpp</label>
+        <link refid="simulator__params_8hpp_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agilib/include/agilib/utils/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structagi_1_1PublishLogContainer" prot="public">agi::PublishLogContainer</innerclass>
+    <innerclass refid="classagi_1_1Logger" prot="public">agi::Logger</innerclass>
+    <innernamespace refid="namespaceagi">agi</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdarg&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/math/types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">agi<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DEBUG_LOG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">NoPrint<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>NoPrint<sp/>operator&lt;&lt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NoPrint();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>NoPrint<sp/>operator&lt;&lt;(std::ostream&amp;<sp/>(*)(std::ostream&amp;))<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NoPrint();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="structagi_1_1PublishLogContainer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structagi_1_1PublishLogContainer" kindref="compound">PublishLogContainer</ref><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>Vector&lt;&gt;<sp/>data;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>advertise;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classagi_1_1Logger" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>color<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1Logger" kindref="compound">~Logger</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::streamsize<sp/>precision(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::streamsize<sp/>n);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scientific(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>on<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>info(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>msg,<sp/>...)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>warn(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>msg,<sp/>...)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>error(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>msg,<sp/>...)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fatal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>msg,<sp/>...)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DEBUG_LOG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>debug(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>msg,<sp/>...)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>std::ostream&amp;<sp/>debug()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>debug(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)&gt;&amp;&amp;<sp/>lambda)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>debug(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/>...)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>NoPrint<sp/>debug()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NoPrint();<sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>debug(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)&gt;&amp;&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addPublishingVariable(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>var_name,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;&gt;&amp;<sp/>vec)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>publishing_variables_[name_<sp/>+<sp/>var_name].advertise<sp/>=</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>Not<sp/>only<sp/>advertising</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>publishing_variables_[name_<sp/>+<sp/>var_name].data<sp/>=<sp/>vec;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addPublishingVariable(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>var_name,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Scalar<sp/>val)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>addPublishingVariable(var_name,<sp/>Vector&lt;1&gt;(val));</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>advertisePublishingVariable(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>var_name)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>publishing_variables_[name_<sp/>+<sp/>var_name].advertise<sp/>=</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>Only<sp/>advertising</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>erasePublishingVariable(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>var_name)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>publishing_variables_.erase(name_<sp/>+<sp/>var_name);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>std::ostream&amp;<sp/>operator&lt;&lt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>printable)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>formatted_name_;<sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MAX_CHARS<sp/>=<sp/>256;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>for_each_instance(</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structagi_1_1PublishLogContainer" kindref="compound">PublishLogContainer</ref>&amp;<sp/>container)&gt;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>function)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>pub_var<sp/>:<sp/>publishing_variables_)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>function(pub_var.first,<sp/>pub_var.second);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DEFAULT_PRECISION<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NAME_PADDING<sp/>=<sp/>15;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>RESET[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\033[0m&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>RED[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\033[31m&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>YELLOW[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\033[33m&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>INFO[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Info:<sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>WARN[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Warning:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ERROR[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Error:<sp/><sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>FATAL[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Fatal:<sp/><sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>DEBUGPREFIX[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Debug:<sp/><sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>name_;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>std::string<sp/>formatted_name_;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>colored_;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>PublishLogContainer&gt;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>publishing_variables_;<sp/><sp/></highlight><highlight class="comment">//<sp/>Map<sp/>from<sp/>variable<sp/>name<sp/>to<sp/>a<sp/>struct<sp/>containing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>info<sp/>about<sp/>logging<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">std::ostream&amp;<sp/>Logger::operator&lt;&lt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>printable)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::cout<sp/>&lt;&lt;<sp/>formatted_name_<sp/>&lt;&lt;<sp/>printable;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>agi</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="agilib/include/agilib/utils/logger.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,774 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1Quadrotor" kind="struct" language="C++" prot="public">
+    <compoundname>agi::Quadrotor</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structagi_1_1Quadrotor_1aa20c8833a530c467bb12e44b6fc6ef7c" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>RotorConfig</name>
+        <qualifiedname>agi::Quadrotor::RotorConfig</qualifiedname>
+        <enumvalue id="structagi_1_1Quadrotor_1aa20c8833a530c467bb12e44b6fc6ef7cad7d18cfb3a0d8293e2f5d94ea30e04d2" prot="public">
+          <name>plus</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1Quadrotor_1aa20c8833a530c467bb12e44b6fc6ef7ca22aadb26447d87b550b155a4d764fad0" prot="public">
+          <name>cross</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="14" column="3" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="14" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1a7ec077869c77a4d0012dd3d90ba8aa16" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Quadrotor::m_</definition>
+        <argsstring></argsstring>
+        <name>m_</name>
+        <qualifiedname>agi::Quadrotor::m_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="57" column="10" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1aa6663fda61e4493ead75ab2a0a930eb8" prot="public" static="no" mutable="no">
+        <type>Matrix&lt; 3, 4 &gt;</type>
+        <definition>Matrix&lt;3, 4&gt; agi::Quadrotor::t_BM_</definition>
+        <argsstring></argsstring>
+        <name>t_BM_</name>
+        <qualifiedname>agi::Quadrotor::t_BM_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="58" column="10" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1a7123c8b18063d44138d8e87445f36ed8" prot="public" static="no" mutable="no">
+        <type>Matrix&lt; 3, 3 &gt;</type>
+        <definition>Matrix&lt;3, 3&gt; agi::Quadrotor::J_</definition>
+        <argsstring></argsstring>
+        <name>J_</name>
+        <qualifiedname>agi::Quadrotor::J_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="59" column="10" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1aa179648adcb6b39f0beebd9cc3141c10" prot="public" static="no" mutable="no">
+        <type>Matrix&lt; 3, 3 &gt;</type>
+        <definition>Matrix&lt;3, 3&gt; agi::Quadrotor::J_inv_</definition>
+        <argsstring></argsstring>
+        <name>J_inv_</name>
+        <qualifiedname>agi::Quadrotor::J_inv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="60" column="10" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1a94bc7318bcef0e68d34f01df98a46ca7" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Quadrotor::motor_omega_min_</definition>
+        <argsstring></argsstring>
+        <name>motor_omega_min_</name>
+        <qualifiedname>agi::Quadrotor::motor_omega_min_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="63" column="10" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1a5d5e5d79f9bc21c087c5562ae6b31389" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Quadrotor::motor_omega_max_</definition>
+        <argsstring></argsstring>
+        <name>motor_omega_max_</name>
+        <qualifiedname>agi::Quadrotor::motor_omega_max_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="64" column="10" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1a1424cc6b17c5f9fa7913b6c6b7fd9a36" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Quadrotor::motor_tau_inv_</definition>
+        <argsstring></argsstring>
+        <name>motor_tau_inv_</name>
+        <qualifiedname>agi::Quadrotor::motor_tau_inv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="65" column="10" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1a62e02a139d8fc66c9ffda777865da7dc" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::Quadrotor::thrust_map_</definition>
+        <argsstring></argsstring>
+        <name>thrust_map_</name>
+        <qualifiedname>agi::Quadrotor::thrust_map_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="68" column="10" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1ac3b652d6ec726e790bb2aca10e1276d9" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::Quadrotor::torque_map_</definition>
+        <argsstring></argsstring>
+        <name>torque_map_</name>
+        <qualifiedname>agi::Quadrotor::torque_map_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="69" column="10" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1a331c3990139614ead9398bfcaca6e56a" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Quadrotor::kappa_</definition>
+        <argsstring></argsstring>
+        <name>kappa_</name>
+        <qualifiedname>agi::Quadrotor::kappa_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="70" column="10" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1a1f619b6086362ca786a2cf4eb281dd6c" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Quadrotor::thrust_min_</definition>
+        <argsstring></argsstring>
+        <name>thrust_min_</name>
+        <qualifiedname>agi::Quadrotor::thrust_min_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="71" column="10" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1a1d267b323e03527f12a4b00a20c45d7b" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Quadrotor::thrust_max_</definition>
+        <argsstring></argsstring>
+        <name>thrust_max_</name>
+        <qualifiedname>agi::Quadrotor::thrust_max_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="72" column="10" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1abf6615e4eec2fc5bdb0f4953126cded7" prot="public" static="no" mutable="no">
+        <type>RotorConfig</type>
+        <definition>RotorConfig agi::Quadrotor::rotors_config_</definition>
+        <argsstring></argsstring>
+        <name>rotors_config_</name>
+        <qualifiedname>agi::Quadrotor::rotors_config_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="73" column="15" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1a6b05e8967e8fb27fb0a34551c2e8dfce" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::Quadrotor::omega_max_</definition>
+        <argsstring></argsstring>
+        <name>omega_max_</name>
+        <qualifiedname>agi::Quadrotor::omega_max_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="76" column="10" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1adb33d3f53d1aade97e4104f0bb77bf38" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::Quadrotor::aero_coeff_1_</definition>
+        <argsstring></argsstring>
+        <name>aero_coeff_1_</name>
+        <qualifiedname>agi::Quadrotor::aero_coeff_1_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="79" column="10" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1a28e77de9a9fc64171f777a02ded65d40" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::Quadrotor::aero_coeff_3_</definition>
+        <argsstring></argsstring>
+        <name>aero_coeff_3_</name>
+        <qualifiedname>agi::Quadrotor::aero_coeff_3_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="80" column="10" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Quadrotor_1ad40a6b5c1d057d9d3c4b44e58d880881" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Quadrotor::aero_coeff_h_</definition>
+        <argsstring></argsstring>
+        <name>aero_coeff_h_</name>
+        <qualifiedname>agi::Quadrotor::aero_coeff_h_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="83" column="10" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1a443b04651cea2466e47815a246c2d223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Quadrotor::Quadrotor</definition>
+        <argsstring>(const Scalar m, const Scalar l)</argsstring>
+        <name>Quadrotor</name>
+        <qualifiedname>agi::Quadrotor::Quadrotor</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="16" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1a3d9a0616f480df6c82bc5d20db49a289" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Quadrotor::Quadrotor</definition>
+        <argsstring>()</argsstring>
+        <name>Quadrotor</name>
+        <qualifiedname>agi::Quadrotor::Quadrotor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="17" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1a880e19a0f4fe02edeb17ababd5a905df" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Quadrotor::dynamics</definition>
+        <argsstring>(const QuadState &amp;state, QuadState *const derivative) const</argsstring>
+        <name>dynamics</name>
+        <qualifiedname>agi::Quadrotor::dynamics</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> *const</type>
+          <declname>derivative</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="19" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1adbd595b208a440b4410c36e43d6da4c6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Quadrotor::dynamics</definition>
+        <argsstring>(const Ref&lt; const Vector&lt; QuadState::SIZE &gt; &gt; state, Ref&lt; Vector&lt; QuadState::SIZE &gt; &gt; derivative) const</argsstring>
+        <name>dynamics</name>
+        <qualifiedname>agi::Quadrotor::dynamics</qualifiedname>
+        <param>
+          <type>const Ref&lt; const Vector&lt; QuadState::SIZE &gt; &gt;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>Ref&lt; Vector&lt; QuadState::SIZE &gt; &gt;</type>
+          <declname>derivative</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="21" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1acfd6c10f8501058e13db4cc207452b0b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Quadrotor::jacobian</definition>
+        <argsstring>(const Ref&lt; const Vector&lt; QuadState::SIZE &gt; &gt; state, Ref&lt; Matrix&lt; QuadState::SIZE, QuadState::SIZE &gt; &gt; jac) const</argsstring>
+        <name>jacobian</name>
+        <qualifiedname>agi::Quadrotor::jacobian</qualifiedname>
+        <param>
+          <type>const Ref&lt; const Vector&lt; QuadState::SIZE &gt; &gt;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>Ref&lt; Matrix&lt; QuadState::SIZE, QuadState::SIZE &gt; &gt;</type>
+          <declname>jac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="24" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1ab4d1d1c1754e24e26a1631e21edb9fce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Quadrotor::jacobian</definition>
+        <argsstring>(const Ref&lt; const Vector&lt; QuadState::SIZE &gt; &gt; state, SparseMatrix &amp;jac) const</argsstring>
+        <name>jacobian</name>
+        <qualifiedname>agi::Quadrotor::jacobian</qualifiedname>
+        <param>
+          <type>const Ref&lt; const Vector&lt; QuadState::SIZE &gt; &gt;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>SparseMatrix &amp;</type>
+          <declname>jac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="27" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1a204d34489b282384f6a9fe0eecaac6bf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>DynamicsFunction</type>
+        <definition>DynamicsFunction agi::Quadrotor::getDynamicsFunction</definition>
+        <argsstring>() const</argsstring>
+        <name>getDynamicsFunction</name>
+        <qualifiedname>agi::Quadrotor::getDynamicsFunction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="30" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1ab96b0908bd51048ffd60c4a5e87be767" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::Quadrotor::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::Quadrotor::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="33" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1a3d84641ca89e47fa5b171a22f087fef6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::Quadrotor::valid</definition>
+        <argsstring>() const override</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::Quadrotor::valid</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b">valid</reimplements>
+        <briefdescription>
+<para>Check if parameters are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="34" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1a4193b896db58abc62951e16abe519339" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector&lt; 4 &gt;</type>
+        <definition>Vector&lt; 4 &gt; agi::Quadrotor::clampThrust</definition>
+        <argsstring>(const Vector&lt; 4 &gt; thrusts) const</argsstring>
+        <name>clampThrust</name>
+        <qualifiedname>agi::Quadrotor::clampThrust</qualifiedname>
+        <param>
+          <type>const Vector&lt; 4 &gt;</type>
+          <declname>thrusts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="37" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1acad3c6f3d143a22974e1e3841db8a765" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Quadrotor::clampThrust</definition>
+        <argsstring>(const Scalar thrust) const</argsstring>
+        <name>clampThrust</name>
+        <qualifiedname>agi::Quadrotor::clampThrust</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>thrust</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="38" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1aba2203c5d14c4dbb40cdce0d0a49b3e3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Quadrotor::clampCollectiveThrust</definition>
+        <argsstring>(const Scalar thrust) const</argsstring>
+        <name>clampCollectiveThrust</name>
+        <qualifiedname>agi::Quadrotor::clampCollectiveThrust</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>thrust</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="39" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1a6400bfd142e97f2e1c0b81e4f18d3f43" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector&lt; 4 &gt;</type>
+        <definition>Vector&lt; 4 &gt; agi::Quadrotor::clampMotorOmega</definition>
+        <argsstring>(const Vector&lt; 4 &gt; &amp;omega) const</argsstring>
+        <name>clampMotorOmega</name>
+        <qualifiedname>agi::Quadrotor::clampMotorOmega</qualifiedname>
+        <param>
+          <type>const Vector&lt; 4 &gt; &amp;</type>
+          <declname>omega</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="40" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1a57c24496ba84fb6d0dc31eebc2829b11" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt; 3 &gt; agi::Quadrotor::clampBodyrates</definition>
+        <argsstring>(const Vector&lt; 3 &gt; &amp;omega) const</argsstring>
+        <name>clampBodyrates</name>
+        <qualifiedname>agi::Quadrotor::clampBodyrates</qualifiedname>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>omega</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="41" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1afd32b4b02702f60541431bb7d0b756c6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Quadrotor::collective_thrust_min</definition>
+        <argsstring>() const</argsstring>
+        <name>collective_thrust_min</name>
+        <qualifiedname>agi::Quadrotor::collective_thrust_min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="43" column="17" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1afeaa76c66aa236c6e5d6c0defdced062" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Quadrotor::collective_thrust_max</definition>
+        <argsstring>() const</argsstring>
+        <name>collective_thrust_max</name>
+        <qualifiedname>agi::Quadrotor::collective_thrust_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="44" column="17" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1a9b9b881098019e98371236e440a29140" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector&lt; 4 &gt;</type>
+        <definition>Vector&lt; 4 &gt; agi::Quadrotor::motorOmegaToThrust</definition>
+        <argsstring>(const Vector&lt; 4 &gt; &amp;omega) const</argsstring>
+        <name>motorOmegaToThrust</name>
+        <qualifiedname>agi::Quadrotor::motorOmegaToThrust</qualifiedname>
+        <param>
+          <type>const Vector&lt; 4 &gt; &amp;</type>
+          <declname>omega</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="47" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1aeb67149c105e9d4cd3573a3ad7518d97" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector&lt; 4 &gt;</type>
+        <definition>Vector&lt; 4 &gt; agi::Quadrotor::motorOmegaToTorque</definition>
+        <argsstring>(const Vector&lt; 4 &gt; &amp;omega) const</argsstring>
+        <name>motorOmegaToTorque</name>
+        <qualifiedname>agi::Quadrotor::motorOmegaToTorque</qualifiedname>
+        <param>
+          <type>const Vector&lt; 4 &gt; &amp;</type>
+          <declname>omega</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="48" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1a9b22f9da20fb0df2b9745a60a3ce8915" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector&lt; 4 &gt;</type>
+        <definition>Vector&lt; 4 &gt; agi::Quadrotor::motorThrustToOmega</definition>
+        <argsstring>(const Vector&lt; 4 &gt; &amp;thrusts) const</argsstring>
+        <name>motorThrustToOmega</name>
+        <qualifiedname>agi::Quadrotor::motorThrustToOmega</qualifiedname>
+        <param>
+          <type>const Vector&lt; 4 &gt; &amp;</type>
+          <declname>thrusts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="49" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1a47f2420fad41e718e3c0f7d2b19e0e63" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Matrix&lt; 4, 4 &gt;</type>
+        <definition>Matrix&lt; 4, 4 &gt; agi::Quadrotor::getAllocationMatrix</definition>
+        <argsstring>() const</argsstring>
+        <name>getAllocationMatrix</name>
+        <qualifiedname>agi::Quadrotor::getAllocationMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="52" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1aa72a975fca1221525746975fe5ee1b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::Quadrotor::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="32" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Quadrotor_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const Yaml &amp;yaml)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::Quadrotor::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="32" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structagi_1_1Quadrotor_1a84afe6bf8bb12028b987d9c83fa91f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Quadrotor &amp;quad)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::Quadrotor::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/quadrotor.hpp" line="54" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="1">
+        <label>agi::Quadrotor</label>
+        <link refid="structagi_1_1Quadrotor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="1">
+        <label>agi::Quadrotor</label>
+        <link refid="structagi_1_1Quadrotor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/types/quadrotor.hpp" line="11" column="1" bodyfile="agilib/include/agilib/types/quadrotor.hpp" bodystart="11" bodyend="84"/>
+    <listofallmembers>
+      <member refid="structagi_1_1Quadrotor_1adb33d3f53d1aade97e4104f0bb77bf38" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>aero_coeff_1_</name></member>
+      <member refid="structagi_1_1Quadrotor_1a28e77de9a9fc64171f777a02ded65d40" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>aero_coeff_3_</name></member>
+      <member refid="structagi_1_1Quadrotor_1ad40a6b5c1d057d9d3c4b44e58d880881" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>aero_coeff_h_</name></member>
+      <member refid="structagi_1_1Quadrotor_1a57c24496ba84fb6d0dc31eebc2829b11" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>clampBodyrates</name></member>
+      <member refid="structagi_1_1Quadrotor_1aba2203c5d14c4dbb40cdce0d0a49b3e3" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>clampCollectiveThrust</name></member>
+      <member refid="structagi_1_1Quadrotor_1a6400bfd142e97f2e1c0b81e4f18d3f43" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>clampMotorOmega</name></member>
+      <member refid="structagi_1_1Quadrotor_1a4193b896db58abc62951e16abe519339" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>clampThrust</name></member>
+      <member refid="structagi_1_1Quadrotor_1acad3c6f3d143a22974e1e3841db8a765" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>clampThrust</name></member>
+      <member refid="structagi_1_1Quadrotor_1afeaa76c66aa236c6e5d6c0defdced062" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>collective_thrust_max</name></member>
+      <member refid="structagi_1_1Quadrotor_1afd32b4b02702f60541431bb7d0b756c6" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>collective_thrust_min</name></member>
+      <member refid="structagi_1_1Quadrotor_1a880e19a0f4fe02edeb17ababd5a905df" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>dynamics</name></member>
+      <member refid="structagi_1_1Quadrotor_1adbd595b208a440b4410c36e43d6da4c6" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>dynamics</name></member>
+      <member refid="structagi_1_1Quadrotor_1a47f2420fad41e718e3c0f7d2b19e0e63" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>getAllocationMatrix</name></member>
+      <member refid="structagi_1_1Quadrotor_1a204d34489b282384f6a9fe0eecaac6bf" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>getDynamicsFunction</name></member>
+      <member refid="structagi_1_1Quadrotor_1a7123c8b18063d44138d8e87445f36ed8" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>J_</name></member>
+      <member refid="structagi_1_1Quadrotor_1aa179648adcb6b39f0beebd9cc3141c10" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>J_inv_</name></member>
+      <member refid="structagi_1_1Quadrotor_1acfd6c10f8501058e13db4cc207452b0b" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>jacobian</name></member>
+      <member refid="structagi_1_1Quadrotor_1ab4d1d1c1754e24e26a1631e21edb9fce" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>jacobian</name></member>
+      <member refid="structagi_1_1Quadrotor_1a331c3990139614ead9398bfcaca6e56a" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>kappa_</name></member>
+      <member refid="structagi_1_1Quadrotor_1ab96b0908bd51048ffd60c4a5e87be767" prot="public" virt="virtual"><scope>agi::Quadrotor</scope><name>load</name></member>
+      <member refid="structagi_1_1Quadrotor_1aa72a975fca1221525746975fe5ee1b6a" prot="public" virt="virtual"><scope>agi::Quadrotor</scope><name>load</name></member>
+      <member refid="structagi_1_1Quadrotor_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" virt="virtual"><scope>agi::Quadrotor</scope><name>load</name></member>
+      <member refid="structagi_1_1Quadrotor_1a7ec077869c77a4d0012dd3d90ba8aa16" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>m_</name></member>
+      <member refid="structagi_1_1Quadrotor_1a5d5e5d79f9bc21c087c5562ae6b31389" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>motor_omega_max_</name></member>
+      <member refid="structagi_1_1Quadrotor_1a94bc7318bcef0e68d34f01df98a46ca7" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>motor_omega_min_</name></member>
+      <member refid="structagi_1_1Quadrotor_1a1424cc6b17c5f9fa7913b6c6b7fd9a36" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>motor_tau_inv_</name></member>
+      <member refid="structagi_1_1Quadrotor_1a9b9b881098019e98371236e440a29140" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>motorOmegaToThrust</name></member>
+      <member refid="structagi_1_1Quadrotor_1aeb67149c105e9d4cd3573a3ad7518d97" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>motorOmegaToTorque</name></member>
+      <member refid="structagi_1_1Quadrotor_1a9b22f9da20fb0df2b9745a60a3ce8915" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>motorThrustToOmega</name></member>
+      <member refid="structagi_1_1Quadrotor_1a6b05e8967e8fb27fb0a34551c2e8dfce" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>omega_max_</name></member>
+      <member refid="structagi_1_1Quadrotor_1a84afe6bf8bb12028b987d9c83fa91f0f" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structagi_1_1Quadrotor_1a443b04651cea2466e47815a246c2d223" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>Quadrotor</name></member>
+      <member refid="structagi_1_1Quadrotor_1a3d9a0616f480df6c82bc5d20db49a289" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>Quadrotor</name></member>
+      <member refid="structagi_1_1Quadrotor_1aa20c8833a530c467bb12e44b6fc6ef7c" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>RotorConfig</name></member>
+      <member refid="structagi_1_1Quadrotor_1abf6615e4eec2fc5bdb0f4953126cded7" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>rotors_config_</name></member>
+      <member refid="structagi_1_1Quadrotor_1aa6663fda61e4493ead75ab2a0a930eb8" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>t_BM_</name></member>
+      <member refid="structagi_1_1Quadrotor_1a62e02a139d8fc66c9ffda777865da7dc" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>thrust_map_</name></member>
+      <member refid="structagi_1_1Quadrotor_1a1d267b323e03527f12a4b00a20c45d7b" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>thrust_max_</name></member>
+      <member refid="structagi_1_1Quadrotor_1a1f619b6086362ca786a2cf4eb281dd6c" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>thrust_min_</name></member>
+      <member refid="structagi_1_1Quadrotor_1ac3b652d6ec726e790bb2aca10e1276d9" prot="public" virt="non-virtual"><scope>agi::Quadrotor</scope><name>torque_map_</name></member>
+      <member refid="structagi_1_1Quadrotor_1a3d84641ca89e47fa5b171a22f087fef6" prot="public" virt="virtual"><scope>agi::Quadrotor</scope><name>valid</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::Quadrotor</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

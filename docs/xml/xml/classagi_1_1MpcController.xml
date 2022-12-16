@@ -1,0 +1,513 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1MpcController" kind="class" language="C++" prot="public">
+    <compoundname>agi::MpcController</compoundname>
+    <basecompoundref refid="classagi_1_1ControllerBase" prot="public" virt="non-virtual">agi::ControllerBase</basecompoundref>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classagi_1_1MpcController_1afea1e5350f7346e7fd2ffea7dec2251b" prot="private" static="no">
+        <type><ref refid="classagi_1_1acados_1_1MpcWrapper" kindref="compound">acados::MpcWrapper</ref></type>
+        <definition>using agi::MpcController::Wrapper =  acados::MpcWrapper</definition>
+        <argsstring></argsstring>
+        <name>Wrapper</name>
+        <qualifiedname>agi::MpcController::Wrapper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="44" column="3" bodyfile="agilib/include/agilib/controller/mpc/controller_mpc.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1MpcController_1aad879db5d4cf1c31f22af7f517df2dfd" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+        <definition>Quadrotor agi::MpcController::quad_</definition>
+        <argsstring></argsstring>
+        <name>quad_</name>
+        <qualifiedname>agi::MpcController::quad_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="49" column="13" bodyfile="agilib/include/agilib/controller/mpc/controller_mpc.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MpcController_1af49b5f110de2ddbe2719fb41da8206f6" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="structagi_1_1MpcParameters" kindref="compound">MpcParameters</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MpcParameters&gt; agi::MpcController::params_</definition>
+        <argsstring></argsstring>
+        <name>params_</name>
+        <qualifiedname>agi::MpcController::params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="50" column="19" bodyfile="agilib/include/agilib/controller/mpc/controller_mpc.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MpcController_1af192337fc1770c2dacd579dda13ffd03" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1acados_1_1MpcWrapper" kindref="compound">Wrapper</ref></type>
+        <definition>Wrapper agi::MpcController::wrapper_</definition>
+        <argsstring></argsstring>
+        <name>wrapper_</name>
+        <qualifiedname>agi::MpcController::wrapper_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="51" column="11" bodyfile="agilib/include/agilib/controller/mpc/controller_mpc.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MpcController_1aa1564f480d0aeb7b88b648c620780b67" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1CogFilter" kindref="compound">CogFilter</ref></type>
+        <definition>CogFilter agi::MpcController::cog_filter_</definition>
+        <argsstring></argsstring>
+        <name>cog_filter_</name>
+        <qualifiedname>agi::MpcController::cog_filter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="52" column="13" bodyfile="agilib/include/agilib/controller/mpc/controller_mpc.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MpcController_1a3dce667c55f1e6a92484dd9589601adf" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex agi::MpcController::acados_mutex_</definition>
+        <argsstring></argsstring>
+        <name>acados_mutex_</name>
+        <qualifiedname>agi::MpcController::acados_mutex_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="55" column="14" bodyfile="agilib/include/agilib/controller/mpc/controller_mpc.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MpcController_1a3b42574cecae96ca3d7b1c6813b55932" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Timer" kindref="compound">Timer</ref></type>
+        <definition>Timer agi::MpcController::timing_solver_</definition>
+        <argsstring></argsstring>
+        <name>timing_solver_</name>
+        <qualifiedname>agi::MpcController::timing_solver_</qualifiedname>
+        <initializer>{&quot;Solver&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="57" column="9" bodyfile="agilib/include/agilib/controller/mpc/controller_mpc.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MpcController_1a7a2ac1a98a557a3507d4573aa929d855" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Timer" kindref="compound">Timer</ref></type>
+        <definition>Timer agi::MpcController::timing_update_</definition>
+        <argsstring></argsstring>
+        <name>timing_update_</name>
+        <qualifiedname>agi::MpcController::timing_update_</qualifiedname>
+        <initializer>{&quot;Update&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="58" column="9" bodyfile="agilib/include/agilib/controller/mpc/controller_mpc.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MpcController_1a4d495b9d44dbb65f015b64e5ed55b144" prot="private" static="no" mutable="no">
+        <type>const Vector&lt; Wrapper::NX &gt;</type>
+        <definition>const Vector&lt;Wrapper::NX&gt; agi::MpcController::hover_state_</definition>
+        <argsstring></argsstring>
+        <name>hover_state_</name>
+        <qualifiedname>agi::MpcController::hover_state_</qualifiedname>
+        <initializer>=
+    (Vector&lt;Wrapper::NX&gt;() &lt;&lt; Vector&lt;3&gt;::Zero(), Vector&lt;4&gt;(1, 0, 0, 0),
+     Vector&lt;3&gt;::Zero(), Vector&lt;3&gt;::Zero())
+      .finished()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="60" column="16" bodyfile="agilib/include/agilib/controller/mpc/controller_mpc.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MpcController_1afe927fec4441ffe967ac33017e4b7eab" prot="private" static="no" mutable="no">
+        <type>const Vector&lt; 4 &gt;</type>
+        <definition>const Vector&lt;4&gt; agi::MpcController::hover_input_acc_</definition>
+        <argsstring></argsstring>
+        <name>hover_input_acc_</name>
+        <qualifiedname>agi::MpcController::hover_input_acc_</qualifiedname>
+        <initializer>= Vector&lt;4&gt;::Constant(G / 4.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="64" column="16" bodyfile="agilib/include/agilib/controller/mpc/controller_mpc.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MpcController_1af02f23f3b36057b3dd54e21493bb4dfa" prot="private" static="no" mutable="no">
+        <type>Vector&lt; 4 &gt;</type>
+        <definition>Vector&lt;4&gt; agi::MpcController::hover_input_</definition>
+        <argsstring></argsstring>
+        <name>hover_input_</name>
+        <qualifiedname>agi::MpcController::hover_input_</qualifiedname>
+        <initializer>{quad_.m_ * hover_input_acc_}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="65" column="10" bodyfile="agilib/include/agilib/controller/mpc/controller_mpc.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1MpcController_1a8d64a9aa1c79b60a45513b67450cbf99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::MpcController::MpcController</definition>
+        <argsstring>(const Quadrotor &amp;quad, const std::shared_ptr&lt; MpcParameters &gt; &amp;params, const Scalar exec_dt=0.01)</argsstring>
+        <name>MpcController</name>
+        <qualifiedname>agi::MpcController::MpcController</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="structagi_1_1MpcParameters" kindref="compound">MpcParameters</ref> &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>exec_dt</declname>
+          <defval>0.01</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="23" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MpcController_1aaff11f43d2b19866cc342261d65a56c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::MpcController::getCommand</definition>
+        <argsstring>(const QuadState &amp;state, const SetpointVector &amp;reference, SetpointVector *const setpoints) override</argsstring>
+        <name>getCommand</name>
+        <qualifiedname>agi::MpcController::getCommand</qualifiedname>
+        <reimplements refid="classagi_1_1ControllerBase_1a36ec36d71b00921aead71d4893ed037f">getCommand</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const SetpointVector &amp;</type>
+          <declname>reference</declname>
+        </param>
+        <param>
+          <type>SetpointVector *const</type>
+          <declname>setpoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="27" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MpcController_1af16a56cf72c684808d62a1a21633451d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::MpcController::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::MpcController::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="29" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MpcController_1a25802cb8f602a621ec3acc5365218225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::MpcController::reset</definition>
+        <argsstring>(const QuadState &amp;state)</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::MpcController::reset</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="30" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MpcController_1a0c0f05c0aa5397fb13f200fba3e75a36" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void agi::MpcController::addImuSample</definition>
+        <argsstring>(const ImuSample &amp;sample) override</argsstring>
+        <name>addImuSample</name>
+        <qualifiedname>agi::MpcController::addImuSample</qualifiedname>
+        <reimplements refid="classagi_1_1ControllerBase_1a63bad17e94dcdbb999298772ffb779bb">addImuSample</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref> &amp;</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="32" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MpcController_1a2808c781a9ee5117083f9038cbabdb60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::MpcController::updateParameters</definition>
+        <argsstring>(const Quadrotor &amp;quad, const std::shared_ptr&lt; MpcParameters &gt; &amp;params)</argsstring>
+        <name>updateParameters</name>
+        <qualifiedname>agi::MpcController::updateParameters</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="structagi_1_1MpcParameters" kindref="compound">MpcParameters</ref> &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="34" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MpcController_1aad1dc6e1ee46a9daa772f6ca050b0fa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::MpcController::updateParameters</definition>
+        <argsstring>(const Quadrotor &amp;params)</argsstring>
+        <name>updateParameters</name>
+        <qualifiedname>agi::MpcController::updateParameters</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="36" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MpcController_1a81dd95d3d31416da3d7d6a4c3b48ca7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::MpcController::updateParameters</definition>
+        <argsstring>(const std::shared_ptr&lt; MpcParameters &gt; &amp;params)</argsstring>
+        <name>updateParameters</name>
+        <qualifiedname>agi::MpcController::updateParameters</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="structagi_1_1MpcParameters" kindref="compound">MpcParameters</ref> &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="37" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MpcController_1ad9b7428ae7e84d11f65d23709a3f70e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="structagi_1_1MpcParameters" kindref="compound">MpcParameters</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; MpcParameters &gt; agi::MpcController::getParameters</definition>
+        <argsstring>()</argsstring>
+        <name>getParameters</name>
+        <qualifiedname>agi::MpcController::getParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="38" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MpcController_1a43e170de867b198a156be80c1fb798e6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::MpcController::printTiming</definition>
+        <argsstring>() const</argsstring>
+        <name>printTiming</name>
+        <qualifiedname>agi::MpcController::printTiming</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="40" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MpcController_1ae91b0d54f22985d6cd2690a677228d22" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void agi::MpcController::logTiming</definition>
+        <argsstring>() const override</argsstring>
+        <name>logTiming</name>
+        <qualifiedname>agi::MpcController::logTiming</qualifiedname>
+        <reimplements refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5">logTiming</reimplements>
+        <briefdescription>
+<para>Log the internal timing. Optional to implement. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="41" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classagi_1_1MpcController_1ad36511a6d78cd15807f4e67145ebadd2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::MpcController::reset</definition>
+        <argsstring>(const Vector&lt; Wrapper::NX &gt; &amp;state)</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::MpcController::reset</qualifiedname>
+        <param>
+          <type>const Vector&lt; Wrapper::NX &gt; &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="46" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MpcController_1a43de213621567243ede27d41d39c2c2b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::MpcController::lerp</definition>
+        <argsstring>(const Scalar a, const Scalar b, const Scalar t) const</argsstring>
+        <name>lerp</name>
+        <qualifiedname>agi::MpcController::lerp</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="47" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>agi::Module&lt; ControllerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="2">
+        <label>agi::ControllerBase</label>
+        <link refid="classagi_1_1ControllerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::MpcController</label>
+        <link refid="classagi_1_1MpcController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>agi::Module&lt; ControllerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ControllerBase</label>
+        <link refid="classagi_1_1ControllerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+      <node id="1">
+        <label>agi::MpcController</label>
+        <link refid="classagi_1_1MpcController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/controller/mpc/controller_mpc.hpp" line="20" column="1" bodyfile="agilib/include/agilib/controller/mpc/controller_mpc.hpp" bodystart="20" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classagi_1_1MpcController_1a3dce667c55f1e6a92484dd9589601adf" prot="private" virt="non-virtual"><scope>agi::MpcController</scope><name>acados_mutex_</name></member>
+      <member refid="classagi_1_1MpcController_1a0c0f05c0aa5397fb13f200fba3e75a36" prot="public" virt="virtual"><scope>agi::MpcController</scope><name>addImuSample</name></member>
+      <member refid="classagi_1_1MpcController_1aa1564f480d0aeb7b88b648c620780b67" prot="private" virt="non-virtual"><scope>agi::MpcController</scope><name>cog_filter_</name></member>
+      <member refid="classagi_1_1ControllerBase_1adbbc03b1311961d872aebd7d0ff47c1d" prot="public" virt="non-virtual"><scope>agi::MpcController</scope><name>ControllerBase</name></member>
+      <member refid="classagi_1_1ControllerBase_1ac19c23e376075c8e573e1b3080f76a57" prot="public" virt="non-virtual"><scope>agi::MpcController</scope><name>dt</name></member>
+      <member refid="classagi_1_1ControllerBase_1a888ab615293b0332df4f503837b03723" prot="protected" virt="non-virtual"><scope>agi::MpcController</scope><name>exec_dt_</name></member>
+      <member refid="classagi_1_1MpcController_1aaff11f43d2b19866cc342261d65a56c1" prot="public" virt="virtual"><scope>agi::MpcController</scope><name>getCommand</name></member>
+      <member refid="classagi_1_1MpcController_1ad9b7428ae7e84d11f65d23709a3f70e0" prot="public" virt="non-virtual"><scope>agi::MpcController</scope><name>getParameters</name></member>
+      <member refid="classagi_1_1ControllerBase_1a4a5850793263795a322e9357e1d9cc3e" prot="protected" virt="non-virtual"><scope>agi::MpcController</scope><name>horizon_length_</name></member>
+      <member refid="classagi_1_1ControllerBase_1ab28f44d8fd2ce46a01fc10d79d579733" prot="public" virt="non-virtual"><scope>agi::MpcController</scope><name>horizonLength</name></member>
+      <member refid="classagi_1_1MpcController_1af02f23f3b36057b3dd54e21493bb4dfa" prot="private" virt="non-virtual"><scope>agi::MpcController</scope><name>hover_input_</name></member>
+      <member refid="classagi_1_1MpcController_1afe927fec4441ffe967ac33017e4b7eab" prot="private" virt="non-virtual"><scope>agi::MpcController</scope><name>hover_input_acc_</name></member>
+      <member refid="classagi_1_1MpcController_1a4d495b9d44dbb65f015b64e5ed55b144" prot="private" virt="non-virtual"><scope>agi::MpcController</scope><name>hover_state_</name></member>
+      <member refid="classagi_1_1MpcController_1a43de213621567243ede27d41d39c2c2b" prot="private" virt="non-virtual"><scope>agi::MpcController</scope><name>lerp</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::MpcController</scope><name>logger_</name></member>
+      <member refid="classagi_1_1MpcController_1ae91b0d54f22985d6cd2690a677228d22" prot="public" virt="virtual"><scope>agi::MpcController</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::MpcController</scope><name>Module</name></member>
+      <member refid="classagi_1_1MpcController_1a8d64a9aa1c79b60a45513b67450cbf99" prot="public" virt="non-virtual"><scope>agi::MpcController</scope><name>MpcController</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::MpcController</scope><name>name</name></member>
+      <member refid="classagi_1_1MpcController_1af49b5f110de2ddbe2719fb41da8206f6" prot="private" virt="non-virtual"><scope>agi::MpcController</scope><name>params_</name></member>
+      <member refid="classagi_1_1ControllerBase_1a347077cec886c432483b3168b3b59821" prot="protected" virt="non-virtual"><scope>agi::MpcController</scope><name>pred_dt_</name></member>
+      <member refid="classagi_1_1MpcController_1a43e170de867b198a156be80c1fb798e6" prot="public" virt="non-virtual"><scope>agi::MpcController</scope><name>printTiming</name></member>
+      <member refid="classagi_1_1MpcController_1aad879db5d4cf1c31f22af7f517df2dfd" prot="private" virt="non-virtual"><scope>agi::MpcController</scope><name>quad_</name></member>
+      <member refid="classagi_1_1MpcController_1af16a56cf72c684808d62a1a21633451d" prot="public" virt="non-virtual"><scope>agi::MpcController</scope><name>reset</name></member>
+      <member refid="classagi_1_1MpcController_1a25802cb8f602a621ec3acc5365218225" prot="public" virt="non-virtual"><scope>agi::MpcController</scope><name>reset</name></member>
+      <member refid="classagi_1_1MpcController_1ad36511a6d78cd15807f4e67145ebadd2" prot="private" virt="non-virtual"><scope>agi::MpcController</scope><name>reset</name></member>
+      <member refid="classagi_1_1MpcController_1a3b42574cecae96ca3d7b1c6813b55932" prot="private" virt="non-virtual"><scope>agi::MpcController</scope><name>timing_solver_</name></member>
+      <member refid="classagi_1_1MpcController_1a7a2ac1a98a557a3507d4573aa929d855" prot="private" virt="non-virtual"><scope>agi::MpcController</scope><name>timing_update_</name></member>
+      <member refid="classagi_1_1MpcController_1a2808c781a9ee5117083f9038cbabdb60" prot="public" virt="non-virtual"><scope>agi::MpcController</scope><name>updateParameters</name></member>
+      <member refid="classagi_1_1MpcController_1aad1dc6e1ee46a9daa772f6ca050b0fa9" prot="public" virt="non-virtual"><scope>agi::MpcController</scope><name>updateParameters</name></member>
+      <member refid="classagi_1_1MpcController_1a81dd95d3d31416da3d7d6a4c3b48ca7e" prot="public" virt="non-virtual"><scope>agi::MpcController</scope><name>updateParameters</name></member>
+      <member refid="classagi_1_1MpcController_1afea1e5350f7346e7fd2ffea7dec2251b" prot="private" virt="non-virtual"><scope>agi::MpcController</scope><name>Wrapper</name></member>
+      <member refid="classagi_1_1MpcController_1af192337fc1770c2dacd579dda13ffd03" prot="private" virt="non-virtual"><scope>agi::MpcController</scope><name>wrapper_</name></member>
+      <member refid="classagi_1_1ControllerBase_1a7f8d13d6e9126f7854f1f91ce7c246a7" prot="public" virt="virtual"><scope>agi::MpcController</scope><name>~ControllerBase</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::MpcController</scope><name>~Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

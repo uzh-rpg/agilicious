@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1PidParameters" kind="struct" language="C++" prot="public">
+    <compoundname>agi::PidParameters</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1PidParameters_1af35fe63176a227fbdd7056f8370bf076" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::PidParameters::kp_rate_</definition>
+        <argsstring></argsstring>
+        <name>kp_rate_</name>
+        <qualifiedname>agi::PidParameters::kp_rate_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/pid_params.hpp" line="16" column="10" bodyfile="agilib/include/agilib/controller/pid/pid_params.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PidParameters_1a9d29bb0caa439d2908b1a2e301f3f5f6" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::PidParameters::kd_rate_</definition>
+        <argsstring></argsstring>
+        <name>kd_rate_</name>
+        <qualifiedname>agi::PidParameters::kd_rate_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/pid_params.hpp" line="17" column="10" bodyfile="agilib/include/agilib/controller/pid/pid_params.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PidParameters_1a301501782ea67fb322fb529e6ffa790d" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::PidParameters::ki_rate_</definition>
+        <argsstring></argsstring>
+        <name>ki_rate_</name>
+        <qualifiedname>agi::PidParameters::ki_rate_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/pid_params.hpp" line="18" column="10" bodyfile="agilib/include/agilib/controller/pid/pid_params.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PidParameters_1a802c2d451a61fbd440663c243adaf679" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::PidParameters::integration_max_</definition>
+        <argsstring></argsstring>
+        <name>integration_max_</name>
+        <qualifiedname>agi::PidParameters::integration_max_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/pid_params.hpp" line="19" column="10" bodyfile="agilib/include/agilib/controller/pid/pid_params.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PidParameters_1afaa9d3d8ebe6780923872481fd20d632" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PidParameters::filter_sampling_frequency_</definition>
+        <argsstring></argsstring>
+        <name>filter_sampling_frequency_</name>
+        <qualifiedname>agi::PidParameters::filter_sampling_frequency_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/pid_params.hpp" line="20" column="10" bodyfile="agilib/include/agilib/controller/pid/pid_params.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PidParameters_1a8beaa381b52599c64a56f4964c0333f4" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PidParameters::filter_cutoff_frequency_</definition>
+        <argsstring></argsstring>
+        <name>filter_cutoff_frequency_</name>
+        <qualifiedname>agi::PidParameters::filter_cutoff_frequency_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/pid_params.hpp" line="21" column="10" bodyfile="agilib/include/agilib/controller/pid/pid_params.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1PidParameters_1a610452da42a20e52548c4a99be13efa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::PidParameters::PidParameters</definition>
+        <argsstring>()</argsstring>
+        <name>PidParameters</name>
+        <qualifiedname>agi::PidParameters::PidParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/pid_params.hpp" line="11" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1PidParameters_1a68dae1a9fd407fb83b24de08c8915ffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::PidParameters::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::PidParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/pid_params.hpp" line="14" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1PidParameters_1a1e5f7456d1eb2c25d38ae8ce67f1c6f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::PidParameters::valid</definition>
+        <argsstring>() const override</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::PidParameters::valid</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b">valid</reimplements>
+        <briefdescription>
+<para>Check if parameters are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/pid_params.hpp" line="23" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1PidParameters_1aa72a975fca1221525746975fe5ee1b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::PidParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/pid_params.hpp" line="13" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1PidParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const Yaml &amp;yaml)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::PidParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/pid_params.hpp" line="13" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="1">
+        <label>agi::PidParameters</label>
+        <link refid="structagi_1_1PidParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="1">
+        <label>agi::PidParameters</label>
+        <link refid="structagi_1_1PidParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/controller/pid/pid_params.hpp" line="8" column="1" bodyfile="agilib/include/agilib/controller/pid/pid_params.hpp" bodystart="8" bodyend="24"/>
+    <listofallmembers>
+      <member refid="structagi_1_1PidParameters_1a8beaa381b52599c64a56f4964c0333f4" prot="public" virt="non-virtual"><scope>agi::PidParameters</scope><name>filter_cutoff_frequency_</name></member>
+      <member refid="structagi_1_1PidParameters_1afaa9d3d8ebe6780923872481fd20d632" prot="public" virt="non-virtual"><scope>agi::PidParameters</scope><name>filter_sampling_frequency_</name></member>
+      <member refid="structagi_1_1PidParameters_1a802c2d451a61fbd440663c243adaf679" prot="public" virt="non-virtual"><scope>agi::PidParameters</scope><name>integration_max_</name></member>
+      <member refid="structagi_1_1PidParameters_1a9d29bb0caa439d2908b1a2e301f3f5f6" prot="public" virt="non-virtual"><scope>agi::PidParameters</scope><name>kd_rate_</name></member>
+      <member refid="structagi_1_1PidParameters_1a301501782ea67fb322fb529e6ffa790d" prot="public" virt="non-virtual"><scope>agi::PidParameters</scope><name>ki_rate_</name></member>
+      <member refid="structagi_1_1PidParameters_1af35fe63176a227fbdd7056f8370bf076" prot="public" virt="non-virtual"><scope>agi::PidParameters</scope><name>kp_rate_</name></member>
+      <member refid="structagi_1_1PidParameters_1a68dae1a9fd407fb83b24de08c8915ffa" prot="public" virt="virtual"><scope>agi::PidParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1PidParameters_1aa72a975fca1221525746975fe5ee1b6a" prot="public" virt="virtual"><scope>agi::PidParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1PidParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" virt="virtual"><scope>agi::PidParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1PidParameters_1a610452da42a20e52548c4a99be13efa9" prot="public" virt="non-virtual"><scope>agi::PidParameters</scope><name>PidParameters</name></member>
+      <member refid="structagi_1_1PidParameters_1a1e5f7456d1eb2c25d38ae8ce67f1c6f7" prot="public" virt="virtual"><scope>agi::PidParameters</scope><name>valid</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::PidParameters</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

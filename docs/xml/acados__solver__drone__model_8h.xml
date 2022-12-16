@@ -1,0 +1,872 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="acados__solver__drone__model_8h" kind="file" language="C++">
+    <compoundname>acados_solver_drone_model.h</compoundname>
+    <includes local="yes">acados_c/ocp_nlp_interface.h</includes>
+    <includes local="yes">acados_c/external_function_interface.h</includes>
+    <includedby refid="wrapper_8hpp" local="yes">agilib/include/agilib/controller/mpc/wrapper.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h</label>
+        <link refid="acados__solver__drone__model_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>acados_c/external_function_interface.h</label>
+      </node>
+      <node id="2">
+        <label>acados_c/ocp_nlp_interface.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h</label>
+        <link refid="acados__solver__drone__model_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agilib/include/agilib/controller/mpc/controller_mpc.hpp</label>
+        <link refid="controller__mpc_8hpp_source"/>
+      </node>
+      <node id="2">
+        <label>agilib/include/agilib/controller/mpc/wrapper.hpp</label>
+        <link refid="wrapper_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structdrone__model__solver__capsule" prot="public">drone_model_solver_capsule</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a856c2e04965cd14bc977ca52e6126a28" prot="public" static="no">
+        <name>DRONE_MODEL_NX</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="40" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a92dcf942851c5b1102c222db077a87fc" prot="public" static="no">
+        <name>DRONE_MODEL_NZ</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="41" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a5961aff8930c1052d38198dd3da361e0" prot="public" static="no">
+        <name>DRONE_MODEL_NU</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="42" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a87a76bf6caed1e4b61aa0bb8056ff883" prot="public" static="no">
+        <name>DRONE_MODEL_NP</name>
+        <initializer>24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="43" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a38bc73920e93b5b499027fc70cf0f142" prot="public" static="no">
+        <name>DRONE_MODEL_NBX</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="44" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a2e91878d3ce2ae53e175c742f046fc39" prot="public" static="no">
+        <name>DRONE_MODEL_NBX0</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="45" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a0604ec619cd5814d376447abde2d0591" prot="public" static="no">
+        <name>DRONE_MODEL_NBU</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="46" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a84fd16988a1caaee9c48b1f40d716fd1" prot="public" static="no">
+        <name>DRONE_MODEL_NSBX</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="47" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a3edc44a4c7ca5e037161c67e3c0d3ff0" prot="public" static="no">
+        <name>DRONE_MODEL_NSBU</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="48" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a759f099f2f22d3314669d4ebbf6e7823" prot="public" static="no">
+        <name>DRONE_MODEL_NSH</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="49" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1add364bfdc176ad2ce4afa0c9d302cb29" prot="public" static="no">
+        <name>DRONE_MODEL_NSG</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="50" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a5f6af1c6113ac1b33411d656b26e3cba" prot="public" static="no">
+        <name>DRONE_MODEL_NSPHI</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="51" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a4eb37b775d8ed711af91804c206eeafc" prot="public" static="no">
+        <name>DRONE_MODEL_NSHN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="52" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1ad1cf7a06572ef38bb76cf9a7087fcb73" prot="public" static="no">
+        <name>DRONE_MODEL_NSGN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="53" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1aec5957a77dd163b26856c069291d1b58" prot="public" static="no">
+        <name>DRONE_MODEL_NSPHIN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="54" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a0904ef8dc59af07527edb68de2a2364f" prot="public" static="no">
+        <name>DRONE_MODEL_NSBXN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="55" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a18a8784667ce46132ec661a153418830" prot="public" static="no">
+        <name>DRONE_MODEL_NS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="56" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1afc5716e52391f38d8adcceb593c4be04" prot="public" static="no">
+        <name>DRONE_MODEL_NSN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="57" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1abb9b9cda65dc590ba631644f831acb95" prot="public" static="no">
+        <name>DRONE_MODEL_NG</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="58" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1aa8004b7c1347b5ea41d147455d35d81a" prot="public" static="no">
+        <name>DRONE_MODEL_NBXN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="59" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1ad504b8cd84d49d98b84a35c2bd34539b" prot="public" static="no">
+        <name>DRONE_MODEL_NGN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="60" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a108a6ee2d86e50b34123b8767088acb7" prot="public" static="no">
+        <name>DRONE_MODEL_NY0</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="61" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1aef7f3f2660594ae4376f9f8806a25d9a" prot="public" static="no">
+        <name>DRONE_MODEL_NY</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="62" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a2e37d9b309bd8fffcc72940c64947b63" prot="public" static="no">
+        <name>DRONE_MODEL_NYN</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="63" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a4a8781222d9fdc6f631545e2da844e7c" prot="public" static="no">
+        <name>DRONE_MODEL_N</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="64" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1abdd5e8146a09276c8c85f0064a5b8c97" prot="public" static="no">
+        <name>DRONE_MODEL_NH</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="65" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a6e4db30fd073e69fba66c26bb7f60ffb" prot="public" static="no">
+        <name>DRONE_MODEL_NPHI</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="66" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a16381546dbe42e9eb4a669158ad6914a" prot="public" static="no">
+        <name>DRONE_MODEL_NHN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="67" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a8892d659b4731c842123914e25506b4f" prot="public" static="no">
+        <name>DRONE_MODEL_NPHIN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="68" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="acados__solver__drone__model_8h_1a6e852905c2ee11954a154e60f690e1a5" prot="public" static="no">
+        <name>DRONE_MODEL_NR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="69" column="9" bodyfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="acados__solver__drone__model_8h_1a2625cba87f47de4d7dc0f800403b5ea9" prot="public" static="no">
+        <type>struct <ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref></type>
+        <definition>typedef struct drone_model_solver_capsule drone_model_solver_capsule</definition>
+        <argsstring></argsstring>
+        <name>drone_model_solver_capsule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="123" column="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1a9b1dc76f87e29d6a2b4c37417e482bcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+        <definition>drone_model_solver_capsule * drone_model_acados_create_capsule</definition>
+        <argsstring>(void)</argsstring>
+        <name>drone_model_acados_create_capsule</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="125" column="29" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="125" declcolumn="29"/>
+      </memberdef>
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1a956a264928cad918a2c98a71863887b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int drone_model_acados_free_capsule</definition>
+        <argsstring>(drone_model_solver_capsule *capsule)</argsstring>
+        <name>drone_model_acados_free_capsule</name>
+        <param>
+          <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+          <declname>capsule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="126" column="5" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="126" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1a0aa61dd3a79c028d50a789323fd6411a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int drone_model_acados_create</definition>
+        <argsstring>(drone_model_solver_capsule *capsule)</argsstring>
+        <name>drone_model_acados_create</name>
+        <param>
+          <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+          <declname>capsule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="128" column="5" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="128" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1a2e6855aa7fc27a0fcaa827a71d7658f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int drone_model_acados_create_with_discretization</definition>
+        <argsstring>(drone_model_solver_capsule *capsule, int n_time_steps, double *new_time_steps)</argsstring>
+        <name>drone_model_acados_create_with_discretization</name>
+        <param>
+          <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+          <declname>capsule</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_time_steps</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>new_time_steps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic version of drone_model_acados_create which allows to use a different number of shooting intervals than the number used for code generation. If new_time_steps=NULL and n_time_steps matches the number used for code generation, the time-steps from code generation is used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="134" column="5" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="134" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1a3115b78a5aaa3236527a527adc0884ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int drone_model_acados_update_time_steps</definition>
+        <argsstring>(drone_model_solver_capsule *capsule, int N, double *new_time_steps)</argsstring>
+        <name>drone_model_acados_update_time_steps</name>
+        <param>
+          <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+          <declname>capsule</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>new_time_steps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the time step vector. Number N must be identical to the currently set number of shooting nodes in the nlp_solver_plan. Returns 0 if no error occurred and a otherwise a value other than 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="139" column="5" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="139" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1af8d25993830e53b666b6a20dc8e0adec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int drone_model_acados_update_qp_solver_cond_N</definition>
+        <argsstring>(drone_model_solver_capsule *capsule, int qp_solver_cond_N)</argsstring>
+        <name>drone_model_acados_update_qp_solver_cond_N</name>
+        <param>
+          <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+          <declname>capsule</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>qp_solver_cond_N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used for updating an already initialized solver with a different number of qp_cond_N. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="143" column="5" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="143" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1abb66023b1ebae69639b511617e4100bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int drone_model_acados_update_params</definition>
+        <argsstring>(drone_model_solver_capsule *capsule, int stage, double *value, int np)</argsstring>
+        <name>drone_model_acados_update_params</name>
+        <param>
+          <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+          <declname>capsule</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>np</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="144" column="5" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="144" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1a10f188283d953afb0c28157aee5f34d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int drone_model_acados_solve</definition>
+        <argsstring>(drone_model_solver_capsule *capsule)</argsstring>
+        <name>drone_model_acados_solve</name>
+        <param>
+          <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+          <declname>capsule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="145" column="5" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="145" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1a23c650b2de0c67fc5ac26413f1c04a15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int drone_model_acados_free</definition>
+        <argsstring>(drone_model_solver_capsule *capsule)</argsstring>
+        <name>drone_model_acados_free</name>
+        <param>
+          <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+          <declname>capsule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="146" column="5" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="146" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1a26f08e70b97ea5b8a9ea97ffd310c078" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drone_model_acados_print_stats</definition>
+        <argsstring>(drone_model_solver_capsule *capsule)</argsstring>
+        <name>drone_model_acados_print_stats</name>
+        <param>
+          <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+          <declname>capsule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="147" column="6" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="147" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1a0a87735d2cf09d55eee5f6ae7fbb8228" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ocp_nlp_in *</type>
+        <definition>ocp_nlp_in * drone_model_acados_get_nlp_in</definition>
+        <argsstring>(drone_model_solver_capsule *capsule)</argsstring>
+        <name>drone_model_acados_get_nlp_in</name>
+        <param>
+          <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+          <declname>capsule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="149" column="12" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="149" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1a2a871b62c79afa53aa3ae1a08eb94449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ocp_nlp_out *</type>
+        <definition>ocp_nlp_out * drone_model_acados_get_nlp_out</definition>
+        <argsstring>(drone_model_solver_capsule *capsule)</argsstring>
+        <name>drone_model_acados_get_nlp_out</name>
+        <param>
+          <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+          <declname>capsule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="150" column="13" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="150" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1a79bd8c0eef09f0945ac1f4489d2ecea9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ocp_nlp_solver *</type>
+        <definition>ocp_nlp_solver * drone_model_acados_get_nlp_solver</definition>
+        <argsstring>(drone_model_solver_capsule *capsule)</argsstring>
+        <name>drone_model_acados_get_nlp_solver</name>
+        <param>
+          <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+          <declname>capsule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="151" column="16" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="151" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1a5430614d6c3c7dc744d6f6288996a586" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ocp_nlp_config *</type>
+        <definition>ocp_nlp_config * drone_model_acados_get_nlp_config</definition>
+        <argsstring>(drone_model_solver_capsule *capsule)</argsstring>
+        <name>drone_model_acados_get_nlp_config</name>
+        <param>
+          <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+          <declname>capsule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="152" column="16" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="152" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1a2cebfb9739d650ee59b0ef0b7fef4f2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * drone_model_acados_get_nlp_opts</definition>
+        <argsstring>(drone_model_solver_capsule *capsule)</argsstring>
+        <name>drone_model_acados_get_nlp_opts</name>
+        <param>
+          <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+          <declname>capsule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="153" column="6" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="153" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1a16cd79ad75de09f278282cc0693a043e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ocp_nlp_dims *</type>
+        <definition>ocp_nlp_dims * drone_model_acados_get_nlp_dims</definition>
+        <argsstring>(drone_model_solver_capsule *capsule)</argsstring>
+        <name>drone_model_acados_get_nlp_dims</name>
+        <param>
+          <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+          <declname>capsule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="154" column="14" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="154" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="acados__solver__drone__model_8h_1a2e199f512424ecd8d6910cb5b176b13b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ocp_nlp_plan *</type>
+        <definition>ocp_nlp_plan * drone_model_acados_get_nlp_plan</definition>
+        <argsstring>(drone_model_solver_capsule *capsule)</argsstring>
+        <name>drone_model_acados_get_nlp_plan</name>
+        <param>
+          <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+          <declname>capsule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" line="155" column="14" declfile="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h" declline="155" declcolumn="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2019<sp/>Gianluca<sp/>Frison,<sp/>Dimitris<sp/>Kouzoupis,<sp/>Robin<sp/>Verschueren,</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Andrea<sp/>Zanelli,<sp/>Niels<sp/>van<sp/>Duijkeren,<sp/>Jonathan<sp/>Frey,<sp/>Tommaso<sp/>Sartor,</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Branimir<sp/>Novoselnik,<sp/>Rien<sp/>Quirynen,<sp/>Rezart<sp/>Qelibari,<sp/>Dang<sp/>Doan,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Jonas<sp/>Koenemann,<sp/>Yutao<sp/>Chen,<sp/>Tobias<sp/>Schöls,<sp/>Jonas<sp/>Schlagenhauf,<sp/>Moritz<sp/>Diehl</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>acados.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>The<sp/>2-Clause<sp/>BSD<sp/>License</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>1.<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>2.<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.;</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ACADOS_SOLVER_drone_model_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACADOS_SOLVER_drone_model_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;acados_c/ocp_nlp_interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;acados_c/external_function_interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NX<sp/><sp/><sp/><sp/><sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NZ<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NU<sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NP<sp/><sp/><sp/><sp/><sp/>24</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NBX<sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NBX0<sp/><sp/><sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NBU<sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NSBX<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NSBU<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NSH<sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NSG<sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NSPHI<sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NSHN<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NSGN<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NSPHIN<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NSBXN<sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NS<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NSN<sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NG<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NBXN<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NGN<sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NY0<sp/><sp/><sp/><sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NY<sp/><sp/><sp/><sp/><sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NYN<sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_N<sp/><sp/><sp/><sp/><sp/><sp/>20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NH<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NPHI<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NHN<sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NPHIN<sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRONE_MODEL_NR<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/>**<sp/>capsule<sp/>for<sp/>solver<sp/>data<sp/>**</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="structdrone__model__solver__capsule" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>acados<sp/>objects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>ocp_nlp_in<sp/>*nlp_in;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>ocp_nlp_out<sp/>*nlp_out;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>ocp_nlp_out<sp/>*sens_out;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>ocp_nlp_solver<sp/>*nlp_solver;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*nlp_opts;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>ocp_nlp_plan<sp/>*nlp_solver_plan;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>ocp_nlp_config<sp/>*nlp_config;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>ocp_nlp_dims<sp/>*nlp_dims;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>number<sp/>of<sp/>expected<sp/>runtime<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nlp_np;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>external<sp/>functions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>dynamics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>external_function_param_casadi<sp/>*forw_vde_casadi;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>external_function_param_casadi<sp/>*expl_ode_fun;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cost</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>external_function_param_casadi<sp/>*cost_y_fun;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>external_function_param_casadi<sp/>*cost_y_fun_jac_ut_xt;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>external_function_param_casadi<sp/>*cost_y_hess;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>external_function_param_casadi<sp/>cost_y_0_fun;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>external_function_param_casadi<sp/>cost_y_0_fun_jac_ut_xt;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>external_function_param_casadi<sp/>cost_y_0_hess;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>external_function_param_casadi<sp/>cost_y_e_fun;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>external_function_param_casadi<sp/>cost_y_e_fun_jac_ut_xt;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>external_function_param_casadi<sp/>cost_y_e_hess;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constraints</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}<sp/><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*<sp/>drone_model_acados_create_capsule(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drone_model_acados_free_capsule(<ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*capsule);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drone_model_acados_create(<ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*<sp/>capsule);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drone_model_acados_create_with_discretization(<ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*<sp/>capsule,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_time_steps,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>new_time_steps);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drone_model_acados_update_time_steps(<ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*<sp/>capsule,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>new_time_steps);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drone_model_acados_update_qp_solver_cond_N(<ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*<sp/>capsule,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>qp_solver_cond_N);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drone_model_acados_update_params(<ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*<sp/>capsule,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>np);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drone_model_acados_solve(<ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*<sp/>capsule);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drone_model_acados_free(<ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*<sp/>capsule);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>drone_model_acados_print_stats(<ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*<sp/>capsule);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal">ocp_nlp_in<sp/>*drone_model_acados_get_nlp_in(<ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*<sp/>capsule);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">ocp_nlp_out<sp/>*drone_model_acados_get_nlp_out(<ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*<sp/>capsule);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">ocp_nlp_solver<sp/>*drone_model_acados_get_nlp_solver(<ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*<sp/>capsule);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">ocp_nlp_config<sp/>*drone_model_acados_get_nlp_config(<ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*<sp/>capsule);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*drone_model_acados_get_nlp_opts(<ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*<sp/>capsule);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">ocp_nlp_dims<sp/>*drone_model_acados_get_nlp_dims(<ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*<sp/>capsule);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">ocp_nlp_plan<sp/>*drone_model_acados_get_nlp_plan(<ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref><sp/>*<sp/>capsule);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>extern<sp/>&quot;C&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>ACADOS_SOLVER_drone_model_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="agilib/include/agilib/controller/mpc/acados/acados_solver_drone_model.h"/>
+  </compounddef>
+</doxygen>

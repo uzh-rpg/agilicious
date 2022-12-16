@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1COBS" kind="struct" language="C++" prot="public">
+    <compoundname>agi::COBS</compoundname>
+    <templateparamlist>
+      <param>
+        <type>char</type>
+        <declname>Delimiter</declname>
+        <defname>Delimiter</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structagi_1_1COBS_1a4e298778c088fdf6fcea2a63da2a3604" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool agi::COBS&lt; Delimiter &gt;::stuff</definition>
+        <argsstring>(const char *const src, const int src_length, char *const dst, int *const dst_length)</argsstring>
+        <name>stuff</name>
+        <qualifiedname>agi::COBS::stuff</qualifiedname>
+        <param>
+          <type>const char *const</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>src_length</declname>
+        </param>
+        <param>
+          <type>char *const</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int *const</type>
+          <declname>dst_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/cobs.hpp" line="8" column="15" bodyfile="agilib/include/agilib/serial/cobs.hpp" bodystart="8" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1COBS_1a07c312f2d59eb0db5eab054972784ded" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int agi::COBS&lt; Delimiter &gt;::unstuff</definition>
+        <argsstring>(const char *const src, const int src_length, char *const dst, int *const dst_length)</argsstring>
+        <name>unstuff</name>
+        <qualifiedname>agi::COBS::unstuff</qualifiedname>
+        <param>
+          <type>const char *const</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>src_length</declname>
+        </param>
+        <param>
+          <type>char *const</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int *const</type>
+          <declname>dst_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/cobs.hpp" line="39" column="14" bodyfile="agilib/include/agilib/serial/cobs.hpp" bodystart="39" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/serial/cobs.hpp" line="7" column="1" bodyfile="agilib/include/agilib/serial/cobs.hpp" bodystart="7" bodyend="68"/>
+    <listofallmembers>
+      <member refid="structagi_1_1COBS_1a4e298778c088fdf6fcea2a63da2a3604" prot="public" virt="non-virtual"><scope>agi::COBS</scope><name>stuff</name></member>
+      <member refid="structagi_1_1COBS_1a07c312f2d59eb0db5eab054972784ded" prot="public" virt="non-virtual"><scope>agi::COBS</scope><name>unstuff</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

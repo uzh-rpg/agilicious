@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1Module" kind="class" language="C++" prot="public">
+    <compoundname>agi::Module</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Derived</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref></type>
+        <definition>Logger agi::Module&lt; Derived &gt;::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>agi::Module::logger_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/module.hpp" line="25" column="10" bodyfile="agilib/include/agilib/base/module.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::Module&lt; Derived &gt;::Module</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>Module</name>
+        <qualifiedname>agi::Module::Module</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor with a name for the module. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the module name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/module.hpp" line="14" column="3" bodyfile="agilib/include/agilib/base/module.hpp" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual agi::Module&lt; Derived &gt;::~Module</definition>
+        <argsstring>()</argsstring>
+        <name>~Module</name>
+        <qualifiedname>agi::Module::~Module</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/module.hpp" line="16" column="11" bodyfile="agilib/include/agilib/base/module.hpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; agi::Module&lt; Derived &gt;::name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <qualifiedname>agi::Module::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the model name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/module.hpp" line="19" column="28" bodyfile="agilib/include/agilib/base/module.hpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void agi::Module&lt; Derived &gt;::logTiming</definition>
+        <argsstring>() const</argsstring>
+        <name>logTiming</name>
+        <qualifiedname>agi::Module::logTiming</qualifiedname>
+        <reimplementedby refid="classagi_1_1MpcController_1ae91b0d54f22985d6cd2690a677228d22">logTiming</reimplementedby>
+        <reimplementedby refid="classagi_1_1Ekf_1a7d1f1c7c69c3f42d38b9040126f41f45">logTiming</reimplementedby>
+        <reimplementedby refid="classagi_1_1EkfImu_1a397231ac70c1ec07b9f0a7797a38edda">logTiming</reimplementedby>
+        <briefdescription>
+<para>Log the internal timing. Optional to implement. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/module.hpp" line="22" column="16" bodyfile="agilib/include/agilib/base/module.hpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+      <node id="1">
+        <label>agi::Module&lt; Derived &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/base/module.hpp" line="10" column="1" bodyfile="agilib/include/agilib/base/module.hpp" bodystart="10" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::Module</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::Module</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::Module</scope><name>Module</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::Module</scope><name>name</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::Module</scope><name>~Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

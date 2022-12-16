@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_9793d9e7cb8f059d67fba6b3b68ee151" kind="dir">
+    <compoundname>agilib/include/agilib/estimator/ekf</compoundname>
+    <innerfile refid="ekf_8hpp">ekf.hpp</innerfile>
+    <innerfile refid="ekf__params_8hpp">ekf_params.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/estimator/ekf/"/>
+  </compounddef>
+</doxygen>

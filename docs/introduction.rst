@@ -13,8 +13,9 @@ In summary, this library offers the following modules:
 ===========
 Pipelines
 ===========
-  The Pipeline architecture provides a modular way to combine controllers, estimators, reference trajectories into a complete control system.
-  It is posible to create multiple pipelines and switch between them at runtime, allowing rapid prototyping.
+
+The Pipeline architecture provides a modular way to combine controllers, estimators, reference trajectories into a complete control system.
+It is posible to create multiple pipelines and switch between them at runtime, allowing rapid prototyping.
 
 ============
 Controllers
@@ -61,7 +62,8 @@ Bridges
 =====
 Pilot
 =====
-The Pilot handles all logic and interfacing.
+
+The Pilot handles all logic, interfacing, and provides a capable API for quadrotor control.
 
 =====
 Guard

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1ApproxAtan2" kind="struct" language="C++" prot="public">
+    <compoundname>agi::ApproxAtan2</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1ApproxAtan2_1aeef890e2a6d2f6d1aee48b6e59cc6e64" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T agi::ApproxAtan2&lt; T &gt;::operator()</definition>
+        <argsstring>(const T yf, const T xf) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>agi::ApproxAtan2::operator()</qualifiedname>
+        <param>
+          <type>const T</type>
+          <declname>yf</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>xf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/fast_atan2.hpp" line="13" column="5" bodyfile="agilib/include/agilib/math/fast_atan2.hpp" bodystart="13" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/math/fast_atan2.hpp" line="11" column="1" bodyfile="agilib/include/agilib/math/fast_atan2.hpp" bodystart="11" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structagi_1_1ApproxAtan2_1aeef890e2a6d2f6d1aee48b6e59cc6e64" prot="public" virt="non-virtual"><scope>agi::ApproxAtan2</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

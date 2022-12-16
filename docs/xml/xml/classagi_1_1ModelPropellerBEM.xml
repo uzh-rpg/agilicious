@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1ModelPropellerBEM" kind="class" language="C++" prot="public">
+    <compoundname>agi::ModelPropellerBEM</compoundname>
+    <basecompoundref refid="classagi_1_1ModelBase" prot="public" virt="non-virtual">agi::ModelBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1ModelPropellerBEM_1ab01a07db09bae39266677bbb1ac374b6" prot="private" static="no" mutable="no">
+        <type>const Scalar</type>
+        <definition>const Scalar agi::ModelPropellerBEM::thrust_scale_</definition>
+        <argsstring></argsstring>
+        <name>thrust_scale_</name>
+        <qualifiedname>agi::ModelPropellerBEM::thrust_scale_</qualifiedname>
+        <initializer>= 0.9575</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="42" column="16" bodyfile="agilib/include/agilib/simulator/model_propeller_bem.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ModelPropellerBEM_1a9e64217f14e432afa8727fa12041ee70" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classagi_1_1GaussKronrod" kindref="compound">GaussKronrod</ref>&lt; <ref refid="structagi_1_1GaussKronrodFunction" kindref="compound">GaussKronrodFunction</ref>&lt; QS::NMOT &gt; &gt;</type>
+        <definition>const GaussKronrod&lt;GaussKronrodFunction&lt;QS::NMOT&gt; &gt; agi::ModelPropellerBEM::gk_</definition>
+        <argsstring></argsstring>
+        <name>gk_</name>
+        <qualifiedname>agi::ModelPropellerBEM::gk_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="43" column="22" bodyfile="agilib/include/agilib/simulator/model_propeller_bem.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ModelPropellerBEM_1a1254401e2ad73dbe8721d4ffcf508b93" prot="private" static="no" mutable="yes">
+        <type>std::shared_ptr&lt; <ref refid="structagi_1_1PropellerState" kindref="compound">PropellerState</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;PropellerState&gt; agi::ModelPropellerBEM::prop_state_</definition>
+        <argsstring></argsstring>
+        <name>prop_state_</name>
+        <qualifiedname>agi::ModelPropellerBEM::prop_state_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="45" column="27" bodyfile="agilib/include/agilib/simulator/model_propeller_bem.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ModelPropellerBEM_1a341484a0bbe43f9889d3934a33ef10a5" prot="private" static="no" mutable="yes">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1IntegrandPsi" kindref="compound">IntegrandPsi</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;IntegrandPsi&gt; agi::ModelPropellerBEM::f_psi_thrust_</definition>
+        <argsstring></argsstring>
+        <name>f_psi_thrust_</name>
+        <qualifiedname>agi::ModelPropellerBEM::f_psi_thrust_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="46" column="27" bodyfile="agilib/include/agilib/simulator/model_propeller_bem.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ModelPropellerBEM_1a9a1dfa8d0178798ea6452c5ad0c686df" prot="private" static="no" mutable="yes">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1IntegrandPsi" kindref="compound">IntegrandPsi</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;IntegrandPsi&gt; agi::ModelPropellerBEM::f_psi_torque_</definition>
+        <argsstring></argsstring>
+        <name>f_psi_torque_</name>
+        <qualifiedname>agi::ModelPropellerBEM::f_psi_torque_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="47" column="27" bodyfile="agilib/include/agilib/simulator/model_propeller_bem.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ModelPropellerBEM_1a9592536b2208272efcfa7ce03fd2357b" prot="private" static="no" mutable="yes">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1IntegrandPsi" kindref="compound">IntegrandPsi</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;IntegrandPsi&gt; agi::ModelPropellerBEM::f_psi_hforce_</definition>
+        <argsstring></argsstring>
+        <name>f_psi_hforce_</name>
+        <qualifiedname>agi::ModelPropellerBEM::f_psi_hforce_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="48" column="27" bodyfile="agilib/include/agilib/simulator/model_propeller_bem.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ModelPropellerBEM_1a2f7d9ad717815a4c1260fa2be02aa73c" prot="private" static="no" mutable="yes">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1IntegrandR" kindref="compound">IntegrandR</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;IntegrandR&gt; agi::ModelPropellerBEM::f_r_thrust_</definition>
+        <argsstring></argsstring>
+        <name>f_r_thrust_</name>
+        <qualifiedname>agi::ModelPropellerBEM::f_r_thrust_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="49" column="27" bodyfile="agilib/include/agilib/simulator/model_propeller_bem.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ModelPropellerBEM_1a56031691e7e12621b9e169a9ef9a7436" prot="private" static="no" mutable="yes">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1IntegrandR" kindref="compound">IntegrandR</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;IntegrandR&gt; agi::ModelPropellerBEM::f_r_torque_</definition>
+        <argsstring></argsstring>
+        <name>f_r_torque_</name>
+        <qualifiedname>agi::ModelPropellerBEM::f_r_torque_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="50" column="27" bodyfile="agilib/include/agilib/simulator/model_propeller_bem.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ModelPropellerBEM_1ae18fb9dad3c9d1dcf7dbdb7f68cebca8" prot="private" static="no" mutable="yes">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1IntegrandR" kindref="compound">IntegrandR</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;IntegrandR&gt; agi::ModelPropellerBEM::f_r_hforce_</definition>
+        <argsstring></argsstring>
+        <name>f_r_hforce_</name>
+        <qualifiedname>agi::ModelPropellerBEM::f_r_hforce_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="51" column="27" bodyfile="agilib/include/agilib/simulator/model_propeller_bem.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ModelPropellerBEM_1ac44674af9226d2acbc2440171c7b3d31" prot="private" static="no" mutable="yes">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1ThrustFunction" kindref="compound">ThrustFunction</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;ThrustFunction&gt; agi::ModelPropellerBEM::f_v1_</definition>
+        <argsstring></argsstring>
+        <name>f_v1_</name>
+        <qualifiedname>agi::ModelPropellerBEM::f_v1_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="52" column="27" bodyfile="agilib/include/agilib/simulator/model_propeller_bem.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ModelPropellerBEM_1a7b63e43d6755861153ac3df26a4cfd9f" prot="private" static="no" mutable="yes">
+        <type>ArrayVector&lt; QS::NMOT &gt;</type>
+        <definition>ArrayVector&lt;QS::NMOT&gt; agi::ModelPropellerBEM::vind_</definition>
+        <argsstring></argsstring>
+        <name>vind_</name>
+        <qualifiedname>agi::ModelPropellerBEM::vind_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="53" column="23" bodyfile="agilib/include/agilib/simulator/model_propeller_bem.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ModelPropellerBEM_1aab4a7ddbb04ab43dd80bdc6f18a14b73" prot="private" static="no" mutable="yes">
+        <type>ArrayVector&lt; QS::NMOT &gt;</type>
+        <definition>ArrayVector&lt;QS::NMOT&gt; agi::ModelPropellerBEM::vind_h_</definition>
+        <argsstring></argsstring>
+        <name>vind_h_</name>
+        <qualifiedname>agi::ModelPropellerBEM::vind_h_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="54" column="23" bodyfile="agilib/include/agilib/simulator/model_propeller_bem.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ModelPropellerBEM_1a7e72076844adb685ca3ce162d9d1f6d3" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Brent" kindref="compound">Brent</ref>&lt; <ref refid="structagi_1_1BrentFunction" kindref="compound">BrentFunction</ref>&lt; QS::NMOT &gt; &gt;</type>
+        <definition>Brent&lt;BrentFunction&lt;QS::NMOT&gt; &gt; agi::ModelPropellerBEM::vind_solver_</definition>
+        <argsstring></argsstring>
+        <name>vind_solver_</name>
+        <qualifiedname>agi::ModelPropellerBEM::vind_solver_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="55" column="9" bodyfile="agilib/include/agilib/simulator/model_propeller_bem.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ModelPropellerBEM_1a77dd9c02b466da049f748fcc02be080c" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref></type>
+        <definition>Logger agi::ModelPropellerBEM::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>agi::ModelPropellerBEM::logger_</qualifiedname>
+        <initializer>{&quot;BEM Model&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="57" column="10" bodyfile="agilib/include/agilib/simulator/model_propeller_bem.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1ModelPropellerBEM_1a199aa17c6e40eaf39f8ab3389f2ff571" prot="private" static="no" mutable="yes">
+        <type><ref refid="classagi_1_1Timer" kindref="compound">Timer</ref></type>
+        <definition>Timer agi::ModelPropellerBEM::timer_</definition>
+        <argsstring></argsstring>
+        <name>timer_</name>
+        <qualifiedname>agi::ModelPropellerBEM::timer_</qualifiedname>
+        <initializer>{&quot;BEM Model&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="58" column="17" bodyfile="agilib/include/agilib/simulator/model_propeller_bem.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1ModelPropellerBEM_1aaf79ce59b46932eb4fa26d9cfee368d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::ModelPropellerBEM::ModelPropellerBEM</definition>
+        <argsstring>(Quadrotor quad, const BEMParameters &amp;params=BEMParameters())</argsstring>
+        <name>ModelPropellerBEM</name>
+        <qualifiedname>agi::ModelPropellerBEM::ModelPropellerBEM</qualifiedname>
+        <param>
+          <type><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1BEMParameters" kindref="compound">BEMParameters</ref> &amp;</type>
+          <declname>params</declname>
+          <defval><ref refid="structagi_1_1BEMParameters" kindref="compound">BEMParameters</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="33" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ModelPropellerBEM_1a4420802a16f21a6b44a44fa81939b91e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::ModelPropellerBEM::~ModelPropellerBEM</definition>
+        <argsstring>() override</argsstring>
+        <name>~ModelPropellerBEM</name>
+        <qualifiedname>agi::ModelPropellerBEM::~ModelPropellerBEM</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="35" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ModelPropellerBEM_1a287c85991875cd6c2f99f64c2230717a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::ModelPropellerBEM::run</definition>
+        <argsstring>(const Ref&lt; const Vector&lt; QS::SIZE &gt; &gt;, Ref&lt; Vector&lt; QS::SIZE &gt; &gt;) const override</argsstring>
+        <name>run</name>
+        <qualifiedname>agi::ModelPropellerBEM::run</qualifiedname>
+        <reimplements refid="classagi_1_1ModelBase_1abda177a5b2ad6f80d685c62c4175a73d">run</reimplements>
+        <param>
+          <type>const Ref&lt; const Vector&lt; QS::SIZE &gt; &gt;</type>
+        </param>
+        <param>
+          <type>Ref&lt; Vector&lt; QS::SIZE &gt; &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="37" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::ModelBase</label>
+        <link refid="classagi_1_1ModelBase"/>
+      </node>
+      <node id="1">
+        <label>agi::ModelPropellerBEM</label>
+        <link refid="classagi_1_1ModelPropellerBEM"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::ModelBase</label>
+        <link refid="classagi_1_1ModelBase"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>quad_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::ModelPropellerBEM</label>
+        <link refid="classagi_1_1ModelPropellerBEM"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="3">
+        <label>agi::Quadrotor</label>
+        <link refid="structagi_1_1Quadrotor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/simulator/model_propeller_bem.hpp" line="29" column="1" bodyfile="agilib/include/agilib/simulator/model_propeller_bem.hpp" bodystart="29" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classagi_1_1ModelPropellerBEM_1a9592536b2208272efcfa7ce03fd2357b" prot="private" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>f_psi_hforce_</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1a341484a0bbe43f9889d3934a33ef10a5" prot="private" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>f_psi_thrust_</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1a9a1dfa8d0178798ea6452c5ad0c686df" prot="private" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>f_psi_torque_</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1ae18fb9dad3c9d1dcf7dbdb7f68cebca8" prot="private" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>f_r_hforce_</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1a2f7d9ad717815a4c1260fa2be02aa73c" prot="private" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>f_r_thrust_</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1a56031691e7e12621b9e169a9ef9a7436" prot="private" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>f_r_torque_</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1ac44674af9226d2acbc2440171c7b3d31" prot="private" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>f_v1_</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1a9e64217f14e432afa8727fa12041ee70" prot="private" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>gk_</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1a77dd9c02b466da049f748fcc02be080c" prot="private" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>logger_</name></member>
+      <member refid="classagi_1_1ModelBase_1afa0e1f1d5823563b5ba7a34212571421" prot="public" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>ModelBase</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1aaf79ce59b46932eb4fa26d9cfee368d1" prot="public" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>ModelPropellerBEM</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1a1254401e2ad73dbe8721d4ffcf508b93" prot="private" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>prop_state_</name></member>
+      <member refid="classagi_1_1ModelBase_1a71a5186d36000793a8fb4d163a14bbf4" prot="protected" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>quad_</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1a287c85991875cd6c2f99f64c2230717a" prot="public" virt="virtual"><scope>agi::ModelPropellerBEM</scope><name>run</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1ab01a07db09bae39266677bbb1ac374b6" prot="private" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>thrust_scale_</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1a199aa17c6e40eaf39f8ab3389f2ff571" prot="private" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>timer_</name></member>
+      <member refid="classagi_1_1ModelBase_1aec144173e8686f6161a848775a17342b" prot="public" virt="virtual"><scope>agi::ModelPropellerBEM</scope><name>updateQuad</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1a7b63e43d6755861153ac3df26a4cfd9f" prot="private" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>vind_</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1aab4a7ddbb04ab43dd80bdc6f18a14b73" prot="private" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>vind_h_</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1a7e72076844adb685ca3ce162d9d1f6d3" prot="private" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>vind_solver_</name></member>
+      <member refid="classagi_1_1ModelBase_1a394ad140874d5e7b5f4837931ec8ec2d" prot="public" virt="virtual"><scope>agi::ModelPropellerBEM</scope><name>~ModelBase</name></member>
+      <member refid="classagi_1_1ModelPropellerBEM_1a4420802a16f21a6b44a44fa81939b91e" prot="public" virt="non-virtual"><scope>agi::ModelPropellerBEM</scope><name>~ModelPropellerBEM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

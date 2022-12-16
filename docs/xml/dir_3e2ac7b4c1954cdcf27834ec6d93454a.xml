@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_3e2ac7b4c1954cdcf27834ec6d93454a" kind="dir">
+    <compoundname>agilib/include/agilib/types</compoundname>
+    <innerfile refid="command_8hpp">command.hpp</innerfile>
+    <innerfile refid="feedback_8hpp">feedback.hpp</innerfile>
+    <innerfile refid="imu__sample_8hpp">imu_sample.hpp</innerfile>
+    <innerfile refid="pose_8hpp">pose.hpp</innerfile>
+    <innerfile refid="quad__state_8hpp">quad_state.hpp</innerfile>
+    <innerfile refid="quadrotor_8hpp">quadrotor.hpp</innerfile>
+    <innerfile refid="setpoint_8hpp">setpoint.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/types/"/>
+  </compounddef>
+</doxygen>

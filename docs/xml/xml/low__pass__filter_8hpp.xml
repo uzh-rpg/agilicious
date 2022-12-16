@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="low__pass__filter_8hpp" kind="file" language="C++">
+    <compoundname>low_pass_filter.hpp</compoundname>
+    <includes refid="types_8hpp" local="yes">agilib/math/types.hpp</includes>
+    <includedby refid="controller__geo_8hpp" local="yes">agilib/include/agilib/controller/geometric/controller_geo.hpp</includedby>
+    <includedby refid="controller__indi_8hpp" local="yes">agilib/include/agilib/controller/indi/controller_indi.hpp</includedby>
+    <includedby refid="controller__pid_8hpp" local="yes">agilib/include/agilib/controller/pid/controller_pid.hpp</includedby>
+    <includedby refid="low__level__controller__betaflight_8hpp" local="yes">agilib/include/agilib/simulator/low_level_controller_betaflight.hpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>agilib/math/types.hpp</label>
+        <link refid="types_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agilib/include/agilib/utils/low_pass_filter.hpp</label>
+        <link refid="low__pass__filter_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Eigen/Eigen</label>
+      </node>
+      <node id="4">
+        <label>limits</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>agilib/include/agilib/controller/geometric/controller_geo.hpp</label>
+        <link refid="controller__geo_8hpp_source"/>
+      </node>
+      <node id="3">
+        <label>agilib/include/agilib/controller/indi/controller_indi.hpp</label>
+        <link refid="controller__indi_8hpp_source"/>
+      </node>
+      <node id="4">
+        <label>agilib/include/agilib/controller/pid/controller_pid.hpp</label>
+        <link refid="controller__pid_8hpp_source"/>
+      </node>
+      <node id="5">
+        <label>agilib/include/agilib/simulator/low_level_controller_betaflight.hpp</label>
+        <link refid="low__level__controller__betaflight_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>agilib/include/agilib/simulator/quadrotor_simulator.hpp</label>
+        <link refid="quadrotor__simulator_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>agilib/include/agilib/utils/low_pass_filter.hpp</label>
+        <link refid="low__pass__filter_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classagi_1_1LowPassFilter" prot="public">agi::LowPassFilter</innerclass>
+    <innernamespace refid="namespaceagi">agi</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/math/types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">agi<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rows&gt;</highlight></codeline>
+<codeline lineno="9" refid="classagi_1_1LowPassFilter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classagi_1_1LowPassFilter" kindref="compound">LowPassFilter</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1LowPassFilter" kindref="compound">LowPassFilter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;&amp;<sp/>cutoff_frequency,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;&amp;<sp/>sampling_frequency,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;&amp;<sp/>initial_value);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1LowPassFilter" kindref="compound">LowPassFilter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Scalar<sp/>cutoff_frequency,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Scalar<sp/>sampling_frequency,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Scalar<sp/>initial_value)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classagi_1_1LowPassFilter" kindref="compound">LowPassFilter</ref>(Vector&lt;rows&gt;::Constant(cutoff_frequency),</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector&lt;rows&gt;::Constant(sampling_frequency),</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector&lt;rows&gt;::Constant(initial_value))<sp/>{}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1LowPassFilter" kindref="compound">LowPassFilter</ref>()<sp/>:<sp/><ref refid="classagi_1_1LowPassFilter" kindref="compound">LowPassFilter</ref>(NAN,<sp/>NAN,<sp/>NAN)<sp/>{}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1LowPassFilter" kindref="compound">~LowPassFilter</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>Vector&lt;rows&gt;<sp/>add(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;&amp;<sp/>sample);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>Vector&lt;rows&gt;<sp/>operator()()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>output_.col(0);<sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>Scalar<sp/>operator()(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>output_(i,<sp/>0);<sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>Vector&lt;rows&gt;<sp/>derivative()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sampling_frequency_.array()<sp/>*</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(output_.col(0)<sp/>-<sp/>output_.col(1)).array();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>Scalar<sp/>derivative(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sampling_frequency_(i)<sp/>*<sp/>(output_(i,<sp/>0)<sp/>-<sp/>output_(i,<sp/>1));</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>valid()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sampling_frequency_.allFinite()<sp/>&amp;&amp;<sp/>denumerator_.allFinite()<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numerator_.allFinite()<sp/>&amp;&amp;<sp/>input_.allFinite()<sp/>&amp;&amp;<sp/>output_.allFinite();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Array&lt;rows,<sp/>2&gt;<sp/>init_den(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;&amp;<sp/>fc,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;&amp;<sp/>fs);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Array&lt;rows,<sp/>2&gt;<sp/>init_num(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;&amp;<sp/>fc,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;&amp;<sp/>fs);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;<sp/>sampling_frequency_;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array&lt;rows,<sp/>2&gt;<sp/>denumerator_;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array&lt;rows,<sp/>2&gt;<sp/>numerator_;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>Array&lt;rows,<sp/>2&gt;<sp/>input_;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>Array&lt;rows,<sp/>2&gt;<sp/>output_;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rows&gt;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">Array&lt;rows,<sp/>2&gt;<sp/><ref refid="classagi_1_1LowPassFilter" kindref="compound">LowPassFilter&lt;rows&gt;::init_den</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;&amp;<sp/>fc,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;&amp;<sp/>fs)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ArrayVector&lt;rows&gt;<sp/>K<sp/>=<sp/>(M_PI<sp/>*<sp/>fc.array()<sp/>/<sp/>fs.array()).tan();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ArrayVector&lt;rows&gt;<sp/>poly<sp/>=<sp/>K<sp/>*<sp/>K<sp/>+<sp/>sqrt(2.0)<sp/>*<sp/>K<sp/>+<sp/>1.0;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>Array&lt;rows,<sp/>2&gt;<sp/>denumerator<sp/>=<sp/>Array&lt;rows,<sp/>2&gt;::Zero();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>denumerator.col(0)<sp/>=<sp/>2.0<sp/>*<sp/>(K<sp/>*<sp/>K<sp/>-<sp/>1.0)<sp/>/<sp/>poly;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>denumerator.col(1)<sp/>=<sp/>(K<sp/>*<sp/>K<sp/>-<sp/>sqrt(2.0)<sp/>*<sp/>K<sp/>+<sp/>1.0)<sp/>/<sp/>poly;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>denumerator;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rows&gt;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">Array&lt;rows,<sp/>2&gt;<sp/>LowPassFilter&lt;rows&gt;::init_num(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;&amp;<sp/>fc,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;&amp;<sp/>fs)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ArrayVector&lt;rows&gt;<sp/>K<sp/>=<sp/>(M_PI<sp/>*<sp/>fc.array()<sp/>/<sp/>fs.array()).tan();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ArrayVector&lt;rows&gt;<sp/>poly<sp/>=<sp/>K<sp/>*<sp/>K<sp/>+<sp/>sqrt(2.0)<sp/>*<sp/>K<sp/>+<sp/>1.0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>Array&lt;rows,<sp/>2&gt;<sp/>numerator<sp/>=<sp/>Array&lt;rows,<sp/>2&gt;::Zero();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>numerator.col(0)<sp/>=<sp/>K<sp/>*<sp/>K<sp/>/<sp/>poly;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>numerator.col(1)<sp/>=<sp/>2.0<sp/>*<sp/>numerator.col(0);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>numerator;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rows&gt;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">LowPassFilter&lt;rows&gt;::LowPassFilter(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;&amp;<sp/>cutoff_frequency,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;&amp;<sp/>sampling_frequency,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;&amp;<sp/>initial_value)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>:<sp/>sampling_frequency_(sampling_frequency),</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>denumerator_(LowPassFilter::init_den(cutoff_frequency,<sp/>sampling_frequency)),</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>numerator_(LowPassFilter::init_num(cutoff_frequency,<sp/>sampling_frequency)),</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>input_(initial_value.replicate(1,<sp/>2)),</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>output_(initial_value.replicate(1,<sp/>2))<sp/>{}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rows&gt;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">Vector&lt;rows&gt;<sp/>LowPassFilter&lt;rows&gt;::add(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;&amp;<sp/>sample)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ArrayVector&lt;rows&gt;<sp/>x2<sp/>=<sp/>input_.col(1);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>input_.col(1)<sp/>=<sp/>input_.col(0);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>input_.col(0)<sp/>=<sp/>sample;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;rows&gt;<sp/>out<sp/>=</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>numerator_.col(0)<sp/>*<sp/>x2<sp/>+</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>(numerator_<sp/>*<sp/>input_<sp/>-<sp/>denumerator_<sp/>*<sp/>output_).rowwise().sum();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>output_.col(1)<sp/>=<sp/>output_.col(0);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>output_.col(0)<sp/>=<sp/>out;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>agi</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="agilib/include/agilib/utils/low_pass_filter.hpp"/>
+  </compounddef>
+</doxygen>

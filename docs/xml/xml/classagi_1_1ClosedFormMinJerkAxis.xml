@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1ClosedFormMinJerkAxis" kind="class" language="C++" prot="public">
+    <compoundname>agi::ClosedFormMinJerkAxis</compoundname>
+    <basecompoundref refid="classagi_1_1Polynomial" prot="public" virt="non-virtual">agi::Polynomial&lt; void &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1ClosedFormMinJerkAxis_1aa73d9da1903834742dcb43c6d977038d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Polynomial&lt; Solver &gt;::Polynomial</definition>
+        <argsstring>()</argsstring>
+        <name>Polynomial</name>
+        <qualifiedname>agi::ClosedFormMinJerkAxis::Polynomial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="71" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ClosedFormMinJerkAxis_1a0e76b689c47932be7a5c78fe229a94ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Polynomial&lt; Solver &gt;::Polynomial</definition>
+        <argsstring>(const int order, const Vector&lt;&gt; &amp;weights=Vector&lt; 4 &gt;(0, 0, 0, 1), const int continuity=-1)</argsstring>
+        <name>Polynomial</name>
+        <qualifiedname>agi::ClosedFormMinJerkAxis::Polynomial</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>weights</declname>
+          <defval>Vector&lt; 4 &gt;(0, 0, 0, 1)</defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>continuity</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="71" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ClosedFormMinJerkAxis_1acb52b7975893d94f0558402b0ae89146" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Polynomial&lt; Solver &gt;::Polynomial</definition>
+        <argsstring>(const Polynomial &amp;rhs)=default</argsstring>
+        <name>Polynomial</name>
+        <qualifiedname>agi::ClosedFormMinJerkAxis::Polynomial</qualifiedname>
+        <param>
+          <type>const <ref refid="classagi_1_1Polynomial" kindref="compound">Polynomial</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="71" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ClosedFormMinJerkAxis_1a1edaaaa4f282ee85a55047ff50fdfe60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Polynomial&lt; void &gt;::Polynomial</definition>
+        <argsstring>(const int order, const Vector&lt;&gt; &amp;weights, const int continuity)=delete</argsstring>
+        <name>Polynomial</name>
+        <qualifiedname>agi::ClosedFormMinJerkAxis::Polynomial</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>weights</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>continuity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="71" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::Polynomial&lt; void &gt;</label>
+        <link refid="classagi_1_1Polynomial"/>
+      </node>
+      <node id="1">
+        <label>agi::ClosedFormMinJerkAxis</label>
+        <link refid="classagi_1_1ClosedFormMinJerkAxis"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::Polynomial&lt; void &gt;</label>
+        <link refid="classagi_1_1Polynomial"/>
+      </node>
+      <node id="1">
+        <label>agi::ClosedFormMinJerkAxis</label>
+        <link refid="classagi_1_1ClosedFormMinJerkAxis"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="69" column="1" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="69" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classagi_1_1Polynomial_1abaa490f0b3eedf314afb289baaaa8aa3" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>A</name></member>
+      <member refid="classagi_1_1Polynomial_1aa054f71281ba834050ca87e59f9e6c35" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>addConstraint</name></member>
+      <member refid="classagi_1_1Polynomial_1af05ed9dcf1591e17acb3f536e25c542e" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>alpha</name></member>
+      <member refid="classagi_1_1Polynomial_1aecf8f810203e1c8c25ddc550e021c6ca" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>b</name></member>
+      <member refid="classagi_1_1Polynomial_1acdd56696eeefa81cc04aae06c2481ed4" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>coeffs</name></member>
+      <member refid="classagi_1_1Polynomial_1a0e017706319eaeda382749329a3d1c53" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>eval</name></member>
+      <member refid="classagi_1_1Polynomial_1a9c504544314550bd44ea280353a938b4" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>exponents</name></member>
+      <member refid="classagi_1_1Polynomial_1a8bd3379f9730a32c9e2e04253c4b360f" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>H</name></member>
+      <member refid="classagi_1_1Polynomial_1a767277b276cfd51c71a191afe9edd708" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>operator()</name></member>
+      <member refid="classagi_1_1Polynomial_1a84aaba9430b92f17eefa8bfa04427cc0" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>order</name></member>
+      <member refid="classagi_1_1Polynomial_1a83da6fd72cc7344de962f0bd5fcaf4fe" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>polyMatrix</name></member>
+      <member refid="classagi_1_1Polynomial_1a7ce7bbf53fb9a0cd56645ae8f6899fd1" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>polyMatrixFromTime</name></member>
+      <member refid="classagi_1_1ClosedFormMinJerkAxis_1aa73d9da1903834742dcb43c6d977038d" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>Polynomial</name></member>
+      <member refid="classagi_1_1ClosedFormMinJerkAxis_1a0e76b689c47932be7a5c78fe229a94ca" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>Polynomial</name></member>
+      <member refid="classagi_1_1ClosedFormMinJerkAxis_1acb52b7975893d94f0558402b0ae89146" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>Polynomial</name></member>
+      <member refid="classagi_1_1ClosedFormMinJerkAxis_1a1edaaaa4f282ee85a55047ff50fdfe60" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>Polynomial</name></member>
+      <member refid="classagi_1_1Polynomial_1a10c8ea0fd666b4b2517335b96a38db4b" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>reset</name></member>
+      <member refid="classagi_1_1Polynomial_1a36565a5636a8cecd85f22bc0e4526787" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>scale</name></member>
+      <member refid="classagi_1_1Polynomial_1aa1523174af4e1c0716f3cdb2519487a5" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>size</name></member>
+      <member refid="classagi_1_1Polynomial_1ad637a1a10f8b82155c26aaccd733ef96" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>solve</name></member>
+      <member refid="classagi_1_1Polynomial_1accb1561b0bdd3b6e3017ce0b7a35e243" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>solve</name></member>
+      <member refid="classagi_1_1Polynomial_1ad989fcb15315e89fd807f04b15651fd3" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>solved</name></member>
+      <member refid="classagi_1_1Polynomial_1ac6585aaf87be7f0b894db0a460d01a92" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>tauFromTime</name></member>
+      <member refid="classagi_1_1Polynomial_1a27122de3fd8af98573171ae8528b827c" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>tauVector</name></member>
+      <member refid="classagi_1_1Polynomial_1a23d93251f45b9fbe7fedf43f0e1aa23d" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>tauVectorFromTime</name></member>
+      <member refid="classagi_1_1Polynomial_1a384a67f74752e0fe56a367308c0767bd" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkAxis</scope><name>~Polynomial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1Pose" kind="struct" language="C++" prot="public">
+    <compoundname>agi::Pose</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structagi_1_1Pose_1ae782dd13403c1b9ab3e284759e20af08" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::Pose::SIZE</definition>
+        <argsstring></argsstring>
+        <name>SIZE</name>
+        <qualifiedname>agi::Pose::SIZE</qualifiedname>
+        <initializer>= 7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/pose.hpp" line="13" column="24" bodyfile="agilib/include/agilib/types/pose.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1Pose_1ac5506b099cc598276326b60c1a5bb80b" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Pose::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <qualifiedname>agi::Pose::t</qualifiedname>
+        <initializer>{NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/pose.hpp" line="20" column="10" bodyfile="agilib/include/agilib/types/pose.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Pose_1a71e6c20151181fdb8ecbccc34fde43c6" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::Pose::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <qualifiedname>agi::Pose::position</qualifiedname>
+        <initializer>{NAN, NAN, NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/pose.hpp" line="21" column="10" bodyfile="agilib/include/agilib/types/pose.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Pose_1a71393e247708efe298abb9fb726d56e0" prot="public" static="no" mutable="no">
+        <type>Quaternion</type>
+        <definition>Quaternion agi::Pose::attitude</definition>
+        <argsstring></argsstring>
+        <name>attitude</name>
+        <qualifiedname>agi::Pose::attitude</qualifiedname>
+        <initializer>{NAN, NAN, NAN, NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/pose.hpp" line="22" column="14" bodyfile="agilib/include/agilib/types/pose.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1Pose_1a801c06c962538709ced30afe11551c42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::Pose::Pose</definition>
+        <argsstring>()=default</argsstring>
+        <name>Pose</name>
+        <qualifiedname>agi::Pose::Pose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/pose.hpp" line="9" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Pose_1a0d818d651c2338274a46079df061208d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Pose::Pose</definition>
+        <argsstring>(const Pose &amp;)=default</argsstring>
+        <name>Pose</name>
+        <qualifiedname>agi::Pose::Pose</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Pose" kindref="compound">Pose</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/pose.hpp" line="10" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Pose_1a89827774733dd0d8fe3b55afe127f128" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Pose::~Pose</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Pose</name>
+        <qualifiedname>agi::Pose::~Pose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/pose.hpp" line="11" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Pose_1aeaf179859d839a463271f8d17c3d4b88" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pose::valid</definition>
+        <argsstring>() const</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::Pose::valid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/pose.hpp" line="15" column="8" bodyfile="agilib/include/agilib/types/pose.hpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/types/pose.hpp" line="7" column="1" bodyfile="agilib/include/agilib/types/pose.hpp" bodystart="7" bodyend="23"/>
+    <listofallmembers>
+      <member refid="structagi_1_1Pose_1a71393e247708efe298abb9fb726d56e0" prot="public" virt="non-virtual"><scope>agi::Pose</scope><name>attitude</name></member>
+      <member refid="structagi_1_1Pose_1a801c06c962538709ced30afe11551c42" prot="public" virt="non-virtual"><scope>agi::Pose</scope><name>Pose</name></member>
+      <member refid="structagi_1_1Pose_1a0d818d651c2338274a46079df061208d" prot="public" virt="non-virtual"><scope>agi::Pose</scope><name>Pose</name></member>
+      <member refid="structagi_1_1Pose_1a71e6c20151181fdb8ecbccc34fde43c6" prot="public" virt="non-virtual"><scope>agi::Pose</scope><name>position</name></member>
+      <member refid="structagi_1_1Pose_1ae782dd13403c1b9ab3e284759e20af08" prot="public" virt="non-virtual"><scope>agi::Pose</scope><name>SIZE</name></member>
+      <member refid="structagi_1_1Pose_1ac5506b099cc598276326b60c1a5bb80b" prot="public" virt="non-virtual"><scope>agi::Pose</scope><name>t</name></member>
+      <member refid="structagi_1_1Pose_1aeaf179859d839a463271f8d17c3d4b88" prot="public" virt="non-virtual"><scope>agi::Pose</scope><name>valid</name></member>
+      <member refid="structagi_1_1Pose_1a89827774733dd0d8fe3b55afe127f128" prot="public" virt="non-virtual"><scope>agi::Pose</scope><name>~Pose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

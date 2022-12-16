@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1ScopedTicToc" kind="class" language="C++" prot="public">
+    <compoundname>agi::ScopedTicToc</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1ScopedTicToc_1afbc01ff7203fdcb12864bad02f0e0ae0" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Timer" kindref="compound">Timer</ref> &amp;</type>
+        <definition>Timer&amp; agi::ScopedTicToc::timer_</definition>
+        <argsstring></argsstring>
+        <name>timer_</name>
+        <qualifiedname>agi::ScopedTicToc::timer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="126" column="9" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1ScopedTicToc_1aecacb5eaad030cb7269e9e6f97757a6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::ScopedTicToc::ScopedTicToc</definition>
+        <argsstring>(Timer &amp;timer)</argsstring>
+        <name>ScopedTicToc</name>
+        <qualifiedname>agi::ScopedTicToc::ScopedTicToc</qualifiedname>
+        <param>
+          <type><ref refid="classagi_1_1Timer" kindref="compound">Timer</ref> &amp;</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="122" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ScopedTicToc_1af090b4b626ee054ded3b06df0e1d5427" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::ScopedTicToc::~ScopedTicToc</definition>
+        <argsstring>()</argsstring>
+        <name>~ScopedTicToc</name>
+        <qualifiedname>agi::ScopedTicToc::~ScopedTicToc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="123" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/utils/timer.hpp" line="120" column="1" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="120" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classagi_1_1ScopedTicToc_1aecacb5eaad030cb7269e9e6f97757a6a" prot="public" virt="non-virtual"><scope>agi::ScopedTicToc</scope><name>ScopedTicToc</name></member>
+      <member refid="classagi_1_1ScopedTicToc_1afbc01ff7203fdcb12864bad02f0e0ae0" prot="private" virt="non-virtual"><scope>agi::ScopedTicToc</scope><name>timer_</name></member>
+      <member refid="classagi_1_1ScopedTicToc_1af090b4b626ee054ded3b06df0e1d5427" prot="public" virt="non-virtual"><scope>agi::ScopedTicToc</scope><name>~ScopedTicToc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

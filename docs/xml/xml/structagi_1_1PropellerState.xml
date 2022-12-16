@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1PropellerState" kind="struct" language="C++" prot="public">
+    <compoundname>agi::PropellerState</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1ad888724959a29b249ec594b12c4e69dd" prot="public" static="no" mutable="no">
+        <type><ref refid="structagi_1_1BEMParameters" kindref="compound">BEMParameters</ref></type>
+        <definition>BEMParameters agi::PropellerState::param_</definition>
+        <argsstring></argsstring>
+        <name>param_</name>
+        <qualifiedname>agi::PropellerState::param_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="16" column="17" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1a0d25179d93ee0560079daeeeae5188b2" prot="public" static="no" mutable="no">
+        <type>ArrayVector&lt; 3 &gt;</type>
+        <definition>ArrayVector&lt;3&gt; agi::PropellerState::flu_conv_frd_</definition>
+        <argsstring></argsstring>
+        <name>flu_conv_frd_</name>
+        <qualifiedname>agi::PropellerState::flu_conv_frd_</qualifiedname>
+        <initializer>{1, -1, -1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="17" column="15" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1a6e171da12bad2e7682de91ef78bbba07" prot="public" static="no" mutable="no">
+        <type>ArrayVector&lt; QS::NMOT &gt;</type>
+        <definition>ArrayVector&lt;QS::NMOT&gt; agi::PropellerState::omega_mot_</definition>
+        <argsstring></argsstring>
+        <name>omega_mot_</name>
+        <qualifiedname>agi::PropellerState::omega_mot_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="18" column="15" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1a967932098fbe8344b6ff2164f844c2e4" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::PropellerState::vel_</definition>
+        <argsstring></argsstring>
+        <name>vel_</name>
+        <qualifiedname>agi::PropellerState::vel_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="19" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1a13f5ab96de052a2cf172b0d0649968b3" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::PropellerState::w_</definition>
+        <argsstring></argsstring>
+        <name>w_</name>
+        <qualifiedname>agi::PropellerState::w_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="20" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1a1a53a5cee850e6580075e02515054cbe" prot="public" static="no" mutable="no">
+        <type>Matrix&lt; 3, 3 &gt;</type>
+        <definition>Matrix&lt;3, 3&gt; agi::PropellerState::rot_</definition>
+        <argsstring></argsstring>
+        <name>rot_</name>
+        <qualifiedname>agi::PropellerState::rot_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="21" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1a48eff99a0431685e06d5a008010deb6f" prot="public" static="no" mutable="no">
+        <type>Matrix&lt; 3, QS::NMOT &gt;</type>
+        <definition>Matrix&lt;3, QS::NMOT&gt; agi::PropellerState::velocity_</definition>
+        <argsstring></argsstring>
+        <name>velocity_</name>
+        <qualifiedname>agi::PropellerState::velocity_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="22" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1a122c18d0231964093517bd7cb404053c" prot="public" static="no" mutable="no">
+        <type>Vector&lt; QS::NMOT &gt;</type>
+        <definition>Vector&lt;QS::NMOT&gt; agi::PropellerState::vhor_</definition>
+        <argsstring></argsstring>
+        <name>vhor_</name>
+        <qualifiedname>agi::PropellerState::vhor_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="24" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1a64a29bceede27d8c68909c0ccb80b9ee" prot="public" static="no" mutable="no">
+        <type>Vector&lt; QS::NMOT &gt;</type>
+        <definition>Vector&lt;QS::NMOT&gt; agi::PropellerState::vver_</definition>
+        <argsstring></argsstring>
+        <name>vver_</name>
+        <qualifiedname>agi::PropellerState::vver_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="25" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1ac558db78b14be70fd7277a324a0d6ebe" prot="public" static="no" mutable="no">
+        <type>Vector&lt; QS::NMOT &gt;</type>
+        <definition>Vector&lt;QS::NMOT&gt; agi::PropellerState::vtot_</definition>
+        <argsstring></argsstring>
+        <name>vtot_</name>
+        <qualifiedname>agi::PropellerState::vtot_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="26" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1adbdcacf63fe266fa07a9fe2a1033d77c" prot="public" static="no" mutable="no">
+        <type>ArrayVector&lt; QS::NMOT &gt;</type>
+        <definition>ArrayVector&lt;QS::NMOT&gt; agi::PropellerState::alpha_s_</definition>
+        <argsstring></argsstring>
+        <name>alpha_s_</name>
+        <qualifiedname>agi::PropellerState::alpha_s_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="27" column="15" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1a845e6c42058bf3b4fd6110bfa8a1934a" prot="public" static="no" mutable="no">
+        <type>Vector&lt; QS::NMOT &gt;</type>
+        <definition>Vector&lt;QS::NMOT&gt; agi::PropellerState::mu_</definition>
+        <argsstring></argsstring>
+        <name>mu_</name>
+        <qualifiedname>agi::PropellerState::mu_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="28" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1a7f5df32b80614a06351708e7bb0beb4b" prot="public" static="no" mutable="no">
+        <type>Vector&lt; QS::NMOT &gt;</type>
+        <definition>Vector&lt;QS::NMOT&gt; agi::PropellerState::K_</definition>
+        <argsstring></argsstring>
+        <name>K_</name>
+        <qualifiedname>agi::PropellerState::K_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="29" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1ab74928903e8bbc19a9affb49bc0e13db" prot="public" static="no" mutable="no">
+        <type>Vector&lt; QS::NMOT &gt;</type>
+        <definition>Vector&lt;QS::NMOT&gt; agi::PropellerState::vind_</definition>
+        <argsstring></argsstring>
+        <name>vind_</name>
+        <qualifiedname>agi::PropellerState::vind_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="32" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1a57d54b0becf33000459615a628584dbf" prot="public" static="no" mutable="no">
+        <type>Vector&lt; QS::NMOT &gt;</type>
+        <definition>Vector&lt;QS::NMOT&gt; agi::PropellerState::a0_</definition>
+        <argsstring></argsstring>
+        <name>a0_</name>
+        <qualifiedname>agi::PropellerState::a0_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="33" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1ab08682d6a3a3438fc12f71b79c785803" prot="public" static="no" mutable="no">
+        <type>Vector&lt; QS::NMOT &gt;</type>
+        <definition>Vector&lt;QS::NMOT&gt; agi::PropellerState::a1s_</definition>
+        <argsstring></argsstring>
+        <name>a1s_</name>
+        <qualifiedname>agi::PropellerState::a1s_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="34" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1a985e9c643e0c3dab6e555974d51e7f28" prot="public" static="no" mutable="no">
+        <type>Vector&lt; QS::NMOT &gt;</type>
+        <definition>Vector&lt;QS::NMOT&gt; agi::PropellerState::b1s_</definition>
+        <argsstring></argsstring>
+        <name>b1s_</name>
+        <qualifiedname>agi::PropellerState::b1s_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="35" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1a4109acbe2d316798e8d0afa455f1aae7" prot="public" static="no" mutable="no">
+        <type>ArrayVector&lt; QS::NMOT &gt;</type>
+        <definition>ArrayVector&lt;QS::NMOT&gt; agi::PropellerState::thrust_</definition>
+        <argsstring></argsstring>
+        <name>thrust_</name>
+        <qualifiedname>agi::PropellerState::thrust_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="36" column="15" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1ae55c553e71eef1fb4a37ac02a7f8bdea" prot="public" static="no" mutable="no">
+        <type>ArrayVector&lt; QS::NMOT &gt;</type>
+        <definition>ArrayVector&lt;QS::NMOT&gt; agi::PropellerState::torque_</definition>
+        <argsstring></argsstring>
+        <name>torque_</name>
+        <qualifiedname>agi::PropellerState::torque_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="37" column="15" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerState_1aa54a829f349f19a4704829a17b41a3f6" prot="public" static="no" mutable="no">
+        <type>ArrayVector&lt; QS::NMOT &gt;</type>
+        <definition>ArrayVector&lt;QS::NMOT&gt; agi::PropellerState::hforce_</definition>
+        <argsstring></argsstring>
+        <name>hforce_</name>
+        <qualifiedname>agi::PropellerState::hforce_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="38" column="15" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1PropellerState_1a5a88dc712608c34bfbd388efa0609edc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::PropellerState::PropellerState</definition>
+        <argsstring>(const BEMParameters &amp;params)</argsstring>
+        <name>PropellerState</name>
+        <qualifiedname>agi::PropellerState::PropellerState</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1BEMParameters" kindref="compound">BEMParameters</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="14" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1PropellerState_1a3505ceabce9d9ec2c04254dc6ebfa775" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::PropellerState::update</definition>
+        <argsstring>(const Ref&lt; const ArrayVector&lt; QS::SIZE &gt; &gt; &amp;state, const Ref&lt; const Matrix&lt; 3, 4 &gt; &gt; &amp;t_BM)</argsstring>
+        <name>update</name>
+        <qualifiedname>agi::PropellerState::update</qualifiedname>
+        <param>
+          <type>const Ref&lt; const ArrayVector&lt; QS::SIZE &gt; &gt; &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const Ref&lt; const Matrix&lt; 3, 4 &gt; &gt; &amp;</type>
+          <declname>t_BM</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="40" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1PropellerState_1a1bf6f7aced6ef2e00399e445369251dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::PropellerState::calculateFlapping</definition>
+        <argsstring>()</argsstring>
+        <name>calculateFlapping</name>
+        <qualifiedname>agi::PropellerState::calculateFlapping</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="43" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structagi_1_1PropellerState_1a199f9997980599913187c1c09d19c7e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const PropellerState &amp;s)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::PropellerState::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1PropellerState" kindref="compound">PropellerState</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="44" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::BEMParameters</label>
+        <link refid="structagi_1_1BEMParameters"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="1">
+        <label>agi::PropellerState</label>
+        <link refid="structagi_1_1PropellerState"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>param_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/simulator/bem/propeller_state.hpp" line="12" column="1" bodyfile="agilib/include/agilib/simulator/bem/propeller_state.hpp" bodystart="12" bodyend="45"/>
+    <listofallmembers>
+      <member refid="structagi_1_1PropellerState_1a57d54b0becf33000459615a628584dbf" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>a0_</name></member>
+      <member refid="structagi_1_1PropellerState_1ab08682d6a3a3438fc12f71b79c785803" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>a1s_</name></member>
+      <member refid="structagi_1_1PropellerState_1adbdcacf63fe266fa07a9fe2a1033d77c" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>alpha_s_</name></member>
+      <member refid="structagi_1_1PropellerState_1a985e9c643e0c3dab6e555974d51e7f28" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>b1s_</name></member>
+      <member refid="structagi_1_1PropellerState_1a1bf6f7aced6ef2e00399e445369251dd" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>calculateFlapping</name></member>
+      <member refid="structagi_1_1PropellerState_1a0d25179d93ee0560079daeeeae5188b2" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>flu_conv_frd_</name></member>
+      <member refid="structagi_1_1PropellerState_1aa54a829f349f19a4704829a17b41a3f6" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>hforce_</name></member>
+      <member refid="structagi_1_1PropellerState_1a7f5df32b80614a06351708e7bb0beb4b" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>K_</name></member>
+      <member refid="structagi_1_1PropellerState_1a845e6c42058bf3b4fd6110bfa8a1934a" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>mu_</name></member>
+      <member refid="structagi_1_1PropellerState_1a6e171da12bad2e7682de91ef78bbba07" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>omega_mot_</name></member>
+      <member refid="structagi_1_1PropellerState_1a199f9997980599913187c1c09d19c7e2" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structagi_1_1PropellerState_1ad888724959a29b249ec594b12c4e69dd" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>param_</name></member>
+      <member refid="structagi_1_1PropellerState_1a5a88dc712608c34bfbd388efa0609edc" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>PropellerState</name></member>
+      <member refid="structagi_1_1PropellerState_1a1a53a5cee850e6580075e02515054cbe" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>rot_</name></member>
+      <member refid="structagi_1_1PropellerState_1a4109acbe2d316798e8d0afa455f1aae7" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>thrust_</name></member>
+      <member refid="structagi_1_1PropellerState_1ae55c553e71eef1fb4a37ac02a7f8bdea" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>torque_</name></member>
+      <member refid="structagi_1_1PropellerState_1a3505ceabce9d9ec2c04254dc6ebfa775" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>update</name></member>
+      <member refid="structagi_1_1PropellerState_1a967932098fbe8344b6ff2164f844c2e4" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>vel_</name></member>
+      <member refid="structagi_1_1PropellerState_1a48eff99a0431685e06d5a008010deb6f" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>velocity_</name></member>
+      <member refid="structagi_1_1PropellerState_1a122c18d0231964093517bd7cb404053c" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>vhor_</name></member>
+      <member refid="structagi_1_1PropellerState_1ab74928903e8bbc19a9affb49bc0e13db" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>vind_</name></member>
+      <member refid="structagi_1_1PropellerState_1ac558db78b14be70fd7277a324a0d6ebe" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>vtot_</name></member>
+      <member refid="structagi_1_1PropellerState_1a64a29bceede27d8c68909c0ccb80b9ee" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>vver_</name></member>
+      <member refid="structagi_1_1PropellerState_1a13f5ab96de052a2cf172b0d0649968b3" prot="public" virt="non-virtual"><scope>agi::PropellerState</scope><name>w_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

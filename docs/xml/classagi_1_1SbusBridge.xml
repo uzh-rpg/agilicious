@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1SbusBridge" kind="class" language="C++" prot="public">
+    <compoundname>agi::SbusBridge</compoundname>
+    <basecompoundref refid="classagi_1_1SerialBridge" prot="public" virt="non-virtual">agi::SerialBridge</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classagi_1_1SbusBridge_1a9425b0c8eef18ecafb54c16f3925f45b" prot="protected" static="no" mutable="no">
+        <type><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+        <definition>Quadrotor agi::SbusBridge::quad_</definition>
+        <argsstring></argsstring>
+        <name>quad_</name>
+        <qualifiedname>agi::SbusBridge::quad_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_bridge.hpp" line="18" column="13" bodyfile="agilib/include/agilib/bridge/sbus/sbus_bridge.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SbusBridge_1aab30ba433e6c7a73908ffacb38386dc5" prot="protected" static="no" mutable="no">
+        <type><ref refid="classagi_1_1SbusEncoding" kindref="compound">SbusEncoding</ref></type>
+        <definition>SbusEncoding agi::SbusBridge::encoding_</definition>
+        <argsstring></argsstring>
+        <name>encoding_</name>
+        <qualifiedname>agi::SbusBridge::encoding_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_bridge.hpp" line="19" column="16" bodyfile="agilib/include/agilib/bridge/sbus/sbus_bridge.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1SbusBridge_1ab647de11df15a9b1409fa1d5b6bbd791" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::SbusBridge::SbusBridge</definition>
+        <argsstring>(const Quadrotor &amp;quad, const SbusParams &amp;params, const TimeFunction time_function)</argsstring>
+        <name>SbusBridge</name>
+        <qualifiedname>agi::SbusBridge::SbusBridge</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1SbusParams" kindref="compound">SbusParams</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>const TimeFunction</type>
+          <declname>time_function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_bridge.hpp" line="11" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classagi_1_1SbusBridge_1a044f2325db32c242b781d1b39895374e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::SbusBridge::sendCommand</definition>
+        <argsstring>(const Command &amp;command, const bool active) override</argsstring>
+        <name>sendCommand</name>
+        <qualifiedname>agi::SbusBridge::sendCommand</qualifiedname>
+        <reimplements refid="classagi_1_1SerialBridge_1a983931a393cb470b4984fcc07f916160">sendCommand</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_bridge.hpp" line="16" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SbusBridge_1a93790672ec3ad0fa79d9a1a01165853d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::SerialBridge::sendCommand</definition>
+        <argsstring>(const Command &amp;command, const bool active, const MsgEncoding &amp;encoding)</argsstring>
+        <name>sendCommand</name>
+        <qualifiedname>agi::SbusBridge::sendCommand</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>active</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classagi_1_1MsgEncoding" kindref="compound">MsgEncoding</ref> &amp;</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_bridge.hpp" line="15" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SbusBridge_1a983931a393cb470b4984fcc07f916160" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::SerialBridge::sendCommand</definition>
+        <argsstring>(const Command &amp;command, const bool active)=0</argsstring>
+        <name>sendCommand</name>
+        <qualifiedname>agi::SbusBridge::sendCommand</qualifiedname>
+        <reimplements refid="classagi_1_1SerialBridge_1a983931a393cb470b4984fcc07f916160">sendCommand</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_bridge.hpp" line="15" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>agi::Module&lt; BridgeBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="3">
+        <label>agi::BridgeBase</label>
+        <link refid="classagi_1_1BridgeBase"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::SbusBridge</label>
+        <link refid="classagi_1_1SbusBridge"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::SerialBridge</label>
+        <link refid="classagi_1_1SerialBridge"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>agi::Median&lt; Scalar, 15 &gt;</label>
+        <link refid="classagi_1_1Median"/>
+      </node>
+      <node id="4">
+        <label>agi::Module&lt; BridgeBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>agi::AgiWatchdog</label>
+        <link refid="classagi_1_1AgiWatchdog"/>
+      </node>
+      <node id="3">
+        <label>agi::BridgeBase</label>
+        <link refid="classagi_1_1BridgeBase"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>timeout_guard_thread_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>timeout_wait_mutex_</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>voltage_</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>feedback_callbacks_</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>voltage_watchdog_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+      <node id="18">
+        <label>agi::MsgEncoding</label>
+        <link refid="classagi_1_1MsgEncoding"/>
+      </node>
+      <node id="16">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="15">
+        <label>agi::Quadrotor</label>
+        <link refid="structagi_1_1Quadrotor"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::SbusBridge</label>
+        <link refid="classagi_1_1SbusBridge"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>quad_</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>encoding_</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>agi::SbusEncoding</label>
+        <link refid="classagi_1_1SbusEncoding"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::SerialBridge</label>
+        <link refid="classagi_1_1SerialBridge"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>serial_settings_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>serial_port_</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>agi::SerialPort</label>
+        <link refid="classagi_1_1SerialPort"/>
+      </node>
+      <node id="11">
+        <label>agi::SerialSettings</label>
+        <link refid="classagi_1_1SerialSettings"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>port</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="7">
+        <label>std::mutex</label>
+      </node>
+      <node id="12">
+        <label>std::string</label>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::thread</label>
+      </node>
+      <node id="9">
+        <label>std::vector&lt; FeedbackCallbackFunction &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/bridge/sbus/sbus_bridge.hpp" line="8" column="1" bodyfile="agilib/include/agilib/bridge/sbus/sbus_bridge.hpp" bodystart="8" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classagi_1_1BridgeBase_1afd31bc76953acd55cd0a3c4b491494f9" prot="public" virt="virtual"><scope>agi::SbusBridge</scope><name>activate</name></member>
+      <member refid="classagi_1_1BridgeBase_1a8d177f74b81f32ed171be4d79739cdbb" prot="public" virt="virtual"><scope>agi::SbusBridge</scope><name>active</name></member>
+      <member refid="classagi_1_1BridgeBase_1a6d7be2e593e8ad7e904ffaaa30af4a73" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>active_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a7b767d39e6996e8f5e9f483dce9f85ee" prot="public" virt="non-virtual"><scope>agi::SbusBridge</scope><name>BridgeBase</name></member>
+      <member refid="classagi_1_1SerialBridge_1a1c33fbbcbdd4950e68461e959efaaefd" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>BUFFER_SIZE</name></member>
+      <member refid="classagi_1_1BridgeBase_1a284aa8921bedd30358858e0bc3b2f341" prot="public" virt="virtual"><scope>agi::SbusBridge</scope><name>deactivate</name></member>
+      <member refid="classagi_1_1SbusBridge_1aab30ba433e6c7a73908ffacb38386dc5" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>encoding_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a7a9085ccdd682005a9224e19a5a07292" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>feedback_callbacks_</name></member>
+      <member refid="classagi_1_1BridgeBase_1ac335711e42eeda57b58d2603113ce9e1" prot="public" virt="virtual"><scope>agi::SbusBridge</scope><name>getFeedback</name></member>
+      <member refid="classagi_1_1BridgeBase_1a309ce37cfabf6336cbca8f7f58c68e15" prot="public" virt="virtual"><scope>agi::SbusBridge</scope><name>getVoltage</name></member>
+      <member refid="classagi_1_1BridgeBase_1a08ef3805447431194f2dbc8f11a60853" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>got_command_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a0916b1f0c159300185276425294da24c" prot="protected" virt="virtual"><scope>agi::SbusBridge</scope><name>guardTimeout</name></member>
+      <member refid="classagi_1_1SerialBridge_1aa8694d5fe2f372263e92c6e200671f51" prot="public" virt="non-virtual"><scope>agi::SbusBridge</scope><name>isOpen</name></member>
+      <member refid="classagi_1_1BridgeBase_1ad77002f9f497f400fd980365343c5d19" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>latest_raw_voltage</name></member>
+      <member refid="classagi_1_1BridgeBase_1ab5239a44374db716072b40b0083b816d" prot="public" virt="virtual"><scope>agi::SbusBridge</scope><name>locked</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::SbusBridge</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::SbusBridge</scope><name>Module</name></member>
+      <member refid="classagi_1_1BridgeBase_1a4a4e32cc85a72f21397f49f96d89eefe" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>n_max_timeouts_</name></member>
+      <member refid="classagi_1_1BridgeBase_1af3168e19d234f134f99d04565de9fdcb" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>n_timeouts_</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::SbusBridge</scope><name>name</name></member>
+      <member refid="classagi_1_1SbusBridge_1a9425b0c8eef18ecafb54c16f3925f45b" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>quad_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a08cf8bd3c018ebd5d470e39c7879042b" prot="public" virt="virtual"><scope>agi::SbusBridge</scope><name>registerFeedbackCallback</name></member>
+      <member refid="classagi_1_1BridgeBase_1a1b85d2f08af19f830ae3831196c8b6d3" prot="public" virt="virtual"><scope>agi::SbusBridge</scope><name>reset</name></member>
+      <member refid="classagi_1_1SbusBridge_1ab647de11df15a9b1409fa1d5b6bbd791" prot="public" virt="non-virtual"><scope>agi::SbusBridge</scope><name>SbusBridge</name></member>
+      <member refid="classagi_1_1BridgeBase_1a3f3c9a776fa3e37deef0a9d374034598" prot="public" virt="virtual"><scope>agi::SbusBridge</scope><name>send</name></member>
+      <member refid="classagi_1_1SbusBridge_1a044f2325db32c242b781d1b39895374e" prot="protected" virt="virtual"><scope>agi::SbusBridge</scope><name>sendCommand</name></member>
+      <member refid="classagi_1_1SbusBridge_1a93790672ec3ad0fa79d9a1a01165853d" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>sendCommand</name></member>
+      <member refid="classagi_1_1SbusBridge_1a983931a393cb470b4984fcc07f916160" prot="protected" virt="virtual"><scope>agi::SbusBridge</scope><name>sendCommand</name></member>
+      <member refid="classagi_1_1SerialBridge_1a32c4979a7cf0a87f80d72d703caa5b4b" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>serial_port_</name></member>
+      <member refid="classagi_1_1SerialBridge_1aadcb3f51a68f64d355f173f20e2011c3" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>serial_settings_</name></member>
+      <member refid="classagi_1_1SerialBridge_1ae69e4b6f8e096ddcd0b80cf20941ed9c" prot="public" virt="non-virtual"><scope>agi::SbusBridge</scope><name>SerialBridge</name></member>
+      <member refid="classagi_1_1BridgeBase_1ad3bce004bcd5793593c2c82c993ad78e" prot="public" virt="virtual"><scope>agi::SbusBridge</scope><name>setVoltage</name></member>
+      <member refid="classagi_1_1BridgeBase_1a65a373095663f452389cec6d0f3aa246" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>shutdown_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a41dab99a5fb5b078216bb9c0249c9fbc" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>time_function_</name></member>
+      <member refid="classagi_1_1BridgeBase_1aa2700147fe72b302d6f5bc4a2fe82e56" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>timeout_</name></member>
+      <member refid="classagi_1_1BridgeBase_1ac7b6ee43afd1d37eec292571825a1aa8" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>timeout_guard_thread_</name></member>
+      <member refid="classagi_1_1BridgeBase_1ab7d743b92e448e4a926cbddb295e8397" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>timeout_reset_cv_</name></member>
+      <member refid="classagi_1_1BridgeBase_1abc9cc2c85e79900b8fe5c4b75928617a" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>timeout_wait_mutex_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a118750a50c765712150c8631f2e48cf1" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>voltage_</name></member>
+      <member refid="classagi_1_1BridgeBase_1af8ee6b8f8cf819ef56217be2ac65e26d" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>voltage_watchdog_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a3a00812d2c1350bbe38a393962e815af" prot="protected" virt="non-virtual"><scope>agi::SbusBridge</scope><name>voltageTimeout</name></member>
+      <member refid="classagi_1_1BridgeBase_1a756267559a92cbac1f643bab3db3af79" prot="public" virt="virtual"><scope>agi::SbusBridge</scope><name>~BridgeBase</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::SbusBridge</scope><name>~Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

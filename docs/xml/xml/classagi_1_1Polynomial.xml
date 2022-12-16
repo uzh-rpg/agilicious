@@ -1,0 +1,746 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1Polynomial" kind="class" language="C++" prot="public">
+    <compoundname>agi::Polynomial</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Solver</type>
+        <defval>Eigen::HouseholderQR&lt;Matrix&lt;&gt;&gt;</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1Polynomial_1a20d5e166dddd87c611444d7fc762af35" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int agi::Polynomial&lt; Solver &gt;::order_</definition>
+        <argsstring></argsstring>
+        <name>order_</name>
+        <qualifiedname>agi::Polynomial::order_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="45" column="13" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Polynomial_1a4e5e92e9ad6d0a82b31b883bbf92230d" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int agi::Polynomial&lt; Solver &gt;::continuity_</definition>
+        <argsstring></argsstring>
+        <name>continuity_</name>
+        <qualifiedname>agi::Polynomial::continuity_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="46" column="13" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Polynomial_1ac1709a58902dee224433c27a9d7c58b9" prot="private" static="no" mutable="no">
+        <type>Vector</type>
+        <definition>Vector agi::Polynomial&lt; Solver &gt;::c_</definition>
+        <argsstring></argsstring>
+        <name>c_</name>
+        <qualifiedname>agi::Polynomial::c_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="47" column="4" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Polynomial_1a1764d49d55311cd331b1b5ff838d534e" prot="private" static="no" mutable="no">
+        <type>const Array</type>
+        <definition>const Array agi::Polynomial&lt; Solver &gt;::exponents_</definition>
+        <argsstring></argsstring>
+        <name>exponents_</name>
+        <qualifiedname>agi::Polynomial::exponents_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="48" column="10" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Polynomial_1af8909b24a47aef5fb1f302dd726abe92" prot="private" static="no" mutable="no">
+        <type>const Array</type>
+        <definition>const Array agi::Polynomial&lt; Solver &gt;::alpha_</definition>
+        <argsstring></argsstring>
+        <name>alpha_</name>
+        <qualifiedname>agi::Polynomial::alpha_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="49" column="10" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Polynomial_1a4c29495c75dd62502b44f1ca3afe8971" prot="private" static="no" mutable="no">
+        <type>Vector</type>
+        <definition>Vector agi::Polynomial&lt; Solver &gt;::weights_</definition>
+        <argsstring></argsstring>
+        <name>weights_</name>
+        <qualifiedname>agi::Polynomial::weights_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="51" column="4" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Polynomial_1af7dd72bb4ec890b0fa5f9e35cf033567" prot="private" static="no" mutable="no">
+        <type>Matrix</type>
+        <definition>Matrix agi::Polynomial&lt; Solver &gt;::H_</definition>
+        <argsstring></argsstring>
+        <name>H_</name>
+        <qualifiedname>agi::Polynomial::H_</qualifiedname>
+        <initializer>= Matrix&lt;&gt;::Constant(1, order_, NAN)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="52" column="4" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Polynomial_1a15b2b1ccd1e82e9a7f8bdf92f902104f" prot="private" static="no" mutable="no">
+        <type>Matrix</type>
+        <definition>Matrix agi::Polynomial&lt; Solver &gt;::A_</definition>
+        <argsstring></argsstring>
+        <name>A_</name>
+        <qualifiedname>agi::Polynomial::A_</qualifiedname>
+        <initializer>= Matrix&lt;&gt;::Constant(1, order_, NAN)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="53" column="4" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Polynomial_1a0329b21e59484a2ef53a2aba60c24900" prot="private" static="no" mutable="no">
+        <type>Vector</type>
+        <definition>Vector agi::Polynomial&lt; Solver &gt;::b_</definition>
+        <argsstring></argsstring>
+        <name>b_</name>
+        <qualifiedname>agi::Polynomial::b_</qualifiedname>
+        <initializer>= Vector&lt;&gt;::Constant(1, NAN)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="54" column="4" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Polynomial_1ae6476725b8fe40366b067f25d92653c9" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Polynomial&lt; Solver &gt;::t_scale_</definition>
+        <argsstring></argsstring>
+        <name>t_scale_</name>
+        <qualifiedname>agi::Polynomial::t_scale_</qualifiedname>
+        <initializer>{1.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="56" column="10" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Polynomial_1a3fb0191bfcc63c30fb5f310a97bb0387" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Polynomial&lt; Solver &gt;::t_offset_</definition>
+        <argsstring></argsstring>
+        <name>t_offset_</name>
+        <qualifiedname>agi::Polynomial::t_offset_</qualifiedname>
+        <initializer>{0.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="57" column="10" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1Polynomial_1aa73d9da1903834742dcb43c6d977038d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Polynomial&lt; Solver &gt;::Polynomial</definition>
+        <argsstring>()</argsstring>
+        <name>Polynomial</name>
+        <qualifiedname>agi::Polynomial::Polynomial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="10" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1a0e76b689c47932be7a5c78fe229a94ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Polynomial&lt; Solver &gt;::Polynomial</definition>
+        <argsstring>(const int order, const Vector&lt;&gt; &amp;weights=Vector&lt; 4 &gt;(0, 0, 0, 1), const int continuity=-1)</argsstring>
+        <name>Polynomial</name>
+        <qualifiedname>agi::Polynomial::Polynomial</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>weights</declname>
+          <defval>Vector&lt; 4 &gt;(0, 0, 0, 1)</defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>continuity</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="11" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1acb52b7975893d94f0558402b0ae89146" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Polynomial&lt; Solver &gt;::Polynomial</definition>
+        <argsstring>(const Polynomial &amp;rhs)=default</argsstring>
+        <name>Polynomial</name>
+        <qualifiedname>agi::Polynomial::Polynomial</qualifiedname>
+        <param>
+          <type>const <ref refid="classagi_1_1Polynomial" kindref="compound">Polynomial</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="13" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1a384a67f74752e0fe56a367308c0767bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Polynomial&lt; Solver &gt;::~Polynomial</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Polynomial</name>
+        <qualifiedname>agi::Polynomial::~Polynomial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="14" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1a36565a5636a8cecd85f22bc0e4526787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Polynomial&lt; Solver &gt;::scale</definition>
+        <argsstring>(const Scalar start_time=NAN, const Scalar duration=NAN)</argsstring>
+        <name>scale</name>
+        <qualifiedname>agi::Polynomial::scale</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>start_time</declname>
+          <defval>NAN</defval>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>duration</declname>
+          <defval>NAN</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="16" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1aa054f71281ba834050ca87e59f9e6c35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int agi::Polynomial&lt; Solver &gt;::addConstraint</definition>
+        <argsstring>(const Scalar time, const Vector&lt;&gt; &amp;constraint)</argsstring>
+        <name>addConstraint</name>
+        <qualifiedname>agi::Polynomial::addConstraint</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>constraint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="17" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1ad637a1a10f8b82155c26aaccd733ef96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Polynomial&lt; Solver &gt;::solve</definition>
+        <argsstring>()</argsstring>
+        <name>solve</name>
+        <qualifiedname>agi::Polynomial::solve</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="18" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1a0e017706319eaeda382749329a3d1c53" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Polynomial&lt; Solver &gt;::eval</definition>
+        <argsstring>(const Scalar time, Ref&lt; Vector&lt;&gt; &gt; state) const</argsstring>
+        <name>eval</name>
+        <qualifiedname>agi::Polynomial::eval</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>Ref&lt; Vector&lt;&gt; &gt;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="19" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1a767277b276cfd51c71a191afe9edd708" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Polynomial&lt; Solver &gt;::operator()</definition>
+        <argsstring>(const Scalar time, const int order=0) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>agi::Polynomial::operator()</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>order</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="20" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1a84aaba9430b92f17eefa8bfa04427cc0" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int agi::Polynomial&lt; Solver &gt;::order</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>order</name>
+        <qualifiedname>agi::Polynomial::order</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="22" column="14" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1aa1523174af4e1c0716f3cdb2519487a5" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int agi::Polynomial&lt; Solver &gt;::size</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>size</name>
+        <qualifiedname>agi::Polynomial::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="23" column="14" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1ad989fcb15315e89fd807f04b15651fd3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Polynomial&lt; Solver &gt;::solved</definition>
+        <argsstring>() const</argsstring>
+        <name>solved</name>
+        <qualifiedname>agi::Polynomial::solved</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="24" column="8" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1a8bd3379f9730a32c9e2e04253c4b360f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Matrix</type>
+        <definition>Matrix agi::Polynomial&lt; Solver &gt;::H</definition>
+        <argsstring>() const</argsstring>
+        <name>H</name>
+        <qualifiedname>agi::Polynomial::H</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="26" column="4" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1abaa490f0b3eedf314afb289baaaa8aa3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Matrix</type>
+        <definition>Matrix agi::Polynomial&lt; Solver &gt;::A</definition>
+        <argsstring>() const</argsstring>
+        <name>A</name>
+        <qualifiedname>agi::Polynomial::A</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="27" column="4" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1aecf8f810203e1c8c25ddc550e021c6ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector</type>
+        <definition>Vector agi::Polynomial&lt; Solver &gt;::b</definition>
+        <argsstring>() const</argsstring>
+        <name>b</name>
+        <qualifiedname>agi::Polynomial::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="28" column="4" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1a9c504544314550bd44ea280353a938b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Matrix</type>
+        <definition>Matrix agi::Polynomial&lt; Solver &gt;::exponents</definition>
+        <argsstring>() const</argsstring>
+        <name>exponents</name>
+        <qualifiedname>agi::Polynomial::exponents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="29" column="4" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1af05ed9dcf1591e17acb3f536e25c542e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Matrix</type>
+        <definition>Matrix agi::Polynomial&lt; Solver &gt;::alpha</definition>
+        <argsstring>() const</argsstring>
+        <name>alpha</name>
+        <qualifiedname>agi::Polynomial::alpha</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="30" column="4" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1acdd56696eeefa81cc04aae06c2481ed4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector</type>
+        <definition>Vector agi::Polynomial&lt; Solver &gt;::coeffs</definition>
+        <argsstring>() const</argsstring>
+        <name>coeffs</name>
+        <qualifiedname>agi::Polynomial::coeffs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="31" column="4" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1ac6585aaf87be7f0b894db0a460d01a92" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Polynomial&lt; Solver &gt;::tauFromTime</definition>
+        <argsstring>(const Scalar t) const</argsstring>
+        <name>tauFromTime</name>
+        <qualifiedname>agi::Polynomial::tauFromTime</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="33" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1a27122de3fd8af98573171ae8528b827c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector</type>
+        <definition>Vector agi::Polynomial&lt; Solver &gt;::tauVector</definition>
+        <argsstring>(const Scalar tau, const int order=0) const</argsstring>
+        <name>tauVector</name>
+        <qualifiedname>agi::Polynomial::tauVector</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>tau</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>order</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="34" column="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1a23d93251f45b9fbe7fedf43f0e1aa23d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector</type>
+        <definition>Vector agi::Polynomial&lt; Solver &gt;::tauVectorFromTime</definition>
+        <argsstring>(const Scalar time, const int order=0) const</argsstring>
+        <name>tauVectorFromTime</name>
+        <qualifiedname>agi::Polynomial::tauVectorFromTime</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>order</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="35" column="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1a83da6fd72cc7344de962f0bd5fcaf4fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Matrix</type>
+        <definition>Matrix agi::Polynomial&lt; Solver &gt;::polyMatrix</definition>
+        <argsstring>(const Scalar tau, const int order) const</argsstring>
+        <name>polyMatrix</name>
+        <qualifiedname>agi::Polynomial::polyMatrix</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>tau</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="36" column="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1a7ce7bbf53fb9a0cd56645ae8f6899fd1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Matrix</type>
+        <definition>Matrix agi::Polynomial&lt; Solver &gt;::polyMatrixFromTime</definition>
+        <argsstring>(const Scalar time, const int order) const</argsstring>
+        <name>polyMatrixFromTime</name>
+        <qualifiedname>agi::Polynomial::polyMatrixFromTime</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="37" column="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1a10c8ea0fd666b4b2517335b96a38db4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Polynomial&lt; Solver &gt;::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::Polynomial::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="39" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1a1edaaaa4f282ee85a55047ff50fdfe60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Polynomial&lt; void &gt;::Polynomial</definition>
+        <argsstring>(const int order, const Vector&lt;&gt; &amp;weights, const int continuity)=delete</argsstring>
+        <name>Polynomial</name>
+        <qualifiedname>agi::Polynomial::Polynomial</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>weights</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>continuity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="62" column="12" declfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" declline="62" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1accb1561b0bdd3b6e3017ce0b7a35e243" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Polynomial&lt; void &gt;::solve</definition>
+        <argsstring>(const Matrix&lt;&gt; &amp;H, const Matrix&lt;&gt; &amp;A, const Vector&lt;&gt; &amp;b)=delete</argsstring>
+        <name>solve</name>
+        <qualifiedname>agi::Polynomial::solve</qualifiedname>
+        <param>
+          <type>const Matrix&lt;&gt; &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type>const Matrix&lt;&gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="66" column="17" declfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" declline="66" declcolumn="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classagi_1_1Polynomial_1a4bf0a37eb1964275215ccd9b3477c7dc" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Matrix</type>
+        <definition>Matrix agi::Polynomial&lt; Solver &gt;::createH</definition>
+        <argsstring>(const Vector&lt;&gt; &amp;weights) const</argsstring>
+        <name>createH</name>
+        <qualifiedname>agi::Polynomial::createH</qualifiedname>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="42" column="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Polynomial_1a61749b1095b6007a7f20bbb0407df1d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Polynomial&lt; Solver &gt;::solve</definition>
+        <argsstring>(const Matrix&lt;&gt; &amp;H, const Matrix&lt;&gt; &amp;A, const Vector&lt;&gt; &amp;b)</argsstring>
+        <name>solve</name>
+        <qualifiedname>agi::Polynomial::solve</qualifiedname>
+        <param>
+          <type>const Matrix&lt;&gt; &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type>const Matrix&lt;&gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="43" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" line="8" column="1" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial.hpp" bodystart="8" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classagi_1_1Polynomial_1abaa490f0b3eedf314afb289baaaa8aa3" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>A</name></member>
+      <member refid="classagi_1_1Polynomial_1a15b2b1ccd1e82e9a7f8bdf92f902104f" prot="private" virt="non-virtual"><scope>agi::Polynomial</scope><name>A_</name></member>
+      <member refid="classagi_1_1Polynomial_1aa054f71281ba834050ca87e59f9e6c35" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>addConstraint</name></member>
+      <member refid="classagi_1_1Polynomial_1af05ed9dcf1591e17acb3f536e25c542e" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>alpha</name></member>
+      <member refid="classagi_1_1Polynomial_1af8909b24a47aef5fb1f302dd726abe92" prot="private" virt="non-virtual"><scope>agi::Polynomial</scope><name>alpha_</name></member>
+      <member refid="classagi_1_1Polynomial_1aecf8f810203e1c8c25ddc550e021c6ca" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>b</name></member>
+      <member refid="classagi_1_1Polynomial_1a0329b21e59484a2ef53a2aba60c24900" prot="private" virt="non-virtual"><scope>agi::Polynomial</scope><name>b_</name></member>
+      <member refid="classagi_1_1Polynomial_1ac1709a58902dee224433c27a9d7c58b9" prot="private" virt="non-virtual"><scope>agi::Polynomial</scope><name>c_</name></member>
+      <member refid="classagi_1_1Polynomial_1acdd56696eeefa81cc04aae06c2481ed4" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>coeffs</name></member>
+      <member refid="classagi_1_1Polynomial_1a4e5e92e9ad6d0a82b31b883bbf92230d" prot="private" virt="non-virtual"><scope>agi::Polynomial</scope><name>continuity_</name></member>
+      <member refid="classagi_1_1Polynomial_1a4bf0a37eb1964275215ccd9b3477c7dc" prot="private" virt="non-virtual"><scope>agi::Polynomial</scope><name>createH</name></member>
+      <member refid="classagi_1_1Polynomial_1a0e017706319eaeda382749329a3d1c53" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>eval</name></member>
+      <member refid="classagi_1_1Polynomial_1a9c504544314550bd44ea280353a938b4" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>exponents</name></member>
+      <member refid="classagi_1_1Polynomial_1a1764d49d55311cd331b1b5ff838d534e" prot="private" virt="non-virtual"><scope>agi::Polynomial</scope><name>exponents_</name></member>
+      <member refid="classagi_1_1Polynomial_1a8bd3379f9730a32c9e2e04253c4b360f" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>H</name></member>
+      <member refid="classagi_1_1Polynomial_1af7dd72bb4ec890b0fa5f9e35cf033567" prot="private" virt="non-virtual"><scope>agi::Polynomial</scope><name>H_</name></member>
+      <member refid="classagi_1_1Polynomial_1a767277b276cfd51c71a191afe9edd708" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>operator()</name></member>
+      <member refid="classagi_1_1Polynomial_1a84aaba9430b92f17eefa8bfa04427cc0" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>order</name></member>
+      <member refid="classagi_1_1Polynomial_1a20d5e166dddd87c611444d7fc762af35" prot="private" virt="non-virtual"><scope>agi::Polynomial</scope><name>order_</name></member>
+      <member refid="classagi_1_1Polynomial_1a83da6fd72cc7344de962f0bd5fcaf4fe" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>polyMatrix</name></member>
+      <member refid="classagi_1_1Polynomial_1a7ce7bbf53fb9a0cd56645ae8f6899fd1" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>polyMatrixFromTime</name></member>
+      <member refid="classagi_1_1Polynomial_1aa73d9da1903834742dcb43c6d977038d" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>Polynomial</name></member>
+      <member refid="classagi_1_1Polynomial_1a0e76b689c47932be7a5c78fe229a94ca" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>Polynomial</name></member>
+      <member refid="classagi_1_1Polynomial_1acb52b7975893d94f0558402b0ae89146" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>Polynomial</name></member>
+      <member refid="classagi_1_1Polynomial_1a1edaaaa4f282ee85a55047ff50fdfe60" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>Polynomial</name></member>
+      <member refid="classagi_1_1Polynomial_1a10c8ea0fd666b4b2517335b96a38db4b" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>reset</name></member>
+      <member refid="classagi_1_1Polynomial_1a36565a5636a8cecd85f22bc0e4526787" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>scale</name></member>
+      <member refid="classagi_1_1Polynomial_1aa1523174af4e1c0716f3cdb2519487a5" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>size</name></member>
+      <member refid="classagi_1_1Polynomial_1ad637a1a10f8b82155c26aaccd733ef96" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>solve</name></member>
+      <member refid="classagi_1_1Polynomial_1a61749b1095b6007a7f20bbb0407df1d4" prot="private" virt="non-virtual"><scope>agi::Polynomial</scope><name>solve</name></member>
+      <member refid="classagi_1_1Polynomial_1accb1561b0bdd3b6e3017ce0b7a35e243" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>solve</name></member>
+      <member refid="classagi_1_1Polynomial_1ad989fcb15315e89fd807f04b15651fd3" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>solved</name></member>
+      <member refid="classagi_1_1Polynomial_1a3fb0191bfcc63c30fb5f310a97bb0387" prot="private" virt="non-virtual"><scope>agi::Polynomial</scope><name>t_offset_</name></member>
+      <member refid="classagi_1_1Polynomial_1ae6476725b8fe40366b067f25d92653c9" prot="private" virt="non-virtual"><scope>agi::Polynomial</scope><name>t_scale_</name></member>
+      <member refid="classagi_1_1Polynomial_1ac6585aaf87be7f0b894db0a460d01a92" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>tauFromTime</name></member>
+      <member refid="classagi_1_1Polynomial_1a27122de3fd8af98573171ae8528b827c" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>tauVector</name></member>
+      <member refid="classagi_1_1Polynomial_1a23d93251f45b9fbe7fedf43f0e1aa23d" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>tauVectorFromTime</name></member>
+      <member refid="classagi_1_1Polynomial_1a4c29495c75dd62502b44f1ca3afe8971" prot="private" virt="non-virtual"><scope>agi::Polynomial</scope><name>weights_</name></member>
+      <member refid="classagi_1_1Polynomial_1a384a67f74752e0fe56a367308c0767bd" prot="public" virt="non-virtual"><scope>agi::Polynomial</scope><name>~Polynomial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

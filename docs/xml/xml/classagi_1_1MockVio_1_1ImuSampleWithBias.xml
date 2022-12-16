@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1MockVio_1_1ImuSampleWithBias" kind="class" language="C++" prot="protected">
+    <compoundname>agi::MockVio::ImuSampleWithBias</compoundname>
+    <basecompoundref refid="structagi_1_1ImuSample" prot="public" virt="non-virtual">agi::ImuSample</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classagi_1_1MockVio_1_1ImuSampleWithBias_1a497dca31d50f9318eb5e459c3bc3d4f5" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MockVio::ImuSampleWithBias::acc_bias</definition>
+        <argsstring></argsstring>
+        <name>acc_bias</name>
+        <qualifiedname>agi::MockVio::ImuSampleWithBias::acc_bias</qualifiedname>
+        <initializer>= Vector&lt;3&gt;::Zero()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="47" column="12" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1_1ImuSampleWithBias_1a469e4deae920410b09a3408fdbc76488" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MockVio::ImuSampleWithBias::omega_bias</definition>
+        <argsstring></argsstring>
+        <name>omega_bias</name>
+        <qualifiedname>agi::MockVio::ImuSampleWithBias::omega_bias</qualifiedname>
+        <initializer>= Vector&lt;3&gt;::Zero()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="48" column="12" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1MockVio_1_1ImuSampleWithBias_1a40478dde5e139956d460c0e9c98ef9d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::MockVio::ImuSampleWithBias::ImuSampleWithBias</definition>
+        <argsstring>(const ImuSample &amp;imu)</argsstring>
+        <name>ImuSampleWithBias</name>
+        <qualifiedname>agi::MockVio::ImuSampleWithBias::ImuSampleWithBias</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref> &amp;</type>
+          <declname>imu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="39" column="5" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MockVio_1_1ImuSampleWithBias_1a1e9c1855bec6e6e171da66f34f20f62f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classagi_1_1MockVio_1_1ImuSampleWithBias" kindref="compound">ImuSampleWithBias</ref> &amp;</type>
+        <definition>ImuSampleWithBias &amp; agi::MockVio::ImuSampleWithBias::operator=</definition>
+        <argsstring>(const ImuSample &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>agi::MockVio::ImuSampleWithBias::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="40" column="23" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MockVio_1_1ImuSampleWithBias_1a409923cf353b21752ca919f61aaa46f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::ImuSample::ImuSample</definition>
+        <argsstring>()=default</argsstring>
+        <name>ImuSample</name>
+        <qualifiedname>agi::MockVio::ImuSampleWithBias::ImuSample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="38" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MockVio_1_1ImuSampleWithBias_1af75c59401f7ec08b0a1d6a12571912c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::ImuSample::ImuSample</definition>
+        <argsstring>(const ImuSample &amp;)=default</argsstring>
+        <name>ImuSample</name>
+        <qualifiedname>agi::MockVio::ImuSampleWithBias::ImuSample</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="38" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MockVio_1_1ImuSampleWithBias_1a9c812316e3f364364f25d99ad36c3475" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::ImuSample::ImuSample</definition>
+        <argsstring>(const Scalar t, const Vector&lt; 3 &gt; &amp;acc, const Vector&lt; 3 &gt; &amp;omega)</argsstring>
+        <name>ImuSample</name>
+        <qualifiedname>agi::MockVio::ImuSampleWithBias::ImuSample</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>acc</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>omega</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="38" column="5" bodyfile="agilib/include/agilib/types/imu_sample.hpp" bodystart="12" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::ImuSample</label>
+        <link refid="structagi_1_1ImuSample"/>
+      </node>
+      <node id="1">
+        <label>agi::MockVio::ImuSampleWithBias</label>
+        <link refid="classagi_1_1MockVio_1_1ImuSampleWithBias"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::ImuSample</label>
+        <link refid="structagi_1_1ImuSample"/>
+      </node>
+      <node id="1">
+        <label>agi::MockVio::ImuSampleWithBias</label>
+        <link refid="classagi_1_1MockVio_1_1ImuSampleWithBias"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="36" column="3" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="36" bodyend="49"/>
+    <listofallmembers>
+      <member refid="structagi_1_1ImuSample_1a03ff410ac1a6bb8cb3f44fdcf3ef0db8" prot="public" virt="non-virtual"><scope>agi::MockVio::ImuSampleWithBias</scope><name>acc</name></member>
+      <member refid="classagi_1_1MockVio_1_1ImuSampleWithBias_1a497dca31d50f9318eb5e459c3bc3d4f5" prot="public" virt="non-virtual"><scope>agi::MockVio::ImuSampleWithBias</scope><name>acc_bias</name></member>
+      <member refid="classagi_1_1MockVio_1_1ImuSampleWithBias_1a409923cf353b21752ca919f61aaa46f1" prot="public" virt="non-virtual"><scope>agi::MockVio::ImuSampleWithBias</scope><name>ImuSample</name></member>
+      <member refid="classagi_1_1MockVio_1_1ImuSampleWithBias_1af75c59401f7ec08b0a1d6a12571912c8" prot="public" virt="non-virtual"><scope>agi::MockVio::ImuSampleWithBias</scope><name>ImuSample</name></member>
+      <member refid="classagi_1_1MockVio_1_1ImuSampleWithBias_1a9c812316e3f364364f25d99ad36c3475" prot="public" virt="non-virtual"><scope>agi::MockVio::ImuSampleWithBias</scope><name>ImuSample</name></member>
+      <member refid="classagi_1_1MockVio_1_1ImuSampleWithBias_1a40478dde5e139956d460c0e9c98ef9d5" prot="public" virt="non-virtual"><scope>agi::MockVio::ImuSampleWithBias</scope><name>ImuSampleWithBias</name></member>
+      <member refid="structagi_1_1ImuSample_1a0d565c19918d0e60c129fd3f92debc34" prot="public" virt="non-virtual"><scope>agi::MockVio::ImuSampleWithBias</scope><name>omega</name></member>
+      <member refid="classagi_1_1MockVio_1_1ImuSampleWithBias_1a469e4deae920410b09a3408fdbc76488" prot="public" virt="non-virtual"><scope>agi::MockVio::ImuSampleWithBias</scope><name>omega_bias</name></member>
+      <member refid="structagi_1_1ImuSample_1a6913aebbbb78386edd85d6df43fb5eb7" prot="public" virt="non-virtual"><scope>agi::MockVio::ImuSampleWithBias</scope><name>operator&lt;</name></member>
+      <member refid="structagi_1_1ImuSample_1a10c40cdec73f56aa6ca8ae5f08741828" prot="public" virt="non-virtual"><scope>agi::MockVio::ImuSampleWithBias</scope><name>operator&lt;=</name></member>
+      <member refid="classagi_1_1MockVio_1_1ImuSampleWithBias_1a1e9c1855bec6e6e171da66f34f20f62f" prot="public" virt="non-virtual"><scope>agi::MockVio::ImuSampleWithBias</scope><name>operator=</name></member>
+      <member refid="structagi_1_1ImuSample_1a5d774b9d25085bb1f6ab046932802663" prot="public" virt="non-virtual"><scope>agi::MockVio::ImuSampleWithBias</scope><name>operator&gt;</name></member>
+      <member refid="structagi_1_1ImuSample_1a0551cfbab9265a3c975abb08bc40f42d" prot="public" virt="non-virtual"><scope>agi::MockVio::ImuSampleWithBias</scope><name>operator&gt;=</name></member>
+      <member refid="structagi_1_1ImuSample_1af18481d7fd6c630d05db4cc05bb0d662" prot="public" virt="non-virtual"><scope>agi::MockVio::ImuSampleWithBias</scope><name>t</name></member>
+      <member refid="structagi_1_1ImuSample_1a8f21a2326de7e3c72d03b543a5a4ffd4" prot="public" virt="non-virtual"><scope>agi::MockVio::ImuSampleWithBias</scope><name>valid</name></member>
+      <member refid="structagi_1_1ImuSample_1a613ea8ebc169a05da1c6e82c15d249f5" prot="public" virt="non-virtual"><scope>agi::MockVio::ImuSampleWithBias</scope><name>~ImuSample</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

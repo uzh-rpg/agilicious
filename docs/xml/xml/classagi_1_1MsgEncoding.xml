@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1MsgEncoding" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>agi::MsgEncoding</compoundname>
+    <derivedcompoundref refid="classagi_1_1CtrlEncoding" prot="public" virt="non-virtual">agi::CtrlEncoding</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1LairdEncoding" prot="public" virt="non-virtual">agi::LairdEncoding</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1MspEncoding" prot="public" virt="non-virtual">agi::MspEncoding</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1SbusEncoding" prot="public" virt="non-virtual">agi::SbusEncoding</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1MsgEncoding_1ab1c8c68727c96ee077c91191c9a76f93" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual agi::MsgEncoding::~MsgEncoding</definition>
+        <argsstring>()=default</argsstring>
+        <name>~MsgEncoding</name>
+        <qualifiedname>agi::MsgEncoding::~MsgEncoding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msg_encoding.hpp" line="12" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MsgEncoding_1a7624e462cea9843b2796c0095ec23e78" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::MsgEncoding::encode</definition>
+        <argsstring>(const Command &amp;command, const bool armed, char *const buffer, int *const length) const =0</argsstring>
+        <name>encode</name>
+        <qualifiedname>agi::MsgEncoding::encode</qualifiedname>
+        <reimplementedby refid="classagi_1_1SbusEncoding_1a552335cc833c6a65360493ebba0ab0fc">encode</reimplementedby>
+        <reimplementedby refid="classagi_1_1CtrlEncoding_1aa32bb2bdb5f956e6b7e73c06be3b67a6">encode</reimplementedby>
+        <reimplementedby refid="classagi_1_1LairdEncoding_1a6c9395e83f820a9d71d75a8620cab47a">encode</reimplementedby>
+        <reimplementedby refid="classagi_1_1MspEncoding_1aa41350c7d2bf74fb690ff935aeff878e">encode</reimplementedby>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>armed</declname>
+        </param>
+        <param>
+          <type>char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int *const</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msg_encoding.hpp" line="13" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MsgEncoding_1a5d4dbd8d892ea78347e8351f7b0384bf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::MsgEncoding::decode</definition>
+        <argsstring>(const char *const buffer, const int length, Command *const command, bool *const armed) const</argsstring>
+        <name>decode</name>
+        <qualifiedname>agi::MsgEncoding::decode</qualifiedname>
+        <reimplementedby refid="classagi_1_1LairdEncoding_1a20a120be1a1cd260b033b15e618611ad">decode</reimplementedby>
+        <reimplementedby refid="classagi_1_1MspEncoding_1a442f7e9609fb49fd82edf89576e4da68">decode</reimplementedby>
+        <param>
+          <type>const char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="structagi_1_1Command" kindref="compound">Command</ref> *const</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>bool *const</type>
+          <declname>armed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msg_encoding.hpp" line="16" column="16" bodyfile="agilib/include/agilib/bridge/msg_encoding.hpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::CtrlEncoding</label>
+        <link refid="classagi_1_1CtrlEncoding"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::LairdEncoding</label>
+        <link refid="classagi_1_1LairdEncoding"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::MsgEncoding</label>
+        <link refid="classagi_1_1MsgEncoding"/>
+      </node>
+      <node id="4">
+        <label>agi::MspEncoding</label>
+        <link refid="classagi_1_1MspEncoding"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>agi::SbusEncoding</label>
+        <link refid="classagi_1_1SbusEncoding"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="agilib/include/agilib/bridge/msg_encoding.hpp" line="10" column="1" bodyfile="agilib/include/agilib/bridge/msg_encoding.hpp" bodystart="10" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classagi_1_1MsgEncoding_1a5d4dbd8d892ea78347e8351f7b0384bf" prot="public" virt="virtual"><scope>agi::MsgEncoding</scope><name>decode</name></member>
+      <member refid="classagi_1_1MsgEncoding_1a7624e462cea9843b2796c0095ec23e78" prot="public" virt="pure-virtual"><scope>agi::MsgEncoding</scope><name>encode</name></member>
+      <member refid="classagi_1_1MsgEncoding_1ab1c8c68727c96ee077c91191c9a76f93" prot="public" virt="virtual"><scope>agi::MsgEncoding</scope><name>~MsgEncoding</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

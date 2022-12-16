@@ -1,0 +1,477 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1LairdBridge" kind="class" language="C++" prot="public">
+    <compoundname>agi::LairdBridge</compoundname>
+    <basecompoundref refid="classagi_1_1SerialBridge" prot="public" virt="non-virtual">agi::SerialBridge</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classagi_1_1LairdBridge_1ac39d18013fca4e48ff6eebc627a9b3fb" prot="protected" static="no" mutable="no">
+        <type><ref refid="classagi_1_1LairdEncoding" kindref="compound">LairdEncoding</ref></type>
+        <definition>LairdEncoding agi::LairdBridge::encoding_</definition>
+        <argsstring></argsstring>
+        <name>encoding_</name>
+        <qualifiedname>agi::LairdBridge::encoding_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge.hpp" line="29" column="17" bodyfile="agilib/include/agilib/bridge/laird/laird_bridge.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LairdBridge_1ae18576e4bf0b48d5d4d336f47d0ff3e6" prot="protected" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex agi::LairdBridge::wait_for_data_mtx_</definition>
+        <argsstring></argsstring>
+        <name>wait_for_data_mtx_</name>
+        <qualifiedname>agi::LairdBridge::wait_for_data_mtx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge.hpp" line="31" column="14" bodyfile="agilib/include/agilib/bridge/laird/laird_bridge.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LairdBridge_1a50897c25e98eebe0e34dccfc00da5d98" prot="protected" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable agi::LairdBridge::wait_for_data_cv_</definition>
+        <argsstring></argsstring>
+        <name>wait_for_data_cv_</name>
+        <qualifiedname>agi::LairdBridge::wait_for_data_cv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge.hpp" line="32" column="27" bodyfile="agilib/include/agilib/bridge/laird/laird_bridge.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LairdBridge_1a89f7d15439782c7bc54b31df416e253e" prot="protected" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex agi::LairdBridge::buffer_mtx_</definition>
+        <argsstring></argsstring>
+        <name>buffer_mtx_</name>
+        <qualifiedname>agi::LairdBridge::buffer_mtx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge.hpp" line="37" column="14" bodyfile="agilib/include/agilib/bridge/laird/laird_bridge.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LairdBridge_1a926bcdcde7621a08b4e21edfa72447ca" prot="protected" static="no" mutable="no">
+        <type>char</type>
+        <definition>char agi::LairdBridge::buffer_[BUFFER_SIZE]</definition>
+        <argsstring>[BUFFER_SIZE]</argsstring>
+        <name>buffer_</name>
+        <qualifiedname>agi::LairdBridge::buffer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge.hpp" line="38" column="8" bodyfile="agilib/include/agilib/bridge/laird/laird_bridge.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LairdBridge_1aa149c4ffa4580776ec58cb2e008df7a3" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int agi::LairdBridge::buffer_length_</definition>
+        <argsstring></argsstring>
+        <name>buffer_length_</name>
+        <qualifiedname>agi::LairdBridge::buffer_length_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge.hpp" line="39" column="7" bodyfile="agilib/include/agilib/bridge/laird/laird_bridge.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classagi_1_1LairdBridge_1abc7832116bca2f9dd118372ca4fbcf4d" prot="protected" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::LairdBridge::BUFFER_SIZE</definition>
+        <argsstring></argsstring>
+        <name>BUFFER_SIZE</name>
+        <qualifiedname>agi::LairdBridge::BUFFER_SIZE</qualifiedname>
+        <initializer>= SerialBridge::BUFFER_SIZE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge.hpp" line="34" column="24" bodyfile="agilib/include/agilib/bridge/laird/laird_bridge.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LairdBridge_1a641d002948e9af6d1c2df108d6ea79cb" prot="protected" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::LairdBridge::MSG_SIZE</definition>
+        <argsstring></argsstring>
+        <name>MSG_SIZE</name>
+        <qualifiedname>agi::LairdBridge::MSG_SIZE</qualifiedname>
+        <initializer>= LairdEncoding::BUFFER_SIZE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge.hpp" line="35" column="24" bodyfile="agilib/include/agilib/bridge/laird/laird_bridge.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1LairdBridge_1a165793d4edbdc9123d77d860170f2165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::LairdBridge::LairdBridge</definition>
+        <argsstring>(const LairdParams &amp;params, const TimeFunction time_function)</argsstring>
+        <name>LairdBridge</name>
+        <qualifiedname>agi::LairdBridge::LairdBridge</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1LairdParams" kindref="compound">LairdParams</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>const TimeFunction</type>
+          <declname>time_function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge.hpp" line="19" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LairdBridge_1ad3779775e50536e87a150e7920ec426c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::LairdBridge::receiveCommand</definition>
+        <argsstring>(Command *const command, bool *const armed)</argsstring>
+        <name>receiveCommand</name>
+        <qualifiedname>agi::LairdBridge::receiveCommand</qualifiedname>
+        <param>
+          <type><ref refid="structagi_1_1Command" kindref="compound">Command</ref> *const</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>bool *const</type>
+          <declname>armed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge.hpp" line="21" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LairdBridge_1a11db2044e775b9789f3a00e53fe0c047" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::LairdBridge::waitForData</definition>
+        <argsstring>()</argsstring>
+        <name>waitForData</name>
+        <qualifiedname>agi::LairdBridge::waitForData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge.hpp" line="22" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classagi_1_1LairdBridge_1a9171e5c84be28e079c5035715d84a99b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::LairdBridge::sendCommand</definition>
+        <argsstring>(const Command &amp;command, const bool active) override</argsstring>
+        <name>sendCommand</name>
+        <qualifiedname>agi::LairdBridge::sendCommand</qualifiedname>
+        <reimplements refid="classagi_1_1SerialBridge_1a983931a393cb470b4984fcc07f916160">sendCommand</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge.hpp" line="26" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LairdBridge_1a4a83014e0aa6392b61e9e76d3535ccc8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::LairdBridge::receiveCallback</definition>
+        <argsstring>(const char *const buffer, const int length)</argsstring>
+        <name>receiveCallback</name>
+        <qualifiedname>agi::LairdBridge::receiveCallback</qualifiedname>
+        <param>
+          <type>const char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge.hpp" line="27" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LairdBridge_1a93790672ec3ad0fa79d9a1a01165853d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::SerialBridge::sendCommand</definition>
+        <argsstring>(const Command &amp;command, const bool active, const MsgEncoding &amp;encoding)</argsstring>
+        <name>sendCommand</name>
+        <qualifiedname>agi::LairdBridge::sendCommand</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>active</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classagi_1_1MsgEncoding" kindref="compound">MsgEncoding</ref> &amp;</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge.hpp" line="25" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LairdBridge_1a983931a393cb470b4984fcc07f916160" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::SerialBridge::sendCommand</definition>
+        <argsstring>(const Command &amp;command, const bool active)=0</argsstring>
+        <name>sendCommand</name>
+        <qualifiedname>agi::LairdBridge::sendCommand</qualifiedname>
+        <reimplements refid="classagi_1_1SerialBridge_1a983931a393cb470b4984fcc07f916160">sendCommand</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_bridge.hpp" line="25" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>agi::Module&lt; BridgeBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="3">
+        <label>agi::BridgeBase</label>
+        <link refid="classagi_1_1BridgeBase"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::LairdBridge</label>
+        <link refid="classagi_1_1LairdBridge"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::SerialBridge</label>
+        <link refid="classagi_1_1SerialBridge"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>agi::Median&lt; Scalar, 15 &gt;</label>
+        <link refid="classagi_1_1Median"/>
+      </node>
+      <node id="4">
+        <label>agi::Module&lt; BridgeBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>agi::AgiWatchdog</label>
+        <link refid="classagi_1_1AgiWatchdog"/>
+      </node>
+      <node id="3">
+        <label>agi::BridgeBase</label>
+        <link refid="classagi_1_1BridgeBase"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>timeout_guard_thread_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>timeout_wait_mutex_</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>voltage_</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>feedback_callbacks_</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>voltage_watchdog_</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>agi::CRC&lt; crc_t, polynomial &gt;</label>
+        <link refid="classagi_1_1CRC"/>
+      </node>
+      <node id="1">
+        <label>agi::LairdBridge</label>
+        <link refid="classagi_1_1LairdBridge"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>encoding_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>buffer_mtx_</edgelabel>
+          <edgelabel>wait_for_data_mtx_</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>agi::LairdEncoding</label>
+        <link refid="classagi_1_1LairdEncoding"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>crc</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+      <node id="16">
+        <label>agi::MsgEncoding</label>
+        <link refid="classagi_1_1MsgEncoding"/>
+      </node>
+      <node id="2">
+        <label>agi::SerialBridge</label>
+        <link refid="classagi_1_1SerialBridge"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>serial_settings_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>serial_port_</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>agi::SerialPort</label>
+        <link refid="classagi_1_1SerialPort"/>
+      </node>
+      <node id="11">
+        <label>agi::SerialSettings</label>
+        <link refid="classagi_1_1SerialSettings"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>port</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="7">
+        <label>std::mutex</label>
+      </node>
+      <node id="12">
+        <label>std::string</label>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::thread</label>
+      </node>
+      <node id="9">
+        <label>std::vector&lt; FeedbackCallbackFunction &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/bridge/laird/laird_bridge.hpp" line="16" column="1" bodyfile="agilib/include/agilib/bridge/laird/laird_bridge.hpp" bodystart="16" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classagi_1_1BridgeBase_1afd31bc76953acd55cd0a3c4b491494f9" prot="public" virt="virtual"><scope>agi::LairdBridge</scope><name>activate</name></member>
+      <member refid="classagi_1_1BridgeBase_1a8d177f74b81f32ed171be4d79739cdbb" prot="public" virt="virtual"><scope>agi::LairdBridge</scope><name>active</name></member>
+      <member refid="classagi_1_1BridgeBase_1a6d7be2e593e8ad7e904ffaaa30af4a73" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>active_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a7b767d39e6996e8f5e9f483dce9f85ee" prot="public" virt="non-virtual"><scope>agi::LairdBridge</scope><name>BridgeBase</name></member>
+      <member refid="classagi_1_1LairdBridge_1a926bcdcde7621a08b4e21edfa72447ca" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>buffer_</name></member>
+      <member refid="classagi_1_1LairdBridge_1aa149c4ffa4580776ec58cb2e008df7a3" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>buffer_length_</name></member>
+      <member refid="classagi_1_1LairdBridge_1a89f7d15439782c7bc54b31df416e253e" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>buffer_mtx_</name></member>
+      <member refid="classagi_1_1LairdBridge_1abc7832116bca2f9dd118372ca4fbcf4d" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>BUFFER_SIZE</name></member>
+      <member refid="classagi_1_1BridgeBase_1a284aa8921bedd30358858e0bc3b2f341" prot="public" virt="virtual"><scope>agi::LairdBridge</scope><name>deactivate</name></member>
+      <member refid="classagi_1_1LairdBridge_1ac39d18013fca4e48ff6eebc627a9b3fb" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>encoding_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a7a9085ccdd682005a9224e19a5a07292" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>feedback_callbacks_</name></member>
+      <member refid="classagi_1_1BridgeBase_1ac335711e42eeda57b58d2603113ce9e1" prot="public" virt="virtual"><scope>agi::LairdBridge</scope><name>getFeedback</name></member>
+      <member refid="classagi_1_1BridgeBase_1a309ce37cfabf6336cbca8f7f58c68e15" prot="public" virt="virtual"><scope>agi::LairdBridge</scope><name>getVoltage</name></member>
+      <member refid="classagi_1_1BridgeBase_1a08ef3805447431194f2dbc8f11a60853" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>got_command_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a0916b1f0c159300185276425294da24c" prot="protected" virt="virtual"><scope>agi::LairdBridge</scope><name>guardTimeout</name></member>
+      <member refid="classagi_1_1SerialBridge_1aa8694d5fe2f372263e92c6e200671f51" prot="public" virt="non-virtual"><scope>agi::LairdBridge</scope><name>isOpen</name></member>
+      <member refid="classagi_1_1LairdBridge_1a165793d4edbdc9123d77d860170f2165" prot="public" virt="non-virtual"><scope>agi::LairdBridge</scope><name>LairdBridge</name></member>
+      <member refid="classagi_1_1BridgeBase_1ad77002f9f497f400fd980365343c5d19" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>latest_raw_voltage</name></member>
+      <member refid="classagi_1_1BridgeBase_1ab5239a44374db716072b40b0083b816d" prot="public" virt="virtual"><scope>agi::LairdBridge</scope><name>locked</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::LairdBridge</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::LairdBridge</scope><name>Module</name></member>
+      <member refid="classagi_1_1LairdBridge_1a641d002948e9af6d1c2df108d6ea79cb" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>MSG_SIZE</name></member>
+      <member refid="classagi_1_1BridgeBase_1a4a4e32cc85a72f21397f49f96d89eefe" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>n_max_timeouts_</name></member>
+      <member refid="classagi_1_1BridgeBase_1af3168e19d234f134f99d04565de9fdcb" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>n_timeouts_</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::LairdBridge</scope><name>name</name></member>
+      <member refid="classagi_1_1LairdBridge_1a4a83014e0aa6392b61e9e76d3535ccc8" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>receiveCallback</name></member>
+      <member refid="classagi_1_1LairdBridge_1ad3779775e50536e87a150e7920ec426c" prot="public" virt="non-virtual"><scope>agi::LairdBridge</scope><name>receiveCommand</name></member>
+      <member refid="classagi_1_1BridgeBase_1a08cf8bd3c018ebd5d470e39c7879042b" prot="public" virt="virtual"><scope>agi::LairdBridge</scope><name>registerFeedbackCallback</name></member>
+      <member refid="classagi_1_1BridgeBase_1a1b85d2f08af19f830ae3831196c8b6d3" prot="public" virt="virtual"><scope>agi::LairdBridge</scope><name>reset</name></member>
+      <member refid="classagi_1_1BridgeBase_1a3f3c9a776fa3e37deef0a9d374034598" prot="public" virt="virtual"><scope>agi::LairdBridge</scope><name>send</name></member>
+      <member refid="classagi_1_1LairdBridge_1a9171e5c84be28e079c5035715d84a99b" prot="protected" virt="virtual"><scope>agi::LairdBridge</scope><name>sendCommand</name></member>
+      <member refid="classagi_1_1LairdBridge_1a93790672ec3ad0fa79d9a1a01165853d" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>sendCommand</name></member>
+      <member refid="classagi_1_1LairdBridge_1a983931a393cb470b4984fcc07f916160" prot="protected" virt="virtual"><scope>agi::LairdBridge</scope><name>sendCommand</name></member>
+      <member refid="classagi_1_1SerialBridge_1a32c4979a7cf0a87f80d72d703caa5b4b" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>serial_port_</name></member>
+      <member refid="classagi_1_1SerialBridge_1aadcb3f51a68f64d355f173f20e2011c3" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>serial_settings_</name></member>
+      <member refid="classagi_1_1SerialBridge_1ae69e4b6f8e096ddcd0b80cf20941ed9c" prot="public" virt="non-virtual"><scope>agi::LairdBridge</scope><name>SerialBridge</name></member>
+      <member refid="classagi_1_1BridgeBase_1ad3bce004bcd5793593c2c82c993ad78e" prot="public" virt="virtual"><scope>agi::LairdBridge</scope><name>setVoltage</name></member>
+      <member refid="classagi_1_1BridgeBase_1a65a373095663f452389cec6d0f3aa246" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>shutdown_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a41dab99a5fb5b078216bb9c0249c9fbc" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>time_function_</name></member>
+      <member refid="classagi_1_1BridgeBase_1aa2700147fe72b302d6f5bc4a2fe82e56" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>timeout_</name></member>
+      <member refid="classagi_1_1BridgeBase_1ac7b6ee43afd1d37eec292571825a1aa8" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>timeout_guard_thread_</name></member>
+      <member refid="classagi_1_1BridgeBase_1ab7d743b92e448e4a926cbddb295e8397" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>timeout_reset_cv_</name></member>
+      <member refid="classagi_1_1BridgeBase_1abc9cc2c85e79900b8fe5c4b75928617a" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>timeout_wait_mutex_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a118750a50c765712150c8631f2e48cf1" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>voltage_</name></member>
+      <member refid="classagi_1_1BridgeBase_1af8ee6b8f8cf819ef56217be2ac65e26d" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>voltage_watchdog_</name></member>
+      <member refid="classagi_1_1BridgeBase_1a3a00812d2c1350bbe38a393962e815af" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>voltageTimeout</name></member>
+      <member refid="classagi_1_1LairdBridge_1a50897c25e98eebe0e34dccfc00da5d98" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>wait_for_data_cv_</name></member>
+      <member refid="classagi_1_1LairdBridge_1ae18576e4bf0b48d5d4d336f47d0ff3e6" prot="protected" virt="non-virtual"><scope>agi::LairdBridge</scope><name>wait_for_data_mtx_</name></member>
+      <member refid="classagi_1_1LairdBridge_1a11db2044e775b9789f3a00e53fe0c047" prot="public" virt="non-virtual"><scope>agi::LairdBridge</scope><name>waitForData</name></member>
+      <member refid="classagi_1_1BridgeBase_1a756267559a92cbac1f643bab3db3af79" prot="public" virt="virtual"><scope>agi::LairdBridge</scope><name>~BridgeBase</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::LairdBridge</scope><name>~Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1ScopedTimer" kind="class" language="C++" prot="public">
+    <compoundname>agi::ScopedTimer</compoundname>
+    <basecompoundref refid="classagi_1_1Timer" prot="public" virt="non-virtual">agi::Timer</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1ScopedTimer_1a670c4ca51fac166d160a1b62636c3430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::ScopedTimer::ScopedTimer</definition>
+        <argsstring>(const std::string name=&quot;&quot;, const std::string module=&quot;&quot;)</argsstring>
+        <name>ScopedTimer</name>
+        <qualifiedname>agi::ScopedTimer::ScopedTimer</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>module</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="94" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ScopedTimer_1aff0f7dd6175f21ca4e9bf54b13ca87f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::ScopedTimer::~ScopedTimer</definition>
+        <argsstring>()</argsstring>
+        <name>~ScopedTimer</name>
+        <qualifiedname>agi::ScopedTimer::~ScopedTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="95" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::ScopedTimer</label>
+        <link refid="classagi_1_1ScopedTimer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::Timer</label>
+        <link refid="classagi_1_1Timer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::ScopedTimer</label>
+        <link refid="classagi_1_1ScopedTimer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::Timer</label>
+        <link refid="classagi_1_1Timer"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/utils/timer.hpp" line="92" column="1" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="92" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classagi_1_1Timer_1a2e976e1f8ddc212dd59962af5ad85612" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>count</name></member>
+      <member refid="classagi_1_1Timer_1a0df70934e77127bdaa71d5f8c2f1e835" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>last</name></member>
+      <member refid="classagi_1_1Timer_1a775684c05f2294c6d405f04e0c7c6609" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>max</name></member>
+      <member refid="classagi_1_1Timer_1a11dd0bbf48dc1d6102fd74de4713db24" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>mean</name></member>
+      <member refid="classagi_1_1Timer_1a6c8e57e2167bd04919b8dadb9fc1f8f8" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>min</name></member>
+      <member refid="classagi_1_1Timer_1a3dbbbfff68fab74430f0e924ac5cc877" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>operator()</name></member>
+      <member refid="classagi_1_1Timer_1aa4ad866cb402fd3227cb620a9d02abd0" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>print</name></member>
+      <member refid="classagi_1_1Timer_1a322671b127cc8303a75bb01f12f1c00a" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>reset</name></member>
+      <member refid="classagi_1_1ScopedTimer_1a670c4ca51fac166d160a1b62636c3430" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>ScopedTimer</name></member>
+      <member refid="classagi_1_1Timer_1a31a3f272d9b01d6bcfebaeda0974f317" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>startTime</name></member>
+      <member refid="classagi_1_1Timer_1ab08fe61068d30f216dd50d67146169fc" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>std</name></member>
+      <member refid="classagi_1_1Timer_1a9f14b27a8fe9d2df7128d9a7c5cde0b7" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>tic</name></member>
+      <member refid="classagi_1_1Timer_1adb960b437521902f8da2187a0b26ede7" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>Timer</name></member>
+      <member refid="classagi_1_1Timer_1a89b76185ad1322c63e72c3967401c970" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>Timer</name></member>
+      <member refid="classagi_1_1Timer_1ab821a5167758c7a8cd2813391dc8e484" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>toc</name></member>
+      <member refid="classagi_1_1ScopedTimer_1aff0f7dd6175f21ca4e9bf54b13ca87f3" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>~ScopedTimer</name></member>
+      <member refid="classagi_1_1Timer_1ac8f9dc442dd458eac0011d0012f04010" prot="public" virt="non-virtual"><scope>agi::ScopedTimer</scope><name>~Timer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

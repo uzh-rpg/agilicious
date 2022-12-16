@@ -1,0 +1,1120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1Pipeline" kind="class" language="C++" prot="public">
+    <compoundname>agi::Pipeline</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classagi_1_1Pipeline_1affb408ef8b18d5a5379907849f51882b" prot="public" static="no">
+        <type>std::function&lt; void(const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;, const <ref refid="structagi_1_1Feedback" kindref="compound">Feedback</ref> &amp;, const ReferenceVector &amp;, const SetpointVector &amp;, const SetpointVector &amp;, const SetpointVector &amp;, const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;)&gt;</type>
+        <definition>using agi::Pipeline::PipelineCallbackFunction =  std::function&lt;void( const QuadState&amp;, const Feedback&amp;, const ReferenceVector&amp;, const SetpointVector&amp;, const SetpointVector&amp;, const SetpointVector&amp;, const Command&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>PipelineCallbackFunction</name>
+        <qualifiedname>agi::Pipeline::PipelineCallbackFunction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="23" column="3" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1a231339194e2b2139fdf58574f74a3994" prot="public" static="no" mutable="no">
+        <type>ReferenceVector</type>
+        <definition>ReferenceVector agi::Pipeline::references_</definition>
+        <argsstring></argsstring>
+        <name>references_</name>
+        <qualifiedname>agi::Pipeline::references_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of all references that is filled according to ascending start time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="30" column="19" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1a4ef4360b90c24f3f0dc1177cb50af81a" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1EstimatorBase" kindref="compound">EstimatorBase</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;EstimatorBase&gt; agi::Pipeline::estimator_</definition>
+        <argsstring></argsstring>
+        <name>estimator_</name>
+        <qualifiedname>agi::Pipeline::estimator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="32" column="19" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1ae5902c3fa0ea93ed2286ce5f2380b88e" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1SamplerBase" kindref="compound">SamplerBase</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;SamplerBase&gt; agi::Pipeline::sampler_</definition>
+        <argsstring></argsstring>
+        <name>sampler_</name>
+        <qualifiedname>agi::Pipeline::sampler_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="33" column="19" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1a67ba5d5dd0159470d68b89c18b923554" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1ControllerBase" kindref="compound">ControllerBase</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;ControllerBase&gt; agi::Pipeline::outer_controller_</definition>
+        <argsstring></argsstring>
+        <name>outer_controller_</name>
+        <qualifiedname>agi::Pipeline::outer_controller_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="34" column="19" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1a53e9b847b6a5387d125ea6d2d7421f2e" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1ControllerBase" kindref="compound">ControllerBase</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;ControllerBase&gt; agi::Pipeline::inner_controller_</definition>
+        <argsstring></argsstring>
+        <name>inner_controller_</name>
+        <qualifiedname>agi::Pipeline::inner_controller_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="36" column="5" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1ab774547e8c9e8072f35fa68bf93ec33c" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1BridgeBase" kindref="compound">BridgeBase</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;BridgeBase&gt; agi::Pipeline::bridge_</definition>
+        <argsstring></argsstring>
+        <name>bridge_</name>
+        <qualifiedname>agi::Pipeline::bridge_</qualifiedname>
+        <briefdescription>
+<para>An optional inner loop controller. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="37" column="19" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1ac90f96d13327c1eba37f53fe00c1cf16" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref></type>
+        <definition>QuadState agi::Pipeline::state_</definition>
+        <argsstring></argsstring>
+        <name>state_</name>
+        <qualifiedname>agi::Pipeline::state_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="124" column="13" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1aea9c4b9c6380a17f04563d68631d44c5" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1Feedback" kindref="compound">Feedback</ref></type>
+        <definition>Feedback agi::Pipeline::feedback_</definition>
+        <argsstring></argsstring>
+        <name>feedback_</name>
+        <qualifiedname>agi::Pipeline::feedback_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="125" column="12" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1aba216d2d800a7353d04d381b53cb4c7f" prot="private" static="no" mutable="no">
+        <type>SetpointVector</type>
+        <definition>SetpointVector agi::Pipeline::setpoints_</definition>
+        <argsstring></argsstring>
+        <name>setpoints_</name>
+        <qualifiedname>agi::Pipeline::setpoints_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="126" column="18" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1af36fc594e8f6697d6129995f3a2bafca" prot="private" static="no" mutable="no">
+        <type>SetpointVector</type>
+        <definition>SetpointVector agi::Pipeline::setpoints_outer_</definition>
+        <argsstring></argsstring>
+        <name>setpoints_outer_</name>
+        <qualifiedname>agi::Pipeline::setpoints_outer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="127" column="18" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1acb8cec997f524515d861a2dff55af77f" prot="private" static="no" mutable="no">
+        <type>SetpointVector</type>
+        <definition>SetpointVector agi::Pipeline::setpoints_inner_</definition>
+        <argsstring></argsstring>
+        <name>setpoints_inner_</name>
+        <qualifiedname>agi::Pipeline::setpoints_inner_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="128" column="18" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1a61d30ae6aa6d763dbf3c902742e45177" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1Command" kindref="compound">Command</ref></type>
+        <definition>Command agi::Pipeline::command_</definition>
+        <argsstring></argsstring>
+        <name>command_</name>
+        <qualifiedname>agi::Pipeline::command_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="129" column="11" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1a94dcfad9e19927ca8c55d36d3300d5d4" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1Command" kindref="compound">Command</ref></type>
+        <definition>Command agi::Pipeline::apply_command_</definition>
+        <argsstring></argsstring>
+        <name>apply_command_</name>
+        <qualifiedname>agi::Pipeline::apply_command_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="130" column="11" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1a84a1a02e8c2c18af8f8e5baf960fe704" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1Command" kindref="compound">Command</ref></type>
+        <definition>Command agi::Pipeline::feedthrough_command_</definition>
+        <argsstring></argsstring>
+        <name>feedthrough_command_</name>
+        <qualifiedname>agi::Pipeline::feedthrough_command_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="131" column="11" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1a0b0c6843ea4d64ae12425a37752db8ef" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref></type>
+        <definition>Logger agi::Pipeline::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>agi::Pipeline::logger_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="132" column="10" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1a4f5e099620891822383c0aa74c80197f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::Pipeline::initialized_</definition>
+        <argsstring></argsstring>
+        <name>initialized_</name>
+        <qualifiedname>agi::Pipeline::initialized_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="134" column="8" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1a3cc566e43439c7c51560cc47f7456f09" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::Pipeline::feedthrough_active_</definition>
+        <argsstring></argsstring>
+        <name>feedthrough_active_</name>
+        <qualifiedname>agi::Pipeline::feedthrough_active_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="135" column="8" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1a67cd30682a0cf5ca123394b4daa440e4" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Pipeline::dt_</definition>
+        <argsstring></argsstring>
+        <name>dt_</name>
+        <qualifiedname>agi::Pipeline::dt_</qualifiedname>
+        <initializer>{0.01}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="136" column="10" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1a2b3f29c270d3cc57a90e4d10e4f96290" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int agi::Pipeline::outerloop_divisor_</definition>
+        <argsstring></argsstring>
+        <name>outerloop_divisor_</name>
+        <qualifiedname>agi::Pipeline::outerloop_divisor_</qualifiedname>
+        <initializer>{1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="137" column="7" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1a3f4bb3c780dcf46d81061a20fc46dbd1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int agi::Pipeline::outerloop_counter_</definition>
+        <argsstring></argsstring>
+        <name>outerloop_counter_</name>
+        <qualifiedname>agi::Pipeline::outerloop_counter_</qualifiedname>
+        <initializer>{-1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="138" column="7" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1acec9fa292ca7df09e38aeef061811087" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::Pipeline::stop_after_feedthrough_</definition>
+        <argsstring></argsstring>
+        <name>stop_after_feedthrough_</name>
+        <qualifiedname>agi::Pipeline::stop_after_feedthrough_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="139" column="8" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1a380dfcfbf552143765c0236655d79507" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Pipeline::feedthrough_timeout_</definition>
+        <argsstring></argsstring>
+        <name>feedthrough_timeout_</name>
+        <qualifiedname>agi::Pipeline::feedthrough_timeout_</qualifiedname>
+        <initializer>{0.05}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="140" column="10" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pipeline_1a2003c844d6b5bd33afadda8e2970ffe8" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; PipelineCallbackFunction &gt;</type>
+        <definition>std::vector&lt;PipelineCallbackFunction&gt; agi::Pipeline::callbacks_</definition>
+        <argsstring></argsstring>
+        <name>callbacks_</name>
+        <qualifiedname>agi::Pipeline::callbacks_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="142" column="15" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1Pipeline_1a89b19309bb6e7e9f45da942d6844f512" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Pipeline::Pipeline</definition>
+        <argsstring>(const std::string &amp;name=&quot;Pipeline&quot;, const Scalar feedthrough_timeout=0.05)</argsstring>
+        <name>Pipeline</name>
+        <qualifiedname>agi::Pipeline::Pipeline</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+          <defval>&quot;Pipeline&quot;</defval>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>feedthrough_timeout</declname>
+          <defval>0.05</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="20" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1aa2806807913e81cbe72ac4a078f2b76e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classagi_1_1Pipeline" kindref="compound">Pipeline</ref> &amp;</type>
+        <definition>Pipeline &amp; agi::Pipeline::operator=</definition>
+        <argsstring>(const Pipeline &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>agi::Pipeline::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classagi_1_1Pipeline" kindref="compound">Pipeline</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="39" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1a3ea8e36259c7ef33b71d2bceda3f990b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pipeline::isReferenceSet</definition>
+        <argsstring>() const</argsstring>
+        <name>isReferenceSet</name>
+        <qualifiedname>agi::Pipeline::isReferenceSet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>wether the reference is set. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="42" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1a5c1c1eb50b694fdfbeb0f3eae38d0d2d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pipeline::isEstimatorSet</definition>
+        <argsstring>() const</argsstring>
+        <name>isEstimatorSet</name>
+        <qualifiedname>agi::Pipeline::isEstimatorSet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>wether the estimator is set. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="45" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1a10cf9fe4e323d892e2cf907c1769a07e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pipeline::isSamplerSet</definition>
+        <argsstring>() const</argsstring>
+        <name>isSamplerSet</name>
+        <qualifiedname>agi::Pipeline::isSamplerSet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>wether the sampler is set. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="48" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1a7cf0fd2b28487646e5d0ac768f5f8a07" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pipeline::isOuterControllerSet</definition>
+        <argsstring>() const</argsstring>
+        <name>isOuterControllerSet</name>
+        <qualifiedname>agi::Pipeline::isOuterControllerSet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>wether the outer controller is set. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="51" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1a31d8b0382779a97b55f61a75e6c00422" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pipeline::isInnerControllerSet</definition>
+        <argsstring>() const</argsstring>
+        <name>isInnerControllerSet</name>
+        <qualifiedname>agi::Pipeline::isInnerControllerSet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>wether the inner controller is set. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="54" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1ad90b2bfc2ea3a5948f92ef5f22925063" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pipeline::isBridgeSet</definition>
+        <argsstring>() const</argsstring>
+        <name>isBridgeSet</name>
+        <qualifiedname>agi::Pipeline::isBridgeSet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>wether the bridge is set. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="57" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1a748b299295369c238f3f128fcb40d6f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pipeline::isSet</definition>
+        <argsstring>() const</argsstring>
+        <name>isSet</name>
+        <qualifiedname>agi::Pipeline::isSet</qualifiedname>
+        <briefdescription>
+<para>Checks if estimators, sampler, outer controller, and bridge is set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="60" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1ac248cf592e3e789ef0e16d45e19761c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pipeline::appendReference</definition>
+        <argsstring>(std::shared_ptr&lt; ReferenceBase &gt; &amp;&amp;reference)</argsstring>
+        <name>appendReference</name>
+        <qualifiedname>agi::Pipeline::appendReference</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classagi_1_1ReferenceBase" kindref="compound">ReferenceBase</ref> &gt; &amp;&amp;</type>
+          <declname>reference</declname>
+        </param>
+        <briefdescription>
+<para>Append a reference to the end. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reference</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a reference. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="63" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1a89b88496acf89d738ff30cef5c4314e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pipeline::insertReference</definition>
+        <argsstring>(std::shared_ptr&lt; ReferenceBase &gt; &amp;&amp;reference)</argsstring>
+        <name>insertReference</name>
+        <qualifiedname>agi::Pipeline::insertReference</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classagi_1_1ReferenceBase" kindref="compound">ReferenceBase</ref> &gt; &amp;&amp;</type>
+          <declname>reference</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Insert a reference according to it&apos;s starting time.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reference</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a reference. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="67" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1ad26023e0e316cbb23fb2b3834e9ca5c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pipeline::run</definition>
+        <argsstring>(const Scalar t)</argsstring>
+        <name>run</name>
+        <qualifiedname>agi::Pipeline::run</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Run at time t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time in seconds. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="70" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1ad7be186310a47a022eca4af400e55f16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structagi_1_1Command" kindref="compound">Command</ref></type>
+        <definition>Command agi::Pipeline::getCommand</definition>
+        <argsstring>() const</argsstring>
+        <name>getCommand</name>
+        <qualifiedname>agi::Pipeline::getCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the last computed command. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="73" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1aef8eaaa3d9d42f6cc21a46a45df95eca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pipeline::setFeedthroughCommand</definition>
+        <argsstring>(const Command &amp;command)</argsstring>
+        <name>setFeedthroughCommand</name>
+        <qualifiedname>agi::Pipeline::setFeedthroughCommand</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets a feedthrough command that overwrites the computed command as long as it does not time out. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="77" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1ab737ce2a58725fba90508178bb63c1cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pipeline::clearFeedthoughCommand</definition>
+        <argsstring>()</argsstring>
+        <name>clearFeedthoughCommand</name>
+        <qualifiedname>agi::Pipeline::clearFeedthoughCommand</qualifiedname>
+        <briefdescription>
+<para>Clears the feedthrough command, returning to normal operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="80" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1a202e8ec38bd6253c50cdb9a0bff68c5a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pipeline::feedthroughActive</definition>
+        <argsstring>() const</argsstring>
+        <name>feedthroughActive</name>
+        <qualifiedname>agi::Pipeline::feedthroughActive</qualifiedname>
+        <briefdescription>
+<para>Checks if there was an active feedthrough in the last run execution. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="83" column="15" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1a74408d66f546549309c41d6987c2b60e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+        <definition>const QuadState &amp; agi::Pipeline::getState</definition>
+        <argsstring>() const</argsstring>
+        <name>getState</name>
+        <qualifiedname>agi::Pipeline::getState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the quadrotor state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="86" column="26" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1a149140cd85c3cafae1bbef18b1be6a1f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const SetpointVector</type>
+        <definition>const SetpointVector agi::Pipeline::getSetpoints</definition>
+        <argsstring>() const</argsstring>
+        <name>getSetpoints</name>
+        <qualifiedname>agi::Pipeline::getSetpoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the setpoints from the sampler. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="89" column="31" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1af16fcc8bbbd81fab02160b7d15792e39" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const SetpointVector &amp;</type>
+        <definition>const SetpointVector &amp; agi::Pipeline::getOuterSetpoints</definition>
+        <argsstring>() const</argsstring>
+        <name>getOuterSetpoints</name>
+        <qualifiedname>agi::Pipeline::getOuterSetpoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the setpoints from the outer controller. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="92" column="31" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1aa40dedc1188e9d4b5a65a364a1cfdce9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const SetpointVector &amp;</type>
+        <definition>const SetpointVector &amp; agi::Pipeline::getInnerSetpoints</definition>
+        <argsstring>() const</argsstring>
+        <name>getInnerSetpoints</name>
+        <qualifiedname>agi::Pipeline::getInnerSetpoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the setpoints from the inner controller. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="97" column="31" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="97" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1a0dfecf6debfa15f3ef9e89d362eddb4d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pipeline::printReferenceInfo</definition>
+        <argsstring>(const bool detailed=false) const</argsstring>
+        <name>printReferenceInfo</name>
+        <qualifiedname>agi::Pipeline::printReferenceInfo</qualifiedname>
+        <param>
+          <type>const bool</type>
+          <declname>detailed</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print to check if references are set.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>detailed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>print out all references if true. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="103" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1aa1fdd33c6459d310333d7d17436cb0d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pipeline::registerCallback</definition>
+        <argsstring>(const PipelineCallbackFunction &amp;function)</argsstring>
+        <name>registerCallback</name>
+        <qualifiedname>agi::Pipeline::registerCallback</qualifiedname>
+        <param>
+          <type>const PipelineCallbackFunction &amp;</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register callbacks that are called after each run.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="107" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1a62aa4dd3dd35f74108e7379f62d7f9a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pipeline::setOuterloopDivisor</definition>
+        <argsstring>(const int divisor)</argsstring>
+        <name>setOuterloopDivisor</name>
+        <qualifiedname>agi::Pipeline::setOuterloopDivisor</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>divisor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>divisor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unitless divisor for the outer control loop. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="110" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1a4ee6202d13df3aa5c969e045bfe56c0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pipeline::setStopAfterFeedthrough</definition>
+        <argsstring>(const bool stop_after_feedthrough)</argsstring>
+        <name>setStopAfterFeedthrough</name>
+        <qualifiedname>agi::Pipeline::setStopAfterFeedthrough</qualifiedname>
+        <param>
+          <type>const bool</type>
+          <declname>stop_after_feedthrough</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stop_after_feedthrough</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>defines wether to stop to hover after feedthrough ends. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="114" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1ae1e3d0aaee9ca306c7532b7c12f498c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pipeline::setFeedthroughTimeout</definition>
+        <argsstring>(const Scalar &amp;feedthrough_timeout)</argsstring>
+        <name>setFeedthroughTimeout</name>
+        <qualifiedname>agi::Pipeline::setFeedthroughTimeout</qualifiedname>
+        <param>
+          <type>const Scalar &amp;</type>
+          <declname>feedthrough_timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the timeout after which the pipeline disables the feedthrough command. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>feedthrough_timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in seconds. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="118" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pipeline_1a958fa6ee832e3ce1a27e41d126d8d254" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Pipeline::dt</definition>
+        <argsstring>() const</argsstring>
+        <name>dt</name>
+        <qualifiedname>agi::Pipeline::dt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the time step of the last control loop run. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/pipeline.hpp" line="121" column="11" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="121" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="23">
+        <label>agi::Median&lt; Scalar, 15 &gt;</label>
+        <link refid="classagi_1_1Median"/>
+      </node>
+      <node id="20">
+        <label>agi::Module&lt; BridgeBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>agi::Module&lt; ControllerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>agi::Module&lt; EstimatorBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>agi::Module&lt; SamplerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>agi::AgiWatchdog</label>
+        <link refid="classagi_1_1AgiWatchdog"/>
+      </node>
+      <node id="19">
+        <label>agi::BridgeBase</label>
+        <link refid="classagi_1_1BridgeBase"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>timeout_guard_thread_</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>timeout_wait_mutex_</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>voltage_</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>feedback_callbacks_</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>voltage_watchdog_</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>agi::ControllerBase</label>
+        <link refid="classagi_1_1ControllerBase"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>agi::EstimatorBase</label>
+        <link refid="classagi_1_1EstimatorBase"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+      <node id="1">
+        <label>agi::Pipeline</label>
+        <link refid="classagi_1_1Pipeline"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>references_</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>estimator_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>sampler_</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>inner_controller_</edgelabel>
+          <edgelabel>outer_controller_</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>bridge_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>agi::QuadState</label>
+        <link refid="structagi_1_1QuadState"/>
+      </node>
+      <node id="4">
+        <label>agi::ReferenceBase</label>
+        <link refid="classagi_1_1ReferenceBase"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>start_state_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>name_</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>agi::SamplerBase</label>
+        <link refid="classagi_1_1SamplerBase"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::shared_ptr&lt; ReferenceBase &gt;</label>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>std::shared_ptr&lt; agi::BridgeBase &gt;</label>
+        <childnode refid="19" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>std::shared_ptr&lt; agi::ControllerBase &gt;</label>
+        <childnode refid="16" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>std::shared_ptr&lt; agi::EstimatorBase &gt;</label>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>std::shared_ptr&lt; agi::SamplerBase &gt;</label>
+        <childnode refid="13" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="22">
+        <label>std::mutex</label>
+      </node>
+      <node id="6">
+        <label>std::string</label>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>std::thread</label>
+      </node>
+      <node id="24">
+        <label>std::vector&lt; FeedbackCallbackFunction &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; std::shared_ptr&lt; ReferenceBase &gt; &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/base/pipeline.hpp" line="18" column="1" bodyfile="agilib/include/agilib/base/pipeline.hpp" bodystart="18" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classagi_1_1Pipeline_1ac248cf592e3e789ef0e16d45e19761c3" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>appendReference</name></member>
+      <member refid="classagi_1_1Pipeline_1a94dcfad9e19927ca8c55d36d3300d5d4" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>apply_command_</name></member>
+      <member refid="classagi_1_1Pipeline_1ab774547e8c9e8072f35fa68bf93ec33c" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>bridge_</name></member>
+      <member refid="classagi_1_1Pipeline_1a2003c844d6b5bd33afadda8e2970ffe8" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>callbacks_</name></member>
+      <member refid="classagi_1_1Pipeline_1ab737ce2a58725fba90508178bb63c1cc" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>clearFeedthoughCommand</name></member>
+      <member refid="classagi_1_1Pipeline_1a61d30ae6aa6d763dbf3c902742e45177" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>command_</name></member>
+      <member refid="classagi_1_1Pipeline_1a958fa6ee832e3ce1a27e41d126d8d254" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>dt</name></member>
+      <member refid="classagi_1_1Pipeline_1a67cd30682a0cf5ca123394b4daa440e4" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>dt_</name></member>
+      <member refid="classagi_1_1Pipeline_1a4ef4360b90c24f3f0dc1177cb50af81a" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>estimator_</name></member>
+      <member refid="classagi_1_1Pipeline_1aea9c4b9c6380a17f04563d68631d44c5" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>feedback_</name></member>
+      <member refid="classagi_1_1Pipeline_1a3cc566e43439c7c51560cc47f7456f09" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>feedthrough_active_</name></member>
+      <member refid="classagi_1_1Pipeline_1a84a1a02e8c2c18af8f8e5baf960fe704" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>feedthrough_command_</name></member>
+      <member refid="classagi_1_1Pipeline_1a380dfcfbf552143765c0236655d79507" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>feedthrough_timeout_</name></member>
+      <member refid="classagi_1_1Pipeline_1a202e8ec38bd6253c50cdb9a0bff68c5a" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>feedthroughActive</name></member>
+      <member refid="classagi_1_1Pipeline_1ad7be186310a47a022eca4af400e55f16" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>getCommand</name></member>
+      <member refid="classagi_1_1Pipeline_1aa40dedc1188e9d4b5a65a364a1cfdce9" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>getInnerSetpoints</name></member>
+      <member refid="classagi_1_1Pipeline_1af16fcc8bbbd81fab02160b7d15792e39" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>getOuterSetpoints</name></member>
+      <member refid="classagi_1_1Pipeline_1a149140cd85c3cafae1bbef18b1be6a1f" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>getSetpoints</name></member>
+      <member refid="classagi_1_1Pipeline_1a74408d66f546549309c41d6987c2b60e" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>getState</name></member>
+      <member refid="classagi_1_1Pipeline_1a4f5e099620891822383c0aa74c80197f" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>initialized_</name></member>
+      <member refid="classagi_1_1Pipeline_1a53e9b847b6a5387d125ea6d2d7421f2e" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>inner_controller_</name></member>
+      <member refid="classagi_1_1Pipeline_1a89b88496acf89d738ff30cef5c4314e4" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>insertReference</name></member>
+      <member refid="classagi_1_1Pipeline_1ad90b2bfc2ea3a5948f92ef5f22925063" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>isBridgeSet</name></member>
+      <member refid="classagi_1_1Pipeline_1a5c1c1eb50b694fdfbeb0f3eae38d0d2d" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>isEstimatorSet</name></member>
+      <member refid="classagi_1_1Pipeline_1a31d8b0382779a97b55f61a75e6c00422" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>isInnerControllerSet</name></member>
+      <member refid="classagi_1_1Pipeline_1a7cf0fd2b28487646e5d0ac768f5f8a07" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>isOuterControllerSet</name></member>
+      <member refid="classagi_1_1Pipeline_1a3ea8e36259c7ef33b71d2bceda3f990b" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>isReferenceSet</name></member>
+      <member refid="classagi_1_1Pipeline_1a10cf9fe4e323d892e2cf907c1769a07e" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>isSamplerSet</name></member>
+      <member refid="classagi_1_1Pipeline_1a748b299295369c238f3f128fcb40d6f7" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>isSet</name></member>
+      <member refid="classagi_1_1Pipeline_1a0b0c6843ea4d64ae12425a37752db8ef" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Pipeline_1aa2806807913e81cbe72ac4a078f2b76e" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>operator=</name></member>
+      <member refid="classagi_1_1Pipeline_1a67ba5d5dd0159470d68b89c18b923554" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>outer_controller_</name></member>
+      <member refid="classagi_1_1Pipeline_1a3f4bb3c780dcf46d81061a20fc46dbd1" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>outerloop_counter_</name></member>
+      <member refid="classagi_1_1Pipeline_1a2b3f29c270d3cc57a90e4d10e4f96290" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>outerloop_divisor_</name></member>
+      <member refid="classagi_1_1Pipeline_1a89b19309bb6e7e9f45da942d6844f512" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>Pipeline</name></member>
+      <member refid="classagi_1_1Pipeline_1affb408ef8b18d5a5379907849f51882b" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>PipelineCallbackFunction</name></member>
+      <member refid="classagi_1_1Pipeline_1a0dfecf6debfa15f3ef9e89d362eddb4d" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>printReferenceInfo</name></member>
+      <member refid="classagi_1_1Pipeline_1a231339194e2b2139fdf58574f74a3994" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>references_</name></member>
+      <member refid="classagi_1_1Pipeline_1aa1fdd33c6459d310333d7d17436cb0d2" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>registerCallback</name></member>
+      <member refid="classagi_1_1Pipeline_1ad26023e0e316cbb23fb2b3834e9ca5c9" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>run</name></member>
+      <member refid="classagi_1_1Pipeline_1ae5902c3fa0ea93ed2286ce5f2380b88e" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>sampler_</name></member>
+      <member refid="classagi_1_1Pipeline_1aef8eaaa3d9d42f6cc21a46a45df95eca" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>setFeedthroughCommand</name></member>
+      <member refid="classagi_1_1Pipeline_1ae1e3d0aaee9ca306c7532b7c12f498c5" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>setFeedthroughTimeout</name></member>
+      <member refid="classagi_1_1Pipeline_1a62aa4dd3dd35f74108e7379f62d7f9a2" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>setOuterloopDivisor</name></member>
+      <member refid="classagi_1_1Pipeline_1aba216d2d800a7353d04d381b53cb4c7f" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>setpoints_</name></member>
+      <member refid="classagi_1_1Pipeline_1acb8cec997f524515d861a2dff55af77f" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>setpoints_inner_</name></member>
+      <member refid="classagi_1_1Pipeline_1af36fc594e8f6697d6129995f3a2bafca" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>setpoints_outer_</name></member>
+      <member refid="classagi_1_1Pipeline_1a4ee6202d13df3aa5c969e045bfe56c0f" prot="public" virt="non-virtual"><scope>agi::Pipeline</scope><name>setStopAfterFeedthrough</name></member>
+      <member refid="classagi_1_1Pipeline_1ac90f96d13327c1eba37f53fe00c1cf16" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>state_</name></member>
+      <member refid="classagi_1_1Pipeline_1acec9fa292ca7df09e38aeef061811087" prot="private" virt="non-virtual"><scope>agi::Pipeline</scope><name>stop_after_feedthrough_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

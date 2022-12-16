@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_0e8765243f17c9f87f71d1200a958789" kind="dir">
+    <compoundname>agilib/include/agilib</compoundname>
+    <innerdir refid="dir_22516db969861fe396744e4d7d1f6c67">agilib/include/agilib/base</innerdir>
+    <innerdir refid="dir_c5da9ab87aaf1b86c685ff0fe2f21851">agilib/include/agilib/bridge</innerdir>
+    <innerdir refid="dir_58305fbc7d0a7d21a8aa79ca83a19012">agilib/include/agilib/controller</innerdir>
+    <innerdir refid="dir_b97fb6075d13bcc14bafcb911165187c">agilib/include/agilib/estimator</innerdir>
+    <innerdir refid="dir_d02826a77d4a1cb911d374745043766f">agilib/include/agilib/guard</innerdir>
+    <innerdir refid="dir_7d111cc41db70d4f0019962ad4cd7430">agilib/include/agilib/math</innerdir>
+    <innerdir refid="dir_54c023d2674c38d5f9a792d29524d821">agilib/include/agilib/pilot</innerdir>
+    <innerdir refid="dir_28a72ba0ecba9f248b95d876149987b4">agilib/include/agilib/reference</innerdir>
+    <innerdir refid="dir_9a6ec00f5e546556ba5bf7f285dbc185">agilib/include/agilib/sampler</innerdir>
+    <innerdir refid="dir_64754dc3c4a4546689b3528611173a25">agilib/include/agilib/serial</innerdir>
+    <innerdir refid="dir_55396174eda3a77b8f4d41551895bd57">agilib/include/agilib/simulator</innerdir>
+    <innerdir refid="dir_3e2ac7b4c1954cdcf27834ec6d93454a">agilib/include/agilib/types</innerdir>
+    <innerdir refid="dir_5df57323e385f74caaa80b69cb63d9ef">agilib/include/agilib/utils</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/"/>
+  </compounddef>
+</doxygen>

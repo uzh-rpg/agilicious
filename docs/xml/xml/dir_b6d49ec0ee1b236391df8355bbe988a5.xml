@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_b6d49ec0ee1b236391df8355bbe988a5" kind="dir">
+    <compoundname>agilib/include/agilib/sampler/time_based</compoundname>
+    <innerfile refid="time__sampler_8hpp">time_sampler.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/sampler/time_based/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,482 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1Feedback" kind="struct" language="C++" prot="public">
+    <compoundname>agi::Feedback</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structagi_1_1Feedback_1af1d57bbdf197e311bfcc4ae1de57e108" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>CTRLMODE</name>
+        <qualifiedname>agi::Feedback::CTRLMODE</qualifiedname>
+        <enumvalue id="structagi_1_1Feedback_1af1d57bbdf197e311bfcc4ae1de57e108accc0377a8afbf50e7094f5c23a8af223" prot="public">
+          <name>INVALID</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1Feedback_1af1d57bbdf197e311bfcc4ae1de57e108a88559a0cfd8250c9d65970cc145c92d4" prot="public">
+          <name>OFF</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1Feedback_1af1d57bbdf197e311bfcc4ae1de57e108a20c7c4e4647ec15220bb4de74505c788" prot="public">
+          <name>SET_PARAM</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1Feedback_1af1d57bbdf197e311bfcc4ae1de57e108a47f45e65244c17ec9fa8771a5c6d60e1" prot="public">
+          <name>ARM</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1Feedback_1af1d57bbdf197e311bfcc4ae1de57e108a56d59cee48ea1b7f5cf6fed882fbfe69" prot="public">
+          <name>ROTOR_THROTTLE</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1Feedback_1af1d57bbdf197e311bfcc4ae1de57e108a64a800cd18d019dd04fe9d97ca4c7da2" prot="public">
+          <name>ROTOR_SPEED</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1Feedback_1af1d57bbdf197e311bfcc4ae1de57e108a45e1d18bb0b5687bf9c0608437da1761" prot="public">
+          <name>ROTOR_THRUST</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1Feedback_1af1d57bbdf197e311bfcc4ae1de57e108a3e7d5c1227ad31a891471c5b9571bedf" prot="public">
+          <name>BODY_RATE</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1Feedback_1af1d57bbdf197e311bfcc4ae1de57e108a16b57c4fc71c43ba346b1443a5073dcd" prot="public">
+          <name>ATTITUDE</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1Feedback_1af1d57bbdf197e311bfcc4ae1de57e108a7b4354bded455eb379e3c764806cda7b" prot="public">
+          <name>VELOCITY</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1Feedback_1af1d57bbdf197e311bfcc4ae1de57e108a1d9e8d5522fd3de1bbc21723300efd30" prot="public">
+          <name>EMERGENCY</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1Feedback_1af1d57bbdf197e311bfcc4ae1de57e108ac52770d4f937744b0f17d8718ee270ba" prot="public">
+          <name>FEEDBACK</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="22" column="3" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="22" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="enum" id="structagi_1_1Feedback_1a0c0e5ca8d086b5891ee995bebae69103" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>ROTORFEEDBACKTYPE</name>
+        <qualifiedname>agi::Feedback::ROTORFEEDBACKTYPE</qualifiedname>
+        <enumvalue id="structagi_1_1Feedback_1a0c0e5ca8d086b5891ee995bebae69103accc0377a8afbf50e7094f5c23a8af223" prot="public">
+          <name>INVALID</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1Feedback_1a0c0e5ca8d086b5891ee995bebae69103abb5fe16848dfe42838d7ac353668ae61" prot="public">
+          <name>THROTTLE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1Feedback_1a0c0e5ca8d086b5891ee995bebae69103a65a59338b99aee6a451e86b17b462b5a" prot="public">
+          <name>SPEED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structagi_1_1Feedback_1a0c0e5ca8d086b5891ee995bebae69103a7986d3454a374ccd81c48f2381e89d0d" prot="public">
+          <name>THRUST</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="40" column="3" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="40" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1Feedback_1a20d5ce8e82a90922db5cffb3d2ff66df" prot="public" static="no" mutable="no">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW Scalar</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW Scalar agi::Feedback::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <qualifiedname>agi::Feedback::t</qualifiedname>
+        <initializer>{NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="10" column="10" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Feedback_1aab068cb9da61ea21f2c6980dbab8542d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::Feedback::received</definition>
+        <argsstring></argsstring>
+        <name>received</name>
+        <qualifiedname>agi::Feedback::received</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="11" column="8" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Feedback_1abd32faa10c2584195ada78e6d915ad49" prot="public" static="no" mutable="no">
+        <type><ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref></type>
+        <definition>ImuSample agi::Feedback::imu</definition>
+        <argsstring></argsstring>
+        <name>imu</name>
+        <qualifiedname>agi::Feedback::imu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="12" column="13" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Feedback_1a749905a2c5516019433335f67e7447f7" prot="public" static="no" mutable="no">
+        <type>Quaternion</type>
+        <definition>Quaternion agi::Feedback::attitude</definition>
+        <argsstring></argsstring>
+        <name>attitude</name>
+        <qualifiedname>agi::Feedback::attitude</qualifiedname>
+        <initializer>{NAN, NAN, NAN, NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="13" column="14" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Feedback_1a674e8e7335e83a2d4b6a5d345045de86" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Feedback::voltage</definition>
+        <argsstring></argsstring>
+        <name>voltage</name>
+        <qualifiedname>agi::Feedback::voltage</qualifiedname>
+        <initializer>{NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="15" column="10" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Feedback_1af0fb11f3e572aec7f4cd20b83321e6bb" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Feedback::current</definition>
+        <argsstring></argsstring>
+        <name>current</name>
+        <qualifiedname>agi::Feedback::current</qualifiedname>
+        <initializer>{NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="16" column="10" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Feedback_1a0f71c3ccb530d3f5f4f057f52cb637d8" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 4 &gt;</type>
+        <definition>Vector&lt;4&gt; agi::Feedback::rotor_speed_rads</definition>
+        <argsstring></argsstring>
+        <name>rotor_speed_rads</name>
+        <qualifiedname>agi::Feedback::rotor_speed_rads</qualifiedname>
+        <initializer>{NAN, NAN, NAN, NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="18" column="10" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Feedback_1a01cc609a9d78c4b39037a4bf9d14aed6" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 4 &gt;</type>
+        <definition>Vector&lt;4&gt; agi::Feedback::rotor_thrust_newton</definition>
+        <argsstring></argsstring>
+        <name>rotor_thrust_newton</name>
+        <qualifiedname>agi::Feedback::rotor_thrust_newton</qualifiedname>
+        <initializer>{NAN, NAN, NAN, NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="19" column="10" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Feedback_1a41c6e0829d9c1c59255babc198bf0964" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 4 &gt;</type>
+        <definition>Vector&lt;4&gt; agi::Feedback::rotor_value</definition>
+        <argsstring></argsstring>
+        <name>rotor_value</name>
+        <qualifiedname>agi::Feedback::rotor_value</qualifiedname>
+        <initializer>{NAN, NAN, NAN, NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="20" column="10" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Feedback_1aab5fa820bdf32e01611d8b5c0b8b3809" prot="public" static="no" mutable="no">
+        <type>CTRLMODE</type>
+        <definition>CTRLMODE agi::Feedback::control_mode</definition>
+        <argsstring></argsstring>
+        <name>control_mode</name>
+        <qualifiedname>agi::Feedback::control_mode</qualifiedname>
+        <initializer>{CTRLMODE::INVALID}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="37" column="12" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Feedback_1a1b74d6aa92c3d8019f11fa17bdfd1ea7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::Feedback::armed</definition>
+        <argsstring></argsstring>
+        <name>armed</name>
+        <qualifiedname>agi::Feedback::armed</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="38" column="8" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Feedback_1abf8c54efc61462bbdc6668e762a5096a" prot="public" static="no" mutable="no">
+        <type>ROTORFEEDBACKTYPE</type>
+        <definition>ROTORFEEDBACKTYPE agi::Feedback::rotor_feedback_type</definition>
+        <argsstring></argsstring>
+        <name>rotor_feedback_type</name>
+        <qualifiedname>agi::Feedback::rotor_feedback_type</qualifiedname>
+        <initializer>{ROTORFEEDBACKTYPE::INVALID}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="47" column="21" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1Feedback_1a24467f7aab343f37c8a427e55f9b7188" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Feedback::valid</definition>
+        <argsstring>() const</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::Feedback::valid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="49" column="15" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Feedback_1a68b23ef3c5120e8571606923844fe2dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Feedback::hasTimestamp</definition>
+        <argsstring>() const</argsstring>
+        <name>hasTimestamp</name>
+        <qualifiedname>agi::Feedback::hasTimestamp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="51" column="15" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Feedback_1a308d59ee531284aa77da1220a07d0407" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Feedback::isBatteryVoltageValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isBatteryVoltageValid</name>
+        <qualifiedname>agi::Feedback::isBatteryVoltageValid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="53" column="15" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Feedback_1a80f778d320dafd0753a845d7ef20c5cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Feedback::isBatteryCurrentValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isBatteryCurrentValid</name>
+        <qualifiedname>agi::Feedback::isBatteryCurrentValid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="55" column="15" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Feedback_1a87444f68885dbaf27abef1e01e4f20da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Feedback::isRotorSpeedValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isRotorSpeedValid</name>
+        <qualifiedname>agi::Feedback::isRotorSpeedValid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="57" column="15" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Feedback_1a91aa99ca71e0fce8336d2b8baf6543d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Feedback::isImuValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isImuValid</name>
+        <qualifiedname>agi::Feedback::isImuValid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="59" column="15" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Feedback_1af5b8bf9556d3e974805825e51edb9c9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Feedback::isAttitudeValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isAttitudeValid</name>
+        <qualifiedname>agi::Feedback::isAttitudeValid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/feedback.hpp" line="61" column="15" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="61" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::Feedback</label>
+        <link refid="structagi_1_1Feedback"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>imu</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ImuSample</label>
+        <link refid="structagi_1_1ImuSample"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/types/feedback.hpp" line="8" column="1" bodyfile="agilib/include/agilib/types/feedback.hpp" bodystart="8" bodyend="62"/>
+    <listofallmembers>
+      <member refid="structagi_1_1Feedback_1a1b74d6aa92c3d8019f11fa17bdfd1ea7" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>armed</name></member>
+      <member refid="structagi_1_1Feedback_1a749905a2c5516019433335f67e7447f7" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>attitude</name></member>
+      <member refid="structagi_1_1Feedback_1aab5fa820bdf32e01611d8b5c0b8b3809" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>control_mode</name></member>
+      <member refid="structagi_1_1Feedback_1af1d57bbdf197e311bfcc4ae1de57e108" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>CTRLMODE</name></member>
+      <member refid="structagi_1_1Feedback_1af0fb11f3e572aec7f4cd20b83321e6bb" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>current</name></member>
+      <member refid="structagi_1_1Feedback_1a68b23ef3c5120e8571606923844fe2dd" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>hasTimestamp</name></member>
+      <member refid="structagi_1_1Feedback_1abd32faa10c2584195ada78e6d915ad49" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>imu</name></member>
+      <member refid="structagi_1_1Feedback_1af5b8bf9556d3e974805825e51edb9c9e" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>isAttitudeValid</name></member>
+      <member refid="structagi_1_1Feedback_1a80f778d320dafd0753a845d7ef20c5cd" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>isBatteryCurrentValid</name></member>
+      <member refid="structagi_1_1Feedback_1a308d59ee531284aa77da1220a07d0407" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>isBatteryVoltageValid</name></member>
+      <member refid="structagi_1_1Feedback_1a91aa99ca71e0fce8336d2b8baf6543d0" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>isImuValid</name></member>
+      <member refid="structagi_1_1Feedback_1a87444f68885dbaf27abef1e01e4f20da" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>isRotorSpeedValid</name></member>
+      <member refid="structagi_1_1Feedback_1aab068cb9da61ea21f2c6980dbab8542d" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>received</name></member>
+      <member refid="structagi_1_1Feedback_1abf8c54efc61462bbdc6668e762a5096a" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>rotor_feedback_type</name></member>
+      <member refid="structagi_1_1Feedback_1a0f71c3ccb530d3f5f4f057f52cb637d8" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>rotor_speed_rads</name></member>
+      <member refid="structagi_1_1Feedback_1a01cc609a9d78c4b39037a4bf9d14aed6" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>rotor_thrust_newton</name></member>
+      <member refid="structagi_1_1Feedback_1a41c6e0829d9c1c59255babc198bf0964" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>rotor_value</name></member>
+      <member refid="structagi_1_1Feedback_1a0c0e5ca8d086b5891ee995bebae69103" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>ROTORFEEDBACKTYPE</name></member>
+      <member refid="structagi_1_1Feedback_1a20d5ce8e82a90922db5cffb3d2ff66df" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>t</name></member>
+      <member refid="structagi_1_1Feedback_1a24467f7aab343f37c8a427e55f9b7188" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>valid</name></member>
+      <member refid="structagi_1_1Feedback_1a674e8e7335e83a2d4b6a5d345045de86" prot="public" virt="non-virtual"><scope>agi::Feedback</scope><name>voltage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

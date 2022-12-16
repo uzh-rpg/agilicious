@@ -1,0 +1,663 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1LowLevelControllerBetaflightParams" kind="struct" language="C++" prot="public">
+    <compoundname>agi::LowLevelControllerBetaflightParams</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1adea8edd9b30c5fb8d337fe10b5243157" prot="public" static="no" mutable="no">
+        <type>fs::path</type>
+        <definition>fs::path agi::LowLevelControllerBetaflightParams::tmap_file_</definition>
+        <argsstring></argsstring>
+        <name>tmap_file_</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::tmap_file_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="25" column="12" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1ab8b6697e32bcf3b810be4d9524856bbe" prot="public" static="no" mutable="no">
+        <type><ref refid="structagi_1_1ThrustMap" kindref="compound">ThrustMap</ref></type>
+        <definition>ThrustMap agi::LowLevelControllerBetaflightParams::tmap_</definition>
+        <argsstring></argsstring>
+        <name>tmap_</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::tmap_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="26" column="13" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1af6b25e8d3553a2b8bee51cd13df252ca" prot="public" static="no" mutable="no">
+        <type>ArrayVector&lt; 3 &gt;</type>
+        <definition>ArrayVector&lt;3&gt; agi::LowLevelControllerBetaflightParams::kp_</definition>
+        <argsstring></argsstring>
+        <name>kp_</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::kp_</qualifiedname>
+        <initializer>{40, 40, 30}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="30" column="15" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1aab34a05fbc47a1dfc04df310747ea973" prot="public" static="no" mutable="no">
+        <type>ArrayVector&lt; 3 &gt;</type>
+        <definition>ArrayVector&lt;3&gt; agi::LowLevelControllerBetaflightParams::ki_</definition>
+        <argsstring></argsstring>
+        <name>ki_</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::ki_</qualifiedname>
+        <initializer>{80, 80, 60}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="31" column="15" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1ab27db80c19f9c60ce0c6fb43b7ed0f4d" prot="public" static="no" mutable="no">
+        <type>ArrayVector&lt; 3 &gt;</type>
+        <definition>ArrayVector&lt;3&gt; agi::LowLevelControllerBetaflightParams::kd_</definition>
+        <argsstring></argsstring>
+        <name>kd_</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::kd_</qualifiedname>
+        <initializer>{20, 20, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="32" column="15" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1aa21d5ccbf440227b01570e43f8b62669" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::LowLevelControllerBetaflightParams::bfl_min_throttle_</definition>
+        <argsstring></argsstring>
+        <name>bfl_min_throttle_</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::bfl_min_throttle_</qualifiedname>
+        <initializer>= 1070</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="36" column="10" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1ae7b522c3eeb683eabc6a4a018b2d1eb9" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::LowLevelControllerBetaflightParams::bfl_max_throttle_</definition>
+        <argsstring></argsstring>
+        <name>bfl_max_throttle_</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::bfl_max_throttle_</qualifiedname>
+        <initializer>= 2000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="37" column="10" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1a265985220dc8903c5dde4786f799d189" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::LowLevelControllerBetaflightParams::bfl_dshot_offset_</definition>
+        <argsstring></argsstring>
+        <name>bfl_dshot_offset_</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::bfl_dshot_offset_</qualifiedname>
+        <initializer>= 0.055</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="38" column="10" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1ad6314e73358e617b4a5b343feef79203" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::LowLevelControllerBetaflightParams::freq_lpf_gyro_</definition>
+        <argsstring></argsstring>
+        <name>freq_lpf_gyro_</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::freq_lpf_gyro_</qualifiedname>
+        <initializer>= 250</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="42" column="10" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1a258f4a65a50f43afe65242d1d702a87e" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::LowLevelControllerBetaflightParams::freq_lpf_dterm</definition>
+        <argsstring></argsstring>
+        <name>freq_lpf_dterm</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::freq_lpf_dterm</qualifiedname>
+        <initializer>= 170</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="43" column="10" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1ac3937e5716333d6d2f1acdd0a1cb0e11" prot="public" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref></type>
+        <definition>Logger agi::LowLevelControllerBetaflightParams::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::logger_</qualifiedname>
+        <initializer>{&quot;BetaFlightParams&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="73" column="10" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1a421970ab1dc9c49c5df35226673c3675" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::LowLevelControllerBetaflightParams::PWM_MAX_VAL</definition>
+        <argsstring></argsstring>
+        <name>PWM_MAX_VAL</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::PWM_MAX_VAL</qualifiedname>
+        <initializer>= 2000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="47" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1a257b46e6adb6cd19e66e01afbbc630b6" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::LowLevelControllerBetaflightParams::PWM_MIN_VAL</definition>
+        <argsstring></argsstring>
+        <name>PWM_MIN_VAL</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::PWM_MIN_VAL</qualifiedname>
+        <initializer>= 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="48" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1a0331334a2a74fc85554b4e63b31a0610" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::LowLevelControllerBetaflightParams::PWM_RANGE</definition>
+        <argsstring></argsstring>
+        <name>PWM_RANGE</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::PWM_RANGE</qualifiedname>
+        <initializer>= PWM_MAX_VAL - PWM_MIN_VAL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="49" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1a7ac5625a9cb87f3db69ce3551f818711" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::LowLevelControllerBetaflightParams::DSHOT_MAX_VAL</definition>
+        <argsstring></argsstring>
+        <name>DSHOT_MAX_VAL</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::DSHOT_MAX_VAL</qualifiedname>
+        <initializer>= 2048</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="52" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1a1658ae2ed55e6684d94060c0ab23d963" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::LowLevelControllerBetaflightParams::DSHOT_MIN_VAL</definition>
+        <argsstring></argsstring>
+        <name>DSHOT_MIN_VAL</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::DSHOT_MIN_VAL</qualifiedname>
+        <initializer>= 48</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="53" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1aec0391bddb1b0afbf01e198b6f9ac9ef" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::LowLevelControllerBetaflightParams::DSHOT_RANGE</definition>
+        <argsstring></argsstring>
+        <name>DSHOT_RANGE</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::DSHOT_RANGE</qualifiedname>
+        <initializer>= DSHOT_MAX_VAL - DSHOT_MIN_VAL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="54" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1a24e0650176be4a4c579eb5c9129665d2" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::LowLevelControllerBetaflightParams::SBUS_MIN_VAL</definition>
+        <argsstring></argsstring>
+        <name>SBUS_MIN_VAL</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::SBUS_MIN_VAL</qualifiedname>
+        <initializer>= 192</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="57" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1a0e347c68b02ceb231f4aee83e26f0fa3" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::LowLevelControllerBetaflightParams::SBUS_MAX_VAL</definition>
+        <argsstring></argsstring>
+        <name>SBUS_MAX_VAL</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::SBUS_MAX_VAL</qualifiedname>
+        <initializer>= 1792</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="58" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1ab7e8d1b0c8c424a66f04aaf6e2c8c0df" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::LowLevelControllerBetaflightParams::SBUS_VAL_RANGE</definition>
+        <argsstring></argsstring>
+        <name>SBUS_VAL_RANGE</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::SBUS_VAL_RANGE</qualifiedname>
+        <initializer>= SBUS_MAX_VAL - SBUS_MIN_VAL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="59" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1a42424ad831e6bfe22555b3383816faf6" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr Scalar</type>
+        <definition>constexpr Scalar agi::LowLevelControllerBetaflightParams::p_gain_scaling</definition>
+        <argsstring></argsstring>
+        <name>p_gain_scaling</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::p_gain_scaling</qualifiedname>
+        <initializer>= 1.818e-3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="63" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1a4bd467bd9e31fa3f7d8303979fc7fd1b" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr Scalar</type>
+        <definition>constexpr Scalar agi::LowLevelControllerBetaflightParams::i_gain_scaling</definition>
+        <argsstring></argsstring>
+        <name>i_gain_scaling</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::i_gain_scaling</qualifiedname>
+        <initializer>= 16.67e-6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="64" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1a855b19a884945b0b0b93028c6a32b2e5" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr Scalar</type>
+        <definition>constexpr Scalar agi::LowLevelControllerBetaflightParams::d_gain_scaling</definition>
+        <argsstring></argsstring>
+        <name>d_gain_scaling</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::d_gain_scaling</qualifiedname>
+        <initializer>= -31.25e-6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="65" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1ae1a67623b588bb6eeab541fcf3dbbb95" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr Scalar</type>
+        <definition>constexpr Scalar agi::LowLevelControllerBetaflightParams::i_gain_limit</definition>
+        <argsstring></argsstring>
+        <name>i_gain_limit</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::i_gain_limit</qualifiedname>
+        <initializer>= 0.1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="66" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1a633f9649f4b842dab6b10b54ad46ded1" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr Scalar</type>
+        <definition>constexpr Scalar agi::LowLevelControllerBetaflightParams::omega_cmd_sqrt</definition>
+        <argsstring></argsstring>
+        <name>omega_cmd_sqrt</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::omega_cmd_sqrt</qualifiedname>
+        <initializer>= 79.79</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="68" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1a19bbd52d936e7741cb1b0e2ad34d091f" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr Scalar</type>
+        <definition>constexpr Scalar agi::LowLevelControllerBetaflightParams::omega_cmd_lin</definition>
+        <argsstring></argsstring>
+        <name>omega_cmd_lin</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::omega_cmd_lin</qualifiedname>
+        <initializer>= 0.04071</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="69" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1ae44a918e3f9dfa3b118245e4bdb2d722" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr Scalar</type>
+        <definition>constexpr Scalar agi::LowLevelControllerBetaflightParams::omega_volt</definition>
+        <argsstring></argsstring>
+        <name>omega_volt</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::omega_volt</qualifiedname>
+        <initializer>= 61.31</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="70" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerBetaflightParams_1a319b818f3e349afe91a081a10e96daa7" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr Scalar</type>
+        <definition>constexpr Scalar agi::LowLevelControllerBetaflightParams::omega_offset</definition>
+        <argsstring></argsstring>
+        <name>omega_offset</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::omega_offset</qualifiedname>
+        <initializer>= -1933.2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="71" column="27" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1LowLevelControllerBetaflightParams_1a781a7ffa41a933803b7599898b3e6a2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::LowLevelControllerBetaflightParams::LowLevelControllerBetaflightParams</definition>
+        <argsstring>()</argsstring>
+        <name>LowLevelControllerBetaflightParams</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::LowLevelControllerBetaflightParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="12" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1LowLevelControllerBetaflightParams_1ae2d2e68613e514765fd9a4bb10d1a2e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::LowLevelControllerBetaflightParams::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="15" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1LowLevelControllerBetaflightParams_1a50a71c750442adc5ff39c93f88ab441b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::LowLevelControllerBetaflightParams::loadThrustMap</definition>
+        <argsstring>(const fs::path &amp;agi_param_dir)</argsstring>
+        <name>loadThrustMap</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::loadThrustMap</qualifiedname>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>agi_param_dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="16" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1LowLevelControllerBetaflightParams_1a646a007a512965200728f8ab81556518" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::LowLevelControllerBetaflightParams::valid</definition>
+        <argsstring>() const override</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::valid</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b">valid</reimplements>
+        <briefdescription>
+<para>Check if parameters are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="18" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1LowLevelControllerBetaflightParams_1a06d17eca239cdbc5fc03e8db60d47324" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector&lt; 4 &gt;</type>
+        <definition>Vector&lt; 4 &gt; agi::LowLevelControllerBetaflightParams::getDSHOT</definition>
+        <argsstring>(const Vector&lt; 4 &gt; &amp;thr)</argsstring>
+        <name>getDSHOT</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::getDSHOT</qualifiedname>
+        <param>
+          <type>const Vector&lt; 4 &gt; &amp;</type>
+          <declname>thr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="20" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1LowLevelControllerBetaflightParams_1aa72a975fca1221525746975fe5ee1b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="14" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1LowLevelControllerBetaflightParams_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const Yaml &amp;yaml)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="14" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structagi_1_1LowLevelControllerBetaflightParams_1a893de472399128db8e5e6b58e3f24d83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const LowLevelControllerBetaflightParams &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::LowLevelControllerBetaflightParams::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1LowLevelControllerBetaflightParams" kindref="compound">LowLevelControllerBetaflightParams</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="21" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::LowLevelControllerBetaflightParams</label>
+        <link refid="structagi_1_1LowLevelControllerBetaflightParams"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+      <node id="1">
+        <label>agi::LowLevelControllerBetaflightParams</label>
+        <link refid="structagi_1_1LowLevelControllerBetaflightParams"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>tmap_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="3">
+        <label>agi::ThrustMap</label>
+        <link refid="structagi_1_1ThrustMap"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" line="11" column="1" bodyfile="agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp" bodystart="11" bodyend="74"/>
+    <listofallmembers>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a265985220dc8903c5dde4786f799d189" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>bfl_dshot_offset_</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1ae7b522c3eeb683eabc6a4a018b2d1eb9" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>bfl_max_throttle_</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1aa21d5ccbf440227b01570e43f8b62669" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>bfl_min_throttle_</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a855b19a884945b0b0b93028c6a32b2e5" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>d_gain_scaling</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a7ac5625a9cb87f3db69ce3551f818711" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>DSHOT_MAX_VAL</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a1658ae2ed55e6684d94060c0ab23d963" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>DSHOT_MIN_VAL</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1aec0391bddb1b0afbf01e198b6f9ac9ef" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>DSHOT_RANGE</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a258f4a65a50f43afe65242d1d702a87e" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>freq_lpf_dterm</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1ad6314e73358e617b4a5b343feef79203" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>freq_lpf_gyro_</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a06d17eca239cdbc5fc03e8db60d47324" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>getDSHOT</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1ae1a67623b588bb6eeab541fcf3dbbb95" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>i_gain_limit</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a4bd467bd9e31fa3f7d8303979fc7fd1b" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>i_gain_scaling</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1ab27db80c19f9c60ce0c6fb43b7ed0f4d" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>kd_</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1aab34a05fbc47a1dfc04df310747ea973" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>ki_</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1af6b25e8d3553a2b8bee51cd13df252ca" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>kp_</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1ae2d2e68613e514765fd9a4bb10d1a2e2" prot="public" virt="virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>load</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1aa72a975fca1221525746975fe5ee1b6a" prot="public" virt="virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>load</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" virt="virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>load</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a50a71c750442adc5ff39c93f88ab441b" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>loadThrustMap</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1ac3937e5716333d6d2f1acdd0a1cb0e11" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>logger_</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a781a7ffa41a933803b7599898b3e6a2f" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>LowLevelControllerBetaflightParams</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a19bbd52d936e7741cb1b0e2ad34d091f" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>omega_cmd_lin</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a633f9649f4b842dab6b10b54ad46ded1" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>omega_cmd_sqrt</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a319b818f3e349afe91a081a10e96daa7" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>omega_offset</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1ae44a918e3f9dfa3b118245e4bdb2d722" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>omega_volt</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a893de472399128db8e5e6b58e3f24d83" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a42424ad831e6bfe22555b3383816faf6" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>p_gain_scaling</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a421970ab1dc9c49c5df35226673c3675" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>PWM_MAX_VAL</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a257b46e6adb6cd19e66e01afbbc630b6" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>PWM_MIN_VAL</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a0331334a2a74fc85554b4e63b31a0610" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>PWM_RANGE</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a0e347c68b02ceb231f4aee83e26f0fa3" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>SBUS_MAX_VAL</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a24e0650176be4a4c579eb5c9129665d2" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>SBUS_MIN_VAL</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1ab7e8d1b0c8c424a66f04aaf6e2c8c0df" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>SBUS_VAL_RANGE</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1ab8b6697e32bcf3b810be4d9524856bbe" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>tmap_</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1adea8edd9b30c5fb8d337fe10b5243157" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>tmap_file_</name></member>
+      <member refid="structagi_1_1LowLevelControllerBetaflightParams_1a646a007a512965200728f8ab81556518" prot="public" virt="virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>valid</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::LowLevelControllerBetaflightParams</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

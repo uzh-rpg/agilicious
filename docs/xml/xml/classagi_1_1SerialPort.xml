@@ -1,0 +1,459 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1SerialPort" kind="class" language="C++" prot="public">
+    <compoundname>agi::SerialPort</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1adec6440465ca5c1c6025f52733d48548" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::SerialPort::BUFFER_SIZE</definition>
+        <argsstring></argsstring>
+        <name>BUFFER_SIZE</name>
+        <qualifiedname>agi::SerialPort::BUFFER_SIZE</qualifiedname>
+        <initializer>= 1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="27" column="24" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1aab410787c058b9aca7641104bd23991b" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classagi_1_1SerialSettings" kindref="compound">SerialSettings</ref></type>
+        <definition>const SerialSettings agi::SerialPort::settings_</definition>
+        <argsstring></argsstring>
+        <name>settings_</name>
+        <qualifiedname>agi::SerialPort::settings_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="33" column="24" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1af54f5e6aed80a493620cf002c5da0a39" prot="private" static="no" mutable="no">
+        <type>std::function&lt; void(const char *const msg, const int length)&gt;</type>
+        <definition>std::function&lt;void(const char* const msg, const int length)&gt; agi::SerialPort::receive_callback_</definition>
+        <argsstring></argsstring>
+        <name>receive_callback_</name>
+        <qualifiedname>agi::SerialPort::receive_callback_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="35" column="5" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1ac6d19bd26f47a04672d12c85cb264956" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int agi::SerialPort::serial_fd_</definition>
+        <argsstring></argsstring>
+        <name>serial_fd_</name>
+        <qualifiedname>agi::SerialPort::serial_fd_</qualifiedname>
+        <initializer>{-1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="37" column="7" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1abbbc29b95a78714ee585d72b27202136" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::SerialPort::should_exit_</definition>
+        <argsstring></argsstring>
+        <name>should_exit_</name>
+        <qualifiedname>agi::SerialPort::should_exit_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="38" column="8" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1a1007c7f698753b23bcac7b109c164290" prot="private" static="no" mutable="no">
+        <type>std::thread</type>
+        <definition>std::thread agi::SerialPort::serial_thread_</definition>
+        <argsstring></argsstring>
+        <name>serial_thread_</name>
+        <qualifiedname>agi::SerialPort::serial_thread_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="40" column="15" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1a7b81e114ef536713ee0d4450a37b632a" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char agi::SerialPort::receive_buffer_[BS]</definition>
+        <argsstring>[BS]</argsstring>
+        <name>receive_buffer_</name>
+        <qualifiedname>agi::SerialPort::receive_buffer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="44" column="8" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1a32cd4183eacf846c2547d6c1c8de090d" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t agi::SerialPort::received_length_</definition>
+        <argsstring></argsstring>
+        <name>received_length_</name>
+        <qualifiedname>agi::SerialPort::received_length_</qualifiedname>
+        <initializer>{0u}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="45" column="10" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1a3bc1ebce7830357be1cdaaeaf9a2ba3c" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char agi::SerialPort::received_message_[BS]</definition>
+        <argsstring>[BS]</argsstring>
+        <name>received_message_</name>
+        <qualifiedname>agi::SerialPort::received_message_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="47" column="8" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1a778312ce306d100e520d02b1a49d247e" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t agi::SerialPort::received_message_length_</definition>
+        <argsstring></argsstring>
+        <name>received_message_length_</name>
+        <qualifiedname>agi::SerialPort::received_message_length_</qualifiedname>
+        <initializer>{0u}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="48" column="10" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1af66f16af18bfb9c8791dec54816b0277" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex agi::SerialPort::rc_mtx_</definition>
+        <argsstring></argsstring>
+        <name>rc_mtx_</name>
+        <qualifiedname>agi::SerialPort::rc_mtx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="50" column="14" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1a380a6ce2bb0ae0d8ab37c1be22b87062" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex agi::SerialPort::proc_mtx_</definition>
+        <argsstring></argsstring>
+        <name>proc_mtx_</name>
+        <qualifiedname>agi::SerialPort::proc_mtx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="51" column="14" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1a5b1175660087b07a6e141adc030daa26" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex agi::SerialPort::buffer_mtx</definition>
+        <argsstring></argsstring>
+        <name>buffer_mtx</name>
+        <qualifiedname>agi::SerialPort::buffer_mtx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="52" column="14" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1a386af66003df8022a00c9398a028e25a" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable agi::SerialPort::rc_cv_</definition>
+        <argsstring></argsstring>
+        <name>rc_cv_</name>
+        <qualifiedname>agi::SerialPort::rc_cv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="53" column="27" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1afce75ddfd42e9efe9d0196d7a5cd4424" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable agi::SerialPort::proc_cv_</definition>
+        <argsstring></argsstring>
+        <name>proc_cv_</name>
+        <qualifiedname>agi::SerialPort::proc_cv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="54" column="27" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1a5042b1acec607c058f1d9582b71744e4" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref></type>
+        <definition>Logger agi::SerialPort::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>agi::SerialPort::logger_</qualifiedname>
+        <initializer>{&quot;SerialPort&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="56" column="10" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classagi_1_1SerialPort_1a5ccad6439d83761f36b10a85bb2bf7ca" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::SerialPort::BS</definition>
+        <argsstring></argsstring>
+        <name>BS</name>
+        <qualifiedname>agi::SerialPort::BS</qualifiedname>
+        <initializer>= BUFFER_SIZE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="42" column="27" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1SerialPort_1a39d969e6baeded9b01da27c5d84630f0" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::SerialPort::SerialPort</definition>
+        <argsstring>(const SerialSettings &amp;settings)</argsstring>
+        <name>SerialPort</name>
+        <qualifiedname>agi::SerialPort::SerialPort</qualifiedname>
+        <param>
+          <type>const <ref refid="classagi_1_1SerialSettings" kindref="compound">SerialSettings</ref> &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="16" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SerialPort_1a535e98a5a77f0c732f237ba535d4f9a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::SerialPort::~SerialPort</definition>
+        <argsstring>()</argsstring>
+        <name>~SerialPort</name>
+        <qualifiedname>agi::SerialPort::~SerialPort</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="17" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SerialPort_1a971f9cf6c9dae1c578ec2f21e5bc610e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::SerialPort::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <qualifiedname>agi::SerialPort::start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="19" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SerialPort_1a7bcb00776d018179d9e751017af9eb36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::SerialPort::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <qualifiedname>agi::SerialPort::stop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="20" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SerialPort_1aa75e2b100a2af775ee1ee97d2ce51162" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::SerialPort::isOpen</definition>
+        <argsstring>() const</argsstring>
+        <name>isOpen</name>
+        <qualifiedname>agi::SerialPort::isOpen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="21" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SerialPort_1a438973eef26542fcfb9e442b865c28a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int agi::SerialPort::send</definition>
+        <argsstring>(const char *const buffer, const int length)</argsstring>
+        <name>send</name>
+        <qualifiedname>agi::SerialPort::send</qualifiedname>
+        <param>
+          <type>const char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="23" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SerialPort_1adece8836abd0b69ac93e31d575bc545b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int agi::SerialPort::receive</definition>
+        <argsstring>(char *const buffer)</argsstring>
+        <name>receive</name>
+        <qualifiedname>agi::SerialPort::receive</qualifiedname>
+        <param>
+          <type>char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="24" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SerialPort_1a1f4af392aad9ef0acc278683a41755f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::SerialPort::addReceiveCallback</definition>
+        <argsstring>(std::function&lt; void(const char *const msg, const int length)&gt; function)</argsstring>
+        <name>addReceiveCallback</name>
+        <qualifiedname>agi::SerialPort::addReceiveCallback</qualifiedname>
+        <param>
+          <type>std::function&lt; void(const char *const msg, const int length)&gt;</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="25" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classagi_1_1SerialPort_1ab645d4aefd6e2f3fedfa598a78af5658" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::SerialPort::configure</definition>
+        <argsstring>(const int baudrate)</argsstring>
+        <name>configure</name>
+        <qualifiedname>agi::SerialPort::configure</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>baudrate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="30" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SerialPort_1a7ce2c469b26006afd4f8575dec40f6b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::SerialPort::serialThread</definition>
+        <argsstring>()</argsstring>
+        <name>serialThread</name>
+        <qualifiedname>agi::SerialPort::serialThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial.hpp" line="31" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/serial/serial.hpp" line="14" column="1" bodyfile="agilib/include/agilib/serial/serial.hpp" bodystart="14" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classagi_1_1SerialPort_1a1f4af392aad9ef0acc278683a41755f4" prot="public" virt="non-virtual"><scope>agi::SerialPort</scope><name>addReceiveCallback</name></member>
+      <member refid="classagi_1_1SerialPort_1a5ccad6439d83761f36b10a85bb2bf7ca" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>BS</name></member>
+      <member refid="classagi_1_1SerialPort_1a5b1175660087b07a6e141adc030daa26" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>buffer_mtx</name></member>
+      <member refid="classagi_1_1SerialPort_1adec6440465ca5c1c6025f52733d48548" prot="public" virt="non-virtual"><scope>agi::SerialPort</scope><name>BUFFER_SIZE</name></member>
+      <member refid="classagi_1_1SerialPort_1ab645d4aefd6e2f3fedfa598a78af5658" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>configure</name></member>
+      <member refid="classagi_1_1SerialPort_1aa75e2b100a2af775ee1ee97d2ce51162" prot="public" virt="non-virtual"><scope>agi::SerialPort</scope><name>isOpen</name></member>
+      <member refid="classagi_1_1SerialPort_1a5042b1acec607c058f1d9582b71744e4" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>logger_</name></member>
+      <member refid="classagi_1_1SerialPort_1afce75ddfd42e9efe9d0196d7a5cd4424" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>proc_cv_</name></member>
+      <member refid="classagi_1_1SerialPort_1a380a6ce2bb0ae0d8ab37c1be22b87062" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>proc_mtx_</name></member>
+      <member refid="classagi_1_1SerialPort_1a386af66003df8022a00c9398a028e25a" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>rc_cv_</name></member>
+      <member refid="classagi_1_1SerialPort_1af66f16af18bfb9c8791dec54816b0277" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>rc_mtx_</name></member>
+      <member refid="classagi_1_1SerialPort_1adece8836abd0b69ac93e31d575bc545b" prot="public" virt="non-virtual"><scope>agi::SerialPort</scope><name>receive</name></member>
+      <member refid="classagi_1_1SerialPort_1a7b81e114ef536713ee0d4450a37b632a" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>receive_buffer_</name></member>
+      <member refid="classagi_1_1SerialPort_1af54f5e6aed80a493620cf002c5da0a39" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>receive_callback_</name></member>
+      <member refid="classagi_1_1SerialPort_1a32cd4183eacf846c2547d6c1c8de090d" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>received_length_</name></member>
+      <member refid="classagi_1_1SerialPort_1a3bc1ebce7830357be1cdaaeaf9a2ba3c" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>received_message_</name></member>
+      <member refid="classagi_1_1SerialPort_1a778312ce306d100e520d02b1a49d247e" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>received_message_length_</name></member>
+      <member refid="classagi_1_1SerialPort_1a438973eef26542fcfb9e442b865c28a2" prot="public" virt="non-virtual"><scope>agi::SerialPort</scope><name>send</name></member>
+      <member refid="classagi_1_1SerialPort_1ac6d19bd26f47a04672d12c85cb264956" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>serial_fd_</name></member>
+      <member refid="classagi_1_1SerialPort_1a1007c7f698753b23bcac7b109c164290" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>serial_thread_</name></member>
+      <member refid="classagi_1_1SerialPort_1a39d969e6baeded9b01da27c5d84630f0" prot="public" virt="non-virtual"><scope>agi::SerialPort</scope><name>SerialPort</name></member>
+      <member refid="classagi_1_1SerialPort_1a7ce2c469b26006afd4f8575dec40f6b5" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>serialThread</name></member>
+      <member refid="classagi_1_1SerialPort_1aab410787c058b9aca7641104bd23991b" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>settings_</name></member>
+      <member refid="classagi_1_1SerialPort_1abbbc29b95a78714ee585d72b27202136" prot="private" virt="non-virtual"><scope>agi::SerialPort</scope><name>should_exit_</name></member>
+      <member refid="classagi_1_1SerialPort_1a971f9cf6c9dae1c578ec2f21e5bc610e" prot="public" virt="non-virtual"><scope>agi::SerialPort</scope><name>start</name></member>
+      <member refid="classagi_1_1SerialPort_1a7bcb00776d018179d9e751017af9eb36" prot="public" virt="non-virtual"><scope>agi::SerialPort</scope><name>stop</name></member>
+      <member refid="classagi_1_1SerialPort_1a535e98a5a77f0c732f237ba535d4f9a2" prot="public" virt="non-virtual"><scope>agi::SerialPort</scope><name>~SerialPort</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

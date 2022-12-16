@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1Command" kind="struct" language="C++" prot="public">
+    <compoundname>agi::Command</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1Command_1a5752001f93e820d936ee9cce24f4f410" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Command::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <qualifiedname>agi::Command::t</qualifiedname>
+        <initializer>{NAN}</initializer>
+        <briefdescription>
+<para>time in [s] </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/command.hpp" line="23" column="10" bodyfile="agilib/include/agilib/types/command.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Command_1af530b8d7c2b1fc074525924f0fcaedbb" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Command::collective_thrust</definition>
+        <argsstring></argsstring>
+        <name>collective_thrust</name>
+        <qualifiedname>agi::Command::collective_thrust</qualifiedname>
+        <initializer>{NAN}</initializer>
+        <briefdescription>
+<para>Collective mass-normalized thrust in [m/s^2]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/command.hpp" line="26" column="10" bodyfile="agilib/include/agilib/types/command.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Command_1a95a0d7a41f89a26b992d2688d7b79d3f" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::Command::omega</definition>
+        <argsstring></argsstring>
+        <name>omega</name>
+        <qualifiedname>agi::Command::omega</qualifiedname>
+        <initializer>{NAN, NAN, NAN}</initializer>
+        <briefdescription>
+<para>Bodyrates in [rad/s]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/command.hpp" line="29" column="10" bodyfile="agilib/include/agilib/types/command.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1Command_1a09589a90e05c59986970587bec69aadd" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 4 &gt;</type>
+        <definition>Vector&lt;4&gt; agi::Command::thrusts</definition>
+        <argsstring></argsstring>
+        <name>thrusts</name>
+        <qualifiedname>agi::Command::thrusts</qualifiedname>
+        <initializer>{NAN, NAN, NAN, NAN}</initializer>
+        <briefdescription>
+<para>Single rotor thrusts in [N]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/command.hpp" line="32" column="10" bodyfile="agilib/include/agilib/types/command.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1Command_1a1a1cfcef1bafe1d1cbea9bea5cca8bac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::Command::Command</definition>
+        <argsstring>()</argsstring>
+        <name>Command</name>
+        <qualifiedname>agi::Command::Command</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/command.hpp" line="10" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Command_1a03ad1d8c6b0dbc8fffd6dbde1b5fb99b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Command::Command</definition>
+        <argsstring>(const Scalar t, const Scalar thrust, const Vector&lt; 3 &gt; &amp;omega)</argsstring>
+        <name>Command</name>
+        <qualifiedname>agi::Command::Command</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>thrust</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>omega</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/command.hpp" line="12" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Command_1a3318d53a57b54cde913b60e44e085361" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Command::Command</definition>
+        <argsstring>(const Scalar t, const Vector&lt; 4 &gt; &amp;thrusts)</argsstring>
+        <name>Command</name>
+        <qualifiedname>agi::Command::Command</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; 4 &gt; &amp;</type>
+          <declname>thrusts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/command.hpp" line="14" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Command_1a0f73abc40d84fb60a174b26261b781d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Command::Command</definition>
+        <argsstring>(const Scalar t)</argsstring>
+        <name>Command</name>
+        <qualifiedname>agi::Command::Command</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/command.hpp" line="16" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Command_1a284a82b807d21421dd723c3bf006f693" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Command::valid</definition>
+        <argsstring>() const</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::Command::valid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/command.hpp" line="18" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Command_1a759ab233dbc52d8ddc7bd26a050afd7f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Command::isSingleRotorThrusts</definition>
+        <argsstring>() const</argsstring>
+        <name>isSingleRotorThrusts</name>
+        <qualifiedname>agi::Command::isSingleRotorThrusts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/command.hpp" line="19" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Command_1a2112bfc3e68fabb7c5a41b7ec2555031" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Command::isRatesThrust</definition>
+        <argsstring>() const</argsstring>
+        <name>isRatesThrust</name>
+        <qualifiedname>agi::Command::isRatesThrust</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/command.hpp" line="20" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1Command_1a53d724665d500639e37e883a46f67943" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Command::operator==</definition>
+        <argsstring>(const Command &amp;rhs) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>agi::Command::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/command.hpp" line="36" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structagi_1_1Command_1a2983e42f5e88fe9b64086281ad2a40df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Command &amp;command)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::Command::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/types/command.hpp" line="34" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/types/command.hpp" line="7" column="1" bodyfile="agilib/include/agilib/types/command.hpp" bodystart="7" bodyend="37"/>
+    <listofallmembers>
+      <member refid="structagi_1_1Command_1af530b8d7c2b1fc074525924f0fcaedbb" prot="public" virt="non-virtual"><scope>agi::Command</scope><name>collective_thrust</name></member>
+      <member refid="structagi_1_1Command_1a1a1cfcef1bafe1d1cbea9bea5cca8bac" prot="public" virt="non-virtual"><scope>agi::Command</scope><name>Command</name></member>
+      <member refid="structagi_1_1Command_1a03ad1d8c6b0dbc8fffd6dbde1b5fb99b" prot="public" virt="non-virtual"><scope>agi::Command</scope><name>Command</name></member>
+      <member refid="structagi_1_1Command_1a3318d53a57b54cde913b60e44e085361" prot="public" virt="non-virtual"><scope>agi::Command</scope><name>Command</name></member>
+      <member refid="structagi_1_1Command_1a0f73abc40d84fb60a174b26261b781d8" prot="public" virt="non-virtual"><scope>agi::Command</scope><name>Command</name></member>
+      <member refid="structagi_1_1Command_1a2112bfc3e68fabb7c5a41b7ec2555031" prot="public" virt="non-virtual"><scope>agi::Command</scope><name>isRatesThrust</name></member>
+      <member refid="structagi_1_1Command_1a759ab233dbc52d8ddc7bd26a050afd7f" prot="public" virt="non-virtual"><scope>agi::Command</scope><name>isSingleRotorThrusts</name></member>
+      <member refid="structagi_1_1Command_1a95a0d7a41f89a26b992d2688d7b79d3f" prot="public" virt="non-virtual"><scope>agi::Command</scope><name>omega</name></member>
+      <member refid="structagi_1_1Command_1a2983e42f5e88fe9b64086281ad2a40df" prot="public" virt="non-virtual"><scope>agi::Command</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structagi_1_1Command_1a53d724665d500639e37e883a46f67943" prot="public" virt="non-virtual"><scope>agi::Command</scope><name>operator==</name></member>
+      <member refid="structagi_1_1Command_1a5752001f93e820d936ee9cce24f4f410" prot="public" virt="non-virtual"><scope>agi::Command</scope><name>t</name></member>
+      <member refid="structagi_1_1Command_1a09589a90e05c59986970587bec69aadd" prot="public" virt="non-virtual"><scope>agi::Command</scope><name>thrusts</name></member>
+      <member refid="structagi_1_1Command_1a284a82b807d21421dd723c3bf006f693" prot="public" virt="non-virtual"><scope>agi::Command</scope><name>valid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

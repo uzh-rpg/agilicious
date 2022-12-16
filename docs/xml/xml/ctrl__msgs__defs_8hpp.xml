@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="ctrl__msgs__defs_8hpp" kind="file" language="C++">
+    <compoundname>ctrl_msgs_defs.hpp</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="ctrl__bridge__params_8hpp" local="yes">agilib/include/agilib/bridge/ctrl/ctrl_bridge_params.hpp</includedby>
+    <includedby refid="ctrl__encoding_8hpp" local="yes">agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp</label>
+        <link refid="ctrl__msgs__defs_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>agilib/include/agilib/bridge/ctrl/ctrl_bridge.hpp</label>
+        <link refid="ctrl__bridge_8hpp_source"/>
+      </node>
+      <node id="2">
+        <label>agilib/include/agilib/bridge/ctrl/ctrl_bridge_params.hpp</label>
+        <link refid="ctrl__bridge__params_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agilib/include/agilib/bridge/ctrl/ctrl_encoding.hpp</label>
+        <link refid="ctrl__encoding_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp</label>
+        <link refid="ctrl__msgs__defs_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceagi">agi</innernamespace>
+    <innernamespace refid="namespaceagi_1_1ctrl">agi::ctrl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">agi<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">ctrl<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint8_t<sp/>SERIAL_MESSAGE_HEADER_LENGTH<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint8_t<sp/>SERIAL_MESSAGE_MAX_PAYLOAD_LENGTH<sp/>=<sp/>66;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint8_t<sp/>SERIAL_MESSAGE_MIN_LENGTH<sp/>=</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>SERIAL_MESSAGE_HEADER_LENGTH<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint8_t<sp/>SERIAL_MESSAGE_MAX_LENGTH<sp/>=</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>SERIAL_MESSAGE_MIN_LENGTH<sp/>+<sp/>SERIAL_MESSAGE_MAX_PAYLOAD_LENGTH;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint8_t<sp/>SERIAL_MESSAGE_MAX_COUNT<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint8_t<sp/>SERIAL_CONTAINER_MAX_LENGTH<sp/>=</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>SERIAL_MESSAGE_MAX_COUNT<sp/>*<sp/>SERIAL_MESSAGE_MAX_LENGTH<sp/>+<sp/>7;<sp/><sp/></highlight><highlight class="comment">//<sp/>Less<sp/>than<sp/>256</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint8_t<sp/>SERIAL_CONTAINER_DELIMITER<sp/>=<sp/>0x7c;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>RAW_RANGE<sp/>=<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>conversion!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>UNITLESS_RANGE<sp/>=<sp/>32.767;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[1]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>TIME_RANGE<sp/>=<sp/>32.767;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[s]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>FREQUENCY_RANGE<sp/>=<sp/>32767;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[Hz]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ANGLE_RANGE<sp/>=<sp/>32.767;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[rad]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ANGULAR_VELOCITY_RANGE<sp/>=<sp/>32.767;<sp/><sp/></highlight><highlight class="comment">//<sp/>[rad/s]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ROTOR_SPEED_RANGE<sp/>=<sp/>3276.7;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[rad/s]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>DISTANCE_RANGE<sp/>=<sp/>32.767;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[m]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>VELOCITY_RANGE<sp/>=<sp/>32.767;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[m/s]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ACCELERATION_RANGE<sp/>=<sp/>327.67;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[m/s^2]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>FORCE_RANGE<sp/>=<sp/>327.67;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[N]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>VOLTAGE_RANGE<sp/>=<sp/>327.67;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[V]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>CURRENT_RANGE<sp/>=<sp/>327.67;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[A]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>CTRLMODE<sp/>:<sp/>uint8_t<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>INVALID<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>OFF<sp/>=<sp/>1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>disarmed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>SET_PARAM<sp/>=<sp/>2,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>change<sp/>a<sp/>single<sp/>specified<sp/>parameter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>ARM<sp/>=<sp/>3,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>armed<sp/>and<sp/>rotors<sp/>spin<sp/>at<sp/>min<sp/>speed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>ROTOR_THROTTLE<sp/>=<sp/>4,<sp/></highlight><highlight class="comment">/*<sp/>set<sp/>rotor<sp/>throttle<sp/>for<sp/>every<sp/>rotor<sp/>[0-2000]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>ROTOR_SPEED<sp/>=<sp/>5,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>set<sp/>rotor<sp/>speed<sp/>for<sp/>every<sp/>rotor<sp/>[rad/s]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>ROTOR_THRUST<sp/>=<sp/>6,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>set<sp/>rotor<sp/>thrust<sp/>for<sp/>every<sp/>rotor<sp/>[N]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>BODY_RATE<sp/>=<sp/>7,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>set<sp/>body<sp/>rate<sp/>[vector<sp/>rad/s]<sp/>and<sp/>total<sp/>thrust<sp/>[N]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>ATTITUDE<sp/>=<sp/>8,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>set<sp/>attitude<sp/>as<sp/>[unit<sp/>vector],<sp/>yaw<sp/>body<sp/>rate<sp/>[rad/s]<sp/>and</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>total<sp/>thrust<sp/>[N]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>VELOCITY<sp/>=<sp/>9,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>set<sp/>velocity<sp/>[vector<sp/>m/s]<sp/>and<sp/>yaw<sp/>body<sp/>rate<sp/>[rad/s]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>EMERGENCY<sp/>=<sp/>10,<sp/></highlight><highlight class="comment">/*<sp/>hold<sp/>position<sp/>and<sp/>land<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>FEEDBACK<sp/>=<sp/>255<sp/><sp/></highlight><highlight class="comment">/*<sp/>upstream<sp/>flight<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>COMMANDFLAGS<sp/>:<sp/>uint8_t<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>SET_BIAS<sp/>=<sp/>0x01,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>use<sp/>current<sp/>low<sp/>pass<sp/>filtered<sp/>IMU<sp/>data<sp/>as<sp/>bias<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>SAVE_TO_FLASH<sp/>=<sp/>0x02<sp/></highlight><highlight class="comment">/*<sp/>save<sp/>all<sp/>parameters<sp/>to<sp/>flash<sp/>(includes<sp/>bias)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>FEEDBACKTYPE<sp/>:<sp/>uint8_t<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>NOTHING<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>THROTTLE<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>SPEED<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>THRUST<sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">__attribute__((__packed__))<sp/>serial_message_t<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>uint8_t<sp/>mode{1};<sp/><sp/></highlight><highlight class="comment">/*<sp/>use<sp/>control_mode_t<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>uint8_t<sp/>flags{0};<sp/></highlight><highlight class="comment">/*<sp/>use<sp/>command_flag_t<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>uint64_t<sp/>time{0};<sp/></highlight><highlight class="comment">/*<sp/>time<sp/>since<sp/>startup<sp/>[ns]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>payload[SERIAL_MESSAGE_MAX_PAYLOAD_LENGTH];</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">__attribute__((__packed__))<sp/>serial_container_t<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>uint8_t<sp/>num_messages{1};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>serial_message_t<sp/>messages[SERIAL_MESSAGE_MAX_COUNT];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">__attribute__((__packed__))<sp/>parameter_payload_t<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>uint16_t<sp/>parameter{0};<sp/></highlight><highlight class="comment">/*<sp/>use<sp/>parameter_t<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value{0};<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>range<sp/>dependent<sp/>on<sp/>parameter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">__attribute__((__packed__))<sp/>rotor_throttle_payload_t<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>int16_t<sp/>throttle[4]<sp/>=<sp/>{0};<sp/></highlight><highlight class="comment">/*<sp/>RAW_RANGE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">__attribute__((__packed__))<sp/>rotor_speed_payload_t<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>int16_t<sp/>speed[4]<sp/>=<sp/>{0};<sp/></highlight><highlight class="comment">/*<sp/>ANGULAR_VELOCITY_RANGE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">__attribute__((__packed__))<sp/>rotor_thrust_payload_t<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>int16_t<sp/>thrust[4]<sp/>=<sp/>{0};<sp/></highlight><highlight class="comment">/*<sp/>FORCE_RANGE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">__attribute__((__packed__))<sp/>body_rate_payload_t<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>int16_t<sp/>body_rate[3]<sp/>=<sp/>{0};<sp/></highlight><highlight class="comment">/*<sp/>ANGULAR_VELOCITY_RANGE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>int16_t<sp/>thrust{0};<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>FORCE_RANGE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">__attribute__((__packed__))<sp/>attitude_payload_t<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>int16_t<sp/>attitude[3]<sp/>=<sp/>{0};<sp/></highlight><highlight class="comment">/*<sp/>UNITLESS_RANGE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>int16_t<sp/>yaw_body_rate{0};<sp/><sp/></highlight><highlight class="comment">/*<sp/>ANGULAR_VELOCITY_RANGE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>int16_t<sp/>thrust{0};<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>FORCE_RANGE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">__attribute__((__packed__))<sp/>velocity_payload_t<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>int16_t<sp/>velocity[3]<sp/>=<sp/>{0};<sp/></highlight><highlight class="comment">/*<sp/>VELOCITY_RANGE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>int16_t<sp/>yaw_body_rate{0};<sp/><sp/></highlight><highlight class="comment">/*<sp/>ANGULAR_VELOCITY_RANGE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">__attribute__((__packed__))<sp/>upstream_payload_t<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>IMU<sp/>upstream<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angular_vel_x;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angular_vel_y;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angular_vel_z;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>linear_accel_x;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>linear_accel_y;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>linear_accel_z;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>rotor<sp/>feedback<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>feedback_0;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>feedback_1;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>feedback_2;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>feedback_3;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>uint8_t<sp/>feedback_type;<sp/></highlight><highlight class="comment">/*<sp/>use<sp/>feedback_type_t<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>estimated<sp/>attitude<sp/>feedback<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>quaternion_w;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>quaternion_x;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>quaternion_y;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>quaternion_z;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>battery<sp/>feedback<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>battery_voltage;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>battery_current;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>uint8_t<sp/>control_mode;<sp/></highlight><highlight class="comment">/*<sp/>use<sp/>control_mode_t<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ctrl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>agi</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp"/>
+  </compounddef>
+</doxygen>

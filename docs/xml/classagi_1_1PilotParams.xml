@@ -1,0 +1,787 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1PilotParams" kind="class" language="C++" prot="public">
+    <compoundname>agi::PilotParams</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1afddc11cf7572bb11e30dc9f65fb0cc83" prot="public" static="no" mutable="no">
+        <type>fs::path</type>
+        <definition>fs::path agi::PilotParams::directory_</definition>
+        <argsstring></argsstring>
+        <name>directory_</name>
+        <qualifiedname>agi::PilotParams::directory_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="49" column="12" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1a889613e664ce9e7db690bf900fb06f0a" prot="public" static="no" mutable="no">
+        <type><ref refid="structagi_1_1PipelineConfig" kindref="compound">PipelineConfig</ref></type>
+        <definition>PipelineConfig agi::PilotParams::pipeline_cfg_</definition>
+        <argsstring></argsstring>
+        <name>pipeline_cfg_</name>
+        <qualifiedname>agi::PilotParams::pipeline_cfg_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="51" column="18" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1afd6e2e23277b7b0f0ced6f6c62417d15" prot="public" static="no" mutable="no">
+        <type><ref refid="structagi_1_1PipelineConfig" kindref="compound">PipelineConfig</ref></type>
+        <definition>PipelineConfig agi::PilotParams::safety_pipeline_cfg_</definition>
+        <argsstring></argsstring>
+        <name>safety_pipeline_cfg_</name>
+        <qualifiedname>agi::PilotParams::safety_pipeline_cfg_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="52" column="18" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1a0e4caa3dfe3b675012a1d39f175cd7ae" prot="public" static="no" mutable="no">
+        <type><ref refid="structagi_1_1ModuleConfig" kindref="compound">ModuleConfig</ref></type>
+        <definition>ModuleConfig agi::PilotParams::guard_cfg_</definition>
+        <argsstring></argsstring>
+        <name>guard_cfg_</name>
+        <qualifiedname>agi::PilotParams::guard_cfg_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="54" column="16" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1aa22b9e65af8ac60d508537c6d4c4e2e5" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string agi::PilotParams::traj_type_</definition>
+        <argsstring></argsstring>
+        <name>traj_type_</name>
+        <qualifiedname>agi::PilotParams::traj_type_</qualifiedname>
+        <initializer>{&quot;poly_min_snap&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="56" column="15" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1a1264ac3d49b59f4b81dc9e15fe40b86d" prot="public" static="no" mutable="no">
+        <type>fs::path</type>
+        <definition>fs::path agi::PilotParams::quad_file_</definition>
+        <argsstring></argsstring>
+        <name>quad_file_</name>
+        <qualifiedname>agi::PilotParams::quad_file_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="57" column="12" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1af14a814eb5cfef21bcef86f4896db9e7" prot="public" static="no" mutable="no">
+        <type><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+        <definition>Quadrotor agi::PilotParams::quad_</definition>
+        <argsstring></argsstring>
+        <name>quad_</name>
+        <qualifiedname>agi::PilotParams::quad_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="59" column="13" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1ac7e52002eeab5523eea2104b6d16738e" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PilotParams::dt_min_</definition>
+        <argsstring></argsstring>
+        <name>dt_min_</name>
+        <qualifiedname>agi::PilotParams::dt_min_</qualifiedname>
+        <initializer>{0.01}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="61" column="10" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1a10dc9c939c68875ec61f6e265f747b33" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int agi::PilotParams::outerloop_divisor_</definition>
+        <argsstring></argsstring>
+        <name>outerloop_divisor_</name>
+        <qualifiedname>agi::PilotParams::outerloop_divisor_</qualifiedname>
+        <initializer>{1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="62" column="7" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1a65d594bac0a8320dd346bc1d7fe43ff4" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PilotParams::dt_telemetry_</definition>
+        <argsstring></argsstring>
+        <name>dt_telemetry_</name>
+        <qualifiedname>agi::PilotParams::dt_telemetry_</qualifiedname>
+        <initializer>{0.1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="63" column="10" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1a225342857e9ebd3e5da30229ab55e2ba" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::PilotParams::velocity_in_bodyframe_</definition>
+        <argsstring></argsstring>
+        <name>velocity_in_bodyframe_</name>
+        <qualifiedname>agi::PilotParams::velocity_in_bodyframe_</qualifiedname>
+        <initializer>{true}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="65" column="8" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1a5d89afdbbda4d6e033db2135060914b3" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PilotParams::takeoff_heigth_</definition>
+        <argsstring></argsstring>
+        <name>takeoff_heigth_</name>
+        <qualifiedname>agi::PilotParams::takeoff_heigth_</qualifiedname>
+        <initializer>{1.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="66" column="10" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1ae9d30b7b7d94deef0ed9e47a18c9151d" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PilotParams::takeoff_threshold_</definition>
+        <argsstring></argsstring>
+        <name>takeoff_threshold_</name>
+        <qualifiedname>agi::PilotParams::takeoff_threshold_</qualifiedname>
+        <initializer>{0.5}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="67" column="10" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1ae27365ff7187e47ece2fcc32d2643a11" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PilotParams::start_land_speed_</definition>
+        <argsstring></argsstring>
+        <name>start_land_speed_</name>
+        <qualifiedname>agi::PilotParams::start_land_speed_</qualifiedname>
+        <initializer>{0.6}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="68" column="10" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1ad2416410e08adb2acd84835ef44f78f5" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PilotParams::brake_deceleration_</definition>
+        <argsstring></argsstring>
+        <name>brake_deceleration_</name>
+        <qualifiedname>agi::PilotParams::brake_deceleration_</qualifiedname>
+        <initializer>{5.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="69" column="10" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1a91091cb5ffba34334d530b455c97f77c" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PilotParams::go_to_pose_mean_vel_</definition>
+        <argsstring></argsstring>
+        <name>go_to_pose_mean_vel_</name>
+        <qualifiedname>agi::PilotParams::go_to_pose_mean_vel_</qualifiedname>
+        <initializer>{1.5}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="70" column="10" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1aa847866a225f4f723f3fafbe4ce65070" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::PilotParams::stop_after_feedthrough_</definition>
+        <argsstring></argsstring>
+        <name>stop_after_feedthrough_</name>
+        <qualifiedname>agi::PilotParams::stop_after_feedthrough_</qualifiedname>
+        <initializer>{true}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="71" column="8" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1affe8efea1dab891cfe8ea4ed5a865924" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PilotParams::feedthrough_timeout_</definition>
+        <argsstring></argsstring>
+        <name>feedthrough_timeout_</name>
+        <qualifiedname>agi::PilotParams::feedthrough_timeout_</qualifiedname>
+        <initializer>{0.05}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="72" column="10" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1ae6477463981a7e965787dfaba304758e" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PilotParams::traj_viz_dt_</definition>
+        <argsstring></argsstring>
+        <name>traj_viz_dt_</name>
+        <qualifiedname>agi::PilotParams::traj_viz_dt_</qualifiedname>
+        <initializer>{0.1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="74" column="10" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1a76c406b7c66c6eed961c140cf90bb423" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PilotParams::traj_viz_sphere_size_</definition>
+        <argsstring></argsstring>
+        <name>traj_viz_sphere_size_</name>
+        <qualifiedname>agi::PilotParams::traj_viz_sphere_size_</qualifiedname>
+        <initializer>{0.1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="75" column="10" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1a5c9b134c78a9453c2ae620727a37974b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::PilotParams::publish_log_var_</definition>
+        <argsstring></argsstring>
+        <name>publish_log_var_</name>
+        <qualifiedname>agi::PilotParams::publish_log_var_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="77" column="8" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1PilotParams_1afb1db2ac7653a646e95ce6605585ddbd" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref></type>
+        <definition>Logger agi::PilotParams::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>agi::PilotParams::logger_</qualifiedname>
+        <initializer>{&quot;PilotParams&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="82" column="10" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1PilotParams_1a98586da4af8902972a3a8352b050c53b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::PilotParams::PilotParams</definition>
+        <argsstring>()=default</argsstring>
+        <name>PilotParams</name>
+        <qualifiedname>agi::PilotParams::PilotParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="20" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PilotParams_1ad8bd10bd3a386120ce762ec32a2210e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::PilotParams::PilotParams</definition>
+        <argsstring>(const fs::path &amp;filename, const fs::path &amp;directory=&quot;&quot;, const fs::path &amp;quad_file=&quot;&quot;)</argsstring>
+        <name>PilotParams</name>
+        <qualifiedname>agi::PilotParams::PilotParams</qualifiedname>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>directory</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>quad_file</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="21" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PilotParams_1af0cd71609d3f070dc3af0c02ee361023" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::PilotParams::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::PilotParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="25" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PilotParams_1a5eaac55359a407a7c3eb2ff4cc841c0d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::PilotParams::valid</definition>
+        <argsstring>() const override</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::PilotParams::valid</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b">valid</reimplements>
+        <briefdescription>
+<para>Check if parameters are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="27" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PilotParams_1a491e86fd4b90950dbe90c180ef98e3a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PilotParams::createEstimator</definition>
+        <argsstring>(std::shared_ptr&lt; EstimatorBase &gt; &amp;estimator, const ModuleConfig &amp;config) const</argsstring>
+        <name>createEstimator</name>
+        <qualifiedname>agi::PilotParams::createEstimator</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classagi_1_1EstimatorBase" kindref="compound">EstimatorBase</ref> &gt; &amp;</type>
+          <declname>estimator</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1ModuleConfig" kindref="compound">ModuleConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="29" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PilotParams_1a8465c63189e59fb67ba1b5fff266290c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PilotParams::createSampler</definition>
+        <argsstring>(std::shared_ptr&lt; SamplerBase &gt; &amp;sampler, const std::shared_ptr&lt; ControllerBase &gt; &amp;controller, const ModuleConfig &amp;config) const</argsstring>
+        <name>createSampler</name>
+        <qualifiedname>agi::PilotParams::createSampler</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classagi_1_1SamplerBase" kindref="compound">SamplerBase</ref> &gt; &amp;</type>
+          <declname>sampler</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="classagi_1_1ControllerBase" kindref="compound">ControllerBase</ref> &gt; &amp;</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1ModuleConfig" kindref="compound">ModuleConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="31" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PilotParams_1af0331d9a9963d58d9c4fba1b3beae774" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PilotParams::createController</definition>
+        <argsstring>(std::shared_ptr&lt; ControllerBase &gt; &amp;controller, const ModuleConfig &amp;config) const</argsstring>
+        <name>createController</name>
+        <qualifiedname>agi::PilotParams::createController</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classagi_1_1ControllerBase" kindref="compound">ControllerBase</ref> &gt; &amp;</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1ModuleConfig" kindref="compound">ModuleConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="34" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PilotParams_1a18f4c900238a9f181425f304570ef973" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PilotParams::createBridge</definition>
+        <argsstring>(std::shared_ptr&lt; BridgeBase &gt; &amp;bridge, const TimeFunction &amp;time_function, const ModuleConfig &amp;) const</argsstring>
+        <name>createBridge</name>
+        <qualifiedname>agi::PilotParams::createBridge</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classagi_1_1BridgeBase" kindref="compound">BridgeBase</ref> &gt; &amp;</type>
+          <declname>bridge</declname>
+        </param>
+        <param>
+          <type>const TimeFunction &amp;</type>
+          <declname>time_function</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1ModuleConfig" kindref="compound">ModuleConfig</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="36" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PilotParams_1aa0f4fd15939e5e5737f487567bed5063" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PilotParams::createBridge</definition>
+        <argsstring>(std::shared_ptr&lt; BridgeBase &gt; &amp;bridge, const TimeFunction &amp;time_function) const</argsstring>
+        <name>createBridge</name>
+        <qualifiedname>agi::PilotParams::createBridge</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classagi_1_1BridgeBase" kindref="compound">BridgeBase</ref> &gt; &amp;</type>
+          <declname>bridge</declname>
+        </param>
+        <param>
+          <type>const TimeFunction &amp;</type>
+          <declname>time_function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="39" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PilotParams_1a5a9399099612b9ae2d7860a49332cb65" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PilotParams::createPipeline</definition>
+        <argsstring>(Pipeline *const pipeline, const PipelineConfig &amp;config) const</argsstring>
+        <name>createPipeline</name>
+        <qualifiedname>agi::PilotParams::createPipeline</qualifiedname>
+        <param>
+          <type><ref refid="classagi_1_1Pipeline" kindref="compound">Pipeline</ref> *const</type>
+          <declname>pipeline</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1PipelineConfig" kindref="compound">PipelineConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="42" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PilotParams_1af35a66c304159d3b37665a119c2e1e28" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PilotParams::createPipeline</definition>
+        <argsstring>(Pipeline *const pipeline) const</argsstring>
+        <name>createPipeline</name>
+        <qualifiedname>agi::PilotParams::createPipeline</qualifiedname>
+        <param>
+          <type><ref refid="classagi_1_1Pipeline" kindref="compound">Pipeline</ref> *const</type>
+          <declname>pipeline</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="44" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PilotParams_1afdc3718a3e704dcde3d64b40377bfb8a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PilotParams::createSafetyPipeline</definition>
+        <argsstring>(Pipeline *const safety_pipeline) const</argsstring>
+        <name>createSafetyPipeline</name>
+        <qualifiedname>agi::PilotParams::createSafetyPipeline</qualifiedname>
+        <param>
+          <type><ref refid="classagi_1_1Pipeline" kindref="compound">Pipeline</ref> *const</type>
+          <declname>safety_pipeline</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="45" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PilotParams_1a8fa04a15a51fbff071aff32abeb02c1b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PilotParams::createGuard</definition>
+        <argsstring>(std::shared_ptr&lt; GuardBase &gt; &amp;guard) const</argsstring>
+        <name>createGuard</name>
+        <qualifiedname>agi::PilotParams::createGuard</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classagi_1_1GuardBase" kindref="compound">GuardBase</ref> &gt; &amp;</type>
+          <declname>guard</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="47" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PilotParams_1aa72a975fca1221525746975fe5ee1b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::PilotParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="24" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PilotParams_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const Yaml &amp;yaml)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::PilotParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="24" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classagi_1_1PilotParams_1ae7b9eff7f4bd1762c7be044866cdae27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const PilotParams &amp;params)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::PilotParams::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classagi_1_1PilotParams" kindref="compound">PilotParams</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="79" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="1">
+        <label>agi::PilotParams</label>
+        <link refid="classagi_1_1PilotParams"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>agi::ModuleConfig</label>
+        <link refid="structagi_1_1ModuleConfig"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="1">
+        <label>agi::PilotParams</label>
+        <link refid="classagi_1_1PilotParams"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pipeline_cfg_</edgelabel>
+          <edgelabel>safety_pipeline_cfg_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>guard_cfg_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>traj_type_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>quad_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::PipelineConfig</label>
+        <link refid="structagi_1_1PipelineConfig"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>bridge_cfg</edgelabel>
+          <edgelabel>estimator_cfg</edgelabel>
+          <edgelabel>inner_controller_cfg</edgelabel>
+          <edgelabel>outer_controller_cfg</edgelabel>
+          <edgelabel>sampler_cfg</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>agi::Quadrotor</label>
+        <link refid="structagi_1_1Quadrotor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="5">
+        <label>std::string</label>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/pilot/pilot_params.hpp" line="18" column="1" bodyfile="agilib/include/agilib/pilot/pilot_params.hpp" bodystart="18" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classagi_1_1PilotParams_1ad2416410e08adb2acd84835ef44f78f5" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>brake_deceleration_</name></member>
+      <member refid="classagi_1_1PilotParams_1a18f4c900238a9f181425f304570ef973" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>createBridge</name></member>
+      <member refid="classagi_1_1PilotParams_1aa0f4fd15939e5e5737f487567bed5063" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>createBridge</name></member>
+      <member refid="classagi_1_1PilotParams_1af0331d9a9963d58d9c4fba1b3beae774" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>createController</name></member>
+      <member refid="classagi_1_1PilotParams_1a491e86fd4b90950dbe90c180ef98e3a4" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>createEstimator</name></member>
+      <member refid="classagi_1_1PilotParams_1a8fa04a15a51fbff071aff32abeb02c1b" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>createGuard</name></member>
+      <member refid="classagi_1_1PilotParams_1a5a9399099612b9ae2d7860a49332cb65" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>createPipeline</name></member>
+      <member refid="classagi_1_1PilotParams_1af35a66c304159d3b37665a119c2e1e28" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>createPipeline</name></member>
+      <member refid="classagi_1_1PilotParams_1afdc3718a3e704dcde3d64b40377bfb8a" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>createSafetyPipeline</name></member>
+      <member refid="classagi_1_1PilotParams_1a8465c63189e59fb67ba1b5fff266290c" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>createSampler</name></member>
+      <member refid="classagi_1_1PilotParams_1afddc11cf7572bb11e30dc9f65fb0cc83" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>directory_</name></member>
+      <member refid="classagi_1_1PilotParams_1ac7e52002eeab5523eea2104b6d16738e" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>dt_min_</name></member>
+      <member refid="classagi_1_1PilotParams_1a65d594bac0a8320dd346bc1d7fe43ff4" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>dt_telemetry_</name></member>
+      <member refid="classagi_1_1PilotParams_1affe8efea1dab891cfe8ea4ed5a865924" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>feedthrough_timeout_</name></member>
+      <member refid="classagi_1_1PilotParams_1a91091cb5ffba34334d530b455c97f77c" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>go_to_pose_mean_vel_</name></member>
+      <member refid="classagi_1_1PilotParams_1a0e4caa3dfe3b675012a1d39f175cd7ae" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>guard_cfg_</name></member>
+      <member refid="classagi_1_1PilotParams_1af0cd71609d3f070dc3af0c02ee361023" prot="public" virt="virtual"><scope>agi::PilotParams</scope><name>load</name></member>
+      <member refid="classagi_1_1PilotParams_1aa72a975fca1221525746975fe5ee1b6a" prot="public" virt="virtual"><scope>agi::PilotParams</scope><name>load</name></member>
+      <member refid="classagi_1_1PilotParams_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" virt="virtual"><scope>agi::PilotParams</scope><name>load</name></member>
+      <member refid="classagi_1_1PilotParams_1afb1db2ac7653a646e95ce6605585ddbd" prot="private" virt="non-virtual"><scope>agi::PilotParams</scope><name>logger_</name></member>
+      <member refid="classagi_1_1PilotParams_1ae7b9eff7f4bd1762c7be044866cdae27" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classagi_1_1PilotParams_1a10dc9c939c68875ec61f6e265f747b33" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>outerloop_divisor_</name></member>
+      <member refid="classagi_1_1PilotParams_1a98586da4af8902972a3a8352b050c53b" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>PilotParams</name></member>
+      <member refid="classagi_1_1PilotParams_1ad8bd10bd3a386120ce762ec32a2210e7" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>PilotParams</name></member>
+      <member refid="classagi_1_1PilotParams_1a889613e664ce9e7db690bf900fb06f0a" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>pipeline_cfg_</name></member>
+      <member refid="classagi_1_1PilotParams_1a5c9b134c78a9453c2ae620727a37974b" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>publish_log_var_</name></member>
+      <member refid="classagi_1_1PilotParams_1af14a814eb5cfef21bcef86f4896db9e7" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>quad_</name></member>
+      <member refid="classagi_1_1PilotParams_1a1264ac3d49b59f4b81dc9e15fe40b86d" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>quad_file_</name></member>
+      <member refid="classagi_1_1PilotParams_1afd6e2e23277b7b0f0ced6f6c62417d15" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>safety_pipeline_cfg_</name></member>
+      <member refid="classagi_1_1PilotParams_1ae27365ff7187e47ece2fcc32d2643a11" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>start_land_speed_</name></member>
+      <member refid="classagi_1_1PilotParams_1aa847866a225f4f723f3fafbe4ce65070" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>stop_after_feedthrough_</name></member>
+      <member refid="classagi_1_1PilotParams_1a5d89afdbbda4d6e033db2135060914b3" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>takeoff_heigth_</name></member>
+      <member refid="classagi_1_1PilotParams_1ae9d30b7b7d94deef0ed9e47a18c9151d" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>takeoff_threshold_</name></member>
+      <member refid="classagi_1_1PilotParams_1aa22b9e65af8ac60d508537c6d4c4e2e5" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>traj_type_</name></member>
+      <member refid="classagi_1_1PilotParams_1ae6477463981a7e965787dfaba304758e" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>traj_viz_dt_</name></member>
+      <member refid="classagi_1_1PilotParams_1a76c406b7c66c6eed961c140cf90bb423" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>traj_viz_sphere_size_</name></member>
+      <member refid="classagi_1_1PilotParams_1a5eaac55359a407a7c3eb2ff4cc841c0d" prot="public" virt="virtual"><scope>agi::PilotParams</scope><name>valid</name></member>
+      <member refid="classagi_1_1PilotParams_1a225342857e9ebd3e5da30229ab55e2ba" prot="public" virt="non-virtual"><scope>agi::PilotParams</scope><name>velocity_in_bodyframe_</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::PilotParams</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

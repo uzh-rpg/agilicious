@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1SimulatorParams" kind="class" language="C++" prot="public">
+    <compoundname>agi::SimulatorParams</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classagi_1_1SimulatorParams_1a2f3d39ded461576d792dec4e61a93128" prot="public" static="no" mutable="no">
+        <type>fs::path</type>
+        <definition>fs::path agi::SimulatorParams::agi_param_directory_</definition>
+        <argsstring></argsstring>
+        <name>agi_param_directory_</name>
+        <qualifiedname>agi::SimulatorParams::agi_param_directory_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="31" column="12" bodyfile="agilib/include/agilib/simulator/simulator_params.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SimulatorParams_1af109f637a1a594a9cf228a8d62f9c801" prot="public" static="no" mutable="no">
+        <type>fs::path</type>
+        <definition>fs::path agi::SimulatorParams::ros_param_directory_</definition>
+        <argsstring></argsstring>
+        <name>ros_param_directory_</name>
+        <qualifiedname>agi::SimulatorParams::ros_param_directory_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="32" column="12" bodyfile="agilib/include/agilib/simulator/simulator_params.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SimulatorParams_1a8f716db7bd647dbb647bb6f91c3a317d" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string agi::SimulatorParams::controller_name_</definition>
+        <argsstring></argsstring>
+        <name>controller_name_</name>
+        <qualifiedname>agi::SimulatorParams::controller_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="34" column="15" bodyfile="agilib/include/agilib/simulator/simulator_params.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SimulatorParams_1a284e33fc532c976d37fa25d8b20e2495" prot="public" static="no" mutable="no">
+        <type>fs::path</type>
+        <definition>fs::path agi::SimulatorParams::controller_file_</definition>
+        <argsstring></argsstring>
+        <name>controller_file_</name>
+        <qualifiedname>agi::SimulatorParams::controller_file_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="35" column="12" bodyfile="agilib/include/agilib/simulator/simulator_params.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SimulatorParams_1a490d8d8ea9c5c6057247f50a3d1b9832" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string agi::SimulatorParams::integrator_name_</definition>
+        <argsstring></argsstring>
+        <name>integrator_name_</name>
+        <qualifiedname>agi::SimulatorParams::integrator_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="37" column="15" bodyfile="agilib/include/agilib/simulator/simulator_params.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SimulatorParams_1af5d4f5157ca1db5e37a13c077e29cb38" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::SimulatorParams::sim_dt_</definition>
+        <argsstring></argsstring>
+        <name>sim_dt_</name>
+        <qualifiedname>agi::SimulatorParams::sim_dt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="38" column="10" bodyfile="agilib/include/agilib/simulator/simulator_params.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SimulatorParams_1a2e23d06fe2bb08fefb5d39691b9d2beb" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::SimulatorParams::delay_</definition>
+        <argsstring></argsstring>
+        <name>delay_</name>
+        <qualifiedname>agi::SimulatorParams::delay_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="39" column="10" bodyfile="agilib/include/agilib/simulator/simulator_params.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SimulatorParams_1ab0f48d834b2cac61a6cceaa29b9a2f2f" prot="public" static="no" mutable="no">
+        <type>fs::path</type>
+        <definition>fs::path agi::SimulatorParams::quad_file_</definition>
+        <argsstring></argsstring>
+        <name>quad_file_</name>
+        <qualifiedname>agi::SimulatorParams::quad_file_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="41" column="12" bodyfile="agilib/include/agilib/simulator/simulator_params.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SimulatorParams_1a7005afc70ccc8345ae239c2b22c29963" prot="public" static="no" mutable="no">
+        <type><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+        <definition>Quadrotor agi::SimulatorParams::quadrotor_</definition>
+        <argsstring></argsstring>
+        <name>quadrotor_</name>
+        <qualifiedname>agi::SimulatorParams::quadrotor_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="42" column="13" bodyfile="agilib/include/agilib/simulator/simulator_params.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1SimulatorParams_1a4d45f7e7937133f86af8c75ef518278c" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref></type>
+        <definition>Logger agi::SimulatorParams::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>agi::SimulatorParams::logger_</qualifiedname>
+        <initializer>{&quot;SimulatorParams&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="45" column="10" bodyfile="agilib/include/agilib/simulator/simulator_params.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SimulatorParams_1a61c78030b08ca80bc12502e896bca691" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structagi_1_1ModuleConfig" kindref="compound">ModuleConfig</ref> &gt;</type>
+        <definition>std::vector&lt;ModuleConfig&gt; agi::SimulatorParams::model_configs_</definition>
+        <argsstring></argsstring>
+        <name>model_configs_</name>
+        <qualifiedname>agi::SimulatorParams::model_configs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="46" column="15" bodyfile="agilib/include/agilib/simulator/simulator_params.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1SimulatorParams_1a15587be314a6ca56e3abbea4230f9a11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::SimulatorParams::SimulatorParams</definition>
+        <argsstring>(const Quadrotor &amp;quadrotor=Quadrotor())</argsstring>
+        <name>SimulatorParams</name>
+        <qualifiedname>agi::SimulatorParams::SimulatorParams</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quadrotor</declname>
+          <defval><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="14" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SimulatorParams_1a595b16641e421d9773140ec1d08c76ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::SimulatorParams::SimulatorParams</definition>
+        <argsstring>(const fs::path &amp;filename, const fs::path &amp;agi_param_directory=&quot;&quot;, const fs::path &amp;ros_param_directory=&quot;&quot;)</argsstring>
+        <name>SimulatorParams</name>
+        <qualifiedname>agi::SimulatorParams::SimulatorParams</qualifiedname>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>agi_param_directory</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>ros_param_directory</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="15" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SimulatorParams_1a148405fa8a22ed8b59877bd1ca9779bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::SimulatorParams::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::SimulatorParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="20" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SimulatorParams_1acdddcd3cb6104f2357838342b1a17924" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::SimulatorParams::valid</definition>
+        <argsstring>() const override</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::SimulatorParams::valid</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b">valid</reimplements>
+        <briefdescription>
+<para>Check if parameters are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="22" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SimulatorParams_1ac5ce31d002ba20bbdbc7d022f7960084" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::SimulatorParams::createModelPipeline</definition>
+        <argsstring>(std::vector&lt; std::shared_ptr&lt; ModelBase &gt; &gt; &amp;model_pipeline) const</argsstring>
+        <name>createModelPipeline</name>
+        <qualifiedname>agi::SimulatorParams::createModelPipeline</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::shared_ptr&lt; <ref refid="classagi_1_1ModelBase" kindref="compound">ModelBase</ref> &gt; &gt; &amp;</type>
+          <declname>model_pipeline</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="24" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SimulatorParams_1a546e370accaccc9aa49c4c2f1d332c8d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::SimulatorParams::createLowLevelController</definition>
+        <argsstring>(std::shared_ptr&lt; LowLevelControllerBase &gt; &amp;ctrl) const</argsstring>
+        <name>createLowLevelController</name>
+        <qualifiedname>agi::SimulatorParams::createLowLevelController</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classagi_1_1LowLevelControllerBase" kindref="compound">LowLevelControllerBase</ref> &gt; &amp;</type>
+          <declname>ctrl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="26" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SimulatorParams_1a0651fdedab416448674f1ecd6dcde31f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::SimulatorParams::createIntegrator</definition>
+        <argsstring>(std::shared_ptr&lt; IntegratorBase &gt; &amp;integrator, DynamicsFunction dynamics_function) const</argsstring>
+        <name>createIntegrator</name>
+        <qualifiedname>agi::SimulatorParams::createIntegrator</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classagi_1_1IntegratorBase" kindref="compound">IntegratorBase</ref> &gt; &amp;</type>
+          <declname>integrator</declname>
+        </param>
+        <param>
+          <type>DynamicsFunction</type>
+          <declname>dynamics_function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="28" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SimulatorParams_1aa72a975fca1221525746975fe5ee1b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::SimulatorParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="19" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SimulatorParams_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const Yaml &amp;yaml)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::SimulatorParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="19" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="1">
+        <label>agi::SimulatorParams</label>
+        <link refid="classagi_1_1SimulatorParams"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="5">
+        <label>agi::Quadrotor</label>
+        <link refid="structagi_1_1Quadrotor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::SimulatorParams</label>
+        <link refid="classagi_1_1SimulatorParams"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>controller_name_</edgelabel>
+          <edgelabel>integrator_name_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>quadrotor_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="3">
+        <label>std::string</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/simulator/simulator_params.hpp" line="12" column="1" bodyfile="agilib/include/agilib/simulator/simulator_params.hpp" bodystart="12" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classagi_1_1SimulatorParams_1a2f3d39ded461576d792dec4e61a93128" prot="public" virt="non-virtual"><scope>agi::SimulatorParams</scope><name>agi_param_directory_</name></member>
+      <member refid="classagi_1_1SimulatorParams_1a284e33fc532c976d37fa25d8b20e2495" prot="public" virt="non-virtual"><scope>agi::SimulatorParams</scope><name>controller_file_</name></member>
+      <member refid="classagi_1_1SimulatorParams_1a8f716db7bd647dbb647bb6f91c3a317d" prot="public" virt="non-virtual"><scope>agi::SimulatorParams</scope><name>controller_name_</name></member>
+      <member refid="classagi_1_1SimulatorParams_1a0651fdedab416448674f1ecd6dcde31f" prot="public" virt="non-virtual"><scope>agi::SimulatorParams</scope><name>createIntegrator</name></member>
+      <member refid="classagi_1_1SimulatorParams_1a546e370accaccc9aa49c4c2f1d332c8d" prot="public" virt="non-virtual"><scope>agi::SimulatorParams</scope><name>createLowLevelController</name></member>
+      <member refid="classagi_1_1SimulatorParams_1ac5ce31d002ba20bbdbc7d022f7960084" prot="public" virt="non-virtual"><scope>agi::SimulatorParams</scope><name>createModelPipeline</name></member>
+      <member refid="classagi_1_1SimulatorParams_1a2e23d06fe2bb08fefb5d39691b9d2beb" prot="public" virt="non-virtual"><scope>agi::SimulatorParams</scope><name>delay_</name></member>
+      <member refid="classagi_1_1SimulatorParams_1a490d8d8ea9c5c6057247f50a3d1b9832" prot="public" virt="non-virtual"><scope>agi::SimulatorParams</scope><name>integrator_name_</name></member>
+      <member refid="classagi_1_1SimulatorParams_1a148405fa8a22ed8b59877bd1ca9779bd" prot="public" virt="virtual"><scope>agi::SimulatorParams</scope><name>load</name></member>
+      <member refid="classagi_1_1SimulatorParams_1aa72a975fca1221525746975fe5ee1b6a" prot="public" virt="virtual"><scope>agi::SimulatorParams</scope><name>load</name></member>
+      <member refid="classagi_1_1SimulatorParams_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" virt="virtual"><scope>agi::SimulatorParams</scope><name>load</name></member>
+      <member refid="classagi_1_1SimulatorParams_1a4d45f7e7937133f86af8c75ef518278c" prot="private" virt="non-virtual"><scope>agi::SimulatorParams</scope><name>logger_</name></member>
+      <member refid="classagi_1_1SimulatorParams_1a61c78030b08ca80bc12502e896bca691" prot="private" virt="non-virtual"><scope>agi::SimulatorParams</scope><name>model_configs_</name></member>
+      <member refid="classagi_1_1SimulatorParams_1ab0f48d834b2cac61a6cceaa29b9a2f2f" prot="public" virt="non-virtual"><scope>agi::SimulatorParams</scope><name>quad_file_</name></member>
+      <member refid="classagi_1_1SimulatorParams_1a7005afc70ccc8345ae239c2b22c29963" prot="public" virt="non-virtual"><scope>agi::SimulatorParams</scope><name>quadrotor_</name></member>
+      <member refid="classagi_1_1SimulatorParams_1af109f637a1a594a9cf228a8d62f9c801" prot="public" virt="non-virtual"><scope>agi::SimulatorParams</scope><name>ros_param_directory_</name></member>
+      <member refid="classagi_1_1SimulatorParams_1af5d4f5157ca1db5e37a13c077e29cb38" prot="public" virt="non-virtual"><scope>agi::SimulatorParams</scope><name>sim_dt_</name></member>
+      <member refid="classagi_1_1SimulatorParams_1a15587be314a6ca56e3abbea4230f9a11" prot="public" virt="non-virtual"><scope>agi::SimulatorParams</scope><name>SimulatorParams</name></member>
+      <member refid="classagi_1_1SimulatorParams_1a595b16641e421d9773140ec1d08c76ff" prot="public" virt="non-virtual"><scope>agi::SimulatorParams</scope><name>SimulatorParams</name></member>
+      <member refid="classagi_1_1SimulatorParams_1acdddcd3cb6104f2357838342b1a17924" prot="public" virt="virtual"><scope>agi::SimulatorParams</scope><name>valid</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::SimulatorParams</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

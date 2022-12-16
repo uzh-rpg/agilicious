@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_af0f289e953fa4e523619416abefa215" kind="dir">
+    <compoundname>agilib/include/agilib/controller/mpc/acados</compoundname>
+    <innerfile refid="acados__solver__drone__model_8h">acados_solver_drone_model.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/controller/mpc/acados/"/>
+  </compounddef>
+</doxygen>

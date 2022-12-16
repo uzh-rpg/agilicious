@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1ModelInit" kind="class" language="C++" prot="public">
+    <compoundname>agi::ModelInit</compoundname>
+    <basecompoundref refid="classagi_1_1ModelBase" prot="public" virt="non-virtual">agi::ModelBase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1ModelInit_1ae9bb1e2a09ad62fae8c7a088773a4e29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::ModelInit::ModelInit</definition>
+        <argsstring>(Quadrotor quad)</argsstring>
+        <name>ModelInit</name>
+        <qualifiedname>agi::ModelInit::ModelInit</qualifiedname>
+        <param>
+          <type><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+          <declname>quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_init.hpp" line="12" column="3" bodyfile="agilib/include/agilib/simulator/model_init.hpp" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ModelInit_1a56abb803c0a9800c1c5e9504a146f275" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::ModelInit::run</definition>
+        <argsstring>(const Ref&lt; const Vector&lt; QS::SIZE &gt; &gt;, Ref&lt; Vector&lt; QS::SIZE &gt; &gt;) const override</argsstring>
+        <name>run</name>
+        <qualifiedname>agi::ModelInit::run</qualifiedname>
+        <reimplements refid="classagi_1_1ModelBase_1abda177a5b2ad6f80d685c62c4175a73d">run</reimplements>
+        <param>
+          <type>const Ref&lt; const Vector&lt; QS::SIZE &gt; &gt;</type>
+        </param>
+        <param>
+          <type>Ref&lt; Vector&lt; QS::SIZE &gt; &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_init.hpp" line="13" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::ModelBase</label>
+        <link refid="classagi_1_1ModelBase"/>
+      </node>
+      <node id="1">
+        <label>agi::ModelInit</label>
+        <link refid="classagi_1_1ModelInit"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::ModelBase</label>
+        <link refid="classagi_1_1ModelBase"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>quad_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::ModelInit</label>
+        <link refid="classagi_1_1ModelInit"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="3">
+        <label>agi::Quadrotor</label>
+        <link refid="structagi_1_1Quadrotor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/simulator/model_init.hpp" line="8" column="1" bodyfile="agilib/include/agilib/simulator/model_init.hpp" bodystart="8" bodyend="15"/>
+    <listofallmembers>
+      <member refid="classagi_1_1ModelBase_1afa0e1f1d5823563b5ba7a34212571421" prot="public" virt="non-virtual"><scope>agi::ModelInit</scope><name>ModelBase</name></member>
+      <member refid="classagi_1_1ModelInit_1ae9bb1e2a09ad62fae8c7a088773a4e29" prot="public" virt="non-virtual"><scope>agi::ModelInit</scope><name>ModelInit</name></member>
+      <member refid="classagi_1_1ModelBase_1a71a5186d36000793a8fb4d163a14bbf4" prot="protected" virt="non-virtual"><scope>agi::ModelInit</scope><name>quad_</name></member>
+      <member refid="classagi_1_1ModelInit_1a56abb803c0a9800c1c5e9504a146f275" prot="public" virt="virtual"><scope>agi::ModelInit</scope><name>run</name></member>
+      <member refid="classagi_1_1ModelBase_1aec144173e8686f6161a848775a17342b" prot="public" virt="virtual"><scope>agi::ModelInit</scope><name>updateQuad</name></member>
+      <member refid="classagi_1_1ModelBase_1a394ad140874d5e7b5f4837931ec8ec2d" prot="public" virt="virtual"><scope>agi::ModelInit</scope><name>~ModelBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

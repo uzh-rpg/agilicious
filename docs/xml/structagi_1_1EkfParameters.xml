@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1EkfParameters" kind="struct" language="C++" prot="public">
+    <compoundname>agi::EkfParameters</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1a5cb9daee57f79d33ce8e7a1593a58bb1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::EkfParameters::enable_timing</definition>
+        <argsstring></argsstring>
+        <name>enable_timing</name>
+        <qualifiedname>agi::EkfParameters::enable_timing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="18" column="8" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1af75497f46a9ae5630cb18cd96441abe1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::EkfParameters::use_imu</definition>
+        <argsstring></argsstring>
+        <name>use_imu</name>
+        <qualifiedname>agi::EkfParameters::use_imu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="19" column="8" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1a78df0e6f7bf858ed4c9e02efb8aab09b" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::EkfParameters::max_update_wait_time</definition>
+        <argsstring></argsstring>
+        <name>max_update_wait_time</name>
+        <qualifiedname>agi::EkfParameters::max_update_wait_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="21" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1a3c11395ef66c82083b2dba1d5b7d744d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::EkfParameters::update_on_get</definition>
+        <argsstring></argsstring>
+        <name>update_on_get</name>
+        <qualifiedname>agi::EkfParameters::update_on_get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="22" column="8" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1ad3b7edb1dd67e9183b1aab280e052d0e" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::EkfParameters::jump_pos_threshold</definition>
+        <argsstring></argsstring>
+        <name>jump_pos_threshold</name>
+        <qualifiedname>agi::EkfParameters::jump_pos_threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="23" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1aac6748bd8058088f0b4387abbf57637a" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::EkfParameters::jump_att_threshold</definition>
+        <argsstring></argsstring>
+        <name>jump_att_threshold</name>
+        <qualifiedname>agi::EkfParameters::jump_att_threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="24" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1a1d65f54a68733add254a3f73555f0863" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::EkfParameters::R_pos</definition>
+        <argsstring></argsstring>
+        <name>R_pos</name>
+        <qualifiedname>agi::EkfParameters::R_pos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="26" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1a1a8667a21709798669b02e7bbe2d13cd" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::EkfParameters::R_att</definition>
+        <argsstring></argsstring>
+        <name>R_att</name>
+        <qualifiedname>agi::EkfParameters::R_att</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="27" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1ad2cef354cd587bb00ec87e76476f3bb2" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::EkfParameters::R_acc</definition>
+        <argsstring></argsstring>
+        <name>R_acc</name>
+        <qualifiedname>agi::EkfParameters::R_acc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="28" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1ac9be04b90d6d8a58cc9644a0cfa3a3ef" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::EkfParameters::R_omega</definition>
+        <argsstring></argsstring>
+        <name>R_omega</name>
+        <qualifiedname>agi::EkfParameters::R_omega</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="29" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1a16d035e2c0a51de260489d28bd6ebb35" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::EkfParameters::Q_pos</definition>
+        <argsstring></argsstring>
+        <name>Q_pos</name>
+        <qualifiedname>agi::EkfParameters::Q_pos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="31" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1a6bd5c618537526caf3cce2a74d462b72" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 4 &gt;</type>
+        <definition>Vector&lt;4&gt; agi::EkfParameters::Q_att</definition>
+        <argsstring></argsstring>
+        <name>Q_att</name>
+        <qualifiedname>agi::EkfParameters::Q_att</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="32" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1a2cec474e595869a46c6b4d28d9242638" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::EkfParameters::Q_vel</definition>
+        <argsstring></argsstring>
+        <name>Q_vel</name>
+        <qualifiedname>agi::EkfParameters::Q_vel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="33" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1a077aaa20c4a2d75a58857b61bc345139" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::EkfParameters::Q_ome</definition>
+        <argsstring></argsstring>
+        <name>Q_ome</name>
+        <qualifiedname>agi::EkfParameters::Q_ome</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="34" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1ad7d3f2fae76cee49a0e192da2d8f5024" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::EkfParameters::Q_acc</definition>
+        <argsstring></argsstring>
+        <name>Q_acc</name>
+        <qualifiedname>agi::EkfParameters::Q_acc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="35" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1ac79f262eaaebfcc47cb4e07ace9a5513" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::EkfParameters::Q_bome</definition>
+        <argsstring></argsstring>
+        <name>Q_bome</name>
+        <qualifiedname>agi::EkfParameters::Q_bome</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="36" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1a8b469fc31b7134bb0f3dd66ed709d111" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::EkfParameters::Q_bacc</definition>
+        <argsstring></argsstring>
+        <name>Q_bacc</name>
+        <qualifiedname>agi::EkfParameters::Q_bacc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="37" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1acdbd23d5818eaa65a8c69af975f4ba0b" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::EkfParameters::Q_init_pos</definition>
+        <argsstring></argsstring>
+        <name>Q_init_pos</name>
+        <qualifiedname>agi::EkfParameters::Q_init_pos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="39" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1a22ca2891544ab00f09961c4374ae19ab" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 4 &gt;</type>
+        <definition>Vector&lt;4&gt; agi::EkfParameters::Q_init_att</definition>
+        <argsstring></argsstring>
+        <name>Q_init_att</name>
+        <qualifiedname>agi::EkfParameters::Q_init_att</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="40" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1acb608880dae86028a99436bc6ed99ed5" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::EkfParameters::Q_init_vel</definition>
+        <argsstring></argsstring>
+        <name>Q_init_vel</name>
+        <qualifiedname>agi::EkfParameters::Q_init_vel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="41" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1a34a92e6403ee6c3ac0da4f237b998ebc" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::EkfParameters::Q_init_ome</definition>
+        <argsstring></argsstring>
+        <name>Q_init_ome</name>
+        <qualifiedname>agi::EkfParameters::Q_init_ome</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="42" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1afc29f082fc8b327a51f9b27ba04ac358" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::EkfParameters::Q_init_acc</definition>
+        <argsstring></argsstring>
+        <name>Q_init_acc</name>
+        <qualifiedname>agi::EkfParameters::Q_init_acc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="43" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1ad38fb679a82a2a2337903ca17e80c1c0" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::EkfParameters::Q_init_bome</definition>
+        <argsstring></argsstring>
+        <name>Q_init_bome</name>
+        <qualifiedname>agi::EkfParameters::Q_init_bome</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="44" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1EkfParameters_1a62280ab1b0f8db660833a047cede6874" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::EkfParameters::Q_init_bacc</definition>
+        <argsstring></argsstring>
+        <name>Q_init_bacc</name>
+        <qualifiedname>agi::EkfParameters::Q_init_bacc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="45" column="10" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1EkfParameters_1a0285969e3a01a4b0633f48148caf2118" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::EkfParameters::EkfParameters</definition>
+        <argsstring>()</argsstring>
+        <name>EkfParameters</name>
+        <qualifiedname>agi::EkfParameters::EkfParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="11" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1EkfParameters_1a286c2d1f463af798a69d752a344d076d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::EkfParameters::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::EkfParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="14" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1EkfParameters_1a2dcf6433c46a2042e2b13795bb6c835a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::EkfParameters::valid</definition>
+        <argsstring>() const override</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::EkfParameters::valid</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b">valid</reimplements>
+        <briefdescription>
+<para>Check if parameters are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="16" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1EkfParameters_1aa72a975fca1221525746975fe5ee1b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::EkfParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="13" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1EkfParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const Yaml &amp;yaml)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::EkfParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="13" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::EkfParameters</label>
+        <link refid="structagi_1_1EkfParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::EkfParameters</label>
+        <link refid="structagi_1_1EkfParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/estimator/ekf/ekf_params.hpp" line="10" column="1" bodyfile="agilib/include/agilib/estimator/ekf/ekf_params.hpp" bodystart="10" bodyend="46"/>
+    <listofallmembers>
+      <member refid="structagi_1_1EkfParameters_1a0285969e3a01a4b0633f48148caf2118" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>EkfParameters</name></member>
+      <member refid="structagi_1_1EkfParameters_1a5cb9daee57f79d33ce8e7a1593a58bb1" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>enable_timing</name></member>
+      <member refid="structagi_1_1EkfParameters_1aac6748bd8058088f0b4387abbf57637a" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>jump_att_threshold</name></member>
+      <member refid="structagi_1_1EkfParameters_1ad3b7edb1dd67e9183b1aab280e052d0e" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>jump_pos_threshold</name></member>
+      <member refid="structagi_1_1EkfParameters_1a286c2d1f463af798a69d752a344d076d" prot="public" virt="virtual"><scope>agi::EkfParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1EkfParameters_1aa72a975fca1221525746975fe5ee1b6a" prot="public" virt="virtual"><scope>agi::EkfParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1EkfParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" virt="virtual"><scope>agi::EkfParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1EkfParameters_1a78df0e6f7bf858ed4c9e02efb8aab09b" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>max_update_wait_time</name></member>
+      <member refid="structagi_1_1EkfParameters_1ad7d3f2fae76cee49a0e192da2d8f5024" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>Q_acc</name></member>
+      <member refid="structagi_1_1EkfParameters_1a6bd5c618537526caf3cce2a74d462b72" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>Q_att</name></member>
+      <member refid="structagi_1_1EkfParameters_1a8b469fc31b7134bb0f3dd66ed709d111" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>Q_bacc</name></member>
+      <member refid="structagi_1_1EkfParameters_1ac79f262eaaebfcc47cb4e07ace9a5513" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>Q_bome</name></member>
+      <member refid="structagi_1_1EkfParameters_1afc29f082fc8b327a51f9b27ba04ac358" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>Q_init_acc</name></member>
+      <member refid="structagi_1_1EkfParameters_1a22ca2891544ab00f09961c4374ae19ab" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>Q_init_att</name></member>
+      <member refid="structagi_1_1EkfParameters_1a62280ab1b0f8db660833a047cede6874" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>Q_init_bacc</name></member>
+      <member refid="structagi_1_1EkfParameters_1ad38fb679a82a2a2337903ca17e80c1c0" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>Q_init_bome</name></member>
+      <member refid="structagi_1_1EkfParameters_1a34a92e6403ee6c3ac0da4f237b998ebc" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>Q_init_ome</name></member>
+      <member refid="structagi_1_1EkfParameters_1acdbd23d5818eaa65a8c69af975f4ba0b" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>Q_init_pos</name></member>
+      <member refid="structagi_1_1EkfParameters_1acb608880dae86028a99436bc6ed99ed5" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>Q_init_vel</name></member>
+      <member refid="structagi_1_1EkfParameters_1a077aaa20c4a2d75a58857b61bc345139" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>Q_ome</name></member>
+      <member refid="structagi_1_1EkfParameters_1a16d035e2c0a51de260489d28bd6ebb35" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>Q_pos</name></member>
+      <member refid="structagi_1_1EkfParameters_1a2cec474e595869a46c6b4d28d9242638" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>Q_vel</name></member>
+      <member refid="structagi_1_1EkfParameters_1ad2cef354cd587bb00ec87e76476f3bb2" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>R_acc</name></member>
+      <member refid="structagi_1_1EkfParameters_1a1a8667a21709798669b02e7bbe2d13cd" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>R_att</name></member>
+      <member refid="structagi_1_1EkfParameters_1ac9be04b90d6d8a58cc9644a0cfa3a3ef" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>R_omega</name></member>
+      <member refid="structagi_1_1EkfParameters_1a1d65f54a68733add254a3f73555f0863" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>R_pos</name></member>
+      <member refid="structagi_1_1EkfParameters_1a3c11395ef66c82083b2dba1d5b7d744d" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>update_on_get</name></member>
+      <member refid="structagi_1_1EkfParameters_1af75497f46a9ae5630cb18cd96441abe1" prot="public" virt="non-virtual"><scope>agi::EkfParameters</scope><name>use_imu</name></member>
+      <member refid="structagi_1_1EkfParameters_1a2dcf6433c46a2042e2b13795bb6c835a" prot="public" virt="virtual"><scope>agi::EkfParameters</scope><name>valid</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::EkfParameters</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

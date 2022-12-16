@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1IntegratorRK4" kind="class" language="C++" prot="public">
+    <compoundname>agi::IntegratorRK4</compoundname>
+    <basecompoundref refid="classagi_1_1IntegratorBase" prot="public" virt="non-virtual">agi::IntegratorBase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1IntegratorRK4_1a085e917b46e6abac9b8579c2716ed1fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::IntegratorRK4::step</definition>
+        <argsstring>(const Ref&lt; const Vector&lt;&gt; &gt; initial_state, const Scalar dt, Ref&lt; Vector&lt;&gt; &gt; final_state) const override</argsstring>
+        <name>step</name>
+        <qualifiedname>agi::IntegratorRK4::step</qualifiedname>
+        <reimplements refid="classagi_1_1IntegratorBase_1aa83056045b342e0c68204592ca33557d">step</reimplements>
+        <param>
+          <type>const Ref&lt; const Vector&lt;&gt; &gt;</type>
+          <declname>initial_state</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>Ref&lt; Vector&lt;&gt; &gt;</type>
+          <declname>final_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/integrator_rk4.hpp" line="12" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1IntegratorRK4_1a1c4356e09cd660da63f7d2e778517ab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::IntegratorBase::IntegratorBase</definition>
+        <argsstring>(DynamicsFunction function, const Scalar dt_max=1e-3)</argsstring>
+        <name>IntegratorBase</name>
+        <qualifiedname>agi::IntegratorRK4::IntegratorBase</qualifiedname>
+        <param>
+          <type>DynamicsFunction</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>dt_max</declname>
+          <defval>1e-3</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/math/integrator_rk4.hpp" line="10" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::IntegratorBase</label>
+        <link refid="classagi_1_1IntegratorBase"/>
+      </node>
+      <node id="1">
+        <label>agi::IntegratorRK4</label>
+        <link refid="classagi_1_1IntegratorRK4"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::IntegratorBase</label>
+        <link refid="classagi_1_1IntegratorBase"/>
+      </node>
+      <node id="1">
+        <label>agi::IntegratorRK4</label>
+        <link refid="classagi_1_1IntegratorRK4"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/math/integrator_rk4.hpp" line="7" column="1" bodyfile="agilib/include/agilib/math/integrator_rk4.hpp" bodystart="7" bodyend="14"/>
+    <listofallmembers>
+      <member refid="classagi_1_1IntegratorBase_1a31b83cd4f06293cf98a60fbecdb81cd0" prot="protected" virt="non-virtual"><scope>agi::IntegratorRK4</scope><name>dt_max_</name></member>
+      <member refid="classagi_1_1IntegratorBase_1afa538f71a2ce2bce5c2215fd54044e23" prot="public" virt="non-virtual"><scope>agi::IntegratorRK4</scope><name>dtMax</name></member>
+      <member refid="classagi_1_1IntegratorBase_1ac8c2d0a6a4e360388adb11970fdd6b5f" prot="protected" virt="non-virtual"><scope>agi::IntegratorRK4</scope><name>dynamics_</name></member>
+      <member refid="classagi_1_1IntegratorBase_1ae3c708d56438e43d106ea08db897e920" prot="public" virt="non-virtual"><scope>agi::IntegratorRK4</scope><name>integrate</name></member>
+      <member refid="classagi_1_1IntegratorBase_1a87330695deea6c37adaf26321a5c8d89" prot="public" virt="non-virtual"><scope>agi::IntegratorRK4</scope><name>integrate</name></member>
+      <member refid="classagi_1_1IntegratorRK4_1a1c4356e09cd660da63f7d2e778517ab0" prot="public" virt="non-virtual"><scope>agi::IntegratorRK4</scope><name>IntegratorBase</name></member>
+      <member refid="classagi_1_1IntegratorRK4_1a085e917b46e6abac9b8579c2716ed1fa" prot="public" virt="virtual"><scope>agi::IntegratorRK4</scope><name>step</name></member>
+      <member refid="classagi_1_1IntegratorBase_1a199247d009ec4d560603b22ff02845d4" prot="public" virt="virtual"><scope>agi::IntegratorRK4</scope><name>~IntegratorBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

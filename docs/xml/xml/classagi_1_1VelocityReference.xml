@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1VelocityReference" kind="class" language="C++" prot="public">
+    <compoundname>agi::VelocityReference</compoundname>
+    <basecompoundref refid="classagi_1_1ReferenceBase" prot="public" virt="non-virtual">agi::ReferenceBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1VelocityReference_1a1c2e5fea01e88ebb58024d0e005d6175" prot="private" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool agi::VelocityReference::update_from_estimate_</definition>
+        <argsstring></argsstring>
+        <name>update_from_estimate_</name>
+        <qualifiedname>agi::VelocityReference::update_from_estimate_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/velocity_reference.hpp" line="24" column="14" bodyfile="agilib/include/agilib/reference/velocity_reference.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1VelocityReference_1a344a1b70daa1fcd2a1321c294abce656" prot="private" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::VelocityReference::v_</definition>
+        <argsstring></argsstring>
+        <name>v_</name>
+        <qualifiedname>agi::VelocityReference::v_</qualifiedname>
+        <initializer>= Vector&lt;3&gt;::Zero()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/velocity_reference.hpp" line="25" column="10" bodyfile="agilib/include/agilib/reference/velocity_reference.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1VelocityReference_1aa9dc377e4352d503d9b018b878e4c879" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::VelocityReference::yaw_last_</definition>
+        <argsstring></argsstring>
+        <name>yaw_last_</name>
+        <qualifiedname>agi::VelocityReference::yaw_last_</qualifiedname>
+        <initializer>{0.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/velocity_reference.hpp" line="26" column="10" bodyfile="agilib/include/agilib/reference/velocity_reference.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1VelocityReference_1a622fbe8580a87498d9cdd9ac72ac678b" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::VelocityReference::yaw_rate_</definition>
+        <argsstring></argsstring>
+        <name>yaw_rate_</name>
+        <qualifiedname>agi::VelocityReference::yaw_rate_</qualifiedname>
+        <initializer>{0.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/velocity_reference.hpp" line="27" column="10" bodyfile="agilib/include/agilib/reference/velocity_reference.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1VelocityReference_1a0f5a6e8c43f7a628c6168f664cda7017" prot="private" static="no" mutable="no">
+        <type>const Scalar</type>
+        <definition>const Scalar agi::VelocityReference::timeout_</definition>
+        <argsstring></argsstring>
+        <name>timeout_</name>
+        <qualifiedname>agi::VelocityReference::timeout_</qualifiedname>
+        <initializer>{1.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/velocity_reference.hpp" line="28" column="16" bodyfile="agilib/include/agilib/reference/velocity_reference.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1VelocityReference_1a5524a3e84021958955176c987481c0a0" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::VelocityReference::t_last_update_</definition>
+        <argsstring></argsstring>
+        <name>t_last_update_</name>
+        <qualifiedname>agi::VelocityReference::t_last_update_</qualifiedname>
+        <initializer>{NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/velocity_reference.hpp" line="29" column="10" bodyfile="agilib/include/agilib/reference/velocity_reference.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1VelocityReference_1aa513274885234f9c8b667e0f18270f73" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref></type>
+        <definition>Logger agi::VelocityReference::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>agi::VelocityReference::logger_</qualifiedname>
+        <initializer>{name()}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/velocity_reference.hpp" line="30" column="10" bodyfile="agilib/include/agilib/reference/velocity_reference.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1VelocityReference_1a65f20b1acbc86ca67347245435e001cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::VelocityReference::VelocityReference</definition>
+        <argsstring>(const QuadState &amp;state, const bool update_from_estimate=false, const Scalar timeout=1.0)</argsstring>
+        <name>VelocityReference</name>
+        <qualifiedname>agi::VelocityReference::VelocityReference</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>update_from_estimate</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>timeout</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/velocity_reference.hpp" line="10" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1VelocityReference_1a91124e91ec4dcd9ad378840854ff5e12" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structagi_1_1Setpoint" kindref="compound">Setpoint</ref></type>
+        <definition>virtual Setpoint agi::VelocityReference::getSetpoint</definition>
+        <argsstring>(const QuadState &amp;state, const Scalar t) override</argsstring>
+        <name>getSetpoint</name>
+        <qualifiedname>agi::VelocityReference::getSetpoint</qualifiedname>
+        <reimplements refid="classagi_1_1ReferenceBase_1ac93905fbfed46897cfc62aca55702121">getSetpoint</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/velocity_reference.hpp" line="14" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1VelocityReference_1a0f4d52447f0e36bcc715089dc7a19ea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::VelocityReference::update</definition>
+        <argsstring>(const Vector&lt; 3 &gt; &amp;velocity, const Scalar yaw_rate)</argsstring>
+        <name>update</name>
+        <qualifiedname>agi::VelocityReference::update</qualifiedname>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>velocity</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>yaw_rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/velocity_reference.hpp" line="16" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1VelocityReference_1a4572c3a74cc6a6f5ce0d63daf3f161fe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::VelocityReference::isVelocityRefernce</definition>
+        <argsstring>() const override</argsstring>
+        <name>isVelocityRefernce</name>
+        <qualifiedname>agi::VelocityReference::isVelocityRefernce</qualifiedname>
+        <reimplements refid="classagi_1_1ReferenceBase_1a59884c48b6854317fef848fe8553abe6">isVelocityRefernce</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/velocity_reference.hpp" line="18" column="16" bodyfile="agilib/include/agilib/reference/velocity_reference.hpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1VelocityReference_1a3663c7dae1888639d79bbc9eb6da9209" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::VelocityReference::isAbsolute</definition>
+        <argsstring>() const override</argsstring>
+        <name>isAbsolute</name>
+        <qualifiedname>agi::VelocityReference::isAbsolute</qualifiedname>
+        <reimplements refid="classagi_1_1ReferenceBase_1abb83061d559c15abaca2e398ce06793f">isAbsolute</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/velocity_reference.hpp" line="19" column="16" bodyfile="agilib/include/agilib/reference/velocity_reference.hpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classagi_1_1VelocityReference_1a752903d31b839414fdd54b6474c1ab49" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::VelocityReference::updateTo</definition>
+        <argsstring>(const QuadState &amp;state)</argsstring>
+        <name>updateTo</name>
+        <qualifiedname>agi::VelocityReference::updateTo</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/velocity_reference.hpp" line="22" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::ReferenceBase</label>
+        <link refid="classagi_1_1ReferenceBase"/>
+      </node>
+      <node id="1">
+        <label>agi::VelocityReference</label>
+        <link refid="classagi_1_1VelocityReference"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>agi::QuadState</label>
+        <link refid="structagi_1_1QuadState"/>
+      </node>
+      <node id="2">
+        <label>agi::ReferenceBase</label>
+        <link refid="classagi_1_1ReferenceBase"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>start_state_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>name_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::VelocityReference</label>
+        <link refid="classagi_1_1VelocityReference"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="4">
+        <label>std::string</label>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/reference/velocity_reference.hpp" line="8" column="1" bodyfile="agilib/include/agilib/reference/velocity_reference.hpp" bodystart="8" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classagi_1_1ReferenceBase_1a3fa9710c451591c9305c79fbb8d8f6c1" prot="protected" virt="non-virtual"><scope>agi::VelocityReference</scope><name>duration_</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a2d29ebe0b692086b9a2bdce380ff2694" prot="public" virt="non-virtual"><scope>agi::VelocityReference</scope><name>getDuration</name></member>
+      <member refid="classagi_1_1ReferenceBase_1ab44839ff6f914e5915a525cece25fe38" prot="public" virt="virtual"><scope>agi::VelocityReference</scope><name>getEndSetpoint</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a69e2637dc8c4733c539267634bf7f8af" prot="public" virt="non-virtual"><scope>agi::VelocityReference</scope><name>getEndTime</name></member>
+      <member refid="classagi_1_1VelocityReference_1a91124e91ec4dcd9ad378840854ff5e12" prot="public" virt="virtual"><scope>agi::VelocityReference</scope><name>getSetpoint</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a875e63a282d17d9ef1c4c41e5836e865" prot="public" virt="virtual" ambiguityscope="agi::ReferenceBase::"><scope>agi::VelocityReference</scope><name>getSetpoint</name></member>
+      <member refid="classagi_1_1ReferenceBase_1ab9d8347dc2548fc43948dd3226d8ab1b" prot="public" virt="virtual" ambiguityscope="agi::ReferenceBase::"><scope>agi::VelocityReference</scope><name>getSetpoint</name></member>
+      <member refid="classagi_1_1ReferenceBase_1ab4ff3b2f0e66f6f1fe27c59bdb66c61f" prot="public" virt="virtual"><scope>agi::VelocityReference</scope><name>getStartSetpoint</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a3c86a5dc940736c947bfc120c3639fb2" prot="public" virt="non-virtual"><scope>agi::VelocityReference</scope><name>getStartTime</name></member>
+      <member refid="classagi_1_1VelocityReference_1a3663c7dae1888639d79bbc9eb6da9209" prot="public" virt="virtual"><scope>agi::VelocityReference</scope><name>isAbsolute</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a4a0553bcd821f758f44f68d028c17a5f" prot="public" virt="virtual"><scope>agi::VelocityReference</scope><name>isHover</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a36bfb93f70a50407510e1bebebc56008" prot="public" virt="non-virtual"><scope>agi::VelocityReference</scope><name>isTimeInRange</name></member>
+      <member refid="classagi_1_1VelocityReference_1a4572c3a74cc6a6f5ce0d63daf3f161fe" prot="public" virt="virtual"><scope>agi::VelocityReference</scope><name>isVelocityRefernce</name></member>
+      <member refid="classagi_1_1VelocityReference_1aa513274885234f9c8b667e0f18270f73" prot="private" virt="non-virtual"><scope>agi::VelocityReference</scope><name>logger_</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a4dc1f48d25427a2fd18e61e766bad949" prot="public" virt="non-virtual"><scope>agi::VelocityReference</scope><name>name</name></member>
+      <member refid="classagi_1_1ReferenceBase_1ad61cf02b007db1a86219f2138625e05b" prot="protected" virt="non-virtual"><scope>agi::VelocityReference</scope><name>name_</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a2b89ec18e0bdb42443de9486a67f2917" prot="public" virt="non-virtual"><scope>agi::VelocityReference</scope><name>ReferenceBase</name></member>
+      <member refid="classagi_1_1ReferenceBase_1acee2bf30afb2aa7afe0fd3f2105148ce" prot="public" virt="non-virtual"><scope>agi::VelocityReference</scope><name>ReferenceBase</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a4849d43bf02c58b998c518de91f06fab" prot="protected" virt="non-virtual"><scope>agi::VelocityReference</scope><name>start_state_</name></member>
+      <member refid="classagi_1_1VelocityReference_1a5524a3e84021958955176c987481c0a0" prot="private" virt="non-virtual"><scope>agi::VelocityReference</scope><name>t_last_update_</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a05c52fdf187de8ca5e9d74ae62ed86c8" prot="public" virt="non-virtual"><scope>agi::VelocityReference</scope><name>time_in_HH_MM_SS_MMM</name></member>
+      <member refid="classagi_1_1VelocityReference_1a0f5a6e8c43f7a628c6168f664cda7017" prot="private" virt="non-virtual"><scope>agi::VelocityReference</scope><name>timeout_</name></member>
+      <member refid="classagi_1_1ReferenceBase_1afa47dccb281d9b2e003eeaf6e4bc374c" prot="public" virt="non-virtual"><scope>agi::VelocityReference</scope><name>truncate</name></member>
+      <member refid="classagi_1_1VelocityReference_1a0f4d52447f0e36bcc715089dc7a19ea8" prot="public" virt="non-virtual"><scope>agi::VelocityReference</scope><name>update</name></member>
+      <member refid="classagi_1_1VelocityReference_1a1c2e5fea01e88ebb58024d0e005d6175" prot="private" virt="non-virtual"><scope>agi::VelocityReference</scope><name>update_from_estimate_</name></member>
+      <member refid="classagi_1_1VelocityReference_1a752903d31b839414fdd54b6474c1ab49" prot="private" virt="non-virtual"><scope>agi::VelocityReference</scope><name>updateTo</name></member>
+      <member refid="classagi_1_1VelocityReference_1a344a1b70daa1fcd2a1321c294abce656" prot="private" virt="non-virtual"><scope>agi::VelocityReference</scope><name>v_</name></member>
+      <member refid="classagi_1_1ReferenceBase_1adcbdf523b58593c6db64176e857ec8b3" prot="public" virt="virtual"><scope>agi::VelocityReference</scope><name>valid</name></member>
+      <member refid="classagi_1_1VelocityReference_1a65f20b1acbc86ca67347245435e001cd" prot="public" virt="non-virtual"><scope>agi::VelocityReference</scope><name>VelocityReference</name></member>
+      <member refid="classagi_1_1VelocityReference_1aa9dc377e4352d503d9b018b878e4c879" prot="private" virt="non-virtual"><scope>agi::VelocityReference</scope><name>yaw_last_</name></member>
+      <member refid="classagi_1_1VelocityReference_1a622fbe8580a87498d9cdd9ac72ac678b" prot="private" virt="non-virtual"><scope>agi::VelocityReference</scope><name>yaw_rate_</name></member>
+      <member refid="classagi_1_1ReferenceBase_1af8397099311dca99dffb13e0f365e912" prot="public" virt="virtual"><scope>agi::VelocityReference</scope><name>~ReferenceBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

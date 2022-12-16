@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1ParameterBase" kind="struct" language="C++" prot="public">
+    <compoundname>agi::ParameterBase</compoundname>
+    <derivedcompoundref refid="structagi_1_1BEMParameters" prot="public" virt="non-virtual">agi::BEMParameters</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1BodyDragParameters" prot="public" virt="non-virtual">agi::BodyDragParameters</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1CtrlParams" prot="public" virt="non-virtual">agi::CtrlParams</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1EkfImuParameters" prot="public" virt="non-virtual">agi::EkfImuParameters</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1EkfParameters" prot="public" virt="non-virtual">agi::EkfParameters</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1FeedthroughParameters" prot="public" virt="non-virtual">agi::FeedthroughParameters</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1GeometricControllerParams" prot="public" virt="non-virtual">agi::GeometricControllerParams</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1IndiParameters" prot="public" virt="non-virtual">agi::IndiParameters</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1LairdParams" prot="public" virt="non-virtual">agi::LairdParams</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1LinCubDragParameters" prot="public" virt="non-virtual">agi::LinCubDragParameters</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1LowLevelControllerBetaflightParams" prot="public" virt="non-virtual">agi::LowLevelControllerBetaflightParams</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1LowLevelControllerSimpleParams" prot="public" virt="non-virtual">agi::LowLevelControllerSimpleParams</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1MockVioParams" prot="public" virt="non-virtual">agi::MockVioParams</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1MpcParameters" prot="public" virt="non-virtual">agi::MpcParameters</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1MspParams" prot="public" virt="non-virtual">agi::MspParams</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1PidParameters" prot="public" virt="non-virtual">agi::PidParameters</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1PilotParams" prot="public" virt="non-virtual">agi::PilotParams</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1PositionGuardParams" prot="public" virt="non-virtual">agi::PositionGuardParams</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1PositionSamplerParameters" prot="public" virt="non-virtual">agi::PositionSamplerParameters</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1Quadrotor" prot="public" virt="non-virtual">agi::Quadrotor</derivedcompoundref>
+    <derivedcompoundref refid="structagi_1_1SbusParams" prot="public" virt="non-virtual">agi::SbusParams</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1SimulatorParams" prot="public" virt="non-virtual">agi::SimulatorParams</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual agi::ParameterBase::~ParameterBase</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ParameterBase</name>
+        <qualifiedname>agi::ParameterBase::~ParameterBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/parameter_base.hpp" line="25" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::ParameterBase::load</qualifiedname>
+        <reimplementedby refid="structagi_1_1GeometricControllerParams_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1IndiParameters_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1MpcParameters_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1PidParameters_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1EkfParameters_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1EkfImuParameters_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1FeedthroughParameters_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1MockVioParams_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1PositionGuardParams_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="classagi_1_1PilotParams_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1PositionSamplerParameters_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1LowLevelControllerBetaflightParams_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1LowLevelControllerSimpleParams_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1BodyDragParameters_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1LinCubDragParameters_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1BEMParameters_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="classagi_1_1SimulatorParams_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1Quadrotor_1aa72a975fca1221525746975fe5ee1b6a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1CtrlParams_1a2a8eb3f4d3f20d4301140f1a6c2da80a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1LairdParams_1ab07afb831c724874d5e12b5d89d21c5e">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1MspParams_1aba35fad37e8dd8cc91dd98a4ce29e551">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1SbusParams_1af972e32d380636edbc0b2a3ca33f408f">load</reimplementedby>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/parameter_base.hpp" line="28" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const Yaml &amp;yaml)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::ParameterBase::load</qualifiedname>
+        <reimplementedby refid="structagi_1_1CtrlParams_1ab2cdc312fb0ca5c9cdd685258964c822">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1LairdParams_1ae488eb70dd9ae8dc450b0d6f690d683b">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1MspParams_1a246808d6a3757e0ea1f32f739b64aa47">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1SbusParams_1ae3ee456a8ef41489529ca73bb843b9e0">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1GeometricControllerParams_1a110a4693c526437fe2875dee46dd75f2">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1IndiParameters_1a2bfac41f6c8daa88010bd1e2dfdf6794">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1MpcParameters_1a5bbac15dd8352c5cc391e964b1dc6f07">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1PidParameters_1a68dae1a9fd407fb83b24de08c8915ffa">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1EkfParameters_1a286c2d1f463af798a69d752a344d076d">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1EkfImuParameters_1ae7a39a857d43cc8a53699c1716d0c0bd">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1FeedthroughParameters_1abf7fb4f455106474c8f360bb8f51698a">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1MockVioParams_1a696e099e284b2d6b6326253f0c8a56a9">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1PositionGuardParams_1ab0753596f1df55aad4340c5f09f06517">load</reimplementedby>
+        <reimplementedby refid="classagi_1_1PilotParams_1af0cd71609d3f070dc3af0c02ee361023">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1PositionSamplerParameters_1a2a0c801b407136bd7c7fe78228a682e2">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1LowLevelControllerBetaflightParams_1ae2d2e68613e514765fd9a4bb10d1a2e2">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1LowLevelControllerSimpleParams_1a575d3728686fae69c45bda37092d5977">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1BodyDragParameters_1a289fb355b99f6cf65a9ba6ce91394daf">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1LinCubDragParameters_1a1dcfe54442b1d7a16b91545456d4babb">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1BEMParameters_1a72cfaa56de0a29ed712a27c378155952">load</reimplementedby>
+        <reimplementedby refid="classagi_1_1SimulatorParams_1a148405fa8a22ed8b59877bd1ca9779bd">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1Quadrotor_1ab96b0908bd51048ffd60c4a5e87be767">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1GeometricControllerParams_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1IndiParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1MpcParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1PidParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1EkfParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1EkfImuParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1FeedthroughParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1MockVioParams_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1PositionGuardParams_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="classagi_1_1PilotParams_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1PositionSamplerParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1LowLevelControllerBetaflightParams_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1LowLevelControllerSimpleParams_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1BodyDragParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1LinCubDragParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1BEMParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="classagi_1_1SimulatorParams_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <reimplementedby refid="structagi_1_1Quadrotor_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplementedby>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/parameter_base.hpp" line="31" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::valid</definition>
+        <argsstring>() const</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::ParameterBase::valid</qualifiedname>
+        <reimplementedby refid="structagi_1_1GeometricControllerParams_1aee2f303fb97b6ee4321285dea19d6018">valid</reimplementedby>
+        <reimplementedby refid="structagi_1_1IndiParameters_1a677ec6920e503947aeeaffaa1dea9ba4">valid</reimplementedby>
+        <reimplementedby refid="structagi_1_1MpcParameters_1a8574f304f0df7bfac6d16c6c98e5571a">valid</reimplementedby>
+        <reimplementedby refid="structagi_1_1PidParameters_1a1e5f7456d1eb2c25d38ae8ce67f1c6f7">valid</reimplementedby>
+        <reimplementedby refid="structagi_1_1EkfParameters_1a2dcf6433c46a2042e2b13795bb6c835a">valid</reimplementedby>
+        <reimplementedby refid="structagi_1_1EkfImuParameters_1a5bff3c579aa41024549ef90c50f559d1">valid</reimplementedby>
+        <reimplementedby refid="structagi_1_1FeedthroughParameters_1acbd8b49bce759a8147e56d49244d5c90">valid</reimplementedby>
+        <reimplementedby refid="structagi_1_1MockVioParams_1a57fd21530ae6250972e3058484044c8b">valid</reimplementedby>
+        <reimplementedby refid="structagi_1_1PositionGuardParams_1aa990b2ed65b7137cae36e40b637117b1">valid</reimplementedby>
+        <reimplementedby refid="classagi_1_1PilotParams_1a5eaac55359a407a7c3eb2ff4cc841c0d">valid</reimplementedby>
+        <reimplementedby refid="structagi_1_1PositionSamplerParameters_1ae1eaa8ea7525087bb590e2cd4023b8cb">valid</reimplementedby>
+        <reimplementedby refid="structagi_1_1LowLevelControllerBetaflightParams_1a646a007a512965200728f8ab81556518">valid</reimplementedby>
+        <reimplementedby refid="structagi_1_1LowLevelControllerSimpleParams_1a8a262a2def7d5517ff3b2dba252bb0ae">valid</reimplementedby>
+        <reimplementedby refid="structagi_1_1BodyDragParameters_1a9d4d612f59826df7550ed0c07a71a23d">valid</reimplementedby>
+        <reimplementedby refid="structagi_1_1LinCubDragParameters_1a288a731f15986eb5cd00d7f6d3816ec6">valid</reimplementedby>
+        <reimplementedby refid="structagi_1_1BEMParameters_1a36e1344412757fcaf415f647fc674cfe">valid</reimplementedby>
+        <reimplementedby refid="classagi_1_1SimulatorParams_1acdddcd3cb6104f2357838342b1a17924">valid</reimplementedby>
+        <reimplementedby refid="structagi_1_1Quadrotor_1a3d84641ca89e47fa5b171a22f087fef6">valid</reimplementedby>
+        <briefdescription>
+<para>Check if parameters are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/parameter_base.hpp" line="34" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::BEMParameters</label>
+        <link refid="structagi_1_1BEMParameters"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::BodyDragParameters</label>
+        <link refid="structagi_1_1BodyDragParameters"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::CtrlParams</label>
+        <link refid="structagi_1_1CtrlParams"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>agi::EkfImuParameters</label>
+        <link refid="structagi_1_1EkfImuParameters"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>agi::EkfParameters</label>
+        <link refid="structagi_1_1EkfParameters"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>agi::FeedthroughParameters</label>
+        <link refid="structagi_1_1FeedthroughParameters"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>agi::GeometricControllerParams</label>
+        <link refid="structagi_1_1GeometricControllerParams"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>agi::IndiParameters</label>
+        <link refid="structagi_1_1IndiParameters"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>agi::LairdParams</label>
+        <link refid="structagi_1_1LairdParams"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>agi::LinCubDragParameters</label>
+        <link refid="structagi_1_1LinCubDragParameters"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>agi::LowLevelControllerBetaflightParams</label>
+        <link refid="structagi_1_1LowLevelControllerBetaflightParams"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>agi::LowLevelControllerSimpleParams</label>
+        <link refid="structagi_1_1LowLevelControllerSimpleParams"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>agi::MockVioParams</label>
+        <link refid="structagi_1_1MockVioParams"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>agi::MpcParameters</label>
+        <link refid="structagi_1_1MpcParameters"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>agi::MspParams</label>
+        <link refid="structagi_1_1MspParams"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="17">
+        <label>agi::PidParameters</label>
+        <link refid="structagi_1_1PidParameters"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>agi::PilotParams</label>
+        <link refid="classagi_1_1PilotParams"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>agi::PositionGuardParams</label>
+        <link refid="structagi_1_1PositionGuardParams"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>agi::PositionSamplerParameters</label>
+        <link refid="structagi_1_1PositionSamplerParameters"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>agi::Quadrotor</label>
+        <link refid="structagi_1_1Quadrotor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>agi::SbusParams</label>
+        <link refid="structagi_1_1SbusParams"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>agi::SimulatorParams</label>
+        <link refid="classagi_1_1SimulatorParams"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="agilib/include/agilib/base/parameter_base.hpp" line="24" column="1" bodyfile="agilib/include/agilib/base/parameter_base.hpp" bodystart="24" bodyend="35"/>
+    <listofallmembers>
+      <member refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a" prot="public" virt="virtual"><scope>agi::ParameterBase</scope><name>load</name></member>
+      <member refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" virt="virtual"><scope>agi::ParameterBase</scope><name>load</name></member>
+      <member refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b" prot="public" virt="virtual"><scope>agi::ParameterBase</scope><name>valid</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::ParameterBase</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

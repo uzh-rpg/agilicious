@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_7d111cc41db70d4f0019962ad4cd7430" kind="dir">
+    <compoundname>agilib/include/agilib/math</compoundname>
+    <innerfile refid="fast__atan2_8hpp">fast_atan2.hpp</innerfile>
+    <innerfile refid="gravity_8hpp">gravity.hpp</innerfile>
+    <innerfile refid="integrator__base_8hpp">integrator_base.hpp</innerfile>
+    <innerfile refid="integrator__euler_8hpp">integrator_euler.hpp</innerfile>
+    <innerfile refid="integrator__rk4_8hpp">integrator_rk4.hpp</innerfile>
+    <innerfile refid="integrator__symplectic__euler_8hpp">integrator_symplectic_euler.hpp</innerfile>
+    <innerfile refid="math_8hpp">math.hpp</innerfile>
+    <innerfile refid="types_8hpp">types.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/math/"/>
+  </compounddef>
+</doxygen>

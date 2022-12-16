@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_7863c159858357522a58aae80c20a0d8" kind="dir">
+    <compoundname>agilib/include</compoundname>
+    <innerdir refid="dir_0e8765243f17c9f87f71d1200a958789">agilib/include/agilib</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/"/>
+  </compounddef>
+</doxygen>

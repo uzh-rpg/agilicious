@@ -10,3 +10,6 @@ Its main purpose is to sequentially execute the different components that form a
 - Then the :code:`controller` (inner and possibly outer loops) are run. Different types of controllers can be selected, mainly MPC, Geometric Controller or INDI. The controller outputs a low level command.
 - Finally, a :code:`bridge` translates the control commands to actual actuator inputs.
 
+
+.. doxygenclass:: agi::Pipeline
+  :members:

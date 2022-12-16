@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1ParameterException" kind="struct" language="C++" prot="public">
+    <compoundname>agi::ParameterException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::exception</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1ParameterException_1aefc4e02714b08a559ab14418b88d3945" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string agi::ParameterException::msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <qualifiedname>agi::ParameterException::msg</qualifiedname>
+        <initializer>{&quot;Agilib Parameter Exception&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/parameter_base.hpp" line="21" column="21" bodyfile="agilib/include/agilib/base/parameter_base.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1ParameterException_1a3e022fcc4dc287f3f7296cba05ff60c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::ParameterException::ParameterException</definition>
+        <argsstring>()=default</argsstring>
+        <name>ParameterException</name>
+        <qualifiedname>agi::ParameterException::ParameterException</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/parameter_base.hpp" line="15" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ParameterException_1a78653fadb294cd1143df02f04aadfe7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::ParameterException::ParameterException</definition>
+        <argsstring>(const std::string &amp;msg)</argsstring>
+        <name>ParameterException</name>
+        <qualifiedname>agi::ParameterException::ParameterException</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/parameter_base.hpp" line="16" column="3" bodyfile="agilib/include/agilib/base/parameter_base.hpp" bodystart="16" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1ParameterException_1a7a4941cc27851051b67ff36213beea78" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * agi::ParameterException::what</definition>
+        <argsstring>() const</argsstring>
+        <name>what</name>
+        <qualifiedname>agi::ParameterException::what</qualifiedname>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/base/parameter_base.hpp" line="19" column="14" bodyfile="agilib/include/agilib/base/parameter_base.hpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::ParameterException</label>
+        <link refid="structagi_1_1ParameterException"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::ParameterException</label>
+        <link refid="structagi_1_1ParameterException"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>msg</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+      <node id="3">
+        <label>std::string</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/base/parameter_base.hpp" line="14" column="1" bodyfile="agilib/include/agilib/base/parameter_base.hpp" bodystart="14" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structagi_1_1ParameterException_1aefc4e02714b08a559ab14418b88d3945" prot="public" virt="non-virtual"><scope>agi::ParameterException</scope><name>msg</name></member>
+      <member refid="structagi_1_1ParameterException_1a3e022fcc4dc287f3f7296cba05ff60c3" prot="public" virt="non-virtual"><scope>agi::ParameterException</scope><name>ParameterException</name></member>
+      <member refid="structagi_1_1ParameterException_1a78653fadb294cd1143df02f04aadfe7a" prot="public" virt="non-virtual"><scope>agi::ParameterException</scope><name>ParameterException</name></member>
+      <member refid="structagi_1_1ParameterException_1a7a4941cc27851051b67ff36213beea78" prot="public" virt="non-virtual"><scope>agi::ParameterException</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

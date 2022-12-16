@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1FeedthroughEstimator" kind="class" language="C++" prot="public">
+    <compoundname>agi::FeedthroughEstimator</compoundname>
+    <basecompoundref refid="classagi_1_1EstimatorBase" prot="public" virt="non-virtual">agi::EstimatorBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1FeedthroughEstimator_1a102397b12245edabb4762269a39a16c6" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="structagi_1_1FeedthroughParameters" kindref="compound">FeedthroughParameters</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;FeedthroughParameters&gt; agi::FeedthroughEstimator::params_</definition>
+        <argsstring></argsstring>
+        <name>params_</name>
+        <qualifiedname>agi::FeedthroughEstimator::params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp" line="29" column="19" bodyfile="agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1FeedthroughEstimator_1a3305a1ee617a7f7348c91ff623cf7abe" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref></type>
+        <definition>QuadState agi::FeedthroughEstimator::state_</definition>
+        <argsstring></argsstring>
+        <name>state_</name>
+        <qualifiedname>agi::FeedthroughEstimator::state_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp" line="30" column="13" bodyfile="agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1FeedthroughEstimator_1a5651d0475d375222cf5a40e6447fcdbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::FeedthroughEstimator::FeedthroughEstimator</definition>
+        <argsstring>(const std::shared_ptr&lt; FeedthroughParameters &gt; &amp;params)</argsstring>
+        <name>FeedthroughEstimator</name>
+        <qualifiedname>agi::FeedthroughEstimator::FeedthroughEstimator</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="structagi_1_1FeedthroughParameters" kindref="compound">FeedthroughParameters</ref> &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp" line="14" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1FeedthroughEstimator_1ac2dd9c71f6d2b1f1c8dda53af921c375" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::FeedthroughEstimator::initialize</definition>
+        <argsstring>(const QuadState &amp;state) override</argsstring>
+        <name>initialize</name>
+        <qualifiedname>agi::FeedthroughEstimator::initialize</qualifiedname>
+        <reimplements refid="classagi_1_1EstimatorBase_1abd6ede1855eddaa58e7893af865f80ec">initialize</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the filter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp" line="16" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1FeedthroughEstimator_1a3546dd351334db21dbcf7ec9ae1baefd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::FeedthroughEstimator::addPose</definition>
+        <argsstring>(const Pose &amp;pose) override</argsstring>
+        <name>addPose</name>
+        <qualifiedname>agi::FeedthroughEstimator::addPose</qualifiedname>
+        <reimplements refid="classagi_1_1EstimatorBase_1abf9a63d7e89d0aa13f726d29dfa991b9">addPose</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1Pose" kindref="compound">Pose</ref> &amp;</type>
+          <declname>pose</declname>
+        </param>
+        <briefdescription>
+<para>Add measurement. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp" line="18" column="16" bodyfile="agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1FeedthroughEstimator_1a505cc8b8b0df58c44381eacdb9833db0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::FeedthroughEstimator::addState</definition>
+        <argsstring>(const QuadState &amp;pose) override</argsstring>
+        <name>addState</name>
+        <qualifiedname>agi::FeedthroughEstimator::addState</qualifiedname>
+        <reimplements refid="classagi_1_1EstimatorBase_1a17a233e59676e2fa7b207ce887e0c4ad">addState</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>pose</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp" line="19" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1FeedthroughEstimator_1ac285fc25649f79eabbf771adaa268cbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::FeedthroughEstimator::addMotorSpeeds</definition>
+        <argsstring>(const Vector&lt; 4 &gt; &amp;speeds) override</argsstring>
+        <name>addMotorSpeeds</name>
+        <qualifiedname>agi::FeedthroughEstimator::addMotorSpeeds</qualifiedname>
+        <reimplements refid="classagi_1_1EstimatorBase_1a1c529d6e8db99fc14c513075c2fc8b99">addMotorSpeeds</reimplements>
+        <param>
+          <type>const Vector&lt; 4 &gt; &amp;</type>
+          <declname>speeds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp" line="20" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1FeedthroughEstimator_1a3992bdfb77c16c87ead857b72f9df029" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::FeedthroughEstimator::addImu</definition>
+        <argsstring>(const ImuSample &amp;imu) override</argsstring>
+        <name>addImu</name>
+        <qualifiedname>agi::FeedthroughEstimator::addImu</qualifiedname>
+        <reimplements refid="classagi_1_1EstimatorBase_1a734a1da382a5a84d1cd982765cda3012">addImu</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref> &amp;</type>
+          <declname>imu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp" line="21" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1FeedthroughEstimator_1ada374c7561b0e70d20c810af9cf11fe5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::FeedthroughEstimator::getAt</definition>
+        <argsstring>(const Scalar t, QuadState *const state) override</argsstring>
+        <name>getAt</name>
+        <qualifiedname>agi::FeedthroughEstimator::getAt</qualifiedname>
+        <reimplements refid="classagi_1_1EstimatorBase_1a7c264c4b030d225eb0e362aaca0bfe81">getAt</reimplements>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> *const</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Get state at specific time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp" line="23" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1FeedthroughEstimator_1a8757fe818713cb339f71f8252f8c5c3f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::FeedthroughEstimator::healthy</definition>
+        <argsstring>() const override</argsstring>
+        <name>healthy</name>
+        <qualifiedname>agi::FeedthroughEstimator::healthy</qualifiedname>
+        <reimplements refid="classagi_1_1EstimatorBase_1acb163fbefc751e52d4692238ba613fb0">healthy</reimplements>
+        <briefdescription>
+<para>Check if estimator is healthy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp" line="25" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classagi_1_1FeedthroughEstimator_1af782aa50a7690592493c2cc3fe023250" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref></type>
+        <definition>QuadState agi::FeedthroughEstimator::transform</definition>
+        <argsstring>(const QuadState &amp;state_in)</argsstring>
+        <name>transform</name>
+        <qualifiedname>agi::FeedthroughEstimator::transform</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp" line="28" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>agi::Module&lt; EstimatorBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="2">
+        <label>agi::EstimatorBase</label>
+        <link refid="classagi_1_1EstimatorBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::FeedthroughEstimator</label>
+        <link refid="classagi_1_1FeedthroughEstimator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>agi::Module&lt; EstimatorBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::EstimatorBase</label>
+        <link refid="classagi_1_1EstimatorBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::FeedthroughEstimator</label>
+        <link refid="classagi_1_1FeedthroughEstimator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp" line="12" column="1" bodyfile="agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp" bodystart="12" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classagi_1_1FeedthroughEstimator_1a3992bdfb77c16c87ead857b72f9df029" prot="public" virt="virtual"><scope>agi::FeedthroughEstimator</scope><name>addImu</name></member>
+      <member refid="classagi_1_1FeedthroughEstimator_1ac285fc25649f79eabbf771adaa268cbf" prot="public" virt="virtual"><scope>agi::FeedthroughEstimator</scope><name>addMotorSpeeds</name></member>
+      <member refid="classagi_1_1FeedthroughEstimator_1a3546dd351334db21dbcf7ec9ae1baefd" prot="public" virt="virtual"><scope>agi::FeedthroughEstimator</scope><name>addPose</name></member>
+      <member refid="classagi_1_1FeedthroughEstimator_1a505cc8b8b0df58c44381eacdb9833db0" prot="public" virt="virtual"><scope>agi::FeedthroughEstimator</scope><name>addState</name></member>
+      <member refid="classagi_1_1EstimatorBase_1a68bc7fce129a8dcc6a63e7c43deefa70" prot="public" virt="non-virtual"><scope>agi::FeedthroughEstimator</scope><name>EstimatorBase</name></member>
+      <member refid="classagi_1_1FeedthroughEstimator_1a5651d0475d375222cf5a40e6447fcdbd" prot="public" virt="non-virtual"><scope>agi::FeedthroughEstimator</scope><name>FeedthroughEstimator</name></member>
+      <member refid="classagi_1_1FeedthroughEstimator_1ada374c7561b0e70d20c810af9cf11fe5" prot="public" virt="virtual"><scope>agi::FeedthroughEstimator</scope><name>getAt</name></member>
+      <member refid="classagi_1_1EstimatorBase_1aa4189dc0231131862d94b65d558f6f37" prot="public" virt="non-virtual"><scope>agi::FeedthroughEstimator</scope><name>getRecent</name></member>
+      <member refid="classagi_1_1EstimatorBase_1a960ad111f8a4c51b1546d20276464cdf" prot="public" virt="non-virtual"><scope>agi::FeedthroughEstimator</scope><name>getRecent</name></member>
+      <member refid="classagi_1_1EstimatorBase_1aaeb1f03eb699b351cdd3c201d385bdaf" prot="public" virt="non-virtual"><scope>agi::FeedthroughEstimator</scope><name>getState</name></member>
+      <member refid="classagi_1_1FeedthroughEstimator_1a8757fe818713cb339f71f8252f8c5c3f" prot="public" virt="virtual"><scope>agi::FeedthroughEstimator</scope><name>healthy</name></member>
+      <member refid="classagi_1_1FeedthroughEstimator_1ac2dd9c71f6d2b1f1c8dda53af921c375" prot="public" virt="virtual"><scope>agi::FeedthroughEstimator</scope><name>initialize</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::FeedthroughEstimator</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::FeedthroughEstimator</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::FeedthroughEstimator</scope><name>Module</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::FeedthroughEstimator</scope><name>name</name></member>
+      <member refid="classagi_1_1FeedthroughEstimator_1a102397b12245edabb4762269a39a16c6" prot="private" virt="non-virtual"><scope>agi::FeedthroughEstimator</scope><name>params_</name></member>
+      <member refid="classagi_1_1FeedthroughEstimator_1a3305a1ee617a7f7348c91ff623cf7abe" prot="private" virt="non-virtual"><scope>agi::FeedthroughEstimator</scope><name>state_</name></member>
+      <member refid="classagi_1_1FeedthroughEstimator_1af782aa50a7690592493c2cc3fe023250" prot="private" virt="non-virtual"><scope>agi::FeedthroughEstimator</scope><name>transform</name></member>
+      <member refid="classagi_1_1EstimatorBase_1a733df2e968c379f3e9354cad3b1cb853" prot="public" virt="virtual"><scope>agi::FeedthroughEstimator</scope><name>~EstimatorBase</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::FeedthroughEstimator</scope><name>~Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

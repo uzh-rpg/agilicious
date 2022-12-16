@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="module_8hpp" kind="file" language="C++">
+    <compoundname>module.hpp</compoundname>
+    <includes local="no">memory</includes>
+    <includes refid="logger_8hpp" local="yes">agilib/utils/logger.hpp</includes>
+    <includedby refid="pipeline_8hpp" local="yes">agilib/include/agilib/base/pipeline.hpp</includedby>
+    <includedby refid="bridge__base_8hpp" local="yes">agilib/include/agilib/bridge/bridge_base.hpp</includedby>
+    <includedby refid="controller__base_8hpp" local="yes">agilib/include/agilib/controller/controller_base.hpp</includedby>
+    <includedby refid="estimator__base_8hpp" local="yes">agilib/include/agilib/estimator/estimator_base.hpp</includedby>
+    <includedby refid="guard__base_8hpp" local="yes">agilib/include/agilib/guard/guard_base.hpp</includedby>
+    <includedby refid="reference__base_8hpp" local="yes">agilib/include/agilib/reference/reference_base.hpp</includedby>
+    <includedby refid="sampler__base_8hpp" local="yes">agilib/include/agilib/sampler/sampler_base.hpp</includedby>
+    <includedby refid="low__level__controller__base_8hpp" local="yes">agilib/include/agilib/simulator/low_level_controller_base.hpp</includedby>
+    <includedby refid="quadrotor__simulator_8hpp" local="yes">agilib/include/agilib/simulator/quadrotor_simulator.hpp</includedby>
+    <includedby refid="simulator__base_8hpp" local="yes">agilib/include/agilib/simulator/simulator_base.hpp</includedby>
+    <includedby refid="simulator__params_8hpp" local="yes">agilib/include/agilib/simulator/simulator_params.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>agilib/include/agilib/base/module.hpp</label>
+        <link refid="module_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>agilib/math/types.hpp</label>
+        <link refid="types_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agilib/utils/logger.hpp</label>
+        <link refid="logger_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Eigen/Eigen</label>
+      </node>
+      <node id="4">
+        <label>cstdarg</label>
+      </node>
+      <node id="5">
+        <label>cstdio</label>
+      </node>
+      <node id="6">
+        <label>fstream</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="12">
+        <label>limits</label>
+      </node>
+      <node id="2">
+        <label>memory</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>unordered_map</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>agilib/include/agilib/base/module.hpp</label>
+        <link refid="module_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agilib/include/agilib/base/pipeline.hpp</label>
+        <link refid="pipeline_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>agilib/include/agilib/bridge/bridge_base.hpp</label>
+        <link refid="bridge__base_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>agilib/include/agilib/bridge/ctrl/ctrl_bridge.hpp</label>
+        <link refid="ctrl__bridge_8hpp_source"/>
+      </node>
+      <node id="6">
+        <label>agilib/include/agilib/bridge/debug_bridge.hpp</label>
+        <link refid="debug__bridge_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>agilib/include/agilib/bridge/laird/laird_bridge.hpp</label>
+        <link refid="laird__bridge_8hpp_source"/>
+      </node>
+      <node id="10">
+        <label>agilib/include/agilib/bridge/msp/msp_bridge.hpp</label>
+        <link refid="msp__bridge_8hpp_source"/>
+      </node>
+      <node id="11">
+        <label>agilib/include/agilib/bridge/sbus/sbus_bridge.hpp</label>
+        <link refid="sbus__bridge_8hpp_source"/>
+      </node>
+      <node id="7">
+        <label>agilib/include/agilib/bridge/serial_bridge.hpp</label>
+        <link refid="serial__bridge_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>agilib/include/agilib/controller/controller_base.hpp</label>
+        <link refid="controller__base_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>agilib/include/agilib/controller/geometric/controller_geo.hpp</label>
+        <link refid="controller__geo_8hpp_source"/>
+      </node>
+      <node id="14">
+        <label>agilib/include/agilib/controller/indi/controller_indi.hpp</label>
+        <link refid="controller__indi_8hpp_source"/>
+      </node>
+      <node id="15">
+        <label>agilib/include/agilib/controller/mpc/controller_mpc.hpp</label>
+        <link refid="controller__mpc_8hpp_source"/>
+      </node>
+      <node id="16">
+        <label>agilib/include/agilib/controller/pid/controller_pid.hpp</label>
+        <link refid="controller__pid_8hpp_source"/>
+      </node>
+      <node id="18">
+        <label>agilib/include/agilib/estimator/ekf/ekf.hpp</label>
+        <link refid="ekf_8hpp_source"/>
+      </node>
+      <node id="19">
+        <label>agilib/include/agilib/estimator/ekf_imu/ekf_imu.hpp</label>
+        <link refid="ekf__imu_8hpp_source"/>
+      </node>
+      <node id="17">
+        <label>agilib/include/agilib/estimator/estimator_base.hpp</label>
+        <link refid="estimator__base_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>agilib/include/agilib/estimator/feedthrough/feedthrough_estimator.hpp</label>
+        <link refid="feedthrough__estimator_8hpp_source"/>
+      </node>
+      <node id="21">
+        <label>agilib/include/agilib/estimator/mock_vio/mock_vio.hpp</label>
+        <link refid="mock__vio_8hpp_source"/>
+      </node>
+      <node id="22">
+        <label>agilib/include/agilib/guard/guard_base.hpp</label>
+        <link refid="guard__base_8hpp_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>agilib/include/agilib/guard/position_guard.hpp</label>
+        <link refid="position__guard_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agilib/include/agilib/pilot/pilot.hpp</label>
+        <link refid="pilot_8hpp_source"/>
+      </node>
+      <node id="4">
+        <label>agilib/include/agilib/pilot/pilot_params.hpp</label>
+        <link refid="pilot__params_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>agilib/include/agilib/reference/hover_reference.hpp</label>
+        <link refid="hover__reference_8hpp_source"/>
+      </node>
+      <node id="24">
+        <label>agilib/include/agilib/reference/reference_base.hpp</label>
+        <link refid="reference__base_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp</label>
+        <link refid="polynomial__trajectory_8hpp_source"/>
+      </node>
+      <node id="27">
+        <label>agilib/include/agilib/reference/trajectory_reference/sampled_trajectory.hpp</label>
+        <link refid="sampled__trajectory_8hpp_source"/>
+      </node>
+      <node id="28">
+        <label>agilib/include/agilib/reference/velocity_reference.hpp</label>
+        <link refid="velocity__reference_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>agilib/include/agilib/sampler/position_based/position_sampler.hpp</label>
+        <link refid="position__sampler_8hpp_source"/>
+      </node>
+      <node id="29">
+        <label>agilib/include/agilib/sampler/sampler_base.hpp</label>
+        <link refid="sampler__base_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>agilib/include/agilib/sampler/time_based/time_sampler.hpp</label>
+        <link refid="time__sampler_8hpp_source"/>
+      </node>
+      <node id="32">
+        <label>agilib/include/agilib/simulator/low_level_controller_base.hpp</label>
+        <link refid="low__level__controller__base_8hpp_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>agilib/include/agilib/simulator/low_level_controller_betaflight.hpp</label>
+        <link refid="low__level__controller__betaflight_8hpp_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>agilib/include/agilib/simulator/low_level_controller_betaflight_params.hpp</label>
+        <link refid="low__level__controller__betaflight__params_8hpp_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>agilib/include/agilib/simulator/low_level_controller_simple.hpp</label>
+        <link refid="low__level__controller__simple_8hpp_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>agilib/include/agilib/simulator/quadrotor_simulator.hpp</label>
+        <link refid="quadrotor__simulator_8hpp_source"/>
+      </node>
+      <node id="38">
+        <label>agilib/include/agilib/simulator/simulator_base.hpp</label>
+        <link refid="simulator__base_8hpp_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>agilib/include/agilib/simulator/simulator_params.hpp</label>
+        <link refid="simulator__params_8hpp_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classagi_1_1Module" prot="public">agi::Module</innerclass>
+    <innernamespace refid="namespaceagi">agi</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/utils/logger.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">agi<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Derived&gt;</highlight></codeline>
+<codeline lineno="10" refid="classagi_1_1Module" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classagi_1_1Module" kindref="compound">Module</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14" refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" kindref="member">Module</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" kindref="member">name</ref>)<sp/>:<sp/>logger_(<ref refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" kindref="member">name</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Module" kindref="compound">~Module</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" kindref="member">name</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>logger_.name();<sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" kindref="member">logTiming</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref><sp/>logger_;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>agi</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="agilib/include/agilib/base/module.hpp"/>
+  </compounddef>
+</doxygen>

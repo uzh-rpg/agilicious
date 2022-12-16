@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1PositionSampler" kind="class" language="C++" prot="public">
+    <compoundname>agi::PositionSampler</compoundname>
+    <basecompoundref refid="classagi_1_1SamplerBase" prot="public" virt="non-virtual">agi::SamplerBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1PositionSampler_1a19ee917f19bd649385570bf2e933892d" prot="private" static="no" mutable="yes">
+        <type>Scalar</type>
+        <definition>Scalar agi::PositionSampler::prev_query_time_</definition>
+        <argsstring></argsstring>
+        <name>prev_query_time_</name>
+        <qualifiedname>agi::PositionSampler::prev_query_time_</qualifiedname>
+        <initializer>= NAN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/position_based/position_sampler.hpp" line="24" column="18" bodyfile="agilib/include/agilib/sampler/position_based/position_sampler.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PositionSampler_1ae80ad3506f28ad4955cd663a8e1dc600" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1PositionSamplerParameters" kindref="compound">PositionSamplerParameters</ref></type>
+        <definition>PositionSamplerParameters agi::PositionSampler::params_</definition>
+        <argsstring></argsstring>
+        <name>params_</name>
+        <qualifiedname>agi::PositionSampler::params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/position_based/position_sampler.hpp" line="25" column="29" bodyfile="agilib/include/agilib/sampler/position_based/position_sampler.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1PositionSampler_1a64306b4cfb7c45cff1384d15912f4e3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::PositionSampler::PositionSampler</definition>
+        <argsstring>(const PositionSamplerParameters &amp;params, const int horizon_len, const Scalar horizon_dt)</argsstring>
+        <name>PositionSampler</name>
+        <qualifiedname>agi::PositionSampler::PositionSampler</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1PositionSamplerParameters" kindref="compound">PositionSamplerParameters</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>horizon_len</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>horizon_dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/position_based/position_sampler.hpp" line="11" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PositionSampler_1a687381237da3d834447ab293e6b72448" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::PositionSampler::PositionSampler</definition>
+        <argsstring>(const PositionSamplerParameters &amp;params)</argsstring>
+        <name>PositionSampler</name>
+        <qualifiedname>agi::PositionSampler::PositionSampler</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1PositionSamplerParameters" kindref="compound">PositionSamplerParameters</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/position_based/position_sampler.hpp" line="13" column="3" bodyfile="agilib/include/agilib/sampler/position_based/position_sampler.hpp" bodystart="13" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PositionSampler_1ac8e38c57aef4927a9ea5c5a80eb0faa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::PositionSampler::~PositionSampler</definition>
+        <argsstring>()</argsstring>
+        <name>~PositionSampler</name>
+        <qualifiedname>agi::PositionSampler::~PositionSampler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/position_based/position_sampler.hpp" line="15" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PositionSampler_1ab6d4a11211643668fddbe59f87eb338e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PositionSampler::getAt</definition>
+        <argsstring>(const QuadState &amp;state, const std::vector&lt; std::shared_ptr&lt; ReferenceBase &gt; &gt; &amp;references, SetpointVector *const setpoints, int horizon_len=-1) const</argsstring>
+        <name>getAt</name>
+        <qualifiedname>agi::PositionSampler::getAt</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::shared_ptr&lt; <ref refid="classagi_1_1ReferenceBase" kindref="compound">ReferenceBase</ref> &gt; &gt; &amp;</type>
+          <declname>references</declname>
+        </param>
+        <param>
+          <type>SetpointVector *const</type>
+          <declname>setpoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>horizon_len</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/position_based/position_sampler.hpp" line="17" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PositionSampler_1a290865caddf35d19e503719820ac87b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::PositionSampler::isTimeBased</definition>
+        <argsstring>() const</argsstring>
+        <name>isTimeBased</name>
+        <qualifiedname>agi::PositionSampler::isTimeBased</qualifiedname>
+        <reimplements refid="classagi_1_1SamplerBase_1ac74f96d8722d9c9bbb47caffffcd7f03">isTimeBased</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/position_based/position_sampler.hpp" line="21" column="8" bodyfile="agilib/include/agilib/sampler/position_based/position_sampler.hpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>agi::Module&lt; SamplerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="1">
+        <label>agi::PositionSampler</label>
+        <link refid="classagi_1_1PositionSampler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::SamplerBase</label>
+        <link refid="classagi_1_1SamplerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>agi::Module&lt; SamplerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+      <node id="1">
+        <label>agi::PositionSampler</label>
+        <link refid="classagi_1_1PositionSampler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::SamplerBase</label>
+        <link refid="classagi_1_1SamplerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/sampler/position_based/position_sampler.hpp" line="8" column="1" bodyfile="agilib/include/agilib/sampler/position_based/position_sampler.hpp" bodystart="8" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classagi_1_1PositionSampler_1ab6d4a11211643668fddbe59f87eb338e" prot="public" virt="non-virtual"><scope>agi::PositionSampler</scope><name>getAt</name></member>
+      <member refid="classagi_1_1SamplerBase_1a3720a0ea92eac0da192ab529a639096a" prot="public" virt="pure-virtual" ambiguityscope="agi::SamplerBase::"><scope>agi::PositionSampler</scope><name>getAt</name></member>
+      <member refid="classagi_1_1SamplerBase_1a2d7ef9feae23ca9f9f30b592824ec8a6" prot="public" virt="non-virtual"><scope>agi::PositionSampler</scope><name>getFull</name></member>
+      <member refid="classagi_1_1SamplerBase_1a0b8441ab30cbb753b0e5c409902f44df" prot="public" virt="non-virtual"><scope>agi::PositionSampler</scope><name>getHorizonDt</name></member>
+      <member refid="classagi_1_1SamplerBase_1adffb6246f392efde649e8a189c445175" prot="public" virt="non-virtual"><scope>agi::PositionSampler</scope><name>getHorizonLength</name></member>
+      <member refid="classagi_1_1SamplerBase_1a67177d343e5e2bbbad723b9183bf915a" prot="protected" virt="non-virtual"><scope>agi::PositionSampler</scope><name>horizon_dt_</name></member>
+      <member refid="classagi_1_1SamplerBase_1af6bdd691e05dbf51fe9b39857a713e39" prot="protected" virt="non-virtual"><scope>agi::PositionSampler</scope><name>horizon_len_</name></member>
+      <member refid="classagi_1_1PositionSampler_1a290865caddf35d19e503719820ac87b2" prot="public" virt="virtual"><scope>agi::PositionSampler</scope><name>isTimeBased</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::PositionSampler</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::PositionSampler</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::PositionSampler</scope><name>Module</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::PositionSampler</scope><name>name</name></member>
+      <member refid="classagi_1_1PositionSampler_1ae80ad3506f28ad4955cd663a8e1dc600" prot="private" virt="non-virtual"><scope>agi::PositionSampler</scope><name>params_</name></member>
+      <member refid="classagi_1_1PositionSampler_1a64306b4cfb7c45cff1384d15912f4e3e" prot="public" virt="non-virtual"><scope>agi::PositionSampler</scope><name>PositionSampler</name></member>
+      <member refid="classagi_1_1PositionSampler_1a687381237da3d834447ab293e6b72448" prot="public" virt="non-virtual"><scope>agi::PositionSampler</scope><name>PositionSampler</name></member>
+      <member refid="classagi_1_1PositionSampler_1a19ee917f19bd649385570bf2e933892d" prot="private" virt="non-virtual"><scope>agi::PositionSampler</scope><name>prev_query_time_</name></member>
+      <member refid="classagi_1_1SamplerBase_1aafa3071240c91657d898fc01492d34fa" prot="public" virt="non-virtual"><scope>agi::PositionSampler</scope><name>SamplerBase</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::PositionSampler</scope><name>~Module</name></member>
+      <member refid="classagi_1_1PositionSampler_1ac8e38c57aef4927a9ea5c5a80eb0faa9" prot="public" virt="non-virtual"><scope>agi::PositionSampler</scope><name>~PositionSampler</name></member>
+      <member refid="classagi_1_1SamplerBase_1a735cd722f808878179c15728af01edf8" prot="public" virt="virtual"><scope>agi::PositionSampler</scope><name>~SamplerBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

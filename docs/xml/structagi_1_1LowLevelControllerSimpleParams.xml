@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1LowLevelControllerSimpleParams" kind="struct" language="C++" prot="public">
+    <compoundname>agi::LowLevelControllerSimpleParams</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1LowLevelControllerSimpleParams_1a8f15a063c243485bf007ca946f204c63" prot="public" static="no" mutable="no">
+        <type>Matrix&lt; 3, 3 &gt;</type>
+        <definition>Matrix&lt;3, 3&gt; agi::LowLevelControllerSimpleParams::Kinv_ang_vel_tau</definition>
+        <argsstring></argsstring>
+        <name>Kinv_ang_vel_tau</name>
+        <qualifiedname>agi::LowLevelControllerSimpleParams::Kinv_ang_vel_tau</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_simple_params.hpp" line="18" column="10" bodyfile="agilib/include/agilib/simulator/low_level_controller_simple_params.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1LowLevelControllerSimpleParams_1a4494709f79d92fc5a131331293a92c2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::LowLevelControllerSimpleParams::LowLevelControllerSimpleParams</definition>
+        <argsstring>()</argsstring>
+        <name>LowLevelControllerSimpleParams</name>
+        <qualifiedname>agi::LowLevelControllerSimpleParams::LowLevelControllerSimpleParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_simple_params.hpp" line="10" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1LowLevelControllerSimpleParams_1a575d3728686fae69c45bda37092d5977" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::LowLevelControllerSimpleParams::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::LowLevelControllerSimpleParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_simple_params.hpp" line="13" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1LowLevelControllerSimpleParams_1a8a262a2def7d5517ff3b2dba252bb0ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::LowLevelControllerSimpleParams::valid</definition>
+        <argsstring>() const override</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::LowLevelControllerSimpleParams::valid</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b">valid</reimplements>
+        <briefdescription>
+<para>Check if parameters are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_simple_params.hpp" line="15" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1LowLevelControllerSimpleParams_1aa72a975fca1221525746975fe5ee1b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::LowLevelControllerSimpleParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_simple_params.hpp" line="12" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1LowLevelControllerSimpleParams_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const Yaml &amp;yaml)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::LowLevelControllerSimpleParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_simple_params.hpp" line="12" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::LowLevelControllerSimpleParams</label>
+        <link refid="structagi_1_1LowLevelControllerSimpleParams"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::LowLevelControllerSimpleParams</label>
+        <link refid="structagi_1_1LowLevelControllerSimpleParams"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/simulator/low_level_controller_simple_params.hpp" line="9" column="1" bodyfile="agilib/include/agilib/simulator/low_level_controller_simple_params.hpp" bodystart="9" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structagi_1_1LowLevelControllerSimpleParams_1a8f15a063c243485bf007ca946f204c63" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerSimpleParams</scope><name>Kinv_ang_vel_tau</name></member>
+      <member refid="structagi_1_1LowLevelControllerSimpleParams_1a575d3728686fae69c45bda37092d5977" prot="public" virt="virtual"><scope>agi::LowLevelControllerSimpleParams</scope><name>load</name></member>
+      <member refid="structagi_1_1LowLevelControllerSimpleParams_1aa72a975fca1221525746975fe5ee1b6a" prot="public" virt="virtual"><scope>agi::LowLevelControllerSimpleParams</scope><name>load</name></member>
+      <member refid="structagi_1_1LowLevelControllerSimpleParams_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" virt="virtual"><scope>agi::LowLevelControllerSimpleParams</scope><name>load</name></member>
+      <member refid="structagi_1_1LowLevelControllerSimpleParams_1a4494709f79d92fc5a131331293a92c2b" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerSimpleParams</scope><name>LowLevelControllerSimpleParams</name></member>
+      <member refid="structagi_1_1LowLevelControllerSimpleParams_1a8a262a2def7d5517ff3b2dba252bb0ae" prot="public" virt="virtual"><scope>agi::LowLevelControllerSimpleParams</scope><name>valid</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::LowLevelControllerSimpleParams</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

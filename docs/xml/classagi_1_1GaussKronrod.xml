@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1GaussKronrod" kind="class" language="C++" prot="public">
+    <compoundname>agi::GaussKronrod</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Function</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classagi_1_1GaussKronrod_1a499067f7cdc9853707a4ee568c8371bc" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW constexpr int</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW constexpr int agi::GaussKronrod&lt; Function &gt;::NK</definition>
+        <argsstring></argsstring>
+        <name>NK</name>
+        <qualifiedname>agi::GaussKronrod::NK</qualifiedname>
+        <initializer>= 15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" line="32" column="24" bodyfile="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1GaussKronrod_1a07172541a152cc27ad8df027a71861e9" prot="private" static="no" mutable="no">
+        <type>const ArrayVector&lt; NK &gt;</type>
+        <definition>const ArrayVector&lt;NK&gt; agi::GaussKronrod&lt; Function &gt;::gauss_weights_</definition>
+        <argsstring></argsstring>
+        <name>gauss_weights_</name>
+        <qualifiedname>agi::GaussKronrod::gauss_weights_</qualifiedname>
+        <initializer>=
+    (ArrayVector&lt;NK&gt;() &lt;&lt; 0, 1.294849661688696932706114326790820e-01, 0,
+     2.797053914892766679014677714237796e-01, 0,
+     3.818300505051189449503697754889751e-01, 0,
+     4.179591836734693877551020408163265e-01, 0,
+     3.818300505051189449503697754889751e-01, 0,
+     2.797053914892766679014677714237796e-01, 0,
+     1.294849661688696932706114326790820e-01, 0)
+      .finished()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" line="56" column="21" bodyfile="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1GaussKronrod_1a79c3e76a410c6614028974b42deefbd0" prot="private" static="no" mutable="no">
+        <type>const ArrayVector&lt; NK &gt;</type>
+        <definition>const ArrayVector&lt;NK&gt; agi::GaussKronrod&lt; Function &gt;::kronrod_abscissae_</definition>
+        <argsstring></argsstring>
+        <name>kronrod_abscissae_</name>
+        <qualifiedname>agi::GaussKronrod::kronrod_abscissae_</qualifiedname>
+        <initializer>=
+    (ArrayVector&lt;NK&gt;() &lt;&lt; -9.914553711208126392068546975263285e-01,
+     -9.491079123427585245261896840478513e-01,
+     -8.648644233597690727897127886409262e-01,
+     -7.415311855993944398638647732807884e-01,
+     -5.860872354676911302941448382587296e-01,
+     -4.058451513773971669066064120769615e-01,
+     -2.077849550078984676006894037732449e-01,
+     0.000000000000000000000000000000000e+00,
+     2.077849550078984676006894037732449e-01,
+     4.058451513773971669066064120769615e-01,
+     5.860872354676911302941448382587296e-01,
+     7.415311855993944398638647732807884e-01,
+     8.648644233597690727897127886409262e-01,
+     9.491079123427585245261896840478513e-01,
+     9.914553711208126392068546975263285e-01)
+      .finished()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" line="66" column="21" bodyfile="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1GaussKronrod_1a0ad6cbd76b602423391d13261bed5df3" prot="private" static="no" mutable="no">
+        <type>const ArrayVector&lt; NK &gt;</type>
+        <definition>const ArrayVector&lt;NK&gt; agi::GaussKronrod&lt; Function &gt;::kronrod_weights_</definition>
+        <argsstring></argsstring>
+        <name>kronrod_weights_</name>
+        <qualifiedname>agi::GaussKronrod::kronrod_weights_</qualifiedname>
+        <initializer>=
+    (ArrayVector&lt;NK&gt;() &lt;&lt; 2.293532201052922496373200805896959e-02,
+     6.309209262997855329070066318920429e-02,
+     1.047900103222501838398763225415180e-01,
+     1.406532597155259187451895905102379e-01,
+     1.690047266392679028265834265985503e-01,
+     1.903505780647854099132564024210137e-01,
+     2.044329400752988924141619992346491e-01,
+     2.094821410847278280129991748917143e-01,
+     2.044329400752988924141619992346491e-01,
+     1.903505780647854099132564024210137e-01,
+     1.690047266392679028265834265985503e-01,
+     1.406532597155259187451895905102379e-01,
+     1.047900103222501838398763225415180e-01,
+     6.309209262997855329070066318920429e-02,
+     2.293532201052922496373200805896959e-02)
+      .finished()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" line="85" column="21" bodyfile="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1GaussKronrod_1a9129e53037cfcb9adff26c24fb77e73c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structagi_1_1GaussKronrodResult" kindref="compound">GaussKronrodResult</ref>&lt; Function::SIZE &gt;</type>
+        <definition>GaussKronrodResult&lt; Function::SIZE &gt; agi::GaussKronrod&lt; Function &gt;::integrate</definition>
+        <argsstring>(const Function &amp;fcn, const Scalar range_min, const Scalar range_max, const void *const param=nullptr) const</argsstring>
+        <name>integrate</name>
+        <qualifiedname>agi::GaussKronrod::integrate</qualifiedname>
+        <param>
+          <type>const Function &amp;</type>
+          <declname>fcn</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>range_min</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>range_max</declname>
+        </param>
+        <param>
+          <type>const void *const</type>
+          <declname>param</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" line="34" column="22" bodyfile="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" bodystart="34" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" line="29" column="1" bodyfile="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" bodystart="29" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classagi_1_1GaussKronrod_1a07172541a152cc27ad8df027a71861e9" prot="private" virt="non-virtual"><scope>agi::GaussKronrod</scope><name>gauss_weights_</name></member>
+      <member refid="classagi_1_1GaussKronrod_1a9129e53037cfcb9adff26c24fb77e73c" prot="public" virt="non-virtual"><scope>agi::GaussKronrod</scope><name>integrate</name></member>
+      <member refid="classagi_1_1GaussKronrod_1a79c3e76a410c6614028974b42deefbd0" prot="private" virt="non-virtual"><scope>agi::GaussKronrod</scope><name>kronrod_abscissae_</name></member>
+      <member refid="classagi_1_1GaussKronrod_1a0ad6cbd76b602423391d13261bed5df3" prot="private" virt="non-virtual"><scope>agi::GaussKronrod</scope><name>kronrod_weights_</name></member>
+      <member refid="classagi_1_1GaussKronrod_1a499067f7cdc9853707a4ee568c8371bc" prot="public" virt="non-virtual"><scope>agi::GaussKronrod</scope><name>NK</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

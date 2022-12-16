@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1PidController" kind="class" language="C++" prot="public">
+    <compoundname>agi::PidController</compoundname>
+    <basecompoundref refid="classagi_1_1ControllerBase" prot="public" virt="non-virtual">agi::ControllerBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1PidController_1a5b6a52aff0746a20473460eefb4f2195" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+        <definition>Quadrotor agi::PidController::quad_</definition>
+        <argsstring></argsstring>
+        <name>quad_</name>
+        <qualifiedname>agi::PidController::quad_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/controller_pid.hpp" line="44" column="13" bodyfile="agilib/include/agilib/controller/pid/controller_pid.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PidController_1a45035d0afedf68a5f841e7988f912e85" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="structagi_1_1PidParameters" kindref="compound">PidParameters</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;PidParameters&gt; agi::PidController::params_</definition>
+        <argsstring></argsstring>
+        <name>params_</name>
+        <qualifiedname>agi::PidController::params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/controller_pid.hpp" line="45" column="19" bodyfile="agilib/include/agilib/controller/pid/controller_pid.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PidController_1a52f8170abdbdcc9628a4c4cccc03bab1" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1LowPassFilter" kindref="compound">LowPassFilter</ref>&lt; 3 &gt;</type>
+        <definition>LowPassFilter&lt;3&gt; agi::PidController::filterGyr_</definition>
+        <argsstring></argsstring>
+        <name>filterGyr_</name>
+        <qualifiedname>agi::PidController::filterGyr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/controller_pid.hpp" line="46" column="17" bodyfile="agilib/include/agilib/controller/pid/controller_pid.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PidController_1a966d3ce9984ae693f0614b13c09864b5" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PidController::t_last_</definition>
+        <argsstring></argsstring>
+        <name>t_last_</name>
+        <qualifiedname>agi::PidController::t_last_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/controller_pid.hpp" line="47" column="10" bodyfile="agilib/include/agilib/controller/pid/controller_pid.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PidController_1aaa3f4f03acad4368f2fcc0582a3bb748" prot="private" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::PidController::omega_err_int_</definition>
+        <argsstring></argsstring>
+        <name>omega_err_int_</name>
+        <qualifiedname>agi::PidController::omega_err_int_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/controller_pid.hpp" line="48" column="10" bodyfile="agilib/include/agilib/controller/pid/controller_pid.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PidController_1a09527ba9cf5c2465eb6ba4dda800792f" prot="private" static="no" mutable="no">
+        <type>Matrix</type>
+        <definition>Matrix agi::PidController::G_inv_</definition>
+        <argsstring></argsstring>
+        <name>G_inv_</name>
+        <qualifiedname>agi::PidController::G_inv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/controller_pid.hpp" line="49" column="4" bodyfile="agilib/include/agilib/controller/pid/controller_pid.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1PidController_1a82d6923c471e417e77d30f6b23ef8432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::PidController::PidController</definition>
+        <argsstring>(const Quadrotor &amp;quad, const std::shared_ptr&lt; PidParameters &gt; &amp;params)</argsstring>
+        <name>PidController</name>
+        <qualifiedname>agi::PidController::PidController</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="structagi_1_1PidParameters" kindref="compound">PidParameters</ref> &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/controller_pid.hpp" line="25" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PidController_1a3d11a49a8c87d6b1b90a423e8f8bb034" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::PidController::~PidController</definition>
+        <argsstring>()</argsstring>
+        <name>~PidController</name>
+        <qualifiedname>agi::PidController::~PidController</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/controller_pid.hpp" line="27" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PidController_1afb26fb03f7f3370a96774f22af248680" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::PidController::getCommand</definition>
+        <argsstring>(const QuadState &amp;state, const SetpointVector &amp;references, SetpointVector *const setpoints) override</argsstring>
+        <name>getCommand</name>
+        <qualifiedname>agi::PidController::getCommand</qualifiedname>
+        <reimplements refid="classagi_1_1ControllerBase_1a36ec36d71b00921aead71d4893ed037f">getCommand</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const SetpointVector &amp;</type>
+          <declname>references</declname>
+        </param>
+        <param>
+          <type>SetpointVector *const</type>
+          <declname>setpoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/controller_pid.hpp" line="29" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PidController_1afa78203159129845bc141a4cd9bafe79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PidController::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::PidController::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/controller_pid.hpp" line="33" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PidController_1a07293203d069f13e5c8d5746e9be5348" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PidController::reset</definition>
+        <argsstring>(const QuadState &amp;state)</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::PidController::reset</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/controller_pid.hpp" line="34" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PidController_1a104759a6ddbbd245d9c60acc27a0efef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PidController::updateParameters</definition>
+        <argsstring>(const Quadrotor &amp;quad, const std::shared_ptr&lt; PidParameters &gt; params)</argsstring>
+        <name>updateParameters</name>
+        <qualifiedname>agi::PidController::updateParameters</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="structagi_1_1PidParameters" kindref="compound">PidParameters</ref> &gt;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/controller_pid.hpp" line="36" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PidController_1a24a2a5190b136f0cbabf89386f4cb700" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PidController::updateParameters</definition>
+        <argsstring>(const Quadrotor &amp;params)</argsstring>
+        <name>updateParameters</name>
+        <qualifiedname>agi::PidController::updateParameters</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/controller_pid.hpp" line="38" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PidController_1ab8bbd627439724396212b1557b3c275f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PidController::updateParameters</definition>
+        <argsstring>(const std::shared_ptr&lt; PidParameters &gt; params)</argsstring>
+        <name>updateParameters</name>
+        <qualifiedname>agi::PidController::updateParameters</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="structagi_1_1PidParameters" kindref="compound">PidParameters</ref> &gt;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/controller_pid.hpp" line="39" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PidController_1a799ebc2fccd74cf8119a7f384a1700a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="structagi_1_1PidParameters" kindref="compound">PidParameters</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; PidParameters &gt; agi::PidController::getParameters</definition>
+        <argsstring>()</argsstring>
+        <name>getParameters</name>
+        <qualifiedname>agi::PidController::getParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/pid/controller_pid.hpp" line="40" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>agi::Module&lt; ControllerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="2">
+        <label>agi::ControllerBase</label>
+        <link refid="classagi_1_1ControllerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::PidController</label>
+        <link refid="classagi_1_1PidController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>agi::Module&lt; ControllerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ControllerBase</label>
+        <link refid="classagi_1_1ControllerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+      <node id="1">
+        <label>agi::PidController</label>
+        <link refid="classagi_1_1PidController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/controller/pid/controller_pid.hpp" line="22" column="1" bodyfile="agilib/include/agilib/controller/pid/controller_pid.hpp" bodystart="22" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classagi_1_1ControllerBase_1a63bad17e94dcdbb999298772ffb779bb" prot="public" virt="virtual"><scope>agi::PidController</scope><name>addImuSample</name></member>
+      <member refid="classagi_1_1ControllerBase_1adbbc03b1311961d872aebd7d0ff47c1d" prot="public" virt="non-virtual"><scope>agi::PidController</scope><name>ControllerBase</name></member>
+      <member refid="classagi_1_1ControllerBase_1ac19c23e376075c8e573e1b3080f76a57" prot="public" virt="non-virtual"><scope>agi::PidController</scope><name>dt</name></member>
+      <member refid="classagi_1_1ControllerBase_1a888ab615293b0332df4f503837b03723" prot="protected" virt="non-virtual"><scope>agi::PidController</scope><name>exec_dt_</name></member>
+      <member refid="classagi_1_1PidController_1a52f8170abdbdcc9628a4c4cccc03bab1" prot="private" virt="non-virtual"><scope>agi::PidController</scope><name>filterGyr_</name></member>
+      <member refid="classagi_1_1PidController_1a09527ba9cf5c2465eb6ba4dda800792f" prot="private" virt="non-virtual"><scope>agi::PidController</scope><name>G_inv_</name></member>
+      <member refid="classagi_1_1PidController_1afb26fb03f7f3370a96774f22af248680" prot="public" virt="virtual"><scope>agi::PidController</scope><name>getCommand</name></member>
+      <member refid="classagi_1_1PidController_1a799ebc2fccd74cf8119a7f384a1700a1" prot="public" virt="non-virtual"><scope>agi::PidController</scope><name>getParameters</name></member>
+      <member refid="classagi_1_1ControllerBase_1a4a5850793263795a322e9357e1d9cc3e" prot="protected" virt="non-virtual"><scope>agi::PidController</scope><name>horizon_length_</name></member>
+      <member refid="classagi_1_1ControllerBase_1ab28f44d8fd2ce46a01fc10d79d579733" prot="public" virt="non-virtual"><scope>agi::PidController</scope><name>horizonLength</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::PidController</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::PidController</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::PidController</scope><name>Module</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::PidController</scope><name>name</name></member>
+      <member refid="classagi_1_1PidController_1aaa3f4f03acad4368f2fcc0582a3bb748" prot="private" virt="non-virtual"><scope>agi::PidController</scope><name>omega_err_int_</name></member>
+      <member refid="classagi_1_1PidController_1a45035d0afedf68a5f841e7988f912e85" prot="private" virt="non-virtual"><scope>agi::PidController</scope><name>params_</name></member>
+      <member refid="classagi_1_1PidController_1a82d6923c471e417e77d30f6b23ef8432" prot="public" virt="non-virtual"><scope>agi::PidController</scope><name>PidController</name></member>
+      <member refid="classagi_1_1ControllerBase_1a347077cec886c432483b3168b3b59821" prot="protected" virt="non-virtual"><scope>agi::PidController</scope><name>pred_dt_</name></member>
+      <member refid="classagi_1_1PidController_1a5b6a52aff0746a20473460eefb4f2195" prot="private" virt="non-virtual"><scope>agi::PidController</scope><name>quad_</name></member>
+      <member refid="classagi_1_1PidController_1afa78203159129845bc141a4cd9bafe79" prot="public" virt="non-virtual"><scope>agi::PidController</scope><name>reset</name></member>
+      <member refid="classagi_1_1PidController_1a07293203d069f13e5c8d5746e9be5348" prot="public" virt="non-virtual"><scope>agi::PidController</scope><name>reset</name></member>
+      <member refid="classagi_1_1PidController_1a966d3ce9984ae693f0614b13c09864b5" prot="private" virt="non-virtual"><scope>agi::PidController</scope><name>t_last_</name></member>
+      <member refid="classagi_1_1PidController_1a104759a6ddbbd245d9c60acc27a0efef" prot="public" virt="non-virtual"><scope>agi::PidController</scope><name>updateParameters</name></member>
+      <member refid="classagi_1_1PidController_1a24a2a5190b136f0cbabf89386f4cb700" prot="public" virt="non-virtual"><scope>agi::PidController</scope><name>updateParameters</name></member>
+      <member refid="classagi_1_1PidController_1ab8bbd627439724396212b1557b3c275f" prot="public" virt="non-virtual"><scope>agi::PidController</scope><name>updateParameters</name></member>
+      <member refid="classagi_1_1ControllerBase_1a7f8d13d6e9126f7854f1f91ce7c246a7" prot="public" virt="virtual"><scope>agi::PidController</scope><name>~ControllerBase</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::PidController</scope><name>~Module</name></member>
+      <member refid="classagi_1_1PidController_1a3d11a49a8c87d6b1b90a423e8f8bb034" prot="public" virt="non-virtual"><scope>agi::PidController</scope><name>~PidController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1Median" kind="class" language="C++" prot="public">
+    <compoundname>agi::Median</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1Median_1a898d799dced441a1c9379ecfdb3d03f6" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T agi::Median&lt; T, N &gt;::median</definition>
+        <argsstring></argsstring>
+        <name>median</name>
+        <qualifiedname>agi::Median::median</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/median_filter.hpp" line="39" column="5" bodyfile="agilib/include/agilib/utils/median_filter.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Median_1ad1dab1117594ff5274de60a18670fa08" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; T &gt;</type>
+        <definition>std::deque&lt;T&gt; agi::Median&lt; T, N &gt;::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <qualifiedname>agi::Median::buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/median_filter.hpp" line="40" column="14" bodyfile="agilib/include/agilib/utils/median_filter.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Median_1a068b92fe6cf836846394fb0cffcb3103" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; T &gt;</type>
+        <definition>std::deque&lt;T&gt; agi::Median&lt; T, N &gt;::sorted</definition>
+        <argsstring></argsstring>
+        <name>sorted</name>
+        <qualifiedname>agi::Median::sorted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/median_filter.hpp" line="41" column="14" bodyfile="agilib/include/agilib/utils/median_filter.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1Median_1ac07e06a32e637b54c522108e4551a0f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::Median&lt; T, N &gt;::Median</definition>
+        <argsstring>(const T &amp;initial_value)</argsstring>
+        <name>Median</name>
+        <qualifiedname>agi::Median::Median</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>initial_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/median_filter.hpp" line="13" column="3" bodyfile="agilib/include/agilib/utils/median_filter.hpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Median_1a64a2d7f615477b82c1672cc4ca0056a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Median&lt; T, N &gt;::~Median</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Median</name>
+        <qualifiedname>agi::Median::~Median</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/median_filter.hpp" line="16" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Median_1a5cee7386d9d3f4abaf2cc961053bc5a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T agi::Median&lt; T, N &gt;::add</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>add</name>
+        <qualifiedname>agi::Median::add</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/median_filter.hpp" line="18" column="5" bodyfile="agilib/include/agilib/utils/median_filter.hpp" bodystart="18" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Median_1a5e77f329b6866f98ab2a54afa27df98f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T agi::Median&lt; T, N &gt;::get</definition>
+        <argsstring>() const</argsstring>
+        <name>get</name>
+        <qualifiedname>agi::Median::get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/median_filter.hpp" line="28" column="12" bodyfile="agilib/include/agilib/utils/median_filter.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Median_1ab08dbfa3b1d74aa6c8f7574a60ce9c7e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T agi::Median&lt; T, N &gt;::operator()</definition>
+        <argsstring>() const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>agi::Median::operator()</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/median_filter.hpp" line="29" column="12" bodyfile="agilib/include/agilib/utils/median_filter.hpp" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Median_1a5fb980acbdb7d142c5a3f814f4db4baf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classagi_1_1Median" kindref="compound">Median</ref>&lt; T, N &gt; &amp;</type>
+        <definition>Median&lt; T, N &gt; &amp; agi::Median&lt; T, N &gt;::operator+=</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>agi::Median::operator+=</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/median_filter.hpp" line="31" column="10" bodyfile="agilib/include/agilib/utils/median_filter.hpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classagi_1_1Median_1aa477d15c07d4bcfbf075a5ef707109d9" prot="private" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::Median&lt; T, N &gt;::middle</definition>
+        <argsstring>()</argsstring>
+        <name>middle</name>
+        <qualifiedname>agi::Median::middle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/median_filter.hpp" line="37" column="17" bodyfile="agilib/include/agilib/utils/median_filter.hpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/utils/median_filter.hpp" line="11" column="1" bodyfile="agilib/include/agilib/utils/median_filter.hpp" bodystart="11" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classagi_1_1Median_1a5cee7386d9d3f4abaf2cc961053bc5a2" prot="public" virt="non-virtual"><scope>agi::Median</scope><name>add</name></member>
+      <member refid="classagi_1_1Median_1ad1dab1117594ff5274de60a18670fa08" prot="private" virt="non-virtual"><scope>agi::Median</scope><name>buffer</name></member>
+      <member refid="classagi_1_1Median_1a5e77f329b6866f98ab2a54afa27df98f" prot="public" virt="non-virtual"><scope>agi::Median</scope><name>get</name></member>
+      <member refid="classagi_1_1Median_1ac07e06a32e637b54c522108e4551a0f2" prot="public" virt="non-virtual"><scope>agi::Median</scope><name>Median</name></member>
+      <member refid="classagi_1_1Median_1a898d799dced441a1c9379ecfdb3d03f6" prot="private" virt="non-virtual"><scope>agi::Median</scope><name>median</name></member>
+      <member refid="classagi_1_1Median_1aa477d15c07d4bcfbf075a5ef707109d9" prot="private" virt="non-virtual"><scope>agi::Median</scope><name>middle</name></member>
+      <member refid="classagi_1_1Median_1ab08dbfa3b1d74aa6c8f7574a60ce9c7e" prot="public" virt="non-virtual"><scope>agi::Median</scope><name>operator()</name></member>
+      <member refid="classagi_1_1Median_1a5fb980acbdb7d142c5a3f814f4db4baf" prot="public" virt="non-virtual"><scope>agi::Median</scope><name>operator+=</name></member>
+      <member refid="classagi_1_1Median_1a068b92fe6cf836846394fb0cffcb3103" prot="private" virt="non-virtual"><scope>agi::Median</scope><name>sorted</name></member>
+      <member refid="classagi_1_1Median_1a64a2d7f615477b82c1672cc4ca0056a4" prot="public" virt="non-virtual"><scope>agi::Median</scope><name>~Median</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

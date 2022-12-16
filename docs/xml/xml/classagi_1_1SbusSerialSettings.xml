@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1SbusSerialSettings" kind="class" language="C++" prot="public">
+    <compoundname>agi::SbusSerialSettings</compoundname>
+    <basecompoundref refid="classagi_1_1SerialSettings" prot="public" virt="non-virtual">agi::SerialSettings</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1SbusSerialSettings_1a8ff914d2d0175c69af5ba7009b697f23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::SbusSerialSettings::SbusSerialSettings</definition>
+        <argsstring>(const std::string &amp;port)</argsstring>
+        <name>SbusSerialSettings</name>
+        <qualifiedname>agi::SbusSerialSettings::SbusSerialSettings</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/serial_settings.hpp" line="66" column="3" bodyfile="agilib/include/agilib/serial/serial_settings.hpp" bodystart="66" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::SbusSerialSettings</label>
+        <link refid="classagi_1_1SbusSerialSettings"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::SerialSettings</label>
+        <link refid="classagi_1_1SerialSettings"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::SbusSerialSettings</label>
+        <link refid="classagi_1_1SbusSerialSettings"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::SerialSettings</label>
+        <link refid="classagi_1_1SerialSettings"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>port</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="3">
+        <label>std::string</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/serial/serial_settings.hpp" line="64" column="1" bodyfile="agilib/include/agilib/serial/serial_settings.hpp" bodystart="64" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classagi_1_1SerialSettings_1a9cc60e1c3c76090194aa931a2f6cca05" prot="public" virt="non-virtual"><scope>agi::SbusSerialSettings</scope><name>baudrate</name></member>
+      <member refid="classagi_1_1SerialSettings_1a6c631abf92c328c0c906fe10a10de71d" prot="public" virt="non-virtual"><scope>agi::SbusSerialSettings</scope><name>check_multiple_delimiters</name></member>
+      <member refid="classagi_1_1SerialSettings_1aa10ffc62cdde41e944e73a536bb6082c" prot="public" virt="non-virtual"><scope>agi::SbusSerialSettings</scope><name>end_delimiter</name></member>
+      <member refid="classagi_1_1SerialSettings_1a30ddba7b7f1a4acdd4c8e44126b3e63c" prot="public" virt="non-virtual"><scope>agi::SbusSerialSettings</scope><name>port</name></member>
+      <member refid="classagi_1_1SerialSettings_1a09a1346a4165fccb94058e6b1981afa9" prot="public" virt="non-virtual"><scope>agi::SbusSerialSettings</scope><name>sbus</name></member>
+      <member refid="classagi_1_1SbusSerialSettings_1a8ff914d2d0175c69af5ba7009b697f23" prot="public" virt="non-virtual"><scope>agi::SbusSerialSettings</scope><name>SbusSerialSettings</name></member>
+      <member refid="classagi_1_1SerialSettings_1ab84ade853f983cc1f76ec527b2f05dcc" prot="public" virt="non-virtual"><scope>agi::SbusSerialSettings</scope><name>serial_mode</name></member>
+      <member refid="classagi_1_1SerialSettings_1a404940ebddbff8e86180e45331ab8573" prot="public" virt="non-virtual"><scope>agi::SbusSerialSettings</scope><name>SerialSettings</name></member>
+      <member refid="classagi_1_1SerialSettings_1a4bc105ff4f36e046d3e6f36b0f56e110" prot="public" virt="non-virtual"><scope>agi::SbusSerialSettings</scope><name>SerialSettings</name></member>
+      <member refid="classagi_1_1SerialSettings_1afe31c53a5540de91f64bdb7b1d02de39" prot="protected" virt="non-virtual"><scope>agi::SbusSerialSettings</scope><name>SerialSettings</name></member>
+      <member refid="classagi_1_1SerialSettings_1a85c0a8b0be4b0e94ad036318ceefe95d" prot="public" virt="non-virtual"><scope>agi::SbusSerialSettings</scope><name>start_delimiter</name></member>
+      <member refid="classagi_1_1SerialSettings_1a92da7410c9917ddbea494c06147bbf5a" prot="public" virt="non-virtual"><scope>agi::SbusSerialSettings</scope><name>use_delimiter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

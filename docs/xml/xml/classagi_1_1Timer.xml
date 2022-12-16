@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1Timer" kind="class" language="C++" prot="public">
+    <compoundname>agi::Timer</compoundname>
+    <derivedcompoundref refid="classagi_1_1ScopedTimer" prot="public" virt="non-virtual">agi::ScopedTimer</derivedcompoundref>
+    <derivedcompoundref refid="classagi_1_1StaticTimer" prot="public" virt="non-virtual">agi::StaticTimer</derivedcompoundref>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classagi_1_1Timer_1a297b48c6d6e8f89e3950555b3b708f09" prot="private" static="no">
+        <type>std::chrono::high_resolution_clock::time_point</type>
+        <definition>using agi::Timer::TimePoint =  std::chrono::high_resolution_clock::time_point</definition>
+        <argsstring></argsstring>
+        <name>TimePoint</name>
+        <qualifiedname>agi::Timer::TimePoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="73" column="3" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1Timer_1aa864b6094f9897c6c07c47c3ab5a40a0" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string agi::Timer::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <qualifiedname>agi::Timer::name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="72" column="15" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Timer_1aa99da6d4213fe642fe02fc6e6e637164" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string agi::Timer::module_</definition>
+        <argsstring></argsstring>
+        <name>module_</name>
+        <qualifiedname>agi::Timer::module_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="72" column="21" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Timer_1a7f4297db103e3b9438865d6ae8e8ba70" prot="private" static="no" mutable="no">
+        <type>TimePoint</type>
+        <definition>TimePoint agi::Timer::t_start_</definition>
+        <argsstring></argsstring>
+        <name>t_start_</name>
+        <qualifiedname>agi::Timer::t_start_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="74" column="13" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Timer_1af496d734254e95123a416012a26c05fd" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Timer::timing_mean_</definition>
+        <argsstring></argsstring>
+        <name>timing_mean_</name>
+        <qualifiedname>agi::Timer::timing_mean_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="77" column="10" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Timer_1aaceb5971d946d55cd9fe3211b2c83960" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Timer::timing_last_</definition>
+        <argsstring></argsstring>
+        <name>timing_last_</name>
+        <qualifiedname>agi::Timer::timing_last_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="78" column="10" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Timer_1a6b097cfaf69ee5d6d5c487535b84cdc6" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Timer::timing_S_</definition>
+        <argsstring></argsstring>
+        <name>timing_S_</name>
+        <qualifiedname>agi::Timer::timing_S_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="79" column="10" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Timer_1a54eea8865d87191167efd0d539b2d333" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Timer::timing_min_</definition>
+        <argsstring></argsstring>
+        <name>timing_min_</name>
+        <qualifiedname>agi::Timer::timing_min_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="80" column="10" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Timer_1af4713bee84810520720bad96452d1c92" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Timer::timing_max_</definition>
+        <argsstring></argsstring>
+        <name>timing_max_</name>
+        <qualifiedname>agi::Timer::timing_max_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="81" column="10" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Timer_1acb9169952e2c711132f1ed34e9872332" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int agi::Timer::n_samples_</definition>
+        <argsstring></argsstring>
+        <name>n_samples_</name>
+        <qualifiedname>agi::Timer::n_samples_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="83" column="7" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1Timer_1adb960b437521902f8da2187a0b26ede7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Timer::Timer</definition>
+        <argsstring>(const std::string name=&quot;&quot;, const std::string module=&quot;&quot;)</argsstring>
+        <name>Timer</name>
+        <qualifiedname>agi::Timer::Timer</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>module</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="42" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Timer_1a89b76185ad1322c63e72c3967401c970" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Timer::Timer</definition>
+        <argsstring>(const Timer &amp;other)</argsstring>
+        <name>Timer</name>
+        <qualifiedname>agi::Timer::Timer</qualifiedname>
+        <param>
+          <type>const <ref refid="classagi_1_1Timer" kindref="compound">Timer</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="43" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Timer_1ac8f9dc442dd458eac0011d0012f04010" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::Timer::~Timer</definition>
+        <argsstring>()</argsstring>
+        <name>~Timer</name>
+        <qualifiedname>agi::Timer::~Timer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="44" column="3" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Timer_1a9f14b27a8fe9d2df7128d9a7c5cde0b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Timer::tic</definition>
+        <argsstring>()</argsstring>
+        <name>tic</name>
+        <qualifiedname>agi::Timer::tic</qualifiedname>
+        <briefdescription>
+<para>Start the timer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="47" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Timer_1ab821a5167758c7a8cd2813391dc8e484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Timer::toc</definition>
+        <argsstring>()</argsstring>
+        <name>toc</name>
+        <qualifiedname>agi::Timer::toc</qualifiedname>
+        <briefdescription>
+<para>Stops timer, calculates timing, also tics again. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="50" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Timer_1a322671b127cc8303a75bb01f12f1c00a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Timer::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::Timer::reset</qualifiedname>
+        <briefdescription>
+<para>Reset saved timings and calls;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="53" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Timer_1a3dbbbfff68fab74430f0e924ac5cc877" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Timer::operator()</definition>
+        <argsstring>() const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>agi::Timer::operator()</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="56" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Timer_1a11dd0bbf48dc1d6102fd74de4713db24" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Timer::mean</definition>
+        <argsstring>() const</argsstring>
+        <name>mean</name>
+        <qualifiedname>agi::Timer::mean</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="57" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Timer_1a0df70934e77127bdaa71d5f8c2f1e835" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Timer::last</definition>
+        <argsstring>() const</argsstring>
+        <name>last</name>
+        <qualifiedname>agi::Timer::last</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Timer_1a6c8e57e2167bd04919b8dadb9fc1f8f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Timer::min</definition>
+        <argsstring>() const</argsstring>
+        <name>min</name>
+        <qualifiedname>agi::Timer::min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="59" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Timer_1a775684c05f2294c6d405f04e0c7c6609" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Timer::max</definition>
+        <argsstring>() const</argsstring>
+        <name>max</name>
+        <qualifiedname>agi::Timer::max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="60" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Timer_1ab08fe61068d30f216dd50d67146169fc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Timer::std</definition>
+        <argsstring>() const</argsstring>
+        <name>std</name>
+        <qualifiedname>agi::Timer::std</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="61" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Timer_1a2e976e1f8ddc212dd59962af5ad85612" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int agi::Timer::count</definition>
+        <argsstring>() const</argsstring>
+        <name>count</name>
+        <qualifiedname>agi::Timer::count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="62" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Timer_1a31a3f272d9b01d6bcfebaeda0974f317" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Timer::startTime</definition>
+        <argsstring>() const</argsstring>
+        <name>startTime</name>
+        <qualifiedname>agi::Timer::startTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="63" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Timer_1aa4ad866cb402fd3227cb620a9d02abd0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Timer::print</definition>
+        <argsstring>() const</argsstring>
+        <name>print</name>
+        <qualifiedname>agi::Timer::print</qualifiedname>
+        <briefdescription>
+<para>Print timing information to console. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="69" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classagi_1_1Timer_1a8e125e38ee1ec31b73d2e322c1ec93f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Timer &amp;timer)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::Timer::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classagi_1_1Timer" kindref="compound">Timer</ref> &amp;</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+<para>Custom stream operator for outputs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/timer.hpp" line="66" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::ScopedTimer</label>
+        <link refid="classagi_1_1ScopedTimer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::StaticTimer</label>
+        <link refid="classagi_1_1StaticTimer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::Timer</label>
+        <link refid="classagi_1_1Timer"/>
+      </node>
+    </inheritancegraph>
+    <location file="agilib/include/agilib/utils/timer.hpp" line="40" column="1" bodyfile="agilib/include/agilib/utils/timer.hpp" bodystart="40" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classagi_1_1Timer_1a2e976e1f8ddc212dd59962af5ad85612" prot="public" virt="non-virtual"><scope>agi::Timer</scope><name>count</name></member>
+      <member refid="classagi_1_1Timer_1a0df70934e77127bdaa71d5f8c2f1e835" prot="public" virt="non-virtual"><scope>agi::Timer</scope><name>last</name></member>
+      <member refid="classagi_1_1Timer_1a775684c05f2294c6d405f04e0c7c6609" prot="public" virt="non-virtual"><scope>agi::Timer</scope><name>max</name></member>
+      <member refid="classagi_1_1Timer_1a11dd0bbf48dc1d6102fd74de4713db24" prot="public" virt="non-virtual"><scope>agi::Timer</scope><name>mean</name></member>
+      <member refid="classagi_1_1Timer_1a6c8e57e2167bd04919b8dadb9fc1f8f8" prot="public" virt="non-virtual"><scope>agi::Timer</scope><name>min</name></member>
+      <member refid="classagi_1_1Timer_1aa99da6d4213fe642fe02fc6e6e637164" prot="private" virt="non-virtual"><scope>agi::Timer</scope><name>module_</name></member>
+      <member refid="classagi_1_1Timer_1acb9169952e2c711132f1ed34e9872332" prot="private" virt="non-virtual"><scope>agi::Timer</scope><name>n_samples_</name></member>
+      <member refid="classagi_1_1Timer_1aa864b6094f9897c6c07c47c3ab5a40a0" prot="private" virt="non-virtual"><scope>agi::Timer</scope><name>name_</name></member>
+      <member refid="classagi_1_1Timer_1a3dbbbfff68fab74430f0e924ac5cc877" prot="public" virt="non-virtual"><scope>agi::Timer</scope><name>operator()</name></member>
+      <member refid="classagi_1_1Timer_1a8e125e38ee1ec31b73d2e322c1ec93f2" prot="public" virt="non-virtual"><scope>agi::Timer</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classagi_1_1Timer_1aa4ad866cb402fd3227cb620a9d02abd0" prot="public" virt="non-virtual"><scope>agi::Timer</scope><name>print</name></member>
+      <member refid="classagi_1_1Timer_1a322671b127cc8303a75bb01f12f1c00a" prot="public" virt="non-virtual"><scope>agi::Timer</scope><name>reset</name></member>
+      <member refid="classagi_1_1Timer_1a31a3f272d9b01d6bcfebaeda0974f317" prot="public" virt="non-virtual"><scope>agi::Timer</scope><name>startTime</name></member>
+      <member refid="classagi_1_1Timer_1ab08fe61068d30f216dd50d67146169fc" prot="public" virt="non-virtual"><scope>agi::Timer</scope><name>std</name></member>
+      <member refid="classagi_1_1Timer_1a7f4297db103e3b9438865d6ae8e8ba70" prot="private" virt="non-virtual"><scope>agi::Timer</scope><name>t_start_</name></member>
+      <member refid="classagi_1_1Timer_1a9f14b27a8fe9d2df7128d9a7c5cde0b7" prot="public" virt="non-virtual"><scope>agi::Timer</scope><name>tic</name></member>
+      <member refid="classagi_1_1Timer_1a297b48c6d6e8f89e3950555b3b708f09" prot="private" virt="non-virtual"><scope>agi::Timer</scope><name>TimePoint</name></member>
+      <member refid="classagi_1_1Timer_1adb960b437521902f8da2187a0b26ede7" prot="public" virt="non-virtual"><scope>agi::Timer</scope><name>Timer</name></member>
+      <member refid="classagi_1_1Timer_1a89b76185ad1322c63e72c3967401c970" prot="public" virt="non-virtual"><scope>agi::Timer</scope><name>Timer</name></member>
+      <member refid="classagi_1_1Timer_1aaceb5971d946d55cd9fe3211b2c83960" prot="private" virt="non-virtual"><scope>agi::Timer</scope><name>timing_last_</name></member>
+      <member refid="classagi_1_1Timer_1af4713bee84810520720bad96452d1c92" prot="private" virt="non-virtual"><scope>agi::Timer</scope><name>timing_max_</name></member>
+      <member refid="classagi_1_1Timer_1af496d734254e95123a416012a26c05fd" prot="private" virt="non-virtual"><scope>agi::Timer</scope><name>timing_mean_</name></member>
+      <member refid="classagi_1_1Timer_1a54eea8865d87191167efd0d539b2d333" prot="private" virt="non-virtual"><scope>agi::Timer</scope><name>timing_min_</name></member>
+      <member refid="classagi_1_1Timer_1a6b097cfaf69ee5d6d5c487535b84cdc6" prot="private" virt="non-virtual"><scope>agi::Timer</scope><name>timing_S_</name></member>
+      <member refid="classagi_1_1Timer_1ab821a5167758c7a8cd2813391dc8e484" prot="public" virt="non-virtual"><scope>agi::Timer</scope><name>toc</name></member>
+      <member refid="classagi_1_1Timer_1ac8f9dc442dd458eac0011d0012f04010" prot="public" virt="non-virtual"><scope>agi::Timer</scope><name>~Timer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

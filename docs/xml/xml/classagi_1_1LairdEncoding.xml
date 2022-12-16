@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1LairdEncoding" kind="class" language="C++" prot="public">
+    <compoundname>agi::LairdEncoding</compoundname>
+    <basecompoundref refid="classagi_1_1MsgEncoding" prot="public" virt="non-virtual">agi::MsgEncoding</basecompoundref>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classagi_1_1LairdEncoding_1ab7d2083ccf1353f1e96ff24653b38daa" prot="protected" static="no">
+        <type><ref refid="classagi_1_1CRC" kindref="compound">CRC16</ref></type>
+        <definition>using agi::LairdEncoding::CRC =  CRC16</definition>
+        <argsstring></argsstring>
+        <name>CRC</name>
+        <qualifiedname>agi::LairdEncoding::CRC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_encoding.hpp" line="36" column="3" bodyfile="agilib/include/agilib/bridge/laird/laird_encoding.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classagi_1_1LairdEncoding_1ab4971edd7a2d8046037be5ac287e4203" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::LairdEncoding::SCALAR_SIZE</definition>
+        <argsstring></argsstring>
+        <name>SCALAR_SIZE</name>
+        <qualifiedname>agi::LairdEncoding::SCALAR_SIZE</qualifiedname>
+        <initializer>= sizeof(Scalar)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_encoding.hpp" line="26" column="24" bodyfile="agilib/include/agilib/bridge/laird/laird_encoding.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LairdEncoding_1ac4af80c852f52c1a65554741e2cc7e3b" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::LairdEncoding::FLAGS_SIZE</definition>
+        <argsstring></argsstring>
+        <name>FLAGS_SIZE</name>
+        <qualifiedname>agi::LairdEncoding::FLAGS_SIZE</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_encoding.hpp" line="27" column="24" bodyfile="agilib/include/agilib/bridge/laird/laird_encoding.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LairdEncoding_1a391f48662e084547fb985d59c18ad0e2" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::LairdEncoding::NVALUES</definition>
+        <argsstring></argsstring>
+        <name>NVALUES</name>
+        <qualifiedname>agi::LairdEncoding::NVALUES</qualifiedname>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_encoding.hpp" line="28" column="24" bodyfile="agilib/include/agilib/bridge/laird/laird_encoding.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LairdEncoding_1ae35db54a6d3a015a48f058b71204f742" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::LairdEncoding::MSG_SIZE</definition>
+        <argsstring></argsstring>
+        <name>MSG_SIZE</name>
+        <qualifiedname>agi::LairdEncoding::MSG_SIZE</qualifiedname>
+        <initializer>= (1 + NVALUES) * SCALAR_SIZE + FLAGS_SIZE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_encoding.hpp" line="29" column="24" bodyfile="agilib/include/agilib/bridge/laird/laird_encoding.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LairdEncoding_1a0bb0d01ba755bd282f66ff4aed8cb666" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::LairdEncoding::BUFFER_SIZE</definition>
+        <argsstring></argsstring>
+        <name>BUFFER_SIZE</name>
+        <qualifiedname>agi::LairdEncoding::BUFFER_SIZE</qualifiedname>
+        <initializer>= MSG_SIZE + CRC16::SIZE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_encoding.hpp" line="30" column="24" bodyfile="agilib/include/agilib/bridge/laird/laird_encoding.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LairdEncoding_1a4a66dd20c9d36b8575122d60f1a84439" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char agi::LairdEncoding::ARMBIT</definition>
+        <argsstring></argsstring>
+        <name>ARMBIT</name>
+        <qualifiedname>agi::LairdEncoding::ARMBIT</qualifiedname>
+        <initializer>= 1 &lt;&lt; 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_encoding.hpp" line="32" column="25" bodyfile="agilib/include/agilib/bridge/laird/laird_encoding.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LairdEncoding_1ac4ec0a94d74a45a19c14b1c4f08299b9" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char agi::LairdEncoding::MODEBIT</definition>
+        <argsstring></argsstring>
+        <name>MODEBIT</name>
+        <qualifiedname>agi::LairdEncoding::MODEBIT</qualifiedname>
+        <initializer>= 1 &lt;&lt; 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_encoding.hpp" line="33" column="25" bodyfile="agilib/include/agilib/bridge/laird/laird_encoding.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classagi_1_1LairdEncoding_1a529c0e4a765139a58af999f75c936efe" prot="protected" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr <ref refid="classagi_1_1CRC" kindref="compound">CRC</ref></type>
+        <definition>constexpr CRC agi::LairdEncoding::crc</definition>
+        <argsstring></argsstring>
+        <name>crc</name>
+        <qualifiedname>agi::LairdEncoding::crc</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_encoding.hpp" line="37" column="24" bodyfile="agilib/include/agilib/bridge/laird/laird_encoding.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1LairdEncoding_1a38309ec2b3ca2b36aecfcc0bdb4e5a96" prot="private" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool agi::LairdEncoding::single_rotor_thrust_</definition>
+        <argsstring></argsstring>
+        <name>single_rotor_thrust_</name>
+        <qualifiedname>agi::LairdEncoding::single_rotor_thrust_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_encoding.hpp" line="40" column="14" bodyfile="agilib/include/agilib/bridge/laird/laird_encoding.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1LairdEncoding_1a05f22526690d020064fe0e4a8ca01238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::LairdEncoding::LairdEncoding</definition>
+        <argsstring>(const bool single_rotor_thrust=false)</argsstring>
+        <name>LairdEncoding</name>
+        <qualifiedname>agi::LairdEncoding::LairdEncoding</qualifiedname>
+        <param>
+          <type>const bool</type>
+          <declname>single_rotor_thrust</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_encoding.hpp" line="12" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LairdEncoding_1a6c9395e83f820a9d71d75a8620cab47a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::LairdEncoding::encode</definition>
+        <argsstring>(const Command &amp;command, const bool armed, char *const buffer, int *const length) const override</argsstring>
+        <name>encode</name>
+        <qualifiedname>agi::LairdEncoding::encode</qualifiedname>
+        <reimplements refid="classagi_1_1MsgEncoding_1a7624e462cea9843b2796c0095ec23e78">encode</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>armed</declname>
+        </param>
+        <param>
+          <type>char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int *const</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_encoding.hpp" line="13" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LairdEncoding_1a20a120be1a1cd260b033b15e618611ad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::LairdEncoding::decode</definition>
+        <argsstring>(const char *const buffer, const int length, Command *const command, bool *const armed) const override</argsstring>
+        <name>decode</name>
+        <qualifiedname>agi::LairdEncoding::decode</qualifiedname>
+        <reimplements refid="classagi_1_1MsgEncoding_1a5d4dbd8d892ea78347e8351f7b0384bf">decode</reimplements>
+        <param>
+          <type>const char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="structagi_1_1Command" kindref="compound">Command</ref> *const</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>bool *const</type>
+          <declname>armed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/laird/laird_encoding.hpp" line="16" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::LairdEncoding</label>
+        <link refid="classagi_1_1LairdEncoding"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::MsgEncoding</label>
+        <link refid="classagi_1_1MsgEncoding"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>agi::CRC&lt; crc_t, polynomial &gt;</label>
+        <link refid="classagi_1_1CRC"/>
+      </node>
+      <node id="1">
+        <label>agi::LairdEncoding</label>
+        <link refid="classagi_1_1LairdEncoding"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>crc</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::MsgEncoding</label>
+        <link refid="classagi_1_1MsgEncoding"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/bridge/laird/laird_encoding.hpp" line="10" column="1" bodyfile="agilib/include/agilib/bridge/laird/laird_encoding.hpp" bodystart="10" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classagi_1_1LairdEncoding_1a4a66dd20c9d36b8575122d60f1a84439" prot="public" virt="non-virtual"><scope>agi::LairdEncoding</scope><name>ARMBIT</name></member>
+      <member refid="classagi_1_1LairdEncoding_1a0bb0d01ba755bd282f66ff4aed8cb666" prot="public" virt="non-virtual"><scope>agi::LairdEncoding</scope><name>BUFFER_SIZE</name></member>
+      <member refid="classagi_1_1LairdEncoding_1a529c0e4a765139a58af999f75c936efe" prot="protected" virt="non-virtual"><scope>agi::LairdEncoding</scope><name>crc</name></member>
+      <member refid="classagi_1_1LairdEncoding_1ab7d2083ccf1353f1e96ff24653b38daa" prot="protected" virt="non-virtual"><scope>agi::LairdEncoding</scope><name>CRC</name></member>
+      <member refid="classagi_1_1LairdEncoding_1a20a120be1a1cd260b033b15e618611ad" prot="public" virt="virtual"><scope>agi::LairdEncoding</scope><name>decode</name></member>
+      <member refid="classagi_1_1LairdEncoding_1a6c9395e83f820a9d71d75a8620cab47a" prot="public" virt="virtual"><scope>agi::LairdEncoding</scope><name>encode</name></member>
+      <member refid="classagi_1_1LairdEncoding_1ac4af80c852f52c1a65554741e2cc7e3b" prot="public" virt="non-virtual"><scope>agi::LairdEncoding</scope><name>FLAGS_SIZE</name></member>
+      <member refid="classagi_1_1LairdEncoding_1a05f22526690d020064fe0e4a8ca01238" prot="public" virt="non-virtual"><scope>agi::LairdEncoding</scope><name>LairdEncoding</name></member>
+      <member refid="classagi_1_1LairdEncoding_1ac4ec0a94d74a45a19c14b1c4f08299b9" prot="public" virt="non-virtual"><scope>agi::LairdEncoding</scope><name>MODEBIT</name></member>
+      <member refid="classagi_1_1LairdEncoding_1ae35db54a6d3a015a48f058b71204f742" prot="public" virt="non-virtual"><scope>agi::LairdEncoding</scope><name>MSG_SIZE</name></member>
+      <member refid="classagi_1_1LairdEncoding_1a391f48662e084547fb985d59c18ad0e2" prot="public" virt="non-virtual"><scope>agi::LairdEncoding</scope><name>NVALUES</name></member>
+      <member refid="classagi_1_1LairdEncoding_1ab4971edd7a2d8046037be5ac287e4203" prot="public" virt="non-virtual"><scope>agi::LairdEncoding</scope><name>SCALAR_SIZE</name></member>
+      <member refid="classagi_1_1LairdEncoding_1a38309ec2b3ca2b36aecfcc0bdb4e5a96" prot="private" virt="non-virtual"><scope>agi::LairdEncoding</scope><name>single_rotor_thrust_</name></member>
+      <member refid="classagi_1_1MsgEncoding_1ab1c8c68727c96ee077c91191c9a76f93" prot="public" virt="virtual"><scope>agi::LairdEncoding</scope><name>~MsgEncoding</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

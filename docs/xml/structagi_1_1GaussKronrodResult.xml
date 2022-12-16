@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1GaussKronrodResult" kind="struct" language="C++" prot="public">
+    <compoundname>agi::GaussKronrodResult</compoundname>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>rows</declname>
+        <defname>rows</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1GaussKronrodResult_1aaa0f00c7498ee6aae8831152a1a14722" prot="public" static="no" mutable="no">
+        <type>const ArrayVector&lt; rows &gt;</type>
+        <definition>const ArrayVector&lt;rows&gt; agi::GaussKronrodResult&lt; rows &gt;::result_</definition>
+        <argsstring></argsstring>
+        <name>result_</name>
+        <qualifiedname>agi::GaussKronrodResult::result_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" line="13" column="21" bodyfile="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1GaussKronrodResult_1a2dfefda95c7c546b2736d9b6cbb902e6" prot="public" static="no" mutable="no">
+        <type>const ArrayVector&lt; rows &gt;</type>
+        <definition>const ArrayVector&lt;rows&gt; agi::GaussKronrodResult&lt; rows &gt;::error_</definition>
+        <argsstring></argsstring>
+        <name>error_</name>
+        <qualifiedname>agi::GaussKronrodResult::error_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" line="14" column="21" bodyfile="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1GaussKronrodResult_1aa3f292ef0017e6316d4f914ed5d908db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::GaussKronrodResult&lt; rows &gt;::GaussKronrodResult</definition>
+        <argsstring>(const ArrayVector&lt; rows &gt; result, const ArrayVector&lt; rows &gt; error)</argsstring>
+        <name>GaussKronrodResult</name>
+        <qualifiedname>agi::GaussKronrodResult::GaussKronrodResult</qualifiedname>
+        <param>
+          <type>const ArrayVector&lt; rows &gt;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>const ArrayVector&lt; rows &gt;</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" line="10" column="3" bodyfile="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" line="8" column="1" bodyfile="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" bodystart="8" bodyend="15"/>
+    <listofallmembers>
+      <member refid="structagi_1_1GaussKronrodResult_1a2dfefda95c7c546b2736d9b6cbb902e6" prot="public" virt="non-virtual"><scope>agi::GaussKronrodResult</scope><name>error_</name></member>
+      <member refid="structagi_1_1GaussKronrodResult_1aa3f292ef0017e6316d4f914ed5d908db" prot="public" virt="non-virtual"><scope>agi::GaussKronrodResult</scope><name>GaussKronrodResult</name></member>
+      <member refid="structagi_1_1GaussKronrodResult_1aaa0f00c7498ee6aae8831152a1a14722" prot="public" virt="non-virtual"><scope>agi::GaussKronrodResult</scope><name>result_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

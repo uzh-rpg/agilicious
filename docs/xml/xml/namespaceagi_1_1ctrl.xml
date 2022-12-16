@@ -1,0 +1,517 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespaceagi_1_1ctrl" kind="namespace" language="C++">
+    <compoundname>agi::ctrl</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="ctrl__msgs__defs_8hpp_1adea1295de97b0c64fb0b6dea08715779" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>CTRLMODE</name>
+        <qualifiedname>agi::ctrl::CTRLMODE</qualifiedname>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1adea1295de97b0c64fb0b6dea08715779ac30432803a6ca02df667bc862abdd7be" prot="public">
+          <name>INVALID</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1adea1295de97b0c64fb0b6dea08715779a1a6e1d0ad0d4f410734d845a5f3dd0a1" prot="public">
+          <name>OFF</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1adea1295de97b0c64fb0b6dea08715779a5e57fc0e7b126da3dc63b7bd647cff35" prot="public">
+          <name>SET_PARAM</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1adea1295de97b0c64fb0b6dea08715779a0c3f39d55f81bf546a75cc669460fd3d" prot="public">
+          <name>ARM</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1adea1295de97b0c64fb0b6dea08715779aa7c6242e8c204e16b5939f51918d8d18" prot="public">
+          <name>ROTOR_THROTTLE</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1adea1295de97b0c64fb0b6dea08715779a6b8c538b7260785a737fbe2faacf2222" prot="public">
+          <name>ROTOR_SPEED</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1adea1295de97b0c64fb0b6dea08715779a015e03c825c0312e8f20e05762b6c3da" prot="public">
+          <name>ROTOR_THRUST</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1adea1295de97b0c64fb0b6dea08715779a9e3d280ee4f27b9173dd11d8c0aed040" prot="public">
+          <name>BODY_RATE</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1adea1295de97b0c64fb0b6dea08715779a13a57a66d9cfda1bcef572317f3fd8cb" prot="public">
+          <name>ATTITUDE</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1adea1295de97b0c64fb0b6dea08715779a7093246c076521128aef54f1ffb26b53" prot="public">
+          <name>VELOCITY</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1adea1295de97b0c64fb0b6dea08715779ae45c3199bcf1cf29b101cf3d0c5fa790" prot="public">
+          <name>EMERGENCY</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1adea1295de97b0c64fb0b6dea08715779aced1bcd859be02b810a813b15beb2581" prot="public">
+          <name>FEEDBACK</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="33" column="1" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="33" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="ctrl__msgs__defs_8hpp_1a933e1e4c6d9636e9d1c33dde9eef4f2e" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>COMMANDFLAGS</name>
+        <qualifiedname>agi::ctrl::COMMANDFLAGS</qualifiedname>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1a933e1e4c6d9636e9d1c33dde9eef4f2eacfd2801ba2276753618d70381c05a412" prot="public">
+          <name>SET_BIAS</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1a933e1e4c6d9636e9d1c33dde9eef4f2ea6d1863b3e6fe013c3ecaa7440ed82f24" prot="public">
+          <name>SAVE_TO_FLASH</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="49" column="1" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="enum" id="ctrl__msgs__defs_8hpp_1a5849ffc4565a7eb76158f5fbb8f262f8" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>FEEDBACKTYPE</name>
+        <qualifiedname>agi::ctrl::FEEDBACKTYPE</qualifiedname>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1a5849ffc4565a7eb76158f5fbb8f262f8a826b79289d6111534a367cefb7596c52" prot="public">
+          <name>NOTHING</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1a5849ffc4565a7eb76158f5fbb8f262f8ae6b2d7a974ddf2a21f67baaa39d1b63c" prot="public">
+          <name>THROTTLE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1a5849ffc4565a7eb76158f5fbb8f262f8a7fd9d2e29a3323e1759cd815f54670e6" prot="public">
+          <name>SPEED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ctrl__msgs__defs_8hpp_1a5849ffc4565a7eb76158f5fbb8f262f8aa9dae915cd9793d42f4741d3f6c75ffc" prot="public">
+          <name>THRUST</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="54" column="1" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="54" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1a05ea53688120eae327666cd2cb3a5b0d" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t agi::ctrl::SERIAL_MESSAGE_HEADER_LENGTH</definition>
+        <argsstring></argsstring>
+        <name>SERIAL_MESSAGE_HEADER_LENGTH</name>
+        <qualifiedname>agi::ctrl::SERIAL_MESSAGE_HEADER_LENGTH</qualifiedname>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="8" column="26" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1a5bf0e18a28c7e91a81501c3b73f9c30b" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t agi::ctrl::SERIAL_MESSAGE_MAX_PAYLOAD_LENGTH</definition>
+        <argsstring></argsstring>
+        <name>SERIAL_MESSAGE_MAX_PAYLOAD_LENGTH</name>
+        <qualifiedname>agi::ctrl::SERIAL_MESSAGE_MAX_PAYLOAD_LENGTH</qualifiedname>
+        <initializer>= 66</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="9" column="26" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1a0b59afe5ba6aae2182401aab0fbd40a0" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t agi::ctrl::SERIAL_MESSAGE_MIN_LENGTH</definition>
+        <argsstring></argsstring>
+        <name>SERIAL_MESSAGE_MIN_LENGTH</name>
+        <qualifiedname>agi::ctrl::SERIAL_MESSAGE_MIN_LENGTH</qualifiedname>
+        <initializer>=
+  SERIAL_MESSAGE_HEADER_LENGTH + 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="10" column="26" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1a4d1f98c3d229961466edd8a7c7da779c" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t agi::ctrl::SERIAL_MESSAGE_MAX_LENGTH</definition>
+        <argsstring></argsstring>
+        <name>SERIAL_MESSAGE_MAX_LENGTH</name>
+        <qualifiedname>agi::ctrl::SERIAL_MESSAGE_MAX_LENGTH</qualifiedname>
+        <initializer>=
+  SERIAL_MESSAGE_MIN_LENGTH + SERIAL_MESSAGE_MAX_PAYLOAD_LENGTH</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="12" column="26" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1ae83fffae6a00ec0841f638b33acaa16b" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t agi::ctrl::SERIAL_MESSAGE_MAX_COUNT</definition>
+        <argsstring></argsstring>
+        <name>SERIAL_MESSAGE_MAX_COUNT</name>
+        <qualifiedname>agi::ctrl::SERIAL_MESSAGE_MAX_COUNT</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="14" column="26" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1aa3fc4f62fcd0cdbfbefba0753de6636b" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t agi::ctrl::SERIAL_CONTAINER_MAX_LENGTH</definition>
+        <argsstring></argsstring>
+        <name>SERIAL_CONTAINER_MAX_LENGTH</name>
+        <qualifiedname>agi::ctrl::SERIAL_CONTAINER_MAX_LENGTH</qualifiedname>
+        <initializer>=
+  SERIAL_MESSAGE_MAX_COUNT * SERIAL_MESSAGE_MAX_LENGTH + 7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="15" column="26" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1a53d0e43350e3d97460462ccf6c6e2d12" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t agi::ctrl::SERIAL_CONTAINER_DELIMITER</definition>
+        <argsstring></argsstring>
+        <name>SERIAL_CONTAINER_DELIMITER</name>
+        <qualifiedname>agi::ctrl::SERIAL_CONTAINER_DELIMITER</qualifiedname>
+        <initializer>= 0x7c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="17" column="26" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1abcdd9c2335c1a51fcd208254763caa81" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::ctrl::RAW_RANGE</definition>
+        <argsstring></argsstring>
+        <name>RAW_RANGE</name>
+        <qualifiedname>agi::ctrl::RAW_RANGE</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="19" column="22" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1a28fb04cda6bb5abd77cc5ff508957bf8" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double agi::ctrl::UNITLESS_RANGE</definition>
+        <argsstring></argsstring>
+        <name>UNITLESS_RANGE</name>
+        <qualifiedname>agi::ctrl::UNITLESS_RANGE</qualifiedname>
+        <initializer>= 32.767</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="20" column="25" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1a75c9d3d7780083283cef89bb941e37c3" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double agi::ctrl::TIME_RANGE</definition>
+        <argsstring></argsstring>
+        <name>TIME_RANGE</name>
+        <qualifiedname>agi::ctrl::TIME_RANGE</qualifiedname>
+        <initializer>= 32.767</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="21" column="25" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1aea6fba03282f99a95ac0dc623bbcc919" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double agi::ctrl::FREQUENCY_RANGE</definition>
+        <argsstring></argsstring>
+        <name>FREQUENCY_RANGE</name>
+        <qualifiedname>agi::ctrl::FREQUENCY_RANGE</qualifiedname>
+        <initializer>= 32767</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="22" column="25" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1ad4ae9b42f18ccd11dbc5ed2ef9c0a479" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double agi::ctrl::ANGLE_RANGE</definition>
+        <argsstring></argsstring>
+        <name>ANGLE_RANGE</name>
+        <qualifiedname>agi::ctrl::ANGLE_RANGE</qualifiedname>
+        <initializer>= 32.767</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="23" column="25" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1ae253dda9aa3ac1b78087b708919adfa2" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double agi::ctrl::ANGULAR_VELOCITY_RANGE</definition>
+        <argsstring></argsstring>
+        <name>ANGULAR_VELOCITY_RANGE</name>
+        <qualifiedname>agi::ctrl::ANGULAR_VELOCITY_RANGE</qualifiedname>
+        <initializer>= 32.767</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="24" column="25" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1a3bd8cb604b9171ae829092556a572fcd" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double agi::ctrl::ROTOR_SPEED_RANGE</definition>
+        <argsstring></argsstring>
+        <name>ROTOR_SPEED_RANGE</name>
+        <qualifiedname>agi::ctrl::ROTOR_SPEED_RANGE</qualifiedname>
+        <initializer>= 3276.7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="25" column="25" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1a83ce2ab8bce8679ad2e88314a4a50fdd" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double agi::ctrl::DISTANCE_RANGE</definition>
+        <argsstring></argsstring>
+        <name>DISTANCE_RANGE</name>
+        <qualifiedname>agi::ctrl::DISTANCE_RANGE</qualifiedname>
+        <initializer>= 32.767</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="26" column="25" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1a80230eca783b91788be17fe96e0e3640" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double agi::ctrl::VELOCITY_RANGE</definition>
+        <argsstring></argsstring>
+        <name>VELOCITY_RANGE</name>
+        <qualifiedname>agi::ctrl::VELOCITY_RANGE</qualifiedname>
+        <initializer>= 32.767</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="27" column="25" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1a2ecef3c96bf141cdb4ef3cf844ada51b" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double agi::ctrl::ACCELERATION_RANGE</definition>
+        <argsstring></argsstring>
+        <name>ACCELERATION_RANGE</name>
+        <qualifiedname>agi::ctrl::ACCELERATION_RANGE</qualifiedname>
+        <initializer>= 327.67</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="28" column="25" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1afe824e864b4c3cfa22a052768101946a" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double agi::ctrl::FORCE_RANGE</definition>
+        <argsstring></argsstring>
+        <name>FORCE_RANGE</name>
+        <qualifiedname>agi::ctrl::FORCE_RANGE</qualifiedname>
+        <initializer>= 327.67</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="29" column="25" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1ac5156ccf5cef1bb1f995d700df67a29f" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double agi::ctrl::VOLTAGE_RANGE</definition>
+        <argsstring></argsstring>
+        <name>VOLTAGE_RANGE</name>
+        <qualifiedname>agi::ctrl::VOLTAGE_RANGE</qualifiedname>
+        <initializer>= 327.67</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="30" column="25" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ctrl__msgs__defs_8hpp_1adb88aee34512ba6ba994f164b682b98b" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double agi::ctrl::CURRENT_RANGE</definition>
+        <argsstring></argsstring>
+        <name>CURRENT_RANGE</name>
+        <qualifiedname>agi::ctrl::CURRENT_RANGE</qualifiedname>
+        <initializer>= 327.67</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="31" column="25" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ctrl__msgs__defs_8hpp_1acf41c5e9a733325cda788c77c19f7675" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>struct agi::ctrl::__attribute__</definition>
+        <argsstring>((__packed__)) serial_message_t</argsstring>
+        <name>__attribute__</name>
+        <qualifiedname>agi::ctrl::__attribute__</qualifiedname>
+        <param>
+          <type>(__packed__)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="31" column="25" bodyfile="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" bodystart="61" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/bridge/ctrl/ctrl_msgs_defs.hpp" line="6" column="1"/>
+  </compounddef>
+</doxygen>

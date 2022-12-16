@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="gravity_8hpp" kind="file" language="C++">
+    <compoundname>gravity.hpp</compoundname>
+    <includes refid="types_8hpp" local="yes">agilib/math/types.hpp</includes>
+    <includedby refid="controller__geo_8hpp" local="yes">agilib/include/agilib/controller/geometric/controller_geo.hpp</includedby>
+    <includedby refid="controller__indi_8hpp" local="yes">agilib/include/agilib/controller/indi/controller_indi.hpp</includedby>
+    <includedby refid="controller__mpc_8hpp" local="yes">agilib/include/agilib/controller/mpc/controller_mpc.hpp</includedby>
+    <includedby refid="controller__pid_8hpp" local="yes">agilib/include/agilib/controller/pid/controller_pid.hpp</includedby>
+    <includedby refid="propeller__data_8hpp" local="no">agilib/include/agilib/simulator/bem/propeller_data.hpp</includedby>
+    <includedby refid="model__propeller__bem_8hpp" local="yes">agilib/include/agilib/simulator/model_propeller_bem.hpp</includedby>
+    <includedby refid="model__thrust__torque__simple_8hpp" local="yes">agilib/include/agilib/simulator/model_thrust_torque_simple.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>agilib/include/agilib/math/gravity.hpp</label>
+        <link refid="gravity_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agilib/math/types.hpp</label>
+        <link refid="types_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Eigen/Eigen</label>
+      </node>
+      <node id="4">
+        <label>limits</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>agilib/include/agilib/controller/geometric/controller_geo.hpp</label>
+        <link refid="controller__geo_8hpp_source"/>
+      </node>
+      <node id="3">
+        <label>agilib/include/agilib/controller/indi/controller_indi.hpp</label>
+        <link refid="controller__indi_8hpp_source"/>
+      </node>
+      <node id="4">
+        <label>agilib/include/agilib/controller/mpc/controller_mpc.hpp</label>
+        <link refid="controller__mpc_8hpp_source"/>
+      </node>
+      <node id="5">
+        <label>agilib/include/agilib/controller/pid/controller_pid.hpp</label>
+        <link refid="controller__pid_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>agilib/include/agilib/math/gravity.hpp</label>
+        <link refid="gravity_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>agilib/include/agilib/simulator/bem/functions.hpp</label>
+        <link refid="functions_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>agilib/include/agilib/simulator/bem/propeller_data.hpp</label>
+        <link refid="propeller__data_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>agilib/include/agilib/simulator/bem/propeller_state.hpp</label>
+        <link refid="propeller__state_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>agilib/include/agilib/simulator/model_propeller_bem.hpp</label>
+        <link refid="model__propeller__bem_8hpp_source"/>
+      </node>
+      <node id="10">
+        <label>agilib/include/agilib/simulator/model_thrust_torque_simple.hpp</label>
+        <link refid="model__thrust__torque__simple_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>agilib/include/agilib/simulator/quadrotor_simulator.hpp</label>
+        <link refid="quadrotor__simulator_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceagi">agi</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/math/types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">agi<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>Scalar<sp/>G<sp/>=<sp/>9.8066;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector&lt;3&gt;<sp/>GVEC{0,<sp/>0,<sp/>-G};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>agi</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="agilib/include/agilib/math/gravity.hpp"/>
+  </compounddef>
+</doxygen>

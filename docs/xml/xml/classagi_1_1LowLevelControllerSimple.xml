@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1LowLevelControllerSimple" kind="class" language="C++" prot="public">
+    <compoundname>agi::LowLevelControllerSimple</compoundname>
+    <basecompoundref refid="classagi_1_1LowLevelControllerBase" prot="public" virt="non-virtual">agi::LowLevelControllerBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1LowLevelControllerSimple_1a9d424a309d92107cf92d8593e6644077" prot="private" static="no" mutable="no">
+        <type>Matrix&lt; 4, 4 &gt;</type>
+        <definition>Matrix&lt;4, 4&gt; agi::LowLevelControllerSimple::B_allocation_</definition>
+        <argsstring></argsstring>
+        <name>B_allocation_</name>
+        <qualifiedname>agi::LowLevelControllerSimple::B_allocation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_simple.hpp" line="24" column="10" bodyfile="agilib/include/agilib/simulator/low_level_controller_simple.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LowLevelControllerSimple_1aca09cdee97d682b6548725f14bdd1dcc" prot="private" static="no" mutable="no">
+        <type>Matrix&lt; 4, 4 &gt;</type>
+        <definition>Matrix&lt;4, 4&gt; agi::LowLevelControllerSimple::B_allocation_inv_</definition>
+        <argsstring></argsstring>
+        <name>B_allocation_inv_</name>
+        <qualifiedname>agi::LowLevelControllerSimple::B_allocation_inv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_simple.hpp" line="25" column="10" bodyfile="agilib/include/agilib/simulator/low_level_controller_simple.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LowLevelControllerSimple_1a9022df0c68d34a8d6b561c4214615547" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1LowLevelControllerSimpleParams" kindref="compound">LowLevelControllerSimpleParams</ref></type>
+        <definition>LowLevelControllerSimpleParams agi::LowLevelControllerSimple::params_</definition>
+        <argsstring></argsstring>
+        <name>params_</name>
+        <qualifiedname>agi::LowLevelControllerSimple::params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_simple.hpp" line="26" column="34" bodyfile="agilib/include/agilib/simulator/low_level_controller_simple.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1LowLevelControllerSimple_1ae128b307a7fa4eb887fb386f98cb3f65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::LowLevelControllerSimple::LowLevelControllerSimple</definition>
+        <argsstring>(Quadrotor quad, const Scalar ctrl_dt, const LowLevelControllerSimpleParams &amp;params, const std::string &amp;name=&quot;SimpleLLC&quot;)</argsstring>
+        <name>LowLevelControllerSimple</name>
+        <qualifiedname>agi::LowLevelControllerSimple::LowLevelControllerSimple</qualifiedname>
+        <param>
+          <type><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>ctrl_dt</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1LowLevelControllerSimpleParams" kindref="compound">LowLevelControllerSimpleParams</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+          <defval>&quot;SimpleLLC&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_simple.hpp" line="15" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowLevelControllerSimple_1ad42a563ead962fd23a0e97708e09205d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::LowLevelControllerSimple::setCommand</definition>
+        <argsstring>(const Command &amp;cmd) override</argsstring>
+        <name>setCommand</name>
+        <qualifiedname>agi::LowLevelControllerSimple::setCommand</qualifiedname>
+        <reimplements refid="classagi_1_1LowLevelControllerBase_1a7d47051d0047d3721abb86082b1fc4cd">setCommand</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_simple.hpp" line="18" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowLevelControllerSimple_1a3b9c00c74184c7ff8de1d95cdf219213" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void agi::LowLevelControllerSimple::run</definition>
+        <argsstring>() override</argsstring>
+        <name>run</name>
+        <qualifiedname>agi::LowLevelControllerSimple::run</qualifiedname>
+        <reimplements refid="classagi_1_1LowLevelControllerBase_1a60bafe91b95e58e81fe91714d7828e7a">run</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_simple.hpp" line="19" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowLevelControllerSimple_1a9f8895250a3e0794ed127361b88eb925" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::LowLevelControllerSimple::updateQuad</definition>
+        <argsstring>(const Quadrotor &amp;quad) override</argsstring>
+        <name>updateQuad</name>
+        <qualifiedname>agi::LowLevelControllerSimple::updateQuad</qualifiedname>
+        <reimplements refid="classagi_1_1LowLevelControllerBase_1a01c68fd889291669fecb829c5e3c96c8">updateQuad</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/low_level_controller_simple.hpp" line="20" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>agi::Module&lt; LowLevelControllerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="2">
+        <label>agi::LowLevelControllerBase</label>
+        <link refid="classagi_1_1LowLevelControllerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::LowLevelControllerSimple</label>
+        <link refid="classagi_1_1LowLevelControllerSimple"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>agi::Module&lt; LowLevelControllerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>agi::Command</label>
+        <link refid="structagi_1_1Command"/>
+      </node>
+      <node id="4">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+      <node id="2">
+        <label>agi::LowLevelControllerBase</label>
+        <link refid="classagi_1_1LowLevelControllerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>cmd_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>state_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>quad_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::LowLevelControllerSimple</label>
+        <link refid="classagi_1_1LowLevelControllerSimple"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="6">
+        <label>agi::QuadState</label>
+        <link refid="structagi_1_1QuadState"/>
+      </node>
+      <node id="7">
+        <label>agi::Quadrotor</label>
+        <link refid="structagi_1_1Quadrotor"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/simulator/low_level_controller_simple.hpp" line="11" column="1" bodyfile="agilib/include/agilib/simulator/low_level_controller_simple.hpp" bodystart="11" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classagi_1_1LowLevelControllerSimple_1a9d424a309d92107cf92d8593e6644077" prot="private" virt="non-virtual"><scope>agi::LowLevelControllerSimple</scope><name>B_allocation_</name></member>
+      <member refid="classagi_1_1LowLevelControllerSimple_1aca09cdee97d682b6548725f14bdd1dcc" prot="private" virt="non-virtual"><scope>agi::LowLevelControllerSimple</scope><name>B_allocation_inv_</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a20cfba2aa25f2a929331b0508331f606" prot="protected" virt="non-virtual"><scope>agi::LowLevelControllerSimple</scope><name>cmd_</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a971727c70d7ee66948856941e693a3f3" prot="protected" virt="non-virtual"><scope>agi::LowLevelControllerSimple</scope><name>ctrl_dt_</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1ab2bd3f1cb681f4768a9e6ebabc32f107" prot="public" virt="virtual"><scope>agi::LowLevelControllerSimple</scope><name>getMotorCommand</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::LowLevelControllerSimple</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::LowLevelControllerSimple</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a28cbb6f261dcd46f34861036bab0f297" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerSimple</scope><name>LowLevelControllerBase</name></member>
+      <member refid="classagi_1_1LowLevelControllerSimple_1ae128b307a7fa4eb887fb386f98cb3f65" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerSimple</scope><name>LowLevelControllerSimple</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerSimple</scope><name>Module</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a4ac1815900306564a49dced7c233613b" prot="protected" virt="non-virtual"><scope>agi::LowLevelControllerSimple</scope><name>motor_omega_des_</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerSimple</scope><name>name</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a8e3389e3bf586f0fad8b790478e6189d" prot="protected" virt="non-virtual"><scope>agi::LowLevelControllerSimple</scope><name>param_dir_</name></member>
+      <member refid="classagi_1_1LowLevelControllerSimple_1a9022df0c68d34a8d6b561c4214615547" prot="private" virt="non-virtual"><scope>agi::LowLevelControllerSimple</scope><name>params_</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1ae797f72877eaf192cc3706903936daf9" prot="protected" virt="non-virtual"><scope>agi::LowLevelControllerSimple</scope><name>quad_</name></member>
+      <member refid="classagi_1_1LowLevelControllerSimple_1a3b9c00c74184c7ff8de1d95cdf219213" prot="public" virt="virtual"><scope>agi::LowLevelControllerSimple</scope><name>run</name></member>
+      <member refid="classagi_1_1LowLevelControllerSimple_1ad42a563ead962fd23a0e97708e09205d" prot="public" virt="virtual"><scope>agi::LowLevelControllerSimple</scope><name>setCommand</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1ae6819c21a401498e16bdd66b6417f6d1" prot="public" virt="virtual"><scope>agi::LowLevelControllerSimple</scope><name>setParamDir</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a4d99b6ddd607fcd261cd402f6ae602bb" prot="public" virt="virtual"><scope>agi::LowLevelControllerSimple</scope><name>setState</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a2f59998108c18a91e347f3e32dc65ae1" prot="protected" virt="non-virtual"><scope>agi::LowLevelControllerSimple</scope><name>state_</name></member>
+      <member refid="classagi_1_1LowLevelControllerSimple_1a9f8895250a3e0794ed127361b88eb925" prot="public" virt="virtual"><scope>agi::LowLevelControllerSimple</scope><name>updateQuad</name></member>
+      <member refid="classagi_1_1LowLevelControllerBase_1a33e7f12e70fe5992dca0344e3800188f" prot="public" virt="non-virtual"><scope>agi::LowLevelControllerSimple</scope><name>~LowLevelControllerBase</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::LowLevelControllerSimple</scope><name>~Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

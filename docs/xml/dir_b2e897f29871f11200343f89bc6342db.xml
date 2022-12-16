@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_b2e897f29871f11200343f89bc6342db" kind="dir">
+    <compoundname>agilib/include/agilib/controller/indi</compoundname>
+    <innerfile refid="controller__indi_8hpp">controller_indi.hpp</innerfile>
+    <innerfile refid="indi__params_8hpp">indi_params.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/controller/indi/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1828 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1acados_1_1MpcWrapper" kind="class" language="C++" prot="public">
+    <compoundname>agi::acados::MpcWrapper</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classagi_1_1acados_1_1MpcWrapper_1aa872362cb69dad3e47a40684ffcd5b0a" prot="public" static="no" strong="no">
+        <type>int</type>
+        <name>STATECONSTR</name>
+        <qualifiedname>agi::acados::MpcWrapper::STATECONSTR</qualifiedname>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1aa872362cb69dad3e47a40684ffcd5b0aadaa47f915fe3384c6f031c25ed9facc8" prot="public">
+          <name>OMEGA_X</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1aa872362cb69dad3e47a40684ffcd5b0aa56a05c6d4b7443df44f2883dfc381364" prot="public">
+          <name>OMEGA_Y</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1aa872362cb69dad3e47a40684ffcd5b0aa98039d3134cf529f8634df4bd6238205" prot="public">
+          <name>OMEGA_Z</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="144" column="3" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="144" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="enum" id="classagi_1_1acados_1_1MpcWrapper_1a06bca148639ead7403a07f71dad5a5c1" prot="public" static="no" strong="no">
+        <type>int</type>
+        <name>INPUTCONSTR</name>
+        <qualifiedname>agi::acados::MpcWrapper::INPUTCONSTR</qualifiedname>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a06bca148639ead7403a07f71dad5a5c1ae0d5c92aaea5ec0a7e61d9d664df538b" prot="public">
+          <name>T_0</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a06bca148639ead7403a07f71dad5a5c1a71cee41a209a3b508b09b24834d38306" prot="public">
+          <name>T_1</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a06bca148639ead7403a07f71dad5a5c1a12fd4cbb3e7bacf57df3b755b3d5e2a8" prot="public">
+          <name>T_2</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a06bca148639ead7403a07f71dad5a5c1a7c60c814c8b9b400e9f9b8a50d85abb9" prot="public">
+          <name>T_3</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="150" column="3" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="150" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="enum" id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648d" prot="public" static="no" strong="no">
+        <type>int</type>
+        <name>ONLPARAMIDX</name>
+        <qualifiedname>agi::acados::MpcWrapper::ONLPARAMIDX</qualifiedname>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da9a122c55c3ca1eb4a3ffd7dfa2199d3e" prot="public">
+          <name>MASS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dac40e295129592b0ce84d8a613e31d867" prot="public">
+          <name>Q_REF_0</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dadc2c9c34df64cdb7c99238e6e0af5fd1" prot="public">
+          <name>Q_REF_1</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dab48734de11842901067318a6cf99a8e6" prot="public">
+          <name>Q_REF_2</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da35d9fbcb3b0396fb8e8f97de6b26bec1" prot="public">
+          <name>Q_REF_3</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da88a6cb2f4e8fb4503357f79162b3a535" prot="public">
+          <name>CDX1</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dab46063743e407d1ecc7411320d7f75bf" prot="public">
+          <name>CDY1</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648daef0ad3df2e9afb5599678108c8930703" prot="public">
+          <name>CDZ1</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dae342a3fab2d3249d96e894874fb90d49" prot="public">
+          <name>CDX3</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dac06ac8d8d2cdd30b8396eeedd77f5d6a" prot="public">
+          <name>CDY3</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dab132366555ea2831d1fe0a7ffedb33bb" prot="public">
+          <name>CDZ3</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dac7bf1739dd122a9f73451bc4adbaabd2" prot="public">
+          <name>CDZH</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da0a9e4d07fd87644724727c5d3e561000" prot="public">
+          <name>L_X_0</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da75949a8b8e57ac3c2226ebab7ac8050c" prot="public">
+          <name>L_X_1</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da3a644fc39936dfb373a0252ec9bcfccc" prot="public">
+          <name>L_X_2</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648daee62c5997a745d3cda9ffc8f3a5dc8e9" prot="public">
+          <name>L_X_3</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dae21336e1312f21395ecb499a4a786219" prot="public">
+          <name>L_Y_0</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dab3dcef4154bd52089e8f937309bc9c33" prot="public">
+          <name>L_Y_1</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da7484f041f5cb6e22a0101c8614fe2348" prot="public">
+          <name>L_Y_2</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da44e92395353f0dc54ceaa130e89af927" prot="public">
+          <name>L_Y_3</name>
+          <initializer>= 19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da9e2428e82b91638f8c45da7c7dadffc0" prot="public">
+          <name>KAPPA</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da6f34614c31a314e9431e6366e6b8859e" prot="public">
+          <name>I_XX</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da30dc20d8f4d42eaf6b2313c4e7c622e0" prot="public">
+          <name>I_YY</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da7feed26b6c2f2b62015521840da0d564" prot="public">
+          <name>I_ZZ</name>
+          <initializer>= 23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="152" column="3" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="152" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="enum" id="classagi_1_1acados_1_1MpcWrapper_1a3be0d6d99f087061433897ae369b7146" prot="public" static="no" strong="no">
+        <type>int</type>
+        <name>STATEIDX</name>
+        <qualifiedname>agi::acados::MpcWrapper::STATEIDX</qualifiedname>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a3be0d6d99f087061433897ae369b7146a4ed6f8b9040282a059e3ae9423d1993f" prot="public">
+          <name>STATEPOS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a3be0d6d99f087061433897ae369b7146ab30d77cfe9dc630d877f4b186e2265a0" prot="public">
+          <name>STATEATT</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a3be0d6d99f087061433897ae369b7146a0c93e78a53579384e2cb6f3e962ea3a5" prot="public">
+          <name>STATEVEL</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1a3be0d6d99f087061433897ae369b7146ad60d329ea42334927acfca5b6346fe52" prot="public">
+          <name>STATEOME</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="179" column="3" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="179" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="enum" id="classagi_1_1acados_1_1MpcWrapper_1aede906ea97aa108b2ca6d3f44ebc5c24" prot="public" static="no" strong="no">
+        <type>int</type>
+        <name>REFIDX</name>
+        <qualifiedname>agi::acados::MpcWrapper::REFIDX</qualifiedname>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1aede906ea97aa108b2ca6d3f44ebc5c24a89cec7e6eff704b865d36656c0b435a6" prot="public">
+          <name>REFPOS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1aede906ea97aa108b2ca6d3f44ebc5c24a6f671a9d6d4173fc2778ab0284cd2eac" prot="public">
+          <name>REFATT</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1aede906ea97aa108b2ca6d3f44ebc5c24a41196005cd1640acd5ce1f4eb1aa1aaa" prot="public">
+          <name>REFVEL</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1aede906ea97aa108b2ca6d3f44ebc5c24a0e71ed62b586dc193f4484977bf767bc" prot="public">
+          <name>REFOME</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1acados_1_1MpcWrapper_1aede906ea97aa108b2ca6d3f44ebc5c24ae684a8fc034715c956f6323e61fcd254" prot="public">
+          <name>REFU</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="186" column="3" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="186" bodyend="192"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a60738a731a591ecafbd22eb13a9c9fe5" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NX</definition>
+        <argsstring></argsstring>
+        <name>NX</name>
+        <qualifiedname>agi::acados::MpcWrapper::NX</qualifiedname>
+        <initializer>= DRONE_MODEL_NX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="21" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1acec5dbf3009b0524e618e2ed01bda95d" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NZ</definition>
+        <argsstring></argsstring>
+        <name>NZ</name>
+        <qualifiedname>agi::acados::MpcWrapper::NZ</qualifiedname>
+        <initializer>= DRONE_MODEL_NZ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="22" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a2ef61e9388b69a6e39d10a7173511333" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NU</definition>
+        <argsstring></argsstring>
+        <name>NU</name>
+        <qualifiedname>agi::acados::MpcWrapper::NU</qualifiedname>
+        <initializer>= DRONE_MODEL_NU</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="23" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a185d781ac4e85fb7bf6f0ab463562333" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NP</definition>
+        <argsstring></argsstring>
+        <name>NP</name>
+        <qualifiedname>agi::acados::MpcWrapper::NP</qualifiedname>
+        <initializer>= DRONE_MODEL_NP</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="24" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a991c944a46074d666a4f72618149a01e" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NBX</definition>
+        <argsstring></argsstring>
+        <name>NBX</name>
+        <qualifiedname>agi::acados::MpcWrapper::NBX</qualifiedname>
+        <initializer>= DRONE_MODEL_NBX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="25" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1ad02ffc82c3fce2c632657b266dbc22cb" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NBX0</definition>
+        <argsstring></argsstring>
+        <name>NBX0</name>
+        <qualifiedname>agi::acados::MpcWrapper::NBX0</qualifiedname>
+        <initializer>= DRONE_MODEL_NBX0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="26" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1aa53f47407945f3d7c5459ed9fa7e73f9" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NBU</definition>
+        <argsstring></argsstring>
+        <name>NBU</name>
+        <qualifiedname>agi::acados::MpcWrapper::NBU</qualifiedname>
+        <initializer>= DRONE_MODEL_NBU</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="27" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a378577c367bd72b857078d20bbc4f702" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NSBX</definition>
+        <argsstring></argsstring>
+        <name>NSBX</name>
+        <qualifiedname>agi::acados::MpcWrapper::NSBX</qualifiedname>
+        <initializer>= DRONE_MODEL_NSBX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="28" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a55add843eba6bdfd9150ac3a5302c838" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NSBU</definition>
+        <argsstring></argsstring>
+        <name>NSBU</name>
+        <qualifiedname>agi::acados::MpcWrapper::NSBU</qualifiedname>
+        <initializer>= DRONE_MODEL_NSBU</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="29" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a6331e8e7e51ecfb905c48ccc80476343" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NSH</definition>
+        <argsstring></argsstring>
+        <name>NSH</name>
+        <qualifiedname>agi::acados::MpcWrapper::NSH</qualifiedname>
+        <initializer>= DRONE_MODEL_NSH</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="30" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a60d70073bff73e96f120905c77763799" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NSG</definition>
+        <argsstring></argsstring>
+        <name>NSG</name>
+        <qualifiedname>agi::acados::MpcWrapper::NSG</qualifiedname>
+        <initializer>= DRONE_MODEL_NSG</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="31" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1aa33d85e40d851c795e3e97fc23516147" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NSPHI</definition>
+        <argsstring></argsstring>
+        <name>NSPHI</name>
+        <qualifiedname>agi::acados::MpcWrapper::NSPHI</qualifiedname>
+        <initializer>= DRONE_MODEL_NSPHI</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="32" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1ae181aa0f629e4a5e3d38f1b19191cbfa" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NSHN</definition>
+        <argsstring></argsstring>
+        <name>NSHN</name>
+        <qualifiedname>agi::acados::MpcWrapper::NSHN</qualifiedname>
+        <initializer>= DRONE_MODEL_NSHN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="33" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a6d4438f02dea4e6a85205a26d72ba78d" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NSGN</definition>
+        <argsstring></argsstring>
+        <name>NSGN</name>
+        <qualifiedname>agi::acados::MpcWrapper::NSGN</qualifiedname>
+        <initializer>= DRONE_MODEL_NSGN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="34" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1ac5a2de18d038bb82040e6e03ab245c8c" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NSPHIN</definition>
+        <argsstring></argsstring>
+        <name>NSPHIN</name>
+        <qualifiedname>agi::acados::MpcWrapper::NSPHIN</qualifiedname>
+        <initializer>= DRONE_MODEL_NSPHIN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="35" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a86ff47378a24984517541a9fff9c003f" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NSBXN</definition>
+        <argsstring></argsstring>
+        <name>NSBXN</name>
+        <qualifiedname>agi::acados::MpcWrapper::NSBXN</qualifiedname>
+        <initializer>= DRONE_MODEL_NSBXN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="36" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a7ced298fcf45a8aedb6adb524ef09a2f" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NS</definition>
+        <argsstring></argsstring>
+        <name>NS</name>
+        <qualifiedname>agi::acados::MpcWrapper::NS</qualifiedname>
+        <initializer>= DRONE_MODEL_NS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="37" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a6c12f9de8708b0e59d30475bb130b9ec" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NSN</definition>
+        <argsstring></argsstring>
+        <name>NSN</name>
+        <qualifiedname>agi::acados::MpcWrapper::NSN</qualifiedname>
+        <initializer>= DRONE_MODEL_NSN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="38" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a665d4eb6a895afb499ac8c087990a64c" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NG</definition>
+        <argsstring></argsstring>
+        <name>NG</name>
+        <qualifiedname>agi::acados::MpcWrapper::NG</qualifiedname>
+        <initializer>= DRONE_MODEL_NG</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="39" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1af36873c9e287b007662875d8ae060f01" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NBXN</definition>
+        <argsstring></argsstring>
+        <name>NBXN</name>
+        <qualifiedname>agi::acados::MpcWrapper::NBXN</qualifiedname>
+        <initializer>= DRONE_MODEL_NBXN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="40" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a8fda766fd30c272dd4f3a6666c242210" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NGN</definition>
+        <argsstring></argsstring>
+        <name>NGN</name>
+        <qualifiedname>agi::acados::MpcWrapper::NGN</qualifiedname>
+        <initializer>= DRONE_MODEL_NGN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="41" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a59e0be027605b3b8c5aeb71cb3d3d8bb" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NY0</definition>
+        <argsstring></argsstring>
+        <name>NY0</name>
+        <qualifiedname>agi::acados::MpcWrapper::NY0</qualifiedname>
+        <initializer>= DRONE_MODEL_NY0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="42" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a101475e0caaf00bb2a6e3be863c89851" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NY</definition>
+        <argsstring></argsstring>
+        <name>NY</name>
+        <qualifiedname>agi::acados::MpcWrapper::NY</qualifiedname>
+        <initializer>= DRONE_MODEL_NY</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="43" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a13a5f6d00b01b024b056c1abcc0aeee3" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NYN</definition>
+        <argsstring></argsstring>
+        <name>NYN</name>
+        <qualifiedname>agi::acados::MpcWrapper::NYN</qualifiedname>
+        <initializer>= DRONE_MODEL_NYN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="44" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a52a3cf8b09171c7678ad5602574355e1" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>agi::acados::MpcWrapper::N</qualifiedname>
+        <initializer>= DRONE_MODEL_N</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="45" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1aad5cd2123e3110eb45b995be027d4984" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NH</definition>
+        <argsstring></argsstring>
+        <name>NH</name>
+        <qualifiedname>agi::acados::MpcWrapper::NH</qualifiedname>
+        <initializer>= DRONE_MODEL_NH</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="46" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a49878ead3c510f8fe4d14433601d617c" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NPHI</definition>
+        <argsstring></argsstring>
+        <name>NPHI</name>
+        <qualifiedname>agi::acados::MpcWrapper::NPHI</qualifiedname>
+        <initializer>= DRONE_MODEL_NPHI</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="47" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1af13b81636bd2fee2aeb19541436d1121" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NHN</definition>
+        <argsstring></argsstring>
+        <name>NHN</name>
+        <qualifiedname>agi::acados::MpcWrapper::NHN</qualifiedname>
+        <initializer>= DRONE_MODEL_NHN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="48" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a68bbb35335f09c1b32297b7cb61a804e" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NPHIN</definition>
+        <argsstring></argsstring>
+        <name>NPHIN</name>
+        <qualifiedname>agi::acados::MpcWrapper::NPHIN</qualifiedname>
+        <initializer>= DRONE_MODEL_NPHIN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="49" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a67076845e117946fda0b47b346e831d1" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NR</definition>
+        <argsstring></argsstring>
+        <name>NR</name>
+        <qualifiedname>agi::acados::MpcWrapper::NR</qualifiedname>
+        <initializer>= DRONE_MODEL_NR</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="50" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1ac35f0f6ec66b6c518653cfff18e185f2" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::acados::MpcWrapper::NQ</definition>
+        <argsstring></argsstring>
+        <name>NQ</name>
+        <qualifiedname>agi::acados::MpcWrapper::NQ</qualifiedname>
+        <initializer>= NY - NU</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="52" column="24" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a35547a8a37f9875dbed7e4230e642a1d" prot="private" static="no" mutable="no">
+        <type><ref refid="structdrone__model__solver__capsule" kindref="compound">drone_model_solver_capsule</ref> *</type>
+        <definition>drone_model_solver_capsule* agi::acados::MpcWrapper::p_acados_ocp_capsule_</definition>
+        <argsstring></argsstring>
+        <name>p_acados_ocp_capsule_</name>
+        <qualifiedname>agi::acados::MpcWrapper::p_acados_ocp_capsule_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="111" column="30" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1abc658381b7192c9e071863abfba9d58a" prot="private" static="no" mutable="no">
+        <type>ocp_nlp_config *</type>
+        <definition>ocp_nlp_config* agi::acados::MpcWrapper::p_nlp_config_</definition>
+        <argsstring></argsstring>
+        <name>p_nlp_config_</name>
+        <qualifiedname>agi::acados::MpcWrapper::p_nlp_config_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="112" column="18" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a8866554855398800104085799e4f1305" prot="private" static="no" mutable="no">
+        <type>ocp_nlp_dims *</type>
+        <definition>ocp_nlp_dims* agi::acados::MpcWrapper::p_nlp_dims_</definition>
+        <argsstring></argsstring>
+        <name>p_nlp_dims_</name>
+        <qualifiedname>agi::acados::MpcWrapper::p_nlp_dims_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="113" column="16" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1acdb4479d1e8adc33113591180d3dea31" prot="private" static="no" mutable="no">
+        <type>ocp_nlp_in *</type>
+        <definition>ocp_nlp_in* agi::acados::MpcWrapper::p_nlp_in_</definition>
+        <argsstring></argsstring>
+        <name>p_nlp_in_</name>
+        <qualifiedname>agi::acados::MpcWrapper::p_nlp_in_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="114" column="14" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a244a210f60f639841f018d3267cf9269" prot="private" static="no" mutable="no">
+        <type>ocp_nlp_out *</type>
+        <definition>ocp_nlp_out* agi::acados::MpcWrapper::p_nlp_out_</definition>
+        <argsstring></argsstring>
+        <name>p_nlp_out_</name>
+        <qualifiedname>agi::acados::MpcWrapper::p_nlp_out_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="115" column="15" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a06ad9a3d3ff91713f7b990d1e6e91dcf" prot="private" static="no" mutable="no">
+        <type>ocp_nlp_solver *</type>
+        <definition>ocp_nlp_solver* agi::acados::MpcWrapper::p_nlp_solver_</definition>
+        <argsstring></argsstring>
+        <name>p_nlp_solver_</name>
+        <qualifiedname>agi::acados::MpcWrapper::p_nlp_solver_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="116" column="18" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1ac2b030ad2cd72220233796cb229fa6ff" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* agi::acados::MpcWrapper::p_nlp_opts_</definition>
+        <argsstring></argsstring>
+        <name>p_nlp_opts_</name>
+        <qualifiedname>agi::acados::MpcWrapper::p_nlp_opts_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="117" column="8" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a45494bbed138ae55cbbbccfb04483991" prot="private" static="no" mutable="no">
+        <type>Matrix&lt; NX, N+1 &gt;</type>
+        <definition>Matrix&lt;NX, N + 1&gt; agi::acados::MpcWrapper::states_pred_</definition>
+        <argsstring></argsstring>
+        <name>states_pred_</name>
+        <qualifiedname>agi::acados::MpcWrapper::states_pred_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="119" column="10" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1aeb5a3c9643b7a12b98f38ddf5ec2329e" prot="private" static="no" mutable="no">
+        <type>Matrix&lt; NU, N &gt;</type>
+        <definition>Matrix&lt;NU, N&gt; agi::acados::MpcWrapper::inputs_pred_</definition>
+        <argsstring></argsstring>
+        <name>inputs_pred_</name>
+        <qualifiedname>agi::acados::MpcWrapper::inputs_pred_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="120" column="10" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a3f8260cb7bafa625c9afd7bc91351d7d" prot="private" static="no" mutable="no">
+        <type>Matrix&lt; NP, N+1 &gt;</type>
+        <definition>Matrix&lt;NP, N + 1&gt; agi::acados::MpcWrapper::online_params_</definition>
+        <argsstring></argsstring>
+        <name>online_params_</name>
+        <qualifiedname>agi::acados::MpcWrapper::online_params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="121" column="10" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1ae5dbfbbee44ef30542021f89d1c570ff" prot="private" static="no" mutable="no">
+        <type>Matrix&lt; NBX, N &gt;</type>
+        <definition>Matrix&lt;NBX, N&gt; agi::acados::MpcWrapper::lbx_</definition>
+        <argsstring></argsstring>
+        <name>lbx_</name>
+        <qualifiedname>agi::acados::MpcWrapper::lbx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="123" column="10" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1afe186b9f1ea07d5c1c1d0c5f4829bb71" prot="private" static="no" mutable="no">
+        <type>Matrix&lt; NBX, N &gt;</type>
+        <definition>Matrix&lt;NBX, N&gt; agi::acados::MpcWrapper::ubx_</definition>
+        <argsstring></argsstring>
+        <name>ubx_</name>
+        <qualifiedname>agi::acados::MpcWrapper::ubx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="124" column="10" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a645f9ba2902e820d00354f99552a9fa1" prot="private" static="no" mutable="no">
+        <type>Matrix&lt; NBU, N &gt;</type>
+        <definition>Matrix&lt;NBU, N&gt; agi::acados::MpcWrapper::lbu_</definition>
+        <argsstring></argsstring>
+        <name>lbu_</name>
+        <qualifiedname>agi::acados::MpcWrapper::lbu_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="125" column="10" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a1950d7b634c169997b96d5b4cc449b3c" prot="private" static="no" mutable="no">
+        <type>Matrix&lt; NBU, N &gt;</type>
+        <definition>Matrix&lt;NBU, N&gt; agi::acados::MpcWrapper::ubu_</definition>
+        <argsstring></argsstring>
+        <name>ubu_</name>
+        <qualifiedname>agi::acados::MpcWrapper::ubu_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="126" column="10" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a6c614fee4d2b10fc8e89242c14a3bc3d" prot="private" static="no" mutable="no">
+        <type>const VectorInt&lt; NBX &gt;</type>
+        <definition>const VectorInt&lt;NBX&gt; agi::acados::MpcWrapper::constr_idx_x_</definition>
+        <argsstring></argsstring>
+        <name>constr_idx_x_</name>
+        <qualifiedname>agi::acados::MpcWrapper::constr_idx_x_</qualifiedname>
+        <initializer>=
+    (VectorInt&lt;NBX&gt;() &lt;&lt; 10, 11, 12).finished()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="128" column="19" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1aa909f9ab2330bb61ffcad29cd19bb8dc" prot="private" static="no" mutable="no">
+        <type>const VectorInt&lt; NBU &gt;</type>
+        <definition>const VectorInt&lt;NBU&gt; agi::acados::MpcWrapper::constr_idx_u_</definition>
+        <argsstring></argsstring>
+        <name>constr_idx_u_</name>
+        <qualifiedname>agi::acados::MpcWrapper::constr_idx_u_</qualifiedname>
+        <initializer>=
+    (VectorInt&lt;NBU&gt;() &lt;&lt; 0, 1, 2, 3).finished()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="130" column="19" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1acb8339be33d4b9bc84447e2d05ba9624" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::acados::MpcWrapper::dt_</definition>
+        <argsstring></argsstring>
+        <name>dt_</name>
+        <qualifiedname>agi::acados::MpcWrapper::dt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="136" column="10" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1acados_1_1MpcWrapper_1a76c6d38a200473e80cd76161969123d1" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref></type>
+        <definition>Logger agi::acados::MpcWrapper::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>agi::acados::MpcWrapper::logger_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="141" column="10" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a434a9806bac2f0b459bc0825091d32f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::acados::MpcWrapper::MpcWrapper</definition>
+        <argsstring>()</argsstring>
+        <name>MpcWrapper</name>
+        <qualifiedname>agi::acados::MpcWrapper::MpcWrapper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="17" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1aee9859b212a0690b847e55cca53f212e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::acados::MpcWrapper::~MpcWrapper</definition>
+        <argsstring>()</argsstring>
+        <name>~MpcWrapper</name>
+        <qualifiedname>agi::acados::MpcWrapper::~MpcWrapper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="18" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a8be0670120eba51c10ea57f7681f4655" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setInitialState</definition>
+        <argsstring>(const Vector&lt; NX &gt; &amp;state)</argsstring>
+        <name>setInitialState</name>
+        <qualifiedname>agi::acados::MpcWrapper::setInitialState</qualifiedname>
+        <param>
+          <type>const Vector&lt; NX &gt; &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="54" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a7b60838bbda0eb6f54e4b6615feca082" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int agi::acados::MpcWrapper::update</definition>
+        <argsstring>(const Vector&lt; NX &gt; &amp;state)</argsstring>
+        <name>update</name>
+        <qualifiedname>agi::acados::MpcWrapper::update</qualifiedname>
+        <param>
+          <type>const Vector&lt; NX &gt; &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="55" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a091d387865f8cec57b1e11de5e450521" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setStateConstraint</definition>
+        <argsstring>(const Vector&lt;&gt; &amp;state_lb, const Vector&lt;&gt; &amp;state_ub, const int index, const VectorInt&lt;&gt; &amp;indexes_constr=(VectorInt&lt; NX &gt;()&lt;&lt; 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12).finished())</argsstring>
+        <name>setStateConstraint</name>
+        <qualifiedname>agi::acados::MpcWrapper::setStateConstraint</qualifiedname>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>state_lb</declname>
+        </param>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>state_ub</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const VectorInt&lt;&gt; &amp;</type>
+          <declname>indexes_constr</declname>
+          <defval>(VectorInt&lt; NX &gt;()&lt;&lt; 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12).finished()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="56" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a65405effedc0adc40a891fb534614303" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setBodyRateConstraints</definition>
+        <argsstring>(const Vector&lt; 3 &gt; &amp;lower_bound, const Vector&lt; 3 &gt; &amp;upper_bound)</argsstring>
+        <name>setBodyRateConstraints</name>
+        <qualifiedname>agi::acados::MpcWrapper::setBodyRateConstraints</qualifiedname>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>lower_bound</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>upper_bound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="61" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1ad710d702bc96325390ed06cd24fd2038" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setInputConstraint</definition>
+        <argsstring>(const Vector&lt;&gt; &amp;input_lb, const Vector&lt;&gt; &amp;input_ub, const int index, const VectorInt&lt;&gt; &amp;indexes_constr=(VectorInt&lt; NU &gt;()&lt;&lt; 0, 1, 2, 3).finished())</argsstring>
+        <name>setInputConstraint</name>
+        <qualifiedname>agi::acados::MpcWrapper::setInputConstraint</qualifiedname>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>input_lb</declname>
+        </param>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>input_ub</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const VectorInt&lt;&gt; &amp;</type>
+          <declname>indexes_constr</declname>
+          <defval>(VectorInt&lt; NU &gt;()&lt;&lt; 0, 1, 2, 3).finished()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="64" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a3c4566af12e5ee1f141c746ce1ba5b4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setThrustConstraints</definition>
+        <argsstring>(const Vector&lt; NU &gt; &amp;lower_bound, const Vector&lt; NU &gt; &amp;upper_bound)</argsstring>
+        <name>setThrustConstraints</name>
+        <qualifiedname>agi::acados::MpcWrapper::setThrustConstraints</qualifiedname>
+        <param>
+          <type>const Vector&lt; NU &gt; &amp;</type>
+          <declname>lower_bound</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; NU &gt; &amp;</type>
+          <declname>upper_bound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="69" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a96a3d59bc79bfd4e67aa4d660e83dc62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const Vector&lt; NX &gt;</type>
+        <definition>const Vector&lt; NX &gt; agi::acados::MpcWrapper::getState</definition>
+        <argsstring>(const int i) const</argsstring>
+        <name>getState</name>
+        <qualifiedname>agi::acados::MpcWrapper::getState</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="73" column="23" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="73" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a0ca6ae2b52ba75d06f5cc51ee9c01e60" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const Matrix&lt; NX, N+1 &gt;</type>
+        <definition>const Matrix&lt; NX, N+1 &gt; agi::acados::MpcWrapper::getStates</definition>
+        <argsstring>() const</argsstring>
+        <name>getStates</name>
+        <qualifiedname>agi::acados::MpcWrapper::getStates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="76" column="23" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a6b42f4f75a5323cd0bb452bbe1bf7685" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const Vector&lt; NU &gt;</type>
+        <definition>const Vector&lt; NU &gt; agi::acados::MpcWrapper::getInput</definition>
+        <argsstring>(const int i) const</argsstring>
+        <name>getInput</name>
+        <qualifiedname>agi::acados::MpcWrapper::getInput</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="78" column="23" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a1e870af6826120b15817ef4cd950973e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const Matrix&lt; NU, N &gt;</type>
+        <definition>const Matrix&lt; NU, N &gt; agi::acados::MpcWrapper::getInputs</definition>
+        <argsstring>() const</argsstring>
+        <name>getInputs</name>
+        <qualifiedname>agi::acados::MpcWrapper::getInputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="81" column="23" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1ae31dfbe6e08b0eb9132c9e6bd426d742" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setReference</definition>
+        <argsstring>(const Vector&lt; NX &gt; &amp;state_ref, const Vector&lt; NU &gt; &amp;input_ref, const int i)</argsstring>
+        <name>setReference</name>
+        <qualifiedname>agi::acados::MpcWrapper::setReference</qualifiedname>
+        <param>
+          <type>const Vector&lt; NX &gt; &amp;</type>
+          <declname>state_ref</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; NU &gt; &amp;</type>
+          <declname>input_ref</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="84" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a3c2aa2f11ce73a0b058eacaa1498f14e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setReferences</definition>
+        <argsstring>(const Matrix&lt; NX, N &gt; &amp;state_refs, const Matrix&lt; NU, N &gt; &amp;input_refs)</argsstring>
+        <name>setReferences</name>
+        <qualifiedname>agi::acados::MpcWrapper::setReferences</qualifiedname>
+        <param>
+          <type>const Matrix&lt; NX, N &gt; &amp;</type>
+          <declname>state_refs</declname>
+        </param>
+        <param>
+          <type>const Matrix&lt; NU, N &gt; &amp;</type>
+          <declname>input_refs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="86" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a57e726e4de8c17324f36c4b1ac47d0cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setReferenceN</definition>
+        <argsstring>(const Vector&lt; NX &gt; &amp;state_ref_N)</argsstring>
+        <name>setReferenceN</name>
+        <qualifiedname>agi::acados::MpcWrapper::setReferenceN</qualifiedname>
+        <param>
+          <type>const Vector&lt; NX &gt; &amp;</type>
+          <declname>state_ref_N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="88" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a32b4071808eba2f275ac6748d29b2645" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setCosts</definition>
+        <argsstring>(const Matrix&lt; NY, NY *N &gt; Ws, const Scalar gamma=1.0)</argsstring>
+        <name>setCosts</name>
+        <qualifiedname>agi::acados::MpcWrapper::setCosts</qualifiedname>
+        <param>
+          <type>const Matrix&lt; NY, NY *N &gt;</type>
+          <declname>Ws</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>gamma</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="90" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a48ef0d54fb365fdae536764b1a95627e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setCost</definition>
+        <argsstring>(const Matrix&lt; NY, NY &gt; &amp;W, const int i)</argsstring>
+        <name>setCost</name>
+        <qualifiedname>agi::acados::MpcWrapper::setCost</qualifiedname>
+        <param>
+          <type>const Matrix&lt; NY, NY &gt; &amp;</type>
+          <declname>W</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="91" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1af7069d83896eb4d2dee974a933e888b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setCostN</definition>
+        <argsstring>(const Matrix&lt; NYN, NYN &gt; &amp;W_N, const Scalar gamma=1.0)</argsstring>
+        <name>setCostN</name>
+        <qualifiedname>agi::acados::MpcWrapper::setCostN</qualifiedname>
+        <param>
+          <type>const Matrix&lt; NYN, NYN &gt; &amp;</type>
+          <declname>W_N</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>gamma</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="92" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1ab5bc302edb690b909ee00b77de624a0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setMass</definition>
+        <argsstring>(const Vector&lt; N+1 &gt; &amp;mass)</argsstring>
+        <name>setMass</name>
+        <qualifiedname>agi::acados::MpcWrapper::setMass</qualifiedname>
+        <param>
+          <type>const Vector&lt; N+1 &gt; &amp;</type>
+          <declname>mass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="93" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1af8116062bb9e0d5831ea961072ebc26f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setAeroCoeffs</definition>
+        <argsstring>(const Matrix&lt; 3, N+1 &gt; &amp;aero_coeff_1, const Matrix&lt; 3, N+1 &gt; &amp;aero_coeff_3, const Vector&lt; N+1 &gt; &amp;aero_coeff_h)</argsstring>
+        <name>setAeroCoeffs</name>
+        <qualifiedname>agi::acados::MpcWrapper::setAeroCoeffs</qualifiedname>
+        <param>
+          <type>const Matrix&lt; 3, N+1 &gt; &amp;</type>
+          <declname>aero_coeff_1</declname>
+        </param>
+        <param>
+          <type>const Matrix&lt; 3, N+1 &gt; &amp;</type>
+          <declname>aero_coeff_3</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; N+1 &gt; &amp;</type>
+          <declname>aero_coeff_h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="94" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1acaa0d5858a200af5ae615322dc2b3755" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setArmLengths</definition>
+        <argsstring>(const Matrix&lt; 3, 4 &gt; &amp;t_BM)</argsstring>
+        <name>setArmLengths</name>
+        <qualifiedname>agi::acados::MpcWrapper::setArmLengths</qualifiedname>
+        <param>
+          <type>const Matrix&lt; 3, 4 &gt; &amp;</type>
+          <declname>t_BM</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="97" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1abf56ad750268edad31b72929aaf0fd26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setKappa</definition>
+        <argsstring>(const Vector&lt; N+1 &gt; &amp;kappa)</argsstring>
+        <name>setKappa</name>
+        <qualifiedname>agi::acados::MpcWrapper::setKappa</qualifiedname>
+        <param>
+          <type>const Vector&lt; N+1 &gt; &amp;</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="98" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a8e68cf4203eb2387a866d1fa3a31580f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setInertia</definition>
+        <argsstring>(const Vector&lt; 3 &gt; &amp;inertia)</argsstring>
+        <name>setInertia</name>
+        <qualifiedname>agi::acados::MpcWrapper::setInertia</qualifiedname>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>inertia</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="99" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a2681c4f4b77344a96bec44a4ee8c7c4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setStatesPred</definition>
+        <argsstring>(const Matrix&lt; NX, N+1 &gt; states)</argsstring>
+        <name>setStatesPred</name>
+        <qualifiedname>agi::acados::MpcWrapper::setStatesPred</qualifiedname>
+        <param>
+          <type>const Matrix&lt; NX, N+1 &gt;</type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="101" column="15" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="101" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a46b281d509ed115b773cdeaa80426218" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setInputsPred</definition>
+        <argsstring>(const Matrix&lt; NU, N &gt; inputs)</argsstring>
+        <name>setInputsPred</name>
+        <qualifiedname>agi::acados::MpcWrapper::setInputsPred</qualifiedname>
+        <param>
+          <type>const Matrix&lt; NU, N &gt;</type>
+          <declname>inputs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="105" column="15" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a4db99c737f4f92dd7d9b47c59666fb75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::acados::MpcWrapper::getDt</definition>
+        <argsstring>()</argsstring>
+        <name>getDt</name>
+        <qualifiedname>agi::acados::MpcWrapper::getDt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="108" column="17" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="108" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a7cf301b022eeec7ef561d226bab219f3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::updateInputConstraints</definition>
+        <argsstring>()</argsstring>
+        <name>updateInputConstraints</name>
+        <qualifiedname>agi::acados::MpcWrapper::updateInputConstraints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="133" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1ad8d20541a17b3ffb5f071709aef95e4d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::updateStateConstraints</definition>
+        <argsstring>()</argsstring>
+        <name>updateStateConstraints</name>
+        <qualifiedname>agi::acados::MpcWrapper::updateStateConstraints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="134" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a45678ce7fb051900a91bea63b536b64b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::updateOnlineParams</definition>
+        <argsstring>()</argsstring>
+        <name>updateOnlineParams</name>
+        <qualifiedname>agi::acados::MpcWrapper::updateOnlineParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="138" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1acados_1_1MpcWrapper_1a584290ef9c4384937ddb04bbe0d56119" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::acados::MpcWrapper::setQuaternionReference</definition>
+        <argsstring>(const Vector&lt; 4 &gt; &amp;q_ref, const int i)</argsstring>
+        <name>setQuaternionReference</name>
+        <qualifiedname>agi::acados::MpcWrapper::setQuaternionReference</qualifiedname>
+        <param>
+          <type>const Vector&lt; 4 &gt; &amp;</type>
+          <declname>q_ref</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="139" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/controller/mpc/wrapper.hpp" line="14" column="1" bodyfile="agilib/include/agilib/controller/mpc/wrapper.hpp" bodystart="14" bodyend="193"/>
+    <listofallmembers>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da88a6cb2f4e8fb4503357f79162b3a535" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>CDX1</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dae342a3fab2d3249d96e894874fb90d49" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>CDX3</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dab46063743e407d1ecc7411320d7f75bf" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>CDY1</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dac06ac8d8d2cdd30b8396eeedd77f5d6a" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>CDY3</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648daef0ad3df2e9afb5599678108c8930703" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>CDZ1</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dab132366555ea2831d1fe0a7ffedb33bb" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>CDZ3</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dac7bf1739dd122a9f73451bc4adbaabd2" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>CDZH</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1aa909f9ab2330bb61ffcad29cd19bb8dc" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>constr_idx_u_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a6c614fee4d2b10fc8e89242c14a3bc3d" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>constr_idx_x_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1acb8339be33d4b9bc84447e2d05ba9624" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>dt_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a4db99c737f4f92dd7d9b47c59666fb75" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>getDt</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a6b42f4f75a5323cd0bb452bbe1bf7685" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>getInput</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a1e870af6826120b15817ef4cd950973e" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>getInputs</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a96a3d59bc79bfd4e67aa4d660e83dc62" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>getState</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a0ca6ae2b52ba75d06f5cc51ee9c01e60" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>getStates</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da6f34614c31a314e9431e6366e6b8859e" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>I_XX</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da30dc20d8f4d42eaf6b2313c4e7c622e0" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>I_YY</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da7feed26b6c2f2b62015521840da0d564" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>I_ZZ</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a06bca148639ead7403a07f71dad5a5c1" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>INPUTCONSTR</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1aeb5a3c9643b7a12b98f38ddf5ec2329e" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>inputs_pred_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da9e2428e82b91638f8c45da7c7dadffc0" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>KAPPA</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da0a9e4d07fd87644724727c5d3e561000" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>L_X_0</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da75949a8b8e57ac3c2226ebab7ac8050c" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>L_X_1</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da3a644fc39936dfb373a0252ec9bcfccc" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>L_X_2</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648daee62c5997a745d3cda9ffc8f3a5dc8e9" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>L_X_3</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dae21336e1312f21395ecb499a4a786219" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>L_Y_0</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dab3dcef4154bd52089e8f937309bc9c33" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>L_Y_1</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da7484f041f5cb6e22a0101c8614fe2348" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>L_Y_2</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da44e92395353f0dc54ceaa130e89af927" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>L_Y_3</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a645f9ba2902e820d00354f99552a9fa1" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>lbu_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1ae5dbfbbee44ef30542021f89d1c570ff" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>lbx_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a76c6d38a200473e80cd76161969123d1" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>logger_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da9a122c55c3ca1eb4a3ffd7dfa2199d3e" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>MASS</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a434a9806bac2f0b459bc0825091d32f0" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>MpcWrapper</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a52a3cf8b09171c7678ad5602574355e1" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>N</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1aa53f47407945f3d7c5459ed9fa7e73f9" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NBU</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a991c944a46074d666a4f72618149a01e" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NBX</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1ad02ffc82c3fce2c632657b266dbc22cb" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NBX0</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1af36873c9e287b007662875d8ae060f01" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NBXN</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a665d4eb6a895afb499ac8c087990a64c" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NG</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a8fda766fd30c272dd4f3a6666c242210" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NGN</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1aad5cd2123e3110eb45b995be027d4984" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NH</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1af13b81636bd2fee2aeb19541436d1121" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NHN</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a185d781ac4e85fb7bf6f0ab463562333" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NP</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a49878ead3c510f8fe4d14433601d617c" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NPHI</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a68bbb35335f09c1b32297b7cb61a804e" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NPHIN</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1ac35f0f6ec66b6c518653cfff18e185f2" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NQ</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a67076845e117946fda0b47b346e831d1" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NR</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a7ced298fcf45a8aedb6adb524ef09a2f" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NS</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a55add843eba6bdfd9150ac3a5302c838" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NSBU</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a378577c367bd72b857078d20bbc4f702" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NSBX</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a86ff47378a24984517541a9fff9c003f" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NSBXN</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a60d70073bff73e96f120905c77763799" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NSG</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a6d4438f02dea4e6a85205a26d72ba78d" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NSGN</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a6331e8e7e51ecfb905c48ccc80476343" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NSH</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1ae181aa0f629e4a5e3d38f1b19191cbfa" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NSHN</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a6c12f9de8708b0e59d30475bb130b9ec" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NSN</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1aa33d85e40d851c795e3e97fc23516147" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NSPHI</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1ac5a2de18d038bb82040e6e03ab245c8c" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NSPHIN</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a2ef61e9388b69a6e39d10a7173511333" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NU</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a60738a731a591ecafbd22eb13a9c9fe5" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NX</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a101475e0caaf00bb2a6e3be863c89851" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NY</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a59e0be027605b3b8c5aeb71cb3d3d8bb" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NY0</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a13a5f6d00b01b024b056c1abcc0aeee3" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NYN</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1acec5dbf3009b0524e618e2ed01bda95d" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>NZ</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1aa872362cb69dad3e47a40684ffcd5b0aadaa47f915fe3384c6f031c25ed9facc8" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>OMEGA_X</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1aa872362cb69dad3e47a40684ffcd5b0aa56a05c6d4b7443df44f2883dfc381364" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>OMEGA_Y</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1aa872362cb69dad3e47a40684ffcd5b0aa98039d3134cf529f8634df4bd6238205" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>OMEGA_Z</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a3f8260cb7bafa625c9afd7bc91351d7d" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>online_params_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648d" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>ONLPARAMIDX</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a35547a8a37f9875dbed7e4230e642a1d" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>p_acados_ocp_capsule_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1abc658381b7192c9e071863abfba9d58a" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>p_nlp_config_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a8866554855398800104085799e4f1305" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>p_nlp_dims_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1acdb4479d1e8adc33113591180d3dea31" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>p_nlp_in_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1ac2b030ad2cd72220233796cb229fa6ff" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>p_nlp_opts_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a244a210f60f639841f018d3267cf9269" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>p_nlp_out_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a06ad9a3d3ff91713f7b990d1e6e91dcf" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>p_nlp_solver_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dac40e295129592b0ce84d8a613e31d867" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>Q_REF_0</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dadc2c9c34df64cdb7c99238e6e0af5fd1" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>Q_REF_1</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648dab48734de11842901067318a6cf99a8e6" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>Q_REF_2</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a09bad90dd9c237f521a8623b2609648da35d9fbcb3b0396fb8e8f97de6b26bec1" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>Q_REF_3</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1aede906ea97aa108b2ca6d3f44ebc5c24a6f671a9d6d4173fc2778ab0284cd2eac" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>REFATT</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1aede906ea97aa108b2ca6d3f44ebc5c24" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>REFIDX</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1aede906ea97aa108b2ca6d3f44ebc5c24a0e71ed62b586dc193f4484977bf767bc" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>REFOME</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1aede906ea97aa108b2ca6d3f44ebc5c24a89cec7e6eff704b865d36656c0b435a6" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>REFPOS</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1aede906ea97aa108b2ca6d3f44ebc5c24ae684a8fc034715c956f6323e61fcd254" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>REFU</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1aede906ea97aa108b2ca6d3f44ebc5c24a41196005cd1640acd5ce1f4eb1aa1aaa" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>REFVEL</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1af8116062bb9e0d5831ea961072ebc26f" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setAeroCoeffs</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1acaa0d5858a200af5ae615322dc2b3755" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setArmLengths</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a65405effedc0adc40a891fb534614303" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setBodyRateConstraints</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a48ef0d54fb365fdae536764b1a95627e" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setCost</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1af7069d83896eb4d2dee974a933e888b1" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setCostN</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a32b4071808eba2f275ac6748d29b2645" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setCosts</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a8e68cf4203eb2387a866d1fa3a31580f" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setInertia</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a8be0670120eba51c10ea57f7681f4655" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setInitialState</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1ad710d702bc96325390ed06cd24fd2038" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setInputConstraint</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a46b281d509ed115b773cdeaa80426218" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setInputsPred</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1abf56ad750268edad31b72929aaf0fd26" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setKappa</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1ab5bc302edb690b909ee00b77de624a0e" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setMass</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a584290ef9c4384937ddb04bbe0d56119" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setQuaternionReference</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1ae31dfbe6e08b0eb9132c9e6bd426d742" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setReference</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a57e726e4de8c17324f36c4b1ac47d0cb" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setReferenceN</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a3c2aa2f11ce73a0b058eacaa1498f14e" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setReferences</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a091d387865f8cec57b1e11de5e450521" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setStateConstraint</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a2681c4f4b77344a96bec44a4ee8c7c4a" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setStatesPred</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a3c4566af12e5ee1f141c746ce1ba5b4b" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>setThrustConstraints</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a3be0d6d99f087061433897ae369b7146ab30d77cfe9dc630d877f4b186e2265a0" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>STATEATT</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1aa872362cb69dad3e47a40684ffcd5b0a" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>STATECONSTR</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a3be0d6d99f087061433897ae369b7146" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>STATEIDX</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a3be0d6d99f087061433897ae369b7146ad60d329ea42334927acfca5b6346fe52" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>STATEOME</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a3be0d6d99f087061433897ae369b7146a4ed6f8b9040282a059e3ae9423d1993f" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>STATEPOS</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a45494bbed138ae55cbbbccfb04483991" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>states_pred_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a3be0d6d99f087061433897ae369b7146a0c93e78a53579384e2cb6f3e962ea3a5" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>STATEVEL</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a06bca148639ead7403a07f71dad5a5c1ae0d5c92aaea5ec0a7e61d9d664df538b" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>T_0</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a06bca148639ead7403a07f71dad5a5c1a71cee41a209a3b508b09b24834d38306" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>T_1</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a06bca148639ead7403a07f71dad5a5c1a12fd4cbb3e7bacf57df3b755b3d5e2a8" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>T_2</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a06bca148639ead7403a07f71dad5a5c1a7c60c814c8b9b400e9f9b8a50d85abb9" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>T_3</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a1950d7b634c169997b96d5b4cc449b3c" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>ubu_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1afe186b9f1ea07d5c1c1d0c5f4829bb71" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>ubx_</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a7b60838bbda0eb6f54e4b6615feca082" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>update</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a7cf301b022eeec7ef561d226bab219f3" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>updateInputConstraints</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1a45678ce7fb051900a91bea63b536b64b" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>updateOnlineParams</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1ad8d20541a17b3ffb5f071709aef95e4d" prot="private" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>updateStateConstraints</name></member>
+      <member refid="classagi_1_1acados_1_1MpcWrapper_1aee9859b212a0690b847e55cca53f212e" prot="public" virt="non-virtual"><scope>agi::acados::MpcWrapper</scope><name>~MpcWrapper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

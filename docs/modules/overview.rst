@@ -2,7 +2,10 @@
 Modules Overview
 ################
 
-To be completed soon!
+The core Agilicious library is built around Modules that are gathered into pipelines and run sequentially.
+
+
+
 
 .. toctree::
     :maxdepth: 2
@@ -16,3 +19,4 @@ To be completed soon!
     References <references>
     Controllers <controller>
     Bridge <bridge>
+

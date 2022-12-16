@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1PropellerData" kind="struct" language="C++" prot="public">
+    <compoundname>agi::PropellerData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1ad96b63ccaf46616b38e2a0a812c2f006" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::rho_</definition>
+        <argsstring></argsstring>
+        <name>rho_</name>
+        <qualifiedname>agi::PropellerData::rho_</qualifiedname>
+        <initializer>= 1.204</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="13" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1af81b45f1032cf52228516237395c27c2" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::r_prop_</definition>
+        <argsstring></argsstring>
+        <name>r_prop_</name>
+        <qualifiedname>agi::PropellerData::r_prop_</qualifiedname>
+        <initializer>= 5.1 * 2.54 / 2.0 * 1e-02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="14" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1a9ee0887eac3bbc20c3b582a1ff499a91" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::prop_area_</definition>
+        <argsstring></argsstring>
+        <name>prop_area_</name>
+        <qualifiedname>agi::PropellerData::prop_area_</qualifiedname>
+        <initializer>= M_PI * r_prop_ * r_prop_</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="15" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1a2209443d9b767c8bcb12f03a345dac65" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::ef_</definition>
+        <argsstring></argsstring>
+        <name>ef_</name>
+        <qualifiedname>agi::PropellerData::ef_</qualifiedname>
+        <initializer>= 0.1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="16" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1aaf20df377fbbd98c79b7addf4e59943f" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::e_</definition>
+        <argsstring></argsstring>
+        <name>e_</name>
+        <qualifiedname>agi::PropellerData::e_</qualifiedname>
+        <initializer>= ef_ * r_prop_</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="17" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1a1e67265ede6690034c30523a57ff436c" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::sigma_</definition>
+        <argsstring></argsstring>
+        <name>sigma_</name>
+        <qualifiedname>agi::PropellerData::sigma_</qualifiedname>
+        <initializer>= 0.215</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="18" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1a6d9ad79d3431b91e69d8ea47db182d9d" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::theta0_</definition>
+        <argsstring></argsstring>
+        <name>theta0_</name>
+        <qualifiedname>agi::PropellerData::theta0_</qualifiedname>
+        <initializer>= toRad(22.95)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="19" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1a2a92bf86a49e76db30e55dc419404e34" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::theta1_</definition>
+        <argsstring></argsstring>
+        <name>theta1_</name>
+        <qualifiedname>agi::PropellerData::theta1_</qualifiedname>
+        <initializer>= toRad(-8.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="20" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1a17091ba3e7338736c44c14ea715f50c0" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::b_</definition>
+        <argsstring></argsstring>
+        <name>b_</name>
+        <qualifiedname>agi::PropellerData::b_</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="21" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1a960d402d900c0995a82dbcbf5a74791b" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::ci_</definition>
+        <argsstring></argsstring>
+        <name>ci_</name>
+        <qualifiedname>agi::PropellerData::ci_</qualifiedname>
+        <initializer>= 1.7 * 1e-02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="22" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1a379c82d1805531e46cfde4e767d46f5b" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::co_</definition>
+        <argsstring></argsstring>
+        <name>co_</name>
+        <qualifiedname>agi::PropellerData::co_</qualifiedname>
+        <initializer>= 0.8 * 1e-02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="23" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1a5b8dbf478eb657d49ed5e6574aa2f965" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::mb_</definition>
+        <argsstring></argsstring>
+        <name>mb_</name>
+        <qualifiedname>agi::PropellerData::mb_</qualifiedname>
+        <initializer>= 1.22e-3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="24" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1aa9658217fe68dcab9983c9621c03cff6" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::cg_</definition>
+        <argsstring></argsstring>
+        <name>cg_</name>
+        <qualifiedname>agi::PropellerData::cg_</qualifiedname>
+        <initializer>= 2.7e-3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="25" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1abeb75140d5fac24c653ebdbf2b567430" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::inertia_blade_</definition>
+        <argsstring></argsstring>
+        <name>inertia_blade_</name>
+        <qualifiedname>agi::PropellerData::inertia_blade_</qualifiedname>
+        <initializer>=
+    mb_ * cg_ * cg_ + 0.25 * r_prop_ * r_prop_ / 12.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="26" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1aa02578b4d76bbda74a2dee6b1042475f" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::moment_blade_</definition>
+        <argsstring></argsstring>
+        <name>moment_blade_</name>
+        <qualifiedname>agi::PropellerData::moment_blade_</qualifiedname>
+        <initializer>= mb_ * cg_ * G</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="28" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1a502e731d7e91e11b82b371c8920bb7b5" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::cd_</definition>
+        <argsstring></argsstring>
+        <name>cd_</name>
+        <qualifiedname>agi::PropellerData::cd_</qualifiedname>
+        <initializer>= 4.168863</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="29" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1a86690fb7f6369c3d2f1aa426c758c169" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::cl_</definition>
+        <argsstring></argsstring>
+        <name>cl_</name>
+        <qualifiedname>agi::PropellerData::cl_</qualifiedname>
+        <initializer>= 4.797071</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="30" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PropellerData_1a8181557d2dbfc6d88ee996bda61e3b66" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PropellerData::k_spring_</definition>
+        <argsstring></argsstring>
+        <name>k_spring_</name>
+        <qualifiedname>agi::PropellerData::k_spring_</qualifiedname>
+        <initializer>= 5.89</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="31" column="10" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1PropellerData_1a4a6ad79fc3e69564ea24eb2589c30642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PropellerData::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <qualifiedname>agi::PropellerData::update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="33" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1PropellerData_1a4cf82600491836ea18697ee5800a96df" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PropellerData::valid</definition>
+        <argsstring>() const</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::PropellerData::valid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="34" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structagi_1_1PropellerData_1abecd0e99ba02273fa6deabd94d1ddf85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const PropellerData &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::PropellerData::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1PropellerData" kindref="compound">PropellerData</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="35" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/simulator/bem/propeller_data.hpp" line="11" column="1" bodyfile="agilib/include/agilib/simulator/bem/propeller_data.hpp" bodystart="11" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structagi_1_1PropellerData_1a17091ba3e7338736c44c14ea715f50c0" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>b_</name></member>
+      <member refid="structagi_1_1PropellerData_1a502e731d7e91e11b82b371c8920bb7b5" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>cd_</name></member>
+      <member refid="structagi_1_1PropellerData_1aa9658217fe68dcab9983c9621c03cff6" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>cg_</name></member>
+      <member refid="structagi_1_1PropellerData_1a960d402d900c0995a82dbcbf5a74791b" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>ci_</name></member>
+      <member refid="structagi_1_1PropellerData_1a86690fb7f6369c3d2f1aa426c758c169" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>cl_</name></member>
+      <member refid="structagi_1_1PropellerData_1a379c82d1805531e46cfde4e767d46f5b" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>co_</name></member>
+      <member refid="structagi_1_1PropellerData_1aaf20df377fbbd98c79b7addf4e59943f" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>e_</name></member>
+      <member refid="structagi_1_1PropellerData_1a2209443d9b767c8bcb12f03a345dac65" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>ef_</name></member>
+      <member refid="structagi_1_1PropellerData_1abeb75140d5fac24c653ebdbf2b567430" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>inertia_blade_</name></member>
+      <member refid="structagi_1_1PropellerData_1a8181557d2dbfc6d88ee996bda61e3b66" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>k_spring_</name></member>
+      <member refid="structagi_1_1PropellerData_1a5b8dbf478eb657d49ed5e6574aa2f965" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>mb_</name></member>
+      <member refid="structagi_1_1PropellerData_1aa02578b4d76bbda74a2dee6b1042475f" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>moment_blade_</name></member>
+      <member refid="structagi_1_1PropellerData_1abecd0e99ba02273fa6deabd94d1ddf85" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structagi_1_1PropellerData_1a9ee0887eac3bbc20c3b582a1ff499a91" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>prop_area_</name></member>
+      <member refid="structagi_1_1PropellerData_1af81b45f1032cf52228516237395c27c2" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>r_prop_</name></member>
+      <member refid="structagi_1_1PropellerData_1ad96b63ccaf46616b38e2a0a812c2f006" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>rho_</name></member>
+      <member refid="structagi_1_1PropellerData_1a1e67265ede6690034c30523a57ff436c" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>sigma_</name></member>
+      <member refid="structagi_1_1PropellerData_1a6d9ad79d3431b91e69d8ea47db182d9d" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>theta0_</name></member>
+      <member refid="structagi_1_1PropellerData_1a2a92bf86a49e76db30e55dc419404e34" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>theta1_</name></member>
+      <member refid="structagi_1_1PropellerData_1a4a6ad79fc3e69564ea24eb2589c30642" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>update</name></member>
+      <member refid="structagi_1_1PropellerData_1a4cf82600491836ea18697ee5800a96df" prot="public" virt="non-virtual"><scope>agi::PropellerData</scope><name>valid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

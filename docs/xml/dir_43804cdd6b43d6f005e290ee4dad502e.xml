@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_43804cdd6b43d6f005e290ee4dad502e" kind="dir">
+    <compoundname>agilib/include/agilib/bridge/laird</compoundname>
+    <innerfile refid="laird__bridge_8hpp">laird_bridge.hpp</innerfile>
+    <innerfile refid="laird__bridge__params_8hpp">laird_bridge_params.hpp</innerfile>
+    <innerfile refid="laird__encoding_8hpp">laird_encoding.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/bridge/laird/"/>
+  </compounddef>
+</doxygen>

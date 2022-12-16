@@ -1,0 +1,1148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1Pilot" kind="class" language="C++" prot="public">
+    <compoundname>agi::Pilot</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1Pilot_1ad802357165e1485636f2a840852b8d44" prot="private" static="no" mutable="no">
+        <type>const TimeFunction</type>
+        <definition>const TimeFunction agi::Pilot::time_</definition>
+        <argsstring></argsstring>
+        <name>time_</name>
+        <qualifiedname>agi::Pilot::time_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="98" column="22" bodyfile="agilib/include/agilib/pilot/pilot.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pilot_1a16e4c853193aa2e24ab981123265e08f" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1PilotParams" kindref="compound">PilotParams</ref></type>
+        <definition>PilotParams agi::Pilot::params_</definition>
+        <argsstring></argsstring>
+        <name>params_</name>
+        <qualifiedname>agi::Pilot::params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="99" column="15" bodyfile="agilib/include/agilib/pilot/pilot.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pilot_1a805468fc2faf2e1e97a4151735cf2880" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Pipeline" kindref="compound">Pipeline</ref></type>
+        <definition>Pipeline agi::Pilot::pipeline_</definition>
+        <argsstring></argsstring>
+        <name>pipeline_</name>
+        <qualifiedname>agi::Pilot::pipeline_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="100" column="12" bodyfile="agilib/include/agilib/pilot/pilot.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pilot_1a8f74a5e72f9c9726b7a309a5b4af55eb" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Pipeline" kindref="compound">Pipeline</ref></type>
+        <definition>Pipeline agi::Pilot::safety_pipeline_</definition>
+        <argsstring></argsstring>
+        <name>safety_pipeline_</name>
+        <qualifiedname>agi::Pilot::safety_pipeline_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="101" column="12" bodyfile="agilib/include/agilib/pilot/pilot.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pilot_1a20af31fb8c16466e7d4808104f544927" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1GuardBase" kindref="compound">GuardBase</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;GuardBase&gt; agi::Pilot::guard_</definition>
+        <argsstring></argsstring>
+        <name>guard_</name>
+        <qualifiedname>agi::Pilot::guard_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="102" column="19" bodyfile="agilib/include/agilib/pilot/pilot.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pilot_1a87c3d22335051a9501a02a3ada3bb60f" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1BridgeBase" kindref="compound">BridgeBase</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;BridgeBase&gt; agi::Pilot::bridge_</definition>
+        <argsstring></argsstring>
+        <name>bridge_</name>
+        <qualifiedname>agi::Pilot::bridge_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="103" column="19" bodyfile="agilib/include/agilib/pilot/pilot.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pilot_1a1549da9036dac0a21fc503085b4b245c" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1BridgeBase" kindref="compound">BridgeBase</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;BridgeBase&gt; agi::Pilot::debug_bridge_</definition>
+        <argsstring></argsstring>
+        <name>debug_bridge_</name>
+        <qualifiedname>agi::Pilot::debug_bridge_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="104" column="19" bodyfile="agilib/include/agilib/pilot/pilot.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pilot_1a661fae7daef98c3c554916b2dcf136df" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::Pilot::shutdown_</definition>
+        <argsstring></argsstring>
+        <name>shutdown_</name>
+        <qualifiedname>agi::Pilot::shutdown_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="106" column="8" bodyfile="agilib/include/agilib/pilot/pilot.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pilot_1a4239e860fd6d40b5c7e68265ead50701" prot="private" static="no" mutable="no">
+        <type>std::thread</type>
+        <definition>std::thread agi::Pilot::pipeline_thread_</definition>
+        <argsstring></argsstring>
+        <name>pipeline_thread_</name>
+        <qualifiedname>agi::Pilot::pipeline_thread_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="107" column="15" bodyfile="agilib/include/agilib/pilot/pilot.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pilot_1aec3b461b4b660d87757774f5355cbd8f" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Timer" kindref="compound">Timer</ref></type>
+        <definition>Timer agi::Pilot::pipeline_timer_</definition>
+        <argsstring></argsstring>
+        <name>pipeline_timer_</name>
+        <qualifiedname>agi::Pilot::pipeline_timer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="108" column="9" bodyfile="agilib/include/agilib/pilot/pilot.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Pilot_1af4026b4a352bd0e876eb61b9a3091a58" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref></type>
+        <definition>Logger agi::Pilot::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>agi::Pilot::logger_</qualifiedname>
+        <initializer>{&quot;Pilot&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="110" column="10" bodyfile="agilib/include/agilib/pilot/pilot.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1Pilot_1a48e4a331a31d46924b1f2d5dc8b41251" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Pilot::Pilot</definition>
+        <argsstring>(const PilotParams &amp;params, const TimeFunction time_function)</argsstring>
+        <name>Pilot</name>
+        <qualifiedname>agi::Pilot::Pilot</qualifiedname>
+        <param>
+          <type>const <ref refid="classagi_1_1PilotParams" kindref="compound">PilotParams</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>const TimeFunction</type>
+          <declname>time_function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="16" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a4ac5731a99c85a335c87ef4eda84e81f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Pilot::~Pilot</definition>
+        <argsstring>()</argsstring>
+        <name>~Pilot</name>
+        <qualifiedname>agi::Pilot::~Pilot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="17" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a8d7671f8d27d6ee6dec9041c777ee832" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pilot::launchPipeline</definition>
+        <argsstring>()</argsstring>
+        <name>launchPipeline</name>
+        <qualifiedname>agi::Pilot::launchPipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="19" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a1a415f240f1b661138929c25f30dd30a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pilot::runPipeline</definition>
+        <argsstring>()</argsstring>
+        <name>runPipeline</name>
+        <qualifiedname>agi::Pilot::runPipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="20" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a7b2e0adfb91138fcfbc64fc93a64bb58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pilot::runPipeline</definition>
+        <argsstring>(const Scalar t)</argsstring>
+        <name>runPipeline</name>
+        <qualifiedname>agi::Pilot::runPipeline</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="21" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1ad667a9d3f3d9d69ad5aa6d10e32134ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::getReference</definition>
+        <argsstring>(const int idx, ReferenceBase *const reference) const</argsstring>
+        <name>getReference</name>
+        <qualifiedname>agi::Pilot::getReference</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type><ref refid="classagi_1_1ReferenceBase" kindref="compound">ReferenceBase</ref> *const</type>
+          <declname>reference</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="24" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a2bb54c7b341c42cccf4384b5293015cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::getActiveReference</definition>
+        <argsstring>(const QuadState &amp;curr_state, SetpointVector *const setpoints) const</argsstring>
+        <name>getActiveReference</name>
+        <qualifiedname>agi::Pilot::getActiveReference</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>curr_state</declname>
+        </param>
+        <param>
+          <type>SetpointVector *const</type>
+          <declname>setpoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="25" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a4f54189fc9b2835e3848320068f7a3e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int agi::Pilot::getAllReferences</definition>
+        <argsstring>(ReferenceVector *const references) const</argsstring>
+        <name>getAllReferences</name>
+        <qualifiedname>agi::Pilot::getAllReferences</qualifiedname>
+        <param>
+          <type>ReferenceVector *const</type>
+          <declname>references</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="27" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a4c81f443771999c56a02454d3c9f0697" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::registerExternalEstimator</definition>
+        <argsstring>(const std::shared_ptr&lt; EstimatorBase &gt; &amp;estimator)</argsstring>
+        <name>registerExternalEstimator</name>
+        <qualifiedname>agi::Pilot::registerExternalEstimator</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="classagi_1_1EstimatorBase" kindref="compound">EstimatorBase</ref> &gt; &amp;</type>
+          <declname>estimator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="29" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1aff356052de8cfbd667069be62de24b6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::registerExternalBridge</definition>
+        <argsstring>(const std::shared_ptr&lt; BridgeBase &gt; &amp;bridge)</argsstring>
+        <name>registerExternalBridge</name>
+        <qualifiedname>agi::Pilot::registerExternalBridge</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="classagi_1_1BridgeBase" kindref="compound">BridgeBase</ref> &gt; &amp;</type>
+          <declname>bridge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="31" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a21c925c2e8eb00f26a5306f0f1072987" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::registerFeedbackCallbacks</definition>
+        <argsstring>(const std::shared_ptr&lt; BridgeBase &gt; &amp;bridge) const</argsstring>
+        <name>registerFeedbackCallbacks</name>
+        <qualifiedname>agi::Pilot::registerFeedbackCallbacks</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="classagi_1_1BridgeBase" kindref="compound">BridgeBase</ref> &gt; &amp;</type>
+          <declname>bridge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="32" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1ada75691f3ac19c46482059e7b804a739" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::registerFeedbackCallback</definition>
+        <argsstring>(const FeedbackCallbackFunction &amp;function)</argsstring>
+        <name>registerFeedbackCallback</name>
+        <qualifiedname>agi::Pilot::registerFeedbackCallback</qualifiedname>
+        <param>
+          <type>const FeedbackCallbackFunction &amp;</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="34" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a555934d1a851fb359ec7080f93ce8944" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::registerExternalDebugBridge</definition>
+        <argsstring>(const std::shared_ptr&lt; BridgeBase &gt; &amp;bridge)</argsstring>
+        <name>registerExternalDebugBridge</name>
+        <qualifiedname>agi::Pilot::registerExternalDebugBridge</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="classagi_1_1BridgeBase" kindref="compound">BridgeBase</ref> &gt; &amp;</type>
+          <declname>bridge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="35" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a27e35952f8371002f97cbbe047e231a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pilot::registerPipelineCallback</definition>
+        <argsstring>(const Pipeline::PipelineCallbackFunction &amp;function)</argsstring>
+        <name>registerPipelineCallback</name>
+        <qualifiedname>agi::Pilot::registerPipelineCallback</qualifiedname>
+        <param>
+          <type>const Pipeline::PipelineCallbackFunction &amp;</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="36" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a6f579cacea6aa11f63f90a432b569380" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pilot::odometryCallback</definition>
+        <argsstring>(const Pose &amp;pose)</argsstring>
+        <name>odometryCallback</name>
+        <qualifiedname>agi::Pilot::odometryCallback</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Pose" kindref="compound">Pose</ref> &amp;</type>
+          <declname>pose</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="39" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1aa65ee5cb6033ee085c7e1a472efc9a79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pilot::odometryCallback</definition>
+        <argsstring>(const QuadState &amp;state)</argsstring>
+        <name>odometryCallback</name>
+        <qualifiedname>agi::Pilot::odometryCallback</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="40" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a5c75f2ae36622f18d78b57e2c926c3a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pilot::guardOdometryCallback</definition>
+        <argsstring>(const Pose &amp;pose)</argsstring>
+        <name>guardOdometryCallback</name>
+        <qualifiedname>agi::Pilot::guardOdometryCallback</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Pose" kindref="compound">Pose</ref> &amp;</type>
+          <declname>pose</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="41" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a897e86679f23fcbeee9471a45ede525d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pilot::guardOdometryCallback</definition>
+        <argsstring>(const QuadState &amp;state)</argsstring>
+        <name>guardOdometryCallback</name>
+        <qualifiedname>agi::Pilot::guardOdometryCallback</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="42" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1ad2c589e9ef68d40445f5c7cf5ca20071" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pilot::voltageCallback</definition>
+        <argsstring>(const Scalar voltage)</argsstring>
+        <name>voltageCallback</name>
+        <qualifiedname>agi::Pilot::voltageCallback</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>voltage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="43" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1aa8cb574d5a1a53fed8567767677600e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pilot::imuCallback</definition>
+        <argsstring>(const ImuSample &amp;imu)</argsstring>
+        <name>imuCallback</name>
+        <qualifiedname>agi::Pilot::imuCallback</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref> &amp;</type>
+          <declname>imu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="44" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a887ecb8c688772bf72dbbf9f388cac63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pilot::motorSpeedCallback</definition>
+        <argsstring>(const Vector&lt; 4 &gt; &amp;mot)</argsstring>
+        <name>motorSpeedCallback</name>
+        <qualifiedname>agi::Pilot::motorSpeedCallback</qualifiedname>
+        <param>
+          <type>const Vector&lt; 4 &gt; &amp;</type>
+          <declname>mot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="45" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a71010454b2ff4cc28450b51a031655fd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structagi_1_1Command" kindref="compound">Command</ref></type>
+        <definition>Command agi::Pilot::getCommand</definition>
+        <argsstring>() const</argsstring>
+        <name>getCommand</name>
+        <qualifiedname>agi::Pilot::getCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="47" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1ab6367a9e1dd50a4fa667b45dc88531a7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const SetpointVector</type>
+        <definition>const SetpointVector agi::Pilot::getOuterSetpoints</definition>
+        <argsstring>() const</argsstring>
+        <name>getOuterSetpoints</name>
+        <qualifiedname>agi::Pilot::getOuterSetpoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="48" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a527b8f3b37ef5af6c3a8d8f75a334acd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const SetpointVector</type>
+        <definition>const SetpointVector agi::Pilot::getInnerSetpoints</definition>
+        <argsstring>() const</argsstring>
+        <name>getInnerSetpoints</name>
+        <qualifiedname>agi::Pilot::getInnerSetpoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="49" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a4b873dcbb07663da084e7bc0bcf16959" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref></type>
+        <definition>QuadState agi::Pilot::getRecentState</definition>
+        <argsstring>() const</argsstring>
+        <name>getRecentState</name>
+        <qualifiedname>agi::Pilot::getRecentState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="50" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1ad6c7b164c3e26c0c168ce6c0f0d7adb6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Pilot::getVoltage</definition>
+        <argsstring>() const</argsstring>
+        <name>getVoltage</name>
+        <qualifiedname>agi::Pilot::getVoltage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="51" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1ad4901a7b1e8d6bac5c2428444d46642a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pilot::enable</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>enable</name>
+        <qualifiedname>agi::Pilot::enable</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="53" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a92bdb598e7239e425d8aae6bc3325c88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::enabled</definition>
+        <argsstring>()</argsstring>
+        <name>enabled</name>
+        <qualifiedname>agi::Pilot::enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="54" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1ad54cf760f8dc4b1f6a74c8c77602e02c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <qualifiedname>agi::Pilot::start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="56" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a60d95b8f6fa08dc4c0ed0a802dedc839" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::land</definition>
+        <argsstring>()</argsstring>
+        <name>land</name>
+        <qualifiedname>agi::Pilot::land</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="57" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a3899204308c37661e3f03c9134a59cb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::off</definition>
+        <argsstring>()</argsstring>
+        <name>off</name>
+        <qualifiedname>agi::Pilot::off</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="58" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a763b73b9abbb72e12934aa58e3a569e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::forceHover</definition>
+        <argsstring>()</argsstring>
+        <name>forceHover</name>
+        <qualifiedname>agi::Pilot::forceHover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="60" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1ae8f3704e6954694236c937e89c52714c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::goToPose</definition>
+        <argsstring>(const QuadState &amp;end_state)</argsstring>
+        <name>goToPose</name>
+        <qualifiedname>agi::Pilot::goToPose</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>end_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="61" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1af83486cfc413ba9cbda87b78881fc9ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::setVelocityReference</definition>
+        <argsstring>(const Vector&lt; 3 &gt; &amp;velocity, const Scalar yaw_rate)</argsstring>
+        <name>setVelocityReference</name>
+        <qualifiedname>agi::Pilot::setVelocityReference</qualifiedname>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>velocity</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>yaw_rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="62" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a9540b71b478aeedda1e390975389d62c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::addHover</definition>
+        <argsstring>(const Vector&lt; 3 &gt; &amp;hover_pos, Scalar yaw=NAN, Scalar start_time=NAN, Scalar duration=NAN)</argsstring>
+        <name>addHover</name>
+        <qualifiedname>agi::Pilot::addHover</qualifiedname>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>hover_pos</declname>
+        </param>
+        <param>
+          <type>Scalar</type>
+          <declname>yaw</declname>
+          <defval>NAN</defval>
+        </param>
+        <param>
+          <type>Scalar</type>
+          <declname>start_time</declname>
+          <defval>NAN</defval>
+        </param>
+        <param>
+          <type>Scalar</type>
+          <declname>duration</declname>
+          <defval>NAN</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="64" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1ad0ce4efe108df0fbbf2e93aab7ea8cb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ReferenceType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool agi::Pilot::addReference</definition>
+        <argsstring>(const ReferenceType &amp;reference)</argsstring>
+        <name>addReference</name>
+        <qualifiedname>agi::Pilot::addReference</qualifiedname>
+        <param>
+          <type>const ReferenceType &amp;</type>
+          <declname>reference</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="68" column="8" bodyfile="agilib/include/agilib/pilot/pilot.hpp" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a7aea9bb9fb00fab186f223c7392d407a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::appendTrajectory</definition>
+        <argsstring>(const QuadState &amp;start_state, const QuadState &amp;end_state)</argsstring>
+        <name>appendTrajectory</name>
+        <qualifiedname>agi::Pilot::appendTrajectory</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>start_state</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>end_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="71" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1ab3926ba1cb101dd6615545310edd1162" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::addPolynomialTrajectory</definition>
+        <argsstring>(const QuadState &amp;end_state, const Scalar duration)</argsstring>
+        <name>addPolynomialTrajectory</name>
+        <qualifiedname>agi::Pilot::addPolynomialTrajectory</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>end_state</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="73" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a89e56ffbdeb3b971ad06fe13c4492038" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::addPolynomialTrajectory</definition>
+        <argsstring>(const QuadState &amp;start, const QuadState &amp;end, const std::vector&lt; QuadState &gt; &amp;end_state, const Scalar speed, const Scalar limit_scale=0.0)</argsstring>
+        <name>addPolynomialTrajectory</name>
+        <qualifiedname>agi::Pilot::addPolynomialTrajectory</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &gt; &amp;</type>
+          <declname>end_state</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>speed</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>limit_scale</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="75" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a264cb3866b4b2091ca675f41b246a476" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::addSampledTrajectory</definition>
+        <argsstring>(const SetpointVector &amp;setpoints)</argsstring>
+        <name>addSampledTrajectory</name>
+        <qualifiedname>agi::Pilot::addSampledTrajectory</qualifiedname>
+        <param>
+          <type>const SetpointVector &amp;</type>
+          <declname>setpoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="79" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a406d078e78123e4b25822ed477355a78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::setFeedthroughCommand</definition>
+        <argsstring>(const Command &amp;command)</argsstring>
+        <name>setFeedthroughCommand</name>
+        <qualifiedname>agi::Pilot::setFeedthroughCommand</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="81" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a083af8ab9cfc59cb2ccb36a9003faba7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::isInHover</definition>
+        <argsstring>() const</argsstring>
+        <name>isInHover</name>
+        <qualifiedname>agi::Pilot::isInHover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="83" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a0fc973586f5c4494603822a49053b938" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::isInVelocityReference</definition>
+        <argsstring>() const</argsstring>
+        <name>isInVelocityReference</name>
+        <qualifiedname>agi::Pilot::isInVelocityReference</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="84" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a7a20cf093ec348fd8b24fae2043e9e02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string agi::Pilot::getActiveBridgeType</definition>
+        <argsstring>()</argsstring>
+        <name>getActiveBridgeType</name>
+        <qualifiedname>agi::Pilot::getActiveBridgeType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="85" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a326747d09015e51aa8ce629e25fcf55f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::getFeedback</definition>
+        <argsstring>(Feedback *const feedback=nullptr) const</argsstring>
+        <name>getFeedback</name>
+        <qualifiedname>agi::Pilot::getFeedback</qualifiedname>
+        <param>
+          <type><ref refid="structagi_1_1Feedback" kindref="compound">Feedback</ref> *const</type>
+          <declname>feedback</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="87" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a69fdd3fc6b4e7ab15af73a4908f085c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::getQuadrotor</definition>
+        <argsstring>(Quadrotor *const quad) const</argsstring>
+        <name>getQuadrotor</name>
+        <qualifiedname>agi::Pilot::getQuadrotor</qualifiedname>
+        <param>
+          <type><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> *const</type>
+          <declname>quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="89" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a8770b73b7d43c4740f210b9c4e175937" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::Pilot::guardTriggered</definition>
+        <argsstring>()</argsstring>
+        <name>guardTriggered</name>
+        <qualifiedname>agi::Pilot::guardTriggered</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="90" column="8" bodyfile="agilib/include/agilib/pilot/pilot.hpp" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1ae33f8b75fe936a6ef86232cb5cdd4f54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pilot::triggerGuard</definition>
+        <argsstring>()</argsstring>
+        <name>triggerGuard</name>
+        <qualifiedname>agi::Pilot::triggerGuard</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="91" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1ab5c0f4967f4b7122b97e2b2f9327307b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classagi_1_1PilotParams" kindref="compound">PilotParams</ref> &amp;</type>
+        <definition>const PilotParams &amp; agi::Pilot::getParams</definition>
+        <argsstring>() const</argsstring>
+        <name>getParams</name>
+        <qualifiedname>agi::Pilot::getParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="92" column="28" bodyfile="agilib/include/agilib/pilot/pilot.hpp" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a4bb75e12b9e83fa37ad2d5f5967eb076" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::Pilot::getTime</definition>
+        <argsstring>() const</argsstring>
+        <name>getTime</name>
+        <qualifiedname>agi::Pilot::getTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="93" column="17" bodyfile="agilib/include/agilib/pilot/pilot.hpp" bodystart="93" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classagi_1_1Pilot_1a0ed755c30ee8f3df1d26473bf1d79eda" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Pilot::pipelineThread</definition>
+        <argsstring>()</argsstring>
+        <name>pipelineThread</name>
+        <qualifiedname>agi::Pilot::pipelineThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="96" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Pilot_1a2edb3ed98893dab270e8178ce3696881" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classagi_1_1Pipeline" kindref="compound">Pipeline</ref> &amp;</type>
+        <definition>Pipeline &amp; agi::Pilot::getActivePipeline</definition>
+        <argsstring>()</argsstring>
+        <name>getActivePipeline</name>
+        <qualifiedname>agi::Pilot::getActivePipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/pilot/pilot.hpp" line="97" column="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/pilot/pilot.hpp" line="14" column="1" bodyfile="agilib/include/agilib/pilot/pilot.hpp" bodystart="14" bodyend="111"/>
+    <listofallmembers>
+      <member refid="classagi_1_1Pilot_1a9540b71b478aeedda1e390975389d62c" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>addHover</name></member>
+      <member refid="classagi_1_1Pilot_1ab3926ba1cb101dd6615545310edd1162" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>addPolynomialTrajectory</name></member>
+      <member refid="classagi_1_1Pilot_1a89e56ffbdeb3b971ad06fe13c4492038" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>addPolynomialTrajectory</name></member>
+      <member refid="classagi_1_1Pilot_1ad0ce4efe108df0fbbf2e93aab7ea8cb6" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>addReference</name></member>
+      <member refid="classagi_1_1Pilot_1a264cb3866b4b2091ca675f41b246a476" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>addSampledTrajectory</name></member>
+      <member refid="classagi_1_1Pilot_1a7aea9bb9fb00fab186f223c7392d407a" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>appendTrajectory</name></member>
+      <member refid="classagi_1_1Pilot_1a87c3d22335051a9501a02a3ada3bb60f" prot="private" virt="non-virtual"><scope>agi::Pilot</scope><name>bridge_</name></member>
+      <member refid="classagi_1_1Pilot_1a1549da9036dac0a21fc503085b4b245c" prot="private" virt="non-virtual"><scope>agi::Pilot</scope><name>debug_bridge_</name></member>
+      <member refid="classagi_1_1Pilot_1ad4901a7b1e8d6bac5c2428444d46642a" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>enable</name></member>
+      <member refid="classagi_1_1Pilot_1a92bdb598e7239e425d8aae6bc3325c88" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>enabled</name></member>
+      <member refid="classagi_1_1Pilot_1a763b73b9abbb72e12934aa58e3a569e5" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>forceHover</name></member>
+      <member refid="classagi_1_1Pilot_1a7a20cf093ec348fd8b24fae2043e9e02" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>getActiveBridgeType</name></member>
+      <member refid="classagi_1_1Pilot_1a2edb3ed98893dab270e8178ce3696881" prot="private" virt="non-virtual"><scope>agi::Pilot</scope><name>getActivePipeline</name></member>
+      <member refid="classagi_1_1Pilot_1a2bb54c7b341c42cccf4384b5293015cf" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>getActiveReference</name></member>
+      <member refid="classagi_1_1Pilot_1a4f54189fc9b2835e3848320068f7a3e9" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>getAllReferences</name></member>
+      <member refid="classagi_1_1Pilot_1a71010454b2ff4cc28450b51a031655fd" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>getCommand</name></member>
+      <member refid="classagi_1_1Pilot_1a326747d09015e51aa8ce629e25fcf55f" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>getFeedback</name></member>
+      <member refid="classagi_1_1Pilot_1a527b8f3b37ef5af6c3a8d8f75a334acd" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>getInnerSetpoints</name></member>
+      <member refid="classagi_1_1Pilot_1ab6367a9e1dd50a4fa667b45dc88531a7" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>getOuterSetpoints</name></member>
+      <member refid="classagi_1_1Pilot_1ab5c0f4967f4b7122b97e2b2f9327307b" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>getParams</name></member>
+      <member refid="classagi_1_1Pilot_1a69fdd3fc6b4e7ab15af73a4908f085c2" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>getQuadrotor</name></member>
+      <member refid="classagi_1_1Pilot_1a4b873dcbb07663da084e7bc0bcf16959" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>getRecentState</name></member>
+      <member refid="classagi_1_1Pilot_1ad667a9d3f3d9d69ad5aa6d10e32134ef" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>getReference</name></member>
+      <member refid="classagi_1_1Pilot_1a4bb75e12b9e83fa37ad2d5f5967eb076" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>getTime</name></member>
+      <member refid="classagi_1_1Pilot_1ad6c7b164c3e26c0c168ce6c0f0d7adb6" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>getVoltage</name></member>
+      <member refid="classagi_1_1Pilot_1ae8f3704e6954694236c937e89c52714c" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>goToPose</name></member>
+      <member refid="classagi_1_1Pilot_1a20af31fb8c16466e7d4808104f544927" prot="private" virt="non-virtual"><scope>agi::Pilot</scope><name>guard_</name></member>
+      <member refid="classagi_1_1Pilot_1a5c75f2ae36622f18d78b57e2c926c3a9" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>guardOdometryCallback</name></member>
+      <member refid="classagi_1_1Pilot_1a897e86679f23fcbeee9471a45ede525d" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>guardOdometryCallback</name></member>
+      <member refid="classagi_1_1Pilot_1a8770b73b7d43c4740f210b9c4e175937" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>guardTriggered</name></member>
+      <member refid="classagi_1_1Pilot_1aa8cb574d5a1a53fed8567767677600e8" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>imuCallback</name></member>
+      <member refid="classagi_1_1Pilot_1a083af8ab9cfc59cb2ccb36a9003faba7" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>isInHover</name></member>
+      <member refid="classagi_1_1Pilot_1a0fc973586f5c4494603822a49053b938" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>isInVelocityReference</name></member>
+      <member refid="classagi_1_1Pilot_1a60d95b8f6fa08dc4c0ed0a802dedc839" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>land</name></member>
+      <member refid="classagi_1_1Pilot_1a8d7671f8d27d6ee6dec9041c777ee832" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>launchPipeline</name></member>
+      <member refid="classagi_1_1Pilot_1af4026b4a352bd0e876eb61b9a3091a58" prot="private" virt="non-virtual"><scope>agi::Pilot</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Pilot_1a887ecb8c688772bf72dbbf9f388cac63" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>motorSpeedCallback</name></member>
+      <member refid="classagi_1_1Pilot_1a6f579cacea6aa11f63f90a432b569380" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>odometryCallback</name></member>
+      <member refid="classagi_1_1Pilot_1aa65ee5cb6033ee085c7e1a472efc9a79" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>odometryCallback</name></member>
+      <member refid="classagi_1_1Pilot_1a3899204308c37661e3f03c9134a59cb5" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>off</name></member>
+      <member refid="classagi_1_1Pilot_1a16e4c853193aa2e24ab981123265e08f" prot="private" virt="non-virtual"><scope>agi::Pilot</scope><name>params_</name></member>
+      <member refid="classagi_1_1Pilot_1a48e4a331a31d46924b1f2d5dc8b41251" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>Pilot</name></member>
+      <member refid="classagi_1_1Pilot_1a805468fc2faf2e1e97a4151735cf2880" prot="private" virt="non-virtual"><scope>agi::Pilot</scope><name>pipeline_</name></member>
+      <member refid="classagi_1_1Pilot_1a4239e860fd6d40b5c7e68265ead50701" prot="private" virt="non-virtual"><scope>agi::Pilot</scope><name>pipeline_thread_</name></member>
+      <member refid="classagi_1_1Pilot_1aec3b461b4b660d87757774f5355cbd8f" prot="private" virt="non-virtual"><scope>agi::Pilot</scope><name>pipeline_timer_</name></member>
+      <member refid="classagi_1_1Pilot_1a0ed755c30ee8f3df1d26473bf1d79eda" prot="private" virt="non-virtual"><scope>agi::Pilot</scope><name>pipelineThread</name></member>
+      <member refid="classagi_1_1Pilot_1aff356052de8cfbd667069be62de24b6d" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>registerExternalBridge</name></member>
+      <member refid="classagi_1_1Pilot_1a555934d1a851fb359ec7080f93ce8944" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>registerExternalDebugBridge</name></member>
+      <member refid="classagi_1_1Pilot_1a4c81f443771999c56a02454d3c9f0697" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>registerExternalEstimator</name></member>
+      <member refid="classagi_1_1Pilot_1ada75691f3ac19c46482059e7b804a739" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>registerFeedbackCallback</name></member>
+      <member refid="classagi_1_1Pilot_1a21c925c2e8eb00f26a5306f0f1072987" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>registerFeedbackCallbacks</name></member>
+      <member refid="classagi_1_1Pilot_1a27e35952f8371002f97cbbe047e231a5" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>registerPipelineCallback</name></member>
+      <member refid="classagi_1_1Pilot_1a1a415f240f1b661138929c25f30dd30a" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>runPipeline</name></member>
+      <member refid="classagi_1_1Pilot_1a7b2e0adfb91138fcfbc64fc93a64bb58" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>runPipeline</name></member>
+      <member refid="classagi_1_1Pilot_1a8f74a5e72f9c9726b7a309a5b4af55eb" prot="private" virt="non-virtual"><scope>agi::Pilot</scope><name>safety_pipeline_</name></member>
+      <member refid="classagi_1_1Pilot_1a406d078e78123e4b25822ed477355a78" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>setFeedthroughCommand</name></member>
+      <member refid="classagi_1_1Pilot_1af83486cfc413ba9cbda87b78881fc9ee" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>setVelocityReference</name></member>
+      <member refid="classagi_1_1Pilot_1a661fae7daef98c3c554916b2dcf136df" prot="private" virt="non-virtual"><scope>agi::Pilot</scope><name>shutdown_</name></member>
+      <member refid="classagi_1_1Pilot_1ad54cf760f8dc4b1f6a74c8c77602e02c" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>start</name></member>
+      <member refid="classagi_1_1Pilot_1ad802357165e1485636f2a840852b8d44" prot="private" virt="non-virtual"><scope>agi::Pilot</scope><name>time_</name></member>
+      <member refid="classagi_1_1Pilot_1ae33f8b75fe936a6ef86232cb5cdd4f54" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>triggerGuard</name></member>
+      <member refid="classagi_1_1Pilot_1ad2c589e9ef68d40445f5c7cf5ca20071" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>voltageCallback</name></member>
+      <member refid="classagi_1_1Pilot_1a4ac5731a99c85a335c87ef4eda84e81f" prot="public" virt="non-virtual"><scope>agi::Pilot</scope><name>~Pilot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

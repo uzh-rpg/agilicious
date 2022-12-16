@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="timer_8hpp" kind="file" language="C++">
+    <compoundname>timer.hpp</compoundname>
+    <includes local="no">chrono</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes refid="types_8hpp" local="yes">agilib/math/types.hpp</includes>
+    <includedby refid="bridge__base_8hpp" local="yes">agilib/include/agilib/bridge/bridge_base.hpp</includedby>
+    <includedby refid="debug__bridge_8hpp" local="yes">agilib/include/agilib/bridge/debug_bridge.hpp</includedby>
+    <includedby refid="controller__geo_8hpp" local="yes">agilib/include/agilib/controller/geometric/controller_geo.hpp</includedby>
+    <includedby refid="controller__indi_8hpp" local="yes">agilib/include/agilib/controller/indi/controller_indi.hpp</includedby>
+    <includedby refid="controller__mpc_8hpp" local="yes">agilib/include/agilib/controller/mpc/controller_mpc.hpp</includedby>
+    <includedby refid="controller__pid_8hpp" local="yes">agilib/include/agilib/controller/pid/controller_pid.hpp</includedby>
+    <includedby refid="ekf_8hpp" local="yes">agilib/include/agilib/estimator/ekf/ekf.hpp</includedby>
+    <includedby refid="ekf__imu_8hpp" local="yes">agilib/include/agilib/estimator/ekf_imu/ekf_imu.hpp</includedby>
+    <includedby refid="pilot_8hpp" local="yes">agilib/include/agilib/pilot/pilot.hpp</includedby>
+    <includedby refid="brent_8hpp" local="yes">agilib/include/agilib/simulator/bem/brent.hpp</includedby>
+    <includedby refid="functions_8hpp" local="yes">agilib/include/agilib/simulator/bem/functions.hpp</includedby>
+    <includedby refid="model__propeller__bem_8hpp" local="yes">agilib/include/agilib/simulator/model_propeller_bem.hpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>agilib/math/types.hpp</label>
+        <link refid="types_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agilib/include/agilib/utils/timer.hpp</label>
+        <link refid="timer_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Eigen/Eigen</label>
+      </node>
+      <node id="2">
+        <label>chrono</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>limits</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>agilib/include/agilib/base/pipeline.hpp</label>
+        <link refid="pipeline_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agilib/include/agilib/bridge/bridge_base.hpp</label>
+        <link refid="bridge__base_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>agilib/include/agilib/bridge/ctrl/ctrl_bridge.hpp</label>
+        <link refid="ctrl__bridge_8hpp_source"/>
+      </node>
+      <node id="6">
+        <label>agilib/include/agilib/bridge/debug_bridge.hpp</label>
+        <link refid="debug__bridge_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>agilib/include/agilib/bridge/laird/laird_bridge.hpp</label>
+        <link refid="laird__bridge_8hpp_source"/>
+      </node>
+      <node id="10">
+        <label>agilib/include/agilib/bridge/msp/msp_bridge.hpp</label>
+        <link refid="msp__bridge_8hpp_source"/>
+      </node>
+      <node id="11">
+        <label>agilib/include/agilib/bridge/sbus/sbus_bridge.hpp</label>
+        <link refid="sbus__bridge_8hpp_source"/>
+      </node>
+      <node id="7">
+        <label>agilib/include/agilib/bridge/serial_bridge.hpp</label>
+        <link refid="serial__bridge_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>agilib/include/agilib/controller/geometric/controller_geo.hpp</label>
+        <link refid="controller__geo_8hpp_source"/>
+      </node>
+      <node id="13">
+        <label>agilib/include/agilib/controller/indi/controller_indi.hpp</label>
+        <link refid="controller__indi_8hpp_source"/>
+      </node>
+      <node id="14">
+        <label>agilib/include/agilib/controller/mpc/controller_mpc.hpp</label>
+        <link refid="controller__mpc_8hpp_source"/>
+      </node>
+      <node id="15">
+        <label>agilib/include/agilib/controller/pid/controller_pid.hpp</label>
+        <link refid="controller__pid_8hpp_source"/>
+      </node>
+      <node id="16">
+        <label>agilib/include/agilib/estimator/ekf/ekf.hpp</label>
+        <link refid="ekf_8hpp_source"/>
+      </node>
+      <node id="17">
+        <label>agilib/include/agilib/estimator/ekf_imu/ekf_imu.hpp</label>
+        <link refid="ekf__imu_8hpp_source"/>
+      </node>
+      <node id="4">
+        <label>agilib/include/agilib/pilot/pilot.hpp</label>
+        <link refid="pilot_8hpp_source"/>
+      </node>
+      <node id="5">
+        <label>agilib/include/agilib/pilot/pilot_params.hpp</label>
+        <link refid="pilot__params_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>agilib/include/agilib/simulator/bem/brent.hpp</label>
+        <link refid="brent_8hpp_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>agilib/include/agilib/simulator/bem/functions.hpp</label>
+        <link refid="functions_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>agilib/include/agilib/simulator/model_propeller_bem.hpp</label>
+        <link refid="model__propeller__bem_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>agilib/include/agilib/utils/timer.hpp</label>
+        <link refid="timer_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classagi_1_1Timer" prot="public">agi::Timer</innerclass>
+    <innerclass refid="classagi_1_1ScopedTimer" prot="public">agi::ScopedTimer</innerclass>
+    <innerclass refid="classagi_1_1StaticTimer" prot="public">agi::StaticTimer</innerclass>
+    <innerclass refid="classagi_1_1ScopedTicToc" prot="public">agi::ScopedTicToc</innerclass>
+    <innernamespace refid="namespaceagi">agi</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;agilib/math/types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">agi<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Timer<sp/>class<sp/>to<sp/>perform<sp/>runtime<sp/>analytics.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>This<sp/>timer<sp/>class<sp/>provides<sp/>a<sp/>simple<sp/>solution<sp/>to<sp/>time<sp/>code.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Simply<sp/>construct<sp/>a<sp/>timer<sp/>and<sp/>call<sp/>it&apos;s<sp/>`tic()`<sp/>and<sp/>`toc()`<sp/>functions<sp/>to<sp/>time</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>code.<sp/>It<sp/>is<sp/>intended<sp/>to<sp/>be<sp/>used<sp/>to<sp/>time<sp/>multiple<sp/>calls<sp/>of<sp/>a<sp/>function<sp/>and<sp/>not</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>only<sp/>reports<sp/>the<sp/>`last()`<sp/>timing,<sp/>but<sp/>also<sp/>statistics<sp/>such<sp/>as<sp/>the<sp/>`mean()`,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>`min()`,<sp/>`max()`<sp/>time,<sp/>the<sp/>`count()`<sp/>of<sp/>calls<sp/>to<sp/>the<sp/>timer<sp/>,<sp/>and<sp/>even</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>standard<sp/>deviation<sp/>`std()`.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>The<sp/>constructor<sp/>can<sp/>take<sp/>a<sp/>name<sp/>for<sp/>the<sp/>timer<sp/>(like<sp/>&quot;update&quot;)<sp/>and<sp/>a<sp/>name<sp/>for</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>the<sp/>module<sp/>(like<sp/>&quot;Filter&quot;).</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>After<sp/>construction<sp/>it<sp/>can<sp/>be<sp/>`reset()`<sp/>if<sp/>needed.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>A<sp/>simple<sp/>way<sp/>to<sp/>get<sp/>the<sp/>timing<sp/>and<sp/>stats<sp/>is<sp/>`std::cout<sp/>&lt;&lt;<sp/>timer;`<sp/>which<sp/>can</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>output<sp/>to<sp/>arbitrary<sp/>streams,<sp/>overloading<sp/>the<sp/>stream<sp/>operator,</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>or<sp/>`print()`<sp/>which<sp/>always<sp/>prints<sp/>to<sp/>console.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">TimeFunction<sp/>=<sp/>std::function&lt;Scalar()&gt;;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ChronoTime<sp/>=<sp/>[]()<sp/>-&gt;<sp/>agi::Scalar<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::chrono::high_resolution_clock::time_point<sp/>now<sp/>=</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::high_resolution_clock::now();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1e-9<sp/>*<sp/>std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>now.time_since_epoch())</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.count();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classagi_1_1Timer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classagi_1_1Timer" kindref="compound">Timer</ref><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1Timer" kindref="compound">Timer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>module<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1Timer" kindref="compound">Timer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Timer" kindref="compound">Timer</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1Timer" kindref="compound">~Timer</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classagi_1_1Timer_1a9f14b27a8fe9d2df7128d9a7c5cde0b7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Timer_1a9f14b27a8fe9d2df7128d9a7c5cde0b7" kindref="member">tic</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classagi_1_1Timer_1ab821a5167758c7a8cd2813391dc8e484" refkind="member"><highlight class="normal"><sp/><sp/>Scalar<sp/><ref refid="classagi_1_1Timer_1ab821a5167758c7a8cd2813391dc8e484" kindref="member">toc</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classagi_1_1Timer_1a322671b127cc8303a75bb01f12f1c00a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Timer_1a322671b127cc8303a75bb01f12f1c00a" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Accessors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>Scalar<sp/>operator()()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>Scalar<sp/>mean()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>Scalar<sp/>last()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>Scalar<sp/>min()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>Scalar<sp/>max()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>Scalar<sp/>std()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>Scalar<sp/>startTime()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classagi_1_1Timer_1a8e125e38ee1ec31b73d2e322c1ec93f2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="classagi_1_1Timer_1a8e125e38ee1ec31b73d2e322c1ec93f2" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Timer" kindref="compound">Timer</ref>&amp;<sp/>timer);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classagi_1_1Timer_1aa4ad866cb402fd3227cb620a9d02abd0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Timer_1aa4ad866cb402fd3227cb620a9d02abd0" kindref="member">print</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>std::string<sp/>name_,<sp/>module_;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">TimePoint<sp/>=<sp/>std::chrono::high_resolution_clock::time_point;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>TimePoint<sp/>t_start_;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>timing<sp/>to<sp/>impossible<sp/>values.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>Scalar<sp/>timing_mean_;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>Scalar<sp/>timing_last_;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>Scalar<sp/>timing_S_;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>Scalar<sp/>timing_min_;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>Scalar<sp/>timing_max_;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_samples_;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/>*<sp/>Simple<sp/>class<sp/>to<sp/>time<sp/>scopes.</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/>*<sp/>This<sp/>effectively<sp/>instantiates<sp/>a<sp/>timer<sp/>and<sp/>calls<sp/>`tic()`<sp/>in<sp/>its<sp/>constructor</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*<sp/>and<sp/>`toc()`<sp/>and<sp/>`<sp/>print()`<sp/>in<sp/>its<sp/>destructor.</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classagi_1_1ScopedTimer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classagi_1_1ScopedTimer" kindref="compound">ScopedTimer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Timer" kindref="compound">Timer</ref><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1ScopedTimer" kindref="compound">ScopedTimer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>module<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1ScopedTimer" kindref="compound">~ScopedTimer</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/>*<sp/><sp/>*<sp/>Helper<sp/>Timer<sp/>class<sp/>to<sp/>instantiate<sp/>a<sp/>static<sp/>Timer<sp/>that<sp/>prints<sp/>in</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*<sp/>descructor.</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>*<sp/>Debugging<sp/>slow<sp/>code?<sp/>Simply<sp/>create<sp/>this<sp/>as<sp/>a<sp/>static<sp/>object<sp/>somewhere<sp/>and</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>*<sp/>tic-toc<sp/>it.<sp/>Once<sp/>the<sp/>program<sp/>ends,<sp/>the<sp/>destructor<sp/>of<sp/>StaticTimer<sp/>will</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/>*<sp/>print</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>its<sp/>stats.</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classagi_1_1StaticTimer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classagi_1_1StaticTimer" kindref="compound">StaticTimer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classagi_1_1Timer" kindref="compound">Timer</ref><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Timer::Timer;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1StaticTimer" kindref="compound">~StaticTimer</ref>()<sp/>{<sp/>this-&gt;<ref refid="classagi_1_1Timer_1aa4ad866cb402fd3227cb620a9d02abd0" kindref="member">print</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/>*<sp/>Simple<sp/>class<sp/>to<sp/>tic<sp/>and<sp/>toc<sp/>a<sp/>timer<sp/>within<sp/>a<sp/>scope.</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/>*<sp/>This<sp/>takes<sp/>a<sp/>timer<sp/>as<sp/>argument,<sp/>tics<sp/>in<sp/>the<sp/>constructor,<sp/>and<sp/>tocs<sp/>on</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/>*<sp/>destruction.</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="classagi_1_1ScopedTicToc" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classagi_1_1ScopedTicToc" kindref="compound">ScopedTicToc</ref><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1ScopedTicToc" kindref="compound">ScopedTicToc</ref>(<ref refid="classagi_1_1Timer" kindref="compound">Timer</ref>&amp;<sp/>timer);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1ScopedTicToc" kindref="compound">~ScopedTicToc</ref>();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><ref refid="classagi_1_1Timer" kindref="compound">Timer</ref>&amp;<sp/>timer_;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>agi</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="agilib/include/agilib/utils/timer.hpp"/>
+  </compounddef>
+</doxygen>

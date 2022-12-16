@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_fe0b9ca4f752660bd7ac4d2b9a701ca8" kind="dir">
+    <compoundname>agilib/include/agilib/sampler/position_based</compoundname>
+    <innerfile refid="position__sampler_8hpp">position_sampler.hpp</innerfile>
+    <innerfile refid="position__sampler__params_8hpp">position_sampler_params.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/sampler/position_based/"/>
+  </compounddef>
+</doxygen>

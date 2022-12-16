@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_e3cf1d0232a27a5b6d68f116ef142f80" kind="dir">
+    <compoundname>agilib/include/agilib/estimator/feedthrough</compoundname>
+    <innerfile refid="feedthrough__estimator_8hpp">feedthrough_estimator.hpp</innerfile>
+    <innerfile refid="feedthrough__params_8hpp">feedthrough_params.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/estimator/feedthrough/"/>
+  </compounddef>
+</doxygen>

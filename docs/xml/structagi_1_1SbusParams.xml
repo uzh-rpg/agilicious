@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1SbusParams" kind="struct" language="C++" prot="public">
+    <compoundname>agi::SbusParams</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1SbusParams_1a30ea045f5fa74f40ba770123967073cf" prot="public" static="no" mutable="no">
+        <type><ref refid="classagi_1_1SbusSerialSettings" kindref="compound">SbusSerialSettings</ref></type>
+        <definition>SbusSerialSettings agi::SbusParams::serial_settings</definition>
+        <argsstring></argsstring>
+        <name>serial_settings</name>
+        <qualifiedname>agi::SbusParams::serial_settings</qualifiedname>
+        <initializer>{&quot;/dev/ttyTHS2&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_bridge_params.hpp" line="15" column="22" bodyfile="agilib/include/agilib/bridge/sbus/sbus_bridge_params.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1SbusParams_1ac89315f5cd22c319cf75ded3edbbf3cf" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::SbusParams::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <qualifiedname>agi::SbusParams::timeout</qualifiedname>
+        <initializer>{0.05}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_bridge_params.hpp" line="17" column="10" bodyfile="agilib/include/agilib/bridge/sbus/sbus_bridge_params.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1SbusParams_1aa88e26fd7c6714abab67ae723b480c4e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int agi::SbusParams::n_timeouts_for_lock</definition>
+        <argsstring></argsstring>
+        <name>n_timeouts_for_lock</name>
+        <qualifiedname>agi::SbusParams::n_timeouts_for_lock</qualifiedname>
+        <initializer>{4}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_bridge_params.hpp" line="18" column="7" bodyfile="agilib/include/agilib/bridge/sbus/sbus_bridge_params.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1SbusParams_1aaf958b8178f618123902c0c0e99e01a5" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::SbusParams::omega_max</definition>
+        <argsstring></argsstring>
+        <name>omega_max</name>
+        <qualifiedname>agi::SbusParams::omega_max</qualifiedname>
+        <initializer>{1.0, 1.0, 1.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_bridge_params.hpp" line="20" column="10" bodyfile="agilib/include/agilib/bridge/sbus/sbus_bridge_params.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1SbusParams_1a45e0a893a19a0db4c93d0b9d32969357" prot="public" static="no" mutable="no">
+        <type><ref refid="structagi_1_1ThrustMap" kindref="compound">ThrustMap</ref></type>
+        <definition>ThrustMap agi::SbusParams::thrust_map_</definition>
+        <argsstring></argsstring>
+        <name>thrust_map_</name>
+        <qualifiedname>agi::SbusParams::thrust_map_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_bridge_params.hpp" line="21" column="13" bodyfile="agilib/include/agilib/bridge/sbus/sbus_bridge_params.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1SbusParams_1af972e32d380636edbc0b2a3ca33f408f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::SbusParams::load</definition>
+        <argsstring>(const fs::path &amp;filename) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::SbusParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_bridge_params.hpp" line="10" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1SbusParams_1ae3ee456a8ef41489529ca73bb843b9e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::SbusParams::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::SbusParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_bridge_params.hpp" line="11" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structagi_1_1SbusParams_1a40d7598ce6ab8053cf33180948a00170" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const SbusParams &amp;settings)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::SbusParams::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1SbusParams" kindref="compound">SbusParams</ref> &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_bridge_params.hpp" line="13" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="1">
+        <label>agi::SbusParams</label>
+        <link refid="structagi_1_1SbusParams"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="1">
+        <label>agi::SbusParams</label>
+        <link refid="structagi_1_1SbusParams"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>serial_settings</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>thrust_map_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::SbusSerialSettings</label>
+        <link refid="classagi_1_1SbusSerialSettings"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::SerialSettings</label>
+        <link refid="classagi_1_1SerialSettings"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>port</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>agi::ThrustMap</label>
+        <link refid="structagi_1_1ThrustMap"/>
+      </node>
+      <node id="6">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="5">
+        <label>std::string</label>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/bridge/sbus/sbus_bridge_params.hpp" line="9" column="1" bodyfile="agilib/include/agilib/bridge/sbus/sbus_bridge_params.hpp" bodystart="9" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structagi_1_1SbusParams_1af972e32d380636edbc0b2a3ca33f408f" prot="public" virt="virtual"><scope>agi::SbusParams</scope><name>load</name></member>
+      <member refid="structagi_1_1SbusParams_1ae3ee456a8ef41489529ca73bb843b9e0" prot="public" virt="virtual"><scope>agi::SbusParams</scope><name>load</name></member>
+      <member refid="structagi_1_1SbusParams_1aa88e26fd7c6714abab67ae723b480c4e" prot="public" virt="non-virtual"><scope>agi::SbusParams</scope><name>n_timeouts_for_lock</name></member>
+      <member refid="structagi_1_1SbusParams_1aaf958b8178f618123902c0c0e99e01a5" prot="public" virt="non-virtual"><scope>agi::SbusParams</scope><name>omega_max</name></member>
+      <member refid="structagi_1_1SbusParams_1a40d7598ce6ab8053cf33180948a00170" prot="public" virt="non-virtual"><scope>agi::SbusParams</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structagi_1_1SbusParams_1a30ea045f5fa74f40ba770123967073cf" prot="public" virt="non-virtual"><scope>agi::SbusParams</scope><name>serial_settings</name></member>
+      <member refid="structagi_1_1SbusParams_1a45e0a893a19a0db4c93d0b9d32969357" prot="public" virt="non-virtual"><scope>agi::SbusParams</scope><name>thrust_map_</name></member>
+      <member refid="structagi_1_1SbusParams_1ac89315f5cd22c319cf75ded3edbbf3cf" prot="public" virt="non-virtual"><scope>agi::SbusParams</scope><name>timeout</name></member>
+      <member refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b" prot="public" virt="virtual"><scope>agi::SbusParams</scope><name>valid</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::SbusParams</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_8765b64e51b1e2885f98844342f123cf" kind="dir">
+    <compoundname>agilib/include/agilib/controller/mpc</compoundname>
+    <innerdir refid="dir_af0f289e953fa4e523619416abefa215">agilib/include/agilib/controller/mpc/acados</innerdir>
+    <innerfile refid="cog__filter_8hpp">cog_filter.hpp</innerfile>
+    <innerfile refid="controller__mpc_8hpp">controller_mpc.hpp</innerfile>
+    <innerfile refid="mpc__params_8hpp">mpc_params.hpp</innerfile>
+    <innerfile refid="wrapper_8hpp">wrapper.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/controller/mpc/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_cbf8d213cb4608fff59e426d9bef9a16" kind="dir">
+    <compoundname>agilib/include/agilib/bridge/ctrl</compoundname>
+    <innerfile refid="ctrl__bridge_8hpp">ctrl_bridge.hpp</innerfile>
+    <innerfile refid="ctrl__bridge__params_8hpp">ctrl_bridge_params.hpp</innerfile>
+    <innerfile refid="ctrl__encoding_8hpp">ctrl_encoding.hpp</innerfile>
+    <innerfile refid="ctrl__msgs__defs_8hpp">ctrl_msgs_defs.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/bridge/ctrl/"/>
+  </compounddef>
+</doxygen>

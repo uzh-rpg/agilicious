@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1SimulatorBase" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>agi::SimulatorBase</compoundname>
+    <basecompoundref refid="classagi_1_1Module" prot="public" virt="non-virtual">agi::Module&lt; SimulatorBase &gt;</basecompoundref>
+    <derivedcompoundref refid="classagi_1_1QuadrotorSimulator" prot="public" virt="non-virtual">agi::QuadrotorSimulator</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1SimulatorBase_1ad22c9bb98de68f9e4846293189f2b5b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::SimulatorBase::SimulatorBase</definition>
+        <argsstring>(const std::string &amp;name=&quot;Simulator&quot;)</argsstring>
+        <name>SimulatorBase</name>
+        <qualifiedname>agi::SimulatorBase::SimulatorBase</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+          <defval>&quot;Simulator&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_base.hpp" line="11" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SimulatorBase_1a9e50dbccab1606699b9ffc943363407d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual agi::SimulatorBase::~SimulatorBase</definition>
+        <argsstring>()</argsstring>
+        <name>~SimulatorBase</name>
+        <qualifiedname>agi::SimulatorBase::~SimulatorBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_base.hpp" line="12" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SimulatorBase_1a9de52e55a34b8ce1e1c88bc2f5b76e74" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::SimulatorBase::reset</definition>
+        <argsstring>(const bool &amp;reset_time=true)=0</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::SimulatorBase::reset</qualifiedname>
+        <reimplementedby refid="classagi_1_1QuadrotorSimulator_1a4319171c9fdc3ec1f44c2423b992c7a2">reset</reimplementedby>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>reset_time</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_base.hpp" line="15" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SimulatorBase_1a40b32a47e01916eeebc4ca1cfc21f9df" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::SimulatorBase::reset</definition>
+        <argsstring>(const QuadState &amp;state)=0</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::SimulatorBase::reset</qualifiedname>
+        <reimplementedby refid="classagi_1_1QuadrotorSimulator_1a1cb5e6e5de34056fba3629986d9000bf">reset</reimplementedby>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_base.hpp" line="16" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SimulatorBase_1af3a3d88245a2d2f16ed327f429f5f93d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::SimulatorBase::run</definition>
+        <argsstring>(const Scalar dt)=0</argsstring>
+        <name>run</name>
+        <qualifiedname>agi::SimulatorBase::run</qualifiedname>
+        <reimplementedby refid="classagi_1_1QuadrotorSimulator_1a9f0da532d22084817acdaaecf9848db5">run</reimplementedby>
+        <param>
+          <type>const Scalar</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_base.hpp" line="19" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SimulatorBase_1a252dbd24224dc09bb49054c0de50a4b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::SimulatorBase::getState</definition>
+        <argsstring>(QuadState *const state) const =0</argsstring>
+        <name>getState</name>
+        <qualifiedname>agi::SimulatorBase::getState</qualifiedname>
+        <reimplementedby refid="classagi_1_1QuadrotorSimulator_1abf7bd53c711ebec0bdc5672e3be45e5d">getState</reimplementedby>
+        <param>
+          <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> *const</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_base.hpp" line="22" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SimulatorBase_1ac8a6ab25a55de3213ddee143f75897fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::SimulatorBase::setState</definition>
+        <argsstring>(const QuadState &amp;state)=0</argsstring>
+        <name>setState</name>
+        <qualifiedname>agi::SimulatorBase::setState</qualifiedname>
+        <reimplementedby refid="classagi_1_1QuadrotorSimulator_1a5781dbaed8c1ff6177bead78759562fe">setState</reimplementedby>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/simulator_base.hpp" line="25" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::Module&lt; SimulatorBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="3">
+        <label>agi::QuadrotorSimulator</label>
+        <link refid="classagi_1_1QuadrotorSimulator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::SimulatorBase</label>
+        <link refid="classagi_1_1SimulatorBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::Module&lt; SimulatorBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+      <node id="1">
+        <label>agi::SimulatorBase</label>
+        <link refid="classagi_1_1SimulatorBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/simulator/simulator_base.hpp" line="9" column="1" bodyfile="agilib/include/agilib/simulator/simulator_base.hpp" bodystart="9" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classagi_1_1SimulatorBase_1a252dbd24224dc09bb49054c0de50a4b4" prot="public" virt="pure-virtual"><scope>agi::SimulatorBase</scope><name>getState</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::SimulatorBase</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::SimulatorBase</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::SimulatorBase</scope><name>Module</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::SimulatorBase</scope><name>name</name></member>
+      <member refid="classagi_1_1SimulatorBase_1a9de52e55a34b8ce1e1c88bc2f5b76e74" prot="public" virt="pure-virtual"><scope>agi::SimulatorBase</scope><name>reset</name></member>
+      <member refid="classagi_1_1SimulatorBase_1a40b32a47e01916eeebc4ca1cfc21f9df" prot="public" virt="pure-virtual"><scope>agi::SimulatorBase</scope><name>reset</name></member>
+      <member refid="classagi_1_1SimulatorBase_1af3a3d88245a2d2f16ed327f429f5f93d" prot="public" virt="pure-virtual"><scope>agi::SimulatorBase</scope><name>run</name></member>
+      <member refid="classagi_1_1SimulatorBase_1ac8a6ab25a55de3213ddee143f75897fd" prot="public" virt="pure-virtual"><scope>agi::SimulatorBase</scope><name>setState</name></member>
+      <member refid="classagi_1_1SimulatorBase_1ad22c9bb98de68f9e4846293189f2b5b9" prot="public" virt="non-virtual"><scope>agi::SimulatorBase</scope><name>SimulatorBase</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::SimulatorBase</scope><name>~Module</name></member>
+      <member refid="classagi_1_1SimulatorBase_1a9e50dbccab1606699b9ffc943363407d" prot="public" virt="virtual"><scope>agi::SimulatorBase</scope><name>~SimulatorBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

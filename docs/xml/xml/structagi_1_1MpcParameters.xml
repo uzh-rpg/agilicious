@@ -1,0 +1,497 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1MpcParameters" kind="struct" language="C++" prot="public">
+    <compoundname>agi::MpcParameters</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1a2df6e07ea957b761f1ac3582c33e5539" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::MpcParameters::threaded_preparation_</definition>
+        <argsstring></argsstring>
+        <name>threaded_preparation_</name>
+        <qualifiedname>agi::MpcParameters::threaded_preparation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="16" column="8" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1ab8a71ce1c951cbf92eb62015a7c81584" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::MpcParameters::timing_</definition>
+        <argsstring></argsstring>
+        <name>timing_</name>
+        <qualifiedname>agi::MpcParameters::timing_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="17" column="8" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1a031c5876827b62d0f1f67d63572b1dcc" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::MpcParameters::max_wait_time_before_preparation_</definition>
+        <argsstring></argsstring>
+        <name>max_wait_time_before_preparation_</name>
+        <qualifiedname>agi::MpcParameters::max_wait_time_before_preparation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="19" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1a647e1f7965ad869977bf371e4d05201b" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::MpcParameters::max_wait_time_after_preparation_</definition>
+        <argsstring></argsstring>
+        <name>max_wait_time_after_preparation_</name>
+        <qualifiedname>agi::MpcParameters::max_wait_time_after_preparation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="20" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1aac845306574d448946e9ce845786796f" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MpcParameters::Q_pos_</definition>
+        <argsstring></argsstring>
+        <name>Q_pos_</name>
+        <qualifiedname>agi::MpcParameters::Q_pos_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="22" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1a7d85b0ca87e6951998082230a9253127" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MpcParameters::Q_att_</definition>
+        <argsstring></argsstring>
+        <name>Q_att_</name>
+        <qualifiedname>agi::MpcParameters::Q_att_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="23" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1a29cb4f3d8a53e192b485d403ffc14629" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MpcParameters::Q_vel_</definition>
+        <argsstring></argsstring>
+        <name>Q_vel_</name>
+        <qualifiedname>agi::MpcParameters::Q_vel_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="24" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1a8d47ad9bfc243eadaf26ffc293b1a918" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 2 &gt;</type>
+        <definition>Vector&lt;2&gt; agi::MpcParameters::Q_omega_xy_</definition>
+        <argsstring></argsstring>
+        <name>Q_omega_xy_</name>
+        <qualifiedname>agi::MpcParameters::Q_omega_xy_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="25" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1ae73f5c44fdc192092037428ed1de4584" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::MpcParameters::Q_omega_z_</definition>
+        <argsstring></argsstring>
+        <name>Q_omega_z_</name>
+        <qualifiedname>agi::MpcParameters::Q_omega_z_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="26" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1abbd6a25964258f4c258e3d5e347e9717" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 4 &gt;</type>
+        <definition>Vector&lt;4&gt; agi::MpcParameters::R_</definition>
+        <argsstring></argsstring>
+        <name>R_</name>
+        <qualifiedname>agi::MpcParameters::R_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="27" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1a1685ef1f6a2cfe75e9f7b0ce43edee67" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::MpcParameters::exp_decay_</definition>
+        <argsstring></argsstring>
+        <name>exp_decay_</name>
+        <qualifiedname>agi::MpcParameters::exp_decay_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="29" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1ac1d0b26c3fb7ebfb5409fe9d46cf6e72" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::MpcParameters::cog_enable_</definition>
+        <argsstring></argsstring>
+        <name>cog_enable_</name>
+        <qualifiedname>agi::MpcParameters::cog_enable_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="32" column="8" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1a72441df08720ea197b4800daa9d28eeb" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::MpcParameters::cog_abs_velocity_limit_</definition>
+        <argsstring></argsstring>
+        <name>cog_abs_velocity_limit_</name>
+        <qualifiedname>agi::MpcParameters::cog_abs_velocity_limit_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="33" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1aa14cb7f9b1ebacc6bb9f787cad4b65af" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::MpcParameters::cog_abs_omega_limit_</definition>
+        <argsstring></argsstring>
+        <name>cog_abs_omega_limit_</name>
+        <qualifiedname>agi::MpcParameters::cog_abs_omega_limit_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="34" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1a11b1929e9710c1cc0702220700909af0" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::MpcParameters::cog_rel_hover_thrust_limit_</definition>
+        <argsstring></argsstring>
+        <name>cog_rel_hover_thrust_limit_</name>
+        <qualifiedname>agi::MpcParameters::cog_rel_hover_thrust_limit_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="35" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1aa90abfcce9939c24c368fe2aba0237d1" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::MpcParameters::cog_height_limit_</definition>
+        <argsstring></argsstring>
+        <name>cog_height_limit_</name>
+        <qualifiedname>agi::MpcParameters::cog_height_limit_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="36" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1a565382ba717fea543c659760a0837223" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 2 &gt;</type>
+        <definition>Vector&lt;2&gt; agi::MpcParameters::Q_cog_omega_</definition>
+        <argsstring></argsstring>
+        <name>Q_cog_omega_</name>
+        <qualifiedname>agi::MpcParameters::Q_cog_omega_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="37" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1a3c16c5a9ed80371204afded04db44cba" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 2 &gt;</type>
+        <definition>Vector&lt;2&gt; agi::MpcParameters::Q_cog_lengths_</definition>
+        <argsstring></argsstring>
+        <name>Q_cog_lengths_</name>
+        <qualifiedname>agi::MpcParameters::Q_cog_lengths_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="38" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1a122cb350f5b9023693f3d80f90a3a91e" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 2 &gt;</type>
+        <definition>Vector&lt;2&gt; agi::MpcParameters::Q_cog_omega_init_</definition>
+        <argsstring></argsstring>
+        <name>Q_cog_omega_init_</name>
+        <qualifiedname>agi::MpcParameters::Q_cog_omega_init_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="39" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1abdfcaf23ab1c709e4ad4936c630e81d2" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 2 &gt;</type>
+        <definition>Vector&lt;2&gt; agi::MpcParameters::Q_cog_lengths_init_</definition>
+        <argsstring></argsstring>
+        <name>Q_cog_lengths_init_</name>
+        <qualifiedname>agi::MpcParameters::Q_cog_lengths_init_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="40" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MpcParameters_1a48d72d7457bc71f65f4b73f8b9a86477" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 2 &gt;</type>
+        <definition>Vector&lt;2&gt; agi::MpcParameters::R_cog_</definition>
+        <argsstring></argsstring>
+        <name>R_cog_</name>
+        <qualifiedname>agi::MpcParameters::R_cog_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="41" column="10" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1MpcParameters_1aed6b60e82878e0163feb46699a613801" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::MpcParameters::MpcParameters</definition>
+        <argsstring>()</argsstring>
+        <name>MpcParameters</name>
+        <qualifiedname>agi::MpcParameters::MpcParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="10" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MpcParameters_1a69b29e79aa12e7703f67f4e98632d8b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::MpcParameters::MpcParameters</definition>
+        <argsstring>(const MpcParameters &amp;rhs)=default</argsstring>
+        <name>MpcParameters</name>
+        <qualifiedname>agi::MpcParameters::MpcParameters</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1MpcParameters" kindref="compound">MpcParameters</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="11" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MpcParameters_1a5bbac15dd8352c5cc391e964b1dc6f07" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::MpcParameters::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::MpcParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="14" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MpcParameters_1a8574f304f0df7bfac6d16c6c98e5571a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::MpcParameters::valid</definition>
+        <argsstring>() const override</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::MpcParameters::valid</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b">valid</reimplements>
+        <briefdescription>
+<para>Check if parameters are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="43" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MpcParameters_1aa72a975fca1221525746975fe5ee1b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::MpcParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="13" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MpcParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const Yaml &amp;yaml)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::MpcParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="13" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structagi_1_1MpcParameters_1ac2262c28db289cf4595a19f195143857" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const MpcParameters &amp;params)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::MpcParameters::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1MpcParameters" kindref="compound">MpcParameters</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="45" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::MpcParameters</label>
+        <link refid="structagi_1_1MpcParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::MpcParameters</label>
+        <link refid="structagi_1_1MpcParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/controller/mpc/mpc_params.hpp" line="7" column="1" bodyfile="agilib/include/agilib/controller/mpc/mpc_params.hpp" bodystart="7" bodyend="47"/>
+    <listofallmembers>
+      <member refid="structagi_1_1MpcParameters_1aa14cb7f9b1ebacc6bb9f787cad4b65af" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>cog_abs_omega_limit_</name></member>
+      <member refid="structagi_1_1MpcParameters_1a72441df08720ea197b4800daa9d28eeb" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>cog_abs_velocity_limit_</name></member>
+      <member refid="structagi_1_1MpcParameters_1ac1d0b26c3fb7ebfb5409fe9d46cf6e72" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>cog_enable_</name></member>
+      <member refid="structagi_1_1MpcParameters_1aa90abfcce9939c24c368fe2aba0237d1" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>cog_height_limit_</name></member>
+      <member refid="structagi_1_1MpcParameters_1a11b1929e9710c1cc0702220700909af0" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>cog_rel_hover_thrust_limit_</name></member>
+      <member refid="structagi_1_1MpcParameters_1a1685ef1f6a2cfe75e9f7b0ce43edee67" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>exp_decay_</name></member>
+      <member refid="structagi_1_1MpcParameters_1a5bbac15dd8352c5cc391e964b1dc6f07" prot="public" virt="virtual"><scope>agi::MpcParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1MpcParameters_1aa72a975fca1221525746975fe5ee1b6a" prot="public" virt="virtual"><scope>agi::MpcParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1MpcParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" virt="virtual"><scope>agi::MpcParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1MpcParameters_1a647e1f7965ad869977bf371e4d05201b" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>max_wait_time_after_preparation_</name></member>
+      <member refid="structagi_1_1MpcParameters_1a031c5876827b62d0f1f67d63572b1dcc" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>max_wait_time_before_preparation_</name></member>
+      <member refid="structagi_1_1MpcParameters_1aed6b60e82878e0163feb46699a613801" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>MpcParameters</name></member>
+      <member refid="structagi_1_1MpcParameters_1a69b29e79aa12e7703f67f4e98632d8b9" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>MpcParameters</name></member>
+      <member refid="structagi_1_1MpcParameters_1ac2262c28db289cf4595a19f195143857" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structagi_1_1MpcParameters_1a7d85b0ca87e6951998082230a9253127" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>Q_att_</name></member>
+      <member refid="structagi_1_1MpcParameters_1a3c16c5a9ed80371204afded04db44cba" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>Q_cog_lengths_</name></member>
+      <member refid="structagi_1_1MpcParameters_1abdfcaf23ab1c709e4ad4936c630e81d2" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>Q_cog_lengths_init_</name></member>
+      <member refid="structagi_1_1MpcParameters_1a565382ba717fea543c659760a0837223" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>Q_cog_omega_</name></member>
+      <member refid="structagi_1_1MpcParameters_1a122cb350f5b9023693f3d80f90a3a91e" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>Q_cog_omega_init_</name></member>
+      <member refid="structagi_1_1MpcParameters_1a8d47ad9bfc243eadaf26ffc293b1a918" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>Q_omega_xy_</name></member>
+      <member refid="structagi_1_1MpcParameters_1ae73f5c44fdc192092037428ed1de4584" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>Q_omega_z_</name></member>
+      <member refid="structagi_1_1MpcParameters_1aac845306574d448946e9ce845786796f" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>Q_pos_</name></member>
+      <member refid="structagi_1_1MpcParameters_1a29cb4f3d8a53e192b485d403ffc14629" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>Q_vel_</name></member>
+      <member refid="structagi_1_1MpcParameters_1abbd6a25964258f4c258e3d5e347e9717" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>R_</name></member>
+      <member refid="structagi_1_1MpcParameters_1a48d72d7457bc71f65f4b73f8b9a86477" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>R_cog_</name></member>
+      <member refid="structagi_1_1MpcParameters_1a2df6e07ea957b761f1ac3582c33e5539" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>threaded_preparation_</name></member>
+      <member refid="structagi_1_1MpcParameters_1ab8a71ce1c951cbf92eb62015a7c81584" prot="public" virt="non-virtual"><scope>agi::MpcParameters</scope><name>timing_</name></member>
+      <member refid="structagi_1_1MpcParameters_1a8574f304f0df7bfac6d16c6c98e5571a" prot="public" virt="virtual"><scope>agi::MpcParameters</scope><name>valid</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::MpcParameters</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

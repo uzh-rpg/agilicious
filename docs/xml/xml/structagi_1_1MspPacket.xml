@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1MspPacket" kind="struct" language="C++" prot="public">
+    <compoundname>agi::MspPacket</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structagi_1_1MspPacket_1a8d410db3aba720857223896f49359d41" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* agi::MspPacket::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>agi::MspPacket::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="55" column="17" bodyfile="agilib/include/agilib/bridge/msp/msp_packet.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1MspPacket_1aee7d22861a467b5b748889077011d368" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::MspPacket::MspPacket</definition>
+        <argsstring>(const char payload_bytes)</argsstring>
+        <name>MspPacket</name>
+        <qualifiedname>agi::MspPacket::MspPacket</qualifiedname>
+        <param>
+          <type>const char</type>
+          <declname>payload_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="16" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MspPacket_1a4802326dc7e045a035e1225a7ffc7bf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::MspPacket::~MspPacket</definition>
+        <argsstring>()</argsstring>
+        <name>~MspPacket</name>
+        <qualifiedname>agi::MspPacket::~MspPacket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="17" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MspPacket_1ad9327fafa7fb2ad8453fc0ec1bcc1e62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::MspPacket::finalize</definition>
+        <argsstring>()</argsstring>
+        <name>finalize</name>
+        <qualifiedname>agi::MspPacket::finalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="19" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MspPacket_1ab9bcb853bdae458c14c5e79659b423e7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::MspPacket::copy_to_buffer</definition>
+        <argsstring>(char *const buffer) const</argsstring>
+        <name>copy_to_buffer</name>
+        <qualifiedname>agi::MspPacket::copy_to_buffer</qualifiedname>
+        <param>
+          <type>char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="20" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MspPacket_1ad2ef5f52b14d796cae90804bee6c5ea1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char agi::MspPacket::direction</definition>
+        <argsstring>() const</argsstring>
+        <name>direction</name>
+        <qualifiedname>agi::MspPacket::direction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="24" column="17" bodyfile="agilib/include/agilib/bridge/msp/msp_packet.hpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MspPacket_1a8a4de37ecaaca4c80e627e70aa97413e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char agi::MspPacket::payload_length</definition>
+        <argsstring>() const</argsstring>
+        <name>payload_length</name>
+        <qualifiedname>agi::MspPacket::payload_length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="26" column="17" bodyfile="agilib/include/agilib/bridge/msp/msp_packet.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MspPacket_1afea0a71b3da042cc3d5b55414cd9c5a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char agi::MspPacket::message_size</definition>
+        <argsstring>() const</argsstring>
+        <name>message_size</name>
+        <qualifiedname>agi::MspPacket::message_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="28" column="17" bodyfile="agilib/include/agilib/bridge/msp/msp_packet.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MspPacket_1a8bcd5855ac7e99de9a465779efc0b74f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char &amp;</type>
+        <definition>unsigned char &amp; agi::MspPacket::code</definition>
+        <argsstring>() const</argsstring>
+        <name>code</name>
+        <qualifiedname>agi::MspPacket::code</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="31" column="17" bodyfile="agilib/include/agilib/bridge/msp/msp_packet.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MspPacket_1ae34f893e1aa689efe88b5f318fc2999f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+            <defval>unsigned char</defval>
+          </param>
+        </templateparamlist>
+        <type>const T *const</type>
+        <definition>const T *const agi::MspPacket::payload</definition>
+        <argsstring>() const</argsstring>
+        <name>payload</name>
+        <qualifiedname>agi::MspPacket::payload</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="34" column="17" bodyfile="agilib/include/agilib/bridge/msp/msp_packet.hpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MspPacket_1a6234b62762834e72c404547509b53b1a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char &amp;</type>
+        <definition>unsigned char &amp; agi::MspPacket::checksum</definition>
+        <argsstring>() const</argsstring>
+        <name>checksum</name>
+        <qualifiedname>agi::MspPacket::checksum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="38" column="17" bodyfile="agilib/include/agilib/bridge/msp/msp_packet.hpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MspPacket_1ac519ea38a5625862e834b49d530d13e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const void *</type>
+        <definition>const void * agi::MspPacket::message</definition>
+        <argsstring>() const</argsstring>
+        <name>message</name>
+        <qualifiedname>agi::MspPacket::message</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="40" column="14" bodyfile="agilib/include/agilib/bridge/msp/msp_packet.hpp" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MspPacket_1a18ca1d2709d3f790eb7e3e8525641bab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char &amp;</type>
+        <definition>unsigned char &amp; agi::MspPacket::direction</definition>
+        <argsstring>()</argsstring>
+        <name>direction</name>
+        <qualifiedname>agi::MspPacket::direction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="43" column="17" bodyfile="agilib/include/agilib/bridge/msp/msp_packet.hpp" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MspPacket_1afab1d64c44cd3dc3154a606aca2db754" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char &amp;</type>
+        <definition>unsigned char &amp; agi::MspPacket::code</definition>
+        <argsstring>()</argsstring>
+        <name>code</name>
+        <qualifiedname>agi::MspPacket::code</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="45" column="17" bodyfile="agilib/include/agilib/bridge/msp/msp_packet.hpp" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MspPacket_1a30272ca5e1f8ed7e49bfddd8821720f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+            <defval>unsigned char</defval>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T * agi::MspPacket::payload</definition>
+        <argsstring>()</argsstring>
+        <name>payload</name>
+        <qualifiedname>agi::MspPacket::payload</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="48" column="5" bodyfile="agilib/include/agilib/bridge/msp/msp_packet.hpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MspPacket_1ae81324198f84e89f3b9ec65f823093f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char &amp;</type>
+        <definition>unsigned char &amp; agi::MspPacket::checksum</definition>
+        <argsstring>()</argsstring>
+        <name>checksum</name>
+        <qualifiedname>agi::MspPacket::checksum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="52" column="17" bodyfile="agilib/include/agilib/bridge/msp/msp_packet.hpp" bodystart="52" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structagi_1_1MspPacket_1a4907897cb95a845bdeb591609a4005e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const MspPacket &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::MspPacket::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1MspPacket" kindref="compound">MspPacket</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="21" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/bridge/msp/msp_packet.hpp" line="15" column="1" bodyfile="agilib/include/agilib/bridge/msp/msp_packet.hpp" bodystart="15" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structagi_1_1MspPacket_1a6234b62762834e72c404547509b53b1a" prot="public" virt="non-virtual"><scope>agi::MspPacket</scope><name>checksum</name></member>
+      <member refid="structagi_1_1MspPacket_1ae81324198f84e89f3b9ec65f823093f5" prot="public" virt="non-virtual"><scope>agi::MspPacket</scope><name>checksum</name></member>
+      <member refid="structagi_1_1MspPacket_1a8bcd5855ac7e99de9a465779efc0b74f" prot="public" virt="non-virtual"><scope>agi::MspPacket</scope><name>code</name></member>
+      <member refid="structagi_1_1MspPacket_1afab1d64c44cd3dc3154a606aca2db754" prot="public" virt="non-virtual"><scope>agi::MspPacket</scope><name>code</name></member>
+      <member refid="structagi_1_1MspPacket_1ab9bcb853bdae458c14c5e79659b423e7" prot="public" virt="non-virtual"><scope>agi::MspPacket</scope><name>copy_to_buffer</name></member>
+      <member refid="structagi_1_1MspPacket_1a8d410db3aba720857223896f49359d41" prot="private" virt="non-virtual"><scope>agi::MspPacket</scope><name>data</name></member>
+      <member refid="structagi_1_1MspPacket_1ad2ef5f52b14d796cae90804bee6c5ea1" prot="public" virt="non-virtual"><scope>agi::MspPacket</scope><name>direction</name></member>
+      <member refid="structagi_1_1MspPacket_1a18ca1d2709d3f790eb7e3e8525641bab" prot="public" virt="non-virtual"><scope>agi::MspPacket</scope><name>direction</name></member>
+      <member refid="structagi_1_1MspPacket_1ad9327fafa7fb2ad8453fc0ec1bcc1e62" prot="public" virt="non-virtual"><scope>agi::MspPacket</scope><name>finalize</name></member>
+      <member refid="structagi_1_1MspPacket_1ac519ea38a5625862e834b49d530d13e1" prot="public" virt="non-virtual"><scope>agi::MspPacket</scope><name>message</name></member>
+      <member refid="structagi_1_1MspPacket_1afea0a71b3da042cc3d5b55414cd9c5a3" prot="public" virt="non-virtual"><scope>agi::MspPacket</scope><name>message_size</name></member>
+      <member refid="structagi_1_1MspPacket_1aee7d22861a467b5b748889077011d368" prot="public" virt="non-virtual"><scope>agi::MspPacket</scope><name>MspPacket</name></member>
+      <member refid="structagi_1_1MspPacket_1a4907897cb95a845bdeb591609a4005e7" prot="public" virt="non-virtual"><scope>agi::MspPacket</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structagi_1_1MspPacket_1ae34f893e1aa689efe88b5f318fc2999f" prot="public" virt="non-virtual"><scope>agi::MspPacket</scope><name>payload</name></member>
+      <member refid="structagi_1_1MspPacket_1a30272ca5e1f8ed7e49bfddd8821720f3" prot="public" virt="non-virtual"><scope>agi::MspPacket</scope><name>payload</name></member>
+      <member refid="structagi_1_1MspPacket_1a8a4de37ecaaca4c80e627e70aa97413e" prot="public" virt="non-virtual"><scope>agi::MspPacket</scope><name>payload_length</name></member>
+      <member refid="structagi_1_1MspPacket_1a4802326dc7e045a035e1225a7ffc7bf0" prot="public" virt="non-virtual"><scope>agi::MspPacket</scope><name>~MspPacket</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

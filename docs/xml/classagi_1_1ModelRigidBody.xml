@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1ModelRigidBody" kind="class" language="C++" prot="public">
+    <compoundname>agi::ModelRigidBody</compoundname>
+    <basecompoundref refid="classagi_1_1ModelBase" prot="public" virt="non-virtual">agi::ModelBase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1ModelRigidBody_1af156247f4fb2819694bb3d946abfdc0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::ModelRigidBody::ModelRigidBody</definition>
+        <argsstring>(Quadrotor quad)</argsstring>
+        <name>ModelRigidBody</name>
+        <qualifiedname>agi::ModelRigidBody::ModelRigidBody</qualifiedname>
+        <param>
+          <type><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+          <declname>quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_rigid_body.hpp" line="12" column="3" bodyfile="agilib/include/agilib/simulator/model_rigid_body.hpp" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1ModelRigidBody_1a9614415f3546e29c168a370716254943" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::ModelRigidBody::run</definition>
+        <argsstring>(const Ref&lt; const Vector&lt; QS::SIZE &gt; &gt;, Ref&lt; Vector&lt; QS::SIZE &gt; &gt;) const override</argsstring>
+        <name>run</name>
+        <qualifiedname>agi::ModelRigidBody::run</qualifiedname>
+        <reimplements refid="classagi_1_1ModelBase_1abda177a5b2ad6f80d685c62c4175a73d">run</reimplements>
+        <param>
+          <type>const Ref&lt; const Vector&lt; QS::SIZE &gt; &gt;</type>
+        </param>
+        <param>
+          <type>Ref&lt; Vector&lt; QS::SIZE &gt; &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_rigid_body.hpp" line="14" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::ModelBase</label>
+        <link refid="classagi_1_1ModelBase"/>
+      </node>
+      <node id="1">
+        <label>agi::ModelRigidBody</label>
+        <link refid="classagi_1_1ModelRigidBody"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::ModelBase</label>
+        <link refid="classagi_1_1ModelBase"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>quad_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::ModelRigidBody</label>
+        <link refid="classagi_1_1ModelRigidBody"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="3">
+        <label>agi::Quadrotor</label>
+        <link refid="structagi_1_1Quadrotor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/simulator/model_rigid_body.hpp" line="8" column="1" bodyfile="agilib/include/agilib/simulator/model_rigid_body.hpp" bodystart="8" bodyend="16"/>
+    <listofallmembers>
+      <member refid="classagi_1_1ModelBase_1afa0e1f1d5823563b5ba7a34212571421" prot="public" virt="non-virtual"><scope>agi::ModelRigidBody</scope><name>ModelBase</name></member>
+      <member refid="classagi_1_1ModelRigidBody_1af156247f4fb2819694bb3d946abfdc0f" prot="public" virt="non-virtual"><scope>agi::ModelRigidBody</scope><name>ModelRigidBody</name></member>
+      <member refid="classagi_1_1ModelBase_1a71a5186d36000793a8fb4d163a14bbf4" prot="protected" virt="non-virtual"><scope>agi::ModelRigidBody</scope><name>quad_</name></member>
+      <member refid="classagi_1_1ModelRigidBody_1a9614415f3546e29c168a370716254943" prot="public" virt="virtual"><scope>agi::ModelRigidBody</scope><name>run</name></member>
+      <member refid="classagi_1_1ModelBase_1aec144173e8686f6161a848775a17342b" prot="public" virt="virtual"><scope>agi::ModelRigidBody</scope><name>updateQuad</name></member>
+      <member refid="classagi_1_1ModelBase_1a394ad140874d5e7b5f4837931ec8ec2d" prot="public" virt="virtual"><scope>agi::ModelRigidBody</scope><name>~ModelBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

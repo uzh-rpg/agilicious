@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1PositionGuard" kind="class" language="C++" prot="public">
+    <compoundname>agi::PositionGuard</compoundname>
+    <basecompoundref refid="classagi_1_1GuardBase" prot="public" virt="non-virtual">agi::GuardBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1PositionGuard_1afdcb21248acc2ab54a9dfa22e7553e9c" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1PositionGuardParams" kindref="compound">PositionGuardParams</ref></type>
+        <definition>PositionGuardParams agi::PositionGuard::params_</definition>
+        <argsstring></argsstring>
+        <name>params_</name>
+        <qualifiedname>agi::PositionGuard::params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/guard/position_guard.hpp" line="18" column="23" bodyfile="agilib/include/agilib/guard/position_guard.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1PositionGuard_1aee4533a5badd45c6c487f1515cc52c62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::PositionGuard::PositionGuard</definition>
+        <argsstring>(const PositionGuardParams &amp;params)</argsstring>
+        <name>PositionGuard</name>
+        <qualifiedname>agi::PositionGuard::PositionGuard</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1PositionGuardParams" kindref="compound">PositionGuardParams</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/guard/position_guard.hpp" line="12" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PositionGuard_1a0e045528c7c9a102a7697e3c091681e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::PositionGuard::evaluateState</definition>
+        <argsstring>(const QuadState &amp;state) override</argsstring>
+        <name>evaluateState</name>
+        <qualifiedname>agi::PositionGuard::evaluateState</qualifiedname>
+        <reimplements refid="classagi_1_1GuardBase_1a9b8427e243d453ef3c565cbc8043c229">evaluateState</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/guard/position_guard.hpp" line="13" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PositionGuard_1aafab46bd934227a70de7dd0314ce8ee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::PositionGuard::update</definition>
+        <argsstring>(const QuadState &amp;state) override</argsstring>
+        <name>update</name>
+        <qualifiedname>agi::PositionGuard::update</qualifiedname>
+        <reimplements refid="classagi_1_1GuardBase_1a814f18f903a8b2f9966d991a40d7b0c4">update</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/guard/position_guard.hpp" line="14" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PositionGuard_1a5f0821e5f63693b217ad192dc2272d01" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void agi::PositionGuard::reset</definition>
+        <argsstring>() override</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::PositionGuard::reset</qualifiedname>
+        <reimplements refid="classagi_1_1GuardBase_1a468cbf5f7de307bc03047befb6d9aa06">reset</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/guard/position_guard.hpp" line="15" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>agi::Module&lt; GuardBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="2">
+        <label>agi::GuardBase</label>
+        <link refid="classagi_1_1GuardBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::PositionGuard</label>
+        <link refid="classagi_1_1PositionGuard"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>agi::Module&lt; GuardBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::GuardBase</label>
+        <link refid="classagi_1_1GuardBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+      <node id="1">
+        <label>agi::PositionGuard</label>
+        <link refid="classagi_1_1PositionGuard"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/guard/position_guard.hpp" line="9" column="1" bodyfile="agilib/include/agilib/guard/position_guard.hpp" bodystart="9" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classagi_1_1PositionGuard_1a0e045528c7c9a102a7697e3c091681e8" prot="public" virt="virtual"><scope>agi::PositionGuard</scope><name>evaluateState</name></member>
+      <member refid="classagi_1_1GuardBase_1a66e6ab986310e63b3a1b41fc93ca4b96" prot="protected" virt="non-virtual"><scope>agi::PositionGuard</scope><name>externally_triggered_</name></member>
+      <member refid="classagi_1_1GuardBase_1aaf69d7ee3c13847eb16b21ef2dea862b" prot="protected" virt="non-virtual"><scope>agi::PositionGuard</scope><name>guard_state_</name></member>
+      <member refid="classagi_1_1GuardBase_1aecb47ccf7ada2c20f8e27335a6964085" prot="public" virt="non-virtual"><scope>agi::PositionGuard</scope><name>GuardBase</name></member>
+      <member refid="classagi_1_1GuardBase_1a654109f804de9f2dedbdcaa24505bef8" prot="public" virt="non-virtual"><scope>agi::PositionGuard</scope><name>GuardState</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::PositionGuard</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::PositionGuard</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::PositionGuard</scope><name>Module</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::PositionGuard</scope><name>name</name></member>
+      <member refid="classagi_1_1PositionGuard_1afdcb21248acc2ab54a9dfa22e7553e9c" prot="private" virt="non-virtual"><scope>agi::PositionGuard</scope><name>params_</name></member>
+      <member refid="classagi_1_1PositionGuard_1aee4533a5badd45c6c487f1515cc52c62" prot="public" virt="non-virtual"><scope>agi::PositionGuard</scope><name>PositionGuard</name></member>
+      <member refid="classagi_1_1PositionGuard_1a5f0821e5f63693b217ad192dc2272d01" prot="public" virt="virtual"><scope>agi::PositionGuard</scope><name>reset</name></member>
+      <member refid="classagi_1_1GuardBase_1a6deeea2da083cbbd309039779c576705" prot="public" virt="non-virtual"><scope>agi::PositionGuard</scope><name>trigger</name></member>
+      <member refid="classagi_1_1GuardBase_1aa25af4d261ae8341a99d2532cd6496c7" prot="public" virt="non-virtual"><scope>agi::PositionGuard</scope><name>triggered</name></member>
+      <member refid="classagi_1_1PositionGuard_1aafab46bd934227a70de7dd0314ce8ee2" prot="public" virt="virtual"><scope>agi::PositionGuard</scope><name>update</name></member>
+      <member refid="classagi_1_1GuardBase_1a7e2f25a5635f28b8596b2338436aee04" prot="public" virt="virtual"><scope>agi::PositionGuard</scope><name>~GuardBase</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::PositionGuard</scope><name>~Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

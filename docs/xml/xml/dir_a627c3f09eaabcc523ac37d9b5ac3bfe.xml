@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_a627c3f09eaabcc523ac37d9b5ac3bfe" kind="dir">
+    <compoundname>agilib/include/agilib/bridge/sbus</compoundname>
+    <innerfile refid="sbus__bridge_8hpp">sbus_bridge.hpp</innerfile>
+    <innerfile refid="sbus__bridge__params_8hpp">sbus_bridge_params.hpp</innerfile>
+    <innerfile refid="sbus__encoding_8hpp">sbus_encoding.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/bridge/sbus/"/>
+  </compounddef>
+</doxygen>

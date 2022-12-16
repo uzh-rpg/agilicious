@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1Throttler" kind="class" language="C++" prot="public">
+    <compoundname>agi::Throttler</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1Throttler_1ab67ce802a7872f3f0930adc0718a96be" prot="private" static="no" mutable="no">
+        <type>T &amp;</type>
+        <definition>T&amp; agi::Throttler&lt; T &gt;::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <qualifiedname>agi::Throttler::obj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/throttler.hpp" line="25" column="5" bodyfile="agilib/include/agilib/utils/throttler.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Throttler_1a868300f1a56e9aef2f6f430614fe74ed" prot="private" static="no" mutable="no">
+        <type>const Scalar</type>
+        <definition>const Scalar agi::Throttler&lt; T &gt;::period</definition>
+        <argsstring></argsstring>
+        <name>period</name>
+        <qualifiedname>agi::Throttler::period</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/throttler.hpp" line="26" column="16" bodyfile="agilib/include/agilib/utils/throttler.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Throttler_1a4f293ca091844dcbca2da5aefceffc50" prot="private" static="no" mutable="no">
+        <type>std::chrono::steady_clock::time_point</type>
+        <definition>std::chrono::steady_clock::time_point agi::Throttler&lt; T &gt;::t_last</definition>
+        <argsstring></argsstring>
+        <name>t_last</name>
+        <qualifiedname>agi::Throttler::t_last</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/throttler.hpp" line="27" column="41" bodyfile="agilib/include/agilib/utils/throttler.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1Throttler_1ae394fdabc36112a46accaea91ebf824f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::Throttler&lt; T &gt;::Throttler</definition>
+        <argsstring>(T &amp;obj, const Scalar period)</argsstring>
+        <name>Throttler</name>
+        <qualifiedname>agi::Throttler::Throttler</qualifiedname>
+        <param>
+          <type>T &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/throttler.hpp" line="11" column="3" bodyfile="agilib/include/agilib/utils/throttler.hpp" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Throttler_1a4e76cef23588f07cb3338950b6ecd5b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void agi::Throttler&lt; T &gt;::operator()</definition>
+        <argsstring>(F &amp;&amp;f, const Args &amp;... args)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>agi::Throttler::operator()</qualifiedname>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const Args &amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/throttler.hpp" line="14" column="8" bodyfile="agilib/include/agilib/utils/throttler.hpp" bodystart="14" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/utils/throttler.hpp" line="9" column="1" bodyfile="agilib/include/agilib/utils/throttler.hpp" bodystart="9" bodyend="28"/>
+    <listofallmembers>
+      <member refid="classagi_1_1Throttler_1ab67ce802a7872f3f0930adc0718a96be" prot="private" virt="non-virtual"><scope>agi::Throttler</scope><name>obj</name></member>
+      <member refid="classagi_1_1Throttler_1a4e76cef23588f07cb3338950b6ecd5b7" prot="public" virt="non-virtual"><scope>agi::Throttler</scope><name>operator()</name></member>
+      <member refid="classagi_1_1Throttler_1a868300f1a56e9aef2f6f430614fe74ed" prot="private" virt="non-virtual"><scope>agi::Throttler</scope><name>period</name></member>
+      <member refid="classagi_1_1Throttler_1a4f293ca091844dcbca2da5aefceffc50" prot="private" virt="non-virtual"><scope>agi::Throttler</scope><name>t_last</name></member>
+      <member refid="classagi_1_1Throttler_1ae394fdabc36112a46accaea91ebf824f" prot="public" virt="non-virtual"><scope>agi::Throttler</scope><name>Throttler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

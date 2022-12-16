@@ -1,0 +1,722 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1MockVio" kind="class" language="C++" prot="public">
+    <compoundname>agi::MockVio</compoundname>
+    <basecompoundref refid="classagi_1_1EstimatorBase" prot="public" virt="non-virtual">agi::EstimatorBase</basecompoundref>
+    <innerclass refid="classagi_1_1MockVio_1_1ImuSampleWithBias" prot="protected">agi::MockVio::ImuSampleWithBias</innerclass>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classagi_1_1MockVio_1af3a796c0861a42b7e65b6d2f495586b4" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="structagi_1_1MockVioParams" kindref="compound">MockVioParams</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MockVioParams&gt; agi::MockVio::params_</definition>
+        <argsstring></argsstring>
+        <name>params_</name>
+        <qualifiedname>agi::MockVio::params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="57" column="19" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1accfda9846d1281cb05cb73af35e6a01a" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+        <definition>const Quadrotor agi::MockVio::quad_</definition>
+        <argsstring></argsstring>
+        <name>quad_</name>
+        <qualifiedname>agi::MockVio::quad_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="58" column="19" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1a0f311748af8ed8211329e67013f92aca" prot="protected" static="no" mutable="no">
+        <type><ref refid="classagi_1_1IntegratorEuler" kindref="compound">IntegratorEuler</ref></type>
+        <definition>IntegratorEuler agi::MockVio::integrator_</definition>
+        <argsstring></argsstring>
+        <name>integrator_</name>
+        <qualifiedname>agi::MockVio::integrator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="59" column="19" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1a29ec3cc6d5998074b997f6c3508cae41" prot="protected" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::MockVio::t_last_vio_update_</definition>
+        <argsstring></argsstring>
+        <name>t_last_vio_update_</name>
+        <qualifiedname>agi::MockVio::t_last_vio_update_</qualifiedname>
+        <initializer>{0.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="61" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1a6e861fa673b7f7e1e0196e352db395ae" prot="protected" static="no" mutable="no">
+        <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref></type>
+        <definition>QuadState agi::MockVio::last_vio_state_</definition>
+        <argsstring></argsstring>
+        <name>last_vio_state_</name>
+        <qualifiedname>agi::MockVio::last_vio_state_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="62" column="13" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1a6aca8c9a598a68735894bea213b4fc70" prot="protected" static="no" mutable="no">
+        <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref></type>
+        <definition>QuadState agi::MockVio::state_</definition>
+        <argsstring></argsstring>
+        <name>state_</name>
+        <qualifiedname>agi::MockVio::state_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="63" column="13" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1a01fe70e9d983d1236efd4786936cf138" prot="protected" static="no" mutable="no">
+        <type><ref refid="classagi_1_1MockVio_1_1ImuSampleWithBias" kindref="compound">ImuSampleWithBias</ref></type>
+        <definition>ImuSampleWithBias agi::MockVio::last_imu_sample_</definition>
+        <argsstring></argsstring>
+        <name>last_imu_sample_</name>
+        <qualifiedname>agi::MockVio::last_imu_sample_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="64" column="21" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1a6a7dde63a997949dde51adb78f536fca" prot="protected" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MockVio::vio_pos_drift_</definition>
+        <argsstring></argsstring>
+        <name>vio_pos_drift_</name>
+        <qualifiedname>agi::MockVio::vio_pos_drift_</qualifiedname>
+        <initializer>= Vector&lt;3&gt;::Zero()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="65" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1a584d5cf15ced743a67fe8fd6e88fe6d8" prot="protected" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MockVio::vio_pos_drift_dynamic_vel_</definition>
+        <argsstring></argsstring>
+        <name>vio_pos_drift_dynamic_vel_</name>
+        <qualifiedname>agi::MockVio::vio_pos_drift_dynamic_vel_</qualifiedname>
+        <initializer>= Vector&lt;3&gt;::Zero()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="66" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1a5a01ddc3087649ef19da51009f638c0d" prot="protected" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MockVio::vio_pos_drift_static_vel_</definition>
+        <argsstring></argsstring>
+        <name>vio_pos_drift_static_vel_</name>
+        <qualifiedname>agi::MockVio::vio_pos_drift_static_vel_</qualifiedname>
+        <initializer>= Vector&lt;3&gt;::Zero()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="67" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1a3cb6fdff1d493a65174dad49b7ea9d6c" prot="protected" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::MockVio::t_last_state_received_</definition>
+        <argsstring></argsstring>
+        <name>t_last_state_received_</name>
+        <qualifiedname>agi::MockVio::t_last_state_received_</qualifiedname>
+        <initializer>{0.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="70" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1aa5bd44166ef2a73d08cae25e8a863db9" prot="protected" static="no" mutable="no">
+        <type>std::deque&lt; <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &gt;</type>
+        <definition>std::deque&lt;QuadState&gt; agi::MockVio::states_</definition>
+        <argsstring></argsstring>
+        <name>states_</name>
+        <qualifiedname>agi::MockVio::states_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="71" column="14" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1af2136fcf05162f70298e4640dbbf9367" prot="protected" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex agi::MockVio::states_mtx_</definition>
+        <argsstring></argsstring>
+        <name>states_mtx_</name>
+        <qualifiedname>agi::MockVio::states_mtx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="72" column="14" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1a55a3ed12e27b035c5c652966fa408785" prot="protected" static="no" mutable="no">
+        <type>std::deque&lt; <ref refid="classagi_1_1MockVio_1_1ImuSampleWithBias" kindref="compound">ImuSampleWithBias</ref> &gt;</type>
+        <definition>std::deque&lt;ImuSampleWithBias&gt; agi::MockVio::imus_</definition>
+        <argsstring></argsstring>
+        <name>imus_</name>
+        <qualifiedname>agi::MockVio::imus_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="73" column="14" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1ae4079f81d2a81ca3d667e71e8d61f3c7" prot="protected" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex agi::MockVio::imus_mtx_</definition>
+        <argsstring></argsstring>
+        <name>imus_mtx_</name>
+        <qualifiedname>agi::MockVio::imus_mtx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="74" column="14" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1a1ea8d2e254f092d61f4642292ff3373b" prot="protected" static="no" mutable="no">
+        <type>std::random_device</type>
+        <definition>std::random_device agi::MockVio::rd_</definition>
+        <argsstring></argsstring>
+        <name>rd_</name>
+        <qualifiedname>agi::MockVio::rd_</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="76" column="22" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1MockVio_1a7c622923c03a660cee59efab64fed251" prot="protected" static="no" mutable="no">
+        <type>std::mt19937</type>
+        <definition>std::mt19937 agi::MockVio::gen_</definition>
+        <argsstring></argsstring>
+        <name>gen_</name>
+        <qualifiedname>agi::MockVio::gen_</qualifiedname>
+        <initializer>{rd_()}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="77" column="16" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classagi_1_1MockVio_1a5dc608a7c0f0a74867dde7433e7b80da" prot="protected" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::MockVio::BUFFERSIZE</definition>
+        <argsstring></argsstring>
+        <name>BUFFERSIZE</name>
+        <qualifiedname>agi::MockVio::BUFFERSIZE</qualifiedname>
+        <initializer>= 512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="69" column="24" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1MockVio_1a09317cc1e32abb333cb1016cfcbf62b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::MockVio::MockVio</definition>
+        <argsstring>(const Quadrotor &amp;quad, const std::shared_ptr&lt; MockVioParams &gt; &amp;params)</argsstring>
+        <name>MockVio</name>
+        <qualifiedname>agi::MockVio::MockVio</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="structagi_1_1MockVioParams" kindref="compound">MockVioParams</ref> &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="19" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MockVio_1a7d81195f6a9aaf75f1581fbcdd3e59db" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::MockVio::initialize</definition>
+        <argsstring>(const QuadState &amp;state) override</argsstring>
+        <name>initialize</name>
+        <qualifiedname>agi::MockVio::initialize</qualifiedname>
+        <reimplements refid="classagi_1_1EstimatorBase_1abd6ede1855eddaa58e7893af865f80ec">initialize</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the filter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="21" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MockVio_1a2bcdf0140be6bec676cb9b483a37fe06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::MockVio::addPose</definition>
+        <argsstring>(const Pose &amp;pose) override</argsstring>
+        <name>addPose</name>
+        <qualifiedname>agi::MockVio::addPose</qualifiedname>
+        <reimplements refid="classagi_1_1EstimatorBase_1abf9a63d7e89d0aa13f726d29dfa991b9">addPose</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1Pose" kindref="compound">Pose</ref> &amp;</type>
+          <declname>pose</declname>
+        </param>
+        <briefdescription>
+<para>Add measurement. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="23" column="16" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MockVio_1abcdab781c5d86cb19cc75adf007e056a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::MockVio::addState</definition>
+        <argsstring>(const QuadState &amp;pose) override</argsstring>
+        <name>addState</name>
+        <qualifiedname>agi::MockVio::addState</qualifiedname>
+        <reimplements refid="classagi_1_1EstimatorBase_1a17a233e59676e2fa7b207ce887e0c4ad">addState</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>pose</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="24" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MockVio_1a92541f5900b1181ae192d2d65c43e97a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::MockVio::addImu</definition>
+        <argsstring>(const ImuSample &amp;imu) override</argsstring>
+        <name>addImu</name>
+        <qualifiedname>agi::MockVio::addImu</qualifiedname>
+        <reimplements refid="classagi_1_1EstimatorBase_1a734a1da382a5a84d1cd982765cda3012">addImu</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1ImuSample" kindref="compound">ImuSample</ref> &amp;</type>
+          <declname>imu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="25" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MockVio_1a3cbfa848b3d7baa6f64a0cab01c103cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::MockVio::addMotorSpeeds</definition>
+        <argsstring>(const Vector&lt; 4 &gt; &amp;speeds) override</argsstring>
+        <name>addMotorSpeeds</name>
+        <qualifiedname>agi::MockVio::addMotorSpeeds</qualifiedname>
+        <reimplements refid="classagi_1_1EstimatorBase_1a1c529d6e8db99fc14c513075c2fc8b99">addMotorSpeeds</reimplements>
+        <param>
+          <type>const Vector&lt; 4 &gt; &amp;</type>
+          <declname>speeds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="26" column="23" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MockVio_1a8a378c3898323e582cab3aa99f645b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::MockVio::getAt</definition>
+        <argsstring>(const Scalar t, QuadState *const state) override</argsstring>
+        <name>getAt</name>
+        <qualifiedname>agi::MockVio::getAt</qualifiedname>
+        <reimplements refid="classagi_1_1EstimatorBase_1a7c264c4b030d225eb0e362aaca0bfe81">getAt</reimplements>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> *const</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Get state at specific time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="30" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MockVio_1ae548b7b20522713f1366cd664fb2a6cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::MockVio::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::MockVio::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="32" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MockVio_1a74502559cc50a389b81b86d8c5f7b23e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::MockVio::healthy</definition>
+        <argsstring>() const override</argsstring>
+        <name>healthy</name>
+        <qualifiedname>agi::MockVio::healthy</qualifiedname>
+        <reimplements refid="classagi_1_1EstimatorBase_1acb163fbefc751e52d4692238ba613fb0">healthy</reimplements>
+        <briefdescription>
+<para>Check if estimator is healthy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="33" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classagi_1_1MockVio_1a2facc9ff4a997701fce9d4b5723cc58a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::MockVio::updateVioStateWithLatency</definition>
+        <argsstring>(const Scalar t)</argsstring>
+        <name>updateVioStateWithLatency</name>
+        <qualifiedname>agi::MockVio::updateVioStateWithLatency</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="51" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MockVio_1ad29ee7c2b9951f98bf2a2e317a5988f6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::MockVio::updateVioState</definition>
+        <argsstring>(const Scalar t)</argsstring>
+        <name>updateVioState</name>
+        <qualifiedname>agi::MockVio::updateVioState</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="52" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MockVio_1ae599899d647bec8c7c249797ed16af2f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::MockVio::updateRiseState</definition>
+        <argsstring>(const Scalar t)</argsstring>
+        <name>updateRiseState</name>
+        <qualifiedname>agi::MockVio::updateRiseState</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="53" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MockVio_1a38ff99e458b64643fefaa11c2b4e02ea" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::MockVio::updateStateWithImu</definition>
+        <argsstring>(const Scalar t, const bool repropagate)</argsstring>
+        <name>updateStateWithImu</name>
+        <qualifiedname>agi::MockVio::updateStateWithImu</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>repropagate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="54" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1MockVio_1a516db58dc8d96730c1dd9e13505c17ff" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt; 3 &gt; agi::MockVio::randomVector</definition>
+        <argsstring>(const Vector&lt; 3 &gt; &amp;standard_deviation)</argsstring>
+        <name>randomVector</name>
+        <qualifiedname>agi::MockVio::randomVector</qualifiedname>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>standard_deviation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="55" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>agi::Module&lt; EstimatorBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="2">
+        <label>agi::EstimatorBase</label>
+        <link refid="classagi_1_1EstimatorBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::MockVio</label>
+        <link refid="classagi_1_1MockVio"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>agi::Module&lt; EstimatorBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::EstimatorBase</label>
+        <link refid="classagi_1_1EstimatorBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>agi::ImuSample</label>
+        <link refid="structagi_1_1ImuSample"/>
+      </node>
+      <node id="10">
+        <label>agi::IntegratorBase</label>
+        <link refid="classagi_1_1IntegratorBase"/>
+      </node>
+      <node id="9">
+        <label>agi::IntegratorEuler</label>
+        <link refid="classagi_1_1IntegratorEuler"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+      <node id="1">
+        <label>agi::MockVio</label>
+        <link refid="classagi_1_1MockVio"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>params_</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>quad_</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>integrator_</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>last_vio_state_</edgelabel>
+          <edgelabel>state_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>last_imu_sample_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>states_</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>imus_mtx_</edgelabel>
+          <edgelabel>states_mtx_</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>imus_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>agi::MockVio::ImuSampleWithBias</label>
+        <link refid="classagi_1_1MockVio_1_1ImuSampleWithBias"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>agi::MockVioParams</label>
+        <link refid="structagi_1_1MockVioParams"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="11">
+        <label>agi::QuadState</label>
+        <link refid="structagi_1_1QuadState"/>
+      </node>
+      <node id="8">
+        <label>agi::Quadrotor</label>
+        <link refid="structagi_1_1Quadrotor"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>std::deque&lt; agi::MockVio::ImuSampleWithBias &gt;</label>
+        <childnode refid="12" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>std::deque&lt; agi::QuadState &gt;</label>
+        <childnode refid="11" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::shared_ptr&lt; agi::MockVioParams &gt;</label>
+        <childnode refid="6" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>std::mutex</label>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" line="17" column="1" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio.hpp" bodystart="17" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classagi_1_1MockVio_1a92541f5900b1181ae192d2d65c43e97a" prot="public" virt="virtual"><scope>agi::MockVio</scope><name>addImu</name></member>
+      <member refid="classagi_1_1MockVio_1a3cbfa848b3d7baa6f64a0cab01c103cd" prot="public" virt="virtual"><scope>agi::MockVio</scope><name>addMotorSpeeds</name></member>
+      <member refid="classagi_1_1MockVio_1a2bcdf0140be6bec676cb9b483a37fe06" prot="public" virt="virtual"><scope>agi::MockVio</scope><name>addPose</name></member>
+      <member refid="classagi_1_1MockVio_1abcdab781c5d86cb19cc75adf007e056a" prot="public" virt="virtual"><scope>agi::MockVio</scope><name>addState</name></member>
+      <member refid="classagi_1_1MockVio_1a5dc608a7c0f0a74867dde7433e7b80da" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>BUFFERSIZE</name></member>
+      <member refid="classagi_1_1EstimatorBase_1a68bc7fce129a8dcc6a63e7c43deefa70" prot="public" virt="non-virtual"><scope>agi::MockVio</scope><name>EstimatorBase</name></member>
+      <member refid="classagi_1_1MockVio_1a7c622923c03a660cee59efab64fed251" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>gen_</name></member>
+      <member refid="classagi_1_1MockVio_1a8a378c3898323e582cab3aa99f645b9f" prot="public" virt="virtual"><scope>agi::MockVio</scope><name>getAt</name></member>
+      <member refid="classagi_1_1EstimatorBase_1aa4189dc0231131862d94b65d558f6f37" prot="public" virt="non-virtual"><scope>agi::MockVio</scope><name>getRecent</name></member>
+      <member refid="classagi_1_1EstimatorBase_1a960ad111f8a4c51b1546d20276464cdf" prot="public" virt="non-virtual"><scope>agi::MockVio</scope><name>getRecent</name></member>
+      <member refid="classagi_1_1EstimatorBase_1aaeb1f03eb699b351cdd3c201d385bdaf" prot="public" virt="non-virtual"><scope>agi::MockVio</scope><name>getState</name></member>
+      <member refid="classagi_1_1MockVio_1a74502559cc50a389b81b86d8c5f7b23e" prot="public" virt="virtual"><scope>agi::MockVio</scope><name>healthy</name></member>
+      <member refid="classagi_1_1MockVio_1a55a3ed12e27b035c5c652966fa408785" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>imus_</name></member>
+      <member refid="classagi_1_1MockVio_1ae4079f81d2a81ca3d667e71e8d61f3c7" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>imus_mtx_</name></member>
+      <member refid="classagi_1_1MockVio_1a7d81195f6a9aaf75f1581fbcdd3e59db" prot="public" virt="virtual"><scope>agi::MockVio</scope><name>initialize</name></member>
+      <member refid="classagi_1_1MockVio_1a0f311748af8ed8211329e67013f92aca" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>integrator_</name></member>
+      <member refid="classagi_1_1MockVio_1a01fe70e9d983d1236efd4786936cf138" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>last_imu_sample_</name></member>
+      <member refid="classagi_1_1MockVio_1a6e861fa673b7f7e1e0196e352db395ae" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>last_vio_state_</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::MockVio</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1MockVio_1a09317cc1e32abb333cb1016cfcbf62b1" prot="public" virt="non-virtual"><scope>agi::MockVio</scope><name>MockVio</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::MockVio</scope><name>Module</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::MockVio</scope><name>name</name></member>
+      <member refid="classagi_1_1MockVio_1af3a796c0861a42b7e65b6d2f495586b4" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>params_</name></member>
+      <member refid="classagi_1_1MockVio_1accfda9846d1281cb05cb73af35e6a01a" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>quad_</name></member>
+      <member refid="classagi_1_1MockVio_1a516db58dc8d96730c1dd9e13505c17ff" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>randomVector</name></member>
+      <member refid="classagi_1_1MockVio_1a1ea8d2e254f092d61f4642292ff3373b" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>rd_</name></member>
+      <member refid="classagi_1_1MockVio_1ae548b7b20522713f1366cd664fb2a6cf" prot="public" virt="non-virtual"><scope>agi::MockVio</scope><name>reset</name></member>
+      <member refid="classagi_1_1MockVio_1a6aca8c9a598a68735894bea213b4fc70" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>state_</name></member>
+      <member refid="classagi_1_1MockVio_1aa5bd44166ef2a73d08cae25e8a863db9" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>states_</name></member>
+      <member refid="classagi_1_1MockVio_1af2136fcf05162f70298e4640dbbf9367" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>states_mtx_</name></member>
+      <member refid="classagi_1_1MockVio_1a3cb6fdff1d493a65174dad49b7ea9d6c" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>t_last_state_received_</name></member>
+      <member refid="classagi_1_1MockVio_1a29ec3cc6d5998074b997f6c3508cae41" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>t_last_vio_update_</name></member>
+      <member refid="classagi_1_1MockVio_1ae599899d647bec8c7c249797ed16af2f" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>updateRiseState</name></member>
+      <member refid="classagi_1_1MockVio_1a38ff99e458b64643fefaa11c2b4e02ea" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>updateStateWithImu</name></member>
+      <member refid="classagi_1_1MockVio_1ad29ee7c2b9951f98bf2a2e317a5988f6" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>updateVioState</name></member>
+      <member refid="classagi_1_1MockVio_1a2facc9ff4a997701fce9d4b5723cc58a" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>updateVioStateWithLatency</name></member>
+      <member refid="classagi_1_1MockVio_1a6a7dde63a997949dde51adb78f536fca" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>vio_pos_drift_</name></member>
+      <member refid="classagi_1_1MockVio_1a584d5cf15ced743a67fe8fd6e88fe6d8" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>vio_pos_drift_dynamic_vel_</name></member>
+      <member refid="classagi_1_1MockVio_1a5a01ddc3087649ef19da51009f638c0d" prot="protected" virt="non-virtual"><scope>agi::MockVio</scope><name>vio_pos_drift_static_vel_</name></member>
+      <member refid="classagi_1_1EstimatorBase_1a733df2e968c379f3e9354cad3b1cb853" prot="public" virt="virtual"><scope>agi::MockVio</scope><name>~EstimatorBase</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::MockVio</scope><name>~Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

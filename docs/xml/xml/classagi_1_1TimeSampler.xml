@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1TimeSampler" kind="class" language="C++" prot="public">
+    <compoundname>agi::TimeSampler</compoundname>
+    <basecompoundref refid="classagi_1_1SamplerBase" prot="public" virt="non-virtual">agi::SamplerBase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1TimeSampler_1a9b883a9fa6656c0d0de75b5a498c103d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::TimeSampler::TimeSampler</definition>
+        <argsstring>(const int horizon_len, const Scalar horizon_dt)</argsstring>
+        <name>TimeSampler</name>
+        <qualifiedname>agi::TimeSampler::TimeSampler</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>horizon_len</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>horizon_dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/time_based/time_sampler.hpp" line="10" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1TimeSampler_1a5e195a956528c8d7b328b4fe1c72b5f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::TimeSampler::TimeSampler</definition>
+        <argsstring>()</argsstring>
+        <name>TimeSampler</name>
+        <qualifiedname>agi::TimeSampler::TimeSampler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/time_based/time_sampler.hpp" line="11" column="3" bodyfile="agilib/include/agilib/sampler/time_based/time_sampler.hpp" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1TimeSampler_1a02a57cf3cf52d6f704cea6b8be83d267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::TimeSampler::~TimeSampler</definition>
+        <argsstring>()</argsstring>
+        <name>~TimeSampler</name>
+        <qualifiedname>agi::TimeSampler::~TimeSampler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/time_based/time_sampler.hpp" line="12" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1TimeSampler_1a20f52bfeac240fd82aaacd0fea226c77" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::TimeSampler::getAt</definition>
+        <argsstring>(const QuadState &amp;state, const ReferenceVector &amp;references, SetpointVector *const setpoints, int horizon_len=-1) const</argsstring>
+        <name>getAt</name>
+        <qualifiedname>agi::TimeSampler::getAt</qualifiedname>
+        <reimplements refid="classagi_1_1SamplerBase_1a3720a0ea92eac0da192ab529a639096a">getAt</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const ReferenceVector &amp;</type>
+          <declname>references</declname>
+        </param>
+        <param>
+          <type>SetpointVector *const</type>
+          <declname>setpoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>horizon_len</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/time_based/time_sampler.hpp" line="14" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1TimeSampler_1ac36c57f7aa9e113d6e335a5109eb1023" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::TimeSampler::isTimeBased</definition>
+        <argsstring>() const</argsstring>
+        <name>isTimeBased</name>
+        <qualifiedname>agi::TimeSampler::isTimeBased</qualifiedname>
+        <reimplements refid="classagi_1_1SamplerBase_1ac74f96d8722d9c9bbb47caffffcd7f03">isTimeBased</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/time_based/time_sampler.hpp" line="17" column="8" bodyfile="agilib/include/agilib/sampler/time_based/time_sampler.hpp" bodystart="17" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>agi::Module&lt; SamplerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="2">
+        <label>agi::SamplerBase</label>
+        <link refid="classagi_1_1SamplerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::TimeSampler</label>
+        <link refid="classagi_1_1TimeSampler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>agi::Module&lt; SamplerBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+      <node id="2">
+        <label>agi::SamplerBase</label>
+        <link refid="classagi_1_1SamplerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::TimeSampler</label>
+        <link refid="classagi_1_1TimeSampler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/sampler/time_based/time_sampler.hpp" line="7" column="1" bodyfile="agilib/include/agilib/sampler/time_based/time_sampler.hpp" bodystart="7" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classagi_1_1TimeSampler_1a20f52bfeac240fd82aaacd0fea226c77" prot="public" virt="virtual"><scope>agi::TimeSampler</scope><name>getAt</name></member>
+      <member refid="classagi_1_1SamplerBase_1a2d7ef9feae23ca9f9f30b592824ec8a6" prot="public" virt="non-virtual"><scope>agi::TimeSampler</scope><name>getFull</name></member>
+      <member refid="classagi_1_1SamplerBase_1a0b8441ab30cbb753b0e5c409902f44df" prot="public" virt="non-virtual"><scope>agi::TimeSampler</scope><name>getHorizonDt</name></member>
+      <member refid="classagi_1_1SamplerBase_1adffb6246f392efde649e8a189c445175" prot="public" virt="non-virtual"><scope>agi::TimeSampler</scope><name>getHorizonLength</name></member>
+      <member refid="classagi_1_1SamplerBase_1a67177d343e5e2bbbad723b9183bf915a" prot="protected" virt="non-virtual"><scope>agi::TimeSampler</scope><name>horizon_dt_</name></member>
+      <member refid="classagi_1_1SamplerBase_1af6bdd691e05dbf51fe9b39857a713e39" prot="protected" virt="non-virtual"><scope>agi::TimeSampler</scope><name>horizon_len_</name></member>
+      <member refid="classagi_1_1TimeSampler_1ac36c57f7aa9e113d6e335a5109eb1023" prot="public" virt="virtual"><scope>agi::TimeSampler</scope><name>isTimeBased</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::TimeSampler</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::TimeSampler</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::TimeSampler</scope><name>Module</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::TimeSampler</scope><name>name</name></member>
+      <member refid="classagi_1_1SamplerBase_1aafa3071240c91657d898fc01492d34fa" prot="public" virt="non-virtual"><scope>agi::TimeSampler</scope><name>SamplerBase</name></member>
+      <member refid="classagi_1_1TimeSampler_1a9b883a9fa6656c0d0de75b5a498c103d" prot="public" virt="non-virtual"><scope>agi::TimeSampler</scope><name>TimeSampler</name></member>
+      <member refid="classagi_1_1TimeSampler_1a5e195a956528c8d7b328b4fe1c72b5f7" prot="public" virt="non-virtual"><scope>agi::TimeSampler</scope><name>TimeSampler</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::TimeSampler</scope><name>~Module</name></member>
+      <member refid="classagi_1_1SamplerBase_1a735cd722f808878179c15728af01edf8" prot="public" virt="virtual"><scope>agi::TimeSampler</scope><name>~SamplerBase</name></member>
+      <member refid="classagi_1_1TimeSampler_1a02a57cf3cf52d6f704cea6b8be83d267" prot="public" virt="non-virtual"><scope>agi::TimeSampler</scope><name>~TimeSampler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

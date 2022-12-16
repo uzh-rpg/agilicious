@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_b97fb6075d13bcc14bafcb911165187c" kind="dir">
+    <compoundname>agilib/include/agilib/estimator</compoundname>
+    <innerdir refid="dir_9793d9e7cb8f059d67fba6b3b68ee151">agilib/include/agilib/estimator/ekf</innerdir>
+    <innerdir refid="dir_39e379b762180a89a97a5d2673e7115f">agilib/include/agilib/estimator/ekf_imu</innerdir>
+    <innerdir refid="dir_e3cf1d0232a27a5b6d68f116ef142f80">agilib/include/agilib/estimator/feedthrough</innerdir>
+    <innerdir refid="dir_de62d5dd5f9705722be64ab331e5ef63">agilib/include/agilib/estimator/mock_vio</innerdir>
+    <innerfile refid="estimator__base_8hpp">estimator_base.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/estimator/"/>
+  </compounddef>
+</doxygen>

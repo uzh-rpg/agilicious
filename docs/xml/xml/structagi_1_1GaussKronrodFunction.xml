@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1GaussKronrodFunction" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>agi::GaussKronrodFunction</compoundname>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>rows</declname>
+        <defname>rows</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structagi_1_1GaussKronrodFunction_1a681a21d36b809a2c27a49d0b09fef7b6" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::GaussKronrodFunction&lt; rows &gt;::SIZE</definition>
+        <argsstring></argsstring>
+        <name>SIZE</name>
+        <qualifiedname>agi::GaussKronrodFunction::SIZE</qualifiedname>
+        <initializer>= rows</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" line="24" column="24" bodyfile="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1GaussKronrodFunction_1ac4786484f21138d491625028bc9760c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>virtual EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::GaussKronrodFunction&lt; rows &gt;::~GaussKronrodFunction</definition>
+        <argsstring>()=default</argsstring>
+        <name>~GaussKronrodFunction</name>
+        <qualifiedname>agi::GaussKronrodFunction::~GaussKronrodFunction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" line="21" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1GaussKronrodFunction_1ab8786a3fe882b79da4b316fffc88201e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>Array&lt; rows, 15 &gt;</type>
+        <definition>virtual Array&lt; rows, 15 &gt; agi::GaussKronrodFunction&lt; rows &gt;::evaluate</definition>
+        <argsstring>(const Ref&lt; const ArrayVector&lt; 15 &gt; &gt;, const void *const =nullptr) const =0</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>agi::GaussKronrodFunction::evaluate</qualifiedname>
+        <reimplementedby refid="classagi_1_1IntegrandPsi_1a271391d0532ffef531ee798484bafd6b">evaluate</reimplementedby>
+        <reimplementedby refid="classagi_1_1IntegrandR_1af2d18fc920c80550ba96ee0c2bb5be27">evaluate</reimplementedby>
+        <param>
+          <type>const Ref&lt; const ArrayVector&lt; 15 &gt; &gt;</type>
+        </param>
+        <param>
+          <type>const void * const</type>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" line="22" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" line="19" column="1" bodyfile="agilib/include/agilib/simulator/bem/gauss_kronrod.hpp" bodystart="19" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structagi_1_1GaussKronrodFunction_1ab8786a3fe882b79da4b316fffc88201e" prot="public" virt="pure-virtual"><scope>agi::GaussKronrodFunction</scope><name>evaluate</name></member>
+      <member refid="structagi_1_1GaussKronrodFunction_1a681a21d36b809a2c27a49d0b09fef7b6" prot="public" virt="non-virtual"><scope>agi::GaussKronrodFunction</scope><name>SIZE</name></member>
+      <member refid="structagi_1_1GaussKronrodFunction_1ac4786484f21138d491625028bc9760c4" prot="public" virt="virtual"><scope>agi::GaussKronrodFunction</scope><name>~GaussKronrodFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

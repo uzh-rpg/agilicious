@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1LowPassFilter" kind="class" language="C++" prot="public">
+    <compoundname>agi::LowPassFilter</compoundname>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>rows</declname>
+        <defname>rows</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1LowPassFilter_1a1ffde4f76599bfc90ab9b9d6ce32a641" prot="private" static="no" mutable="no">
+        <type>const Vector&lt; rows &gt;</type>
+        <definition>const Vector&lt;rows&gt; agi::LowPassFilter&lt; rows &gt;::sampling_frequency_</definition>
+        <argsstring></argsstring>
+        <name>sampling_frequency_</name>
+        <qualifiedname>agi::LowPassFilter::sampling_frequency_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="48" column="16" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LowPassFilter_1ad548903d24deb7d315e693324b7d4455" prot="private" static="no" mutable="no">
+        <type>const Array&lt; rows, 2 &gt;</type>
+        <definition>const Array&lt;rows, 2&gt; agi::LowPassFilter&lt; rows &gt;::denumerator_</definition>
+        <argsstring></argsstring>
+        <name>denumerator_</name>
+        <qualifiedname>agi::LowPassFilter::denumerator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="49" column="15" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LowPassFilter_1ada2d85487ed60c5f19c292856f16dd6b" prot="private" static="no" mutable="no">
+        <type>const Array&lt; rows, 2 &gt;</type>
+        <definition>const Array&lt;rows, 2&gt; agi::LowPassFilter&lt; rows &gt;::numerator_</definition>
+        <argsstring></argsstring>
+        <name>numerator_</name>
+        <qualifiedname>agi::LowPassFilter::numerator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="50" column="15" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LowPassFilter_1ab6cb67a026ecf3805575fa890bde3e9e" prot="private" static="no" mutable="no">
+        <type>Array&lt; rows, 2 &gt;</type>
+        <definition>Array&lt;rows, 2&gt; agi::LowPassFilter&lt; rows &gt;::input_</definition>
+        <argsstring></argsstring>
+        <name>input_</name>
+        <qualifiedname>agi::LowPassFilter::input_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="51" column="9" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1LowPassFilter_1aa91c788d31c3ceb602b2e834e0b5cb76" prot="private" static="no" mutable="no">
+        <type>Array&lt; rows, 2 &gt;</type>
+        <definition>Array&lt;rows, 2&gt; agi::LowPassFilter&lt; rows &gt;::output_</definition>
+        <argsstring></argsstring>
+        <name>output_</name>
+        <qualifiedname>agi::LowPassFilter::output_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="52" column="9" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1LowPassFilter_1aa68ffcdb8f0ffbd67b3120b0f61668b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::LowPassFilter&lt; rows &gt;::LowPassFilter</definition>
+        <argsstring>(const Vector&lt; rows &gt; &amp;cutoff_frequency, const Vector&lt; rows &gt; &amp;sampling_frequency, const Vector&lt; rows &gt; &amp;initial_value)</argsstring>
+        <name>LowPassFilter</name>
+        <qualifiedname>agi::LowPassFilter::LowPassFilter</qualifiedname>
+        <param>
+          <type>const Vector&lt; rows &gt; &amp;</type>
+          <declname>cutoff_frequency</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; rows &gt; &amp;</type>
+          <declname>sampling_frequency</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; rows &gt; &amp;</type>
+          <declname>initial_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="11" column="3" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="83" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowPassFilter_1a04e934de67658e97fcd003661e33bc7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::LowPassFilter&lt; rows &gt;::LowPassFilter</definition>
+        <argsstring>(const Scalar cutoff_frequency, const Scalar sampling_frequency, const Scalar initial_value)</argsstring>
+        <name>LowPassFilter</name>
+        <qualifiedname>agi::LowPassFilter::LowPassFilter</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>cutoff_frequency</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>sampling_frequency</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>initial_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="15" column="3" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="15" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowPassFilter_1acf2c47887fc0369c5b96acd16aea25b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::LowPassFilter&lt; rows &gt;::LowPassFilter</definition>
+        <argsstring>()</argsstring>
+        <name>LowPassFilter</name>
+        <qualifiedname>agi::LowPassFilter::LowPassFilter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="21" column="3" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowPassFilter_1ad11518e2b156eace5263a7d2d9332135" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::LowPassFilter&lt; rows &gt;::~LowPassFilter</definition>
+        <argsstring>()=default</argsstring>
+        <name>~LowPassFilter</name>
+        <qualifiedname>agi::LowPassFilter::~LowPassFilter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="23" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowPassFilter_1a3007f3c9dabe8f3ed306313f5e75ef19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector&lt; rows &gt;</type>
+        <definition>Vector&lt; rows &gt; agi::LowPassFilter&lt; rows &gt;::add</definition>
+        <argsstring>(const Vector&lt; rows &gt; &amp;sample)</argsstring>
+        <name>add</name>
+        <qualifiedname>agi::LowPassFilter::add</qualifiedname>
+        <param>
+          <type>const Vector&lt; rows &gt; &amp;</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="25" column="10" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="93" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowPassFilter_1a45577c1562311b7b16f4941d33711edc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector&lt; rows &gt;</type>
+        <definition>Vector&lt; rows &gt; agi::LowPassFilter&lt; rows &gt;::operator()</definition>
+        <argsstring>() const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>agi::LowPassFilter::operator()</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="27" column="10" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowPassFilter_1aa445f1c99c7cede37a899802e3c82ea5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::LowPassFilter&lt; rows &gt;::operator()</definition>
+        <argsstring>(const int i) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>agi::LowPassFilter::operator()</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="28" column="10" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowPassFilter_1a720768ee72003c3a0353953048844909" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector&lt; rows &gt;</type>
+        <definition>Vector&lt; rows &gt; agi::LowPassFilter&lt; rows &gt;::derivative</definition>
+        <argsstring>() const</argsstring>
+        <name>derivative</name>
+        <qualifiedname>agi::LowPassFilter::derivative</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="30" column="10" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowPassFilter_1a14dabfd3ce41dd96c278e296edfd1a5c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::LowPassFilter&lt; rows &gt;::derivative</definition>
+        <argsstring>(const int i) const</argsstring>
+        <name>derivative</name>
+        <qualifiedname>agi::LowPassFilter::derivative</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="34" column="10" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowPassFilter_1a5b3204ebe25c452697d2d4bfc6642136" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::LowPassFilter&lt; rows &gt;::valid</definition>
+        <argsstring>() const</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::LowPassFilter::valid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="38" column="8" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classagi_1_1LowPassFilter_1a86b188a8233f31c55c6345b343812f42" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Array&lt; rows, 2 &gt;</type>
+        <definition>Array&lt; rows, 2 &gt; agi::LowPassFilter&lt; rows &gt;::init_den</definition>
+        <argsstring>(const Vector&lt; rows &gt; &amp;fc, const Vector&lt; rows &gt; &amp;fs)</argsstring>
+        <name>init_den</name>
+        <qualifiedname>agi::LowPassFilter::init_den</qualifiedname>
+        <param>
+          <type>const Vector&lt; rows &gt; &amp;</type>
+          <declname>fc</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; rows &gt; &amp;</type>
+          <declname>fs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="44" column="16" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="56" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1LowPassFilter_1a6c384f22f8cc67172fe7420f806c748e" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Array&lt; rows, 2 &gt;</type>
+        <definition>Array&lt; rows, 2 &gt; agi::LowPassFilter&lt; rows &gt;::init_num</definition>
+        <argsstring>(const Vector&lt; rows &gt; &amp;fc, const Vector&lt; rows &gt; &amp;fs)</argsstring>
+        <name>init_num</name>
+        <qualifiedname>agi::LowPassFilter::init_num</qualifiedname>
+        <param>
+          <type>const Vector&lt; rows &gt; &amp;</type>
+          <declname>fc</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; rows &gt; &amp;</type>
+          <declname>fs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="46" column="16" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="69" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/utils/low_pass_filter.hpp" line="9" column="1" bodyfile="agilib/include/agilib/utils/low_pass_filter.hpp" bodystart="9" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classagi_1_1LowPassFilter_1a3007f3c9dabe8f3ed306313f5e75ef19" prot="public" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>add</name></member>
+      <member refid="classagi_1_1LowPassFilter_1ad548903d24deb7d315e693324b7d4455" prot="private" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>denumerator_</name></member>
+      <member refid="classagi_1_1LowPassFilter_1a720768ee72003c3a0353953048844909" prot="public" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>derivative</name></member>
+      <member refid="classagi_1_1LowPassFilter_1a14dabfd3ce41dd96c278e296edfd1a5c" prot="public" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>derivative</name></member>
+      <member refid="classagi_1_1LowPassFilter_1a86b188a8233f31c55c6345b343812f42" prot="private" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>init_den</name></member>
+      <member refid="classagi_1_1LowPassFilter_1a6c384f22f8cc67172fe7420f806c748e" prot="private" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>init_num</name></member>
+      <member refid="classagi_1_1LowPassFilter_1ab6cb67a026ecf3805575fa890bde3e9e" prot="private" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>input_</name></member>
+      <member refid="classagi_1_1LowPassFilter_1aa68ffcdb8f0ffbd67b3120b0f61668b0" prot="public" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>LowPassFilter</name></member>
+      <member refid="classagi_1_1LowPassFilter_1a04e934de67658e97fcd003661e33bc7c" prot="public" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>LowPassFilter</name></member>
+      <member refid="classagi_1_1LowPassFilter_1acf2c47887fc0369c5b96acd16aea25b4" prot="public" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>LowPassFilter</name></member>
+      <member refid="classagi_1_1LowPassFilter_1ada2d85487ed60c5f19c292856f16dd6b" prot="private" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>numerator_</name></member>
+      <member refid="classagi_1_1LowPassFilter_1a45577c1562311b7b16f4941d33711edc" prot="public" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>operator()</name></member>
+      <member refid="classagi_1_1LowPassFilter_1aa445f1c99c7cede37a899802e3c82ea5" prot="public" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>operator()</name></member>
+      <member refid="classagi_1_1LowPassFilter_1aa91c788d31c3ceb602b2e834e0b5cb76" prot="private" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>output_</name></member>
+      <member refid="classagi_1_1LowPassFilter_1a1ffde4f76599bfc90ab9b9d6ce32a641" prot="private" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>sampling_frequency_</name></member>
+      <member refid="classagi_1_1LowPassFilter_1a5b3204ebe25c452697d2d4bfc6642136" prot="public" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>valid</name></member>
+      <member refid="classagi_1_1LowPassFilter_1ad11518e2b156eace5263a7d2d9332135" prot="public" virt="non-virtual"><scope>agi::LowPassFilter</scope><name>~LowPassFilter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

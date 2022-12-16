@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1PositionSamplerParameters" kind="struct" language="C++" prot="public">
+    <compoundname>agi::PositionSamplerParameters</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1PositionSamplerParameters_1aa0273d19a3c78a75030a7d85d70c73f7" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PositionSamplerParameters::search_dt_</definition>
+        <argsstring></argsstring>
+        <name>search_dt_</name>
+        <qualifiedname>agi::PositionSamplerParameters::search_dt_</qualifiedname>
+        <initializer>{0.01}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/position_based/position_sampler_params.hpp" line="14" column="10" bodyfile="agilib/include/agilib/sampler/position_based/position_sampler_params.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PositionSamplerParameters_1ad68e440db1b8eef71f343e7b536e9534" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::PositionSamplerParameters::search_tol_</definition>
+        <argsstring></argsstring>
+        <name>search_tol_</name>
+        <qualifiedname>agi::PositionSamplerParameters::search_tol_</qualifiedname>
+        <initializer>{0.001}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/position_based/position_sampler_params.hpp" line="16" column="10" bodyfile="agilib/include/agilib/sampler/position_based/position_sampler_params.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1PositionSamplerParameters_1a3abd304b948278778b54ccd541c4c285" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::PositionSamplerParameters::axis_weights_sqrt_</definition>
+        <argsstring></argsstring>
+        <name>axis_weights_sqrt_</name>
+        <qualifiedname>agi::PositionSamplerParameters::axis_weights_sqrt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/position_based/position_sampler_params.hpp" line="18" column="10" bodyfile="agilib/include/agilib/sampler/position_based/position_sampler_params.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1PositionSamplerParameters_1a2a0c801b407136bd7c7fe78228a682e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::PositionSamplerParameters::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::PositionSamplerParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/position_based/position_sampler_params.hpp" line="11" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1PositionSamplerParameters_1ae1eaa8ea7525087bb590e2cd4023b8cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::PositionSamplerParameters::valid</definition>
+        <argsstring>() const override</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::PositionSamplerParameters::valid</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b">valid</reimplements>
+        <briefdescription>
+<para>Check if parameters are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/position_based/position_sampler_params.hpp" line="20" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1PositionSamplerParameters_1aa72a975fca1221525746975fe5ee1b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::PositionSamplerParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/position_based/position_sampler_params.hpp" line="10" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1PositionSamplerParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const Yaml &amp;yaml)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::PositionSamplerParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/sampler/position_based/position_sampler_params.hpp" line="10" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="1">
+        <label>agi::PositionSamplerParameters</label>
+        <link refid="structagi_1_1PositionSamplerParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+      <node id="1">
+        <label>agi::PositionSamplerParameters</label>
+        <link refid="structagi_1_1PositionSamplerParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/sampler/position_based/position_sampler_params.hpp" line="7" column="1" bodyfile="agilib/include/agilib/sampler/position_based/position_sampler_params.hpp" bodystart="7" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structagi_1_1PositionSamplerParameters_1a3abd304b948278778b54ccd541c4c285" prot="public" virt="non-virtual"><scope>agi::PositionSamplerParameters</scope><name>axis_weights_sqrt_</name></member>
+      <member refid="structagi_1_1PositionSamplerParameters_1a2a0c801b407136bd7c7fe78228a682e2" prot="public" virt="virtual"><scope>agi::PositionSamplerParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1PositionSamplerParameters_1aa72a975fca1221525746975fe5ee1b6a" prot="public" virt="virtual"><scope>agi::PositionSamplerParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1PositionSamplerParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" virt="virtual"><scope>agi::PositionSamplerParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1PositionSamplerParameters_1aa0273d19a3c78a75030a7d85d70c73f7" prot="public" virt="non-virtual"><scope>agi::PositionSamplerParameters</scope><name>search_dt_</name></member>
+      <member refid="structagi_1_1PositionSamplerParameters_1ad68e440db1b8eef71f343e7b536e9534" prot="public" virt="non-virtual"><scope>agi::PositionSamplerParameters</scope><name>search_tol_</name></member>
+      <member refid="structagi_1_1PositionSamplerParameters_1ae1eaa8ea7525087bb590e2cd4023b8cb" prot="public" virt="virtual"><scope>agi::PositionSamplerParameters</scope><name>valid</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::PositionSamplerParameters</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

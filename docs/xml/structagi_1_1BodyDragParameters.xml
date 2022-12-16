@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1BodyDragParameters" kind="struct" language="C++" prot="public">
+    <compoundname>agi::BodyDragParameters</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1BodyDragParameters_1a05686a03aed6268a026306334b965ff7" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BodyDragParameters::cxy_</definition>
+        <argsstring></argsstring>
+        <name>cxy_</name>
+        <qualifiedname>agi::BodyDragParameters::cxy_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_body_drag_params.hpp" line="17" column="10" bodyfile="agilib/include/agilib/simulator/model_body_drag_params.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BodyDragParameters_1a6fe0c31ec33dc94fa3f2d06d249770fb" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BodyDragParameters::cz_</definition>
+        <argsstring></argsstring>
+        <name>cz_</name>
+        <qualifiedname>agi::BodyDragParameters::cz_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_body_drag_params.hpp" line="18" column="10" bodyfile="agilib/include/agilib/simulator/model_body_drag_params.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BodyDragParameters_1a68a339fd15f5f6efa422c13123a72937" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BodyDragParameters::ax_</definition>
+        <argsstring></argsstring>
+        <name>ax_</name>
+        <qualifiedname>agi::BodyDragParameters::ax_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_body_drag_params.hpp" line="19" column="10" bodyfile="agilib/include/agilib/simulator/model_body_drag_params.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BodyDragParameters_1a4985c69d0e05cf1e05efc95673ec5fcb" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BodyDragParameters::ay_</definition>
+        <argsstring></argsstring>
+        <name>ay_</name>
+        <qualifiedname>agi::BodyDragParameters::ay_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_body_drag_params.hpp" line="20" column="10" bodyfile="agilib/include/agilib/simulator/model_body_drag_params.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BodyDragParameters_1a4a5dfa87dfc34a46d04a57b1ad74d8c8" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BodyDragParameters::az_</definition>
+        <argsstring></argsstring>
+        <name>az_</name>
+        <qualifiedname>agi::BodyDragParameters::az_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_body_drag_params.hpp" line="21" column="10" bodyfile="agilib/include/agilib/simulator/model_body_drag_params.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1BodyDragParameters_1a7a8c6a658509d6962de039720162b988" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::BodyDragParameters::rho_</definition>
+        <argsstring></argsstring>
+        <name>rho_</name>
+        <qualifiedname>agi::BodyDragParameters::rho_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_body_drag_params.hpp" line="22" column="10" bodyfile="agilib/include/agilib/simulator/model_body_drag_params.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1BodyDragParameters_1a59f49b262af9930e911866e914233e32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::BodyDragParameters::BodyDragParameters</definition>
+        <argsstring>()</argsstring>
+        <name>BodyDragParameters</name>
+        <qualifiedname>agi::BodyDragParameters::BodyDragParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_body_drag_params.hpp" line="10" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1BodyDragParameters_1a289fb355b99f6cf65a9ba6ce91394daf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::BodyDragParameters::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::BodyDragParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_body_drag_params.hpp" line="13" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1BodyDragParameters_1a9d4d612f59826df7550ed0c07a71a23d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::BodyDragParameters::valid</definition>
+        <argsstring>() const override</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::BodyDragParameters::valid</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b">valid</reimplements>
+        <briefdescription>
+<para>Check if parameters are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_body_drag_params.hpp" line="15" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1BodyDragParameters_1aa72a975fca1221525746975fe5ee1b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::BodyDragParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_body_drag_params.hpp" line="12" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1BodyDragParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const Yaml &amp;yaml)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::BodyDragParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/model_body_drag_params.hpp" line="12" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::BodyDragParameters</label>
+        <link refid="structagi_1_1BodyDragParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::BodyDragParameters</label>
+        <link refid="structagi_1_1BodyDragParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/simulator/model_body_drag_params.hpp" line="9" column="1" bodyfile="agilib/include/agilib/simulator/model_body_drag_params.hpp" bodystart="9" bodyend="23"/>
+    <listofallmembers>
+      <member refid="structagi_1_1BodyDragParameters_1a68a339fd15f5f6efa422c13123a72937" prot="public" virt="non-virtual"><scope>agi::BodyDragParameters</scope><name>ax_</name></member>
+      <member refid="structagi_1_1BodyDragParameters_1a4985c69d0e05cf1e05efc95673ec5fcb" prot="public" virt="non-virtual"><scope>agi::BodyDragParameters</scope><name>ay_</name></member>
+      <member refid="structagi_1_1BodyDragParameters_1a4a5dfa87dfc34a46d04a57b1ad74d8c8" prot="public" virt="non-virtual"><scope>agi::BodyDragParameters</scope><name>az_</name></member>
+      <member refid="structagi_1_1BodyDragParameters_1a59f49b262af9930e911866e914233e32" prot="public" virt="non-virtual"><scope>agi::BodyDragParameters</scope><name>BodyDragParameters</name></member>
+      <member refid="structagi_1_1BodyDragParameters_1a05686a03aed6268a026306334b965ff7" prot="public" virt="non-virtual"><scope>agi::BodyDragParameters</scope><name>cxy_</name></member>
+      <member refid="structagi_1_1BodyDragParameters_1a6fe0c31ec33dc94fa3f2d06d249770fb" prot="public" virt="non-virtual"><scope>agi::BodyDragParameters</scope><name>cz_</name></member>
+      <member refid="structagi_1_1BodyDragParameters_1a289fb355b99f6cf65a9ba6ce91394daf" prot="public" virt="virtual"><scope>agi::BodyDragParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1BodyDragParameters_1aa72a975fca1221525746975fe5ee1b6a" prot="public" virt="virtual"><scope>agi::BodyDragParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1BodyDragParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" virt="virtual"><scope>agi::BodyDragParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1BodyDragParameters_1a7a8c6a658509d6962de039720162b988" prot="public" virt="non-virtual"><scope>agi::BodyDragParameters</scope><name>rho_</name></member>
+      <member refid="structagi_1_1BodyDragParameters_1a9d4d612f59826df7550ed0c07a71a23d" prot="public" virt="virtual"><scope>agi::BodyDragParameters</scope><name>valid</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::BodyDragParameters</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,506 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1QuadrotorSimulator" kind="class" language="C++" prot="public">
+    <compoundname>agi::QuadrotorSimulator</compoundname>
+    <basecompoundref refid="classagi_1_1SimulatorBase" prot="public" virt="non-virtual">agi::SimulatorBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1QuadrotorSimulator_1ae67d28e85643253f8a2ee0e125d3b781" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1SimulatorParams" kindref="compound">SimulatorParams</ref></type>
+        <definition>SimulatorParams agi::QuadrotorSimulator::params_</definition>
+        <argsstring></argsstring>
+        <name>params_</name>
+        <qualifiedname>agi::QuadrotorSimulator::params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="66" column="19" bodyfile="agilib/include/agilib/simulator/quadrotor_simulator.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1QuadrotorSimulator_1af58295a7a492c9493fe99a9901cdde50" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1LowLevelControllerBase" kindref="compound">LowLevelControllerBase</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;LowLevelControllerBase&gt; agi::QuadrotorSimulator::ctrl_</definition>
+        <argsstring></argsstring>
+        <name>ctrl_</name>
+        <qualifiedname>agi::QuadrotorSimulator::ctrl_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="67" column="19" bodyfile="agilib/include/agilib/simulator/quadrotor_simulator.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1QuadrotorSimulator_1a5ffbab3334e0e3f0a5586653dd2c52e8" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="classagi_1_1ModelBase" kindref="compound">ModelBase</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;ModelBase&gt; &gt; agi::QuadrotorSimulator::model_pipeline_</definition>
+        <argsstring></argsstring>
+        <name>model_pipeline_</name>
+        <qualifiedname>agi::QuadrotorSimulator::model_pipeline_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="68" column="15" bodyfile="agilib/include/agilib/simulator/quadrotor_simulator.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1QuadrotorSimulator_1a709c4c337832f25ad44f30d3264d099c" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classagi_1_1IntegratorBase" kindref="compound">IntegratorBase</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;IntegratorBase&gt; agi::QuadrotorSimulator::integrator_ptr_</definition>
+        <argsstring></argsstring>
+        <name>integrator_ptr_</name>
+        <qualifiedname>agi::QuadrotorSimulator::integrator_ptr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="69" column="19" bodyfile="agilib/include/agilib/simulator/quadrotor_simulator.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1QuadrotorSimulator_1a21b683acb804ad392d1772ba4a5ec6c5" prot="private" static="no" mutable="no">
+        <type>std::queue&lt; <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &gt;</type>
+        <definition>std::queue&lt;Command&gt; agi::QuadrotorSimulator::cmd_queue_</definition>
+        <argsstring></argsstring>
+        <name>cmd_queue_</name>
+        <qualifiedname>agi::QuadrotorSimulator::cmd_queue_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="73" column="14" bodyfile="agilib/include/agilib/simulator/quadrotor_simulator.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1QuadrotorSimulator_1af18dc856fc4f3d75c06643be5ed6e183" prot="private" static="no" mutable="no">
+        <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref></type>
+        <definition>QuadState agi::QuadrotorSimulator::state_</definition>
+        <argsstring></argsstring>
+        <name>state_</name>
+        <qualifiedname>agi::QuadrotorSimulator::state_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="76" column="13" bodyfile="agilib/include/agilib/simulator/quadrotor_simulator.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1ab4221b1878fa93a15998fd54cf4317a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::QuadrotorSimulator::QuadrotorSimulator</definition>
+        <argsstring>(const Quadrotor &amp;quadrotor)</argsstring>
+        <name>QuadrotorSimulator</name>
+        <qualifiedname>agi::QuadrotorSimulator::QuadrotorSimulator</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quadrotor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="30" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1ac7fc018b689397c94ec324a70337f4fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::QuadrotorSimulator::QuadrotorSimulator</definition>
+        <argsstring>(const SimulatorParams &amp;params=SimulatorParams())</argsstring>
+        <name>QuadrotorSimulator</name>
+        <qualifiedname>agi::QuadrotorSimulator::QuadrotorSimulator</qualifiedname>
+        <param>
+          <type>const <ref refid="classagi_1_1SimulatorParams" kindref="compound">SimulatorParams</ref> &amp;</type>
+          <declname>params</declname>
+          <defval><ref refid="classagi_1_1SimulatorParams" kindref="compound">SimulatorParams</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="31" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1a4319171c9fdc3ec1f44c2423b992c7a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadrotorSimulator::reset</definition>
+        <argsstring>(const bool &amp;reset_time=true) override</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::QuadrotorSimulator::reset</qualifiedname>
+        <reimplements refid="classagi_1_1SimulatorBase_1a9de52e55a34b8ce1e1c88bc2f5b76e74">reset</reimplements>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>reset_time</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="34" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1a1cb5e6e5de34056fba3629986d9000bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadrotorSimulator::reset</definition>
+        <argsstring>(const QuadState &amp;state) override</argsstring>
+        <name>reset</name>
+        <qualifiedname>agi::QuadrotorSimulator::reset</qualifiedname>
+        <reimplements refid="classagi_1_1SimulatorBase_1a40b32a47e01916eeebc4ca1cfc21f9df">reset</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="35" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1a9f0da532d22084817acdaaecf9848db5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadrotorSimulator::run</definition>
+        <argsstring>(const Scalar ctl_dt) override</argsstring>
+        <name>run</name>
+        <qualifiedname>agi::QuadrotorSimulator::run</qualifiedname>
+        <reimplements refid="classagi_1_1SimulatorBase_1af3a3d88245a2d2f16ed327f429f5f93d">run</reimplements>
+        <param>
+          <type>const Scalar</type>
+          <declname>ctl_dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="38" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1a015c131124de326a02f8a1fa4753ba77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadrotorSimulator::run</definition>
+        <argsstring>(const Command &amp;cmd, const Scalar ctl_dt)</argsstring>
+        <name>run</name>
+        <qualifiedname>agi::QuadrotorSimulator::run</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>ctl_dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="39" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1abf7bd53c711ebec0bdc5672e3be45e5d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadrotorSimulator::getState</definition>
+        <argsstring>(QuadState *const state) const override</argsstring>
+        <name>getState</name>
+        <qualifiedname>agi::QuadrotorSimulator::getState</qualifiedname>
+        <reimplements refid="classagi_1_1SimulatorBase_1a252dbd24224dc09bb49054c0de50a4b4">getState</reimplements>
+        <param>
+          <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> *const</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="42" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1a0d3ba0fa73c3a826acd4f6f7312c2224" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadrotorSimulator::getQuadrotor</definition>
+        <argsstring>(Quadrotor *const quad) const</argsstring>
+        <name>getQuadrotor</name>
+        <qualifiedname>agi::QuadrotorSimulator::getQuadrotor</qualifiedname>
+        <param>
+          <type><ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> *const</type>
+          <declname>quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="43" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1a9d024909adad310c18b534b3517b794a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+        <definition>const Quadrotor &amp; agi::QuadrotorSimulator::getQuadrotor</definition>
+        <argsstring>() const</argsstring>
+        <name>getQuadrotor</name>
+        <qualifiedname>agi::QuadrotorSimulator::getQuadrotor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="44" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1a8077e6e55069031e178e9c216e21342e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::shared_ptr&lt; <ref refid="classagi_1_1LowLevelControllerBase" kindref="compound">LowLevelControllerBase</ref> &gt;</type>
+        <definition>const std::shared_ptr&lt; LowLevelControllerBase &gt; agi::QuadrotorSimulator::getLowLevelController</definition>
+        <argsstring>() const</argsstring>
+        <name>getLowLevelController</name>
+        <qualifiedname>agi::QuadrotorSimulator::getLowLevelController</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="45" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1a5781dbaed8c1ff6177bead78759562fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadrotorSimulator::setState</definition>
+        <argsstring>(const QuadState &amp;state) override</argsstring>
+        <name>setState</name>
+        <qualifiedname>agi::QuadrotorSimulator::setState</qualifiedname>
+        <reimplements refid="classagi_1_1SimulatorBase_1ac8a6ab25a55de3213ddee143f75897fd">setState</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="48" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1a0875d7c2b177e2e89c8a6d3f9e4d5534" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadrotorSimulator::setCommand</definition>
+        <argsstring>(const Command &amp;cmd)</argsstring>
+        <name>setCommand</name>
+        <qualifiedname>agi::QuadrotorSimulator::setCommand</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="49" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1a93f3463926f093efeb4a3cc885e08862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadrotorSimulator::updateQuad</definition>
+        <argsstring>(const Quadrotor &amp;quad)</argsstring>
+        <name>updateQuad</name>
+        <qualifiedname>agi::QuadrotorSimulator::updateQuad</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="50" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1a6bf09615fa235d8c4a2b881ed4193009" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::QuadrotorSimulator::clearModelPipeline</definition>
+        <argsstring>()</argsstring>
+        <name>clearModelPipeline</name>
+        <qualifiedname>agi::QuadrotorSimulator::clearModelPipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="51" column="8" bodyfile="agilib/include/agilib/simulator/quadrotor_simulator.hpp" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1aaf2610908618a664ee8cdcd7f0d8b3c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>std::shared_ptr&lt; T &gt;</type>
+        <definition>std::shared_ptr&lt; T &gt; agi::QuadrotorSimulator::addModel</definition>
+        <argsstring>(const T &amp;&amp;mdl)</argsstring>
+        <name>addModel</name>
+        <qualifiedname>agi::QuadrotorSimulator::addModel</qualifiedname>
+        <param>
+          <type>const T &amp;&amp;</type>
+          <declname>mdl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="56" column="19" bodyfile="agilib/include/agilib/simulator/quadrotor_simulator.hpp" bodystart="56" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1a12db5fe2f8abeb81e05ab80490b2d06e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::QuadrotorSimulator::updateState</definition>
+        <argsstring>(const QuadState &amp;, Scalar)</argsstring>
+        <name>updateState</name>
+        <qualifiedname>agi::QuadrotorSimulator::updateState</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+        </param>
+        <param>
+          <type>Scalar</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="78" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1a42e5294f4794ac6f4d5e3b7843e6eb9b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>DynamicsFunction</type>
+        <definition>DynamicsFunction agi::QuadrotorSimulator::getDynamics</definition>
+        <argsstring>() const</argsstring>
+        <name>getDynamics</name>
+        <qualifiedname>agi::QuadrotorSimulator::getDynamics</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="79" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1QuadrotorSimulator_1a70ac2046bfac89b2fea76733e9e9d7f0" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::QuadrotorSimulator::computeDynamics</definition>
+        <argsstring>(const Ref&lt; const Vector&lt; QS::SIZE &gt; &gt;, Ref&lt; Vector&lt; QS::SIZE &gt; &gt;) const</argsstring>
+        <name>computeDynamics</name>
+        <qualifiedname>agi::QuadrotorSimulator::computeDynamics</qualifiedname>
+        <param>
+          <type>const Ref&lt; const Vector&lt; QS::SIZE &gt; &gt;</type>
+        </param>
+        <param>
+          <type>Ref&lt; Vector&lt; QS::SIZE &gt; &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="80" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>agi::Module&lt; SimulatorBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+      </node>
+      <node id="1">
+        <label>agi::QuadrotorSimulator</label>
+        <link refid="classagi_1_1QuadrotorSimulator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::SimulatorBase</label>
+        <link refid="classagi_1_1SimulatorBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>agi::Module&lt; SimulatorBase &gt;</label>
+        <link refid="classagi_1_1Module"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>logger_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::Logger</label>
+        <link refid="classagi_1_1Logger"/>
+      </node>
+      <node id="1">
+        <label>agi::QuadrotorSimulator</label>
+        <link refid="classagi_1_1QuadrotorSimulator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::SimulatorBase</label>
+        <link refid="classagi_1_1SimulatorBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/simulator/quadrotor_simulator.hpp" line="27" column="1" bodyfile="agilib/include/agilib/simulator/quadrotor_simulator.hpp" bodystart="27" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classagi_1_1QuadrotorSimulator_1aaf2610908618a664ee8cdcd7f0d8b3c3" prot="public" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>addModel</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a6bf09615fa235d8c4a2b881ed4193009" prot="public" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>clearModelPipeline</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a21b683acb804ad392d1772ba4a5ec6c5" prot="private" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>cmd_queue_</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a70ac2046bfac89b2fea76733e9e9d7f0" prot="private" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>computeDynamics</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1af58295a7a492c9493fe99a9901cdde50" prot="private" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>ctrl_</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a42e5294f4794ac6f4d5e3b7843e6eb9b" prot="private" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>getDynamics</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a8077e6e55069031e178e9c216e21342e" prot="public" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>getLowLevelController</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a0d3ba0fa73c3a826acd4f6f7312c2224" prot="public" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>getQuadrotor</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a9d024909adad310c18b534b3517b794a" prot="public" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>getQuadrotor</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1abf7bd53c711ebec0bdc5672e3be45e5d" prot="public" virt="virtual"><scope>agi::QuadrotorSimulator</scope><name>getState</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a709c4c337832f25ad44f30d3264d099c" prot="private" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>integrator_ptr_</name></member>
+      <member refid="classagi_1_1Module_1a47397f353bd473039f948eddbc10caf6" prot="protected" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Module_1a74318d65d3e64fe64521e101f9bc79e5" prot="public" virt="virtual"><scope>agi::QuadrotorSimulator</scope><name>logTiming</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a5ffbab3334e0e3f0a5586653dd2c52e8" prot="private" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>model_pipeline_</name></member>
+      <member refid="classagi_1_1Module_1af3d9e6ba29b98d458f70667c1c78f225" prot="public" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>Module</name></member>
+      <member refid="classagi_1_1Module_1a7da20dd0a41e780190ce97d09b3c7a0d" prot="public" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>name</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1ae67d28e85643253f8a2ee0e125d3b781" prot="private" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>params_</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1ab4221b1878fa93a15998fd54cf4317a4" prot="public" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>QuadrotorSimulator</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1ac7fc018b689397c94ec324a70337f4fe" prot="public" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>QuadrotorSimulator</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a4319171c9fdc3ec1f44c2423b992c7a2" prot="public" virt="virtual"><scope>agi::QuadrotorSimulator</scope><name>reset</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a1cb5e6e5de34056fba3629986d9000bf" prot="public" virt="virtual"><scope>agi::QuadrotorSimulator</scope><name>reset</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a9f0da532d22084817acdaaecf9848db5" prot="public" virt="virtual"><scope>agi::QuadrotorSimulator</scope><name>run</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a015c131124de326a02f8a1fa4753ba77" prot="public" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>run</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a0875d7c2b177e2e89c8a6d3f9e4d5534" prot="public" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>setCommand</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a5781dbaed8c1ff6177bead78759562fe" prot="public" virt="virtual"><scope>agi::QuadrotorSimulator</scope><name>setState</name></member>
+      <member refid="classagi_1_1SimulatorBase_1ad22c9bb98de68f9e4846293189f2b5b9" prot="public" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>SimulatorBase</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1af18dc856fc4f3d75c06643be5ed6e183" prot="private" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>state_</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a93f3463926f093efeb4a3cc885e08862" prot="public" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>updateQuad</name></member>
+      <member refid="classagi_1_1QuadrotorSimulator_1a12db5fe2f8abeb81e05ab80490b2d06e" prot="private" virt="non-virtual"><scope>agi::QuadrotorSimulator</scope><name>updateState</name></member>
+      <member refid="classagi_1_1Module_1aeb80261d25462f4a98a3680229862b8d" prot="public" virt="virtual"><scope>agi::QuadrotorSimulator</scope><name>~Module</name></member>
+      <member refid="classagi_1_1SimulatorBase_1a9e50dbccab1606699b9ffc943363407d" prot="public" virt="virtual"><scope>agi::QuadrotorSimulator</scope><name>~SimulatorBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

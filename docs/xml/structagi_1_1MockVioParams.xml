@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1MockVioParams" kind="struct" language="C++" prot="public">
+    <compoundname>agi::MockVioParams</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1a38c7289378c3b17288b2743525af778a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::MockVioParams::use_imu</definition>
+        <argsstring></argsstring>
+        <name>use_imu</name>
+        <qualifiedname>agi::MockVioParams::use_imu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="16" column="8" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1a86aa1e300c1fb0aa5d616811bc743660" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::MockVioParams::rise</definition>
+        <argsstring></argsstring>
+        <name>rise</name>
+        <qualifiedname>agi::MockVioParams::rise</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="17" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1a3709c36d3c82c771272527906cc883fd" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::MockVioParams::image_dt</definition>
+        <argsstring></argsstring>
+        <name>image_dt</name>
+        <qualifiedname>agi::MockVioParams::image_dt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="19" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1a9083c761580764c83efede1a03686ae7" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::MockVioParams::vio_dt</definition>
+        <argsstring></argsstring>
+        <name>vio_dt</name>
+        <qualifiedname>agi::MockVioParams::vio_dt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="20" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1aa62bda39c758e3a2542a7ff4c300f67c" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::MockVioParams::vio_latency</definition>
+        <argsstring></argsstring>
+        <name>vio_latency</name>
+        <qualifiedname>agi::MockVioParams::vio_latency</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="21" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1af2d0c33675c07a9134c1b0ccc6a29df0" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MockVioParams::vio_pos_static_drift</definition>
+        <argsstring></argsstring>
+        <name>vio_pos_static_drift</name>
+        <qualifiedname>agi::MockVioParams::vio_pos_static_drift</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="23" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1a7edcf49dee6978276bc7d8732aa320a1" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MockVioParams::vio_pos_dynamic_drift</definition>
+        <argsstring></argsstring>
+        <name>vio_pos_dynamic_drift</name>
+        <qualifiedname>agi::MockVioParams::vio_pos_dynamic_drift</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="24" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1a431cac8f32d84927dcd0d473d79c0db0" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MockVioParams::vio_pos_noise</definition>
+        <argsstring></argsstring>
+        <name>vio_pos_noise</name>
+        <qualifiedname>agi::MockVioParams::vio_pos_noise</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="25" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1a5987190f53cf71dc569ed52fce4d498e" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MockVioParams::vio_att_noise</definition>
+        <argsstring></argsstring>
+        <name>vio_att_noise</name>
+        <qualifiedname>agi::MockVioParams::vio_att_noise</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="26" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1a6d25d65b55745755ec3d64e3cc065acb" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MockVioParams::vio_vel_noise</definition>
+        <argsstring></argsstring>
+        <name>vio_vel_noise</name>
+        <qualifiedname>agi::MockVioParams::vio_vel_noise</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="27" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1aa39258ec3c027fae069b0b4279b161f5" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MockVioParams::vio_omega_bias_noise</definition>
+        <argsstring></argsstring>
+        <name>vio_omega_bias_noise</name>
+        <qualifiedname>agi::MockVioParams::vio_omega_bias_noise</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="28" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1a6c5b49f12dbf5136c542e3ac371a9c21" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MockVioParams::vio_acc_bias_noise</definition>
+        <argsstring></argsstring>
+        <name>vio_acc_bias_noise</name>
+        <qualifiedname>agi::MockVioParams::vio_acc_bias_noise</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="29" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1a42481ac16a0226920f9d7b6283e9a6dc" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::MockVioParams::imu_dt</definition>
+        <argsstring></argsstring>
+        <name>imu_dt</name>
+        <qualifiedname>agi::MockVioParams::imu_dt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="31" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1a05c3f9aa696fbceebfece7c5ea57d36c" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MockVioParams::imu_omega_noise</definition>
+        <argsstring></argsstring>
+        <name>imu_omega_noise</name>
+        <qualifiedname>agi::MockVioParams::imu_omega_noise</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="32" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1a13d252d293f0d4e7903c776804af3ed6" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MockVioParams::imu_acc_noise</definition>
+        <argsstring></argsstring>
+        <name>imu_acc_noise</name>
+        <qualifiedname>agi::MockVioParams::imu_acc_noise</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="33" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1a124e2fa4cf6539701ae394618eb573dd" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MockVioParams::imu_omega_bias</definition>
+        <argsstring></argsstring>
+        <name>imu_omega_bias</name>
+        <qualifiedname>agi::MockVioParams::imu_omega_bias</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="34" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1MockVioParams_1ae5b0a60c518ce5b1ec9d3e646ea60b8b" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::MockVioParams::imu_acc_bias</definition>
+        <argsstring></argsstring>
+        <name>imu_acc_bias</name>
+        <qualifiedname>agi::MockVioParams::imu_acc_bias</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="35" column="10" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1MockVioParams_1a6802aa3b1d5ba702f8cfae03abcf93a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::MockVioParams::MockVioParams</definition>
+        <argsstring>()</argsstring>
+        <name>MockVioParams</name>
+        <qualifiedname>agi::MockVioParams::MockVioParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="9" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MockVioParams_1a696e099e284b2d6b6326253f0c8a56a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::MockVioParams::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::MockVioParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="12" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MockVioParams_1a57fd21530ae6250972e3058484044c8b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::MockVioParams::valid</definition>
+        <argsstring>() const override</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::MockVioParams::valid</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b">valid</reimplements>
+        <briefdescription>
+<para>Check if parameters are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="14" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MockVioParams_1aa72a975fca1221525746975fe5ee1b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::MockVioParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="11" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1MockVioParams_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const Yaml &amp;yaml)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::MockVioParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="11" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::MockVioParams</label>
+        <link refid="structagi_1_1MockVioParams"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::MockVioParams</label>
+        <link refid="structagi_1_1MockVioParams"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" line="8" column="1" bodyfile="agilib/include/agilib/estimator/mock_vio/mock_vio_params.hpp" bodystart="8" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structagi_1_1MockVioParams_1a3709c36d3c82c771272527906cc883fd" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>image_dt</name></member>
+      <member refid="structagi_1_1MockVioParams_1ae5b0a60c518ce5b1ec9d3e646ea60b8b" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>imu_acc_bias</name></member>
+      <member refid="structagi_1_1MockVioParams_1a13d252d293f0d4e7903c776804af3ed6" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>imu_acc_noise</name></member>
+      <member refid="structagi_1_1MockVioParams_1a42481ac16a0226920f9d7b6283e9a6dc" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>imu_dt</name></member>
+      <member refid="structagi_1_1MockVioParams_1a124e2fa4cf6539701ae394618eb573dd" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>imu_omega_bias</name></member>
+      <member refid="structagi_1_1MockVioParams_1a05c3f9aa696fbceebfece7c5ea57d36c" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>imu_omega_noise</name></member>
+      <member refid="structagi_1_1MockVioParams_1a696e099e284b2d6b6326253f0c8a56a9" prot="public" virt="virtual"><scope>agi::MockVioParams</scope><name>load</name></member>
+      <member refid="structagi_1_1MockVioParams_1aa72a975fca1221525746975fe5ee1b6a" prot="public" virt="virtual"><scope>agi::MockVioParams</scope><name>load</name></member>
+      <member refid="structagi_1_1MockVioParams_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" virt="virtual"><scope>agi::MockVioParams</scope><name>load</name></member>
+      <member refid="structagi_1_1MockVioParams_1a6802aa3b1d5ba702f8cfae03abcf93a8" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>MockVioParams</name></member>
+      <member refid="structagi_1_1MockVioParams_1a86aa1e300c1fb0aa5d616811bc743660" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>rise</name></member>
+      <member refid="structagi_1_1MockVioParams_1a38c7289378c3b17288b2743525af778a" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>use_imu</name></member>
+      <member refid="structagi_1_1MockVioParams_1a57fd21530ae6250972e3058484044c8b" prot="public" virt="virtual"><scope>agi::MockVioParams</scope><name>valid</name></member>
+      <member refid="structagi_1_1MockVioParams_1a6c5b49f12dbf5136c542e3ac371a9c21" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>vio_acc_bias_noise</name></member>
+      <member refid="structagi_1_1MockVioParams_1a5987190f53cf71dc569ed52fce4d498e" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>vio_att_noise</name></member>
+      <member refid="structagi_1_1MockVioParams_1a9083c761580764c83efede1a03686ae7" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>vio_dt</name></member>
+      <member refid="structagi_1_1MockVioParams_1aa62bda39c758e3a2542a7ff4c300f67c" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>vio_latency</name></member>
+      <member refid="structagi_1_1MockVioParams_1aa39258ec3c027fae069b0b4279b161f5" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>vio_omega_bias_noise</name></member>
+      <member refid="structagi_1_1MockVioParams_1a7edcf49dee6978276bc7d8732aa320a1" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>vio_pos_dynamic_drift</name></member>
+      <member refid="structagi_1_1MockVioParams_1a431cac8f32d84927dcd0d473d79c0db0" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>vio_pos_noise</name></member>
+      <member refid="structagi_1_1MockVioParams_1af2d0c33675c07a9134c1b0ccc6a29df0" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>vio_pos_static_drift</name></member>
+      <member refid="structagi_1_1MockVioParams_1a6d25d65b55745755ec3d64e3cc065acb" prot="public" virt="non-virtual"><scope>agi::MockVioParams</scope><name>vio_vel_noise</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::MockVioParams</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

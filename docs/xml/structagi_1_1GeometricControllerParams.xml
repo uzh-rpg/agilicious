@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1GeometricControllerParams" kind="struct" language="C++" prot="public">
+    <compoundname>agi::GeometricControllerParams</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1GeometricControllerParams_1a18d56ca54c236325467c4d266b6d393f" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::GeometricControllerParams::kp_acc_</definition>
+        <argsstring></argsstring>
+        <name>kp_acc_</name>
+        <qualifiedname>agi::GeometricControllerParams::kp_acc_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/geo_params.hpp" line="15" column="10" bodyfile="agilib/include/agilib/controller/geometric/geo_params.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1GeometricControllerParams_1a2852e0eface6529e38858bff16fbb81b" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::GeometricControllerParams::kd_acc_</definition>
+        <argsstring></argsstring>
+        <name>kd_acc_</name>
+        <qualifiedname>agi::GeometricControllerParams::kd_acc_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/geo_params.hpp" line="16" column="10" bodyfile="agilib/include/agilib/controller/geometric/geo_params.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1GeometricControllerParams_1a48cabd3192c1f4cf0c6a56f7f80e5625" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::GeometricControllerParams::kp_rate_</definition>
+        <argsstring></argsstring>
+        <name>kp_rate_</name>
+        <qualifiedname>agi::GeometricControllerParams::kp_rate_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/geo_params.hpp" line="17" column="10" bodyfile="agilib/include/agilib/controller/geometric/geo_params.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1GeometricControllerParams_1adf3f9e9981409f846c9ccfc4eed4b266" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::GeometricControllerParams::kp_att_xy_</definition>
+        <argsstring></argsstring>
+        <name>kp_att_xy_</name>
+        <qualifiedname>agi::GeometricControllerParams::kp_att_xy_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/geo_params.hpp" line="18" column="10" bodyfile="agilib/include/agilib/controller/geometric/geo_params.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1GeometricControllerParams_1a8e83fec82453a48b159ed0888f784114" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::GeometricControllerParams::kp_att_z_</definition>
+        <argsstring></argsstring>
+        <name>kp_att_z_</name>
+        <qualifiedname>agi::GeometricControllerParams::kp_att_z_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/geo_params.hpp" line="19" column="10" bodyfile="agilib/include/agilib/controller/geometric/geo_params.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1GeometricControllerParams_1ae418f044ebd264a8f2637b10c7290a66" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::GeometricControllerParams::filter_sampling_frequency_</definition>
+        <argsstring></argsstring>
+        <name>filter_sampling_frequency_</name>
+        <qualifiedname>agi::GeometricControllerParams::filter_sampling_frequency_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/geo_params.hpp" line="20" column="10" bodyfile="agilib/include/agilib/controller/geometric/geo_params.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1GeometricControllerParams_1ae7ab8a105bf3d8a8500ff923aea941f7" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::GeometricControllerParams::filter_cutoff_frequency_</definition>
+        <argsstring></argsstring>
+        <name>filter_cutoff_frequency_</name>
+        <qualifiedname>agi::GeometricControllerParams::filter_cutoff_frequency_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/geo_params.hpp" line="21" column="10" bodyfile="agilib/include/agilib/controller/geometric/geo_params.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1GeometricControllerParams_1a55e14afeddfa298ee94a3e3f7b03c21b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::GeometricControllerParams::drag_compensation_</definition>
+        <argsstring></argsstring>
+        <name>drag_compensation_</name>
+        <qualifiedname>agi::GeometricControllerParams::drag_compensation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/geo_params.hpp" line="22" column="8" bodyfile="agilib/include/agilib/controller/geometric/geo_params.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1GeometricControllerParams_1abd8261ac71c9f6e52931cede1d063216" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::GeometricControllerParams::p_err_max_</definition>
+        <argsstring></argsstring>
+        <name>p_err_max_</name>
+        <qualifiedname>agi::GeometricControllerParams::p_err_max_</qualifiedname>
+        <initializer>=
+    Vector&lt;3&gt;::Constant(std::numeric_limits&lt;Scalar&gt;::max())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/geo_params.hpp" line="23" column="10" bodyfile="agilib/include/agilib/controller/geometric/geo_params.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1GeometricControllerParams_1a088d0cb736dc1bcf0d0f4446b2642c58" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::GeometricControllerParams::v_err_max_</definition>
+        <argsstring></argsstring>
+        <name>v_err_max_</name>
+        <qualifiedname>agi::GeometricControllerParams::v_err_max_</qualifiedname>
+        <initializer>=
+    Vector&lt;3&gt;::Constant(std::numeric_limits&lt;Scalar&gt;::max())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/geo_params.hpp" line="25" column="10" bodyfile="agilib/include/agilib/controller/geometric/geo_params.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1GeometricControllerParams_1aea6d6cec18ec5b67a4a7a3938cad67b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::GeometricControllerParams::GeometricControllerParams</definition>
+        <argsstring>()</argsstring>
+        <name>GeometricControllerParams</name>
+        <qualifiedname>agi::GeometricControllerParams::GeometricControllerParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/geo_params.hpp" line="10" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1GeometricControllerParams_1a110a4693c526437fe2875dee46dd75f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::GeometricControllerParams::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::GeometricControllerParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/geo_params.hpp" line="13" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1GeometricControllerParams_1aee2f303fb97b6ee4321285dea19d6018" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::GeometricControllerParams::valid</definition>
+        <argsstring>() const override</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::GeometricControllerParams::valid</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b">valid</reimplements>
+        <briefdescription>
+<para>Check if parameters are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/geo_params.hpp" line="27" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1GeometricControllerParams_1aa72a975fca1221525746975fe5ee1b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::GeometricControllerParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/geo_params.hpp" line="12" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1GeometricControllerParams_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const Yaml &amp;yaml)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::GeometricControllerParams::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/controller/geometric/geo_params.hpp" line="12" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::GeometricControllerParams</label>
+        <link refid="structagi_1_1GeometricControllerParams"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::GeometricControllerParams</label>
+        <link refid="structagi_1_1GeometricControllerParams"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/controller/geometric/geo_params.hpp" line="7" column="1" bodyfile="agilib/include/agilib/controller/geometric/geo_params.hpp" bodystart="7" bodyend="28"/>
+    <listofallmembers>
+      <member refid="structagi_1_1GeometricControllerParams_1a55e14afeddfa298ee94a3e3f7b03c21b" prot="public" virt="non-virtual"><scope>agi::GeometricControllerParams</scope><name>drag_compensation_</name></member>
+      <member refid="structagi_1_1GeometricControllerParams_1ae7ab8a105bf3d8a8500ff923aea941f7" prot="public" virt="non-virtual"><scope>agi::GeometricControllerParams</scope><name>filter_cutoff_frequency_</name></member>
+      <member refid="structagi_1_1GeometricControllerParams_1ae418f044ebd264a8f2637b10c7290a66" prot="public" virt="non-virtual"><scope>agi::GeometricControllerParams</scope><name>filter_sampling_frequency_</name></member>
+      <member refid="structagi_1_1GeometricControllerParams_1aea6d6cec18ec5b67a4a7a3938cad67b3" prot="public" virt="non-virtual"><scope>agi::GeometricControllerParams</scope><name>GeometricControllerParams</name></member>
+      <member refid="structagi_1_1GeometricControllerParams_1a2852e0eface6529e38858bff16fbb81b" prot="public" virt="non-virtual"><scope>agi::GeometricControllerParams</scope><name>kd_acc_</name></member>
+      <member refid="structagi_1_1GeometricControllerParams_1a18d56ca54c236325467c4d266b6d393f" prot="public" virt="non-virtual"><scope>agi::GeometricControllerParams</scope><name>kp_acc_</name></member>
+      <member refid="structagi_1_1GeometricControllerParams_1adf3f9e9981409f846c9ccfc4eed4b266" prot="public" virt="non-virtual"><scope>agi::GeometricControllerParams</scope><name>kp_att_xy_</name></member>
+      <member refid="structagi_1_1GeometricControllerParams_1a8e83fec82453a48b159ed0888f784114" prot="public" virt="non-virtual"><scope>agi::GeometricControllerParams</scope><name>kp_att_z_</name></member>
+      <member refid="structagi_1_1GeometricControllerParams_1a48cabd3192c1f4cf0c6a56f7f80e5625" prot="public" virt="non-virtual"><scope>agi::GeometricControllerParams</scope><name>kp_rate_</name></member>
+      <member refid="structagi_1_1GeometricControllerParams_1a110a4693c526437fe2875dee46dd75f2" prot="public" virt="virtual"><scope>agi::GeometricControllerParams</scope><name>load</name></member>
+      <member refid="structagi_1_1GeometricControllerParams_1aa72a975fca1221525746975fe5ee1b6a" prot="public" virt="virtual"><scope>agi::GeometricControllerParams</scope><name>load</name></member>
+      <member refid="structagi_1_1GeometricControllerParams_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" virt="virtual"><scope>agi::GeometricControllerParams</scope><name>load</name></member>
+      <member refid="structagi_1_1GeometricControllerParams_1abd8261ac71c9f6e52931cede1d063216" prot="public" virt="non-virtual"><scope>agi::GeometricControllerParams</scope><name>p_err_max_</name></member>
+      <member refid="structagi_1_1GeometricControllerParams_1a088d0cb736dc1bcf0d0f4446b2642c58" prot="public" virt="non-virtual"><scope>agi::GeometricControllerParams</scope><name>v_err_max_</name></member>
+      <member refid="structagi_1_1GeometricControllerParams_1aee2f303fb97b6ee4321285dea19d6018" prot="public" virt="virtual"><scope>agi::GeometricControllerParams</scope><name>valid</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::GeometricControllerParams</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

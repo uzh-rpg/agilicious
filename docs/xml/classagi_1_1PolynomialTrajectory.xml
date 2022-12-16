@@ -1,0 +1,859 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1PolynomialTrajectory" kind="class" language="C++" prot="public">
+    <compoundname>agi::PolynomialTrajectory</compoundname>
+    <basecompoundref refid="classagi_1_1ReferenceBase" prot="public" virt="non-virtual">agi::ReferenceBase</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>class PolyType</type>
+        <defval><ref refid="classagi_1_1Polynomial" kindref="compound">Polynomial</ref>&lt;&gt;</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classagi_1_1PolynomialTrajectory_1a2f2ba0b0cc497074bf44a7a3f0767a55" prot="protected" static="no" mutable="no">
+        <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref></type>
+        <definition>QuadState agi::PolynomialTrajectory&lt; PolyType &gt;::end_state_</definition>
+        <argsstring></argsstring>
+        <name>end_state_</name>
+        <qualifiedname>agi::PolynomialTrajectory::end_state_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="55" column="13" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PolynomialTrajectory_1a3b8171a1fd318ad2640a9945795312cd" prot="protected" static="no" mutable="no">
+        <type>PolyType</type>
+        <definition>PolyType agi::PolynomialTrajectory&lt; PolyType &gt;::x_</definition>
+        <argsstring></argsstring>
+        <name>x_</name>
+        <qualifiedname>agi::PolynomialTrajectory::x_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="56" column="12" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PolynomialTrajectory_1a5b35ac19d2fafbf8b5195204cb4883c4" prot="protected" static="no" mutable="no">
+        <type>PolyType</type>
+        <definition>PolyType agi::PolynomialTrajectory&lt; PolyType &gt;::y_</definition>
+        <argsstring></argsstring>
+        <name>y_</name>
+        <qualifiedname>agi::PolynomialTrajectory::y_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="57" column="12" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PolynomialTrajectory_1a6d32513dc7a5131760670a9e467647c5" prot="protected" static="no" mutable="no">
+        <type>PolyType</type>
+        <definition>PolyType agi::PolynomialTrajectory&lt; PolyType &gt;::z_</definition>
+        <argsstring></argsstring>
+        <name>z_</name>
+        <qualifiedname>agi::PolynomialTrajectory::z_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="58" column="12" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PolynomialTrajectory_1a17d51426747b133bc867307b69469cd0" prot="protected" static="no" mutable="no">
+        <type>PolyType</type>
+        <definition>PolyType agi::PolynomialTrajectory&lt; PolyType &gt;::yaw_</definition>
+        <argsstring></argsstring>
+        <name>yaw_</name>
+        <qualifiedname>agi::PolynomialTrajectory::yaw_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="59" column="12" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PolynomialTrajectory_1aaa39ffa1a48cf9b505969ae8694a0749" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &gt;</type>
+        <definition>std::vector&lt;QuadState&gt; agi::PolynomialTrajectory&lt; PolyType &gt;::states_</definition>
+        <argsstring></argsstring>
+        <name>states_</name>
+        <qualifiedname>agi::PolynomialTrajectory::states_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="61" column="15" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PolynomialTrajectory_1a54d0a32bab652b67e2c7d0d8d3e3d8c8" prot="protected" static="no" mutable="yes">
+        <type>Quaternion</type>
+        <definition>Quaternion agi::PolynomialTrajectory&lt; PolyType &gt;::q_pitch_roll_last_</definition>
+        <argsstring></argsstring>
+        <name>q_pitch_roll_last_</name>
+        <qualifiedname>agi::PolynomialTrajectory::q_pitch_roll_last_</qualifiedname>
+        <initializer>{1, 0, 0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="63" column="22" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PolynomialTrajectory_1aef42609c56435d03ffd666f29b10021b" prot="protected" static="no" mutable="yes">
+        <type>Scalar</type>
+        <definition>Scalar agi::PolynomialTrajectory&lt; PolyType &gt;::yaw_last_</definition>
+        <argsstring></argsstring>
+        <name>yaw_last_</name>
+        <qualifiedname>agi::PolynomialTrajectory::yaw_last_</qualifiedname>
+        <initializer>{0.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="64" column="18" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1PolynomialTrajectory_1a08afcec0f0cfef577508e0c312036325" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::PolynomialTrajectory&lt; PolyType &gt;::forward_heading_</definition>
+        <argsstring></argsstring>
+        <name>forward_heading_</name>
+        <qualifiedname>agi::PolynomialTrajectory::forward_heading_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="65" column="8" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1afcc77a447d66fc3203f055fc2a6cf6de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW agi::PolynomialTrajectory&lt; PolyType &gt;::PolynomialTrajectory</definition>
+        <argsstring>(const QuadState &amp;start_state, const QuadState &amp;end_state, const Vector&lt;&gt; &amp;weights=Vector&lt; 4 &gt;(0, 0, 0, 1), const int order=11, const int continuity=-1, const std::string &amp;name=&quot;Polynomial Trajectory&quot;)</argsstring>
+        <name>PolynomialTrajectory</name>
+        <qualifiedname>agi::PolynomialTrajectory::PolynomialTrajectory</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>start_state</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>end_state</declname>
+        </param>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>weights</declname>
+          <defval>Vector&lt; 4 &gt;(0, 0, 0, 1)</defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>order</declname>
+          <defval>11</defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>continuity</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+          <defval>&quot;Polynomial Trajectory&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="14" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1a10d2c8d9014765709aaf3a22b91d761a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::PolynomialTrajectory&lt; PolyType &gt;::PolynomialTrajectory</definition>
+        <argsstring>(const std::vector&lt; QuadState &gt; &amp;states, const Vector&lt;&gt; &amp;weights=Vector&lt; 4 &gt;(0, 0, 0, 1), const int order=11, const std::string &amp;name=&quot;Polynomial Trajectory&quot;)</argsstring>
+        <name>PolynomialTrajectory</name>
+        <qualifiedname>agi::PolynomialTrajectory::PolynomialTrajectory</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &gt; &amp;</type>
+          <declname>states</declname>
+        </param>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>weights</declname>
+          <defval>Vector&lt; 4 &gt;(0, 0, 0, 1)</defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>order</declname>
+          <defval>11</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+          <defval>&quot;Polynomial Trajectory&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="18" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1aad768e93b6af1ebd5092fafc8015381b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual agi::PolynomialTrajectory&lt; PolyType &gt;::~PolynomialTrajectory</definition>
+        <argsstring>()=default</argsstring>
+        <name>~PolynomialTrajectory</name>
+        <qualifiedname>agi::PolynomialTrajectory::~PolynomialTrajectory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="22" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1a0ff0a6ab6fa27bab65da4c9141c9fc21" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structagi_1_1Setpoint" kindref="compound">Setpoint</ref></type>
+        <definition>Setpoint agi::PolynomialTrajectory&lt; PolyType &gt;::getSetpoint</definition>
+        <argsstring>(const QuadState &amp;state, const Scalar time) override</argsstring>
+        <name>getSetpoint</name>
+        <qualifiedname>agi::PolynomialTrajectory::getSetpoint</qualifiedname>
+        <reimplements refid="classagi_1_1ReferenceBase_1ac93905fbfed46897cfc62aca55702121">getSetpoint</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="25" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1aa6b83772691161fc735120694c764752" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref></type>
+        <definition>QuadState agi::PolynomialTrajectory&lt; PolyType &gt;::getState</definition>
+        <argsstring>(const Scalar time) const</argsstring>
+        <name>getState</name>
+        <qualifiedname>agi::PolynomialTrajectory::getState</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="26" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1a01ddecd971b5be53d29bcc53307545d0" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="structagi_1_1Setpoint" kindref="compound">Setpoint</ref></type>
+        <definition>virtual Setpoint agi::PolynomialTrajectory&lt; PolyType &gt;::getStartSetpoint</definition>
+        <argsstring>() override final</argsstring>
+        <name>getStartSetpoint</name>
+        <qualifiedname>agi::PolynomialTrajectory::getStartSetpoint</qualifiedname>
+        <reimplements refid="classagi_1_1ReferenceBase_1ab4ff3b2f0e66f6f1fe27c59bdb66c61f">getStartSetpoint</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="27" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1aaaf7540e38f670406ec56be47e80fdb4" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="structagi_1_1Setpoint" kindref="compound">Setpoint</ref></type>
+        <definition>virtual Setpoint agi::PolynomialTrajectory&lt; PolyType &gt;::getEndSetpoint</definition>
+        <argsstring>() override final</argsstring>
+        <name>getEndSetpoint</name>
+        <qualifiedname>agi::PolynomialTrajectory::getEndSetpoint</qualifiedname>
+        <reimplements refid="classagi_1_1ReferenceBase_1ab44839ff6f914e5915a525cece25fe38">getEndSetpoint</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="28" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1afd8d0a61f3bbcf9a46badc2dd5f179ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PolynomialTrajectory&lt; PolyType &gt;::addStateConstraint</definition>
+        <argsstring>(const QuadState &amp;state)</argsstring>
+        <name>addStateConstraint</name>
+        <qualifiedname>agi::PolynomialTrajectory::addStateConstraint</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="30" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1ace1395869cf193f6b0a40e81d002b4d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool agi::PolynomialTrajectory&lt; PolyType &gt;::solved</definition>
+        <argsstring>() const</argsstring>
+        <name>solved</name>
+        <qualifiedname>agi::PolynomialTrajectory::solved</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="31" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1a217729eec442f4119e51aa2b72e2bde5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::PolynomialTrajectory&lt; PolyType &gt;::valid</definition>
+        <argsstring>() const override</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::PolynomialTrajectory::valid</qualifiedname>
+        <reimplements refid="classagi_1_1ReferenceBase_1adcbdf523b58593c6db64176e857ec8b3">valid</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="32" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1af768210a105a211f2c868776d0541cd8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector</type>
+        <definition>Vector agi::PolynomialTrajectory&lt; PolyType &gt;::evalTranslation</definition>
+        <argsstring>(const Scalar time, const int order=0) const</argsstring>
+        <name>evalTranslation</name>
+        <qualifiedname>agi::PolynomialTrajectory::evalTranslation</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>order</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="35" column="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1a8daacbd1958e0ee2b023df92ba3d5629" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::PolynomialTrajectory&lt; PolyType &gt;::findTimeMaxAcc</definition>
+        <argsstring>(const Scalar precision=1e-3) const</argsstring>
+        <name>findTimeMaxAcc</name>
+        <qualifiedname>agi::PolynomialTrajectory::findTimeMaxAcc</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>precision</declname>
+          <defval>1e-3</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="36" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1a191e2b728bb8424d001f63cb63e848ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::PolynomialTrajectory&lt; PolyType &gt;::findTimeMaxOmega</definition>
+        <argsstring>(const Scalar precision=1e-3) const</argsstring>
+        <name>findTimeMaxOmega</name>
+        <qualifiedname>agi::PolynomialTrajectory::findTimeMaxOmega</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>precision</declname>
+          <defval>1e-3</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="37" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1a5f6e7fd73643dd3f6094f525d0d95e6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::PolynomialTrajectory&lt; PolyType &gt;::findTimeMaxAcc</definition>
+        <argsstring>(const Scalar t_start, const Scalar t_end, const Scalar precision=1e-3) const</argsstring>
+        <name>findTimeMaxAcc</name>
+        <qualifiedname>agi::PolynomialTrajectory::findTimeMaxAcc</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>t_start</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>t_end</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>precision</declname>
+          <defval>1e-3</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="38" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1a11221c1b32b6379f7bfb58a83148c985" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::PolynomialTrajectory&lt; PolyType &gt;::findTimeMaxOmega</definition>
+        <argsstring>(const Scalar t_start, const Scalar t_end, const Scalar precision=1e-3) const</argsstring>
+        <name>findTimeMaxOmega</name>
+        <qualifiedname>agi::PolynomialTrajectory::findTimeMaxOmega</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>t_start</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>t_end</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>precision</declname>
+          <defval>1e-3</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="40" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1aea9be1c8414f30f058d2d5c141bd4e89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::PolynomialTrajectory&lt; PolyType &gt;::scale</definition>
+        <argsstring>(const Scalar start_time=NAN, const Scalar duration=NAN)</argsstring>
+        <name>scale</name>
+        <qualifiedname>agi::PolynomialTrajectory::scale</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>start_time</declname>
+          <defval>NAN</defval>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>duration</declname>
+          <defval>NAN</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="42" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1a17fa682bcd155169cd34db3a1e307f03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::PolynomialTrajectory&lt; PolyType &gt;::scaleToLimits</definition>
+        <argsstring>(const Quadrotor &amp;quad, const int iterations=10, const Scalar tolerance=1e-4)</argsstring>
+        <name>scaleToLimits</name>
+        <qualifiedname>agi::PolynomialTrajectory::scaleToLimits</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>iterations</declname>
+          <defval>10</defval>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>tolerance</declname>
+          <defval>1e-4</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="43" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1a715ad2010f74826b0437a188a171c71d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Scalar</type>
+        <definition>Scalar agi::PolynomialTrajectory&lt; PolyType &gt;::scaleToLimits</definition>
+        <argsstring>(const Scalar acc_limit, const int iterations=10, const Scalar tolerance=1e-4)</argsstring>
+        <name>scaleToLimits</name>
+        <qualifiedname>agi::PolynomialTrajectory::scaleToLimits</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>acc_limit</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>iterations</declname>
+          <defval>10</defval>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>tolerance</declname>
+          <defval>1e-4</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="45" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1a1fa9ccd83e20c9d5b6ace27fe851aa1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::PolynomialTrajectory&lt; PolyType &gt;::setForwardHeading</definition>
+        <argsstring>(const bool forward)</argsstring>
+        <name>setForwardHeading</name>
+        <qualifiedname>agi::PolynomialTrajectory::setForwardHeading</qualifiedname>
+        <param>
+          <type>const bool</type>
+          <declname>forward</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="48" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1ab4bfa1ba7e769d9ad6bbc74f722f8d42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::PolynomialTrajectory&lt; ClosedFormMinJerkAxis &gt;::PolynomialTrajectory</definition>
+        <argsstring>(const QuadState &amp;start_state, const QuadState &amp;end_state, const Vector&lt;&gt; &amp;weights, const int order, const int continuity, const std::string &amp;name)</argsstring>
+        <name>PolynomialTrajectory</name>
+        <qualifiedname>agi::PolynomialTrajectory::PolynomialTrajectory</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>start_state</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>end_state</declname>
+        </param>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>weights</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>continuity</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="89" column="22" declfile="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" declline="89" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1acfae65a5469175afc149cfde48bc0330" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::PolynomialTrajectory&lt; ClosedFormMinJerkAxis &gt;::PolynomialTrajectory</definition>
+        <argsstring>(const std::vector&lt; QuadState &gt; &amp;states, const Vector&lt;&gt; &amp;weights, const int order, const std::string &amp;name)=delete</argsstring>
+        <name>PolynomialTrajectory</name>
+        <qualifiedname>agi::PolynomialTrajectory::PolynomialTrajectory</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &gt; &amp;</type>
+          <declname>states</declname>
+        </param>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>weights</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="95" column="22" declfile="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" declline="95" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1ac93905fbfed46897cfc62aca55702121" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structagi_1_1Setpoint" kindref="compound">Setpoint</ref></type>
+        <definition>virtual Setpoint agi::ReferenceBase::getSetpoint</definition>
+        <argsstring>(const QuadState &amp;state, const Scalar t)=0</argsstring>
+        <name>getSetpoint</name>
+        <qualifiedname>agi::PolynomialTrajectory::getSetpoint</qualifiedname>
+        <reimplements refid="classagi_1_1ReferenceBase_1ac93905fbfed46897cfc62aca55702121">getSetpoint</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="24" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1a875e63a282d17d9ef1c4c41e5836e865" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="structagi_1_1Setpoint" kindref="compound">Setpoint</ref></type>
+        <definition>virtual Setpoint agi::ReferenceBase::getSetpoint</definition>
+        <argsstring>(const QuadState &amp;state) final</argsstring>
+        <name>getSetpoint</name>
+        <qualifiedname>agi::PolynomialTrajectory::getSetpoint</qualifiedname>
+        <reimplements refid="classagi_1_1ReferenceBase_1a875e63a282d17d9ef1c4c41e5836e865">getSetpoint</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="24" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1ab9d8347dc2548fc43948dd3226d8ab1b" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="structagi_1_1Setpoint" kindref="compound">Setpoint</ref></type>
+        <definition>virtual Setpoint agi::ReferenceBase::getSetpoint</definition>
+        <argsstring>(const Scalar t, const Scalar heading=NAN) final</argsstring>
+        <name>getSetpoint</name>
+        <qualifiedname>agi::PolynomialTrajectory::getSetpoint</qualifiedname>
+        <reimplements refid="classagi_1_1ReferenceBase_1ab9d8347dc2548fc43948dd3226d8ab1b">getSetpoint</reimplements>
+        <param>
+          <type>const Scalar</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>heading</declname>
+          <defval>NAN</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="24" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classagi_1_1PolynomialTrajectory_1a163b5e67726fd4bb0fd9c8fcf175d9c5" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename EvalFunc</type>
+          </param>
+          <param>
+            <type>typename CompFunc</type>
+          </param>
+        </templateparamlist>
+        <type>Scalar</type>
+        <definition>Scalar agi::PolynomialTrajectory&lt; PolyType &gt;::findTime</definition>
+        <argsstring>(const Scalar dt, const Scalar dt_min, const Scalar t_start, const Scalar t_end, EvalFunc eval, CompFunc comp) const</argsstring>
+        <name>findTime</name>
+        <qualifiedname>agi::PolynomialTrajectory::findTime</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>dt_min</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>t_start</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>t_end</declname>
+        </param>
+        <param>
+          <type>EvalFunc</type>
+          <declname>eval</declname>
+        </param>
+        <param>
+          <type>CompFunc</type>
+          <declname>comp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="52" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::PolynomialTrajectory&lt; PolyType &gt;</label>
+        <link refid="classagi_1_1PolynomialTrajectory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ReferenceBase</label>
+        <link refid="classagi_1_1ReferenceBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::PolynomialTrajectory&lt; PolyType &gt;</label>
+        <link refid="classagi_1_1PolynomialTrajectory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>end_state_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>states_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::QuadState</label>
+        <link refid="structagi_1_1QuadState"/>
+      </node>
+      <node id="2">
+        <label>agi::ReferenceBase</label>
+        <link refid="classagi_1_1ReferenceBase"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>start_state_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>name_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="4">
+        <label>std::string</label>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::vector&lt; agi::QuadState &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="11" column="1" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" bodystart="11" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classagi_1_1PolynomialTrajectory_1afd8d0a61f3bbcf9a46badc2dd5f179ef" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>addStateConstraint</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a3fa9710c451591c9305c79fbb8d8f6c1" prot="protected" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>duration_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a2f2ba0b0cc497074bf44a7a3f0767a55" prot="protected" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>end_state_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1af768210a105a211f2c868776d0541cd8" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>evalTranslation</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a163b5e67726fd4bb0fd9c8fcf175d9c5" prot="protected" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>findTime</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a8daacbd1958e0ee2b023df92ba3d5629" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>findTimeMaxAcc</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a5f6e7fd73643dd3f6094f525d0d95e6e" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>findTimeMaxAcc</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a191e2b728bb8424d001f63cb63e848ec" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>findTimeMaxOmega</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a11221c1b32b6379f7bfb58a83148c985" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>findTimeMaxOmega</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a08afcec0f0cfef577508e0c312036325" prot="protected" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>forward_heading_</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a2d29ebe0b692086b9a2bdce380ff2694" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>getDuration</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1aaaf7540e38f670406ec56be47e80fdb4" prot="public" virt="virtual"><scope>agi::PolynomialTrajectory</scope><name>getEndSetpoint</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a69e2637dc8c4733c539267634bf7f8af" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>getEndTime</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a0ff0a6ab6fa27bab65da4c9141c9fc21" prot="public" virt="virtual"><scope>agi::PolynomialTrajectory</scope><name>getSetpoint</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1ac93905fbfed46897cfc62aca55702121" prot="public" virt="virtual"><scope>agi::PolynomialTrajectory</scope><name>getSetpoint</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a875e63a282d17d9ef1c4c41e5836e865" prot="public" virt="virtual"><scope>agi::PolynomialTrajectory</scope><name>getSetpoint</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1ab9d8347dc2548fc43948dd3226d8ab1b" prot="public" virt="virtual"><scope>agi::PolynomialTrajectory</scope><name>getSetpoint</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a01ddecd971b5be53d29bcc53307545d0" prot="public" virt="virtual"><scope>agi::PolynomialTrajectory</scope><name>getStartSetpoint</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a3c86a5dc940736c947bfc120c3639fb2" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>getStartTime</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1aa6b83772691161fc735120694c764752" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>getState</name></member>
+      <member refid="classagi_1_1ReferenceBase_1abb83061d559c15abaca2e398ce06793f" prot="public" virt="virtual"><scope>agi::PolynomialTrajectory</scope><name>isAbsolute</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a4a0553bcd821f758f44f68d028c17a5f" prot="public" virt="virtual"><scope>agi::PolynomialTrajectory</scope><name>isHover</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a36bfb93f70a50407510e1bebebc56008" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>isTimeInRange</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a59884c48b6854317fef848fe8553abe6" prot="public" virt="virtual"><scope>agi::PolynomialTrajectory</scope><name>isVelocityRefernce</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a4dc1f48d25427a2fd18e61e766bad949" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>name</name></member>
+      <member refid="classagi_1_1ReferenceBase_1ad61cf02b007db1a86219f2138625e05b" prot="protected" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>name_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1afcc77a447d66fc3203f055fc2a6cf6de" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>PolynomialTrajectory</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a10d2c8d9014765709aaf3a22b91d761a" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>PolynomialTrajectory</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1ab4bfa1ba7e769d9ad6bbc74f722f8d42" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>PolynomialTrajectory</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1acfae65a5469175afc149cfde48bc0330" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>PolynomialTrajectory</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a54d0a32bab652b67e2c7d0d8d3e3d8c8" prot="protected" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>q_pitch_roll_last_</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a2b89ec18e0bdb42443de9486a67f2917" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>ReferenceBase</name></member>
+      <member refid="classagi_1_1ReferenceBase_1acee2bf30afb2aa7afe0fd3f2105148ce" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>ReferenceBase</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1aea9be1c8414f30f058d2d5c141bd4e89" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>scale</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a17fa682bcd155169cd34db3a1e307f03" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>scaleToLimits</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a715ad2010f74826b0437a188a171c71d" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>scaleToLimits</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a1fa9ccd83e20c9d5b6ace27fe851aa1e" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>setForwardHeading</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1ace1395869cf193f6b0a40e81d002b4d3" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>solved</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a4849d43bf02c58b998c518de91f06fab" prot="protected" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>start_state_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1aaa39ffa1a48cf9b505969ae8694a0749" prot="protected" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>states_</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a05c52fdf187de8ca5e9d74ae62ed86c8" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>time_in_HH_MM_SS_MMM</name></member>
+      <member refid="classagi_1_1ReferenceBase_1afa47dccb281d9b2e003eeaf6e4bc374c" prot="public" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>truncate</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a217729eec442f4119e51aa2b72e2bde5" prot="public" virt="virtual"><scope>agi::PolynomialTrajectory</scope><name>valid</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a3b8171a1fd318ad2640a9945795312cd" prot="protected" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>x_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a5b35ac19d2fafbf8b5195204cb4883c4" prot="protected" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>y_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a17d51426747b133bc867307b69469cd0" prot="protected" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>yaw_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1aef42609c56435d03ffd666f29b10021b" prot="protected" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>yaw_last_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a6d32513dc7a5131760670a9e467647c5" prot="protected" virt="non-virtual"><scope>agi::PolynomialTrajectory</scope><name>z_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1aad768e93b6af1ebd5092fafc8015381b" prot="public" virt="virtual"><scope>agi::PolynomialTrajectory</scope><name>~PolynomialTrajectory</name></member>
+      <member refid="classagi_1_1ReferenceBase_1af8397099311dca99dffb13e0f365e912" prot="public" virt="virtual"><scope>agi::PolynomialTrajectory</scope><name>~ReferenceBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_c5da9ab87aaf1b86c685ff0fe2f21851" kind="dir">
+    <compoundname>agilib/include/agilib/bridge</compoundname>
+    <innerdir refid="dir_cbf8d213cb4608fff59e426d9bef9a16">agilib/include/agilib/bridge/ctrl</innerdir>
+    <innerdir refid="dir_43804cdd6b43d6f005e290ee4dad502e">agilib/include/agilib/bridge/laird</innerdir>
+    <innerdir refid="dir_ad2c5eb25600875b53bb8d4b96c204c9">agilib/include/agilib/bridge/msp</innerdir>
+    <innerdir refid="dir_a627c3f09eaabcc523ac37d9b5ac3bfe">agilib/include/agilib/bridge/sbus</innerdir>
+    <innerfile refid="bridge__base_8hpp">bridge_base.hpp</innerfile>
+    <innerfile refid="debug__bridge_8hpp">debug_bridge.hpp</innerfile>
+    <innerfile refid="msg__encoding_8hpp">msg_encoding.hpp</innerfile>
+    <innerfile refid="serial__bridge_8hpp">serial_bridge.hpp</innerfile>
+    <innerfile refid="thrust__map_8hpp">thrust_map.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/bridge/"/>
+  </compounddef>
+</doxygen>

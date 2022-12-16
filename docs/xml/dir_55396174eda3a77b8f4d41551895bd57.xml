@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_55396174eda3a77b8f4d41551895bd57" kind="dir">
+    <compoundname>agilib/include/agilib/simulator</compoundname>
+    <innerdir refid="dir_bec91b5dfbfac79dba1f6d37c2884516">agilib/include/agilib/simulator/bem</innerdir>
+    <innerfile refid="low__level__controller__base_8hpp">low_level_controller_base.hpp</innerfile>
+    <innerfile refid="low__level__controller__betaflight_8hpp">low_level_controller_betaflight.hpp</innerfile>
+    <innerfile refid="low__level__controller__betaflight__params_8hpp">low_level_controller_betaflight_params.hpp</innerfile>
+    <innerfile refid="low__level__controller__simple_8hpp">low_level_controller_simple.hpp</innerfile>
+    <innerfile refid="low__level__controller__simple__params_8hpp">low_level_controller_simple_params.hpp</innerfile>
+    <innerfile refid="model__base_8hpp">model_base.hpp</innerfile>
+    <innerfile refid="model__body__drag_8hpp">model_body_drag.hpp</innerfile>
+    <innerfile refid="model__body__drag__params_8hpp">model_body_drag_params.hpp</innerfile>
+    <innerfile refid="model__init_8hpp">model_init.hpp</innerfile>
+    <innerfile refid="model__lin__cub__drag_8hpp">model_lin_cub_drag.hpp</innerfile>
+    <innerfile refid="model__lin__cub__drag__params_8hpp">model_lin_cub_drag_params.hpp</innerfile>
+    <innerfile refid="model__motor_8hpp">model_motor.hpp</innerfile>
+    <innerfile refid="model__propeller__bem_8hpp">model_propeller_bem.hpp</innerfile>
+    <innerfile refid="model__propeller__bem__params_8hpp">model_propeller_bem_params.hpp</innerfile>
+    <innerfile refid="model__rigid__body_8hpp">model_rigid_body.hpp</innerfile>
+    <innerfile refid="model__thrust__torque__simple_8hpp">model_thrust_torque_simple.hpp</innerfile>
+    <innerfile refid="quadrotor__simulator_8hpp">quadrotor_simulator.hpp</innerfile>
+    <innerfile refid="simulator__base_8hpp">simulator_base.hpp</innerfile>
+    <innerfile refid="simulator__params_8hpp">simulator_params.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/simulator/"/>
+  </compounddef>
+</doxygen>

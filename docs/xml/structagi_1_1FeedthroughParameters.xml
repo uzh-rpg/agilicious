@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1FeedthroughParameters" kind="struct" language="C++" prot="public">
+    <compoundname>agi::FeedthroughParameters</compoundname>
+    <basecompoundref refid="structagi_1_1ParameterBase" prot="public" virt="non-virtual">agi::ParameterBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1FeedthroughParameters_1a2f8c9070c1cb8c3852978129b0aa0d8c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool agi::FeedthroughParameters::transform_enabled_</definition>
+        <argsstring></argsstring>
+        <name>transform_enabled_</name>
+        <qualifiedname>agi::FeedthroughParameters::transform_enabled_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" line="17" column="8" bodyfile="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1FeedthroughParameters_1a9ff3c6d4de125d59b78874fe75caaa3a" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::FeedthroughParameters::roll_</definition>
+        <argsstring></argsstring>
+        <name>roll_</name>
+        <qualifiedname>agi::FeedthroughParameters::roll_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" line="18" column="10" bodyfile="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1FeedthroughParameters_1a50abb78c2c8154ef16c3f8a7ae107e82" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::FeedthroughParameters::pitch_</definition>
+        <argsstring></argsstring>
+        <name>pitch_</name>
+        <qualifiedname>agi::FeedthroughParameters::pitch_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" line="19" column="10" bodyfile="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1FeedthroughParameters_1abc5aef5c952d496142e5a578d089c553" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::FeedthroughParameters::yaw_</definition>
+        <argsstring></argsstring>
+        <name>yaw_</name>
+        <qualifiedname>agi::FeedthroughParameters::yaw_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" line="20" column="10" bodyfile="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1FeedthroughParameters_1a6e1d62b5d7ece136b05c63e0a5b7c51b" prot="public" static="no" mutable="no">
+        <type>Vector&lt; 3 &gt;</type>
+        <definition>Vector&lt;3&gt; agi::FeedthroughParameters::pos_offset_</definition>
+        <argsstring></argsstring>
+        <name>pos_offset_</name>
+        <qualifiedname>agi::FeedthroughParameters::pos_offset_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" line="21" column="10" bodyfile="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structagi_1_1FeedthroughParameters_1a1e377947d482c51801d489356491c10a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::FeedthroughParameters::FeedthroughParameters</definition>
+        <argsstring>()</argsstring>
+        <name>FeedthroughParameters</name>
+        <qualifiedname>agi::FeedthroughParameters::FeedthroughParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" line="10" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1FeedthroughParameters_1abf7fb4f455106474c8f360bb8f51698a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::FeedthroughParameters::load</definition>
+        <argsstring>(const Yaml &amp;node) override</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::FeedthroughParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" line="13" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1FeedthroughParameters_1acbd8b49bce759a8147e56d49244d5c90" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::FeedthroughParameters::valid</definition>
+        <argsstring>() const override</argsstring>
+        <name>valid</name>
+        <qualifiedname>agi::FeedthroughParameters::valid</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1ade4e9c261eb4262c3d1642c2029b836b">valid</reimplements>
+        <briefdescription>
+<para>Check if parameters are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" line="15" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1FeedthroughParameters_1aa72a975fca1221525746975fe5ee1b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const fs::path &amp;filename)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::FeedthroughParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa72a975fca1221525746975fe5ee1b6a">load</reimplements>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load from a file given by a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" line="12" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structagi_1_1FeedthroughParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool agi::ParameterBase::load</definition>
+        <argsstring>(const Yaml &amp;yaml)</argsstring>
+        <name>load</name>
+        <qualifiedname>agi::FeedthroughParameters::load</qualifiedname>
+        <reimplements refid="structagi_1_1ParameterBase_1aa38fe9f2989ae29b08ee86fb7e9199e3">load</reimplements>
+        <param>
+          <type>const <ref refid="classagi_1_1Yaml" kindref="compound">Yaml</ref> &amp;</type>
+          <declname>yaml</declname>
+        </param>
+        <briefdescription>
+<para>Load from a YAML object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" line="12" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agi::FeedthroughParameters</label>
+        <link refid="structagi_1_1FeedthroughParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agi::FeedthroughParameters</label>
+        <link refid="structagi_1_1FeedthroughParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>agi::ParameterBase</label>
+        <link refid="structagi_1_1ParameterBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" line="9" column="1" bodyfile="agilib/include/agilib/estimator/feedthrough/feedthrough_params.hpp" bodystart="9" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structagi_1_1FeedthroughParameters_1a1e377947d482c51801d489356491c10a" prot="public" virt="non-virtual"><scope>agi::FeedthroughParameters</scope><name>FeedthroughParameters</name></member>
+      <member refid="structagi_1_1FeedthroughParameters_1abf7fb4f455106474c8f360bb8f51698a" prot="public" virt="virtual"><scope>agi::FeedthroughParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1FeedthroughParameters_1aa72a975fca1221525746975fe5ee1b6a" prot="public" virt="virtual"><scope>agi::FeedthroughParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1FeedthroughParameters_1aa38fe9f2989ae29b08ee86fb7e9199e3" prot="public" virt="virtual"><scope>agi::FeedthroughParameters</scope><name>load</name></member>
+      <member refid="structagi_1_1FeedthroughParameters_1a50abb78c2c8154ef16c3f8a7ae107e82" prot="public" virt="non-virtual"><scope>agi::FeedthroughParameters</scope><name>pitch_</name></member>
+      <member refid="structagi_1_1FeedthroughParameters_1a6e1d62b5d7ece136b05c63e0a5b7c51b" prot="public" virt="non-virtual"><scope>agi::FeedthroughParameters</scope><name>pos_offset_</name></member>
+      <member refid="structagi_1_1FeedthroughParameters_1a9ff3c6d4de125d59b78874fe75caaa3a" prot="public" virt="non-virtual"><scope>agi::FeedthroughParameters</scope><name>roll_</name></member>
+      <member refid="structagi_1_1FeedthroughParameters_1a2f8c9070c1cb8c3852978129b0aa0d8c" prot="public" virt="non-virtual"><scope>agi::FeedthroughParameters</scope><name>transform_enabled_</name></member>
+      <member refid="structagi_1_1FeedthroughParameters_1acbd8b49bce759a8147e56d49244d5c90" prot="public" virt="virtual"><scope>agi::FeedthroughParameters</scope><name>valid</name></member>
+      <member refid="structagi_1_1FeedthroughParameters_1abc5aef5c952d496142e5a578d089c553" prot="public" virt="non-virtual"><scope>agi::FeedthroughParameters</scope><name>yaw_</name></member>
+      <member refid="structagi_1_1ParameterBase_1a798980eb8c4143643d9085e435979b34" prot="public" virt="virtual"><scope>agi::FeedthroughParameters</scope><name>~ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

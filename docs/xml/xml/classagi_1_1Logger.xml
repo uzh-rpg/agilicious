@@ -1,0 +1,621 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1Logger" kind="class" language="C++" prot="public">
+    <compoundname>agi::Logger</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classagi_1_1Logger_1af4c9d9e1c152d2b191d8f6effd21b6ac" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::Logger::MAX_CHARS</definition>
+        <argsstring></argsstring>
+        <name>MAX_CHARS</name>
+        <qualifiedname>agi::Logger::MAX_CHARS</qualifiedname>
+        <initializer>= 256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="85" column="24" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classagi_1_1Logger_1a1c2f1679b029f713e7d083645c1cbe5f" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::Logger::DEFAULT_PRECISION</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_PRECISION</name>
+        <qualifiedname>agi::Logger::DEFAULT_PRECISION</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="97" column="24" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Logger_1a5d7c5b9e20a4113422cab54841bf39ba" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::Logger::NAME_PADDING</definition>
+        <argsstring></argsstring>
+        <name>NAME_PADDING</name>
+        <qualifiedname>agi::Logger::NAME_PADDING</qualifiedname>
+        <initializer>= 15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="98" column="24" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Logger_1a44333d0ad2b129dada1b4a210379960e" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char agi::Logger::RESET[]</definition>
+        <argsstring>[]</argsstring>
+        <name>RESET</name>
+        <qualifiedname>agi::Logger::RESET</qualifiedname>
+        <initializer>= &quot;\033[0m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="99" column="25" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Logger_1a813cad9ddb448f260e632aefb8acb9de" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char agi::Logger::RED[]</definition>
+        <argsstring>[]</argsstring>
+        <name>RED</name>
+        <qualifiedname>agi::Logger::RED</qualifiedname>
+        <initializer>= &quot;\033[31m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="100" column="25" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Logger_1ad5443bd4dda1c6d5a4663afffd152a96" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char agi::Logger::YELLOW[]</definition>
+        <argsstring>[]</argsstring>
+        <name>YELLOW</name>
+        <qualifiedname>agi::Logger::YELLOW</qualifiedname>
+        <initializer>= &quot;\033[33m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="101" column="25" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Logger_1aa9abd56e76f863742110020b2999bd91" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char agi::Logger::INFO[]</definition>
+        <argsstring>[]</argsstring>
+        <name>INFO</name>
+        <qualifiedname>agi::Logger::INFO</qualifiedname>
+        <initializer>= &quot;Info:    &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="102" column="25" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Logger_1a81d754a9583a79506c6410c1847b69c3" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char agi::Logger::WARN[]</definition>
+        <argsstring>[]</argsstring>
+        <name>WARN</name>
+        <qualifiedname>agi::Logger::WARN</qualifiedname>
+        <initializer>= &quot;Warning: &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="103" column="25" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Logger_1acc356b415b043e45ad815192db100f44" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char agi::Logger::ERROR[]</definition>
+        <argsstring>[]</argsstring>
+        <name>ERROR</name>
+        <qualifiedname>agi::Logger::ERROR</qualifiedname>
+        <initializer>= &quot;Error:   &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="104" column="25" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Logger_1a03ff01553b6d2ee4df2921e58d711d5a" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char agi::Logger::FATAL[]</definition>
+        <argsstring>[]</argsstring>
+        <name>FATAL</name>
+        <qualifiedname>agi::Logger::FATAL</qualifiedname>
+        <initializer>= &quot;Fatal:   &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="105" column="25" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Logger_1a14c24f2d61db6a1e44c669bd396bcf46" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char agi::Logger::DEBUGPREFIX[]</definition>
+        <argsstring>[]</argsstring>
+        <name>DEBUGPREFIX</name>
+        <qualifiedname>agi::Logger::DEBUGPREFIX</qualifiedname>
+        <initializer>= &quot;Debug:   &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="106" column="25" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Logger_1adc10d6af667c399fe3e2da27d6ad5c0b" prot="private" static="yes" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="structagi_1_1PublishLogContainer" kindref="compound">PublishLogContainer</ref> &gt;</type>
+        <definition>std::unordered_map&lt;std::string, PublishLogContainer&gt; agi::Logger::publishing_variables_</definition>
+        <argsstring></argsstring>
+        <name>publishing_variables_</name>
+        <qualifiedname>agi::Logger::publishing_variables_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="112" column="5" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1Logger_1a8ec0f9ebc0432deac766b03c349512a6" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string agi::Logger::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <qualifiedname>agi::Logger::name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="108" column="21" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Logger_1a72b6f8f92981fb1c1277b62621da1cea" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string agi::Logger::formatted_name_</definition>
+        <argsstring></argsstring>
+        <name>formatted_name_</name>
+        <qualifiedname>agi::Logger::formatted_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="109" column="15" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Logger_1a4edb192e8ef9fa18ac8e0669eccc4f10" prot="private" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool agi::Logger::colored_</definition>
+        <argsstring></argsstring>
+        <name>colored_</name>
+        <qualifiedname>agi::Logger::colored_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="110" column="14" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1Logger_1aa1472ce595d3a43d51f72ba9afa9f773" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Logger::Logger</definition>
+        <argsstring>(const std::string &amp;name, const bool color=true)</argsstring>
+        <name>Logger</name>
+        <qualifiedname>agi::Logger::Logger</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>color</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="37" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Logger_1a77c40973f5868cfb6e1c64deaa68d9ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agi::Logger::~Logger</definition>
+        <argsstring>()</argsstring>
+        <name>~Logger</name>
+        <qualifiedname>agi::Logger::~Logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="38" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Logger_1aba27f9b55367849d318666e2f828491c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::streamsize</type>
+        <definition>std::streamsize agi::Logger::precision</definition>
+        <argsstring>(const std::streamsize n)</argsstring>
+        <name>precision</name>
+        <qualifiedname>agi::Logger::precision</qualifiedname>
+        <param>
+          <type>const std::streamsize</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="40" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Logger_1a24616702b70d6b3504a455c6c28ffd4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Logger::scientific</definition>
+        <argsstring>(const bool on=true)</argsstring>
+        <name>scientific</name>
+        <qualifiedname>agi::Logger::scientific</qualifiedname>
+        <param>
+          <type>const bool</type>
+          <declname>on</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="41" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Logger_1ad42f0eee2e9f560a12a8de2b8d4d6b33" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Logger::info</definition>
+        <argsstring>(const char *msg,...) const</argsstring>
+        <name>info</name>
+        <qualifiedname>agi::Logger::info</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="43" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Logger_1a3de23272e72c15952c1a604f65efe733" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Logger::warn</definition>
+        <argsstring>(const char *msg,...) const</argsstring>
+        <name>warn</name>
+        <qualifiedname>agi::Logger::warn</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="44" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Logger_1a61e9b624896a5ee5ff7c9f17dfb81fa5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Logger::error</definition>
+        <argsstring>(const char *msg,...) const</argsstring>
+        <name>error</name>
+        <qualifiedname>agi::Logger::error</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="45" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Logger_1ae6386d81e0091c8e3feac39597dba6f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Logger::fatal</definition>
+        <argsstring>(const char *msg,...) const</argsstring>
+        <name>fatal</name>
+        <qualifiedname>agi::Logger::fatal</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="46" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Logger_1ab15c77d5de79921fee0574beb4f73270" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr void</type>
+        <definition>constexpr void agi::Logger::debug</definition>
+        <argsstring>(const char *,...) const noexcept</argsstring>
+        <name>debug</name>
+        <qualifiedname>agi::Logger::debug</qualifiedname>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="53" column="25" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Logger_1ae02d288a11508ef09e8317af40a27b1f" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr NoPrint</type>
+        <definition>constexpr NoPrint agi::Logger::debug</definition>
+        <argsstring>() const</argsstring>
+        <name>debug</name>
+        <qualifiedname>agi::Logger::debug</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="54" column="28" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Logger_1a8313d6c177a774e7522e4358401d8cd4" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr void</type>
+        <definition>constexpr void agi::Logger::debug</definition>
+        <argsstring>(const std::function&lt; void(void)&gt; &amp;&amp;) const noexcept</argsstring>
+        <name>debug</name>
+        <qualifiedname>agi::Logger::debug</qualifiedname>
+        <param>
+          <type>const std::function&lt; void(void)&gt; &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="55" column="25" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="55" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Logger_1a3c0d24ac7f0fb2033029d8b319374fd4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Logger::addPublishingVariable</definition>
+        <argsstring>(const std::string &amp;var_name, const Vector&lt;&gt; &amp;vec) const</argsstring>
+        <name>addPublishingVariable</name>
+        <qualifiedname>agi::Logger::addPublishingVariable</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>var_name</declname>
+        </param>
+        <param>
+          <type>const Vector&lt;&gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="59" column="15" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="59" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Logger_1abb4779d3cb47456c64b03c10a2068c28" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Logger::addPublishingVariable</definition>
+        <argsstring>(const std::string &amp;var_name, Scalar val) const</argsstring>
+        <name>addPublishingVariable</name>
+        <qualifiedname>agi::Logger::addPublishingVariable</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>var_name</declname>
+        </param>
+        <param>
+          <type>Scalar</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="66" column="15" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Logger_1a7e4d2bf977e3e774ea0f30e82e2a2e7e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Logger::advertisePublishingVariable</definition>
+        <argsstring>(const std::string &amp;var_name) const</argsstring>
+        <name>advertisePublishingVariable</name>
+        <qualifiedname>agi::Logger::advertisePublishingVariable</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>var_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="71" column="15" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Logger_1a6a969a036e350efe81ccec8de5899798" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::Logger::erasePublishingVariable</definition>
+        <argsstring>(const std::string var_name)</argsstring>
+        <name>erasePublishingVariable</name>
+        <qualifiedname>agi::Logger::erasePublishingVariable</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>var_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="76" column="15" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Logger_1a7135bb3c25fb3b10f5d38daffaaab1a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; agi::Logger::operator&lt;&lt;</definition>
+        <argsstring>(const T &amp;printable) const</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>agi::Logger::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>printable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="81" column="3" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="117" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Logger_1a9e9b1572fa3f45f7c30ff8bb5a5f26d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; agi::Logger::name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <qualifiedname>agi::Logger::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="83" column="28" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="83" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classagi_1_1Logger_1ac4363e064307b4c5ba409e0b697ab25a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void agi::Logger::for_each_instance</definition>
+        <argsstring>(std::function&lt; void(const std::string &amp;name, const PublishLogContainer &amp;container)&gt; function)</argsstring>
+        <name>for_each_instance</name>
+        <qualifiedname>agi::Logger::for_each_instance</qualifiedname>
+        <param>
+          <type>std::function&lt; void(const std::string &amp;name, const <ref refid="structagi_1_1PublishLogContainer" kindref="compound">PublishLogContainer</ref> &amp;container)&gt;</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/utils/logger.hpp" line="87" column="15" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="87" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/utils/logger.hpp" line="35" column="1" bodyfile="agilib/include/agilib/utils/logger.hpp" bodystart="35" bodyend="114"/>
+    <listofallmembers>
+      <member refid="classagi_1_1Logger_1a3c0d24ac7f0fb2033029d8b319374fd4" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>addPublishingVariable</name></member>
+      <member refid="classagi_1_1Logger_1abb4779d3cb47456c64b03c10a2068c28" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>addPublishingVariable</name></member>
+      <member refid="classagi_1_1Logger_1a7e4d2bf977e3e774ea0f30e82e2a2e7e" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>advertisePublishingVariable</name></member>
+      <member refid="classagi_1_1Logger_1a4edb192e8ef9fa18ac8e0669eccc4f10" prot="private" virt="non-virtual"><scope>agi::Logger</scope><name>colored_</name></member>
+      <member refid="classagi_1_1Logger_1ab15c77d5de79921fee0574beb4f73270" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>debug</name></member>
+      <member refid="classagi_1_1Logger_1ae02d288a11508ef09e8317af40a27b1f" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>debug</name></member>
+      <member refid="classagi_1_1Logger_1a8313d6c177a774e7522e4358401d8cd4" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>debug</name></member>
+      <member refid="classagi_1_1Logger_1a14c24f2d61db6a1e44c669bd396bcf46" prot="private" virt="non-virtual"><scope>agi::Logger</scope><name>DEBUGPREFIX</name></member>
+      <member refid="classagi_1_1Logger_1a1c2f1679b029f713e7d083645c1cbe5f" prot="private" virt="non-virtual"><scope>agi::Logger</scope><name>DEFAULT_PRECISION</name></member>
+      <member refid="classagi_1_1Logger_1a6a969a036e350efe81ccec8de5899798" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>erasePublishingVariable</name></member>
+      <member refid="classagi_1_1Logger_1a61e9b624896a5ee5ff7c9f17dfb81fa5" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>error</name></member>
+      <member refid="classagi_1_1Logger_1acc356b415b043e45ad815192db100f44" prot="private" virt="non-virtual"><scope>agi::Logger</scope><name>ERROR</name></member>
+      <member refid="classagi_1_1Logger_1a03ff01553b6d2ee4df2921e58d711d5a" prot="private" virt="non-virtual"><scope>agi::Logger</scope><name>FATAL</name></member>
+      <member refid="classagi_1_1Logger_1ae6386d81e0091c8e3feac39597dba6f1" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>fatal</name></member>
+      <member refid="classagi_1_1Logger_1ac4363e064307b4c5ba409e0b697ab25a" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>for_each_instance</name></member>
+      <member refid="classagi_1_1Logger_1a72b6f8f92981fb1c1277b62621da1cea" prot="private" virt="non-virtual"><scope>agi::Logger</scope><name>formatted_name_</name></member>
+      <member refid="classagi_1_1Logger_1aa9abd56e76f863742110020b2999bd91" prot="private" virt="non-virtual"><scope>agi::Logger</scope><name>INFO</name></member>
+      <member refid="classagi_1_1Logger_1ad42f0eee2e9f560a12a8de2b8d4d6b33" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>info</name></member>
+      <member refid="classagi_1_1Logger_1aa1472ce595d3a43d51f72ba9afa9f773" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>Logger</name></member>
+      <member refid="classagi_1_1Logger_1af4c9d9e1c152d2b191d8f6effd21b6ac" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>MAX_CHARS</name></member>
+      <member refid="classagi_1_1Logger_1a9e9b1572fa3f45f7c30ff8bb5a5f26d0" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>name</name></member>
+      <member refid="classagi_1_1Logger_1a8ec0f9ebc0432deac766b03c349512a6" prot="private" virt="non-virtual"><scope>agi::Logger</scope><name>name_</name></member>
+      <member refid="classagi_1_1Logger_1a5d7c5b9e20a4113422cab54841bf39ba" prot="private" virt="non-virtual"><scope>agi::Logger</scope><name>NAME_PADDING</name></member>
+      <member refid="classagi_1_1Logger_1a7135bb3c25fb3b10f5d38daffaaab1a5" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classagi_1_1Logger_1aba27f9b55367849d318666e2f828491c" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>precision</name></member>
+      <member refid="classagi_1_1Logger_1adc10d6af667c399fe3e2da27d6ad5c0b" prot="private" virt="non-virtual"><scope>agi::Logger</scope><name>publishing_variables_</name></member>
+      <member refid="classagi_1_1Logger_1a813cad9ddb448f260e632aefb8acb9de" prot="private" virt="non-virtual"><scope>agi::Logger</scope><name>RED</name></member>
+      <member refid="classagi_1_1Logger_1a44333d0ad2b129dada1b4a210379960e" prot="private" virt="non-virtual"><scope>agi::Logger</scope><name>RESET</name></member>
+      <member refid="classagi_1_1Logger_1a24616702b70d6b3504a455c6c28ffd4a" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>scientific</name></member>
+      <member refid="classagi_1_1Logger_1a3de23272e72c15952c1a604f65efe733" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>warn</name></member>
+      <member refid="classagi_1_1Logger_1a81d754a9583a79506c6410c1847b69c3" prot="private" virt="non-virtual"><scope>agi::Logger</scope><name>WARN</name></member>
+      <member refid="classagi_1_1Logger_1ad5443bd4dda1c6d5a4663afffd152a96" prot="private" virt="non-virtual"><scope>agi::Logger</scope><name>YELLOW</name></member>
+      <member refid="classagi_1_1Logger_1a77c40973f5868cfb6e1c64deaa68d9ac" prot="public" virt="non-virtual"><scope>agi::Logger</scope><name>~Logger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

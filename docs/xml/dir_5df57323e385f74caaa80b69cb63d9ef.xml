@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_5df57323e385f74caaa80b69cb63d9ef" kind="dir">
+    <compoundname>agilib/include/agilib/utils</compoundname>
+    <innerfile refid="agi__watchdog_8hpp">agi_watchdog.hpp</innerfile>
+    <innerfile refid="file__utils_8hpp">file_utils.hpp</innerfile>
+    <innerfile refid="filesystem_8hpp">filesystem.hpp</innerfile>
+    <innerfile refid="logger_8hpp">logger.hpp</innerfile>
+    <innerfile refid="low__pass__filter_8hpp">low_pass_filter.hpp</innerfile>
+    <innerfile refid="median__filter_8hpp">median_filter.hpp</innerfile>
+    <innerfile refid="module__config_8hpp">module_config.hpp</innerfile>
+    <innerfile refid="throttler_8hpp">throttler.hpp</innerfile>
+    <innerfile refid="timer_8hpp">timer.hpp</innerfile>
+    <innerfile refid="yaml_8hpp">yaml.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/utils/"/>
+  </compounddef>
+</doxygen>

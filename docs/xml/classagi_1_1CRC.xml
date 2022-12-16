@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1CRC" kind="class" language="C++" prot="public">
+    <compoundname>agi::CRC</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename crc_t</type>
+      </param>
+      <param>
+        <type>crc_t</type>
+        <declname>polynomial</declname>
+        <defname>polynomial</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classagi_1_1CRC_1aba28b6895d6a29ae00107f5f5eebfa10" prot="public" static="no">
+        <type>crc_t</type>
+        <definition>using agi::CRC&lt; crc_t, polynomial &gt;::Type =  crc_t</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <qualifiedname>agi::CRC::Type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/crc.hpp" line="13" column="3" bodyfile="agilib/include/agilib/serial/crc.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classagi_1_1CRC_1ad364a6b8478f28ae6446a73bf6c31767" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::CRC&lt; crc_t, polynomial &gt;::SIZE</definition>
+        <argsstring></argsstring>
+        <name>SIZE</name>
+        <qualifiedname>agi::CRC::SIZE</qualifiedname>
+        <initializer>= sizeof(crc_t)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/crc.hpp" line="14" column="24" bodyfile="agilib/include/agilib/serial/crc.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1CRC_1a02d8fc71c939ef2d1a9ed7a873a75bf9" prot="private" static="no" mutable="no">
+        <type>crc_t</type>
+        <definition>crc_t agi::CRC&lt; crc_t, polynomial &gt;::table[256]</definition>
+        <argsstring>[256]</argsstring>
+        <name>table</name>
+        <qualifiedname>agi::CRC::table</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/crc.hpp" line="36" column="9" bodyfile="agilib/include/agilib/serial/crc.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1CRC_1a463e516b436df80e788b0653efa166ef" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr agi::CRC&lt; crc_t, polynomial &gt;::CRC</definition>
+        <argsstring>()</argsstring>
+        <name>CRC</name>
+        <qualifiedname>agi::CRC::CRC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/crc.hpp" line="16" column="13" bodyfile="agilib/include/agilib/serial/crc.hpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CRC_1a68c0aa08e17b49e48e7944ff9dd86fed" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr crc_t</type>
+        <definition>constexpr crc_t agi::CRC&lt; crc_t, polynomial &gt;::compute</definition>
+        <argsstring>(const char *const buffer, const int length) const</argsstring>
+        <name>compute</name>
+        <qualifiedname>agi::CRC::compute</qualifiedname>
+        <param>
+          <type>const char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/crc.hpp" line="18" column="19" bodyfile="agilib/include/agilib/serial/crc.hpp" bodystart="18" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classagi_1_1CRC_1a2b08bf317f24b0e898c57262c41fa4c9" prot="private" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int...</type>
+            <declname>pack</declname>
+            <defname>pack</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr</type>
+        <definition>constexpr agi::CRC&lt; crc_t, polynomial &gt;::CRC</definition>
+        <argsstring>(std::integer_sequence&lt; int, pack... &gt;)</argsstring>
+        <name>CRC</name>
+        <qualifiedname>agi::CRC::CRC</qualifiedname>
+        <param>
+          <type>std::integer_sequence&lt; int, pack... &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/crc.hpp" line="27" column="13" bodyfile="agilib/include/agilib/serial/crc.hpp" bodystart="27" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1CRC_1adde75c90429dc17fbf1cb68fa56b586b" prot="private" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr crc_t</type>
+        <definition>constexpr crc_t agi::CRC&lt; crc_t, polynomial &gt;::operator[]</definition>
+        <argsstring>(const int i) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>agi::CRC::operator[]</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/crc.hpp" line="34" column="19" bodyfile="agilib/include/agilib/serial/crc.hpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classagi_1_1CRC_1abebd1091b030cf4247487a33e80b9fbe" prot="private" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr crc_t</type>
+        <definition>static constexpr crc_t agi::CRC&lt; crc_t, polynomial &gt;::prepare</definition>
+        <argsstring>(const crc_t val, const int iter=8)</argsstring>
+        <name>prepare</name>
+        <qualifiedname>agi::CRC::prepare</qualifiedname>
+        <param>
+          <type>const crc_t</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>iter</declname>
+          <defval>8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/serial/crc.hpp" line="29" column="26" bodyfile="agilib/include/agilib/serial/crc.hpp" bodystart="29" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/serial/crc.hpp" line="11" column="1" bodyfile="agilib/include/agilib/serial/crc.hpp" bodystart="11" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classagi_1_1CRC_1a68c0aa08e17b49e48e7944ff9dd86fed" prot="public" virt="non-virtual"><scope>agi::CRC</scope><name>compute</name></member>
+      <member refid="classagi_1_1CRC_1a463e516b436df80e788b0653efa166ef" prot="public" virt="non-virtual"><scope>agi::CRC</scope><name>CRC</name></member>
+      <member refid="classagi_1_1CRC_1a2b08bf317f24b0e898c57262c41fa4c9" prot="private" virt="non-virtual"><scope>agi::CRC</scope><name>CRC</name></member>
+      <member refid="classagi_1_1CRC_1adde75c90429dc17fbf1cb68fa56b586b" prot="private" virt="non-virtual"><scope>agi::CRC</scope><name>operator[]</name></member>
+      <member refid="classagi_1_1CRC_1abebd1091b030cf4247487a33e80b9fbe" prot="private" virt="non-virtual"><scope>agi::CRC</scope><name>prepare</name></member>
+      <member refid="classagi_1_1CRC_1ad364a6b8478f28ae6446a73bf6c31767" prot="public" virt="non-virtual"><scope>agi::CRC</scope><name>SIZE</name></member>
+      <member refid="classagi_1_1CRC_1a02d8fc71c939ef2d1a9ed7a873a75bf9" prot="private" virt="non-virtual"><scope>agi::CRC</scope><name>table</name></member>
+      <member refid="classagi_1_1CRC_1aba28b6895d6a29ae00107f5f5eebfa10" prot="public" virt="non-virtual"><scope>agi::CRC</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

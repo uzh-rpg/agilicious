@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_64754dc3c4a4546689b3528611173a25" kind="dir">
+    <compoundname>agilib/include/agilib/serial</compoundname>
+    <innerfile refid="cobs_8hpp">cobs.hpp</innerfile>
+    <innerfile refid="crc_8hpp">crc.hpp</innerfile>
+    <innerfile refid="serial_8hpp">serial.hpp</innerfile>
+    <innerfile refid="serial__settings_8hpp">serial_settings.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/serial/"/>
+  </compounddef>
+</doxygen>

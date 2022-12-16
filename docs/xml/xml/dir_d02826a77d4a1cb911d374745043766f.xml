@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_d02826a77d4a1cb911d374745043766f" kind="dir">
+    <compoundname>agilib/include/agilib/guard</compoundname>
+    <innerfile refid="guard__base_8hpp">guard_base.hpp</innerfile>
+    <innerfile refid="position__guard_8hpp">position_guard.hpp</innerfile>
+    <innerfile refid="position__guard__params_8hpp">position_guard_params.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/guard/"/>
+  </compounddef>
+</doxygen>

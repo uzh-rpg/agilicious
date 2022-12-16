@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_22516db969861fe396744e4d7d1f6c67" kind="dir">
+    <compoundname>agilib/include/agilib/base</compoundname>
+    <innerfile refid="module_8hpp">module.hpp</innerfile>
+    <innerfile refid="parameter__base_8hpp">parameter_base.hpp</innerfile>
+    <innerfile refid="pipeline_8hpp">pipeline.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/base/"/>
+  </compounddef>
+</doxygen>

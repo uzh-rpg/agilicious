@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1ClosedFormMinJerkTrajectory" kind="class" language="C++" prot="public">
+    <compoundname>agi::ClosedFormMinJerkTrajectory</compoundname>
+    <basecompoundref refid="classagi_1_1PolynomialTrajectory" prot="public" virt="non-virtual">agi::PolynomialTrajectory&lt; ClosedFormMinJerkAxis &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1ClosedFormMinJerkTrajectory_1a5645038fa06b09950580be96fa9c864f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::ClosedFormMinJerkTrajectory::ClosedFormMinJerkTrajectory</definition>
+        <argsstring>(const QuadState &amp;start_state, const QuadState &amp;end_state)</argsstring>
+        <name>ClosedFormMinJerkTrajectory</name>
+        <qualifiedname>agi::ClosedFormMinJerkTrajectory::ClosedFormMinJerkTrajectory</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>start_state</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1QuadState" kindref="compound">QuadState</ref> &amp;</type>
+          <declname>end_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="102" column="3" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::PolynomialTrajectory&lt; ClosedFormMinJerkAxis &gt;</label>
+        <link refid="classagi_1_1PolynomialTrajectory"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::ClosedFormMinJerkTrajectory</label>
+        <link refid="classagi_1_1ClosedFormMinJerkTrajectory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>agi::ReferenceBase</label>
+        <link refid="classagi_1_1ReferenceBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>agi::Polynomial&lt; void &gt;</label>
+        <link refid="classagi_1_1Polynomial"/>
+      </node>
+      <node id="2">
+        <label>agi::PolynomialTrajectory&lt; ClosedFormMinJerkAxis &gt;</label>
+        <link refid="classagi_1_1PolynomialTrajectory"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>end_state_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>x_</edgelabel>
+          <edgelabel>y_</edgelabel>
+          <edgelabel>yaw_</edgelabel>
+          <edgelabel>z_</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>states_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>agi::ClosedFormMinJerkAxis</label>
+        <link refid="classagi_1_1ClosedFormMinJerkAxis"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>agi::ClosedFormMinJerkTrajectory</label>
+        <link refid="classagi_1_1ClosedFormMinJerkTrajectory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>agi::QuadState</label>
+        <link refid="structagi_1_1QuadState"/>
+      </node>
+      <node id="3">
+        <label>agi::ReferenceBase</label>
+        <link refid="classagi_1_1ReferenceBase"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>start_state_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>name_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="5">
+        <label>std::string</label>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>std::vector&lt; agi::QuadState &gt;</label>
+        <childnode refid="4" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" line="99" column="1" bodyfile="agilib/include/agilib/reference/trajectory_reference/polynomial_trajectory.hpp" bodystart="100" bodyend="106"/>
+    <listofallmembers>
+      <member refid="classagi_1_1PolynomialTrajectory_1afd8d0a61f3bbcf9a46badc2dd5f179ef" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>addStateConstraint</name></member>
+      <member refid="classagi_1_1ClosedFormMinJerkTrajectory_1a5645038fa06b09950580be96fa9c864f" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>ClosedFormMinJerkTrajectory</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a3fa9710c451591c9305c79fbb8d8f6c1" prot="protected" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>duration_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a2f2ba0b0cc497074bf44a7a3f0767a55" prot="protected" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>end_state_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1af768210a105a211f2c868776d0541cd8" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>evalTranslation</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a163b5e67726fd4bb0fd9c8fcf175d9c5" prot="protected" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>findTime</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a8daacbd1958e0ee2b023df92ba3d5629" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>findTimeMaxAcc</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a5f6e7fd73643dd3f6094f525d0d95e6e" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>findTimeMaxAcc</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a191e2b728bb8424d001f63cb63e848ec" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>findTimeMaxOmega</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a11221c1b32b6379f7bfb58a83148c985" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>findTimeMaxOmega</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a08afcec0f0cfef577508e0c312036325" prot="protected" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>forward_heading_</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a2d29ebe0b692086b9a2bdce380ff2694" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>getDuration</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1aaaf7540e38f670406ec56be47e80fdb4" prot="public" virt="virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>getEndSetpoint</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a69e2637dc8c4733c539267634bf7f8af" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>getEndTime</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a0ff0a6ab6fa27bab65da4c9141c9fc21" prot="public" virt="virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>getSetpoint</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1ac93905fbfed46897cfc62aca55702121" prot="public" virt="virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>getSetpoint</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a875e63a282d17d9ef1c4c41e5836e865" prot="public" virt="virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>getSetpoint</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1ab9d8347dc2548fc43948dd3226d8ab1b" prot="public" virt="virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>getSetpoint</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a01ddecd971b5be53d29bcc53307545d0" prot="public" virt="virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>getStartSetpoint</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a3c86a5dc940736c947bfc120c3639fb2" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>getStartTime</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1aa6b83772691161fc735120694c764752" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>getState</name></member>
+      <member refid="classagi_1_1ReferenceBase_1abb83061d559c15abaca2e398ce06793f" prot="public" virt="virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>isAbsolute</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a4a0553bcd821f758f44f68d028c17a5f" prot="public" virt="virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>isHover</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a36bfb93f70a50407510e1bebebc56008" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>isTimeInRange</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a59884c48b6854317fef848fe8553abe6" prot="public" virt="virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>isVelocityRefernce</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a4dc1f48d25427a2fd18e61e766bad949" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>name</name></member>
+      <member refid="classagi_1_1ReferenceBase_1ad61cf02b007db1a86219f2138625e05b" prot="protected" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>name_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1afcc77a447d66fc3203f055fc2a6cf6de" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>PolynomialTrajectory</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a10d2c8d9014765709aaf3a22b91d761a" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>PolynomialTrajectory</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1ab4bfa1ba7e769d9ad6bbc74f722f8d42" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>PolynomialTrajectory</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1acfae65a5469175afc149cfde48bc0330" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>PolynomialTrajectory</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a54d0a32bab652b67e2c7d0d8d3e3d8c8" prot="protected" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>q_pitch_roll_last_</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a2b89ec18e0bdb42443de9486a67f2917" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>ReferenceBase</name></member>
+      <member refid="classagi_1_1ReferenceBase_1acee2bf30afb2aa7afe0fd3f2105148ce" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>ReferenceBase</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1aea9be1c8414f30f058d2d5c141bd4e89" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>scale</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a17fa682bcd155169cd34db3a1e307f03" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>scaleToLimits</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a715ad2010f74826b0437a188a171c71d" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>scaleToLimits</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a1fa9ccd83e20c9d5b6ace27fe851aa1e" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>setForwardHeading</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1ace1395869cf193f6b0a40e81d002b4d3" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>solved</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a4849d43bf02c58b998c518de91f06fab" prot="protected" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>start_state_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1aaa39ffa1a48cf9b505969ae8694a0749" prot="protected" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>states_</name></member>
+      <member refid="classagi_1_1ReferenceBase_1a05c52fdf187de8ca5e9d74ae62ed86c8" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>time_in_HH_MM_SS_MMM</name></member>
+      <member refid="classagi_1_1ReferenceBase_1afa47dccb281d9b2e003eeaf6e4bc374c" prot="public" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>truncate</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a217729eec442f4119e51aa2b72e2bde5" prot="public" virt="virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>valid</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a3b8171a1fd318ad2640a9945795312cd" prot="protected" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>x_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a5b35ac19d2fafbf8b5195204cb4883c4" prot="protected" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>y_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a17d51426747b133bc867307b69469cd0" prot="protected" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>yaw_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1aef42609c56435d03ffd666f29b10021b" prot="protected" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>yaw_last_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1a6d32513dc7a5131760670a9e467647c5" prot="protected" virt="non-virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>z_</name></member>
+      <member refid="classagi_1_1PolynomialTrajectory_1aad768e93b6af1ebd5092fafc8015381b" prot="public" virt="virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>~PolynomialTrajectory</name></member>
+      <member refid="classagi_1_1ReferenceBase_1af8397099311dca99dffb13e0f365e912" prot="public" virt="virtual"><scope>agi::ClosedFormMinJerkTrajectory</scope><name>~ReferenceBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

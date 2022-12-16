@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1Brent" kind="class" language="C++" prot="public">
+    <compoundname>agi::Brent</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Function</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classagi_1_1Brent_1ac64b8f876e7af5ca77ba932e60e30c7d" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::Brent&lt; Function &gt;::SUCCESS</definition>
+        <argsstring></argsstring>
+        <name>SUCCESS</name>
+        <qualifiedname>agi::Brent::SUCCESS</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/brent.hpp" line="35" column="24" bodyfile="agilib/include/agilib/simulator/bem/brent.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Brent_1a2e6ac554e84a270f9504b5458a904d34" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::Brent&lt; Function &gt;::CONTINUE</definition>
+        <argsstring></argsstring>
+        <name>CONTINUE</name>
+        <qualifiedname>agi::Brent::CONTINUE</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/brent.hpp" line="36" column="24" bodyfile="agilib/include/agilib/simulator/bem/brent.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Brent_1af48fc8115fef57b40eabade993d635b2" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::Brent&lt; Function &gt;::ERROR</definition>
+        <argsstring></argsstring>
+        <name>ERROR</name>
+        <qualifiedname>agi::Brent::ERROR</qualifiedname>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/brent.hpp" line="37" column="24" bodyfile="agilib/include/agilib/simulator/bem/brent.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1Brent_1ae3c6adeda7bd2298b2e0d8169d8eca1a" prot="private" static="no" mutable="no">
+        <type><ref refid="classagi_1_1Logger" kindref="compound">Logger</ref></type>
+        <definition>Logger agi::Brent&lt; Function &gt;::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>agi::Brent::logger_</qualifiedname>
+        <initializer>{&quot;Brent&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/brent.hpp" line="46" column="10" bodyfile="agilib/include/agilib/simulator/bem/brent.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Brent_1ad5436cbba07dc50a4e76b4a7c34a3838" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Brent&lt; Function &gt;::tol_</definition>
+        <argsstring></argsstring>
+        <name>tol_</name>
+        <qualifiedname>agi::Brent::tol_</qualifiedname>
+        <initializer>= 1E-3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/brent.hpp" line="49" column="10" bodyfile="agilib/include/agilib/simulator/bem/brent.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1Brent_1a3a3a3108794f2054f00c9cd4866e87de" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::Brent&lt; Function &gt;::warmstart_delta_</definition>
+        <argsstring></argsstring>
+        <name>warmstart_delta_</name>
+        <qualifiedname>agi::Brent::warmstart_delta_</qualifiedname>
+        <initializer>= 0.02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/brent.hpp" line="50" column="10" bodyfile="agilib/include/agilib/simulator/bem/brent.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classagi_1_1Brent_1ae31f1542542fc33f19149d1b61162893" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::Brent&lt; Function &gt;::max_iter_</definition>
+        <argsstring></argsstring>
+        <name>max_iter_</name>
+        <qualifiedname>agi::Brent::max_iter_</qualifiedname>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/brent.hpp" line="48" column="24" bodyfile="agilib/include/agilib/simulator/bem/brent.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1Brent_1a2cc44f41724c981f17df70c5d68ab5e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW void</type>
+        <definition>void agi::Brent&lt; Function &gt;::setTolerance</definition>
+        <argsstring>(const Scalar tol)</argsstring>
+        <name>setTolerance</name>
+        <qualifiedname>agi::Brent::setTolerance</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>tol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/brent.hpp" line="28" column="8" bodyfile="agilib/include/agilib/simulator/bem/brent.hpp" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1Brent_1a95fabeb4c6e14d858c553a414cccef53" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int agi::Brent&lt; Function &gt;::find_root</definition>
+        <argsstring>(const Function &amp;, const Scalar range_min, const Scalar range_max, const ArrayVector&lt; Function::SIZE &gt; &amp;initial_guess, const bool warmstart, Ref&lt; ArrayVector&lt; Function::SIZE &gt; &gt; &amp;&amp;result) const</argsstring>
+        <name>find_root</name>
+        <qualifiedname>agi::Brent::find_root</qualifiedname>
+        <param>
+          <type>const Function &amp;</type>
+          <defname>fcn</defname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>range_min</declname>
+        </param>
+        <param>
+          <type>const Scalar</type>
+          <declname>range_max</declname>
+        </param>
+        <param>
+          <type>const ArrayVector&lt; Function::SIZE &gt; &amp;</type>
+          <declname>initial_guess</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>warmstart</declname>
+        </param>
+        <param>
+          <type>Ref&lt; ArrayVector&lt; Function::SIZE &gt; &gt; &amp;&amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/brent.hpp" line="29" column="7" bodyfile="agilib/include/agilib/simulator/bem/brent.hpp" bodystart="60" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classagi_1_1Brent_1accc2c55ea9d53ee7509f80fb15fb83e1" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int agi::Brent&lt; Function &gt;::step</definition>
+        <argsstring>(const int i, ArrayVector&lt; Function::SIZE &gt; &amp;f_x0, ArrayVector&lt; Function::SIZE &gt; &amp;f_x1, ArrayVector&lt; Function::SIZE &gt; &amp;f_x2, ArrayVector&lt; Function::SIZE &gt; &amp;x0, ArrayVector&lt; Function::SIZE &gt; &amp;x1, ArrayVector&lt; Function::SIZE &gt; &amp;x2, ArrayVector&lt; Function::SIZE &gt; &amp;x3, ArrayVector&lt; Function::SIZE &gt; &amp;x4) const</argsstring>
+        <name>step</name>
+        <qualifiedname>agi::Brent::step</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>ArrayVector&lt; Function::SIZE &gt; &amp;</type>
+          <declname>f_x0</declname>
+        </param>
+        <param>
+          <type>ArrayVector&lt; Function::SIZE &gt; &amp;</type>
+          <declname>f_x1</declname>
+        </param>
+        <param>
+          <type>ArrayVector&lt; Function::SIZE &gt; &amp;</type>
+          <declname>f_x2</declname>
+        </param>
+        <param>
+          <type>ArrayVector&lt; Function::SIZE &gt; &amp;</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>ArrayVector&lt; Function::SIZE &gt; &amp;</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>ArrayVector&lt; Function::SIZE &gt; &amp;</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>ArrayVector&lt; Function::SIZE &gt; &amp;</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>ArrayVector&lt; Function::SIZE &gt; &amp;</type>
+          <declname>x4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/brent.hpp" line="40" column="7" bodyfile="agilib/include/agilib/simulator/bem/brent.hpp" bodystart="111" bodyend="191"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/simulator/bem/brent.hpp" line="24" column="1" bodyfile="agilib/include/agilib/simulator/bem/brent.hpp" bodystart="24" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classagi_1_1Brent_1a2e6ac554e84a270f9504b5458a904d34" prot="public" virt="non-virtual"><scope>agi::Brent</scope><name>CONTINUE</name></member>
+      <member refid="classagi_1_1Brent_1af48fc8115fef57b40eabade993d635b2" prot="public" virt="non-virtual"><scope>agi::Brent</scope><name>ERROR</name></member>
+      <member refid="classagi_1_1Brent_1a95fabeb4c6e14d858c553a414cccef53" prot="public" virt="non-virtual"><scope>agi::Brent</scope><name>find_root</name></member>
+      <member refid="classagi_1_1Brent_1ae3c6adeda7bd2298b2e0d8169d8eca1a" prot="private" virt="non-virtual"><scope>agi::Brent</scope><name>logger_</name></member>
+      <member refid="classagi_1_1Brent_1ae31f1542542fc33f19149d1b61162893" prot="private" virt="non-virtual"><scope>agi::Brent</scope><name>max_iter_</name></member>
+      <member refid="classagi_1_1Brent_1a2cc44f41724c981f17df70c5d68ab5e3" prot="public" virt="non-virtual"><scope>agi::Brent</scope><name>setTolerance</name></member>
+      <member refid="classagi_1_1Brent_1accc2c55ea9d53ee7509f80fb15fb83e1" prot="private" virt="non-virtual"><scope>agi::Brent</scope><name>step</name></member>
+      <member refid="classagi_1_1Brent_1ac64b8f876e7af5ca77ba932e60e30c7d" prot="public" virt="non-virtual"><scope>agi::Brent</scope><name>SUCCESS</name></member>
+      <member refid="classagi_1_1Brent_1ad5436cbba07dc50a4e76b4a7c34a3838" prot="private" virt="non-virtual"><scope>agi::Brent</scope><name>tol_</name></member>
+      <member refid="classagi_1_1Brent_1a3a3a3108794f2054f00c9cd4866e87de" prot="private" virt="non-virtual"><scope>agi::Brent</scope><name>warmstart_delta_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

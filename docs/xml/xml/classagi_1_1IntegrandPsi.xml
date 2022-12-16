@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1IntegrandPsi" kind="class" language="C++" prot="public">
+    <compoundname>agi::IntegrandPsi</compoundname>
+    <basecompoundref refid="structagi_1_1GaussKronrodFunction" prot="public" virt="non-virtual">agi::GaussKronrodFunction&lt; QS::NMOT &gt;</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classagi_1_1IntegrandPsi_1a97ec9cca7c3be633123554f7477dfaa7" prot="public" static="no" strong="no">
+        <type>int</type>
+        <name>TYPE</name>
+        <qualifiedname>agi::IntegrandPsi::TYPE</qualifiedname>
+        <enumvalue id="classagi_1_1IntegrandPsi_1a97ec9cca7c3be633123554f7477dfaa7a541da3aad7bc74db2dd490d26d2120fb" prot="public">
+          <name>THRUST</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1IntegrandPsi_1a97ec9cca7c3be633123554f7477dfaa7a25d8ce53b2933ee47b629aabf24f5994" prot="public">
+          <name>TORQUE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classagi_1_1IntegrandPsi_1a97ec9cca7c3be633123554f7477dfaa7a697b8ea855ab6073cc808f104252c969" prot="public">
+          <name>HFORCE</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="27" column="3" bodyfile="agilib/include/agilib/simulator/bem/functions.hpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1IntegrandPsi_1a935d0d0000fd619521c17129ba4a9c45" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="structagi_1_1PropellerState" kindref="compound">PropellerState</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;PropellerState&gt; agi::IntegrandPsi::pstate_</definition>
+        <argsstring></argsstring>
+        <name>pstate_</name>
+        <qualifiedname>agi::IntegrandPsi::pstate_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="37" column="19" bodyfile="agilib/include/agilib/simulator/bem/functions.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1IntegrandPsi_1a24564c7a7887a2111f4ba9839752334e" prot="private" static="no" mutable="no">
+        <type>const TYPE</type>
+        <definition>const TYPE agi::IntegrandPsi::type_</definition>
+        <argsstring></argsstring>
+        <name>type_</name>
+        <qualifiedname>agi::IntegrandPsi::type_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="38" column="14" bodyfile="agilib/include/agilib/simulator/bem/functions.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1IntegrandPsi_1ae7dc0367263ccebb7c4321122b17159a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::IntegrandPsi::IntegrandPsi</definition>
+        <argsstring>(const TYPE type)</argsstring>
+        <name>IntegrandPsi</name>
+        <qualifiedname>agi::IntegrandPsi::IntegrandPsi</qualifiedname>
+        <param>
+          <type>const TYPE</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="29" column="3" bodyfile="agilib/include/agilib/simulator/bem/functions.hpp" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1IntegrandPsi_1a025f434ec614af02d2423464a94f79bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::IntegrandPsi::setState</definition>
+        <argsstring>(std::shared_ptr&lt; PropellerState &gt; &amp;pstate)</argsstring>
+        <name>setState</name>
+        <qualifiedname>agi::IntegrandPsi::setState</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="structagi_1_1PropellerState" kindref="compound">PropellerState</ref> &gt; &amp;</type>
+          <declname>pstate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="31" column="8" bodyfile="agilib/include/agilib/simulator/bem/functions.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1IntegrandPsi_1a271391d0532ffef531ee798484bafd6b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>Array&lt; QS::NMOT, 15 &gt;</type>
+        <definition>Array&lt; QS::NMOT, 15 &gt; agi::IntegrandPsi::evaluate</definition>
+        <argsstring>(const Ref&lt; const ArrayVector&lt; 15 &gt; &gt; Psi, const void *const param) const override</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>agi::IntegrandPsi::evaluate</qualifiedname>
+        <reimplements refid="structagi_1_1GaussKronrodFunction_1ab8786a3fe882b79da4b316fffc88201e">evaluate</reimplements>
+        <param>
+          <type>const Ref&lt; const ArrayVector&lt; 15 &gt; &gt;</type>
+          <declname>Psi</declname>
+        </param>
+        <param>
+          <type>const void *const</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="33" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::GaussKronrodFunction&lt; QS::NMOT &gt;</label>
+        <link refid="structagi_1_1GaussKronrodFunction"/>
+      </node>
+      <node id="1">
+        <label>agi::IntegrandPsi</label>
+        <link refid="classagi_1_1IntegrandPsi"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::GaussKronrodFunction&lt; QS::NMOT &gt;</label>
+        <link refid="structagi_1_1GaussKronrodFunction"/>
+      </node>
+      <node id="1">
+        <label>agi::IntegrandPsi</label>
+        <link refid="classagi_1_1IntegrandPsi"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="25" column="1" bodyfile="agilib/include/agilib/simulator/bem/functions.hpp" bodystart="25" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classagi_1_1IntegrandPsi_1a271391d0532ffef531ee798484bafd6b" prot="public" virt="virtual"><scope>agi::IntegrandPsi</scope><name>evaluate</name></member>
+      <member refid="classagi_1_1IntegrandPsi_1a97ec9cca7c3be633123554f7477dfaa7a697b8ea855ab6073cc808f104252c969" prot="public" virt="non-virtual"><scope>agi::IntegrandPsi</scope><name>HFORCE</name></member>
+      <member refid="classagi_1_1IntegrandPsi_1ae7dc0367263ccebb7c4321122b17159a" prot="public" virt="non-virtual"><scope>agi::IntegrandPsi</scope><name>IntegrandPsi</name></member>
+      <member refid="classagi_1_1IntegrandPsi_1a935d0d0000fd619521c17129ba4a9c45" prot="private" virt="non-virtual"><scope>agi::IntegrandPsi</scope><name>pstate_</name></member>
+      <member refid="classagi_1_1IntegrandPsi_1a025f434ec614af02d2423464a94f79bf" prot="public" virt="non-virtual"><scope>agi::IntegrandPsi</scope><name>setState</name></member>
+      <member refid="structagi_1_1GaussKronrodFunction_1a681a21d36b809a2c27a49d0b09fef7b6" prot="public" virt="non-virtual"><scope>agi::IntegrandPsi</scope><name>SIZE</name></member>
+      <member refid="classagi_1_1IntegrandPsi_1a97ec9cca7c3be633123554f7477dfaa7a541da3aad7bc74db2dd490d26d2120fb" prot="public" virt="non-virtual"><scope>agi::IntegrandPsi</scope><name>THRUST</name></member>
+      <member refid="classagi_1_1IntegrandPsi_1a97ec9cca7c3be633123554f7477dfaa7a25d8ce53b2933ee47b629aabf24f5994" prot="public" virt="non-virtual"><scope>agi::IntegrandPsi</scope><name>TORQUE</name></member>
+      <member refid="classagi_1_1IntegrandPsi_1a97ec9cca7c3be633123554f7477dfaa7" prot="public" virt="non-virtual"><scope>agi::IntegrandPsi</scope><name>TYPE</name></member>
+      <member refid="classagi_1_1IntegrandPsi_1a24564c7a7887a2111f4ba9839752334e" prot="private" virt="non-virtual"><scope>agi::IntegrandPsi</scope><name>type_</name></member>
+      <member refid="structagi_1_1GaussKronrodFunction_1ac4786484f21138d491625028bc9760c4" prot="public" virt="virtual"><scope>agi::IntegrandPsi</scope><name>~GaussKronrodFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

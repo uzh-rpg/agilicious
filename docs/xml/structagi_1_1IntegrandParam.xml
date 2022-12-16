@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="structagi_1_1IntegrandParam" kind="struct" language="C++" prot="public">
+    <compoundname>agi::IntegrandParam</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structagi_1_1IntegrandParam_1ae62ee0415469043bb0b0095353e6f45e" prot="public" static="no" mutable="no">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW ArrayVector&lt; QS::NMOT &gt;</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW ArrayVector&lt;QS::NMOT&gt; agi::IntegrandParam::vind</definition>
+        <argsstring></argsstring>
+        <name>vind</name>
+        <qualifiedname>agi::IntegrandParam::vind</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="21" column="15" bodyfile="agilib/include/agilib/simulator/bem/functions.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structagi_1_1IntegrandParam_1a836d2a3ba9b1bb9d07d2ccf4d2d9a46f" prot="public" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::IntegrandParam::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <qualifiedname>agi::IntegrandParam::radius</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="22" column="10" bodyfile="agilib/include/agilib/simulator/bem/functions.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agilib/include/agilib/simulator/bem/functions.hpp" line="19" column="1" bodyfile="agilib/include/agilib/simulator/bem/functions.hpp" bodystart="19" bodyend="23"/>
+    <listofallmembers>
+      <member refid="structagi_1_1IntegrandParam_1a836d2a3ba9b1bb9d07d2ccf4d2d9a46f" prot="public" virt="non-virtual"><scope>agi::IntegrandParam</scope><name>radius</name></member>
+      <member refid="structagi_1_1IntegrandParam_1ae62ee0415469043bb0b0095353e6f45e" prot="public" virt="non-virtual"><scope>agi::IntegrandParam</scope><name>vind</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

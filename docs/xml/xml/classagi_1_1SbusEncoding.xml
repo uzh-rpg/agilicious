@@ -1,0 +1,438 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classagi_1_1SbusEncoding" kind="class" language="C++" prot="public">
+    <compoundname>agi::SbusEncoding</compoundname>
+    <basecompoundref refid="classagi_1_1MsgEncoding" prot="public" virt="non-virtual">agi::MsgEncoding</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1a73ad93fd7eacd85f0a2454e23b69ad38" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::SbusEncoding::N_CHANNELS</definition>
+        <argsstring></argsstring>
+        <name>N_CHANNELS</name>
+        <qualifiedname>agi::SbusEncoding::N_CHANNELS</qualifiedname>
+        <initializer>= 16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="21" column="27" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1a854f29ca8ed15f57bc0b11f9b30f3d93" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::SbusEncoding::CHANNEL_THROTTLE</definition>
+        <argsstring></argsstring>
+        <name>CHANNEL_THROTTLE</name>
+        <qualifiedname>agi::SbusEncoding::CHANNEL_THROTTLE</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="22" column="27" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1a9e6c5a8e7333e41a827431c3bca04ad4" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::SbusEncoding::CHANNEL_OMEGAX</definition>
+        <argsstring></argsstring>
+        <name>CHANNEL_OMEGAX</name>
+        <qualifiedname>agi::SbusEncoding::CHANNEL_OMEGAX</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="23" column="27" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1a01e74ad2be6a965525f4b67c586e171c" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::SbusEncoding::CHANNEL_OMEGAY</definition>
+        <argsstring></argsstring>
+        <name>CHANNEL_OMEGAY</name>
+        <qualifiedname>agi::SbusEncoding::CHANNEL_OMEGAY</qualifiedname>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="24" column="27" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1a8c923d9187dfb0e3e0cd590055a98b2e" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::SbusEncoding::CHANNEL_OMEGAZ</definition>
+        <argsstring></argsstring>
+        <name>CHANNEL_OMEGAZ</name>
+        <qualifiedname>agi::SbusEncoding::CHANNEL_OMEGAZ</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="25" column="27" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1a7289e19b08fe88711f14e2cacb6d4240" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::SbusEncoding::CHANNEL_ARMED</definition>
+        <argsstring></argsstring>
+        <name>CHANNEL_ARMED</name>
+        <qualifiedname>agi::SbusEncoding::CHANNEL_ARMED</qualifiedname>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="26" column="27" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1a6eeb740f4b69cb7011733ae629f363f1" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::SbusEncoding::CHANNEL_MODE</definition>
+        <argsstring></argsstring>
+        <name>CHANNEL_MODE</name>
+        <qualifiedname>agi::SbusEncoding::CHANNEL_MODE</qualifiedname>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="27" column="27" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1a6fe10eaa4b759b494c1710cdb0051e9e" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int agi::SbusEncoding::SBUS_FRAME_LENGTH</definition>
+        <argsstring></argsstring>
+        <name>SBUS_FRAME_LENGTH</name>
+        <qualifiedname>agi::SbusEncoding::SBUS_FRAME_LENGTH</qualifiedname>
+        <initializer>= 25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="29" column="24" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1abe8db7d9475252e80b3bdbd5ea189a3b" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char agi::SbusEncoding::SBUS_HEADER_BYTE</definition>
+        <argsstring></argsstring>
+        <name>SBUS_HEADER_BYTE</name>
+        <qualifiedname>agi::SbusEncoding::SBUS_HEADER_BYTE</qualifiedname>
+        <initializer>= 0x0F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="30" column="25" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1a5f3a50cef5a2716c110e26759a4fe3b1" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char agi::SbusEncoding::SBUS_FOOTER_BYTE</definition>
+        <argsstring></argsstring>
+        <name>SBUS_FOOTER_BYTE</name>
+        <qualifiedname>agi::SbusEncoding::SBUS_FOOTER_BYTE</qualifiedname>
+        <initializer>= 0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="31" column="25" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1a3f49815db95b1d6adae65362baf49ee3" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::SbusEncoding::SBUS_MIN_VAL</definition>
+        <argsstring></argsstring>
+        <name>SBUS_MIN_VAL</name>
+        <qualifiedname>agi::SbusEncoding::SBUS_MIN_VAL</qualifiedname>
+        <initializer>= 192</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="33" column="27" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1a0f0cc7624b8c9e29ea8b01814d71ff5e" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::SbusEncoding::SBUS_MAX_VAL</definition>
+        <argsstring></argsstring>
+        <name>SBUS_MAX_VAL</name>
+        <qualifiedname>agi::SbusEncoding::SBUS_MAX_VAL</qualifiedname>
+        <initializer>= 1792</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="34" column="27" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1a13e5238b1f663be2635d67cdcfd9c33c" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t agi::SbusEncoding::SBUS_VAL_RANGE</definition>
+        <argsstring></argsstring>
+        <name>SBUS_VAL_RANGE</name>
+        <qualifiedname>agi::SbusEncoding::SBUS_VAL_RANGE</qualifiedname>
+        <initializer>= SBUS_MAX_VAL - SBUS_MIN_VAL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="35" column="27" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1ad87a81160768479539a04cfa12b85dd8" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref></type>
+        <definition>const Quadrotor agi::SbusEncoding::quad</definition>
+        <argsstring></argsstring>
+        <name>quad</name>
+        <qualifiedname>agi::SbusEncoding::quad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="37" column="19" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1af4ecebb5a933fc19531f493b77eba062" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structagi_1_1ThrustMap" kindref="compound">ThrustMap</ref></type>
+        <definition>const ThrustMap agi::SbusEncoding::thrust_map</definition>
+        <argsstring></argsstring>
+        <name>thrust_map</name>
+        <qualifiedname>agi::SbusEncoding::thrust_map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="38" column="19" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1ad3cf4c91429acb437377b38cdfd3016b" prot="private" static="no" mutable="no">
+        <type>const Vector&lt; 3 &gt;</type>
+        <definition>const Vector&lt;3&gt; agi::SbusEncoding::omega_max</definition>
+        <argsstring></argsstring>
+        <name>omega_max</name>
+        <qualifiedname>agi::SbusEncoding::omega_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="39" column="16" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagi_1_1SbusEncoding_1a90cfa41fb9d7464cc2ccb53ef180b9c1" prot="private" static="no" mutable="no">
+        <type>Scalar</type>
+        <definition>Scalar agi::SbusEncoding::voltage</definition>
+        <argsstring></argsstring>
+        <name>voltage</name>
+        <qualifiedname>agi::SbusEncoding::voltage</qualifiedname>
+        <initializer>{NAN}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="40" column="10" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagi_1_1SbusEncoding_1ad20d6bdfe895dd01b4b7656e4d56b296" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>agi::SbusEncoding::SbusEncoding</definition>
+        <argsstring>(const Quadrotor &amp;quad, const ThrustMap &amp;thrust_map, const Vector&lt; 3 &gt; &amp;omega_max)</argsstring>
+        <name>SbusEncoding</name>
+        <qualifiedname>agi::SbusEncoding::SbusEncoding</qualifiedname>
+        <param>
+          <type>const <ref refid="structagi_1_1Quadrotor" kindref="compound">Quadrotor</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structagi_1_1ThrustMap" kindref="compound">ThrustMap</ref> &amp;</type>
+          <declname>thrust_map</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; 3 &gt; &amp;</type>
+          <declname>omega_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="11" column="3" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SbusEncoding_1a552335cc833c6a65360493ebba0ab0fc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool agi::SbusEncoding::encode</definition>
+        <argsstring>(const Command &amp;command, const bool armed, char *const buffer, int *const length) const</argsstring>
+        <name>encode</name>
+        <qualifiedname>agi::SbusEncoding::encode</qualifiedname>
+        <reimplements refid="classagi_1_1MsgEncoding_1a7624e462cea9843b2796c0095ec23e78">encode</reimplements>
+        <param>
+          <type>const <ref refid="structagi_1_1Command" kindref="compound">Command</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>armed</declname>
+        </param>
+        <param>
+          <type>char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int *const</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="15" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagi_1_1SbusEncoding_1a14f9a576ee51310b5fb00c60fdf61b60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agi::SbusEncoding::setVoltage</definition>
+        <argsstring>(const Scalar voltage)</argsstring>
+        <name>setVoltage</name>
+        <qualifiedname>agi::SbusEncoding::setVoltage</qualifiedname>
+        <param>
+          <type>const Scalar</type>
+          <declname>voltage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="18" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classagi_1_1SbusEncoding_1a2c502257634ee197df3c7fa7e94f08c1" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void agi::SbusEncoding::parseToBuffer</definition>
+        <argsstring>(char *const buffer, const size_t *const channels, const bool digital_channel_1=false, const bool digital_channel_2=false, const bool frame_lost=false, const bool failsafe=false)</argsstring>
+        <name>parseToBuffer</name>
+        <qualifiedname>agi::SbusEncoding::parseToBuffer</qualifiedname>
+        <param>
+          <type>char *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const size_t *const</type>
+          <declname>channels</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>digital_channel_1</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>digital_channel_2</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>frame_lost</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>failsafe</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="42" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>agi::MsgEncoding</label>
+        <link refid="classagi_1_1MsgEncoding"/>
+      </node>
+      <node id="1">
+        <label>agi::SbusEncoding</label>
+        <link refid="classagi_1_1SbusEncoding"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>agi::MsgEncoding</label>
+        <link refid="classagi_1_1MsgEncoding"/>
+      </node>
+      <node id="1">
+        <label>agi::SbusEncoding</label>
+        <link refid="classagi_1_1SbusEncoding"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" line="9" column="1" bodyfile="agilib/include/agilib/bridge/sbus/sbus_encoding.hpp" bodystart="9" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classagi_1_1SbusEncoding_1a7289e19b08fe88711f14e2cacb6d4240" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>CHANNEL_ARMED</name></member>
+      <member refid="classagi_1_1SbusEncoding_1a6eeb740f4b69cb7011733ae629f363f1" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>CHANNEL_MODE</name></member>
+      <member refid="classagi_1_1SbusEncoding_1a9e6c5a8e7333e41a827431c3bca04ad4" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>CHANNEL_OMEGAX</name></member>
+      <member refid="classagi_1_1SbusEncoding_1a01e74ad2be6a965525f4b67c586e171c" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>CHANNEL_OMEGAY</name></member>
+      <member refid="classagi_1_1SbusEncoding_1a8c923d9187dfb0e3e0cd590055a98b2e" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>CHANNEL_OMEGAZ</name></member>
+      <member refid="classagi_1_1SbusEncoding_1a854f29ca8ed15f57bc0b11f9b30f3d93" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>CHANNEL_THROTTLE</name></member>
+      <member refid="classagi_1_1MsgEncoding_1a5d4dbd8d892ea78347e8351f7b0384bf" prot="public" virt="virtual"><scope>agi::SbusEncoding</scope><name>decode</name></member>
+      <member refid="classagi_1_1SbusEncoding_1a552335cc833c6a65360493ebba0ab0fc" prot="public" virt="virtual"><scope>agi::SbusEncoding</scope><name>encode</name></member>
+      <member refid="classagi_1_1SbusEncoding_1a73ad93fd7eacd85f0a2454e23b69ad38" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>N_CHANNELS</name></member>
+      <member refid="classagi_1_1SbusEncoding_1ad3cf4c91429acb437377b38cdfd3016b" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>omega_max</name></member>
+      <member refid="classagi_1_1SbusEncoding_1a2c502257634ee197df3c7fa7e94f08c1" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>parseToBuffer</name></member>
+      <member refid="classagi_1_1SbusEncoding_1ad87a81160768479539a04cfa12b85dd8" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>quad</name></member>
+      <member refid="classagi_1_1SbusEncoding_1a5f3a50cef5a2716c110e26759a4fe3b1" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>SBUS_FOOTER_BYTE</name></member>
+      <member refid="classagi_1_1SbusEncoding_1a6fe10eaa4b759b494c1710cdb0051e9e" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>SBUS_FRAME_LENGTH</name></member>
+      <member refid="classagi_1_1SbusEncoding_1abe8db7d9475252e80b3bdbd5ea189a3b" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>SBUS_HEADER_BYTE</name></member>
+      <member refid="classagi_1_1SbusEncoding_1a0f0cc7624b8c9e29ea8b01814d71ff5e" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>SBUS_MAX_VAL</name></member>
+      <member refid="classagi_1_1SbusEncoding_1a3f49815db95b1d6adae65362baf49ee3" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>SBUS_MIN_VAL</name></member>
+      <member refid="classagi_1_1SbusEncoding_1a13e5238b1f663be2635d67cdcfd9c33c" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>SBUS_VAL_RANGE</name></member>
+      <member refid="classagi_1_1SbusEncoding_1ad20d6bdfe895dd01b4b7656e4d56b296" prot="public" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>SbusEncoding</name></member>
+      <member refid="classagi_1_1SbusEncoding_1a14f9a576ee51310b5fb00c60fdf61b60" prot="public" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>setVoltage</name></member>
+      <member refid="classagi_1_1SbusEncoding_1af4ecebb5a933fc19531f493b77eba062" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>thrust_map</name></member>
+      <member refid="classagi_1_1SbusEncoding_1a90cfa41fb9d7464cc2ccb53ef180b9c1" prot="private" virt="non-virtual"><scope>agi::SbusEncoding</scope><name>voltage</name></member>
+      <member refid="classagi_1_1MsgEncoding_1ab1c8c68727c96ee077c91191c9a76f93" prot="public" virt="virtual"><scope>agi::SbusEncoding</scope><name>~MsgEncoding</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

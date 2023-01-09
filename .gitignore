@@ -1,0 +1,30 @@
+# Compile Commands
+*/compile_commands.json
+*/.clangd
+
+# LLVM and Clang
+**/.cache
+**/checks.json
+
+# VScode stuff
+.vscode/*
+!.vscode/extensions.json
+
+# CLion Stuff
+.idea/
+cmake-build-debug/
+
+# Vim Stuff
+*.swp
+Session.vim
+
+# Tag files
+TAGS
+GTAGS
+GRTAGS
+GPATH
+
+# temporary files
+*~
+
+**/.DS_Store

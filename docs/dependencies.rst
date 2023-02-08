@@ -8,10 +8,10 @@ Strictly necessary dependencies:
 
 Dependencies to use all provides functionalities:
 
-* Acado: https://acado.github.io
+* Acados: https://github.com/acados/acados
   Framework for our MPC implementations.
-* qpOASES: https://github.com/coin-or/qpOASES
-  Solver used by Acado.
+* HPIPM: https://github.com/giaf/hpipm
+  High Performance Interior Point Method solver.
 * ROS VRPN Client: http://wiki.ros.org/vrpn_client_ros
   This client can be used to fly within motion capture systems.
   Install with `sudo apt install ros-${ROS_DISTRO}-vrpn-client-ros`

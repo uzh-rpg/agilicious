@@ -12,7 +12,7 @@ For example, some of the most representative (but not only) commands are:
 - :code:`off`: stops and disarms the drone
 - :code:`trajectory`: sends a trajectory that is followed by the drone
 - :code:`pose_estimate`: provides the drone with a pose estimate to be fused in the EKF
-- :code:`feedthrough_command`: directly sends a low level command that bypass all controller logic and directly goes to the actuators
+- :code:`feedthrough_command`: directly sends a low level command that bypasses all controller logic and directly goes to the actuators
 
 
 The function of the ROS interface is to take these commands (or any command that might be implemented by the user) and send it downstream to :code:`agilib`.

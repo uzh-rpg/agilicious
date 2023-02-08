@@ -14,7 +14,7 @@ In summary, this library offers the following modules:
 Pipelines
 ===========
   The Pipeline architecture provides a modular way to combine controllers, estimators, reference trajectories into a complete control system.
-  It is posible to create multiple pipelines and switch between them at runtime, allowing rapid prototyping.
+  It is possible to create multiple pipelines and switch between them at runtime, allowing rapid prototyping.
 
 ============
 Controllers

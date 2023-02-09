@@ -107,5 +107,6 @@ The following license applies in case you have been granted access to the Agilic
          6.6	The terms stipulated in this AGREEMENT may not be modified in any way without
          the mutual consent of the parties in writing.
     7.	Governing Law and Jurisdiction
-         THIS AGREEMENT SHALL BE GOVERNED BY THE LAWS OF SWITZERLAND. Any dispute arising from or in
-         connection with this AGREEMENT will be finally settled by the courts of Zurich, Switzerland.
+         THIS AGREEMENT SHALL BE GOVERNED BY THE LAWS OF SWITZERLAND. Any dispute arising
+         from or in connection with this AGREEMENT will be finally settled by the courts
+         of Zurich, Switzerland.

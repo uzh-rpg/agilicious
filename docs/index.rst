@@ -49,5 +49,5 @@ The full list of publications using Agilicious can be found `here <https://rpg.i
     Modules <modules/overview>
     Simulation <simulation/overview>
     Hardware <hardware/overview>
-    Integragion with ROS <integration/ros>
-    Integragion with Flightmare <integration/flightmare>
+    Integration with ROS <integration/ros>
+    Integration with Flightmare <integration/flightmare>

@@ -1,5 +1,5 @@
 ##########
-References
+Reference Trajectories
 ##########
 
 The :code:`reference` module is implemented in :code:`agilib/src/references/`. It implements different ways of generating reference trajectories:

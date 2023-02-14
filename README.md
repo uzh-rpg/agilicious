@@ -89,6 +89,6 @@ In summary, this library offers the following modules:
 
 
 # License
-The code is licensed under GPLv3. The official license file can be found [here](LICENSE).
+The official license file can be found [here](https://rpg.ifi.uzh.ch/docs/Agilicious_LICENSE_AGREEMENT_ACADEMIC_USE.pdf).
 
-For commercial use, please contact sdavide [at] ifi [dot] uzh [dot] ch
+To request access for collaboration, please go [here](https://agilicious.readthedocs.io/en/latest/index.html)

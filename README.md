@@ -92,4 +92,4 @@ In summary, this library offers the following modules:
 # License
 The official license file can be found [here](https://rpg.ifi.uzh.ch/docs/Agilicious_LICENSE_AGREEMENT_ACADEMIC_USE.pdf).
 
-To request access for collaboration, please go [here](file:///home/angel/src/rpg_container/workspace_packages/agilicious/test_docs/index.html)
+To request access for collaboration, please go [here](https://agilicious.readthedocs.io/en/latest/index.html)

@@ -1,9 +1,28 @@
 License
 =======
 
-The right to use Agilicious is strictly limited to researchers who have explicitly been granted access by UZH. To ask for access, please check the following page: <TODO: add jotform link>.
+The right to use Agilicious is strictly limited to researchers who have explicitly been granted access by UZH. To ask for access, please check the following page:
 
-The following license applies in case you have been granted access to the Agilicious software by UZH.
+.. raw:: html
+
+         <center>
+          <style>
+          button {
+              background-color: #7286D3;
+              color: black;
+              border-radius: 50px;
+              width: 300px;
+              height: 75px;
+              font-size: 30px;
+              box-shadow: 4px 4px 4px #888;
+          }
+        </style>
+        <li class="nav-link"> <a href="https://form.jotform.com/230332943688361"><button> Request Access!</button></a>
+        </center>
+
+|
+
+The following `license <https://rpg.ifi.uzh.ch/docs/Agilicious_LICENSE_AGREEMENT_ACADEMIC_USE.pdf>`_ applies in case you have been granted access to the Agilicious software by UZH.
 
 .. code-block:: console
 
@@ -67,46 +86,55 @@ The following license applies in case you have been granted access to the Agilic
            at LICENSEE's sole risk and to hold harmless and indemnify UZH, and its affiliates,
            employees or partners, from and against any third party claim arising from or in any
            way related to LICENSEE's use of SOFTWARE, violation of this AGREEMENT or any other
-           actions in connection with the use of SOFTWARE. 
-        4.	Title and Ownership.
+           actions in connection with the use of SOFTWARE.
+        4.	Citation
+            The LICENSEE expressly acknowledges and agrees to reference the publication
+            "Agilicious: Open-Source and Open-Hardware Agile Quadrotor for
+            Vision-Based Flight", AAAS Science Robotics, 2022 (PDF:
+            https://rpg.ifi.uzh.ch/docs/ScienceRobotics22_Foehn.pdf) and to acknowledge
+            Philipp Foehn, Elia Kaufmann, Angel Romero, Robert Penicka, Sihao Sun,
+            Leonard Bauersfeld, Thomas Laengle, Giovanni Cioffi, Yunlong Song, Antonio
+            Loquercio, Davide Scaramuzza, Robotics and Perception Group, and the UNIVERSITY
+            OF ZURICH as the source of the SOFTWARE in any publications reporting use of it
+            or any manual or document.
+        5.	Title and Ownership.
             Title, ownership rights, and intellectual property rights in and to the SOFTWARE
             shall remain with UZH. 
-        5.	Term and Termination
-           5.1	This AGREEMENT shall become effective upon LICENSEE first downloading the
+        6.	Term and Termination
+           6.1	This AGREEMENT shall become effective upon LICENSEE first downloading the
            SOFTWARE (“Effective Date”).
-           5.2	UZH may terminate this AGREEMENT upon 30 (thirty) days advance written e-mail
+           6.2	UZH may terminate this AGREEMENT upon 30 (thirty) days advance written e-mail
            notification to LICENSEE. Upon evidence of violation of any of the terms under
            this AGREEMENT by LICENSEE, UZH may terminate this AGREEMENT without previous notice.
-           5.3	Upon termination LICENSEE is obliged to uninstall the SOFTWARE and IMPROVEMENTS
+           6.3	Upon termination LICENSEE is obliged to uninstall the SOFTWARE and IMPROVEMENTS
            from all its computers and to destroy any copies of the SOFTWARE and IMPROVEMENTS
            kept according to this AGREEMENT.
-           5.4 Articles  3 and 4 shall survive the termination or expiration of this AGREEMENT
+           6.4 Articles  3 and 4 shall survive the termination or expiration of this AGREEMENT
            for any reason in addition to those articles surviving by operation of law.
-        6.	Miscellaneous
-           6.1	This AGREEMENT and the license granted herein or any part thereof under this
+        7.	Miscellaneous
+           7.1	This AGREEMENT and the license granted herein or any part thereof under this
            AGREEMENT are not assignable by LICENSEE without the prior written approval of UZH. 
-           6.2	Neither party shall use the names or trademarks of the other, its related
+           7.2	Neither party shall use the names or trademarks of the other, its related
            entities and its employees, or any adaptations thereof, in any advertising,
            promotional or sales literature, or in any securities reports required by the
            respective authorities, without the prior written consent of the party so affected.
-           6.3	Each party is acting as an independent contractor and not as an agent, partner,
+           7.3	Each party is acting as an independent contractor and not as an agent, partner,
            or joint venture with the other party for any purpose. Neither party shall have any
            right, power or authority to act or create any obligation, express or implied, on
            behalf of the other.
-           6.4	This AGREEMENT sets forth the entire AGREEMENT between the parties with respect
+           7.4	This AGREEMENT sets forth the entire AGREEMENT between the parties with respect
            to the subject matter hereof. No supplement, modification or amendment of this
            AGREEMENT shall be binding, unless in writing signed by a duly authorized
            representative of each party to the AGREEMENT.
-           6.5	Should some or several provisions of this AGREEMENT be ineffective or invalid,
+           7.5	Should some or several provisions of this AGREEMENT be ineffective or invalid,
            or should there be an omission in this AGREEMENT, the effectiveness, respectively
            the validity of the remaining provisions shall not be affected thereby. An
            ineffective, respectively, invalid provision shall be replaced by the
            interpretation of the agreement which comes nearest to the economic meaning
            and the envisaged economic purpose of the ineffective respectively, invalid provision.
            The same applies in the case of a contractual gap.
-           6.6	The terms stipulated in this AGREEMENT may not be modified in any way without
+           7.6	The terms stipulated in this AGREEMENT may not be modified in any way without
            the mutual consent of the parties in writing.
-        7.	Governing Law and Jurisdiction
-
-    THIS AGREEMENT SHALL BE GOVERNED BY THE LAWS OF SWITZERLAND. Any dispute arising from or in
-    connection with this AGREEMENT will be finally settled by the courts of Zurich, Switzerland.
+        8.	Governing Law and Jurisdiction
+           THIS AGREEMENT SHALL BE GOVERNED BY THE LAWS OF SWITZERLAND. Any dispute arising from or in
+           connection with this AGREEMENT will be finally settled by the courts of Zurich, Switzerland.

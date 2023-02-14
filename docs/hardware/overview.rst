@@ -5,7 +5,7 @@ Hardware Overview
 .. image:: ../img/drone_hardware.jpg
    :width: 600px
 
-The Agilicious Platform consits of the following main components:
+The Agilicious Platform is born as a product of years of research and countless iterations at the Robotics and Perception Group. The Agilicious Platform consits of the following main components:
   - :code:`Nvidia Jetson TX2`: Main compute unit
   - :code:`ConnectTech Quasar`: Breakout Board
   - :code:`TMotor F7 Flight Controller`: Low-Level Controller

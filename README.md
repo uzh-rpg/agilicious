@@ -1,6 +1,5 @@
+[![Request Access!](docs/img/button.png)](https://agilicious.readthedocs.io/en/latest/index.html)
 <div align="center">
-  <img src="https://www.seekpng.com/png/full/286-2863187_coming-soon-banner-png.png">
-  <br>
   <h1>Agilicious: Open-Source and Open-Hardware Agile Quadrotor for Vision-Based Flight</h1>
   <br>
   <b>Agile flight done right!</b>

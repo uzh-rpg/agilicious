@@ -1,5 +1,5 @@
 <div align="center">
-    <a href="https://agilicious.readthedocs.io/en/latest/index.html"><img src="docs/img/button.png"></a>
+    <a href="https://agilicious.readthedocs.io/en/latest/index.html"><img src="docs/img/button.png" width="500"></a>
 
   <h1>Agilicious: Open-Source and Open-Hardware Agile Quadrotor for Vision-Based Flight</h1>
   <br>

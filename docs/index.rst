@@ -50,7 +50,7 @@ The full list of publications using Agilicious can be found `here <https://rpg.i
     :caption: About
 
     License <license>
-    Credits <credits>
+    Papers to cite if you use Agilicious <credits>
     Dependencies <dependencies>
 
 

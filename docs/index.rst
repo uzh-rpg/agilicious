@@ -43,6 +43,7 @@ Agile flight done right!
 Agilicious allows to seamlessly develop, test, reproduce and benchmark control algorithms such as Non-linear Model Predictive Control (MPC), differential-flatness-based control (DFBC) and INDI (Incremental Non-linear Dynamic Inversion) (`TRO 2022, Sun <https://rpg.ifi.uzh.ch/docs/Arxiv21_MPC_Sun.pdf>`__, `Video <https://www.youtube.com/watch?v=XpuRpKHp_Bk>`__).
 Agilicious also includes our state-of-the-art, high-fidelity simulator, which uses Blade Element Momentum (BEM) theory for the propeller model and provides accurate estimates of the quadcopter's aerodynamic characteristics across the flight envelope (`RSS 2021, Bauersfeld <https://rpg.ifi.uzh.ch/docs/RSS21_Bauersfeld.pdf>`__, `Video <https://www.youtube.com/watch?v=Nze1wlfmzTQ>`__).
 
+If you use Agilicious, please cite `these papers. <credits>`__
 The full list of publications using Agilicious can be found `here <https://rpg.ifi.uzh.ch/aggressive_flight.html>`_.
 
 .. toctree::

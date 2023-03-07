@@ -1,5 +1,5 @@
 
-Credits
+Papers to cite if you use Agilicious
 -------
 
 If you use the code in the academic context, please cite:
